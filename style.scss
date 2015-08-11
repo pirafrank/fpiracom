@@ -335,8 +335,9 @@ nav { // edit this to change navbar appearance
 }
 
 .safe-email {
-  a {
+  i {
     font-family: $defaultSansSerif;
+    font-style: normal;
     letter-spacing: -0.10em;
   }
 }

@@ -26,14 +26,14 @@ embedsearch: true
 # Includes a social icon in social divs for each username you enter
 social-links:
   dribbble:
-  email: inbox@fpira.com
+  email: 
   facebook: fpiraonline
   flickr: pirafrank
   github: pirafrank
   instagram: 
   linkedin: fpira
   pinterest: 
-  rss: stuff # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: pirafrank
   stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
   youtube: # channel/<your_long_string> or user/<user-name>

@@ -102,15 +102,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-nav {                   // these settings overwrite the ones in style.scss
-  margin-top: 0.4em;
-
-  @include mobile {
-    display: none;
-  }
-
-}
-
 .wrapper-masthead {     // these settings overwrite the ones in style.scss
   margin-bottom: 0px;
 
@@ -118,14 +109,6 @@ nav {                   // these settings overwrite the ones in style.scss
     display: none;
   }
   
-}
-
-.masthead {             // these settings overwrite the ones in style.scss
-  padding: 10px 0;
-
-  @include mobile {
-    text-align: center;
-  }
 }
 
 .navLinks {
@@ -145,6 +128,7 @@ nav {                   // these settings overwrite the ones in style.scss
 
 .navLinks.navLinks-alt {
   display: none;
+  margin: 0px 20px 0px 20px;
 
   * {
     color: $white;
@@ -153,8 +137,16 @@ nav {                   // these settings overwrite the ones in style.scss
     }
   }
 
-  a {
-    margin: 0px 10px 0px 10px;
+  @include mobile {
+    display: block;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+.navLinkEntry {
+    margin-bottom: 10px;
+    a {
+    //margin: 0px 10px 0px 10px;
     width: 80px;
     background-color: transparent;
     border: 1px solid $lightGray;
@@ -165,7 +157,6 @@ nav {                   // these settings overwrite the ones in style.scss
   }
 
   @include mobile {
-    display: block;
     padding: 10px 0px 5px 0px;
   }
 }
@@ -175,7 +166,7 @@ nav {                   // these settings overwrite the ones in style.scss
 //
 
 .inner-container {
-  padding-top: 25px;
+  padding-top: 35px;
 
   @include mobile {
     padding-top: 15px;

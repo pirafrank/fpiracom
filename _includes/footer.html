@@ -9,8 +9,15 @@
           </div>
         {% endif %}
         <footer>
-          <p>Made with <a href="http://github.com/pirafrank/Jekyll-Blue">Jekyll-Blue</a>.</p>
-          <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a></p>
+          <p><a href="{{ site.baseurl }}/feed.xml">Subscribe to RSS feeds</a></p>
+          <p>Contact me: <span class="safe-email">
+            <a href="mailto:{{ site.encryptedemail }}" onclick="this.href=this.href.replace(/ /g,'')">{{ site.encryptedemail }}</a>
+          </span></p>
+          <p>
+            The content of this website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>
+            <br>
+            Made with <a href="http://github.com/pirafrank/Jekyll-Blue">Jekyll-Blue</a>.
+          </p>
         </footer>
       </div>
     </div>

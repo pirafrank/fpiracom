@@ -164,7 +164,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 10px 0;
   //border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -233,14 +233,14 @@ img {
 
 nav { // edit this to change navbar appearance
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  margin-right: 20px;
+  margin-top: 0.4em; // @TODO: Vertically middle align
+  margin-right: 12px;
   font-family: $defaultSansSerif; 
   font-size: 16px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
+    margin-top: 0.4em;
     display: block;
     font-size: 16px;
   }
@@ -250,10 +250,15 @@ nav { // edit this to change navbar appearance
     color: $white; // navbar links color
     text-align: right;
     font-weight: 300;
+    padding: 4px;
     //letter-spacing: 1px;
     &:hover, &:active {
       color: $white; // hover color for navbar links
       //text-decoration:underline; // uncomment this to underline navbar links
+      border-width: 0px 0px 1px 0px;
+      border-style: solid;
+      border-color: $lightGray;
+      padding: 4px;
     }
 
     @include mobile {
@@ -532,7 +537,7 @@ footer {
   line-height: 1.2;
   padding: 20px 0;
   margin-bottom: 3em;
-  text-align: center;
+  text-align: left;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

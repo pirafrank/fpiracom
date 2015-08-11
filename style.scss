@@ -33,7 +33,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 820px;
-  padding: 0 10px;
+  padding: 10px;
   width: 100%;
 }
 
@@ -254,8 +254,7 @@ nav { // edit this to change navbar appearance
     //letter-spacing: 1px;
     &:hover, &:active {
       color: $white; // hover color for navbar links
-      //text-decoration:underline; // uncomment this to underline navbar links
-      border-width: 0px 0px 1px 0px;
+      border-width: 0px 0px 2px 0px;
       border-style: solid;
       border-color: $lightGray;
       padding: 4px;

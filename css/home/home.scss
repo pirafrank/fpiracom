@@ -92,9 +92,14 @@ h1, h2, h3, h4, h5, h6 {
 //
 
 .middle {
+  display: none;
   text-align: center;
-  background-color: $darkGray; //$darkBlue
+  background-color: $darkBlue; //$darkBlue
   padding: 20px 0px 20px 0px;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 nav {                   // these settings overwrite the ones in style.scss
@@ -127,7 +132,7 @@ nav {                   // these settings overwrite the ones in style.scss
   color: $white;
   padding-right: 25px;
   text-align: right;
-  font-weight: 400;
+  font-weight: 300;
     &:hover, &:active {
       color: $white;
     }

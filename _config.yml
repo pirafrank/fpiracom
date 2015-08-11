@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: John Doe
+name: Francesco Pira
 
 # Short bio or description (displayed in the header)
-description: "Curious mind, Web Developer, Startupper"
+description: "Curious mind / Web Developer / CEO @ Fileshute"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: "assets/images/avatar.jpg"
@@ -27,17 +27,17 @@ embedsearch: true
 social-links:
   dribbble:
   email: inbox@fpira.com
-  facebook: john-doe
-  flickr: john-doe
+  facebook: fpiraonline
+  flickr: pirafrank
   github: pirafrank
-  instagram:
+  instagram: 
   linkedin: fpira
-  pinterest: john-doe
+  pinterest: 
   rss: stuff # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: pirafrank
-  stackoverflow: users/12345/john-doe # your stackoverflow profile, e.g. "users/12345/john-doe"
-  youtube: john-doe # channel/<your_long_string> or user/<user-name>
-  googleplus: +johndoe # e.g. https://plus.google.com/+johndoe
+  stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: +FrancescoPiraonline # e.g. https://plus.google.com/+johndoe
 
 # Type your email with **1 space** between each character.
 # Don't worry, it will be displayed correctly.
@@ -48,7 +48,7 @@ encryptedemail: "i n b o x @ f p i r a . c o m"
 # Home customisation
 home:
   show_pinboard: true # set it to true to enable, false to disable right section in home
-  max_posts: 5 # max number of latest posts to show in home page
+  max_posts: 10 # max number of latest posts to show in home page
   show_social: false # Choose whether to display social link in mid of home page or not
 
 # Choose whether to display social links in footer or not
@@ -59,7 +59,7 @@ footersocial: true
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
-google_analytics: ""
+google_analytics: "UA-59510020-2"
 
 # Your website URL (e.g. http://fpira.com)
 # Used for Sitemap.xml and your RSS feed

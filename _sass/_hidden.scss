@@ -1,0 +1,16 @@
+
+.hidden {
+    display: none;
+}
+
+.mobile-hidden {
+    @include mobile {
+        display: none;
+    }
+}
+
+.smallscreen-hidden {
+    @include smallscreen {
+        display: none;
+    }
+}

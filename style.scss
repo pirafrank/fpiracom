@@ -339,6 +339,11 @@ nav { // edit this to change navbar appearance
     font-family: $defaultSansSerif;
     font-style: normal;
     letter-spacing: -0.10em;
+    border-color: transparent;
+    border-radius: 2px;
+    background-color: $lightGray;
+    margin: 2px;
+    padding: 5px;
   }
 }
 

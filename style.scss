@@ -342,9 +342,6 @@ nav { // edit this to change navbar appearance
   }
 }
 
-// responsive video support
-@import "responsive-video";
-
 .line-separator {
   height: 1px;
   //background: $darkGray;
@@ -372,176 +369,19 @@ nav { // edit this to change navbar appearance
   }
 }
 
-//
-// .main for post pages
-//
+// responsive video support
+@import "responsive-video";
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
+// css for hiding classes
+@import "hidden";
 
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
+// css for post pages, /blog and /by-category
+@import "posts";
 
-.post {
-
-  font-family: $defaultSerif;
-  font-size: 18px;
-  line-height: 1.6;
-  color: $darkGray;
-  
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-color: $darkerGray;
-    font-weight: bold;
-
-    line-height: 1.7;
-    margin: 1em 0 15px;
-    padding: 0;
-
-    @include mobile {
-      line-height: 1.4;
-    }
-  }
-
-  .post-title { // edit appearance of post title
-    h2 {
-      font-size: 26px;
-      font-weight: bold;
-      font-family: $defaultSerif;
-      letter-spacing: -0.05em;
-      color: $darkerGray;
-    }
-    margin-bottom: 0.4em;
-  }
-
-  .post-subtitle { // edit appearance of post subtitle
-    strong {
-      font-size: 18px;
-      font-style: italic;
-      font-weight: normal;
-      color: $gray;
-    }
-    margin-bottom: 1.5em;
-  }
-
-  .post-details { // edit appearance of post details (date, category, ecc.)
-    i {
-      font-size: 14px;
-      font-style: normal;
-      font-weight: normal;
-      color: $gray;
-      a {
-        color: $darkBlue;
-      }
-    }
-    margin-bottom: 0.5em;
-  }
-
-  // apparearance of post body is managed by post class. see above.
-
-  .share-post { // edit appearance of share div
-    margin-top: 2em;
-    margin-bottom: 1em;
-    font-size: 14px;
-    color: $gray;
-
-    a {
-      color: $blue;      
-      &:hover, &:active {
-        color: $darkBlue;
-      }
-    }
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
-
-.category {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-}
-
-//
-// CSS for /blog and /by-category pages
-//
-
-.post-entry {
-  padding: 0em 0em 1.4em;
-  margin-left: 1em;
-
-    @include mobile {
-      //text-align: center;
-      margin-left: 0em;
-    }
-}
-
-.post-link {
-  padding-bottom: 3px;
-  a {
-    font-family: $defaultSerif;
-    font-size: 20px;
-  }
-}
-
-.post-category {
-  padding-top: 3px;
-  font-family: $defaultSerif;
-  font-size: 16px;
-  color: $gray;
-}
-
-.post-date {
-  padding-top: 3px;
-  font-family: $defaultSansSerif;
-  font-size: 16px;
-  color: $gray;
-}
-
-//
-// FOOTER CSS
-//
-.wrapper-footer {
-  margin-top: 50px;
-  //border-top: 1px solid #ddd; // original ugly stuff
-  //border-bottom: 1px solid #ddd; // original ugly stuff
-  background-color: $lightGray;
-}
-
-footer {
-  font-size: 16px;
-  line-height: 1.2;
-  padding: 20px 0;
-  margin-bottom: 3em;
-  text-align: left;
-}
+// footer
+@import "footer";
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "hidden";
 @import "highlights";
 @import "svg-icons";

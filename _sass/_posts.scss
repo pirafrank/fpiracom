@@ -43,24 +43,27 @@
   }
 
   .post-title { // edit appearance of post title
+    margin-bottom: 0.4em;
+
     h2 {
       font-size: 26px;
       font-weight: bold;
       font-family: $defaultSerif;
       letter-spacing: -0.05em;
       color: $darkerGray;
+      line-height: 1.2;
     }
-    margin-bottom: 0.4em;
   }
 
   .post-subtitle { // edit appearance of post subtitle
+    margin-bottom: 1.5em;
+    
     strong {
       font-size: 18px;
       font-style: italic;
       font-weight: normal;
       color: $gray;
     }
-    margin-bottom: 1.5em;
   }
 
   .post-details { // edit appearance of post details (date, category, ecc.)
@@ -73,10 +76,13 @@
         color: $darkBlue;
       }
     }
-    margin-bottom: 0.5em;
+    //margin-bottom: 0.5em;
+    line-height: 1.0;
   }
 
+  //
   // apparearance of post body is managed by post class. see above.
+  //
 
   .share-post { // edit appearance of share div
     margin-top: 2em;

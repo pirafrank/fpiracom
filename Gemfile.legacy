@@ -1,6 +1,0 @@
-source 'https://rubygems.org'
-gem 'bundler'
-gem 'jekyll'
-#gem 'github-pages'
-gem 'rack-jekyll'
-gem 'kramdown'

@@ -20,9 +20,8 @@
 
   a {
     color: $gray;
-    &:hover {
+    &:hover,&:focus {
         color: $gray;
-        text-decoration: underline;
     }
     @include mobile {
       line-height: 2em;

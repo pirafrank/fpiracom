@@ -24,12 +24,19 @@
         color: $gray;
         text-decoration: underline;
     }
+    @include mobile {
+      line-height: 2em;
+    }
   }
 
   p {
     color: $gray;
     &:hover,&:focus {
       color: $gray;
+    }
+
+    @include mobile {
+      line-height: 2em;
     }
   }
 }

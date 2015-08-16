@@ -103,6 +103,10 @@
         color: $darkBlue;
       }
     }
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   .comments {

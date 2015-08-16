@@ -1,16 +1,16 @@
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .mobile-hidden {
     @include mobile {
-        display: none;
+        display: none !important;
     }
 }
 
 .smallscreen-hidden {
     @include smallscreen {
-        display: none;
+        display: none !important;
     }
 }

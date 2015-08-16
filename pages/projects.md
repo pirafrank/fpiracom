@@ -7,7 +7,7 @@ show_title: true
 
 <!-- trailing slash in permalink is needed -->
 
-Some information about my projects!
+Below you can find a list of projects of mine.
 
 ### [Project 1](http://google.com)
 

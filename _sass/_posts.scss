@@ -63,6 +63,9 @@
       font-style: italic;
       font-weight: normal;
       color: $gray;
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
 
@@ -72,12 +75,16 @@
       font-style: normal;
       font-weight: normal;
       color: $gray;
+      line-height: 1.0;
       a {
         color: $darkBlue;
       }
+      @include mobile {
+        font-size: 18px;
+        font-family: $defaultSansSerif;
+        line-height: 1.2;
+      }
     }
-    //margin-bottom: 0.5em;
-    line-height: 1.0;
   }
 
   //
@@ -138,6 +145,9 @@
   a {
     font-family: $defaultSerif;
     font-size: 20px;
+    @include mobile {
+      font-size: 22px;
+    }
   }
 }
 
@@ -146,6 +156,9 @@
   font-family: $defaultSerif;
   font-size: 14px;
   color: $gray;
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .post-date {
@@ -153,4 +166,7 @@
   font-family: $defaultSansSerif;
   font-size: 14px;
   color: $gray;
+  @include mobile {
+    font-size: 18px;
+  }
 }

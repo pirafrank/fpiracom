@@ -30,6 +30,10 @@
     background-color: $lightGray;
     margin: 2px;
     padding: 5px;
+    @include mobile {
+      margin: 1px;
+      padding: 2px;
+    }
   }
 }
 

@@ -13,21 +13,22 @@
 
   <body>
 
-    <div class="big_container">
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
+    
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
 
-            <div>
-              <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
-              {% include nav.html %}
-            </div>
-   
-          </header>
-        </div>
+          <div>
+            <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
+            {% include nav.html %}
+          </div>
+ 
+        </header>
       </div>
+    </div>
 
-      <div id="main" role="main" class="container">
+    <div class="big_container">
+      <div id="main" role="main" class="container reading_container">
         {{ content }}
       </div>
     </div>

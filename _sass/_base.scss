@@ -15,17 +15,6 @@ body {
   color: $darkerGray; // site-wide font color (overrindden multiple times...)
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 820px; // was 820px // 45em for optimal reading
-  padding: 10px;
-  width: 100%;
-}
-
-.big_container {
-  min-height: 500px;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $defaultSansSerif;
   font-weight: normal;
@@ -125,6 +114,8 @@ img {
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
+// commented because it is now included in _grid.scss
+/* 
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -133,4 +124,4 @@ img {
 
 .clearfix:after {
     clear: both;
-}
+} */

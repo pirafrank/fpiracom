@@ -224,10 +224,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .newsTitle {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: $defaultSerif;
   padding-bottom: 1px;
   @include mobile {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 

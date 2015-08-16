@@ -66,6 +66,7 @@
   a {
     color: $white;
     font-size: 18px;
+    text-decoration: none;
 
     @include mobile {
       font-size: 28px;
@@ -108,10 +109,11 @@
 
   a {
     margin-left: 20px;
-    color: $white; // navbar links color
-    text-align: right;
-    font-weight: 300;
     padding: 4px;
+    font-weight: 300;
+    text-align: right;
+    text-decoration: none;
+    color: $white; // navbar links color
     //letter-spacing: 1px;
     &:hover, &:active {
       color: $white; // hover color for navbar links

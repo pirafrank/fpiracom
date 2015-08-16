@@ -65,6 +65,10 @@ a {
   &:hover, &:active {
     //color: $blue;
     color: $darkBlue;
+    text-decoration: underline;
+    @include mobile {
+      text-decoration: none;
+    }
   }
 }
 

@@ -14,7 +14,8 @@ show_title: true
 
   <div>
 
-    {% for category in site.categories %}
+    {% assign sorted_categories = site.categories | sort %}
+    {% for category in sorted_categories %}
       <div id="{{ category | first }}">
         <span style="font-size: 32px;">{{ category | first }}</span>
           {% for posts in category %}

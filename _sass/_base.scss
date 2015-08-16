@@ -14,7 +14,7 @@ body {
   font-weight: 300;
   color: $darkerGray; // site-wide font color (overrindden multiple times...)
   @include mobile {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3;
   }
 }

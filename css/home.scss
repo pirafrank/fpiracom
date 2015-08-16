@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .newsEntry {
   font-size: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 1.0em;
   margin-right: 3em;
 
   @include mobile {
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 .newsTitle {
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
 }
 
 .newsDate {

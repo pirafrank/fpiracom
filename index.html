@@ -12,9 +12,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/home.css" />
 
-    <!-- columns support lib -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/col.css">
-
     {% include analytics.html %}
 
   </head>
@@ -34,7 +31,7 @@
   <div class="cover">
     <div class="container">
         <div class="section group header">
-          <div class="col span_4_of_5">
+          <div class="col span_10_of_12">
               <div class="headText">
                 <div class="userAvatarPlate userAvatar">
                   <img src="{{ site.avatar }}" width="120px;">
@@ -61,7 +58,7 @@
                 </div>
               </div>
           </div>
-          <div class="col span_1_of_5">
+          <div class="col span_2_of_12">
           </div>
         </div>
         <div style="color: #aaa; font-style: italic; font-size: 12px; text-align: right;">Etna view from the Ancient Theatre of Taormina</div>
@@ -96,7 +93,7 @@
   <div class="container">
     <div class="section group">
       <div class="inner-container">
-        <div class="col span_3_of_5">
+        <div class="col span_7_of_12">
           <div>
             {% include searchbox.html %}
           </div>
@@ -121,7 +118,7 @@
             </div>            
           {% endfor %}
         </div>
-        <div class="col span_2_of_5">
+        <div class="col span_5_of_12">
           {% if site.home.show_pinboard %}
             <div class="sectionTitle">For Developers</div>
             <div class="resEntry">

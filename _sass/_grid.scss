@@ -14,123 +14,129 @@
   max-width: 45em; // 45em for optimal reading
 }
 
-// Bootstrap grid system converted to Sass
+//
+// Responsive grid system (12 columns)
+//
 
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
 }
 
-// doubling everything for small screens
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
 
-.col-12-12 {
+  &:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+}
+
+.group {
+  &:before,&:after {
+    content:"";
+    display:table;
+  }
+  
+  &:after {
+    clear:both;
+  }
+
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.col { 
+  @include mobile {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+.span_12_of_12 {
   width: 100%;
-  @include smallscreen {
-    width: 100%;
-  }
   @include mobile {
     width: 100%;
   }
 }
-.col-11-12 {
-  width: 91.66666667%;
-  @include smallscreen {
-    width: 100%;
-  }
+
+.span_11_of_12 {
+  width: 91.53%;
   @include mobile {
     width: 100%;
   }
 }
-.col-10-12 {
-  width: 83.33333333%;
-  @include smallscreen {
-    width: 100%;
-  }
+.span_10_of_12 {
+  width: 83.06%;
   @include mobile {
     width: 100%;
   }
 }
-.col-9-12 {
-  width: 75%;
-  @include smallscreen {
-    width: 100%;
-  }
+
+.span_9_of_12 {
+  width: 74.6%;
   @include mobile {
     width: 100%;
   }
 }
-.col-8-12 {
-  width: 66.66666667%;
-  @include smallscreen {
-    width: 100%;
-  }
+
+.span_8_of_12 {
+  width: 66.13%;
   @include mobile {
     width: 100%;
   }
 }
-.col-7-12 {
-  width: 58.33333333%;
-  @include smallscreen {
-    width: 100%;
-  }
+
+.span_7_of_12 {
+  width: 57.66%;
   @include mobile {
     width: 100%;
   }
 }
-.col-6-12 {
-  width: 50%;
-  @include smallscreen {
-    width: 100%;
-  }
+
+.span_6_of_12 {
+  width: 49.2%;
   @include mobile {
     width: 100%;
   }
 }
-.col-5-12 {
-  width: 41.66666667%;
-  @include smallscreen {
-    width: 83.33333333%;
-  }
+
+.span_5_of_12 {
+  width: 40.73%;
   @include mobile {
     width: 100%;
   }
 }
-.col-4-12 {
-  width: 33.33333333%;
-  @include smallscreen {
-    width: 66.66666667%;
-  }
+
+.span_4_of_12 {
+  width: 32.26%;
   @include mobile {
     width: 100%;
   }
 }
-.col-3-12 {
-  width: 25%;
-  @include smallscreen {
-    width: 50%;
-  }
+
+.span_3_of_12 {
+  width: 23.8%;
   @include mobile {
     width: 100%;
   }
 }
-.col-2-12 {
-  width: 16.66666667%;
-  @include smallscreen {
-    width: 33.33333333%;
-  }
+
+.span_2_of_12 {
+  width: 15.33%;
   @include mobile {
     width: 100%;
   }
 }
-.col-1-12 {
-  width: 8.33333333%;
-  @include smallscreen {
-    width: 16.66666667%;
-  }
+
+.span_1_of_12 {
+  width: 6.866%;
   @include mobile {
     width: 100%;
   }
 }
+
+//
+// Useful Bootstrap classes
+//
 
 .center-block {
   display: block;

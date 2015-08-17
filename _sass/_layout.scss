@@ -98,6 +98,7 @@
   margin-right: 12px;
   font-family: $defaultSansSerif; 
   font-size: 14px;
+  font-weight: 300;
   line-height: 1.0;
 
   @include mobile {
@@ -111,7 +112,6 @@
   a {
     margin-left: 20px;
     padding: 4px;
-    font-weight: 300;
     text-align: right;
     text-decoration: none;
     color: $white; // navbar links color

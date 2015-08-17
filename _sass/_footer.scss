@@ -11,12 +11,15 @@
 }
 
 .footer-links {
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: left;
-  color: $gray;
   margin-bottom: 2em;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $gray;
   text-align: center;
+
+  @include mobile {
+    font-size: 16px;
+  }
 
   a {
     color: $gray;

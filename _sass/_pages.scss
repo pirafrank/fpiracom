@@ -28,12 +28,8 @@
     border-color: transparent;
     border-radius: 2px;
     background-color: $lightGray;
-    margin: 2px;
-    padding: 5px;
-    @include mobile {
-      margin: 1px;
-      padding: 2px;
-    }
+    margin: 1px;
+    padding: 2px;
   }
 }
 

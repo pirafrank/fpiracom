@@ -43,10 +43,8 @@
   border-bottom: 1px solid $lightGray;
 }
 
-.back-to-top {
+.corner-btn {
   position: fixed;
-  bottom: 2%;
-  right: 2%;
   background: $white;
   border: 1px solid $lightGray;
   border-radius: 5px;
@@ -58,6 +56,20 @@
     //text-transform: uppercase;
     color: $gray;
   }
+}
+
+.share-corner {
+  bottom: 2%;
+  right: 6%;
+
+  @include mobile {
+    right: 16%;
+  }
+}
+
+.back-to-top {
+  bottom: 2%;
+  right: 2%;
 
   @include mobile {
     right: 4%;

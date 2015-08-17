@@ -232,12 +232,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .newsTitle {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-family: $defaultSerif;
   padding-bottom: 1px;
+
   @include mobile {
     font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $darkerGray;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+      color: $darkerGray;
+
+      @include mobile {
+        text-decoration: none;
+      }
+    }
+
+    &:visited {
+      color: $darkerGray;
+    }
   }
 }
 

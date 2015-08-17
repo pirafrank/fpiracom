@@ -47,9 +47,10 @@ encryptedemail: "m e [ a t ] f p i r a [ d o t ] c o m"
 
 # Home customisation
 home:
-  show_pinboard: true # set it to true to enable, false to disable right section in home
-  max_posts: 10 # max number of latest posts to show in home page
   show_social: false # Choose whether to display social link in mid of home page or not
+  max_posts: 10 # max number of latest posts to show in home page
+  show_excerpt: false # choose whether to show or not excerpt of latest blog posts
+  show_pinboard: true # set it to true to enable, false to disable right section in home
 
 # Choose whether to display social links in footer or not
 footersocial: true

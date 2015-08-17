@@ -104,15 +104,15 @@
               <div class="news newsDate">{{ post.date | date: "%d %B %Y" }}</div>
               {% if post.subtitle %}
                 <br>
-                <div>
+                <div class="newsExcerpt">
                   {{ post.subtitle | truncatehtml | truncatewords: 20 }}
                   <br><br>
-                  <span class="news newsDate"><a href="{{ post.url }}">Read more...</a></span>
+                  <a href="{{ post.url }}">Read more...</a>
                 </div>
               {% else %}
-                <div>
+                <div class="newsExcerpt">
                   {{ post.content | truncatehtml | truncatewords: 20 }}
-                  <span class="news newsDate"><a href="{{ post.url }}">Read more...</a></span>
+                  <a href="{{ post.url }}">Read more...</a>
                 </div>
               {% endif %}
             </div>            

@@ -91,21 +91,97 @@
   // apparearance of post body is managed by post class. see above.
   //
 
+  .share-post-alt { // edit appearance of share div
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 14px;
+    color: $gray;
+
+    @include mobile {
+      font-size: 16px;
+    }
+
+    a:link {
+      display: inline;
+      width: 100%;
+      color: $darkBlue;
+      background-color: transparent;
+      border: 1px solid $lightGray;
+      padding: 5px 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+
+      @include mobile {
+        display: block;
+        margin: 0.5em;
+        max-width: 180px;
+        text-align: center;
+      }
+
+      &:hover, &:active {
+        color: $blue;
+        text-decoration: none;
+      }
+  }
+}
+
   .share-post { // edit appearance of share div
     margin-top: 2em;
     margin-bottom: 1em;
     font-size: 14px;
     color: $gray;
 
-    a {
-      color: $blue;      
+    ul {
+        //display: table;
+        margin: 10px 0px 0px 0px;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+
+        @include mobile {
+          display: table;
+        }
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0em 0.5em 0em 0em;
+        float: left;
+        width: 100px;
+        max-width: 100px;
+        text-align: center;
+
+        @include mobile {
+          float: none;
+          vertical-align: middle;
+          display: table-cell;
+        }
+    }
+
+    ul li a:link, a:visited {
+      display: block;
+      width: 100%;
+      color: $blue;
+      background-color: transparent;
+      border: 1px solid $lightGray;
+      padding: 3px 6px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+
       &:hover, &:active {
         color: $darkBlue;
+        text-decoration: none;
+      }
+
+      @include mobile {
+        padding: 10px 0px 5px 0px;
       }
     }
 
     @include mobile {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 

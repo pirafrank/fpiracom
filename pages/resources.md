@@ -18,6 +18,7 @@ You may also want to checkout the Projects page for more.
     - [nvm](https://github.com/creationix/nvm#usage)
     - [GPG](http://stuff.imeos.org/persistent/gpg-cheatsheet.pdf)
     - [Macports](https://www.evernote.com/l/AEN9AooVEstBeJug_-cdfwbO_sJbxR9HfJA)
+    - [Bash scripting](http://steve-parker.org/sh/cheatsheet.pdf)
     - [C language](http://www.digilife.be/quickreferences/qrc/c%20reference%20card%20(ansi)%202.2.pdf)
 - Bash
     - [Fix locale errors in bash](https://gist.github.com/pirafrank/d792768becac1406dd57)

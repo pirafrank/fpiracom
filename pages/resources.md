@@ -25,16 +25,25 @@ You may also want to checkout the Projects page for more.
 - Rails
     - [gitignore for Rails app](https://gist.github.com/pirafrank/7c7303c039e2fa8df529)
     - [pumascript.sh](https://gist.github.com/pirafrank/ea64dfbaceca755c3891): a script to start and stop [Puma](http://puma.io) server
-- [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8): a script to completely remove PyObjc from your Mac
-- [Script to download an entire website](https://gist.github.com/pirafrank/181360a3754abe79a5c8): it uses wget
+- Python
+    - [Get Platform details](https://gist.github.com/pirafrank/a6421e09c2b8b17426da): Get platform details for current OS (print or use as a library). Works with Linux, OS X and Windows.
+    - [Open URL in default browser](https://gist.github.com/pirafrank/cd62f7def8f56ff986af)
+    - [Open with the default application](https://gist.github.com/pirafrank/159aa709cc86799b66f2): Short snippet to open a given file with the default application. Works on Linux, OS X and Windows. On Linux requires xdg-open (usually built-in).
+    - [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8): a script to completely remove PyObjc from your Mac
+- [Virtual machines with Microsoft browsers](http://dev.modern.ie/tools/vms/windows/): useful for testing your website. VMs are in various formats: Hyper-V, VPC, VirtualBox, Parallels, VMware.
 - [Azure RemoteApp](https://remote.modern.ie): Microsoft's service to test your site on IE on Windows 10 Technical Preview from anywhere.
 - [heroku-static-website](https://github.com/pirafrank/heroku-static-website): A boilerplate to deploy a static website on heroku
+- [Chrome shortcuts](https://support.google.com/chrome/answer/157179?hl=en): If you're a developer, chances are you love more keyboards than mouses.
 
 ### For users
 
 - [Short Macports guide](https://www.evernote.com/l/AENoTAGBFR5Es5YT7y-wdlkXitg40gvEQD8)
-
+- [Download an entire website](https://gist.github.com/pirafrank/181360a3754abe79a5c8): Short script. It uses wget.
 - [Copy URL Bookmarklet](https://gist.github.com/pirafrank/5a4f6f56f3cf931ddf6b): on Safari copying the URL from the address bar can be tricky. This lets you quickly copy it with 1 click and a CMD+C.
+- IFTTT
+    - [Microsoft's published recipes](https://ifttt.com/p/microsoft/shared)
+    - [My public recipes](https://ifttt.com/myrecipes/shared)
+    - [My favorites](https://ifttt.com/p/pirafrank/favorites)
 
 ### My toolbelt
 
@@ -63,7 +72,7 @@ You may also want to checkout the Projects page for more.
 - golang
 - ForkLift and rsync
 
-**Other useful apps**
+**Other useful apps and services**
 
 - Evernote (actually my second brain)
 - Alfred + [my workflows](https://github.com/pirafrank/OSX_utils)
@@ -75,5 +84,6 @@ You may also want to checkout the Projects page for more.
 - VeraCrypt
 - Tunnelblick
 - MEGAsync
+- IFTTT
 - Tens of free custom fonts
 - Photoshop + Cooler + Sketch

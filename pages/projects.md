@@ -9,16 +9,16 @@ show_title: true
 
 Below you can find a list of projects of mine.
 
-### [Project 1](http://google.com)
+#### [Jekyll Blue](http://github.com/pirafrank/jekyll-blue)
 
-A place to include any other types of information that you'd like to include about yourself.
-and stuff...
+All-in-one easy Jekyll solution
 
-### [Project 2]({{ site.baseurl }}/projects/project1/)
+#### [Battery Life Extender]({{ site.baseurl }}/projects/project1/)
 
 more Stuff...
 
-### Project 3
+#### Project 3
 
 more Stuff again...
 
+#### This website

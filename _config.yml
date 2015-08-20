@@ -78,7 +78,7 @@ baseurl: ""
 
 markdown: redcarpet
 highlighter: pygments
-permalink: '/:year/:month/:title/'
+permalink: '/blog/:year/:month/:title/'
 excerpt_separator: "\n\n"
 
 # Jekyll Blue version in use

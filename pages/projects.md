@@ -10,7 +10,7 @@ show_title: true
 Below you can find a list of projects of mine.
 
 #### [Jekyll Blue](http://github.com/pirafrank/jekyll-blue)
-All-in-one easy Jekyll solution.
+All-in-one easy Jekyll solution. Create your static website with blog in a quick and stylish way and deploy it on Github Pages.
 
 #### [Google Photos EXIF fixer](https://github.com/pirafrank/Google-Photos-EXIF-fixer)
 Script to fix pictures EXIF metadata before upload them to Google Photos.
@@ -19,7 +19,7 @@ Script to fix pictures EXIF metadata before upload them to Google Photos.
 Collection of OS X utilities to speed up your productivity and take care of your OS X environment.
 
 #### [Battery Life Extender](https://github.com/pirafrank/battery_life_extender)
-The niblest solution of a battery life extender for OS X.
+The niblest solution of a battery life extender for OS X. Take care of your Macbook.
 
 #### [CLI utils](https://github.com/pirafrank/CLI_utils)
 Useful bash hacks at your fingertips. For Linux and OS X.
@@ -38,3 +38,8 @@ Easy CLI utility to batch download images from flickr.
 
 #### This website
 It's based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue).
+
+## Contributions
+
+#### [Hardening One](http://etnaforensics.it/sweetbus/)
+OpenDay about security of GNU/Linux-based desktop OSes and today's edge hardening techniques.

@@ -33,10 +33,16 @@ You may also want to checkout the Projects page for more.
     - [Open URL in default browser](https://gist.github.com/pirafrank/cd62f7def8f56ff986af)
     - [Open with the default application](https://gist.github.com/pirafrank/159aa709cc86799b66f2): Short snippet to open a given file with the default application. Works on Linux, OS X and Windows. On Linux requires xdg-open (usually built-in).
     - [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8): a script to completely remove PyObjc from your Mac
-- [Virtual machines with Microsoft browsers](http://dev.modern.ie/tools/vms/windows/): useful for testing your website. VMs are in various formats: Hyper-V, VPC, VirtualBox, Parallels, VMware.
-- [Azure RemoteApp](https://remote.modern.ie): Microsoft's service to test your site on IE on Windows 10 Technical Preview from anywhere.
-- [heroku-static-website](https://github.com/pirafrank/heroku-static-website): A boilerplate to deploy a static website on heroku
-- [Chrome shortcuts](https://support.google.com/chrome/answer/157179?hl=en): If you're a developer, chances are you love more keyboards than mouses.
+- Boilerplates
+    - [heroku-static-website](https://github.com/pirafrank/heroku-static-website): A boilerplate to deploy a static website on heroku
+- Command line tools
+    - [PathPicker](https://github.com/facebook/PathPicker): Facebook PathPicker is a simple command line tool that solves the perpetual problem of selecting files out of bash output.
+    - [asciinema](http://asciinema.org): Record and share your terminal sessions. Supports copy/paste from the video.
+- Testing
+    - [Virtual machines with Microsoft browsers](http://dev.modern.ie/tools/vms/windows/): useful for testing your website. VMs are in various formats: Hyper-V, VPC, VirtualBox, Parallels, VMware.
+    - [Azure RemoteApp](https://remote.modern.ie): Microsoft's service to test your site on IE on Windows 10 Technical Preview from anywhere.
+- Shortcuts
+    - [Chrome shortcuts](https://support.google.com/chrome/answer/157179?hl=en): If you're a developer, chances are you love more keyboards than mouses.
 
 ### For users
 

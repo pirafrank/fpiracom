@@ -98,3 +98,4 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+    - deploy.sh

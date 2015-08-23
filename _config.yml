@@ -27,14 +27,19 @@ embedsearch: true
 social-links:
   dribbble:
   email: 
+  twitter: pirafrank
   facebook: 
   flickr: pirafrank
   github: pirafrank
   instagram: 
   linkedin: fpira
   pinterest: 
+  tumblr: pirafrank
+  lastfm: pirafrank
+  reddit: pirafrank
+  skype: francesco-pira
+  soundcloud: pirafrank
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: pirafrank
   stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: +FrancescoPiraonline # e.g. https://plus.google.com/+johndoe

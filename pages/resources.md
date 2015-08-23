@@ -20,6 +20,7 @@ You may also want to checkout the Projects page for more.
     - [Macports](https://www.evernote.com/l/AEN9AooVEstBeJug_-cdfwbO_sJbxR9HfJA)
     - [Bash scripting](http://steve-parker.org/sh/cheatsheet.pdf)
     - [C language](http://www.digilife.be/quickreferences/qrc/c%20reference%20card%20(ansi)%202.2.pdf)
+    - [Bazaar](http://doc.bazaar.canonical.com/beta/en/_static/en/bzr-en-quick-reference.pdf)
 - Bash
     - [Fix locale errors in bash](https://gist.github.com/pirafrank/d792768becac1406dd57)
     - [Bash history settings](https://gist.github.com/pirafrank/e2535d3891a79b7ad6e6)

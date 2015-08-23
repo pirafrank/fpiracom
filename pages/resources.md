@@ -20,11 +20,13 @@ You may also want to checkout the Projects page for more.
     - [Macports](https://www.evernote.com/l/AEN9AooVEstBeJug_-cdfwbO_sJbxR9HfJA)
     - [Bash scripting](http://steve-parker.org/sh/cheatsheet.pdf)
     - [C language](http://www.digilife.be/quickreferences/qrc/c%20reference%20card%20(ansi)%202.2.pdf)
+    - [Bazaar](http://doc.bazaar.canonical.com/beta/en/_static/en/bzr-en-quick-reference.pdf)
 - Bash
     - [Fix locale errors in bash](https://gist.github.com/pirafrank/d792768becac1406dd57)
     - [Bash history settings](https://gist.github.com/pirafrank/e2535d3891a79b7ad6e6)
     - [Bash custom colors](https://gist.github.com/pirafrank/363fd25544fcc135057d)
     - [ls aliases with coloured output](https://gist.github.com/pirafrank/53b7037513626f92577c)
+    - [30 Handy Bash Shell Aliases For Linux / Unix / Mac OS X](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
 - Rails
     - [gitignore for Rails app](https://gist.github.com/pirafrank/7c7303c039e2fa8df529)
     - [pumascript.sh](https://gist.github.com/pirafrank/ea64dfbaceca755c3891): a script to start and stop [Puma](http://puma.io) server

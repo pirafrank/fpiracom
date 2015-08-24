@@ -17,9 +17,13 @@ My profile. Some scrobbles and some of the music I like.
 
 ### Spotify playlists
 
+#### Publicly shared
+
 [Keeping Focus](https://open.spotify.com/user/1166780596/playlist/5RBWfKjM7l9CQbrGHg7c1A)
 
 [POWA](https://open.spotify.com/user/1166780596/playlist/6NAdGyGufHH5QxuOqMAaZX)
+
+#### Recommended
 
 [Beats 1 Tracks](https://open.spotify.com/user/pbowlesy/playlist/0i9MrcCGZa8Sd3oEdjjca4) by Peter Bowles
 

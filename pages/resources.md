@@ -58,6 +58,7 @@ You may also want to checkout the Projects page for more.
     - [Public shared recipes](https://ifttt.com/myrecipes/shared): I hope you find them useful!
     - [Favorites](https://ifttt.com/p/pirafrank/favorites): Recipes I liked now and then
 - Workflows for Alfred (OS X app).
+    - [Packal](http://www.packal.org): A free marketplace for workflows and themes
     - [Evernote](http://www.alfredforum.com/topic/840-evernote-791-search-create-append-text-preview-reminders-and-more-all-within-alfred) by Carlos A. Sztoltz
     - Workflows I've developed are part of the [OS X utils](https://github.com/pirafrank/OSX_utils) project.
 

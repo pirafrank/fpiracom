@@ -57,6 +57,9 @@ You may also want to checkout the Projects page for more.
     - [Microsoft's channel](https://ifttt.com/p/microsoft/shared)
     - [Public shared recipes](https://ifttt.com/myrecipes/shared): I hope you find them useful!
     - [Favorites](https://ifttt.com/p/pirafrank/favorites): Recipes I liked now and then
+- Workflows for Alfred (OS X app).
+    - [Evernote](https://dl.dropboxusercontent.com/u/127623/Evernote.alfredworkflow)
+    - Workflows I've developed are part of the [OS X utils](https://github.com/pirafrank/OSX_utils) project.
 
 (*) Mantained by me. Please, tell me about your suggestions or any bug you spot.
 

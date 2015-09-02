@@ -18,7 +18,7 @@ Then, what to do?
 
 - Install node with NVM (Node Version Manager). 
   - check the [nvm repo on github](https://github.com/creationix/nvm) and run the install command
-  - check this note Install Node.js using ```nvm install stable```
+  - install Node.js using ```nvm install stable```
   - activate it and set it as default with ```nvm alias default stable```
 Note that ```nvm use <version>``` is a handy way to set a different node version, but it won't be persistent. To make it so, use ```nvm alias default <version>``` instead.
 

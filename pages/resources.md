@@ -43,6 +43,8 @@ You may also want to checkout the Projects page for more.
 - Testing
     - [Virtual machines with Microsoft browsers](http://dev.modern.ie/tools/vms/windows/): useful for testing your website. VMs are in various formats: Hyper-V, VPC, VirtualBox, Parallels, VMware.
     - [Azure RemoteApp](https://remote.modern.ie): Microsoft's service to test your site on IE on Windows 10 Technical Preview from anywhere.
+- Sublime Text
+    - [AngularJS package](https://github.com/angular-ui/AngularJS-sublime-package): AngularJS code completion, snippets, go to definition, quick panel search, and more
 - Shortcuts
     - [Chrome shortcuts](https://support.google.com/chrome/answer/157179?hl=en): If you're a developer, chances are you love more keyboards than mouses.
 

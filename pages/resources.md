@@ -70,6 +70,7 @@ You may also want to checkout the Projects page for more.
 
 **Development**
 
+- OS X 10.10 with latest updates
 - Sublime Text 3 + some useful packages
 - Terminal (sometimes iTerm2)
 - Macports

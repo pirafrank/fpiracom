@@ -14,22 +14,38 @@ In short:
 
 Then, what to do?
 
-**On a development machine**
+#### On a development machine
 
 - Install node with NVM (Node Version Manager). 
-  - check the [nvm repo on github](https://github.com/creationix/nvm) and run the install command
-  - check this note Install Node.js using ```nvm install stable```
-  - activate it and set it as default with ```nvm alias default stable```
-Note that ```nvm use <version>``` is a handy way to set a different node version, but it won't be persistent. To make it so, use ```nvm alias default <version>``` instead.
+  - Check the [nvm repo on github](https://github.com/creationix/nvm) and run the install command
+  - Install Node.js using
+  
+  ```sh
+  nvm install stable
+  ```
+  
+  - Activate it and set it as default with
 
-**On a production machine**
+  ```sh
+  nvm alias default stable
+  ```
+
+**Note** that ```nvm use <version>``` is a handy way to set a different node version, but it won't be persistent. To make it so, use ```nvm alias default <version>``` instead.
+
+#### On a production machine
 
 - You can install node directly using the website installer, with appropriate permissions.
 
-**Credits**
+#### Credits
 
 This blog post takes a lot from [this great reply on stackoverflow](http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo). Thanks to the author.
 
-**More**
+#### More
 
-If you stumble upon ```unknown option '-q'``` error, please [check this article]({{ site.baseurl }}/blog/2015/07/fix-unknown-option-q-nvm/) to fix it.
+If you stumble upon 
+
+```text
+unknown option '-q'
+```
+
+error, please [check this article]({{ site.baseurl }}/blog/2015/07/fix-unknown-option-q-nvm/) to fix it.

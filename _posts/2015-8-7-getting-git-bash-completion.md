@@ -6,7 +6,9 @@ categories: git
 
 Admit it, bash completion is cool and having it also in git is even cooler. But when you install git from source it often doesn't work. Here's how to fix it. 
 
-In short, you need to have git-completion loaded in your bash. It is best for git-completion.bash to match the version of your installed git. Download it using the command after changing *0.0.0* with your installed git version.
+In short, you need to have git-completion loaded in your bash. It is best for git-completion.bash to match the version of your installed git. 
+
+Download it using the command after changing *0.0.0* with your installed git version.
 
 ```sh
 wget -O ~/.git-completion.bash https://raw.githubusercontent.com/git/git/v0.0.0/contrib/completion/git-completion.bash
@@ -23,9 +25,16 @@ Then do:
 ```sh
 source ~/.bashrc
 ```
-if you're running Linux or ```source ~/.bash_profile``` if OS X is your OS.
 
-Test it and enjoy!
+if you're running Linux or 
+
+```sh
+source ~/.bash_profile
+```
+
+if OS X is your OS.
+
+*Done!*
 
 #### More
 

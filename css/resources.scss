@@ -29,10 +29,13 @@ ul > a {
     }
 
     &:hover, &:active {
-        //background-color: $darkBlue;
         border: 2px solid $darkBlue;
-        //color: $white;
         text-decoration: none;
+
+        @include mobile {
+            color: $white;
+            background-color: $darkBlue;
+        }
 
         li {
             color: inherit;

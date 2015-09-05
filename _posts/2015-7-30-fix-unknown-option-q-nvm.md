@@ -6,7 +6,7 @@ categories: node.js
 
 Today I’ve stumbled upon a strange error installing nvm.
 
-```
+```text
 unknown option '-q'
 ```
 

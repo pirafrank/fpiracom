@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Resources
-permalink: /resources/
+title: For Developers
+permalink: /for-developers/
 show_title: true
 ---
 
 Here you can find a collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to give a look around and take what you want/need.
 
-You may also want to checkout the Projects page for more.
+You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) for more.
 
-### For developers
+<br>
 
 - Cheat sheets
     - [Git](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
@@ -50,62 +50,4 @@ You may also want to checkout the Projects page for more.
 
 (*) Mantained by me. Please, tell me about your suggestions or any bug you spot.
 
-### For users
-
-- [Short Macports guide](https://www.evernote.com/l/AENoTAGBFR5Es5YT7y-wdlkXitg40gvEQD8) (*)
-- [Download an entire website](https://gist.github.com/pirafrank/181360a3754abe79a5c8): Short script. It uses wget. (*)
-- [Copy URL Bookmarklet](https://gist.github.com/pirafrank/5a4f6f56f3cf931ddf6b): on Safari copying the URL from the address bar can be tricky. This lets you quickly copy it with 1 click and a CMD+C.
-- IFTTT
-    - [Microsoft's channel](https://ifttt.com/p/microsoft/shared)
-    - [Public shared recipes](https://ifttt.com/myrecipes/shared): I hope you find them useful!
-    - [Favorites](https://ifttt.com/p/pirafrank/favorites): Recipes I liked now and then
-- Workflows for Alfred (OS X app).
-    - [Packal](http://www.packal.org): A free marketplace for workflows and themes
-    - [Evernote](http://www.alfredforum.com/topic/840-evernote-791-search-create-append-text-preview-reminders-and-more-all-within-alfred) by Carlos A. Sztoltz
-    - Workflows I've developed are part of the [OS X utils](https://github.com/pirafrank/OSX_utils) project.
-
-(*) Mantained by me. Please, tell me about your suggestions or any bug you spot.
-
-### My toolbelt
-
-**Development**
-
-- OS X 10.10 with latest updates
-- Sublime Text 3 + some useful packages
-- Terminal (sometimes iTerm2)
-- Macports
-- Git 2
-- Sourcetree
-- Kaleidoscope
-- Python 2.7.x and 3.4.x + pip + virtualenv
-- Django
-- Flask
-- rvm + Ruby + Bundler + Rails
-- nvm + npm + node.js
-- Electron
-- bower
-- Apache + MySQL + virtualhost
-- Postgres.app
-- Dash (docs and snippets)
-- Datum (check SQLite dbs in a snap)
-- Bitbucket
-- Github
-- Heroku toolbelt
-- golang
-- ForkLift and rsync
-
-**Other useful apps and services**
-
-- Evernote (actually my second brain)
-- Alfred + [my workflows](https://github.com/pirafrank/OSX_utils)
-- Parallels + Linux and Windows VMs
-- Flux (my eyes savior!)
-- Calendar
-- Mail
-- GPG Suite
-- VeraCrypt
-- Tunnelblick
-- MEGAsync
-- IFTTT
-- Tens of free custom fonts
-- Photoshop + Cooler + Sketch
+You may also want to check [my toolbelt]({{ site.baseurl }}/resources/my-toolbelt/)

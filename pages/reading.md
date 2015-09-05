@@ -8,26 +8,18 @@ custom_css: reading
 
 #### Social
 
-[**Goodreads**](https://www.goodreads.com/user/show/{{ site.social-links.goodreads }})
+[Goodreads](https://www.goodreads.com/user/show/{{ site.social-links.goodreads }})
 
-[**Medium**](https://medium.com/@{{ site.social-links.medium }})
+[Medium](https://medium.com/@{{ site.social-links.medium }})
 
-[**Medium articles I liked**](https://medium.com/@{{ site.social-links.medium }}/has-recommended) ([RSS](https://medium.com/feed/@{{ site.social-links.medium }}/has-recommended))
-
-#### Books I've read and I recommend
-
-(Programming books excluded)
-
----
-
-**Zero to One** *by Peter Thiel*
-
-**Treasure Island** *by Robert Louis Stevenson*
+[Medium -  Articles I liked](https://medium.com/@{{ site.social-links.medium }}/has-recommended) ([RSS](https://medium.com/feed/@{{ site.social-links.medium }}/has-recommended))
 
 <br>
 
-#### Books I'd like to read
+#### Books
 
----
+[Read](https://www.goodreads.com/review/list/29447794-frank?shelf=read)
 
+[Reading](https://www.goodreads.com/review/list/29447794-frank?shelf=currently-reading)
 
+[To read](https://www.goodreads.com/review/list/29447794-frank?shelf=to-read)

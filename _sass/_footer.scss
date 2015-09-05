@@ -12,10 +12,11 @@
 
 .footer-links {
   margin-bottom: 2em;
+  padding-left: 30px;
   font-size: 14px;
   line-height: 1.4;
   color: $gray;
-  text-align: center;
+  text-align: left;
 
   @include mobile {
     font-size: 16px;
@@ -40,6 +41,10 @@
     @include mobile {
       line-height: 2em;
     }
+  }
+
+  li {
+    list-style: none;
   }
 }
 

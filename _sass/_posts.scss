@@ -47,7 +47,7 @@
     margin-bottom: 0.4em;
 
     h2 {
-      font-size: 26px;
+      font-size: 32px;
       font-weight: bold;
       font-family: $defaultSerif;
       letter-spacing: -0.05em;
@@ -125,7 +125,9 @@
       }
 
       &:hover, &:active {
-        color: $blue;
+        color: $white;
+        background-color: $darkBlue;
+        border: 1px solid $darkBlue;
         text-decoration: none;
       }
   }

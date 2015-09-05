@@ -8,7 +8,7 @@ custom_css: books
 
 #### Books I've read and I recommend
 
-Programming books not included.
+(Programming books excluded)
 
 ---
 

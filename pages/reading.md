@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Books
-permalink: /books/
+title: Reading
+permalink: /reading/
 show_title: true
-custom_css: books
+custom_css: reading
 ---
 
 #### Social

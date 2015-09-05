@@ -7,7 +7,7 @@ ul {
     margin-bottom: 80px;
 }
 
-ul > li {
+ul > a {
     display: inline-block;
     width: 280px;
     height: 5em;
@@ -20,10 +20,10 @@ ul > li {
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    a {
+    li {
+        list-style: none;
         font-size: 24px;
         font-weight: 300;
-        //padding: 30px;
         color: $darkBlue;
         width: 220px; // 100%;
     }
@@ -34,7 +34,7 @@ ul > li {
         color: $white;
         text-decoration: none;
 
-        a {
+        li {
             color: inherit;
             text-decoration: inherit;
         }

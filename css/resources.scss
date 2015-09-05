@@ -9,10 +9,10 @@ ul {
 
 ul > li {
     display: inline-block;
-    //margin-top: 40px;
-    //margin-bottom: 40px;
     width: 280px;
-    //height: 100px; // just added
+    height: 5em;
+    margin-bottom: 30px;
+    margin-left: 20px;
     padding: 20px;
     border: 2px solid $lightGray;
     background-color: transparent;
@@ -43,6 +43,7 @@ ul > li {
     @include mobile {
         display: block;
         width: 220px;
+        height: 4em;
         display: table; // center divs in mobile view (IE8 compatible)
         text-align: center;
         margin: 0.5em auto; // center divs in mobile view (IE8 compatible)

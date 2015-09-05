@@ -125,7 +125,9 @@
       }
 
       &:hover, &:active {
-        color: $blue;
+        color: $white;
+        background-color: $darkBlue;
+        border: 1px solid $darkBlue;
         text-decoration: none;
       }
   }

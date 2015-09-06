@@ -43,10 +43,11 @@
   }
 
   .post-title { // edit appearance of post title
+    padding-top: 2em;
     margin-bottom: 0.4em;
 
     h2 {
-      font-size: 26px;
+      font-size: 32px;
       font-weight: bold;
       font-family: $defaultSerif;
       letter-spacing: -0.05em;
@@ -71,17 +72,19 @@
 
   .post-details { // edit appearance of post details (date, category, ecc.)
     i {
-      font-size: 14px;
+      font-size: 15px;
       font-style: normal;
       font-weight: normal;
       color: $gray;
       line-height: 1.0;
+      font-family: $defaultSansSerif;
+
       a {
         color: $darkBlue;
       }
+
       @include mobile {
         font-size: 18px;
-        font-family: $defaultSansSerif;
         line-height: 1.2;
       }
     }
@@ -122,7 +125,9 @@
       }
 
       &:hover, &:active {
-        color: $blue;
+        color: $white;
+        background-color: $darkBlue;
+        border: 1px solid $darkBlue;
         text-decoration: none;
       }
   }

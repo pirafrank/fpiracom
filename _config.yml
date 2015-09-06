@@ -27,14 +27,19 @@ embedsearch: true
 social-links:
   dribbble:
   email: 
+  twitter: pirafrank
   facebook: 
   flickr: pirafrank
   github: pirafrank
   instagram: 
   linkedin: fpira
   pinterest: 
+  tumblr: pirafrank
+  lastfm: pirafrank
+  reddit: pirafrank
+  skype: francesco-pira
+  soundcloud: pirafrank
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: pirafrank
   stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: +FrancescoPiraonline # e.g. https://plus.google.com/+johndoe
@@ -51,6 +56,7 @@ home:
   max_posts: 10 # max number of latest posts to show in home page
   show_excerpt: false # choose whether to show or not excerpt of latest blog posts
   show_pinboard: true # set it to true to enable, false to disable right section in home
+  show_search: true # choose whether to show or not seach bar in home page
 
 # Choose whether to display social links in footer or not
 footersocial: true
@@ -98,3 +104,4 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+    - deploy.sh

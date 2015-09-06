@@ -71,7 +71,7 @@
         {% include svg-icons.html %}
       </div>
     {% endif %}
-    <div class="content navLinks navLinks-alt">
+    <div class="content navLinks">
       <div class="navLinkEntry">
         <a href="{{ site.baseurl }}/blog">BLOG</a>
       </div>
@@ -94,9 +94,11 @@
     <div class="section group">
       <div class="inner-container">
         <div class="col span_7_of_12">
-          <div>
-            {% include searchbox.html %}
-          </div>
+          {% if site.home.show_search %}
+            <div>
+              {% include searchbox.html %}
+            </div>
+          {% endif %}
           <div class="sectionTitle">Latest from blog</div> <!-- news class removed reduce space from search box-->
           {% for post in site.posts limit: site.home.max_posts %}
             <div class="news newsEntry">
@@ -119,6 +121,9 @@
                 {% endif %}
             </div>            
           {% endfor %}
+          <p>
+            <a href="{{ site.baseurl }}/blog/">...older posts</a>
+          </p>
         </div>
         <div class="col span_5_of_12">
           {% if site.home.show_pinboard %}

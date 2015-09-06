@@ -5,7 +5,7 @@ permalink: /my-toolbelt/
 show_title: true
 ---
 
-**Development**
+#### Development
 
 - OS X 10.10 with latest updates
 - Sublime Text 3 + some useful packages
@@ -32,7 +32,7 @@ show_title: true
 - ForkLift and rsync
 - Parallels + Linux and Windows VMs
 
-**Other useful apps and services**
+#### Other useful apps and services
 
 - Evernote (actually my second brain)
 - Alfred + [my workflows](https://github.com/pirafrank/OSX_utils)

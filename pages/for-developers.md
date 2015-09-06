@@ -5,9 +5,7 @@ permalink: /for-developers/
 show_title: true
 ---
 
-Here you can find a collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to give a look around and take what you want/need.
-
-You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) for more.
+Here you can find a collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need.
 
 <br>
 
@@ -50,4 +48,4 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) 
 
 (*) Mantained by me. Please, tell me about your suggestions or any bug you spot.
 
-You may also want to check [my toolbelt]({{ site.baseurl }}/resources/my-toolbelt/)
+You may also want to check [my toolbelt]({{ site.baseurl }}/my-toolbelt)

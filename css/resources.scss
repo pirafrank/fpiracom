@@ -5,6 +5,10 @@
 
 ul {
     margin-bottom: 80px;
+
+    @include mobile {
+        padding: 0px; // remove ul white space on mobile devices
+    }
 }
 
 ul > a {

@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Podcasts I'm listening to
+title: Podcasts
 permalink: /podcasts/
 show_title: true
 ---
+
+#### I'm listening to
 
 [The Entrepreneur’s Guide to Finding Your First Customers](https://itunes.apple.com/us/podcast/entrepreneurs-guide-to-finding/id872932172?mt=2)
 
@@ -11,8 +13,6 @@ show_title: true
 
 [5 Minutes of JavaScript](https://itunes.apple.com/us/podcast/5-minutes-of-javascript/id775261328?mt=2)
 
-<br>
-
-#### More
+#### More media
 
 [YouTube featured channels](https://www.youtube.com/user/pirafrank/channels?flow=list&view=60)

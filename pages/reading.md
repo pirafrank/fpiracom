@@ -8,7 +8,7 @@ custom_css: reading
 
 #### Social
 
-[Goodreads](https://www.goodreads.com/user/show/{{ site.social-links.goodreads }})
+[Goodreads](https://www.goodreads.com/{{ site.social-links.goodreads }})
 
 [Medium](https://medium.com/@{{ site.social-links.medium }})
 

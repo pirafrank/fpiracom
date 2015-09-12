@@ -19,7 +19,8 @@ SERVER="clara.fpira.com"
 
 if [[ $# != 1 ]]; then
     echo "Error: wrong number of arguments"
-    echo "use 's' to deploy to stable, use 't' to deploy to test."
+    echo "Usage: ./deploy.sh <option>"
+    echo "Options: 's' to deploy to stable, use 't' to deploy to test."
     exit -1
 fi
 
@@ -31,6 +32,10 @@ if [ $1 == "s" ]; then
     REMOTE_PATH="/var/www/fpira.com"
 elif [ $1 == "t" ]; then
     REMOTE_PATH="/var/www/test.fpira.com"
+else
+    echo "Invalid option!"
+    echo "Usage: ./deploy.sh <option>"
+    echo "Options: 's' to deploy to stable, use 't' to deploy to test."
 fi
 
 echo "Cleaning up..."

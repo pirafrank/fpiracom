@@ -5,12 +5,13 @@ permalink: /projects/
 show_title: true
 ---
 
-<!-- trailing slash in permalink is needed -->
-
-Below you can find a list of projects of mine.
+Since I believe in open source, most of my projects are licensed so. Below you can find a list of them.
 
 #### [Jekyll Blue](http://github.com/pirafrank/jekyll-blue)
 All-in-one easy Jekyll solution. Create your static website with blog in a quick and stylish way and deploy it on Github Pages.
+
+#### [electron-dash-docset](https://github.com/pirafrank/electron-dash-docset)
+A repository to generate a Dash docset for the electron (electron.atom.io) documentation.
 
 #### [Google Photos EXIF fixer](https://github.com/pirafrank/Google-Photos-EXIF-fixer)
 Script to fix pictures EXIF metadata before upload them to Google Photos.
@@ -38,8 +39,3 @@ Easy CLI utility to batch download images from flickr.
 
 #### This website
 It's based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue).
-
-## Contributions
-
-#### [Hardening One](http://etnaforensics.it/sweetbus/)
-OpenDay about security of GNU/Linux-based desktop OSes and today's edge hardening techniques.

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ site.name }} – {{ site.description }}</title>
+    <title>{{ site.name }}</title>
 
     {% include meta.html %}
 
@@ -17,6 +17,8 @@
   </head>
 
   <body>
+
+  {% include noscript.html %}
 
   <div class="wrapper-masthead">
     <div class="container">
@@ -45,13 +47,9 @@
                     <br>
                     Co-Founder &amp; CEO Fileshute
                     <br>
-                    <a href="http://eestec.net">EESTEC International</a> IT Team Coordinator
-                    <br>
-                    Chairman of Youth Engineering Lab
+                    Board Assistant of <a href="http://www.youthub.net">Youth Hub Catania</a>
                     <br>
                     Contact Person at <a href="http://twitter.com/eestec_catania">EESTEC JLC Catania</a>
-                    <br>
-                    Board Assistant of <a href="http://www.youthub.net">Youth Hub Catania</a>
                     <br>
                     Member of Google Developer Group - Catania
                   <br>
@@ -85,7 +83,7 @@
         <a href="{{ site.baseurl }}/about">ABOUT</a>
       </div>
       <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/contact">CONTACT</a>
+        <a href="{{ site.baseurl }}/contacts">CONTACTS</a>
       </div>
     </div>
   </div>
@@ -127,21 +125,20 @@
         </div>
         <div class="col span_5_of_12">
           {% if site.home.show_pinboard %}
-            <div class="sectionTitle">For Developers</div>
+            <div class="sectionTitle">Bookmarks</div>
             <div class="resEntry">
-              <h4>Useful snippets</h4>
               <p>
-                Snippet 1<br>
-                Snippet 2
+                <a href="{{ site.baseurl }}/resources">Resources for Developers</a><br>
+                <a href="http://tumblr.fpira.com">Tumblr blog</a>
               </p>
-              <br>
-              <h4>Useful links</h4>
               <p>
-                <a href="#">My Important Link</a><br>
-                <a href="#">Another Important Link</a><br>
-                <a href="#">Dummy pinned link</a><br>
-                <a href="#">Check this bla bla resource, too</a><br>
+                <a href="http://asciinema.org">Asciinema</a><br>
+                <a href="https://github.com/facebook/PathPicker">PathPicker</a>
               </p>
+            </div>
+            <div class="resEntry">
+              <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Replace Just 2 Words In The NY Times Amazon Article and Something Amazing Happens | <a href="http://t.co/1vEe3RmmwH">http://t.co/1vEe3RmmwH</a> <a href="http://t.co/Kz3DwpIXAG">http://t.co/Kz3DwpIXAG</a></p>&mdash; Francesco Pira (@pirafrank) <a href="https://twitter.com/pirafrank/status/634635389022674944">August 21, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Why oil prices could sink to $15 a barrel&#10;&#10;<a href="http://t.co/sfJH4sl9Fw">http://t.co/sfJH4sl9Fw</a></p>&mdash; Francesco Pira (@pirafrank) <a href="https://twitter.com/pirafrank/status/633890852633473025">August 19, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           {% endif %}
         </div>

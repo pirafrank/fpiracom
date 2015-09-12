@@ -18,10 +18,17 @@
     }
 }
 
-.projects {
+.aboutText {
+    h3 {
+        color: $gray;
+    }
     h4 {
         line-height: 1;
         margin: 0px;
         padding: 0px;
     }
+    li {
+        padding-top: 1em;
+    }
 }
+

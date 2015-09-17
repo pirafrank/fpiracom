@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/pirafrank
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://fpira.com
+  * I am pirafrank (https://keybase.io/pirafrank) on keybase.
+  * I have a public key with fingerprint 8CE5 6166 AD46 3442 9E3A  CF7C 03F3 1E01 C9DC 0E67
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.8.18"
+        },
+        "key": {
+            "eldest_kid": "0101e9d6eaa17afa9b259194f5460673d50eed33c0d1ca909ded061844b1d8e8473e0a",
+            "fingerprint": "8ce56166ad4634429e3acf7c03f31e01c9dc0e67",
+            "host": "keybase.io",
+            "key_id": "03f31e01c9dc0e67",
+            "kid": "0101e9d6eaa17afa9b259194f5460673d50eed33c0d1ca909ded061844b1d8e8473e0a",
+            "uid": "56466164b11626478da49d98c9277619",
+            "username": "pirafrank"
+        },
+        "service": {
+            "hostname": "fpira.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1442525955,
+    "expire_in": 157680000,
+    "prev": "29fed8b11e89ae29ca14d06c661882d660312d28882e8d962b424066cbe79cf3",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkn1QFGUcxzkuKu5IZAqIi7s5FtDBYW727fZ2oRqHAVOHaxwoUguP3X2eu9uA
+3eNueb1wZIRRm1J0xJDABi2FP7wx4mTIQRywCSWUXpRR0lAYEsgQqJwBynYN/2j6
+t+ev5+Xz+z7f7+956p/Thug02gWT5tKPq1yawSku5M0lQutHOAlUIml+hC8SoCir
+M5EthkgaUggrOdYHLYJkFiUALe/6zCtMKlIGvT5BEhUKtdAWjEaqU1VerYZFAPpk
+R6EA1FMMxSADKMiymI11sgyHWxmMIZ1WkkIpGwGsKISAIHgUYDzLoAyAAKUwmiQ5
+DNCQJm0ERFnlQqcguqDX4xVUiwjNQyuFURQLSIogSZyBBMs7bTxKOAkMohjPAB6F
+lE0pdEs++V9hkMdOHf/Y+y//P/sufSxnpUhK8ascYhROkTYasCQDGJpncJuNwhgV
+9EHvSuM9gpd1elmxUO2qsl0m8FDtrBplBXGqjIWXipVKj1eSJV4qUrbdsuzxpall
+cqVH5coh51hRcHCCCJQuPnm9I+rzYQrKy4KqiSl9tCoprdZUBFYo+tAhqITVRtGo
+MtSLYJmiiTNOCGglCqQZFuIMz2KkEp5XEtI0DigKJTAc4LSygDRgKJwjcRKlKJ6D
+NoZ3EogaqkSUkDRC8cm6FEmf4BJZudQLkep9ofFPhWh0IU+Hhar/M0QXvvrJp51e
+jPzT1K5pOEbfeF0u0NdipXUlH0xUBebXo6Wmlkefrs+7LQ2Zd9nb8+3urvTDB+6m
+zBw1R3f9MrlUGLNz1/LAKnzbjo5tde83jQ9uKY0M9M6+eL3q+MBSwNnT+mzOadHz
+TufV4FyUMd34tdMw0mq8krjJVB/bPODXBclhfdaGOnlQe+aOPjQ0s5Xe7JiYP36q
+Pi/y2IPuk5ayy/Rk7mZj35R7ciEYkcjNDe+PNkQ1nTt0pTfv5avFCVbXeUPuodvd
+X7yd8P3EN7fCF/cezr3v92S5O2uW1mVnN/wasXiJ/zYZEDcMz+temIhOmnSIr543
+NL82698fp6m5aVrdlTCdM9oYnDN/UlTNaD9uA213cvr0+fGx92fitwRbfMsjHRlY
+5qaHrtmO0T4krWZoX0R9zPbrd+siKZMxNY67hr4yF5uR8kd/Y25P/+7p/hPgwkgg
+s8Uev7H3p+0zD0wpR5orbg3pzW2er35fmzlmM/12qvNes33vwb8+CxxtGDu7MPpG
+eWawZGP6mvaZyoIzMr/1snbDva7vQrOm9FRrhGH89JdxFy6m+wdOhqUmd3+0pyld
+l/zwcz7J0GdszB63ZMScDdQOz/bmc+FjeR/+XPBS2FQSfm13RpQ+w/TeD6Y9VQfC
+TpRr3/KMrk2c2Xmz9tH8OnSHu0dzrt6+9ZnZNXkV88naRPJisLl6+W8=
+=ve3h
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pirafrank
+
+==================================================================

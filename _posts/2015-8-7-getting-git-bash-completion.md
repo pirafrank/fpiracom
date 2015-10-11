@@ -17,7 +17,10 @@ wget -O ~/.git-completion.bash https://raw.githubusercontent.com/git/git/v0.0.0/
 Now you need to load it by default in your bash. Add the line below to ```~/.bashrc``` on Linux, to ```~/.bash_profile``` on OS X:
 
 ```sh
-source "$HOME/.git-completion.bash"
+# adding git completion
+if [ -f ~/.git-completion.bash ]; then
+. ~/.git-completion.bash
+fi
 ```
 
 Then do:

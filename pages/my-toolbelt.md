@@ -31,12 +31,15 @@ show_title: true
 - golang
 - ForkLift and rsync
 - Parallels + Linux and Windows VMs
+- Docker
+- Vagrant
 
 #### Other useful apps and services
 
-- Evernote (actually my second brain)
 - Alfred + [my workflows](https://github.com/pirafrank/OSX_utils)
-- Flux (my eyes savior!)
+- Evernote (actually my second brain)
+- Wunderlist
+- Trello
 - Calendar
 - Mail
 - GPG Suite
@@ -44,5 +47,6 @@ show_title: true
 - Tunnelblick
 - MEGAsync
 - IFTTT
+- Flux (my eyes savior!)
 - Tens of free custom fonts
 - Photoshop + Cooler + Sketch

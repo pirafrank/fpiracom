@@ -5,7 +5,7 @@ permalink: /projects/
 show_title: true
 ---
 
-Since I believe in open source, most of my projects are licensed so. Below you can find a list of them.
+Below you can find a list of some projects of mine. They're open-source and available on [Github](http://github.com/{{ site.social-links.github }}). I hope you'll find something useful. Feel free to fork any of them.
 
 #### [Jekyll Blue](http://github.com/pirafrank/jekyll-blue)
 All-in-one easy Jekyll solution. Create your static website with blog in a quick and stylish way and deploy it on Github Pages.

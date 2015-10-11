@@ -56,15 +56,6 @@
 
 .share-corner {
   bottom: 2%;
-  right: 6%;
-
-  @include mobile {
-    right: 16%;
-  }
-}
-
-.back-to-top {
-  bottom: 2%;
   right: 2%;
 
   @include mobile {

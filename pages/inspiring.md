@@ -5,7 +5,7 @@ permalink: /inspiring/
 show_title: true
 ---
 
-A collection of talks <!--and articles -->that inspired me.
+A collection of talks that inspired me.
 
 #### Talks
 

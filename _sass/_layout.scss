@@ -142,6 +142,20 @@
 
 }
 
+.searchIcon {
+  float: right;
+  padding-left: 1em;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
 .social {
   text-align: center;
   @include mobile {

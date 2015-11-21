@@ -98,6 +98,9 @@
               {% include searchbox.html %}
             </div>
           {% endif %}
+          <div class="sectionOtherBlogs desktop-hidden smallscreen-hidden"><a href="http://medium.com/@{{ site.social-links.medium}}">Read Medium posts</a></div> 
+          <div class="sectionOtherBlogs desktop-hidden smallscreen-hidden"><a href="http://tumblr.fpira.com">Visit tumblr</a></div>
+          <br>
           <div class="sectionTitle">Latest from blog</div> <!-- news class removed reduce space from search box-->
           {% for post in site.posts limit: site.home.max_posts %}
             <div class="news newsEntry">
@@ -126,15 +129,17 @@
         </div>
         <div class="col span_5_of_12">
           {% if site.home.show_pinboard %}
-            <div class="sectionTitle">Bookmarks</div>
+            <div class="sectionOtherBlogs mobile-hidden"><a href="http://medium.com/@{{ site.social-links.medium}}">Read Medium posts</a></div> 
+            <div class="sectionOtherBlogs mobile-hidden"><a href="http://tumblr.fpira.com">Visit tumblr</a></div>
+            <br>
+            <div class="sectionTitle">Quick Links</div>            
             <div class="resEntry">
               <p>
+                <!-- <a href="{{ site.social-links.medium }}">Medium Posts</a><br> -->
+                <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Medium Recommendations</a><br>
+                <!-- <a href="http://tumblr.fpira.com">Tumblr Blog</a><br> -->
                 <a href="{{ site.baseurl }}/for-developers">Resources for Developers</a><br>
-                <a href="http://tumblr.fpira.com">Tumblr blog</a>
-              </p>
-              <p>
-                <a href="http://asciinema.org">Asciinema</a><br>
-                <a href="https://github.com/facebook/PathPicker">PathPicker</a>
+                <a href="{{ site.baseurl }}/for-users/">Power-User Corner</a>
               </p>
             </div>
             <div class="resEntry">

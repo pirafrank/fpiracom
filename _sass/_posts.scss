@@ -158,6 +158,23 @@
 // CSS for /blog and /by-category pages
 //
 
+.other-blogging {
+  margin-top: 3em;
+  text-align: right;
+  
+  h5 {
+    a {
+      line-height: 0.1;
+      font-size: 16px;
+    }
+  }
+
+  @include mobile {
+    margin-top: 0em;
+    text-align: center;
+  }
+}
+
 .post-entry {
   padding: 0em 0em 1.4em;
   margin-left: 1em;

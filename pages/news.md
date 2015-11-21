@@ -15,11 +15,11 @@ News sources I usually read daily.
 
 [Telegraph.co.uk](http://www.telegraph.co.uk/)
 
-[Al Jazeera (ENG)](http://www.aljazeera.com/default.html)
+[Al Jazeera (ENG)](http://www.aljazeera.com)
 
 #### Entrepreneurship
 
-[Inc.com](http://www.inc.com/rss.xml)
+[Inc.com](http://www.inc.com/)
 
 [Fast Company](http://www.fastcompany.com/)
 
@@ -29,15 +29,15 @@ News sources I usually read daily.
 
 #### Design
 
-[InVision Blog](http://blog.invisionapp.com/feed/)
+[InVision Blog](http://blog.invisionapp.com/)
 
 #### Development
 
-[Creative Bloq Web Design](http://www.creativebloq.com/feed/web-design)
+[Creative Bloq Web Design](http://www.creativebloq.com/web-design)
 
 [Planet NodeJS](http://planetnodejs.com/)
 
-[React Native](http://blog.reactnative.com/rss/)
+[React Native](http://blog.reactnative.com/)
 
 [Planet Python](http://planetpython.org/)
 
@@ -53,8 +53,8 @@ News sources I usually read daily.
 
 #### Security
 
-[Schneier On Security](http://www.schneier.com/blog/index.rdf)
+[Schneier On Security](http://www.schneier.com/blog/)
 
-[Google Project Zero](http://googleprojectzero.blogspot.com/feeds/posts/default)
+[Google Project Zero](http://googleprojectzero.blogspot.com)
 
 [Naked Security](https://nakedsecurity.sophos.com/)

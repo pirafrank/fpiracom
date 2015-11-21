@@ -42,6 +42,10 @@ Quotes worth sharing. <br><br>
 
 *"Know your values. Build your legacy."* <br> Lila Ibrahim
 
+*"Those who cannot remember the past are condemned to repeat it."* <br> George Santayana
+
+*"No man will make a great leader who wants to do it all himself or get all the credit for doing it."* <br> Andrew Carnegie
+
 *"Know thyself and seek out those who are in a position to help you grow."* <br> Mary Lou Russell
 
 *"A person who never made a mistake never tried anything new."* <br> Albert Einstein

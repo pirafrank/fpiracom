@@ -10,7 +10,6 @@
 .other-blogging {
   margin-top: 3em;
   margin-left: 1em;
-  //text-align: right;
   
   h5 {
     a {
@@ -21,6 +20,7 @@
 
   @include mobile {
     margin-top: 0em;
+    margin-left: 0em;
     text-align: center;
   }
 }

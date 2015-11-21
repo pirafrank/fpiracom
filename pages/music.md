@@ -11,10 +11,6 @@ Music content I like to share.
 
 A humble music blog. New releases and good old hits. Songs I've discovered on the go and others I've always loved.
 
-### [Last.fm](http://lastfm.fpira.com)
-
-My profile. Some scrobbles and some of the music I like.
-
 ### Spotify playlists
 
 #### Publicly shared
@@ -42,3 +38,4 @@ My profile. Some scrobbles and some of the music I like.
 [Nomad's place](https://play.google.com/music/playlist/AMaBXyldO1Guu-_s2FwSNwkFvMJ3WqFnxBzQR2QntZwKnzM7cshmHojan4wMATme734VShvbuqT7pocDq3qlZPXf0eyPvX-GKw==) / Songs I've discovered on the go and songs I like
 
 [MuseMusic](https://play.google.com/music/playlist/AMaBXykZHzNEIp8yL9hHHDobgi3DRQKyfLlwU-GGGLhZXxK2fq3zkxYSATmsRb8gttSJMLGEpgxiFA8OjfHuW_pky4S53r747Q==) / Great music Muse's hits
+

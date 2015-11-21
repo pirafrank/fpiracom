@@ -20,9 +20,9 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) 
 
 #### IFTTT
 
+- [Recipes I share](https://ifttt.com/myrecipes/shared): I hope you find them useful!
+- [My favorites](https://ifttt.com/p/pirafrank/favorites): Recipes I liked now and then
 - [Microsoft's channel](https://ifttt.com/p/microsoft/shared)
-- [Public shared recipes](https://ifttt.com/myrecipes/shared): I hope you find them useful!
-- [Favorites](https://ifttt.com/p/pirafrank/favorites): Recipes I liked now and then
 
 #### Alfred Workflows (OS X app).
 

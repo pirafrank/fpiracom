@@ -98,9 +98,12 @@
               {% include searchbox.html %}
             </div>
           {% endif %}
-          <div class="sectionOtherBlogs desktop-hidden smallscreen-hidden"><span class="spanIcons"><img src="/assets/icons/medium.png"></span><a href="http://medium.com/@{{ site.social-links.medium}}">Medium posts</a></div> 
-          <div class="sectionOtherBlogs desktop-hidden smallscreen-hidden"><span class="spanIcons"><img src="/assets/icons/tumblr.png"></span><a href="http://tumblr.fpira.com">Tumblr blog</a></div>
-          <br>
+          <div class="desktop-hidden smallscreen-hidden">
+            <div class="sectionOtherBlogs"><span class="spanIcons"><img src="/assets/icons/medium.png"></span><a href="http://medium.com/@{{ site.social-links.medium}}">Medium posts</a></div> 
+            <br>
+            <div class="sectionOtherBlogs"><span class="spanIcons"><img src="/assets/icons/tumblr.png"></span><a href="http://tumblr.fpira.com">Tumblr blog</a></div>
+            <br><br>
+          </div>
           <div class="sectionTitle">Latest from blog</div> <!-- news class removed reduce space from search box-->
           {% for post in site.posts limit: site.home.max_posts %}
             <div class="news newsEntry">
@@ -129,9 +132,11 @@
         </div>
         <div class="col span_5_of_12">
           {% if site.home.show_pinboard %}
-            <div class="sectionOtherBlogs mobile-hidden"><span class="spanIcons"><img src="/assets/icons/medium.png"></span><a href="http://medium.com/@{{ site.social-links.medium}}">Medium posts</a></div> 
-            <div class="sectionOtherBlogs mobile-hidden"><span class="spanIcons"><img src="/assets/icons/tumblr.png"></span><a href="http://tumblr.fpira.com">Tumblr blog</a></div>
-            <br>
+            <div class="mobile-hidden">
+              <div class="sectionOtherBlogs"><span class="spanIcons"><img src="/assets/icons/medium.png"></span><a href="http://medium.com/@{{ site.social-links.medium}}">Medium posts</a></div>
+              <div class="sectionOtherBlogs"><span class="spanIcons"><img src="/assets/icons/tumblr.png"></span><a href="http://tumblr.fpira.com">Tumblr blog</a></div>
+              <br>
+            </div>
             <div class="sectionTitle">Quick Links</div>            
             <div class="resEntry">
               <p>

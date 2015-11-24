@@ -50,4 +50,4 @@ Here's a list of all my social network profiles and public platforms. Reach me o
 
 [flickr]()
 
-[Instagram]()
+[Instagram](http://instagram.com/{{ site.social-links.instagram }})

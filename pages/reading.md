@@ -22,4 +22,4 @@ custom_css: reading
 
 [Goodreads profile](https://www.goodreads.com/{{ site.social-links.goodreads }})
 
-[Tumblr blog](http://tumblr.fpira.com) ([RSS feeds](http://tumblr.fpira.com/rss))
+[Tumblr blog](http://{{ site.social-links.tumblr }}.tumblr.com) ([RSS feeds](http://{{ site.social-links.tumblr }}.tumblr.com/rss))

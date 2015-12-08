@@ -10,7 +10,7 @@
 
 CURRENT_BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 USER="francesco"
-SERVER="clara.fpira.com"
+SERVER="lisa.fpira.com"
 
 
 #

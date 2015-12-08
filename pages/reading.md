@@ -16,10 +16,10 @@ custom_css: reading
 
 #### Social reading
 
-[Medium](https://medium.com/@{{ site.social-links.medium }}/) ([RSS feeds](https://medium.com/feed/@pirafrank/))
+[Medium](https://medium.com/@{{ site.social-links.medium }}/) ([RSS feeds](https://medium.com/feed/@{{ site.social-links.medium }}/))
 
-[Medium recommendations](https://medium.com/@{{ site.social-links.medium }}/has-recommended) ([RSS feeds](https://medium.com/feed/@pirafrank/has-recommended))
-
-[Tumblr blog](http://tumblr.fpira.com) ([RSS feeds](http://tumblr.fpira.com/rss))
+[Medium recommendations](https://medium.com/@{{ site.social-links.medium }}/has-recommended) ([RSS feeds](https://medium.com/feed/@{{ site.social-links.medium }}/has-recommended))
 
 [Goodreads profile](https://www.goodreads.com/{{ site.social-links.goodreads }})
+
+[Tumblr blog](http://tumblr.fpira.com) ([RSS feeds](http://tumblr.fpira.com/rss))

@@ -203,12 +203,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.sectionOtherBlogs {
-  font-size: 20px;
-  @include mobile {
-    font-size: 24px;
-  }
-}
+//.sectionImportantLinks {
+//  font-size: 20px;
+//  @include mobile {
+//    font-size: 24px;
+//  }
+//}
 
 .sectionTitle {
   font-size: 28px;

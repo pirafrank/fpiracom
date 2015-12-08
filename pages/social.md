@@ -59,6 +59,3 @@ Here's a list of all my social network profiles and public platforms.
             <a href="http://instagram.com/{{ site.social-links.instagram }}">Instagram</a>
         </div>
 </div>
-
-
-

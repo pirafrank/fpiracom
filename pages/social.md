@@ -18,13 +18,17 @@ Here's a list of all my social network profiles and public platforms.
             <br>
             <a href="http://linkedin.com/in/{{ site.social-links.linkedin }}">LinkedIn</a>
             <br>
+            <!--
             <a href="http://facebook.com/{{ site.social-links.facebook }}">facebook</a>
             <br>
+            -->
             <a href="https://www.reddit.com/user/{{ site.social-links.reddit }}">reddit</a>
             <br>
             <a href="https://plus.google.com/{{ site.social-links.googleplus }}">Google+</a>
+            <!--
             <br>
             <a href="http://pinterest.com/{{ site.social-links.pinterest }}">Pinterest</a>
+            -->
         </div>
         <div class="col span_5_of_12">
             <h4>Blogging</h4>

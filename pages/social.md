@@ -6,48 +6,65 @@ show_title: true
 custom_css: social
 ---
 
-Here's a list of all my social network profiles and public platforms. Reach me on your platform of choice!
+<div class="container">
 
-#### Social Networks
+Here's a list of all my social network profiles and public platforms.
+<br>Reach me on your platform of choice!
 
-[twitter](http://twitter.com/{{ site.social-links.twitter }})
+    <div class="section group">
+        <div class="col span_7_of_12">
+            <h4>Social Networks</h4>
 
-[LinkedIn]()
+            <a href="http://twitter.com/{{ site.social-links.twitter }}">twitter</a>
+            <br>
+            <a href="">LinkedIn</a>
+            <br>
+            <a href="">facebook</a>
+            <br>
+            <a href="">reddit</a>
+            <br>
+            <a href="">Google+</a>
+            <br>
+            <a href="">Pinterest</a>
+            <br>
+        </div>
+        <div class="col span_5_of_12">
+            <h4>Blogging</h4>
 
-[facebook]()
+            <a href="http://medium.com/@{{ site.social-links.medium}}">Medium</a>
+            <br>
+            <a href="http://tumblr.fpira.com">tumblr</a>
+            <br>
 
-[reddit]()
+            <h4>Reading</h4>
 
-[Google+]()
+            <a href="">Goodreads</a>
+        </div>
+    </div>
+    <div class="section group">
+        <div class="col span_7_of_12">
+            <h4>For Coders</h4>
 
-[Pinterest]()
+            <a href="http://github.com/{{ site.social-links.github }}">GitHub</a>
+            <br>
+            <a href="">Stackexchange</a>
+            <br>
+            <a href="https://keybase.io/{{ site.social-links.keybase }}">Keybase</a>
+        </div>
+        <div class="col span_5_of_12">
+            <h4>Music</h4>
 
-#### For Programmers
+            <a href="">last.fm</a>
 
-[Github](http://github.com/{{ site.social-links.github }})
+            <a href="">Soundcloud</a>
 
-[Stackexchange]()
+            <h4>Photography</h4>
 
-[Keybase](https://keybase.io/{{ site.social-links.keybase }})
+            <a href="">flickr</a>
 
-#### Blogging
+            <a href="http://instagram.com/{{ site.social-links.instagram }}">Instagram</a>
+        </div>
+</div>
 
-[Medium](http://medium.com/@{{ site.social-links.medium}})
 
-[tumblr](http://tumblr.fpira.com)
 
-#### Reading
-
-[Goodreads]()
-
-#### Music
-
-[last.fm]()
-
-[Soundcloud]()
-
-#### Photography
-
-[flickr]()
-
-[Instagram](http://instagram.com/{{ site.social-links.instagram }})

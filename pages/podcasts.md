@@ -13,6 +13,8 @@ show_title: true
 
 [5 Minutes of JavaScript](https://itunes.apple.com/us/podcast/5-minutes-of-javascript/id775261328?mt=2)
 
+[Ruby5](https://ruby5.codeschool.com/)
+
 #### Video
 
 [This week in startups](http://feeds.feedburner.com/twistvid)

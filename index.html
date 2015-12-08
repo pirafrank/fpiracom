@@ -47,7 +47,7 @@
                     <br>
                     Co-Founder &amp; CEO Fileshute
                     <br>
-                    Member of <a href="http://eestec.net">EESTEC</a>
+                    <a href="http://eestec.net">EESTEC International</a> IT Team Coordinator
                     <br>
                     Board Assistant of <a href="http://www.youthub.net">Youth Hub Catania</a>
                     <br>
@@ -94,10 +94,23 @@
       <div class="inner-container">
         <div id="home" class="col span_7_of_12">
           {% if site.home.show_search %}
-            <div>
+            <div class="desktop-hidden smallscreen-hidden">
               {% include searchbox.html %}
             </div>
           {% endif %}
+          <div class="desktop-hidden smallscreen-hidden">
+            <div class="sectionTitle">Quick Links</div>            
+            <div class="resEntry">
+              <p>
+                <!-- <a href="{{ site.social-links.medium }}">Medium Posts</a><br> -->
+                <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Recommended on Medium</a><br>
+                <!-- <a href="http://tumblr.fpira.com">Tumblr Blog</a><br> -->
+                <a href="{{ site.baseurl }}/for-developers">Resources for Developers</a><br>
+                <a href="{{ site.baseurl }}/for-users/">Power-User Corner</a>
+              </p>
+            </div>
+            <br>
+          </div>
           <div class="sectionTitle">Latest from blog</div> <!-- news class removed reduce space from search box-->
           {% for post in site.posts limit: site.home.max_posts %}
             <div class="news newsEntry">
@@ -126,16 +139,15 @@
         </div>
         <div class="col span_5_of_12">
           {% if site.home.show_pinboard %}
-            <div class="sectionTitle">Bookmarks</div>
-            <div class="resEntry">
-              <p>
-                <a href="{{ site.baseurl }}/for-developers">Resources for Developers</a><br>
-                <a href="http://tumblr.fpira.com">Tumblr blog</a>
-              </p>
-              <p>
-                <a href="http://asciinema.org">Asciinema</a><br>
-                <a href="https://github.com/facebook/PathPicker">PathPicker</a>
-              </p>
+            <div class="mobile-hidden">
+              <div class="sectionTitle">Quick Links</div>            
+              <div class="resEntry">
+                <p>
+                  <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Recommended on Medium</a><br>
+                  <a href="{{ site.baseurl }}/for-developers">Resources for Developers</a><br>
+                  <a href="{{ site.baseurl }}/for-users/">Power-User Corner</a>
+                </p>
+              </div>
             </div>
             <div class="resEntry">
               <a class="twitter-timeline" href="https://twitter.com/pirafrank" data-widget-id="653244673704767488">Tweets by @pirafrank</a>

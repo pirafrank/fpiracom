@@ -1,0 +1,18 @@
+---
+---
+
+@import "variables";
+
+.search-container {
+    //position: absolute;
+    //left: 50%;
+    //float: left;
+    padding-top: 30px;
+    
+    text-align: center; // makes the input form centered
+    p, form { display:inline-block } // makes the input form centered
+
+    @include mobile {
+        left: 15%;
+    }
+}

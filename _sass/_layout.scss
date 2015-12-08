@@ -142,11 +142,35 @@
 
 }
 
+.searchIcon {
+  float: right;
+  padding-left: 1em;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+}
+
 .social {
   text-align: center;
   @include mobile {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+.spanIcons {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 15px;
+
+  img {
+    width: 24px; 
+    height: 24px;
+    display: inline-block; /* not supported by IE7 */
+    border-radius: 5px;
   }
 }
 

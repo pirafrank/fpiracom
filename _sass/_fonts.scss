@@ -25,8 +25,19 @@
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  src: local('Merriweather'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4EInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4EBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  src: local('Merriweather'), url(/fonts/merriweather_normal_400.ttf) format('truetype'), url(/fonts/merriweather_normal_400.woff) format('woff'), url(/fonts/merriweather_normal_400.woff2) format('woff2');
 }
 
 /* latin */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(fonts/lato_light_300.ttf) format('truetype'), url(fonts/lato_light_300.woff) format('woff'), url(fonts/lato_light_300.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/lato_normal_400.ttf) format('truetype'), url(fonts/lato_normal_400.woff) format('woff'), url(fonts/lato_normal_400.woff2) format('woff2');
+}

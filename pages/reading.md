@@ -16,4 +16,10 @@ custom_css: reading
 
 #### Social reading
 
-[My Goodreads profile](https://www.goodreads.com/{{ site.social-links.goodreads }})
+[Medium](https://medium.com/@{{ site.social-links.medium }}/) ([RSS feeds](https://medium.com/feed/@{{ site.social-links.medium }}/))
+
+[Medium recommendations](https://medium.com/@{{ site.social-links.medium }}/has-recommended) ([RSS feeds](https://medium.com/feed/@{{ site.social-links.medium }}/has-recommended))
+
+[Goodreads profile](https://www.goodreads.com/{{ site.social-links.goodreads }})
+
+[Tumblr blog](http://{{ site.social-links.tumblr }}.tumblr.com) ([RSS feeds](http://{{ site.social-links.tumblr }}.tumblr.com/rss))

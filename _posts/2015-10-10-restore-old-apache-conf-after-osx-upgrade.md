@@ -21,3 +21,5 @@ It will take about 2 minutes.
 6. tested php to be working with a simple php.info file
 
 7. tested phpmyadmin and mysql to be working by logging into phpmyadmin (mysql needs to be stared from its panel in System Preferences)
+
+Thanks for reading.

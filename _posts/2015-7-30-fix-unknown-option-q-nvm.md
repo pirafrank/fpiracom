@@ -15,3 +15,5 @@ It turned out it was not related to nvm, but more to my bash settings. A dummy a
 You simply need to remove all ```sha1``` aliases.
 
 Check [this issue](https://github.com/creationix/nvm/issues/536) on github to know more.
+
+Thanks for reading.

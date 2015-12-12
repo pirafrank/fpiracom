@@ -75,7 +75,7 @@
         <a href="{{ site.baseurl }}/blog">BLOG</a>
       </div>
       <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/resources">RESOURCES</a>
+        <a href="{{ site.baseurl }}/resources">GOODIES</a>
       </div>
       <div class="navLinkEntry">
         <a href="{{ site.baseurl }}/projects">PROJECTS</a>
@@ -98,19 +98,11 @@
               {% include searchbox.html %}
             </div>
           {% endif %}
-          <div class="desktop-hidden smallscreen-hidden">
-            <div class="sectionTitle">Quick Links</div>            
-            <div class="resEntry">
-              <p>
-                <!-- <a href="{{ site.social-links.medium }}">Medium Posts</a><br> -->
-                <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Recommended on Medium</a><br>
-                <!-- <a href="http://tumblr.fpira.com">Tumblr Blog</a><br> -->
-                <a href="{{ site.baseurl }}/for-developers">Resources for Developers</a><br>
-                <a href="{{ site.baseurl }}/for-users/">Power-User Corner</a>
-              </p>
+          {% if site.home.show_pinboard %}
+            <div class="desktop-hidden smallscreen-hidden">
+              {% include pinboard.html %}
             </div>
-            <br>
-          </div>
+          {% endif %}
           <div class="sectionTitle">Latest from blog</div> <!-- news class removed reduce space from search box-->
           {% for post in site.posts limit: site.home.max_posts %}
             <div class="news newsEntry">
@@ -140,15 +132,10 @@
         <div class="col span_5_of_12">
           {% if site.home.show_pinboard %}
             <div class="mobile-hidden">
-              <div class="sectionTitle">Quick Links</div>            
-              <div class="resEntry">
-                <p>
-                  <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Recommended on Medium</a><br>
-                  <a href="{{ site.baseurl }}/for-developers">Resources for Developers</a><br>
-                  <a href="{{ site.baseurl }}/for-users/">Power-User Corner</a>
-                </p>
-              </div>
+              {% include pinboard.html %}
             </div>
+          {% endif %}
+          {% if site.home.show_twitter_feed %}
             <div class="resEntry">
               <a class="twitter-timeline" href="https://twitter.com/pirafrank" data-widget-id="653244673704767488">Tweets by @pirafrank</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

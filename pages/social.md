@@ -32,7 +32,9 @@ Here's a list of all my social network profiles and public platforms.
         </div>
         <div class="col span_5_of_12">
             <h4>Blogging</h4>
-            <a href="http://medium.com/@{{ site.social-links.medium}}">Medium</a>
+            <a href="http://getpocket.com/@{{ site.social-links.pocket }}">Pocket</a>
+            <br>
+            <a href="http://medium.com/@{{ site.social-links.medium }}">Medium</a>
             <br>
             <a href="http://{{ site.social-links.tumblr }}.tumblr.com">tumblr</a>
 
@@ -50,13 +52,15 @@ Here's a list of all my social network profiles and public platforms.
             <br>
             -->
             <a href="https://keybase.io/{{ site.social-links.keybase }}">Keybase</a>
-        </div>
-        <div class="col span_5_of_12">
-            <h4>Music</h4>
-            <a href="http://www.last.fm/user/{{ site.social-links.lastfm }}">last.fm</a>
+
+            <h4>Music and Podcasts</h4>
+            <a href="http://soundtrackofthedays.tumblr.com/">soundtrackofthedays</a>
             <br>
             <a href="https://soundcloud.com/{{ site.social-links.soundcloud }}">Soundcloud</a>
-
+            <br>
+            <a href="http://www.last.fm/user/{{ site.social-links.lastfm }}">last.fm</a>
+        </div>
+        <div class="col span_5_of_12">
             <h4>Photography</h4>
             <a href="http://flickr.com/{{ site.social-links.flickr }}">flickr</a>
             <br>

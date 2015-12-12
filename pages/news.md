@@ -5,7 +5,7 @@ permalink: /news/
 show_title: true
 ---
 
-News sources I usually read daily.
+News sources that build my (virtual) daily newspaper.
 
 #### World News
 
@@ -26,10 +26,6 @@ News sources I usually read daily.
 [Forbes](http://www.forbes.com/entrepreneurs/)
 
 [Venture Beat](http://venturebeat.com/)
-
-#### Design
-
-[InVision Blog](http://blog.invisionapp.com/)
 
 #### Development
 
@@ -58,3 +54,23 @@ News sources I usually read daily.
 [Google Project Zero](http://googleprojectzero.blogspot.com)
 
 [Naked Security](https://nakedsecurity.sophos.com/)
+
+#### Technology
+
+[TechCrunch](http://http://techcrunch.com/)
+
+[Product Hunt](http://www.producthunt.com)
+
+[Hacker News](http://news.ycombinator.com/)
+
+[AnandTech](http://www.anandtech.com)
+
+[Android Central](http://www.androidcentral.com)
+
+[MacRumors](http://macrumors.com)
+
+[Slashdot](http://slashdot.org)
+
+#### Design
+
+[InVision Blog](http://blog.invisionapp.com/)

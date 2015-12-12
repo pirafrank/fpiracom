@@ -49,3 +49,5 @@ unknown option '-q'
 ```
 
 error, please [check this article]({{ site.baseurl }}/blog/2015/07/fix-unknown-option-q-nvm/) to fix it.
+
+Thanks for reading.

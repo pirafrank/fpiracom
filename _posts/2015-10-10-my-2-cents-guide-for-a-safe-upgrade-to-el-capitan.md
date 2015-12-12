@@ -83,3 +83,5 @@ Go grab some food. It will take awhile to install the new OS. Mine took about 30
 - once you fixed everything, make another time machine backup and take note of it. It will be a useful base for any future restore.
 
 - done!
+
+Thanks for reading.

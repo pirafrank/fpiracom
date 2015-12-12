@@ -17,3 +17,5 @@ Wunderlist is a great productivity tool with nice features. One of them is you c
 Your result should look like this. Of course you can tweak the width and height to better fit yoru needs.
 
 (Put an example into the page!)
+
+Thanks for reading.

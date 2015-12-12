@@ -46,3 +46,5 @@ If you want to, you can read more about this [in the official git doc](https://g
 #### UPDATE
 
 If it is not working for you, you have to set up bash completion. Check it [here]({{ site.baseurl }}/blog/2015/10/getting-bash-completion/).
+
+Thanks for reading.

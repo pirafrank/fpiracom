@@ -14,7 +14,9 @@ custom_css: reading
 
 [I want to read](https://www.goodreads.com/review/list/29447794-frank?shelf=to-read)
 
-#### Social reading
+#### Social
+
+[Pocket](http://getpocket.com/@{{ site.social-links.pocket }})
 
 [Medium](https://medium.com/@{{ site.social-links.medium }}/) ([RSS feeds](https://medium.com/feed/@{{ site.social-links.medium }}/))
 

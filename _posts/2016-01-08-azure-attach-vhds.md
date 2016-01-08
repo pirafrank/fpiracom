@@ -96,7 +96,7 @@ UUID=your-uuid-here      /your/mountpoint ext4   defaults   0 2
 For example:
 
 ```sh
-UUID=22e9bb5e-0178-7sde-a181-40a12e9a7fwa      /media/newhdd ext4   defaults   0 2
+UUID=22e9bb5e-0178-7sde-a181-40a12e9a7fwa   /media/newhdd ext4   defaults   0 2
 ```
 
 Done!

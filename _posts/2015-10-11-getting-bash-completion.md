@@ -46,7 +46,7 @@ if [ -f /opt/local/share/git-core/git-prompt.sh ]; then
 fi
 ```
 
-**Note:** Bash 4.1 or higher is required by bash_completion.sh. If completion doesn't work try echo $BASH_VERSION to see if that's the issue. If so, enter MacPorts bash by typing bash and try git completion again.
+**Note:** Bash 4.1 or higher is required by bash\_completion.sh. If completion doesn't work try ```echo $BASH_VERSION``` to see if that's the issue. If so, enter MacPorts bash by typing bash and try git completion again.
 
 On Linux:
 

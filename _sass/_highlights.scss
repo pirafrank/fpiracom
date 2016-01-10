@@ -10,9 +10,16 @@
   overflow: auto;
 }
 
-code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+/* Code section */
+pre > code {
+  font-family: $defaultCode;
   font-size: 14px;
+}
+
+/* Inline code */
+code {
+  font-family: $defaultCode;
+  font-size: 16px; // this should match font-size in body class in base.scss
 }
 
 .highlight .c { color: #586E75 } /* Comment */

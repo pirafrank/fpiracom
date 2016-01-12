@@ -146,7 +146,7 @@ Reload the page in your browser and it should be working (be sure web caching in
 
 Well done, mate! Now prize yourself with a good coffee!
 
-Thanks for reading.
+---
 
 Sources
 

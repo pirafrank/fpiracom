@@ -20,4 +20,6 @@ It’s clear that Parallels Desktop and VMware Fusion are milestones for virtual
 
 Thanks for reading.
 
+---
+
 *I’m not affiliated in any way to Veertu. I’m just passionate about technology, software and programming.*

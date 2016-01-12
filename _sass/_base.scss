@@ -130,9 +130,9 @@ img {
   color: $black;
   background: $lightGray;
 }
-::selection {
+::selection { // selected text color and background
   color: $black;
-  background: $lightGray;
+  background: #fef8c0;
 }
 
 // Nicolas Gallagher's micro clearfix hack

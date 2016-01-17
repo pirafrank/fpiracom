@@ -1,0 +1,87 @@
+---
+layout: post
+title: Compile and install git-crypt on OS X (for macports users)
+categories: osx
+---
+
+Git-crypt is a nice piece of software, it's great to keep sensible data secure in a repository. Unfortunately the official guides to install it are only for Linux and for Homebrew users. So what if you're a beloved Macports user like me?
+
+#### Install the requirements
+
+Be sure that Xcode and macports installed. Run ```gcc --version``` and ```g++ version``` to be sure you can compile the software.
+
+![Check GCC and G++]({{ site.baseurl }}/assets/postimages/2016-01-18-001.jpg)
+
+Now install ```openssl``` and ```git``` (it is very likely you have them already installed). Actually ```git``` is not needed at compile time but at runtime.
+
+```sh
+$ sudo port install openssl git
+```
+
+Let's get the source
+
+```sh
+$ git clone git@github.com:AGWA/git-crypt.git
+$ cd git-crypt
+```
+
+#### Compile errors
+
+If we compiled it now, ```make``` would fail and you would get ```fatal error: 'openssl/aes.h' file not found```.
+
+![make fails to compile git-crypt]({{ site.baseurl }}/assets/postimages/2016-01-18-002.jpg)
+
+What's up? It turns macports libs are not seen by GCC and G++ by default.
+
+#### Fix!
+
+To fix this, we have to edit ```bash_profile``` file
+
+```sh
+$ nano ~/.bash_profile
+```
+
+and add the lines below:
+
+```sh
+export C_INCLUDE_PATH=/opt/local/include/
+export CPLUS_INCLUDE_PATH=/opt/local/include/
+```
+
+What have we done? We've just told GCC and G++ to look for headers also in macports path.
+
+Reload `.bash_profile` to apply the edits...
+
+```sh
+$ source ~/.bash_profile
+```
+
+...and check the variables to be set.
+
+```sh
+$ env | grep C_INCLUDE_PATH
+$ env | grep CPLUS_INCLUDE_PATH
+```
+
+Now let's try again to compile
+
+```sh
+$ make
+```
+
+It should be run smoothly.
+
+So it's time to install git-crypt. For best practise, it's better to install it in `/usr/local`. To do so run:
+
+```sh
+$ sudo make install PREFIX=/usr/local
+```
+
+Happy encryption!
+
+Thanks for reading.
+
+---
+*Related links*
+
+http://www.network-theory.co.uk/docs/gccintro/gccintro_23.html

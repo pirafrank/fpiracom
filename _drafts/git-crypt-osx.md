@@ -4,11 +4,11 @@ title: Compile and install git-crypt on OS X (for macports users)
 categories: osx
 ---
 
-Git-crypt is a nice piece of software, it's great to keep sensible data secure in a repository. Unfortunately the official guides to install it are only for Linux and for Homebrew users. So what if you're a beloved Macports user like me?
+Git-crypt is a nice piece of software, it's great to keep sensible data secure in a repository. Unfortunately the official guides to install it are only for Linux and for Homebrew users. So what if you're a happy Macports user like me?
 
 #### Install the requirements
 
-Be sure that Xcode and macports installed. Run ```gcc --version``` and ```g++ version``` to be sure you can compile the software.
+First step, you need to have Xcode and macports installed. Run ```gcc --version``` and ```g++ version``` to be sure you can compile the software.
 
 ![Check GCC and G++]({{ site.baseurl }}/assets/postimages/2016-01-18-001.jpg)
 

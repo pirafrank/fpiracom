@@ -1,10 +1,13 @@
 ---
 layout: post
-title: A beginner guide to attach a new VHD to a Linux VM in Azure
+title: Azure, add a new drive to a Linux VM
+subtitle: A beginner guide to attach a new virtual drive to a Linux virtual machine
 categories: cloud
+description: A beginner guide to attach a new virtual drive to a Linux virtual machine
+keywords: microsoft,azure,drive,virtual machine,drive,vhd
 ---
 
-Azure is here and we want to deploy lots of virtual machines and attach them even more hard drives.
+Microsoft Azure is here and we want to deploy lots of virtual machines and attach them even more drives.
 
 First, we need to attach a new drive. Go to [portal.azure.com](http://portal.azure.com), then look for your virtual machine of choice in the *Virtual Machines* menu.
 

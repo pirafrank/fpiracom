@@ -1,7 +1,10 @@
 ---
 layout: post
-title: A simple guide to custom domains and HTTPS on Github Pages
+title: Setup HTTPS on Github Pages with a custom domain
+subtitle: A simple guide to make custom domains and HTTPS work with Github Pages
 categories: webdev
+description: Setup and 
+keywords: https,github,github pages,custom domains,cloudflare,domains,website,dns
 ---
 
 Github Pages is great. You can host your blog for free and since you like coding it's also funny!

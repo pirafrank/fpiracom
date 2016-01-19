@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Is Gmail approaching to the end?
-categories: articles
+title: Is GMail approaching to the end?
+subtitle: A few thoughts about Inbox and Google's services.
+categories: google
 ---
 
 ![Gmail to inbox redirect screenshot]({{ site.baseurl }}/assets/postimages/00-005.png)

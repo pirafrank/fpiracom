@@ -7,23 +7,29 @@
 
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
     {% elsif site.name %}
     <meta property="og:title" content="{{ site.name }}" />
+    <meta property="twitter:title" content="{{ site.title }}" />
     {% endif %}
 
     <meta property="og:type" content="article" />
     <meta name="twitter:card" content="summary" />
 
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
     <meta property="og:image" content="{{ site.url }}/assets/images/meta_icon.jpg" />
+    <meta property="twitter:image" content="{{ site.url }}/assets/images/meta_icon.jpg" />
 
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     <meta property="og:description" content="{{ page.description }}" />
+    <meta property="twitter:description" content="{{ page.description }}" />
     {% elsif site.description %}
     <meta name="description" content="{{ site.description }}" />
     <meta property="og:description" content="{{ site.description }}" />
+    <meta property="twitter:description" content="{{ site.description }}" />
     {% endif %}
 
     <meta property="og:site_name" content="{{ site.name }}" />

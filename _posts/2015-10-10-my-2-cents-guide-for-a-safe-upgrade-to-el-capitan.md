@@ -2,6 +2,8 @@
 layout: post
 title: My 2-cents Guide For A Safe Upgrade To El Capitan
 categories: osx
+description: An outline about a good way to upgrade your OS X installation to El Capitan safely
+keywords: upgrade,el capitan,osx,OS X, guide
 ---
 
 Let's face it, you're a developer and you're jealous of your dev environment on your shiny Mac. But you're also a geek and you want to use the under-the-hood enhancements of OS X El Capitan.

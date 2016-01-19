@@ -2,6 +2,8 @@
 layout: post
 title: Fix "unknown option '-q'" nvm install error
 categories: node.js
+description: A solution to unknown option -q error during nvm installation
+keywords: node.js,error,nvm,installing
 ---
 
 Today I’ve stumbled upon a strange error installing nvm.

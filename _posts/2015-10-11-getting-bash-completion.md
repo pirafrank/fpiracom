@@ -2,6 +2,8 @@
 layout: post
 title: Getting bash completion on OS X and Linux
 categories: bash
+description: A guide to setup bash completion on Linux and OS X
+keywords: bash,bash completion,osx,OS X,linux
 ---
 
 1. Install bash-completion

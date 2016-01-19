@@ -11,6 +11,6 @@ show_title: false
 
 {% else %}
 
-<META http-equiv="refresh" content="0;URL=http://{{ site.url }}">
+<META http-equiv="refresh" content="0;URL={{ site.url }}">
 
 {% endif %}

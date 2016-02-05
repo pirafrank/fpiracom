@@ -94,6 +94,7 @@ permalink: '/blog/:year/:month/:title/'
 excerpt_separator: "\n\n"
 redcarpet:
   extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+future: false
 
 # Jekyll Blue version in use
 version: v1.2.1

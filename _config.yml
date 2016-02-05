@@ -96,7 +96,7 @@ redcarpet:
   extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 # Jekyll Blue version in use
-version: v0.1.0
+version: v1.2.1
 
 # Set the Sass partials directory, as we're using @imports
 sass:

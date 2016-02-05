@@ -92,6 +92,8 @@ markdown: redcarpet
 highlighter: pygments
 permalink: '/blog/:year/:month/:title/'
 excerpt_separator: "\n\n"
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 # Jekyll Blue version in use
 version: v0.1.0

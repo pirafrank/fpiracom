@@ -212,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sectionTitle {
   font-size: 28px;
+  font-family: $defaultSansSerif;
   @include mobile {
     font-size: 32px;
   }

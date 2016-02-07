@@ -10,11 +10,17 @@ Below you can find a list of some projects of mine. They're open-source and avai
 #### [Jekyll Blue](http://github.com/pirafrank/jekyll-blue)
 All-in-one easy Jekyll solution. Create your static website with blog in a quick and stylish way and deploy it on Github Pages.
 
+#### [Alfred Workflows](https://github.com/pirafrank/alfred_workflows)
+Useful Alfred workflows to enhance your productivity on Mac. Great for developers and power user.
+
 #### [electron-dash-docset](https://github.com/pirafrank/electron-dash-docset)
 A repository to generate a Dash docset for the electron (electron.atom.io) documentation.
 
 #### [Google Photos EXIF fixer](https://github.com/pirafrank/Google-Photos-EXIF-fixer)
 Script to fix pictures EXIF metadata before upload them to Google Photos.
+
+#### [Snippets](https://github.com/pirafrank/snippets)
+Snippets for Sys admins, DevOps, Developers, power users, drunk people with a keyboard and everyone in between.
 
 #### [OS X utils](https://github.com/pirafrank/OSX_utils)
 Collection of OS X utilities to speed up your productivity and take care of your OS X environment.
@@ -38,4 +44,4 @@ A simple web panel to control your Raspberry Pi on a local network.
 Easy CLI utility to batch download images from flickr.
 
 #### This website
-It's based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue).
+Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), custom SCSS framework I've coded from scratch. Most of the things I try here are then backported to Jekyll Blue.

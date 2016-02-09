@@ -41,11 +41,11 @@ if OS X is your OS.
 
 *Done!*
 
-#### More
+### More
 
 If you want to, you can read more about this [in the official git doc](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks#Auto-Completion).
 
-#### UPDATE
+### UPDATE
 
 If it is not working for you, you have to set up bash completion. Check it [here]({{ site.baseurl }}/blog/2015/10/getting-bash-completion/).
 

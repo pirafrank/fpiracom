@@ -67,7 +67,7 @@ $ /opt/local/lib/node_modules
 
 <del>then download and install npm and node via the official installer from nodejs.org/download.</del>
 
-#### Update
+### Update
 
 You better follow [this guide]({{ site.baseurl }}/blog/2015/08/node-installation-best-practise/), to get a clean node and npm installation.
 

@@ -9,18 +9,18 @@ keywords: upgrade,el capitan,osx,OS X, guide
 Let's face it, you're a developer and you're jealous of your dev environment on your shiny Mac. But you're also a geek and you want to use the under-the-hood enhancements of OS X El Capitan.
 Here's a guide I've written for myself for a smooth upgrade process. I have used it in the past for upgrading from Mavericks to Yosemite and then to El Capitan. Now I want to share it with you.
 
-#### Before we start
+### Before we start
 
 How much does it takes? It took 2 hours for me to check all apps to be compatible and upgrade some of them. All the process may take half a day, that's why I did on weekend. The upgrade itself is just about 30 minutes.
 
-#### Cleaning up...
+### Cleaning up...
 
 You want a shiny upgrade, don't you?
 
 - Remove unneeded apps and clean hard drive from useless files
 - Start downloading El Capitan from the App Store (it may take awhile)
 
-#### Prepare
+### Prepare
 
 - check all installed applications to be compatible ([this is a handy website to do that](http://roaringapps.com/apps:table))
 
@@ -58,7 +58,7 @@ You want a shiny upgrade, don't you?
 
 Go grab some food. It will take awhile to install the new OS. Mine took about 30 mins on an encrypted Filevault2 volume.
 
-#### After upgrade
+### After upgrade
 
 - Login and shutdown to boot to the recovery. There you can verify the startup disk using the 'First Aid' option in the new (ugly) Disk Utility.
 

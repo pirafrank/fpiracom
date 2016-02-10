@@ -1,18 +1,22 @@
 ---
 layout: post
-title: How to Issue or Renew SSL certificate at StartSSL
-subtitle:
+title: How to issue or renew SSL certificate at StartSSL
+subtitle: StartSSL offers Class 1 certificates valid 1 year for free. They work even for 3rd level domains.
 categories: nginx
-description:
-keywords:
+description: A guide to issue or renew Class 1 SSL certificates at StartSSL for free.
+keywords: ssl,certificates,startcom,startssl,domains
 ---
 
-First of all, login as root into the server.
+StartSSL is a service run by StartCom to issue SSL certificates of different kind. It is one of the biggest CA in the world. The big deal of its offer is Class 1 certificates issued for free. They do not support wildcards and last only 1 year, but hey it won't cost you a cent! 
 
-In the tutorial, `yourwebsite` can be something like `yourdomain.com` or `stuff.yourdomain.com`.
-So you can issue certs for third level domains for free as well.
+There are many reasons for going HTTPS, even for your small personal website. Your visitors will appreciate it. I've found it useful but not very intuitive. Many articles refer to old StartSSL user interface so I decided to stremline the process by writing a guide to help people getting started.
+
+In the steps below, `yourwebsite` can be something like `yourdomain.com` or `stuff.yourdomain.com`.
+So you can issue certs for third level domains for free as well. Free certificates do not support wildcards and **last 1 year** but you can issue multiple ones, one per domain.
 
 ### Generate the key
+
+First of all, login as root into the server.
 
 ```sh
 openssl genrsa -des3 -out example.com.key.enc 4096
@@ -55,7 +59,7 @@ If you are requested to verify your domain, do that.
 # cat example.com.csr
 ```
 
-and copy/paste the content to startssl, **including `BEGIN AND END LINES`!**.
+and copy/paste the content to StartSSL, **including `BEGIN AND END LINES`!**.
 
 Now you can download your cert. Sometimes you have to wait up to 3 hours for it to be ready.
 
@@ -84,7 +88,7 @@ In case you need to chain the cert by hand, here you go. For Nginx we have to co
 
 ### Deploying
 
-**Be careful:** As stated in the nginx SSL doc, in the website config file, the server certificate MUST
+**Be careful:** As stated in the [nginx SSL documentation](http://nginx.org/en/docs/http/ngx_http_ssl_module.html), in the website config file, the server certificate line has to be inserted BEFORE the one with the key.
 
 ```sh
 ssl_certificate /etc/nginx/ssl/example.com.crt; <--- the chained one!
@@ -103,7 +107,7 @@ dhparam.pem (dh4096.pem) also must be 400.
 
 ### Finishing
 
-Now just restart nginx to start using the new cert and key.
+Now just restart nginx to start using new cert and key.
 
 ```sh
 # service nginx restart

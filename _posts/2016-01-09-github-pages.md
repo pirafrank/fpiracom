@@ -12,11 +12,11 @@ But you want to be professional and let people access your blog from a custom do
 
 In this guide, a quick and straightforward way to get HTTPS on Github Pages. It's not that difficult.
 
-#### Step 1: Buy a domain 
+### Step 1: Buy a domain 
 
 If you've done it, this is where to start. Be sure the registrar offers you a control panel to customise DNS servers for the domain.
 
-#### Step 2: DNS redirect
+### Step 2: DNS redirect
 
 1 - Buy the domain you like
 
@@ -29,7 +29,7 @@ If you've done it, this is where to start. Be sure the registrar offers you a co
 5 - Create an A record on cloudflare to point to github servers (follow [this guide](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/))
 
 
-#### Step 3: Get free HTTPS
+### Step 3: Get free HTTPS
 
 **Please note that this solution is just palliative for your website visitors.** Github Pages dosen't support HTTPS connection for custom domains. The furthest you can go is to use cloudflare as proxy and encrypt connection between the user and cloudflare. Thus Cloudflare to Github connection will remain not encrypted.
 

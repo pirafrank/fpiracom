@@ -10,7 +10,7 @@ Git is maybe the most used VCS in the world and one of the first things you inst
 
 I’ve written the guide below for those times you need a quick memo. It is skinny and straight to the point. You can find commands for both Debian and Red Hat distro families. Just change the `x` and `y` to match the Git version you want to install. Both procedures are patched to avoid `git pull` errors due to missing SSL support.
 
-#### Debian
+### Debian
 
 ```sh
 $ wget ftp://ftp.kernel.org/pub/software/scm/git/git-2.x.y.tar.xz
@@ -23,7 +23,7 @@ $ make
 $ sudo make install
 ```
 
-#### CentOS 7.x
+### CentOS 7.x
 
 ```sh
 $ sudo yum install curl-devel expat-devel gettext-devel openssl-$ devel zlib-devel
@@ -42,11 +42,11 @@ $ make all
 $ sudo make install
 ```
 
-#### CentOS 6.x
+### CentOS 6.x
 
 For CentOS 6.x guidelines, please head over to the great tutorial by [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-a-centos-6-4-vps).
 
-#### Checking
+### Checking
 
 Either case, verify your installation to be successful:
 

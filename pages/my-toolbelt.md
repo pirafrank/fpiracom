@@ -42,7 +42,7 @@ Often I'm asked about development tools and useful apps and services I use daily
 
 #### Useful apps and services
 
-- Alfred + [my workflows](https://github.com/pirafrank/OSX_utils)
+- Alfred + [my workflows](https://github.com/pirafrank/alfred_workflows)
 - Evernote (actually my second brain)
 - Skitch
 - Wunderlist

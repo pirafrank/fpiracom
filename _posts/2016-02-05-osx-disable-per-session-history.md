@@ -12,7 +12,7 @@ History is a handy feature to recall commands you gave in the past, especially i
 
 I’ve been noticing this new (weird) way right after the installation of the latest major release. But I’ve never cared that much about until today, when I stumbled across the solution while playing with bash.
 
-#### Solution
+### Solution
 
 As stated in [this StackOverflow answer](http://stackoverflow.com/questions/32418438/how-can-i-disable-bash-sessions-in-os-x-el-capitan), bash runs a check every time a new  session in started. Disabling the per-session history is as easy as:
 
@@ -22,7 +22,7 @@ touch .bash_sessions_disable
 
 You may need to restart your sessions to apply the setting.
 
-#### Fix 2.0
+### Fix 2.0
 
 Now we may go a bit further and be sure history is written to `~/.bash_history`.
 

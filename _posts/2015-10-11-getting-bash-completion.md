@@ -63,6 +63,8 @@ fi
 
 Thanks for reading.
 
+---
+
 Sources:
 
 - http://superuser.com/questions/31744/how-to-get-git-completion-bash-to-work-on-mac-os-x

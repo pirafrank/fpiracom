@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to issue or renew SSL certificate at StartSSL
+title: How to issue or renew an SSL certificate at StartSSL
 subtitle: StartSSL offers Class 1 certificates valid 1 year for free. They work even for 3rd level domains.
 categories: nginx
 description: A guide to issue or renew Class 1 SSL certificates at StartSSL for free.

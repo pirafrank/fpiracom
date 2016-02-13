@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 120px;
     height: 120px;
     overflow: hidden; // auto-crop image to fit the set rounded border
-    border: 2px solid $lightGray;
+    border: 2px solid $lightestGray;
 
     img {
       width: 100%;
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 .infoText {
   font-size: 16px;
   font-weight: 300;
-  //color: $lightGray;
+  //color: $lightestGray;
   line-height: 1.4;
 }
 
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     a {
       width: 120px;
       background-color: transparent;
-      border: 1px solid $lightGray;
+      border: 1px solid $lightestGray;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  //border: 1px solid $lightGray;
+  //border: 1px solid $lightestGray;
   //border-radius: 50%;
   width: 40px;
   height: 40px;

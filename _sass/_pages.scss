@@ -27,7 +27,7 @@
     //letter-spacing: -0.10em;
     border-color: transparent;
     border-radius: 2px;
-    background-color: $lightGray;
+    background-color: $lightestGray;
     margin: 1px;
     padding: 1px;
   }
@@ -36,13 +36,13 @@
 .line-separator {
   height: 1px;
   //background: $darkGray;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $lightestGray;
 }
 
 .corner-btn {
   position: fixed;
   background: $white;
-  border: 1px solid $lightGray;
+  border: 1px solid $lightestGray;
   border-radius: 5px;
   padding: 3px 9px 3px 9px;
   

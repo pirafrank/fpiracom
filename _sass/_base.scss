@@ -120,15 +120,26 @@ img {
   max-width: 100%;
 }
 
+@media mobile {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+}
+
+thead > tr > th {
+  background-color: $lighterGray;
+  font-weight: bold;
+  //color: $white;
+}
+
 th, td {
   padding: 0.4em 1.4em 0.4em 1.4em;
   text-align: left;
 }
 
-thead > tr > th {
-  background-color: $lightGray;
-  font-weight: bold;
-  //color: $white;
+tbody > tr:nth-child(even) > td { 
+  background-color: $lightestGray;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -139,7 +150,7 @@ thead > tr > th {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $lightestGray;
 }
 ::selection { // selected text color and background
   color: $black;

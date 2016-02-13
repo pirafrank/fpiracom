@@ -120,6 +120,17 @@ img {
   max-width: 100%;
 }
 
+th, td {
+  padding: 0.4em 1.4em 0.4em 1.4em;
+  text-align: left;
+}
+
+thead > tr > th {
+  background-color: $lightGray;
+  font-weight: bold;
+  //color: $white;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;

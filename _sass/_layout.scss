@@ -24,7 +24,7 @@
 
 .masthead {
   padding: 10px 0;
-  //border-bottom: 1px solid $lightGray;
+  //border-bottom: 1px solid $lightestGray;
 
   @include mobile {
     text-align: center;
@@ -131,7 +131,7 @@
       color: $white; // hover color for navbar links
       border-width: 0px 0px 2px 0px;
       border-style: solid;
-      border-color: $lightGray;
+      border-color: $lightestGray;
       padding: 4px;
     }
 
@@ -196,7 +196,7 @@
     font-family: $defaultSansSerif;
     font-size: 16px;  
     background-color: transparent; // #fafafa;
-    border: 1px solid $lightGray;
+    border: 1px solid $lightestGray;
     padding: 6px 4%;
     color: $gray;
     -webkit-border-radius: 5px;

@@ -3,7 +3,7 @@ layout: post
 title: Setup HTTPS on Github Pages with a custom domain
 subtitle: A simple guide to make custom domains and HTTPS work with Github Pages
 categories: webdev
-description: Setup and 
+description: How to deploy HTTPS on your Github Pages website with custom domain. And all for free.
 keywords: https,github,github pages,custom domains,cloudflare,domains,website,dns
 ---
 
@@ -20,9 +20,9 @@ If you've done it, this is where to start. Be sure the registrar offers you a co
 
 1 - Buy the domain you like
 
-2 - Create a free cloudflare account
+2 - Create a free Cloudflare account
 
-3 - Add your custom domain to cloudflare and follow the procedure
+3 - Add your custom domain to Cloudflare and follow the procedure
 
 4 - Add your custom domain to CNAME file in repository root
 

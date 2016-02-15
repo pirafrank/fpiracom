@@ -21,4 +21,6 @@ A collection of speeches, poetries, videos and more things that have inspired me
 
 [The Mountain](https://vimeo.com/22439234) by [Terje Sorgjerd](http://vimeo.com/terjes)
 
-[#DearDaddy, I'm going to be called a whore](https://youtu.be/dP7OXDWof30)
+[#DearDaddy, I'm going to be called a whore](https://www.youtube.com/watch?v=yB8tgVqmKzw)
+
+[Audi R8 Big Game Commercial – Commander](https://youtu.be/yB8tgVqmKzw), One of the best commercials I've ever seen.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkle vulnerability and list of safe apps
+title: Sparkle vulnerability and list of safe apps (Updated!)
 categories: osx
 description: List of OS X apps with addressed Sparkle man-in-the-middle vulnerability
 keywords: osx,security,sparkle,vulnerability,mac,updater
@@ -12,7 +12,7 @@ Recently a vulnerability in the software has been discovered. Affected apps are 
 
 You can read more about this security issue on [ArsTecnica](http://arstechnica.com/security/2016/02/huge-number-of-mac-apps-vulnerable-to-hijacking-and-a-fix-is-elusive/).
 
-### List of safe apps
+### List of safe apps (Updated!)
 
 In alphabetical order, the minimum safe versions of apps using Sparkle.
 
@@ -21,6 +21,7 @@ In alphabetical order, the minimum safe versions of apps using Sparkle.
 - CodeKit 1.7.1, [prior releases should be unaffected](http://incident57.com/codekit/versionhistory.html)
 - Dash 3.2.2
 - iTerm 2.1.4 and 2.9
+- SourceTree 2.2
 - Spectacle 1.0.2
 - VLC 2.2.2
 

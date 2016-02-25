@@ -34,7 +34,7 @@ If you're interested in supporting Apple's cause, please [sign this petition](ht
 
 #### Consequences
 
-- *"The fight between Apple and the FBI over iPhone security has turned nasty and dangerous. Especially for the US government’s credibility."*<br>
+- *The fight between Apple and the FBI over iPhone security has turned nasty and dangerous. Especially for the US government’s credibility.*<br>
 [The US government is playing with fire in its fight with Apple](http://qz.com/621608/us-fbi-apple-iphone-privacy-fight/)
 
 - It's not only about user's privacy. Computer forensic is in danger as well.<br>
@@ -59,6 +59,6 @@ If you're interested in supporting Apple's cause, please [sign this petition](ht
 
 #### Latest updates
 
-- Apple CEO Tim Cook says *FBI's backdoor would be "software equivalent of cancer"* in [exclusive ABC interview](http://abcnews.go.com/Technology/exclusive-tim-cook-budging-apple-privacy-decision-safety/story?id=37169738)
+- Apple CEO Tim Cook says FBI's backdoor would be "software equivalent of cancer" in [exclusive ABC interview](http://abcnews.go.com/Technology/exclusive-tim-cook-budging-apple-privacy-decision-safety/story?id=37169738)
 
 - [Apple Working on Security Measures to Make iOS Devices 'It Can't Hack'](http://www.macrumors.com/2016/02/24/apple-working-on-security-measures-to-make-ios-devices-it-cant-hack/)

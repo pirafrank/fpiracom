@@ -19,6 +19,8 @@ A collection of speeches, poetries, videos and more things that have inspired me
 
 [Take your startup to the next level](https://www.youtube.com/watch?v=X-b2Zrr8BEk) by Michał Sadowski
 
+[The Life of an Entrepreneur in 90 Seconds](https://www.youtube.com/watch?v=h-KHWUq3B7I)
+
 [The Mountain](https://vimeo.com/22439234) by [Terje Sorgjerd](http://vimeo.com/terjes)
 
 [#DearDaddy, I'm going to be called a whore](https://www.youtube.com/watch?v=yB8tgVqmKzw)

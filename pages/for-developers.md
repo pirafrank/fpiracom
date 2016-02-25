@@ -26,6 +26,7 @@ Here you can find a collection of tools, notes, snippets, links and more I've fo
 - [Bower](https://github.com/sawmac/cheatsheet-bower)
 - [Gulp](https://github.com/osscafe/gulp-cheatsheet)
 - [Yo](http://yeoman.io/learning/index.html)
+- [Social Media Image Sizes](http://www.mainstreethost.com/blog/social-media-image-size-cheat-sheet/)
 
 #### Bash
 

@@ -49,3 +49,7 @@ Quotes worth sharing. <br><br>
 *"Know thyself and seek out those who are in a position to help you grow."* <br> Mary Lou Russell
 
 *"A person who never made a mistake never tried anything new."* <br> Albert Einstein
+
+*"Those who surrender freedom for security will not have, nor do they deserve, either one."* - Benjamin Franklin
+
+*"Work until you no longer have to introduce yourself."* - Anonymous

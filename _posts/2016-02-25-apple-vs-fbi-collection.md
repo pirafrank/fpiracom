@@ -62,3 +62,5 @@ If you're interested in supporting Apple's cause, please [sign this petition](ht
 - Apple CEO Tim Cook says FBI's backdoor would be "software equivalent of cancer" in [exclusive ABC interview](http://abcnews.go.com/Technology/exclusive-tim-cook-budging-apple-privacy-decision-safety/story?id=37169738)
 
 - [Apple Working on Security Measures to Make iOS Devices 'It Can't Hack'](http://www.macrumors.com/2016/02/24/apple-working-on-security-measures-to-make-ios-devices-it-cant-hack/)
+
+- [The Next Step In Iphone Impregnability](http://daringfireball.net/linked/2016/02/24/iphone-impregnability)

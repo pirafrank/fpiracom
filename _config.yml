@@ -72,7 +72,7 @@ footersocial: true
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
-google_analytics: "UA-59510020-2"
+google_analytics: ""
 
 # Your website URL (e.g. http://fpira.com)
 # Used for Sitemap.xml and your RSS feed

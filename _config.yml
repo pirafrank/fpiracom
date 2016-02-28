@@ -46,7 +46,7 @@ social-links:
   soundcloud: pirafrank
   stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
   tumblr: pirafrank
-  twitter: pirafrank 
+  twitter: pirafrank
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Type your email with **1 space** between each character.
@@ -72,7 +72,7 @@ footersocial: true
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
-google_analytics: "UA-59510020-2"
+google_analytics: ""
 
 # Your website URL (e.g. http://fpira.com)
 # Used for Sitemap.xml and your RSS feed

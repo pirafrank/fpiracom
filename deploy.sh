@@ -21,13 +21,13 @@ if [[ $# != 1 ]]; then
     echo "Error: wrong number of arguments"
     echo "Usage: ./deploy.sh <option>"
     echo "Options: 's' to deploy to stable, use 't' to deploy to test."
-    exit -1
+    exit 1
 fi
 
 if [ $1 == "s" ]; then
     if [ "$CURRENT_BRANCH" != "master" ]; then
         echo "You're not on branch 'master'"
-        exit -1
+        exit 1
     fi
     REMOTE_PATH="/var/www/fpira.com"
 elif [ $1 == "t" ]; then
@@ -36,6 +36,7 @@ else
     echo "Invalid option!"
     echo "Usage: ./deploy.sh <option>"
     echo "Options: 's' to deploy to stable, use 't' to deploy to test."
+    exit 1
 fi
 
 echo "Cleaning up..."

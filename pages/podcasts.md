@@ -19,4 +19,4 @@ show_title: true
 
 [This week in startups](http://feeds.feedburner.com/twistvid)
 
-[YouTube Featured Channels](https://www.youtube.com/user/pirafrank/channels?flow=list&view=60)
+[Channels I recommend on YouTube](https://www.youtube.com/user/pirafrank/channels?flow=list&view=60)

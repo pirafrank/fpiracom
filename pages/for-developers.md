@@ -36,6 +36,10 @@ Here you can find a collection of tools, notes, snippets, links and more I've fo
 - [ls aliases with coloured output](https://gist.github.com/pirafrank/53b7037513626f92577c)
 - [30 Handy Bash Shell Aliases For Linux / Unix / Mac OS X](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
 
+#### JavaScript and node.js
+
+- [Hands on: The sexy side of JavaScript (feat. node.js)](http://www.slideshare.net/pirafrank/hand-on-the-sexy-side-of-javascript-feat-nodejs), slides of the introductory speech about JavaScript, ES6 and node.js I kept during the second day of the Google I/O Extended 2016 in Catania.
+
 #### Rails
 
 - [gitignore for Rails app](https://gist.github.com/pirafrank/7c7303c039e2fa8df529) (*)

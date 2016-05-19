@@ -11,9 +11,11 @@ During the Google I/O Extended 2016 held in Catania on 18th-20th May I had the c
 
 I was pleased to see the number of participants was above both my and organizers expectation. It was really nice as I could give the young and curious attendees the getting started they were looking for.
 
-Sounds interesting? Below you can find the link to the slides I used.
+Sounds interesting? Below you can find the slides I used and some links you may want to check out.
 
-[>> See slides "Hands on: The sexy side of JavaScript (feat. node.js)"](http://www.slideshare.net/pirafrank/hand-on-the-sexy-side-of-javascript-feat-nodejs)
+- [Slides "Hands on: The sexy side of JavaScript (feat. node.js)"](http://www.slideshare.net/pirafrank/hand-on-the-sexy-side-of-javascript-feat-nodejs)
+- [Resources for developers on this blog](http://fpira.com/for-developers)
+- [Snippets repository](http://github.com/pirafrank/snippets)
 
 Also, here are two pictures shoot during the talk.
 

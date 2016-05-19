@@ -39,10 +39,12 @@ From time to time I write little utilities to help my work or just code for fun.
 
 I've been speaking about various IT and startup topics at a couple of conferences:
 
+- [Hands on: The sexy side of JavaScript (feat. node.js)]({{ site.baseurl }}/blog/2016/05/speech-the-sexy-side-of-javascript-nodejs/), Speaker
+<br>Workshop about JavaScript, ES2015 and node.js during the Google I/O Extended 2016 Catania.
 - [Hardening One](http://etnaforensics.it/sweetbus/), Speaker
-OpenDay about security of GNU/Linux-based desktop OSes and today's edge hardening techniques.
+<br>OpenDay about security of GNU/Linux-based desktop OSes and today's edge hardening techniques.
 - [#AppIdee](https://twitter.com/search?q=%23appidee) (by [Youthub](http://youthub.net)), Moderator
-A series of weekly events held in Catania about startups and the local network.
+<br>A series of weekly events held in Catania about startups and the local network.
 
 ### Skills
 

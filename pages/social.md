@@ -29,6 +29,18 @@ Here's a list of all my social network profiles and public platforms.
             <br>
             <a href="http://pinterest.com/{{ site.social-links.pinterest }}">Pinterest</a>
             -->
+
+            <h4>For Coders</h4>
+            <a href="http://github.com/{{ site.social-links.github }}">GitHub</a>
+            <br>
+            <!--
+            <a href="http://stackoverflow.com/{{ site.social-links.stackoverflow }}">StackOverflow</a>
+            <br>
+            -->
+            <a href="https://keybase.io/{{ site.social-links.keybase }}">Keybase</a>
+            <br>
+            <a href="http://www.packal.org/users/{{ site.social-links.packal }}">Packal.org</a>
+            <br>
         </div>
         <div class="col span_5_of_12">
             <h4>Blogging</h4>
@@ -44,15 +56,6 @@ Here's a list of all my social network profiles and public platforms.
     </div>
     <div class="section group">
         <div class="col span_7_of_12">
-            <h4>For Coders</h4>
-            <a href="http://github.com/{{ site.social-links.github }}">GitHub</a>
-            <br>
-            <!--
-            <a href="http://stackoverflow.com/{{ site.social-links.stackoverflow }}">StackOverflow</a>
-            <br>
-            -->
-            <a href="https://keybase.io/{{ site.social-links.keybase }}">Keybase</a>
-
             <h4>Music and Podcasts</h4>
             <a href="http://soundtrackofthedays.tumblr.com/">soundtrackofthedays</a>
             <br>

@@ -14,8 +14,8 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) 
 - [Guides](#guides)
 - [Utilities](#utilities)
 - [IFTTT](#ifttt)
-- [Alfred](#alfred---os-x-app)
-- [Workflows](#workflow---ios-app)
+- [Alfred (macOS app)](#alfred-macos-app)
+- [Workflows (iOS app)](#workflow-ios-app)
 
 ### Guides
 
@@ -32,13 +32,16 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) 
 - [My favorites](https://ifttt.com/p/pirafrank/favorites) - Recipes I liked now and then
 - [Microsoft's channel](https://ifttt.com/p/microsoft/shared)
 
-### Alfred - OS X app
+### Alfred - macOS app
 
-- [Packal](http://www.packal.org) - A free marketplace for workflows and themes
+Now more about Alfred [here](https://www.alfredapp.com/).
 
-**Workflows**
+- [Packal](http://www.packal.org) - A free marketplace for Alfred workflows and themes
+- Workflows and themes I've developed are available [on Packal](http://www.packal.org/users/{{ site.social-links.packal }}).
+Workflows are also available [on Github](https://github.com/pirafrank/alfred_workflows).
 
-- Workflows I've developed are [available on Github](https://github.com/pirafrank/alfred_workflows)
+**3rd-party workflows**
+
 - [Evernote](http://www.alfredforum.com/topic/840-evernote-791-search-create-append-text-preview-reminders-and-more-all-within-alfred) by Carlos A. Sztoltz
 
 ### Workflow - iOS app

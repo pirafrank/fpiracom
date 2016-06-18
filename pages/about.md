@@ -39,6 +39,8 @@ From time to time I write little utilities to help my work or just code for fun.
 
 I've been speaking about various IT and startup topics at a couple of conferences:
 
+- [Hardening Two](http://hardeningtwo.fileshute.com), Speaker
+<br>OpenDay about understanding Linux hardening. SELinux, GrSecurity, Tomoyo 1.8 and AppArmor were demoed to defend against privilege escalation, backdoor and shellshock.
 - [Hands on: The sexy side of JavaScript (feat. node.js)]({{ site.baseurl }}/blog/2016/05/speech-the-sexy-side-of-javascript-nodejs/), Speaker
 <br>Workshop about JavaScript, ES2015 and node.js during the Google I/O Extended 2016 Catania.
 - [Hardening One](http://etnaforensics.it/sweetbus/), Speaker
@@ -48,19 +50,21 @@ I've been speaking about various IT and startup topics at a couple of conference
 
 ### Skills
 
-- **Web:** HTML, CSS, Sass/SCSS, JavaScript
+- **Front-end dev:** HTML, CSS, Sass/SCSS, JavaScript
+- **Back-end dev:** node.js, Express, Electron, Ruby on Rails, Flask
 - **Web servers and Databases:** nginx, Apache, Puma, PostgreSQL, SQLite
-- **CMS and Frameworks:** Wordpress, Prestashop, Ruby on Rails, Flask, Electron
-- **Programming languages:** Python, JavaScript, Ruby, bash, C, Java
+- **Programming languages:** Python, JavaScript (+ES2015), Ruby, bash, C, Java
 - **Tools and Platforms:** Git, Amazon Web Services, Heroku, Debian Linux, CentOS, OS X
-- **Soft Skills:** Project Management, Team Management, Team Working, Social Networking, Business Planning, Event Organisation
-- **Other:** Network Security, Encryption, Computer Hardware, Photoshop, Sketch (by Bohemian Coding)
+- **CMS and static generators:** Prestashop, Wordpress, Jekyll
+- **Other skills:** Computer Security, Encryption, Computer Hardware
+- **Soft Skills:** Project Management, Team Management, Team Working, Social Networking, Event Organisation
+- **Graphical tools:** Photoshop (mostly for front-end assets), Sketch (by Bohemian Coding)
 
 ### Other things I like
 
 **Meeting people** A good chat is a good moment and with people I haven't met it's even better. Valuable things happen when people share their experiences and thoughts.
 
-**Reading** This is a pleasure I don't want to miss. I read about programming, best practise, new technologies, startup stories and anything that can improve myself.
+**Reading** This is a pleasure I don't want to miss. I read about programming, best practice, new technologies, startup stories and anything that can improve myself.
 Sometimes I find myself reading thrillers.
 
 **Jiu jitsu and running** I have to admit, I've fallen in love with jiu jitsu and the Japanese culture. There's so much to learn from them! Days I don't have gym lessons, I go running at sunset. It's my reset button.

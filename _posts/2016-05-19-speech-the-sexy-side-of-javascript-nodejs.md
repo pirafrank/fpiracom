@@ -14,7 +14,7 @@ I was pleased to see the number of participants was above both my and organizers
 Sounds interesting? Below you can find the slides I used and some links you may want to check out.
 
 - [Slides "Hands on: The sexy side of JavaScript (feat. node.js)"](http://www.slideshare.net/pirafrank/hand-on-the-sexy-side-of-javascript-feat-nodejs)
-- [Resources for developers on this blog](http://fpira.com/for-developers)
+- [Resources for developers on this blog]({{site.baseurl}}/for-developers)
 - [Snippets repository](http://github.com/pirafrank/snippets)
 
 Also, here are two pictures shoot during the talk.

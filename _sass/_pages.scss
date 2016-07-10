@@ -1,4 +1,4 @@
-  
+
 //
 // Pages
 //
@@ -33,6 +33,13 @@
   }
 }
 
+.fingerprint {
+    font-family: $defaultSansSerifBody;
+    font-size: 16px;
+    font-style: normal !important;
+    color: $gray;
+}
+
 .line-separator {
   height: 1px;
   //background: $darkGray;
@@ -45,7 +52,7 @@
   border: 1px solid $lightestGray;
   border-radius: 5px;
   padding: 3px 9px 3px 9px;
-  
+
   a {
     font-size: 14px;
     font-family: $defaultSansSerif;

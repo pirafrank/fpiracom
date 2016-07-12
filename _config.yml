@@ -31,20 +31,21 @@ social-links:
   facebook:
   flickr: pirafrank
   github: pirafrank
-  goodreads: pirafrank # your goodreads profile, e.g. https://www.goodreads.com/johndoe
-  googleplus: +FrancescoPiraonline # e.g. https://plus.google.com/+johndoe
+  goodreads: pirafrank # your goodreads username, e.g. https://www.goodreads.com/johndoe
+  googleplus: +FrancescoPiraonline # your username, including the plus char, e.g. https://plus.google.com/+johndoe
   instagram: pirafrank
-  keybase: pirafrank # your keybase profile
+  keybase: pirafrank # your keybase username
   lastfm: pirafrank
   linkedin: fpira
-  medium: pirafrank # your medium profile, e.g. https://medium.com/@johndoe
-  packal: pirafrank # your packal.org profile, e.g. https://www.packal.org/users/johndoe
+  medium: pirafrank # your medium username, e.g. https://medium.com/@johndoe
+  packal: pirafrank # your packal.org username, e.g. https://www.packal.org/users/johndoe
   pinterest:
-  pocket: pirafrank # your pocket profiles, e.g. https://getpocket.com/@johndoe
+  pocket: pirafrank # your pocket username, e.g. https://getpocket.com/@johndoe
   reddit: pirafrank
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   skype: francesco-pira
   soundcloud: pirafrank
+  slideshare: pirafrank # your slideshare username, http://www.slideshare.net/pirafrank
   stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
   tumblr: pirafrank
   twitter: pirafrank

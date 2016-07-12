@@ -6,11 +6,13 @@ show_title: true
 custom_css: quotes
 ---
 
-Quotes worth sharing. <br><br>
+Quotes worth sharing. Listed without any particular order.<br><br>
 
 *"Success is the product of the severest kind of mental and physical application."* <br> Thomas Edison
 
 *"No man ever steps in the same river twice."* <br> Eraclitus
+
+*"Tell me and I forget. Show me and I remember. Involve me and I understand"* <br> Chinese proverb
 
 *"When students cheat on exams it's because our School system values grades more than students value learning."* <br> Neil deGrasse Tyson
 

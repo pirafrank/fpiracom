@@ -18,13 +18,15 @@ Here's a list of all my social network profiles and public platforms.
             <br>
             <a href="http://linkedin.com/in/{{ site.social-links.linkedin }}">LinkedIn</a>
             <br>
+            <a href="http://www.slideshare.net/{{ site.social-links.slideshare }}">SlideShare</a>
+            <br>
             <!--
             <a href="http://facebook.com/{{ site.social-links.facebook }}">facebook</a>
             <br>
             -->
-            <a href="https://www.reddit.com/user/{{ site.social-links.reddit }}">reddit</a>
-            <br>
             <a href="https://plus.google.com/{{ site.social-links.googleplus }}">Google+</a>
+            <br>
+            <a href="https://www.reddit.com/user/{{ site.social-links.reddit }}">reddit</a>
             <!--
             <br>
             <a href="http://pinterest.com/{{ site.social-links.pinterest }}">Pinterest</a>
@@ -37,9 +39,9 @@ Here's a list of all my social network profiles and public platforms.
             <a href="http://stackoverflow.com/{{ site.social-links.stackoverflow }}">StackOverflow</a>
             <br>
             -->
-            <a href="https://keybase.io/{{ site.social-links.keybase }}">Keybase</a>
-            <br>
             <a href="http://www.packal.org/users/{{ site.social-links.packal }}">Packal.org</a>
+            <br>
+            <a href="https://keybase.io/{{ site.social-links.keybase }}">Keybase</a>
             <br>
         </div>
         <div class="col span_5_of_12">

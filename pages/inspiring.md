@@ -13,6 +13,8 @@ A collection of speeches, poetries, videos and more things that have inspired me
 
 ['The Power of Words'](https://www.youtube.com/watch?v=Iqq1roF4C8s) by Mohammed Qahtani
 
+[The first 20 hours - How to learn anything](https://www.youtube.com/watch?v=5MgBikgcWnY) by Josh Kaufman
+
 [Steve Jobs' Commencement address (2005)](http://news.stanford.edu/news/2005/june15/jobs-061505.html)
 
 ['Invictus'](http://www.poetryfoundation.org/poem/182194) by William Ernest Henley

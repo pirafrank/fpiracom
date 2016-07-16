@@ -37,7 +37,7 @@
     content:"";
     display:table;
   }
-  
+
   &:after {
     clear:both;
   }
@@ -45,7 +45,7 @@
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-.col { 
+.col {
   @include mobile {
     margin: 1% 0 1% 0%;
   }
@@ -167,4 +167,23 @@
 }
 .pull-left {
   float: left !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
 }

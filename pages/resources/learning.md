@@ -9,13 +9,13 @@ Learning material I share publicly.
 
 #### Computer Security
 
-mac rbac
+[An introduction to MAC RBAC and LSM](http://www.slideshare.net/pirafrank/an-introduction-to-mac-rbac-and-lsm)
 
 #### Hardening
 
-grsecurity
+[Getting started with GrSecurity](http://www.slideshare.net/pirafrank/getting-started-with-grsecurity)
 
-apparmor
+[Getting started with Apparmor](http://www.slideshare.net/pirafrank/getting-started-with-apparmor)
 
 #### JavaScript
 

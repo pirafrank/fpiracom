@@ -17,10 +17,6 @@ A humble music blog. New releases and good old hits. Songs I've discovered on th
 
 [KeepingFocus](https://play.google.com/music/playlist/AMaBXym57rO2BV9MfmRF-j8M2tva0ktdhgXMP71JzE66eWSgObX5SsqH5paAJOEx75OTA3vnoMCw94M6NTWJfKHYDP9js-8o4A==) / Music to keep yourself focused. No words, just music pleasure.
 
-[Running](https://play.google.com/music/playlist/AMaBXyk_HgP4VJGzhl6Yep9wfqpMvCwsG8_R_zkD4NzwIplIJnJJMQSt3onucJl174Y7SDRSrY1_zMZksm_jAIUwU_8DYfwTzQ==) / When you ask your muscles more than they can give
-
-[Bedtime](https://play.google.com/music/playlist/AMaBXylkdkhg4VjCA5HSwbVEMb2Ct9sYLSLkSeRqyhFC5MYS4N8bs5vylJEsaKrMJExgadd4Fo2MjV_OAPT0kFIxp6ZSqtyoZQ==) / Ears' pleasure before going to bed
-
 [Nomad's place](https://play.google.com/music/playlist/AMaBXyldO1Guu-_s2FwSNwkFvMJ3WqFnxBzQR2QntZwKnzM7cshmHojan4wMATme734VShvbuqT7pocDq3qlZPXf0eyPvX-GKw==) / Songs I've discovered on the go and songs I like
 
 ### Spotify playlists

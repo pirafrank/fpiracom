@@ -5,7 +5,7 @@ permalink: /workflow-ios/
 show_title: true
 ---
 
-Recipes I've created for the popular iOS app Workflow. Divided in categories.
+Recipes I've created for the popular iOS app Workflow. I hope you find the one for you.
 
 #### Utilities
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Security Resources
+title: Security resources
 permalink: /security/
 show_title: true
 ---

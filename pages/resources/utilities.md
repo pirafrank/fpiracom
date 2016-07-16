@@ -25,6 +25,12 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) 
 - [My favorites](https://ifttt.com/p/pirafrank/favorites)
 - [Microsoft's channel](https://ifttt.com/p/microsoft/shared)
 
+#### Check also
+
+- [My toolbelt]({{site.baseurl}}/my-toolbelt)
+- [Alfred resources]({{site.baseurl}}/alfred-resources)
+- [Workflow for iOS recipes]({{site.baseurl}}/workflow-ios)
+
 <br>
 
 ---

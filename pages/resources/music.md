@@ -23,8 +23,6 @@ A humble music blog. New releases and good old hits. Songs I've discovered on th
 
 [Nomad's place](https://play.google.com/music/playlist/AMaBXyldO1Guu-_s2FwSNwkFvMJ3WqFnxBzQR2QntZwKnzM7cshmHojan4wMATme734VShvbuqT7pocDq3qlZPXf0eyPvX-GKw==) / Songs I've discovered on the go and songs I like
 
-[MuseMusic](https://play.google.com/music/playlist/AMaBXykZHzNEIp8yL9hHHDobgi3DRQKyfLlwU-GGGLhZXxK2fq3zkxYSATmsRb8gttSJMLGEpgxiFA8OjfHuW_pky4S53r747Q==) / Great music Muse's hits
-
 ### Spotify playlists
 
 #### Publicly shared

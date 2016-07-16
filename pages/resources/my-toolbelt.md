@@ -5,7 +5,7 @@ permalink: /my-toolbelt/
 show_title: true
 ---
 
-Often I'm asked about development tools and useful apps and services I use daily, both on Mac and on my mobile devices. So I've decided to write down a list of them. 
+Often I'm asked about development tools and useful apps and services I use daily, both on Mac and on my mobile devices. So I've decided to write down a list of them.
 
 #### Development
 
@@ -39,6 +39,7 @@ Often I'm asked about development tools and useful apps and services I use daily
 - golang
 - Tens of free custom fonts
 - Photoshop + Cooler + Sketch
+- [scripts]({{site.baseurl}}/projects) and [utilities]({{site.baseurl}}/resources) of mine
 
 #### Useful apps and services
 
@@ -47,53 +48,49 @@ Often I'm asked about development tools and useful apps and services I use daily
 - Skitch
 - Wunderlist
 - Trello
-- Sunrise Calendar
+- ~~Sunrise Calendar~~ (shut down)
 - Slack
 - Mail
 - GPG Suite
 - 1Password
 - VeraCrypt
 - Tunnelblick
-- BoxSync, Copy, Google Drive, OneDrive
+- BoxSync, Google Drive, iCloud
 - GoodSync
 - IFTTT
 - Flux (my eyes savior!)
-- Keynote
-- Google Sheets and Google Docs
+- Apple Keynote
+- Apple Pages
+- Google Docs suite
 - Capturer
-- iA Writer
-- Medium
-- tumblr
 - Feedly
 - Pocket
-- Calibre (great with Kindle and Marvin on iPad)
+- Calibre (great if you have a Kindle)
 - Google Play Music
 
-#### Mobile
+#### iOS
 
 *Note: To avoid repetition, I've not included cross-platform apps and clients already listed above.*
-
-**iPad**
 
 - iOS 9 with latest updates
 - PDF Expert
 - Working Copy
 - Textastic
+- Serverauditor
+- Pythonista
+- Workflow
+- iA Writer
 - Notability
 - CamScanner HD
 - iWorks
 - OfficeSuite
 - Printer Pro
-- Read (by )
-- Alien Blue
+- Penultimate
+- iThoughts
+- Overcast
+- narwhal
+- Product Hunt
 - Hacker News
 - IP Tools
 - OsmAnd+ (awesome offline maps)
 
-**Zenfone**
-
-- Android 5.0.1 (stock, unfortunately without latest updates... (ironic) )
-- CamScanner
-- Fing
-- Relay (best reddit client so far)
-- Twilight

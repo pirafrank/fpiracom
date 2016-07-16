@@ -32,6 +32,8 @@ baseurl: ""
 
 # Theme Engine
 # To change site-wide fonts and colors, go to _sass/_variables anche change the hex values.
+theme:
+  main_color: 34a
 
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
 # Leave it empty to disable

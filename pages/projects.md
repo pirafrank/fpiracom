@@ -14,7 +14,13 @@ All-in-one easy Jekyll solution. Create your static website with blog in a quick
 Useful Alfred workflows to enhance your productivity on Mac. Great for developers and power user.
 
 #### [electron-dash-docset](https://github.com/pirafrank/electron-dash-docset)
-A repository to generate a Dash docset for the electron (electron.atom.io) documentation.
+A repository to generate a Dash docset for the electron (electron.atom.io) documentation. Now with automatic check for new releases.
+
+#### [todabu](http://github.com/pirafrank/todabu)
+A simple way to backup user configuration files, info and installation status in a git repository.
+
+#### [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer)
+Deploy a Jekyll website on your VPS with just a 'git push'. Great if you want to publish posts on-the-go.
 
 #### [Google Photos EXIF fixer](https://github.com/pirafrank/Google-Photos-EXIF-fixer)
 Script to fix pictures EXIF metadata before upload them to Google Photos.

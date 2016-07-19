@@ -23,6 +23,6 @@ Also, here are two pictures shoot during the talk.
 
 ![Google IO16 image 2]({{ site.baseurl }}/assets/postimages/2016-05-17-002.jpg)
 
-And if you're developing some cool stuff and want to talk about it, feel free to drop me a line me[at]thisdomain.
+And if you're developing some cool stuff and want to talk about it, feel free to drop me a line me [at] this domain.
 
 Happy JS coding!

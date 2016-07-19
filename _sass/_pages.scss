@@ -34,9 +34,14 @@
 }
 
 .monospaced {
-    font-family: $defaultMonospaced;
-    font-style: normal !important;
-    color: $gray;
+  font-family: $defaultMonospaced;
+  font-style: normal !important;
+  color: $gray;
+}
+
+.grayed {
+  font-style: normal;
+  color: $gray;
 }
 
 .line-separator {

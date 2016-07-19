@@ -12,13 +12,13 @@
 
 /* Code section */
 pre > code {
-  font-family: $defaultCode;
+  font-family: $defaultMonospaced;
   font-size: 14px;
 }
 
 /* Inline code */
 code {
-  font-family: $defaultCode;
+  font-family: $defaultMonospaced;
   font-size: 16px; // this should match font-size in body class in base.scss
 }
 

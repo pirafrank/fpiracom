@@ -12,8 +12,8 @@ body {
   line-height: 1.5;
   font-family: $defaultSansSerifBody;
   font-weight: 400;
-  color: $darkerGray; // site-wide font color (overrindden multiple times...)
-  
+  color: $darkGray; // site-wide font color (overridden multiple times...)
+
   @include mobile {
     font-size: 18px;
     font-weight: 400;
@@ -138,7 +138,7 @@ th, td {
   text-align: left;
 }
 
-tbody > tr:nth-child(even) > td { 
+tbody > tr:nth-child(even) > td {
   background-color: $lightestGray;
 }
 
@@ -160,7 +160,7 @@ tbody > tr:nth-child(even) > td {
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 // commented because it is now included in _grid.scss
-/* 
+/*
 .clearfix:before,
 .clearfix:after {
     content: " ";

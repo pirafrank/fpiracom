@@ -53,6 +53,7 @@
     h1 {
       font-size: 38px;
       font-family: $defaultSerif;
+      font-weight: 400;
       letter-spacing: -0.05em;
       color: $darkerGray;
       line-height: 1.2;
@@ -61,7 +62,7 @@
 
   .post-subtitle { // edit appearance of post subtitle
     margin-bottom: 1.5em;
-    
+
     strong {
       font-size: 18px;
       font-style: italic;

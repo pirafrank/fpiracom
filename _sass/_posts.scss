@@ -15,11 +15,16 @@
 
 .post {
 
-  font-family: $defaultSerif;
+  font-family: $defaultSansSerifBody;
   font-size: 18px;
+  font-weight: 400; // font weight of post body
   line-height: 1.6;
-  color: $darkGray;
-  
+  //color: $darkGray; // commented as it uses color from 'body' in _base.scss
+
+  strong, b {
+    font-weight: bold;
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;

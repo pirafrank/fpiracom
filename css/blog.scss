@@ -7,20 +7,13 @@
 // CSS for /blog and /by-category pages
 //
 
-.other-blogging {
-  margin-top: 3em;
-  margin-left: 1em;
-  
+.page-options {
   h5 {
-    a {
-      line-height: 0.1;
-      font-size: 16px;
-    }
+    font-size: 20px;
+    color: $gray;
   }
 
   @include mobile {
-    margin-top: 0em;
-    margin-left: 0em;
     text-align: center;
   }
 }
@@ -32,6 +25,13 @@
     @include mobile {
       //text-align: center;
       margin-left: 0em;
+    }
+
+    @include retina {
+      font-weight: 300;
+      strong, b {
+        font-weight: 400;
+      }
     }
 }
 
@@ -63,5 +63,23 @@
   color: $gray;
   @include mobile {
     font-size: 16px;
+  }
+}
+
+.other-blogging {
+  margin-top: 3em;
+  margin-left: 1em;
+
+  h5 {
+    a {
+      line-height: 0.1;
+      font-size: 16px;
+    }
+  }
+
+  @include mobile {
+    margin-top: 0em;
+    margin-left: 0em;
+    text-align: center;
   }
 }

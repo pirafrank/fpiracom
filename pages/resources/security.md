@@ -13,7 +13,20 @@ Cherry picked security resources and best practices.
 
 #### Harden your OS
 
+Articles and links about improving the security of your computers and mobile devices and protecting your privacy.
+
+**macOS**
+
 - [Harden macOS](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
+- [How the NSA snoop-proofs its Macs](http://www.macworld.com/article/2048160/how-the-nsa-snoop-proofs-its-macs.html), a bit old but something you may want to check anyway
+
+**Android**
+
+- [Hardening Android for Security and Privacy](https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy), it may sounds impossible but there’s still something you can do
+
+#### Servers
+
+- [Top 20 OpenSSH Server Best Security Practices](http://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html)
 
 #### Websites and blogs
 

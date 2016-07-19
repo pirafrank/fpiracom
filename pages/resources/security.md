@@ -20,6 +20,10 @@ Articles and links about improving the security of your computers and mobile dev
 - [Harden macOS](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
 - [How the NSA snoop-proofs its Macs](http://www.macworld.com/article/2048160/how-the-nsa-snoop-proofs-its-macs.html), a bit old but something you may want to check anyway
 
+**iOS**
+
+- [iOS configuration hardening guide by Australian Department of Defence](http://www.asd.gov.au/publications/iOS8_Hardening_Guide.pdf)
+
 **Android**
 
 - [Hardening Android for Security and Privacy](https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy), it may sounds impossible but there’s still something you can do
@@ -49,4 +53,4 @@ Articles and links about improving the security of your computers and mobile dev
 
 #### Services
 
-- [privatetunnel](http://privatetunnel.com), a consumer VPN by OpenVPN
+- [privatetunnel.com](https://www.privatetunnel.com/home/?referral=NUTAYZHU54), a consumer VPN by OpenVPN

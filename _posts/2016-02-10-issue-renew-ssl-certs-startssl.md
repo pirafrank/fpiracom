@@ -23,6 +23,7 @@ openssl genrsa -des3 -out example.com.key.enc 4096
 ```
 
 About the command above:
+
 - `-rand/var/log/messages` is used for some randomness
 - `-des3` to protect our key
 - `4096` is good. 8192 is plain CPU waste and not even all the certificate providers support it.

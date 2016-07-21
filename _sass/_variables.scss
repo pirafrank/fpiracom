@@ -34,12 +34,13 @@ $white: #fff;
 $defaultSerif: 'Merriweather', serif;
 $defaultSansSerif: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $defaultSansSerifBody: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$defaultMonospaced: 'Bitstream Vera Mono','Courier', monospace;
+$defaultMonospaced: 'Fira Mono','Courier', monospace;
 
-// change
+// shortcuts
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$courier: 'Courier', monospace;
 
 // Mobile breakpoints
 @mixin mobile {

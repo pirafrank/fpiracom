@@ -13,7 +13,7 @@
 /* Code section */
 pre > code {
   font-family: $defaultMonospaced;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Inline code */
@@ -21,7 +21,7 @@ code {
   background-color: #efefef;
   padding: 2px 2px 2px 2px;
   font-family: $defaultMonospaced;
-  font-size: 16px; // this should match font-size in body class in base.scss
+  font-size: 14px;
 }
 
 .highlight .c { color: #586E75 } /* Comment */

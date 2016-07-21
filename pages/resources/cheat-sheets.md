@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Programming cheat sheets
-permalink: /cheat-sheets/
+permalink: /resources/cheat-sheets/
 show_title: true
 ---
 

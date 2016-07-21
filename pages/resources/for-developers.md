@@ -1,7 +1,7 @@
 ---
 layout: page
 title: For Developers
-permalink: /for-developers/
+permalink: /resources/for-developers/
 show_title: true
 ---
 

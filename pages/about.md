@@ -33,7 +33,7 @@ From time to time I write little utilities to help my work or just code for fun.
 
 ### My toolbelt
 
-[Development tools and utilities I use]({{ site.baseurl }}/my-toolbelt/).
+[Development tools and utilities I use]({{ site.baseurl }}/resources/my-toolbelt/).
 
 ### Speaker
 

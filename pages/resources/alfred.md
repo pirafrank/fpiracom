@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Alfred resources
-permalink: /alfred-resources/
+permalink: /resources/alfred-resources/
 show_title: true
 ---
 

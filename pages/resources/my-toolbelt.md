@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My toolbelt
-permalink: /my-toolbelt/
+permalink: /resources/my-toolbelt/
 show_title: true
 ---
 

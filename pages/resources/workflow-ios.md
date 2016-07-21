@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Workflow for iOS recipes
-permalink: /workflow-ios/
+permalink: /resources/workflow-ios/
 show_title: true
 ---
 

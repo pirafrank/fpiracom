@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Security resources
-permalink: /security/
+permalink: /resources/security/
 show_title: true
 ---
 

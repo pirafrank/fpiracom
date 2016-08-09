@@ -14,6 +14,8 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 
 *"Tell me and I forget. Show me and I remember. Involve me and I understand"* <br> Chinese proverb
 
+*"Community is about doing something together that makes belonging matter."* <br> Brian Solis
+
 *"When students cheat on exams it's because our School system values grades more than students value learning."* <br> Neil deGrasse Tyson
 
 *"75% of success is staying calm. The rest you figure out."* <br> Sam Kass
@@ -52,6 +54,6 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 
 *"A person who never made a mistake never tried anything new."* <br> Albert Einstein
 
-*"Those who surrender freedom for security will not have, nor do they deserve, either one."* - Benjamin Franklin
+*"Those who surrender freedom for security will not have, nor do they deserve, either one."* <br> Benjamin Franklin
 
-*"Work until you no longer have to introduce yourself."* - Anonymous
+*"Work until you no longer have to introduce yourself."* <br> Anonymous

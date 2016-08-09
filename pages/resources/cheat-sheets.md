@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Programming cheat sheets
+title: Cheat sheets
 permalink: /resources/cheat-sheets/
 show_title: true
 ---

@@ -5,7 +5,7 @@ permalink: /resources/workflow-ios/
 show_title: true
 ---
 
-Recipes I've created for the popular iOS app Workflow. I hope you find the one for you.
+Recipes I've created for the popular iOS app Workflow. Feel free to use and edit. If you want, give me any [feedback]({{ site.baseurl }}/contacts).
 
 #### Utilities
 

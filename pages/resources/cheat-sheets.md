@@ -28,6 +28,11 @@ A collection of handy cheat sheets.
 - [nvm](https://github.com/creationix/nvm#usage)
 - [Front-end cheat sheet](https://github.com/OpenSourceWorkflow/front-end-cheatsheet/blob/master/pdf/front-end-cheat-sheet.pdf)
 
+#### Linux
+
+- [Interactive Linux map](http://www.makelinux.net/kernel_map/)
+- [Linux performance tools](http://i.imgur.com/2NAvHn1.png)
+
 #### Utilities and services
 
 - [GPG](http://stuff.imeos.org/persistent/gpg-cheatsheet.pdf)

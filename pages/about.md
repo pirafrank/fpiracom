@@ -53,6 +53,10 @@ From time to time I write little utilities to help my work or just code for fun.
 <br>*2015-Ongoing @ Catania*
 <br>A series of events held in Catania about startups, young entrepreneurship and the local community.
 
+[Summer Entrepreneurship Training (SET)](https://estiem.org/default.aspx?PageId=1500), Local Supporter
+<br>*August 4-10, 2014 @ Catania*
+<br>An event by ESTIEM Business Booster aimed at promoting and stimulate entrepreneurship among students. It included trainings and a competition between participants. Read more about it [here](https://estiem.org/default.aspx?PageId=1224) and about 2014 edition [here at page 42](https://issuu.com/estiem/docs/magazine47).
+
 ### Skills
 
 - **Front-end dev:** HTML, CSS, Sass/SCSS, JavaScript
@@ -76,7 +80,7 @@ Sometimes I find myself reading thrillers.
 
 **DIY** Something my father taught me. It's fun to tinker away from keyboard, too.
 
-**Traveling** Visiting new places and discovering new cultures widens your mind and challenge you. When I have the chance to leave, I always do.
+**Traveling** Visiting new places and discovering new cultures widens your mind and challenges you. When I have the chance to leave, I always do.
 
 ### Resume
 

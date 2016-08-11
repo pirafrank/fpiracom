@@ -7,7 +7,7 @@ show_title: true
 
 More about Alfred [here](https://www.alfredapp.com/).
 
-Workflows and themes I've developed are available [on Packal](http://www.packal.org/users/{{ site.social-links.packal }}). [Packal](http://www.packal.org) is a free marketplace for Alfred workflows and themes.
+Workflows and themes I've developed are available [on Packal](http://www.packal.org/users/{{ site.social-links.packal }}).
 
 #### Workflows
 

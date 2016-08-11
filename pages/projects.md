@@ -41,6 +41,9 @@ Collection of OS X utilities to speed up your productivity and take care of your
 #### [CLI utils](https://github.com/pirafrank/CLI_utils)
 Useful bash hacks at your fingertips. For Linux and OS X.
 
+#### [iA Writer templates](https://github.com/pirafrank/My-iA-Writer-templates)
+Self-made templates for the awesome [iA Writer](https://ia.net/writer).
+
 #### [Eye Relief](https://github.com/pirafrank/Eye_Relief)
 A simple script trigged every 20 minutes reminds you to take a break. For OS X 10.8 and above.
 

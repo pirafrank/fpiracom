@@ -17,6 +17,7 @@ A collection of handy cheat sheets.
 #### Programming tools
 
 - [Git](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+- [Git LFS](https://www.evernote.com/l/AEP8T9PEm6BDp4I0PyLsBzjfv0-_Xe77QME) (*)
 - [Bazaar](http://doc.bazaar.canonical.com/beta/en/_static/en/bzr-en-quick-reference.pdf)
 - [npm](http://browsenpm.org/help)
 - [npm (less known commands)](https://gist.github.com/AvnerCohen/4051934)

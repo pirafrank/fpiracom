@@ -11,6 +11,7 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) 
 
 #### Utilities
 
+- [gen_index.py](https://gist.github.com/pirafrank/970cbdb7542dab942da50cab408100d0) - Generate an `index.html` page with links to files in the same folder. Use case: access files in a folder (e.g. dir with PDFs files) from browser and avoid turning directory listing on in your webserver. Python 2.7.x required. (*)
 - [Download an entire website](https://gist.github.com/pirafrank/181360a3754abe79a5c8) - Short bash script. It uses wget. (*)
 - [Copy URL Bookmarklet](https://gist.github.com/pirafrank/5a4f6f56f3cf931ddf6b) - in Safari on Mac, copying the URL from the address bar can be tricky. This lets you quickly copy it with just 1 click and a CMD+C. It should work in other browsers, too.
 
@@ -21,8 +22,8 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/) 
 
 #### IFTTT
 
-- [Recipes I share](https://ifttt.com/p/pirafrank/shared) - I hope you find them useful!
-- [My favorites](https://ifttt.com/p/pirafrank/favorites)
+- [Recipes I share](https://ifttt.com/p/pirafrank/shared)
+- [My favorite recipes](https://ifttt.com/p/pirafrank/favorites)
 - [Microsoft's channel](https://ifttt.com/p/microsoft/shared)
 
 #### Check also

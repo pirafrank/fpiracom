@@ -56,4 +56,6 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 
 *"Those who surrender freedom for security will not have, nor do they deserve, either one."* <br> Benjamin Franklin
 
+*"No man has good enough memory to make a successful liar."* <br> Abraham Lincoln
+
 *"Work until you no longer have to introduce yourself."* <br> Anonymous

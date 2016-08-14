@@ -18,13 +18,13 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 
 *"When students cheat on exams it's because our School system values grades more than students value learning."* <br> Neil deGrasse Tyson
 
+*"Only wimps do the general case. Real teachers tackle examples.*" <br> Beresford N. Parlett
+
 *"75% of success is staying calm. The rest you figure out."* <br> Sam Kass
 
 *"To talk without thinking is to shoot without aiming."* <br> unknown author
 
 *"Living a healthy lifestyle, while having fun, is what fitness is all about."* <br> Brendan Meyers
-
-*"Only wimps do the general case. Real teachers tackle examples.*" <br> Beresford N. Parlett
 
 *"Travel is still the most intense mode of learning."* <br>  Kevin Kelly
 

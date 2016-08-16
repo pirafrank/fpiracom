@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.project %}{{ page.project }} – {% endif %}{{ site.name }}</title>
+
+    {% include meta.html %}
+
+    {% include head.html %}
+
+    {% if page.project_css %}
+      {% for stylesheet in page.project_css %}
+        <link rel="stylesheet" href="/css/projects/{{ stylesheet }}.css" media="screen" type="text/css">
+      {% endfor %}
+    {% endif %}
+
+    {% if page.project_js %}
+      {% for js_file in page.project_js %}
+        <script type="text/javascript" src='/js/projects/{{ js_file }}.js' defer></script>
+      {% endfor %}
+    {% endif %}
+
+    {% include analytics.html %}
+
+    <style type="text/css">
+        .project {
+            color: {{ page.fontcolor }};
+        }
+    </style>
+
+  </head>
+
+  <body>
+
+    {% include noscript.html %}
+
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+
+          <div id="top">
+            <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
+            {% include nav.html %}
+          </div>
+
+        </header>
+      </div>
+    </div>
+
+    <div class="big_container">
+      <div id="main" role="main" class="container">
+
+        <article class="project">
+
+            <div class="project-name">
+                <h1>{{ page.name }}</h1>
+            </div>
+            <div class="project-tagline">
+                <b>{{ page.tagline }}</b>
+            </div>
+
+          <div class="entry">
+            {{ content }}
+          </div>
+
+          <!--
+          <br><br>
+          {% include share-buttons.html %}
+          -->
+
+        </article>
+
+        <div class="corner-btn share-corner"><a href="#share-links">Share</a></div>
+
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>

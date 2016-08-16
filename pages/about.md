@@ -84,7 +84,7 @@ Sometimes I find myself reading thrillers.
 
 ### Resume
 
-[Download]({{ site.baseurl }}/files/resume-francesco-pira.pdf)
+[Download]({{ site.baseurl }}/static/cv/resume-francesco-pira.pdf)
 
 ### Contact me
 

@@ -10,6 +10,7 @@
 .btn-resources {
     width: 180px;
     margin-top: 0px;
+    padding: 0.6em 1em 0.6em 1em;
 
     @include mobile {
         width: 220px;

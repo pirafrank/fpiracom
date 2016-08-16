@@ -4,7 +4,8 @@
 @import "variables";
 
 .project-button {
-    border: 2px solid $darkerGray;
+    border-style: solid;
+    border-color: $darkerGray;
     background-color: transparent;
     color: $darkerGray;
 

@@ -3,11 +3,10 @@ layout: project
 permalink: /projects/ble/
 project: Battery Life Extender
 tagline: The nimblest battery life extender solution for your MacBook
-color:
-    a: "white"
-    b: "#eeeeee"
-    font: "#222222"
-    bgcolor: "#FFF700"
+colora: "white"
+colorb: "#eeeeee"
+fontcolor: "#222222"
+bgcolor: "#FFF700"
 isGithub: true
 youtubeurl: "https://www.youtube.com/embed/UUuXfyfCaL4"
 repourl: "https://github.com/pirafrank/battery_life_extender"
@@ -16,32 +15,29 @@ project_css: "ble"
 ---
 
 {% if page.isGithub %}
-    <div class="project-video">
-        <figure>
-            <!-- <iframe width="640" height="480" src="{{ page.url.youtube }}" frameborder="0" allowfullscreen></iframe> -->
-            <iframe width="854" height="480" src="{{ page.youtubeurl }}" frameborder="0" allowfullscreen></iframe>
-        </figure>
+    <div class="project-video center space">
+        <iframe width="640" height="360" src="{{ page.youtubeurl }}" frameborder="0" allowfullscreen></iframe>
     </div>
 {% endif %}
 
 <div class="section group space">
-    <div class="col span_6_of_12">
+    <div class="col span_6_of_12 center">
         description 1
     </div>
-    <div class="col span_6_of_12">
+    <div class="col span_6_of_12 center">
         put an image here
     </div>
 </div>
 
 <div class="section group space">
-    <div class="col span_6_of_12">
+    <div class="col span_6_of_12 center">
         put an image here
     </div>
-    <div class="col span_6_of_12">
+    <div class="col span_6_of_12 center">
         description 2
     </div>
 </div>
 
-<div class="download-now center space">
-    <a href="{{ page.downloadurl }}" class="button button-big project-button">Download now</a>
+<div class="center space">
+    <a href="{{ page.downloadurl }}" class="btn btn-big project-button">Download now</a>
 </div>

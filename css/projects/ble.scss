@@ -1,0 +1,15 @@
+---
+---
+
+@import "variables";
+
+.project-button {
+    border: 2px solid $darkerGray;
+    background-color: transparent;
+    color: $darkerGray;
+
+    &:hover, &:active {
+        background-color: $darkerGray;
+        color: $white;
+    }
+}

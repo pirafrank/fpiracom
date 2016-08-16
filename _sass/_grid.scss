@@ -138,12 +138,6 @@
 // Useful Bootstrap classes
 //
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -160,17 +154,6 @@
 .container-fluid:after,
 .row:after {
   clear: both;
-}
-
-.pull-right {
-  float: right !important;
-}
-.pull-left {
-  float: left !important;
-}
-
-.center {
-  text-align: center;
 }
 
 .row {

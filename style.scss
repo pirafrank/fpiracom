@@ -19,20 +19,26 @@
 // bootstrap grid system
 @import "grid";
 
+// navbar, siteavatar, sitename, ...
+@import "layout";
+
 // css for hiding classes
 @import "hidden";
 
-// navbar, siteavatar, sitename, ...
-@import "layout";
+// utilities (center, pull-right, monospaced, ...)
+@import "utilities";
 
 // buttons
 @import "buttons";
 
-// css for pages (not posts)
-@import "pages";
+// share buttons css
+@import "share";
 
 // responsive video support
 @import "responsive-video";
+
+// css for pages (not posts)
+@import "pages";
 
 // css for post pages, /blog and /by-category
 @import "posts";

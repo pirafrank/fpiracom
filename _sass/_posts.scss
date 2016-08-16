@@ -103,29 +103,6 @@
   // apparearance of post body is managed by post class. see above.
   //
 
-  .share-post { // edit appearance of share div
-    margin-top: 3em;
-    margin-bottom: 1em;
-    font-size: 14px;
-    color: $gray;
-
-    @include mobile {
-      text-align: center;
-      font-size: 16px;
-    }
-  }
-
-  .btn-posts {
-    display: inline;
-    width: 100%;
-
-    @include mobile {
-      display: table; // center divs in mobile view (IE8 compatible)
-      width: 100%;
-      max-width: 180px;
-    }
-  }
-
   .comments {
     margin-top: 10px;
   }

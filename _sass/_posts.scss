@@ -113,32 +113,16 @@
       text-align: center;
       font-size: 16px;
     }
+  }
 
-    a:link {
-      display: inline;
+  .btn-posts {
+    display: inline;
+    width: 100%;
+
+    @include mobile {
+      display: table; // center divs in mobile view (IE8 compatible)
       width: 100%;
-      color: $darkBlue;
-      background-color: transparent;
-      border: 1px solid $lightestGray;
-      padding: 5px 10px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-
-      @include mobile {
-        display: block;
-        max-width: 180px;
-        text-align: center;
-        display: table; // center divs in mobile view (IE8 compatible)
-        margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
-      }
-
-      &:hover, &:active {
-        color: $white;
-        background-color: $darkBlue;
-        border: 1px solid $darkBlue;
-        text-decoration: none;
-      }
+      max-width: 180px;
     }
   }
 

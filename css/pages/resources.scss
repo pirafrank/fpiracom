@@ -7,36 +7,11 @@
     padding: 1em 2.5em 1em 2.5em;
 }
 
-.res-entry a {
-    display: inline-block;
+.btn-resources {
     width: 180px;
-    height: 3em;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    padding: 10px;
-    border: 2px solid $lightestGray;
-    background-color: transparent;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-
-    &:hover, &:active {
-        border: 2px solid $darkBlue;
-        text-decoration: none;
-
-        @include mobile {
-            color: $white;
-            background-color: $darkBlue;
-        }
-    }
+    margin-top: 0px;
 
     @include mobile {
-        display: block;
         width: 220px;
-        height: 2em;
-        display: table; // center divs in mobile view (IE8 compatible)
-        text-align: center;
-        margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
     }
 }
-

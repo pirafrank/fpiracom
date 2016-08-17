@@ -22,7 +22,8 @@
     {% include analytics.html %}
 
     <style type="text/css">
-        .project {
+        .square-box {
+            background-color: {{ page.bgcolor }};
             color: {{ page.fontcolor }};
         }
     </style>
@@ -52,7 +53,7 @@
         <article class="project">
 
             <div class="project-name">
-                <h1>{{ page.name }}</h1>
+                <h1>{{ page.project }}</h1>
             </div>
             <div class="project-tagline">
                 <b>{{ page.tagline }}</b>
@@ -62,10 +63,9 @@
             {{ content }}
           </div>
 
-          <!--
-          <br><br>
-          {% include share-buttons.html %}
-          -->
+          <div class="space center">
+            {% include share-buttons.html %}
+          </div>
 
         </article>
 

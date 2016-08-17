@@ -3,7 +3,7 @@
 
 @import "variables";
 
-.project-button {
+.prj-button {
     border-style: solid;
     border-color: $darkerGray;
     background-color: transparent;
@@ -13,4 +13,12 @@
         background-color: $darkerGray;
         color: $white;
     }
+}
+
+.prj-img {
+    padding: 15px;
+}
+
+.prj-description {
+    padding: 20px;
 }

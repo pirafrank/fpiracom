@@ -6,3 +6,5 @@ _site
 node_modules
 package.json
 _sass/_cssdebug.scss
+postimages
+projectimages

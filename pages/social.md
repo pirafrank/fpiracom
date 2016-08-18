@@ -46,11 +46,11 @@ Here's a list of all my social network profiles and public platforms.
         </div>
         <div class="col span_5_of_12">
             <h4>Blogging</h4>
+            <a href="http://{{ site.social-links.tumblr }}.tumblr.com">tumblr</a>
+            <br>
             <a href="http://getpocket.com/@{{ site.social-links.pocket }}">Pocket</a>
             <br>
             <a href="http://medium.com/@{{ site.social-links.medium }}">Medium</a>
-            <br>
-            <a href="http://{{ site.social-links.tumblr }}.tumblr.com">tumblr</a>
 
             <h4>Reading</h4>
             <a href="https://www.goodreads.com/{{ site.social-links.goodreads }}">Goodreads</a>

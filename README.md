@@ -12,16 +12,16 @@ The content of the website, which is also part of this repository as it's hosted
 
 ### Important notes
 
-Post images and project page images are NOT hosted here. They're hosted in *fpiracom_static_backup* repo. In order to have previews with images when running `jekyll serve`, also clone that repo and symlink `postimages` and `projectimages` folders here. Look at the example below.
+Static resources (like post images, project page images and files) are NOT hosted here. They're hosted in *fpiracom_static* repo.
+
+In order to have previews with images and those files when running `jekyll serve`, also clone that repo and symlink `static` subfolder in that repo to the root here.
+
+Note that `static` symlink or dir is already excluded in this repo `.gitignore`.
+
+Look at the example below.
 
 **Example**
 
 ```
-ln -s /path/to/static_repo/postimages/ /path/to/this_repo/assets/postimages/
-```
-
-and
-
-```
-ln -s /path/to/static_repo/projectimages/ /path/to/this_repo/assets/projectimages/
+ln -s /path/to/fpiracom_static/static /path/to/pirafrank.github.io/static
 ```

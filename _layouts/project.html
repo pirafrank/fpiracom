@@ -7,6 +7,8 @@
 
     {% include head.html %}
 
+    <link rel="stylesheet" href="/css/projects/projects.css" media="screen" type="text/css">
+
     {% if page.project_css %}
       {% for stylesheet in page.project_css %}
         <link rel="stylesheet" href="/css/projects/{{ stylesheet }}.css" media="screen" type="text/css">
@@ -20,13 +22,6 @@
     {% endif %}
 
     {% include analytics.html %}
-
-    <style type="text/css">
-        .square-box {
-            background-color: {{ page.bgcolor }};
-            color: {{ page.fontcolor }};
-        }
-    </style>
 
   </head>
 
@@ -47,31 +42,8 @@
       </div>
     </div>
 
-    <div class="big_container">
-      <div id="main" role="main" class="container">
-
-        <article class="project">
-
-            <div class="project-name">
-                <h1>{{ page.project }}</h1>
-            </div>
-            <div class="project-tagline">
-                <b>{{ page.tagline }}</b>
-            </div>
-
-          <div class="entry">
-            {{ content }}
-          </div>
-
-          <div class="space center">
-            {% include share-buttons.html %}
-          </div>
-
-        </article>
-
-        <div class="corner-btn share-corner"><a href="#share-links">Share</a></div>
-
-      </div>
+    <div class="big_container project">
+      {{ content }}
     </div>
 
     {% include footer.html %}

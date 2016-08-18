@@ -3,69 +3,19 @@
 // Pages
 //
 
+.page {
+  font-weight: 400;
+  //color: $darkGray; // commented as it uses color from 'body' in _base.scss
+
+  @include retina {
+    strong, b {
+      font-weight: bold;
+    }
+  }
+}
+
 .page-title {
   @include mobile{
     text-align: center;
-  }
-}
-
-.page-options {
-  h5 {
-    font-size: 20px;
-    color: $gray;
-  }
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.safe-email {
-  i {
-    font-family: $defaultSansSerif;
-    font-style: normal;
-    //letter-spacing: -0.10em;
-    border-color: transparent;
-    border-radius: 2px;
-    background-color: $lightestGray;
-    margin: 1px;
-    padding: 1px;
-  }
-}
-
-.fingerprint {
-    font-family: $defaultSansSerifBody;
-    font-size: 16px;
-    font-style: normal !important;
-    color: $gray;
-}
-
-.line-separator {
-  height: 1px;
-  //background: $darkGray;
-  border-bottom: 1px solid $lightestGray;
-}
-
-.corner-btn {
-  position: fixed;
-  background: $white;
-  border: 1px solid $lightestGray;
-  border-radius: 5px;
-  padding: 3px 9px 3px 9px;
-
-  a {
-    font-size: 14px;
-    font-family: $defaultSansSerif;
-    //text-transform: uppercase;
-    color: $gray;
-  }
-}
-
-.share-corner {
-  bottom: 2%;
-  right: 2%;
-
-  @include mobile {
-    right: 4%;
   }
 }

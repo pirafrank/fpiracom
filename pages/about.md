@@ -9,7 +9,7 @@ custom_css: about
 - [Bio](#bio)
 - [Projects](#projects)
 - [My toolbelt](#my-toolbelt)
-- [Speaker](#speaker)
+- [Events](#events)
 - [Skills](#skills)
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
@@ -33,20 +33,29 @@ From time to time I write little utilities to help my work or just code for fun.
 
 ### My toolbelt
 
-[Development tools and utilities I use]({{ site.baseurl }}/my-toolbelt/).
+[Development tools and utilities I use]({{ site.baseurl }}/resources/my-toolbelt/).
 
-### Speaker
+### Events
 
-I've been speaking about various IT and startup topics at a couple of conferences:
-
-- [Hardening Two](http://hardeningtwo.fileshute.com), Speaker
+[Hardening Two](http://hardeningtwo.fileshute.com), Speaker
+<br>*June 13, 2016 @ University of Catania*
 <br>OpenDay about understanding Linux hardening. SELinux, GrSecurity, Tomoyo 1.8 and AppArmor were demoed to defend against privilege escalation, backdoor and shellshock.
-- [Hands on: The sexy side of JavaScript (feat. node.js)]({{ site.baseurl }}/blog/2016/05/speech-the-sexy-side-of-javascript-nodejs/), Speaker
-<br>Workshop about JavaScript, ES2015 and node.js during the Google I/O Extended 2016 Catania.
-- [Hardening One](http://etnaforensics.it/sweetbus/), Speaker
+
+[Google I/O Extended 2016 Catania](https://developers.google.com/events/6168172246073344/), Speaker
+<br>*May 19, 2016 @ University of Catania*
+<br>Workshop about JavaScript, ES2015 and node.js titled "[Hands on: The sexy side of JavaScript (feat. node.js)]({{ site.baseurl }}/blog/2016/05/speech-the-sexy-side-of-javascript-nodejs/)".
+
+[Hardening One](http://www.dmi.unict.it/%7Egiamp/hardening/15edition), Speaker
+<br>*May 19, 2015 @ University of Catania*
 <br>OpenDay about security of GNU/Linux-based desktop OSes and today's edge hardening techniques.
-- [#AppIdee](https://twitter.com/search?q=%23appidee) (by [Youthub](http://youthub.net)), Moderator
-<br>A series of weekly events held in Catania about startups and the local network.
+
+[#AppIdee](https://twitter.com/search?q=%23appidee) (by [Youthub](http://youthub.net)), Moderator/Organizer
+<br>*2015-Ongoing @ Catania*
+<br>A series of events held in Catania about startups, young entrepreneurship and the local community.
+
+[Summer Entrepreneurship Training (SET)](https://estiem.org/default.aspx?PageId=1500), Local Supporter
+<br>*August 4-10, 2014 @ Catania*
+<br>An event by ESTIEM Business Booster aimed at promoting and stimulate entrepreneurship among students. It included trainings and a competition between participants. Read more about it [here](https://estiem.org/default.aspx?PageId=1224) and about 2014 edition [here at page 42](https://issuu.com/estiem/docs/magazine47).
 
 ### Skills
 
@@ -71,11 +80,11 @@ Sometimes I find myself reading thrillers.
 
 **DIY** Something my father taught me. It's fun to tinker away from keyboard, too.
 
-**Traveling** Visiting new places and discovering new cultures widens your mind and challenge you. When I have the chance to leave, I always do.
+**Traveling** Visiting new places and discovering new cultures widens your mind and challenges you. When I have the chance to leave, I always do.
 
 ### Resume
 
-[Download]({{ site.baseurl }}/files/resume-francesco-pira.pdf)
+[Download]({{ site.baseurl }}/static/cv/resume-francesco-pira.pdf)
 
 ### Contact me
 

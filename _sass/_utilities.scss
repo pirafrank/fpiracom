@@ -1,0 +1,62 @@
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.monospaced {
+  font-family: $defaultMonospaced;
+  font-style: normal !important;
+  color: $gray;
+}
+
+.grayed {
+  font-style: normal;
+  color: $gray;
+}
+
+.line-separator {
+  height: 1px;
+  //background: $darkGray;
+  border-bottom: 1px solid $lightestGray;
+}
+
+.safe-email {
+  i {
+    font-family: $defaultSansSerif;
+    font-style: normal;
+    //letter-spacing: -0.10em;
+    border-color: transparent;
+    border-radius: 2px;
+    background-color: $lightestGray;
+    margin: 1px;
+    padding: 1px;
+  }
+}
+
+.corner-btn {
+  position: fixed;
+  background: $white;
+  border: 1px solid $lightestGray;
+  border-radius: 5px;
+  padding: 3px 9px 3px 9px;
+
+  a {
+    font-size: 14px;
+    font-family: $defaultSansSerif;
+    //text-transform: uppercase;
+    color: $gray;
+  }
+}

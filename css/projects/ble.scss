@@ -1,0 +1,28 @@
+---
+---
+
+@import "variables";
+
+.prj-button {
+    border-style: solid;
+    border-color: $darkerGray;
+    background-color: transparent;
+    color: $darkerGray;
+
+    &:hover, &:active {
+        background-color: $darkerGray;
+        color: $white;
+    }
+}
+
+.prj-img {
+    padding: 15px;
+}
+
+.prj-text {
+    padding: 20px;
+}
+
+.space {
+    padding: 2em 0em 2em 0em;
+}

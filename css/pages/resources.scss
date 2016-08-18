@@ -1,0 +1,18 @@
+---
+---
+
+@import "variables";
+
+.group {
+    padding: 1em 2.5em 1em 2.5em;
+}
+
+.btn-resources {
+    width: 180px;
+    margin-top: 0px;
+    padding: 0.6em 1em 0.6em 1em;
+
+    @include mobile {
+        width: 220px;
+    }
+}

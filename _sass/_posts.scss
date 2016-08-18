@@ -15,11 +15,16 @@
 
 .post {
 
-  font-family: $defaultSerif;
+  font-family: $defaultSansSerifBody;
   font-size: 18px;
+  font-weight: 400; // font weight of post body
   line-height: 1.6;
-  color: $darkGray;
-  
+  //color: $darkGray; // commented as it uses color from 'body' in _base.scss
+
+  strong, b {
+    font-weight: bold;
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -53,6 +58,7 @@
     h1 {
       font-size: 38px;
       font-family: $defaultSerif;
+      font-weight: 400;
       letter-spacing: -0.05em;
       color: $darkerGray;
       line-height: 1.2;
@@ -61,7 +67,7 @@
 
   .post-subtitle { // edit appearance of post subtitle
     margin-bottom: 1.5em;
-    
+
     strong {
       font-size: 18px;
       font-style: italic;
@@ -96,45 +102,6 @@
   //
   // apparearance of post body is managed by post class. see above.
   //
-
-  .share-post { // edit appearance of share div
-    margin-top: 3em;
-    margin-bottom: 1em;
-    font-size: 14px;
-    color: $gray;
-
-    @include mobile {
-      text-align: center;
-      font-size: 16px;
-    }
-
-    a:link {
-      display: inline;
-      width: 100%;
-      color: $darkBlue;
-      background-color: transparent;
-      border: 1px solid $lightestGray;
-      padding: 5px 10px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-
-      @include mobile {
-        display: block;
-        max-width: 180px;
-        text-align: center;
-        display: table; // center divs in mobile view (IE8 compatible)
-        margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
-      }
-
-      &:hover, &:active {
-        color: $white;
-        background-color: $darkBlue;
-        border: 1px solid $darkBlue;
-        text-decoration: none;
-      }
-    }
-  }
 
   .comments {
     margin-top: 10px;

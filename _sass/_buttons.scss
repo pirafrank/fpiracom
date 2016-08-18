@@ -1,0 +1,74 @@
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    &:hover, &:active {
+        text-decoration: none;
+    }
+
+    @include mobile {
+        //display: block;
+        display: table; // center divs in mobile view (IE8 compatible)
+        text-align: center;
+    }
+
+}
+
+.btn-big {
+    margin: 15px 10px 15px 10px;
+    padding: 0.6em 2em 0.6em 2em;
+    height: 3em;
+    border-width: 2px;
+
+    @include mobile {
+        height: 2em;
+        margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
+    }
+}
+
+.btn-medium {
+    margin: 15px 10px 15px 10px;
+    font-size: 16px;
+    padding: 0.6em 1em 0.6em 1em;
+    height: 3em;
+    border-width: 2px;
+
+    @include mobile {
+        height: 2em;
+        margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
+    }
+}
+
+.btn-small {
+    font-size: 14px;
+    margin: 5px;
+    padding: 0.4em 1em 0.4em 1em;
+    height: 2.5em;
+    border-width: 1px;
+
+    @include mobile {
+        height: 2em;
+        margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
+        font-size: 16px;
+    }
+}
+
+.btn-default {
+    border-style: solid;
+    border-color: $lightestGray;
+    background-color: transparent;
+    color: $darkBlue;
+
+    &:hover, &:active {
+        border-color: $darkBlue;
+
+        @include mobile {
+            color: $white;
+            background-color: $darkBlue;
+        }
+    }
+}

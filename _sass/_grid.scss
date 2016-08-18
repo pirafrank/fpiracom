@@ -37,7 +37,7 @@
     content:"";
     display:table;
   }
-  
+
   &:after {
     clear:both;
   }
@@ -45,7 +45,7 @@
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-.col { 
+.col {
   @include mobile {
     margin: 1% 0 1% 0%;
   }
@@ -138,12 +138,6 @@
 // Useful Bootstrap classes
 //
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -162,9 +156,17 @@
   clear: both;
 }
 
-.pull-right {
-  float: right !important;
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
 }
-.pull-left {
-  float: left !important;
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
 }

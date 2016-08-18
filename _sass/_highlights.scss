@@ -1,25 +1,27 @@
 
 .highlight {
   background-color: #efefef;
-  padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  padding: 10px 10px 10px 12px;
+  //border: 1px solid #ddd;
+  //-moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  //-webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  //box-shadow: 3px 3px rgba(0,0,0,0.1);
   margin: 20px 0 20px 0;
   overflow: auto;
 }
 
 /* Code section */
 pre > code {
-  font-family: $defaultCode;
+  font-family: $defaultMonospaced;
   font-size: 14px;
 }
 
 /* Inline code */
 code {
-  font-family: $defaultCode;
-  font-size: 16px; // this should match font-size in body class in base.scss
+  background-color: #efefef;
+  padding: 2px 2px 2px 2px;
+  font-family: $defaultMonospaced;
+  font-size: 14px;
 }
 
 .highlight .c { color: #586E75 } /* Comment */

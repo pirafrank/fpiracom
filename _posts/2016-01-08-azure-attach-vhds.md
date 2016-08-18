@@ -13,7 +13,7 @@ First, we need to attach a new drive. Go to [portal.azure.com](http://portal.azu
 
 Then *Settings* > *Disks* > *Attach new*. Now choose a nice name (it will be seen only in the portal, btw) and the desired virtual drive dimension. As a side note, Azure pricing is currently set to count only data actually written to disk, not the dimension of the whole disk.
 
-![Attach Disk to VM]({{ site.baseurl }}/assets/postimages/2016-01-08.jpg)
+![Attach Disk to VM]({{ site.baseurl }}/static/postimages/2016-01-08/001.jpg)
 
 After the success notification, the disk is attached to the VM. Unfortunately, unlikely Amazon EC2, Azure deploys new hard drives as blobs in raw format (nothing on the virtual disk, even the partition table!). So set it ready.
 

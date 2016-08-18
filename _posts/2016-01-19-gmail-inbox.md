@@ -3,11 +3,11 @@ layout: post
 title: Is GMail approaching to the end?
 subtitle: A few thoughts about Inbox and Google's services.
 categories: _editorials
-description: My opinion about Google's Inbox and its other services 
+description: My opinion about Google's Inbox and its other services
 keywords: google,inbox,email,gmail,end,a/b testing,imap
 ---
 
-![Gmail to inbox redirect screenshot]({{ site.baseurl }}/assets/postimages/00-005.png)
+![Gmail to inbox redirect screenshot]({{ site.baseurl }}/static/postimages/2016-01-19/001.png)
 
 Back in [December](http://www.forbes.com/sites/gordonkelly/2015/12/05/google-ending-gmail/#2715e4857a0b59d849f02b55), Google started migrating users to their new Inbox service. So I guess this Google A/B test is over.
 

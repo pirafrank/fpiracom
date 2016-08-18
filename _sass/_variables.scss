@@ -33,13 +33,15 @@ $white: #fff;
 // Default fonts. Change here to change site-wide
 $defaultSerif: 'Merriweather', serif;
 $defaultSansSerif: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$defaultSansSerifBody: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$defaultCode: 'Bitstream Vera Sans Mono','Courier', monospace;
+$defaultSansSerifBody: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$defaultMonospaced: 'Fira Mono','Courier', monospace;
+$bodySize: 16px;
 
-// change
+// shortcuts
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$courier: 'Courier', monospace;
 
 // Mobile breakpoints
 @mixin mobile {

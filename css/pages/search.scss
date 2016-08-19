@@ -3,12 +3,26 @@
 
 @import "variables";
 
+.results-container {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 640px;
+    width: 100%;
+
+    @include mobile {
+        ul > li {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+    }
+}
+
 .search-container {
     //position: absolute;
     //left: 50%;
     //float: left;
     padding-top: 30px;
-    
+
     text-align: center; // makes the input form centered
     p, form { display:inline-block } // makes the input form centered
 

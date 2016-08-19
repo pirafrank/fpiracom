@@ -21,7 +21,7 @@ custom_css: search
   <body>
 
     {% include noscript.html %}
-    
+
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -30,17 +30,33 @@ custom_css: search
             <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
             {% include nav.html %}
           </div>
- 
+
         </header>
       </div>
     </div>
 
     <div class="big_container">
+      <div class="container">
         <br><br>
-        <h2 style="text-align: center;">Missed something?</h2>
-        <div class="search-container">
-            {% include searchbox.html %}
+        <h2 class="center">Missed something?</h2>
+
+        <div class="center">
+          <form action="get" id="site_search">
+              <input class="search-input" type="text" id="search_box">
+              <input class="search-btn" type="submit" value="Search!">
+          </form>
         </div>
+      </div>
+
+      <br>
+      <div class="results-container">
+        <ul id="search_results"></ul>
+      </div>
+
+      <script src="/js/lunr.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="/js/search.js"></script>
+
     </div>
 
   </body>

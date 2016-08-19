@@ -54,7 +54,7 @@ jQuery(function() {
         });
       } else {
         // If there are no results, let the user know.
-        $search_results.html('<li>No results found.<br/>Please check spelling, spacing, yada...</li>');
+        $search_results.html('<i>Sorry, no result found. Try another query.</i>');
       }
     });
   }

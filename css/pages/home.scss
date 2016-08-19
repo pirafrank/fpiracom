@@ -104,14 +104,9 @@ h1, h2, h3, h4, h5, h6 {
 //
 
 .middle {
-  display: none;
   text-align: center;
   background-color: $darkBlue; //$darkBlue
   padding: 20px 0px 20px 0px;
-
-  @include mobile {
-    display: block;
-  }
 }
 
 .wrapper-masthead {     // these settings overwrite the ones in style.scss
@@ -120,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   @include mobile {
     display: none;
   }
-  
+
 }
 
 .navLinks {
@@ -145,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navLinkEntry {
-    margin-top: 10px; // put space between navLinks buttons... 
+    margin-top: 10px; // put space between navLinks buttons...
     margin-bottom: 10px; // ...in a vertically symmetric fashion!
 
     a {
@@ -163,6 +158,12 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 180px;
         padding: 5px 0px 5px 0px;
         display: table;
+
+        &:active {
+          background-color: $white;
+          border-color: $white;
+          color: $darkBlue;
+        }
       }
     }
 }

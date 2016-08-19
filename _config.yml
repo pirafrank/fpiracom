@@ -91,7 +91,6 @@ home:
   show_excerpt: false # choose whether to show or not excerpt of latest blog posts
   show_pinboard: true # set it to true to enable, false to disable right section in home
   show_twitter_feed: true # NB. you have to REPLACE the code in home with the one for your twitter account.
-  show_search: true # choose whether to show or not seach bar in home page
 
 #
 # !! You don't need to change any of the configuration flags below !!

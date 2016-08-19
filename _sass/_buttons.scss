@@ -63,10 +63,17 @@
     background-color: transparent;
     color: $darkBlue;
 
-    &:hover, &:active {
+    &:hover {
         border-color: $darkBlue;
+    }
 
-        @include mobile {
+    &:active {
+        color: $white;
+        background-color: $darkBlue;
+    }
+
+    @include mobile {
+        &:hover, &:active {
             color: $white;
             background-color: $darkBlue;
         }

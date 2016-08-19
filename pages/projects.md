@@ -26,7 +26,7 @@ A simple way to backup user configuration files, info and installation status in
 #### [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer)
 Deploy a Jekyll website on your VPS with just a 'git push'. Great if you want to publish posts on-the-go.
 
-#### [Battery Life Extender](https://github.com/pirafrank/battery_life_extender)
+#### [Battery Life Extender]({{ site.baseurl }}/projects/ble)
 The niblest solution of a battery life extender for OS X. Take care of your MacBook.
 
 #### [Google Photos EXIF fixer](https://github.com/pirafrank/Google-Photos-EXIF-fixer)

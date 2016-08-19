@@ -62,7 +62,7 @@
     </div>
   </div>
 
-  <div class="middle">
+  <div class="middle desktop-hidden smallscreen-hidden">
     {% if site.home.show_social %}
       <div class="social">
         {% include svg-icons.html %}
@@ -84,6 +84,9 @@
       <div class="navLinkEntry">
         <a href="{{ site.baseurl }}/contacts">CONTACTS</a>
       </div>
+      <div class="navLinkEntry">
+        <a href="{{ site.baseurl }}/search">SEARCH</a>
+      </div>
     </div>
   </div>
 
@@ -91,11 +94,6 @@
     <div class="section group">
       <div class="inner-container">
         <div id="home" class="col span_7_of_12">
-          {% if site.home.show_search %}
-            <div class="desktop-hidden smallscreen-hidden">
-              {% include searchbox.html %}
-            </div>
-          {% endif %}
           {% if site.home.show_pinboard %}
             <div class="desktop-hidden smallscreen-hidden">
               {% include pinboard.html %}

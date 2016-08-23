@@ -51,6 +51,23 @@
     }
   }
 
+  h5 { // use it for citations and to put some text in the spotlight
+    text-align: left;
+    font-family: $defaultSansSerifBody;
+    font-color: $lightGray;
+    color: $lightGray;
+    font-size: 26px;
+    font-style: italic;
+    margin-right: 16%;
+    margin-left: 14%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 10px;
+    border-width: 0px 0px 0px 2px;
+    border-style: solid;
+    border-color: $gray;
+  }
+
   .post-title { // edit appearance of post title
     padding-top: 2em;
     margin-bottom: 0.4em;

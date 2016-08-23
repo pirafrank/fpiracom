@@ -1,10 +1,10 @@
 #
-# responsive-video-for-jekyll.rb
+# responsive-youtube-for-jekyll.rb
 #
 # by Jeffrey Morgan (http://usabilityetc.com)
 # and edited by Francesco Pira (fpira.com)
 #
-# support for YouTube. Vimeo support coming in the future.
+# support for YouTube.
 #
 # Use Twitter Bootstrap's CSS to embed responsive YouTube videos
 # or use your own CSS/SCSS

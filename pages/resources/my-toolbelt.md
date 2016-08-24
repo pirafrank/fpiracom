@@ -29,7 +29,7 @@ Often I'm asked about development tools and useful apps and services I use daily
 - Datum (check SQLite dbs in a snap)
 - Bitbucket
 - Github
-- Heroku toolbelt
+- ~~Heroku toolbelt~~ (no more since Docker)
 - ForkLift and rsync
 - Parallels + Linux and Windows VMs
 - Docker
@@ -39,7 +39,7 @@ Often I'm asked about development tools and useful apps and services I use daily
 - golang
 - Tens of free custom fonts
 - Photoshop + Cooler + Sketch
-- [scripts]({{site.baseurl}}/projects) and [utilities]({{site.baseurl}}/resources) of mine
+- [scripts]({{site.baseurl}}/projects) and [utilities]({{site.baseurl}}/resources/utilities) of mine
 
 #### Useful apps and services
 

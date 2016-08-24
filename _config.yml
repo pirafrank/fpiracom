@@ -32,7 +32,7 @@ baseurl: ""
 
 # Theme Engine
 # To change site-wide fonts and colors, go to _sass/_variables anche change the hex values.
-theme:
+theme_engine:
   main_color: 34a
 
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
@@ -96,29 +96,35 @@ home:
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: redcarpet
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    block.line_numbers: true
 highlighter: pygments
 permalink: '/blog/:year/:month/:title/'
 excerpt_separator: "\n\n"
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
-future: false
 
 # Jekyll Blue version in use
-version: v2.0.0
+version: v3.0.0
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # If you want to un-minify, set to :expanded
+  style: compressed # If you want to un-minify, set to :expanded
 
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-gist # Support for GitHub gists
+  # jekyll paginate removed as no longer under active development as of Jekyll 3
 
 # Exclude these files from your production _site
 exclude:
     - Gemfile
     - Gemfile.lock
+    - CNAME
     - LICENSE
     - README.md
     - deploy.sh

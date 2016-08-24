@@ -7,3 +7,4 @@ node_modules
 package.json
 _sass/_cssdebug.scss
 static
+.jekyll-metadata

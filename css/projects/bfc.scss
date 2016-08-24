@@ -1,0 +1,92 @@
+---
+---
+
+@import "variables";
+
+.prj-container {
+    max-width: 720px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.smaller-text {
+    font-size: 14px;
+}
+
+.input-box {
+    font-size: 14px;
+
+    input {
+        width: 50px;
+        font-size: 16px;
+        text-align: right;
+    }
+}
+
+.prj-button {
+    display: inline-block;
+    margin-left: 0px;
+    padding: 7px 15px 7px 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $lighterGray;
+    background-color: transparent;
+    color: $darkerGray;
+    width: 220px;
+
+    &:hover, &:active {
+        background-color: $darkerGray;
+        border-color: $darkerGray;
+        color: $white;
+    }
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.vertical-line {
+    border-left: 0px solid $darkGray;
+    padding-left: 20px;
+
+    @include mobile {
+        border-style: none;
+        padding-left: 0px;
+    }
+}
+
+.results-container {
+    font-size: 14px;
+}
+
+.results {
+    p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    p:first-child {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    p > u {
+        font-size: 22px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+}
+
+.space {
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.center-mobile {
+    @include mobile {
+        text-align: center;
+    }
+}

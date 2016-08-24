@@ -5,6 +5,7 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    height: 100%;
 
     &:hover, &:active {
         text-decoration: none;
@@ -21,11 +22,9 @@
 .btn-big {
     margin: 15px 10px 15px 10px;
     padding: 0.6em 2em 0.6em 2em;
-    height: 3em;
     border-width: 2px;
 
     @include mobile {
-        height: 2em;
         margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
     }
 }
@@ -34,11 +33,9 @@
     margin: 15px 10px 15px 10px;
     font-size: 16px;
     padding: 0.6em 1em 0.6em 1em;
-    height: 3em;
     border-width: 2px;
 
     @include mobile {
-        height: 2em;
         margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
     }
 }
@@ -47,11 +44,9 @@
     font-size: 14px;
     margin: 5px;
     padding: 0.4em 1em 0.4em 1em;
-    height: 2.5em;
     border-width: 1px;
 
     @include mobile {
-        height: 2em;
         margin: 0.5em auto; // center divs in mobile view (IE8 compatible)
         font-size: 16px;
     }

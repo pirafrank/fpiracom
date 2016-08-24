@@ -1,0 +1,5 @@
+gem 'jekyll', '3.2.1'
+gem 'jekyll-gist'
+gem 'jekyll-feed'
+gem 'jekyll-sitemap'
+

@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 show_title: true
-custom_css: about
 ---
 
 - [Bio](#bio)

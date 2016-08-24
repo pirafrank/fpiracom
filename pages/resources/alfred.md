@@ -5,13 +5,13 @@ permalink: /resources/alfred-resources/
 show_title: true
 ---
 
-More about Alfred [here](https://www.alfredapp.com/).
+Don't know Alfred? Know about it [here](https://www.alfredapp.com/).
 
 Workflows and themes I've developed are available [on Packal](http://www.packal.org/users/{{ site.social-links.packal }}).
 
 #### Workflows
 
-Workflows are also available [on Github](https://github.com/pirafrank/alfred_workflows).
+Workflows source files, as wells as the latest stable versions, are available [on Github](https://github.com/pirafrank/alfred_workflows).
 
 #### Themes
 

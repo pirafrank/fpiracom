@@ -5,7 +5,7 @@ permalink: /resources/for-developers/
 show_title: true
 ---
 
-Here you can find a collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need.
+A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need.
 
 #### Bash
 
@@ -18,18 +18,18 @@ Here you can find a collection of tools, notes, snippets, links and more I've fo
 #### Rails
 
 - [gitignore for Rails app](https://gist.github.com/pirafrank/7c7303c039e2fa8df529) (*)
-- [pumascript.sh](https://gist.github.com/pirafrank/ea64dfbaceca755c3891): a script to start and stop [Puma](http://puma.io) server (*)
+- [pumascript.sh](https://gist.github.com/pirafrank/ea64dfbaceca755c3891) (*) : a script to start and stop [Puma](http://puma.io) server.
 
 #### Python
 
-- [Get Platform details](https://gist.github.com/pirafrank/a6421e09c2b8b17426da): Get platform details for current OS (print or use as a library). Works with Linux, OS X and Windows. (*)
-- [Open URL in default browser](https://gist.github.com/pirafrank/cd62f7def8f56ff986af)
-- [Open with the default application](https://gist.github.com/pirafrank/159aa709cc86799b66f2): Short snippet to open a given file with the default application. Works on Linux, OS X and Windows. On Linux requires xdg-open (usually built-in).
-- [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8): a script to completely remove PyObjc from your Mac (*)
+- [Get Platform details](https://gist.github.com/pirafrank/a6421e09c2b8b17426da) (*) : Get platform details for current OS (print or use as a library). Works with Linux, OS X and Windows.
+- [Open URL in default browser](https://gist.github.com/pirafrank/cd62f7def8f56ff986af) (*)
+- [Open with the default application](https://gist.github.com/pirafrank/159aa709cc86799b66f2) (*) : Short snippet to open a given file with the default application. Works on Linux, OS X and Windows. On Linux requires xdg-open (usually built-in).
+- [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8) (*) : a script to completely remove PyObjc from your Mac.
 
 #### Boilerplates
 
-- [heroku-static-website](https://github.com/pirafrank/heroku-static-website): A boilerplate to deploy a static website on heroku (*)
+- [heroku-static-website](https://github.com/pirafrank/heroku-static-website) (*) : A boilerplate to deploy a static website on heroku.
 
 #### Testing tools
 

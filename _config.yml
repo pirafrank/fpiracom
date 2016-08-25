@@ -15,6 +15,9 @@ avatar: "/assets/images/avatar.jpg"
 # timezone
 timezone: Europe/Rome
 
+# locale setting
+locale: en_us
+
 # Your website URL (e.g. http://fpira.com)
 # It's important to include http. If you use SSL, write https.
 url: https://fpira.com
@@ -93,6 +96,18 @@ home:
   show_pinboard: true # set it to true to enable, false to disable right section in home
   show_twitter_feed: true # NB. you have to REPLACE the code in home with the one for your twitter account.
 
+# Additional data for jekyll-seo-tag gem
+title: "Francesco Pira" # this can be your name
+twitter:
+  username: pirafrank
+logo: "/assets/images/meta_icon.png"
+social:
+  name: "Francesco Pira"
+  links:
+    - "http://twitter.com/pirafrank"
+    - "https://www.linkedin.com/in/fpira"
+    - "http://pirafrank.tumblr.com"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -119,7 +134,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-gist # Support for GitHub gists
-  # jekyll paginate removed as no longer under active development as of Jekyll 3
+  - jekyll-seo-tag # SEO best practise. More info at https://github.com/jekyll/jekyll-seo-tag
 
 # Exclude these files from your production _site
 exclude:

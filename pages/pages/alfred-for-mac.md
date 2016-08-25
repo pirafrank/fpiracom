@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Alfred workflows and themes
-permalink: /resources/alfred/
+permalink: /alfred-for-mac/
 show_title: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cheat sheets
-permalink: /resources/cheat-sheets/
+permalink: /cheat-sheets/
 show_title: true
 ---
 
@@ -32,7 +32,7 @@ A collection of handy cheat sheets.
 - [nvm](https://github.com/creationix/nvm#usage)
 - [Front-end cheat sheet](https://github.com/OpenSourceWorkflow/front-end-cheatsheet/blob/master/pdf/front-end-cheat-sheet.pdf)
 
-### Frameworks and libraries
+#### Frameworks and libraries
 
 - [node.js](http://overapi.com/nodejs)
 - [AngularJS](https://egghead.io/articles/angularjs-core-services-directive-definition-object-and-ui-router-cheat-sheets)
@@ -45,7 +45,7 @@ A collection of handy cheat sheets.
 - [Linux performance tools](http://i.imgur.com/2NAvHn1.png)
 - [Kali Linux cheat sheet](https://www.latesthackingnews.com/wp-content/uploads/2015/08/Kali_Linux_Cheat_Sheet.png)
 
-### Shells
+#### Shells
 
 - [Bash](http://cli.learncodethehardway.org/bash_cheat_sheet.pdf)
 - [Zsh (basic)](http://ivan.kanis.fr/zsh.pdf)

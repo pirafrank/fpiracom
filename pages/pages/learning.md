@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Learning resources
-permalink: /resources/learning/
+permalink: /learning/
 show_title: true
 ---
 

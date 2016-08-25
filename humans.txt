@@ -1,0 +1,24 @@
+---
+---
+
+  |   |o    |                        |
+  |---|.    |---..   .,-.-.,---.,---.|
+  |   ||    |   ||   || | |,---||   |
+  `   '`    `   '`---'` ' '`---^`   'o
+
+
+  fpira.com
+  Francesco Pira's personal website
+
+  Twitter     : @pirafrank
+  GitHub      : /pirafrank
+  Location    : Sicily, Italy
+
+  Language    : {{ site.locale }}
+  Last update : {{ site.time }}
+
+  Based on    : Jekyll Blue
+  JB vers.    : {{ site.version }}
+  Build using : {{ jekyll.version }}
+  Coded with  : love and tools from my
+                toolbelt (/resources/my-toolbelt)

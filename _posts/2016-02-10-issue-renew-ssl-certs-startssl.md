@@ -96,7 +96,7 @@ ssl_certificate /etc/nginx/ssl/example.com.crt; <--- the chained one!
 ssl_certificate_key /etc/nginx/ssl/example.com.key; <--- the actual key (unencrypted)!
 ```
 
-It’s best practise to put certificates into `/etc/nginx/ssl/` dir. So put them into this folder. If you want to, you can move old ones in `/etc/nginx/ssl/old`.
+It’s best practice to put certificates into `/etc/nginx/ssl/` dir. So put them into this folder. If you want to, you can move old ones in `/etc/nginx/ssl/old`.
 
 **Important: check permissions and ownership**
 

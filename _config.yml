@@ -138,7 +138,7 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-gist # Support for GitHub gists
   - jekyll-paginate # pagination support
-  - jekyll-seo-tag # SEO best practise. More info at https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-seo-tag # SEO best practice. More info at https://github.com/jekyll/jekyll-seo-tag
 
 # Exclude these files from your production _site
 exclude:

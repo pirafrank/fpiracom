@@ -58,7 +58,7 @@ fixed the issue.
 
 ### Update
 
-The best solution is different, though. Please check this post of mine about [best practise to install node on your computer]({{ site.baseurl }}/blog/2015/08/node-installation-best-practise/)
+The best solution is different, though. Please check this post of mine about [best practice to install node on your computer]({{ site.baseurl }}/blog/2015/08/node-installation-best-practise/)
 
 [Check this issue on Github](https://github.com/atom/electron/issues/1709) to know more about this.
 

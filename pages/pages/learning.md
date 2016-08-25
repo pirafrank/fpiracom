@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Learning Resources
+title: Learning resources
 permalink: /resources/learning/
 show_title: true
 ---

@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: projectmd
 title: Workflow for iOS recipes
-permalink: /resources/workflow-ios/
+permalink: /projects/workflow-ios/
 show_title: true
 ---
 

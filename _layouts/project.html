@@ -7,20 +7,6 @@
 
     {% include head.html %}
 
-    <link rel="stylesheet" href="/css/projects/projects.css" media="screen" type="text/css">
-
-    {% if page.project_css %}
-      {% for stylesheet in page.project_css %}
-        <link rel="stylesheet" href="/css/projects/{{ stylesheet }}.css" media="screen" type="text/css">
-      {% endfor %}
-    {% endif %}
-
-    {% if page.project_js %}
-      {% for js_file in page.project_js %}
-        <script type="text/javascript" src='/js/projects/{{ js_file }}.js' defer></script>
-      {% endfor %}
-    {% endif %}
-
     {% include analytics.html %}
 
     {% seo %}

@@ -16,7 +16,9 @@ custom_css: blog
 
   <div>
 
-    {% assign sorted_tags = site.tags | downcase | split:"," | sort %}
+    {#% assign sorted_tags = site.tags | downcase | split:"," | sort %}
+    {% assign sorted_tags = site.tags | downcase %}
+    {{ sorted_tags }}<br><br>
     {% for tag in sorted_tags %}
       <div id="{{ tag | first }}">
         <span style="font-size: 32px;">{{ tag | first }}</span>

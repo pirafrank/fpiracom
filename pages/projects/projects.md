@@ -57,4 +57,4 @@ A side panel with an elastic animation ready to be deployed on any html page wit
 Easy CLI utility to batch download images from flickr.
 
 #### This website
-Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), custom SCSS framework I've coded from scratch. Most of the things I try here are then backported to Jekyll Blue.
+Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), an heavily modified Jekyll Now fork with additional features and a custom SCSS framework coded from scratch. Most of the things I try here are then backported to Jekyll Blue.

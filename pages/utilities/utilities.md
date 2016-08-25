@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Utilities
-permalink: /resources/utilities/
+permalink: /utilities/
 show_title: true
 ---
 

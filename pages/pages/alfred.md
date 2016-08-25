@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Alfred resources
-permalink: /resources/alfred-resources/
+title: Alfred workflows and themes
+permalink: /resources/alfred/
 show_title: true
 ---
 
@@ -17,7 +17,7 @@ Workflows source files, as wells as the latest stable versions, are available [o
 
 You can also download all themes as a zip archive from [here]({{site.baseurl}}/static/alfred-themes.zip).
 
-#### 3rd-party workflows
+#### Noteworthy 3rd-party workflows
 
 - [Alfred Process Killer](https://github.com/ngreenstein/alfred-process-killer) by ngreenstein
 - [Evernote](http://www.alfredforum.com/topic/840-evernote-791-search-create-append-text-preview-reminders-and-more-all-within-alfred) by Carlos A. Sztoltz

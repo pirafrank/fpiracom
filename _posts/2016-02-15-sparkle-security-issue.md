@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Sparkle vulnerability and list of safe apps (Updated!)
-categories: osx
+categories: 'Apple'
 description: List of OS X apps with addressed Sparkle man-in-the-middle vulnerability
-keywords: osx,security,sparkle,vulnerability,mac,updater
+tags: ['Security','macOS']
 ---
 
 Many OS X apps use [Sparkle](https://sparkle-project.org/) as update library.

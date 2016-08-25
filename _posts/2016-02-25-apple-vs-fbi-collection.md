@@ -2,9 +2,9 @@
 layout: post
 title: "The Apple vs. FBI case: A collection of the best articles"
 subtitle: Articles on this much talked case to have a complete overview.
-category: privacy
+category: 'Apple'
 description: A collection of articles on the Apple vs. FBI case to have a complete overview.
-keywords: privacy,FBI,apple,security,surveillance,government
+tags: ['Privacy','Apple','Privacy']
 ---
 
 Tens of blogs and magazines wrote about it and authors are still typing.

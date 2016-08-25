@@ -2,9 +2,9 @@
 layout: post
 title: How to issue or renew an SSL certificate at StartSSL
 subtitle: StartSSL offers Class 1 certificates valid 1 year for free. They work even for 3rd level domains.
-categories: nginx
+categories: 'Sys-Admin'
 description: A guide to issue or renew Class 1 SSL certificates at StartSSL for free.
-keywords: ssl,certificates,startcom,startssl,domains
+tags: ['nginx','SSL','Sys Admin']
 ---
 
 StartSSL is a service run by StartCom to issue SSL certificates of different kind. It is one of the biggest CA in the world. The big deal of its offer is Class 1 certificates issued for free. They do not support wildcards and last only 1 year, but hey it won't cost you a cent! 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Restore the previous Apache configuration after upgrading to El Capitan
-categories: osx
+categories: Apple
 description: Restore the previous Apache configuration after El Capitan upgrade
-keywords: apache,upgrade,osx,OS X,el capitan
+tags: ['macOS','Apache']
 ---
 
 Since Mavericks, upgrading to a new major version of OS X restores the Apache settings to default. Luckily enough the setup backups the old configuration. Here's what I did to put it back.

@@ -15,6 +15,9 @@ layout: default
       <i>
         Published on {{ page.date | date: "%B %e, %Y" }}<br>
         Category: <a href="{{ site.baseurl }}/blog/by-category#{{ page.categories }}">{{ page.categories }}</a>
+         - Tags:{% for tag in page.tags %} {{ tag }}, {% endfor %}<br>
+        {% assign readtime = post.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
+        {% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read
       </i>
     </div>
   </div>

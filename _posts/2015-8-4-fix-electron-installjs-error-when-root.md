@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Fix electron-prebuilt install.js script error when installing as superuser
-categories: node.js
+categories: 'Web-Dev'
 description: How to fix install.js script error when installing electron-prebuilt as superuser
-keywords: electron,electron-prebuilt,node.js,superuser,installation
+tags: ['electron','node.js']
 ---
 
 Playing with electron, actually upgrading it, I've stumbled across this error:

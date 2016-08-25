@@ -122,6 +122,9 @@ highlighter: pygments
 permalink: '/blog/:year/:month/:title/'
 excerpt_separator: "\n\n"
 
+# reading speed (avg.)
+words_per_minute: 200
+
 # Jekyll Blue version in use
 version: v3.0.0
 

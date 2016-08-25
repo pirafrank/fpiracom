@@ -2,9 +2,9 @@
 layout: post
 title: Node installation best practise
 subtitle: or how to avoid post-install headaches by using nvm
-categories: node.js
+categories: 'Web-Dev'
 description: Install node.js via nvm to avoid sudo issues after installation
-keywords: node,node.js,best practise,install,installation,nvm,sudo
+tags: ['best practises','node.js']
 ---
 
 Installing node.js can be terrible.

@@ -2,9 +2,9 @@
 layout: post
 title: "Hands on: The sexy side of JavaScript (feat. node.js)"
 subtitle: My experience at Google I/O Extended 2016 in Catania as a speaker
-categories: node.js
+categories: 'Web-Dev'
 description: About my speech and experience at Google I/O Extended 2016 in Catania
-keywords: javascript,js,node.js,node,es6,ecmascript,es2015,es2016,
+tags: ['node.js','JavaScript','ES2015']
 ---
 
 During the Google I/O Extended 2016 held in Catania on 18th-20th May I had the chance to give an introductory speech about JavaScript, ES6 and node.js. Those are tech I use daily to develop back-end and cross-platform desktop applications.

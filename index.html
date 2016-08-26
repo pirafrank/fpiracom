@@ -1,34 +1,8 @@
 ---
+layout: default
+custom_css: "pages/home"
+is_home: true
 ---
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ site.name }}</title>
-
-    {% include meta.html %}
-
-    {% include head.html %}
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/pages/home.css" />
-
-    {% include analytics.html %}
-
-  </head>
-
-  <body>
-
-  {% include noscript.html %}
-
-  <div class="wrapper-masthead">
-    <div class="container">
-      <header id="top" class="masthead clearfix">
-
-        {% include nav.html %}
-
-      </header>
-    </div>
-  </div>
 
   <div class="cover">
     <div class="container">
@@ -70,19 +44,19 @@
     {% endif %}
     <div class="content navLinks">
       <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/blog">BLOG</a>
+        <a href="{{ site.baseurl }}/about">ABOUT</a>
       </div>
       <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/resources">RESOURCES</a>
+        <a href="{{ site.baseurl }}/contacts">CONTACTS</a>
+      </div>
+      <div class="navLinkEntry">
+        <a href="{{ site.baseurl }}/blog">BLOG</a>
       </div>
       <div class="navLinkEntry">
         <a href="{{ site.baseurl }}/projects">PROJECTS</a>
       </div>
       <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/about">ABOUT</a>
-      </div>
-      <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/contacts">CONTACTS</a>
+        <a href="{{ site.baseurl }}/more">MORE...</a>
       </div>
       <div class="navLinkEntry">
         <a href="{{ site.baseurl }}/search">SEARCH</a>
@@ -141,9 +115,3 @@
       </div>
     </div>
   </div>
-
-  {% include footer.html %}
-
-  </body>
-</html>
-

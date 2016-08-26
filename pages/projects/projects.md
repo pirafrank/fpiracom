@@ -17,7 +17,7 @@ A repository to generate a [Dash](https://kapeli.com/dash) docset for the [elect
 #### [Alfred Workflows](https://github.com/pirafrank/alfred_workflows)
 Useful Alfred workflows to enhance your productivity on Mac. Great for developers and power-users.
 
-#### [Workflow for iOS recipes]({{ site.baseurl }}/resources/workflow-ios/)
+#### [Workflow for iOS recipes]({{ site.baseurl }}/projects/workflow-ios/)
 Recipes for the popular iOS app [Workflow](https://workflow.is/download).
 
 #### [todabu](http://github.com/pirafrank/todabu)
@@ -57,4 +57,4 @@ A side panel with an elastic animation ready to be deployed on any html page wit
 Easy CLI utility to batch download images from flickr.
 
 #### This website
-Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), custom SCSS framework I've coded from scratch. Most of the things I try here are then backported to Jekyll Blue.
+Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), an heavily modified Jekyll Now fork with additional features and a custom SCSS framework coded from scratch. Most of the things I try here are then backported to Jekyll Blue.

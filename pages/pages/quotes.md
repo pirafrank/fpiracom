@@ -3,7 +3,7 @@ layout: page
 title: Quotes
 permalink: /quotes/
 show_title: true
-custom_css: quotes
+custom_css: "pages/quotes"
 ---
 
 Quotes worth sharing. Listed without any particular order.<br><br>

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Security resources
-permalink: /resources/security/
+title: Security
+permalink: /security/
 show_title: true
 ---
 
@@ -28,9 +28,20 @@ Articles and links about improving the security of your computers and mobile dev
 
 - [Hardening Android for Security and Privacy](https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy), it may sounds impossible but there’s still something you can do
 
-#### Servers
+#### Sys Admin
 
 - [Top 20 OpenSSH Server Best Security Practices](http://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html)
+
+#### Tools
+
+- [Brute-force calculator]({{ site.baseurl }}/projects/bfc) (*)
+- [nmap](http://nmap.org)
+- [Wireshark](http://wireshark.org/)
+- [Debookee](http://debookee.com) (macOS only)
+
+#### Services
+
+- [privatetunnel.com](https://www.privatetunnel.com/home/?referral=NUTAYZHU54), a consumer VPN by OpenVPN
 
 #### Websites and blogs
 
@@ -40,17 +51,13 @@ Articles and links about improving the security of your computers and mobile dev
 - [Google Project Zero](http://googleprojectzero.blogspot.com)
 - [Naked Security](https://nakedsecurity.sophos.com/)
 
-#### Tools
-
-- [nmap](http://nmap.org)
-- [Wireshark](http://wireshark.org/)
-- [Debookee](http://debookee.com) (macOS only)
-
 #### Distros
 
 - [Kali Linux](http://kali.org)
 - [Tails](http://tails.boum.org)
 
-#### Services
+<br>
 
-- [privatetunnel.com](https://www.privatetunnel.com/home/?referral=NUTAYZHU54), a consumer VPN by OpenVPN
+---
+
+(*) Mantained by me. Please, [tell me]({{ site.baseurl }}/contacts) about your suggestions or any bug you spot.

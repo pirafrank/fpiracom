@@ -6,7 +6,7 @@ show_title: true
 ---
 
 - [Bio](#bio)
-- [Projects](#projects)
+- [Coding](#coding)
 - [My toolbelt](#my-toolbelt)
 - [Events](#events)
 - [Skills](#skills)
@@ -26,13 +26,13 @@ In 2013 I joined EESTEC, a European network of engineering students where member
 
 I am currently involved in the local startup scene as start-upper and as VP of Youth Hub Catania, an association focused on matching people's skills and organising startup related events (like the Startup Weekend - Change Makers, held in Syracuse on May 2015).
 
-### Projects
+### Coding
 
-From time to time I write little utilities to help my work or just code for fun. I usually release them with open-source license on GitHub. Head over the [Projects]({{ site.baseurl }}/projects/) page to find a list.
+During my day, I write little [utilities]({{ site.baseurl }}/utilities/) to speed up and simplify my work. And because I like coding, I found myself spending time on some [projects]({{ site.baseurl }}/projects/) which I usually release on GitHub as open-source.
 
 ### My toolbelt
 
-[Development tools and utilities I use]({{ site.baseurl }}/resources/my-toolbelt/).
+Curious about tools and utilities I use? [Here]({{ site.baseurl }}/my-toolbelt/) the answer you're looking for.
 
 ### Events
 

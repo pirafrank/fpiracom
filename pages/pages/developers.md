@@ -1,7 +1,7 @@
 ---
 layout: page
-title: For Developers
-permalink: /resources/for-developers/
+title: Material for developers
+permalink: /developers/
 show_title: true
 ---
 
@@ -42,9 +42,9 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 #### Check also
 
 - [Projects page]({{ site.baseurl }}/projects)
+- [Snippet repository](http://github.com/pirafrank/snippets)
 - [My toolbelt]({{ site.baseurl }}/my-toolbelt)
 - [Cheat sheet page]({{site.baseurl}}/cheat-sheets)
-- [Snippet repository](http://github.com/pirafrank/snippets)
 
 <br>
 

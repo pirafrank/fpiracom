@@ -2,9 +2,9 @@
 layout: post
 title: Is GMail approaching to the end?
 subtitle: A few thoughts about Inbox and Google's services.
-categories: _editorials
+categories: 'Articles'
 description: My opinion about Google's Inbox and its other services
-keywords: google,inbox,email,gmail,end,a/b testing,imap
+tags: ['Google']
 ---
 
 ![Gmail to inbox redirect screenshot]({{ site.baseurl }}/static/postimages/2016-01-19/001.png)

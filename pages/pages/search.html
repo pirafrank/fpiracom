@@ -1,39 +1,10 @@
 ---
+layout: default
 title: Search
 permalink: /search/
 show_title: false
-custom_css: search
+custom_css: "pages/search"
 ---
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-
-    {% include meta.html %}
-
-    {% include head.html %}
-
-    {% include analytics.html %}
-
-  </head>
-
-  <body>
-
-    {% include noscript.html %}
-
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-
-          <div id="top">
-            <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
-            {% include nav.html %}
-          </div>
-
-        </header>
-      </div>
-    </div>
 
     <div class="big_container">
       <div class="container">
@@ -56,8 +27,4 @@ custom_css: search
       <script src="/js/lunr.min.js"></script>
       <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
       <script src="/js/search.js"></script>
-
     </div>
-
-  </body>
-</html>

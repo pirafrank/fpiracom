@@ -7,7 +7,7 @@
 // CSS for /blog and /by-category pages
 //
 
-.page-options {
+.blog-page-options {
   h5 {
     font-size: 20px;
     color: $gray;
@@ -18,7 +18,7 @@
   }
 }
 
-.post-entry {
+.blog-entry {
   padding: 0em 0em 1.4em;
   margin-left: 1em;
 
@@ -35,7 +35,7 @@
     }
 }
 
-.post-link {
+.blog-entry-link {
   padding-bottom: 3px;
   a {
     font-family: $defaultSerif;
@@ -46,7 +46,7 @@
   }
 }
 
-.post-category {
+.blog-entry-details {
   padding-top: 3px;
   font-family: $defaultSerif;
   font-size: 14px;
@@ -56,30 +56,12 @@
   }
 }
 
-.post-date {
+.blog-entry-date {
   padding-top: 3px;
   font-family: $defaultSansSerif;
   font-size: 14px;
   color: $gray;
   @include mobile {
     font-size: 16px;
-  }
-}
-
-.other-blogging {
-  margin-top: 3em;
-  margin-left: 1em;
-
-  h5 {
-    a {
-      line-height: 0.1;
-      font-size: 16px;
-    }
-  }
-
-  @include mobile {
-    margin-top: 0em;
-    margin-left: 0em;
-    text-align: center;
   }
 }

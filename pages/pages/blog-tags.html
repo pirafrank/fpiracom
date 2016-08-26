@@ -8,7 +8,7 @@ custom_css: "pages/blog"
 
 
 <div>
-  <div class="page-options">
+  <div class="blog-page-options">
     <h5><a href="{{ site.baseurl }}/blog">Timeline</a> / <a href="{{ site.baseurl }}/blog/categories">Categories</a> / Tags</h5>
   </div>
   <div class="line-separator"></div>
@@ -17,11 +17,11 @@ custom_css: "pages/blog"
   <div>
     {% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
     {% for tag in sorted_tags_by_name %}
-      <div class="post-entry">
-        <span class="post-link">
+      <div class="blog-entry">
+        <span class="blog-entry-link">
           <a href="{{ site.baseurl }}/blog/tags/{{ tag[0] }}">{{ tag[0] }}</a>
         </span>
-        <span class="post-category">
+        <span class="blog-entry-details">
           {% if tag[1] == 1 %}
            &#183; {{ tag[1] }} post
           {% else %}

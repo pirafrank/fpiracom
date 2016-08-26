@@ -8,7 +8,7 @@ custom_css: "pages/blog"
 
 
 <div>
-  <div class="page-options">
+  <div class="blog-page-options">
     <h5>Timeline / <a href="{{ site.baseurl }}/blog/categories/">Categories</a> / <a href="{{ site.baseurl }}/blog/tags">Tags</a></h5>
   </div>
 
@@ -19,14 +19,14 @@ custom_css: "pages/blog"
 
     {% for post in site.posts %}
 
-      <div class="post-entry">
-        <div class="post-link">
+      <div class="blog-entry">
+        <div class="blog-entry-link">
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </div>
-        <div class="post-category">
+        <div class="blog-entry-details">
           Category: {{ post.categories }}
         </div>
-        <div class="post-date">
+        <div class="blog-entry-date">
           {{ post.date | date: "%B %e, %Y" }}
         </div>
       </div>

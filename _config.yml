@@ -117,6 +117,20 @@ social:
     - "https://www.linkedin.com/in/fpira"
     - "http://pirafrank.tumblr.com"
 
+# jekyll-archives settings
+jekyll-archives:
+  enabled:
+    - categories
+    - month
+    - tags
+  layout: 'archive'
+  permalinks:
+    year: '/blog/:year/'
+    month: '/blog/:year/:month/'
+    day: '/blog/:year/:month/:day/'
+    tag: '/blog/tags/:name/'
+    category: '/blog/categories/:name/'
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -148,6 +162,7 @@ gems:
   - jekyll-gist # Support for GitHub gists
   - jekyll-paginate # pagination support
   - jekyll-seo-tag # SEO best practice. More info at https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-archives
 
 # Exclude these files from your production _site
 exclude:

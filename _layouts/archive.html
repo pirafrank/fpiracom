@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+
+<div class="big_container">
+  <div id="main" role="main" class="container reading_container">
+    <article class="page">
+    {% if page.type == 'tag' %}
+      <h1>Posts with {{ page.type }} &lsquo;{{ page.title }}&rsquo;</h1>
+    {% elsif page.type == 'category' %}
+      <h1>Posts from &lsquo;{{ page.title }}&rsquo; {{ page.type }}</h1>
+    {% elsif page.type == 'month' %}
+      <h1>All posts from {{ page.date | date: "%B %Y" }}</h1>
+    {% endif %}
+      <ul class="posts">
+      {% for post in page.posts %}
+        <li>
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </article>
+  </div>
+</div>

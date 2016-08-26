@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get Git completion to work on Linux and OS X
-categories: 'Development'
+categories: ['Development']
 description: A guide to setup Git completion on Linux and OS X
 keywords: git,git completion,osx,OS X,linux
 tags: ['Git','macOS','Linux']

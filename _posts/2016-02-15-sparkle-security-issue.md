@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sparkle vulnerability and list of safe apps (Updated!)
-categories: 'Apple'
+categories: ['Apple']
 description: List of OS X apps with addressed Sparkle man-in-the-middle vulnerability
 tags: ['Security','macOS']
 ---

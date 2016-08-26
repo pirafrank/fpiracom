@@ -2,7 +2,7 @@
 layout: post
 title: Setup HTTPS on Github Pages with a custom domain
 subtitle: A simple guide to make custom domains and HTTPS work with Github Pages
-categories: 'Web-Dev'
+categories: ['Web Development']
 description: How to deploy HTTPS on your Github Pages website with custom domain. And all for free.
 tags: ['GitHub']
 ---

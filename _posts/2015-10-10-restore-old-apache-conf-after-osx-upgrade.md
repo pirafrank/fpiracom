@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restore the previous Apache configuration after upgrading to El Capitan
-categories: Apple
+categories: ['Apple']
 description: Restore the previous Apache configuration after El Capitan upgrade
 tags: ['macOS','Apache']
 ---

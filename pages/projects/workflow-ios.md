@@ -1,11 +1,12 @@
 ---
-layout: projectmd
+layout: project
 title: Workflow for iOS recipes
+description: "Recipes for the popular iOS app Workflow"
 permalink: /projects/workflow-ios/
 show_title: true
 ---
 
-Recipes I've created for the popular iOS app Workflow. Feel free to use and edit them. If you want, give me any [feedback]({{ site.baseurl }}/contacts).
+Recipes I've created for [Workflow app](https://workflow.is). Feel free to use and remix them. If you want, give me any [feedback]({{ site.baseurl }}/contacts).
 
 #### Utilities
 

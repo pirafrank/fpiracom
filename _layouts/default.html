@@ -22,7 +22,9 @@
         <header class="masthead clearfix">
 
           <div id="top">
+          {% unless page.is_home %}
             <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
+          {% endunless %}
             {% include nav.html %}
           </div>
 
@@ -30,11 +32,7 @@
       </div>
     </div>
 
-    <div class="big_container">
-      <div id="main" role="main" class="container reading_container">
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
 
     {% include footer.html %}
 

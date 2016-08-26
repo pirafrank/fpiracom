@@ -1,34 +1,8 @@
 ---
+layout: default
+custom_css: "pages/home"
+is_home: true
 ---
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ site.name }}</title>
-
-    {% include meta.html %}
-
-    {% include head.html %}
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/pages/home.css" />
-
-    {% include analytics.html %}
-
-  </head>
-
-  <body>
-
-  {% include noscript.html %}
-
-  <div class="wrapper-masthead">
-    <div class="container">
-      <header id="top" class="masthead clearfix">
-
-        {% include nav.html %}
-
-      </header>
-    </div>
-  </div>
 
   <div class="cover">
     <div class="container">
@@ -141,9 +115,3 @@
       </div>
     </div>
   </div>
-
-  {% include footer.html %}
-
-  </body>
-</html>
-

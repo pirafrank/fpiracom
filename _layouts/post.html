@@ -2,34 +2,40 @@
 layout: default
 ---
 
-<article class="post">
+<div class="big_container">
+  <div id="main" role="main" class="container reading_container">
 
-  <div>
-    <div class="post-title">
-      <h1>{{ page.title | smartify }}</h1>
-    </div>
-    <div class="post-subtitle">
-      <strong>{{ page.subtitle }}</strong>
-    </div>
-    <div class="post-details">
-      <i>
-        Published on {{ page.date | date: "%B %e, %Y" }}<br>
-        Category: <a href="{{ site.baseurl }}/blog/by-category#{{ page.categories }}">{{ page.categories }}</a>
-         - Tags:{% for tag in page.tags %} {{ tag }}, {% endfor %}<br>
-        {% assign readtime = post.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
-        {% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read
-      </i>
-    </div>
+    <article class="post">
+
+      <div>
+        <div class="post-title">
+          <h1>{{ page.title | smartify }}</h1>
+        </div>
+        <div class="post-subtitle">
+          <strong>{{ page.subtitle }}</strong>
+        </div>
+        <div class="post-details">
+          <i>
+            {% assign readtime = page.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
+            Category: <a href="{{ site.baseurl }}/blog/by-category#{{ page.categories }}">{{ page.categories }}</a><br>
+            Tags: {% for tag in page.tags %} <span class="post-tags"><a href="">{{ tag }}</a></span> {% endfor %}<br>
+            Published on {{ page.date | date: "%B %e, %Y" }}<br>
+            {% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read
+          </i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="entry">
+        {{ content }}
+      </div>
+
+      {% include share-buttons.html %}
+
+    </article>
+
+    <div class="corner-btn share-corner"><a href="#share-links">Share</a></div>
+
   </div>
-
-  <br>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  {% include share-buttons.html %}
-
-</article>
-
-<div class="corner-btn share-corner"><a href="#share-links">Share</a></div>
+</div>

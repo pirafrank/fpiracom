@@ -113,6 +113,17 @@
         font-size: 18px;
         line-height: 1.2;
       }
+
+      .post-tags {
+        a {
+          font-size: 14px;
+          background-color: $lightestGray;
+          padding: 3px 8px 3px 8px;
+          margin-left: 5px;
+          color: $darkBlue;
+          text-decoration: none;
+        }
+      }
     }
   }
 

@@ -5,6 +5,8 @@ permalink: /podcasts/
 show_title: true
 ---
 
+Podcasts I listen to during my daily commute or I watch in my spare time.
+
 #### Audio
 
 [The Entrepreneur’s Guide to Finding Your First Customers](https://itunes.apple.com/us/podcast/entrepreneurs-guide-to-finding/id872932172?mt=2)

@@ -17,7 +17,7 @@ A repository to generate a [Dash](https://kapeli.com/dash) docset for the [elect
 #### [Alfred Workflows](https://github.com/pirafrank/alfred_workflows)
 Useful Alfred workflows to enhance your productivity on Mac. Great for developers and power-users.
 
-#### [Workflow for iOS recipes]({{ site.baseurl }}/resources/workflow-ios/)
+#### [Workflow for iOS recipes]({{ site.baseurl }}/projects/workflow-ios/)
 Recipes for the popular iOS app [Workflow](https://workflow.is/download).
 
 #### [todabu](http://github.com/pirafrank/todabu)

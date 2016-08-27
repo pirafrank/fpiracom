@@ -9,6 +9,17 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
+    {% if layout.custom_css %}
+      {% for stylesheet in page.custom_css %}
+        <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+      {% endfor %}
+    {% endif %}
+    {% if page.custom_css %}
+      {% for stylesheet in page.custom_css %}
+        <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+      {% endfor %}
+    {% endif %}
+
     <!-- Feeds -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -17,21 +28,20 @@
     <script type="text/javascript" src="/js/velocity.min.js" defer></script>
     <script type="text/javascript" src="/js/page_anchors.js" defer></script>
 
+    {% if layout.custom_js %}
+      {% for js_file in page.custom_js %}
+        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
+      {% endfor %}
+    {% endif %}
+    {% if page.custom_js %}
+      {% for js_file in page.custom_js %}
+        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
+      {% endfor %}
+    {% endif %}
+
     <script>
       (function(h,e,a,t,m,p) {
       m=e.createElement(a);m.async=!0;m.src=t;
       p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
       })(window,document,'script','https://u.heatmap.it/log.js');
     </script>
-
-    {% if page.custom_css %}
-      {% for stylesheet in page.custom_css %}
-        <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
-      {% endfor %}
-    {% endif %}
-
-    {% if page.custom_js %}
-      {% for js_file in page.custom_js %}
-        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
-      {% endfor %}
-    {% endif %}

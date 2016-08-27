@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
     {% if layout.custom_css %}
-      {% for stylesheet in page.custom_css %}
+      {% for stylesheet in layout.custom_css %}
         <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="/js/page_anchors.js" defer></script>
 
     {% if layout.custom_js %}
-      {% for js_file in page.custom_js %}
+      {% for js_file in layout.custom_js %}
         <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
       {% endfor %}
     {% endif %}

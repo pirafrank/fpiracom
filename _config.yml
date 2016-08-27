@@ -4,10 +4,12 @@
 
 # Name of your site (displayed in the header)
 name: "Francesco Pira"
-author: "Francesco Pira"
 
 # Short bio or description (displayed in the header)
 description: "Curious mind, Web Developer, Computer Engineering student and CEO @ Fileshute"
+
+# Author
+author: "Francesco Pira"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: "/assets/images/avatar.jpg"
@@ -22,26 +24,27 @@ locale: en_us
 # It's important to include http. If you use SSL, write https.
 url: https://fpira.com
 
+# Your website domain (without http:// and https://)
+domain: fpira.com
+
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-#
-# ** The settings below are optional, but I recommend you to customize them. **
-# Note: leaving a field empty disables that option.
-#
+# Define a separator to put between the page.title and site.name
+title_seperator: "&#183;"
 
 # Theme Engine
 # To change site-wide fonts and colors, go to _sass/_variables anche change the hex values.
 theme_engine:
-  primary_color: 34a
+  primary_color: 3344aa
   secondary_color: 4183C4
 
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
 # Leave it empty to disable
-google_analytics: ""
+google_analytics: "UA-59510020-2"
 
 # Includes a social icon in social divs and make a link to that profile work for each username you enter
 # Leave social links you don't have/use empty to disable them
@@ -69,21 +72,12 @@ social-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
   tumblr: pirafrank
   twitter: pirafrank
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: pirafrank # channel/<your_long_string> or user/<user-name>
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 # Leave it empty to disable
 disqus:
-
-# Type your email with **1 space** between each character.
-# Don't worry, it will be displayed correctly.
-# For example: inbox@fpira.com -> i n b o x @ f p i r a . c o m
-# NOTE: If you leave it empty, the link in About page won't work.
-encryptedemail: "m e [ a t ] f p i r a [ d o t ] c o m"
-
-# Write anything to enable search, leave it blank to disable
-embedsearch: true
 
 # Choose whether to display social links in footer or not
 footersocial: true
@@ -104,18 +98,6 @@ defaults:
     values:
       layout: "default"
       is_home: false
-
-# Additional data for jekyll-seo-tag gem
-title: "Francesco Pira" # this can be your name
-twitter:
-  username: pirafrank
-logo: "/assets/images/meta_icon.png"
-social:
-  name: "Francesco Pira"
-  links:
-    - "http://twitter.com/pirafrank"
-    - "https://www.linkedin.com/in/fpira"
-    - "http://pirafrank.tumblr.com"
 
 # jekyll-archives settings
 jekyll-archives:
@@ -161,7 +143,6 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-gist # Support for GitHub gists
   - jekyll-paginate # pagination support
-  - jekyll-seo-tag # SEO best practice. More info at https://github.com/jekyll/jekyll-seo-tag
   - jekyll-archives
 
 # Exclude these files from your production _site

@@ -1,5 +1,6 @@
 ---
 layout: default
+custom_css: ['posts/posts']
 ---
 
 <div class="big_container">
@@ -17,10 +18,8 @@ layout: default
         <div class="post-details">
           <i>
             {% assign readtime = page.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
-            Category: <a href="{{ site.baseurl }}/blog/by-category#{{ page.categories }}">{{ page.categories }}</a><br>
-            Tags: {% for tag in page.tags %} <span class="post-tags"><a href="">{{ tag }}</a></span> {% endfor %}<br>
-            Published on {{ page.date | date: "%B %e, %Y" }}<br>
-            {% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read
+            Published on {{ page.date | date: "%B %e, %Y" }} in <a href="{{ site.baseurl }}/blog/categories/{{ page.categories[0] | downcase | replace:' ','-' }}">{{ page.categories }}</a>&nbsp;&#8212;&nbsp;{% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read<br>
+            Tags: {% for tag in page.tags %} <span class="post-tags"><a href="{{ site.baseurl }}/blog/tags/{{ tag | downcase | replace:' ','-' }}">{{ tag }}</a></span> {% endfor %}
           </i>
         </div>
       </div>

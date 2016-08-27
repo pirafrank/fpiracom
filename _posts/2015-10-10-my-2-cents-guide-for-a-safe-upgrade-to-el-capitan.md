@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My 2-cents Guide For A Safe Upgrade To El Capitan
-categories: Apple
+categories: ['Guides']
 description: An outline about a good way to upgrade your OS X installation to El Capitan safely
 tags: ['macOS','Guide']
 ---

@@ -1,14 +1,42 @@
+
+    <title>{% if page.title %}{{ page.title }} &#183; {% endif %}{{ site.name }}</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
+
+    <!-- webmention.io stuff -->
+    <link rel="pingback" href="https://webmention.io/{{ site.domain }}/xmlrpc">
+    <link rel="webmention" href="https://webmention.io/{{ site.domain }}/webmention">
+
+    <!-- rel me -->
+    <link href="https://twitter.com/{{ site.social-links.twitter }}" rel="me">
+    <link href="https://github.com/{{ site.social-links.github }}" rel="me">
+    <link href="https://www.linkedin.com/in/{{ site.social-links.linkedin }}" rel="me">
+    <link href="https://{{ site.social-links.tumblr }}.tumblr.com/" rel="me">
+    <link href="https://plus.google.com/{{ site.social-links.googleplus }}" rel="me">
+
+    <!-- favicons and theme meta -->
     <!-- IE -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicons/favicon.png" />
     <!-- other browsers -->
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicons/favicon.png" />
+
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml" />
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
+    <!-- Page-specif CSS -->
     {% if layout.custom_css %}
       {% for stylesheet in layout.custom_css %}
         <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
@@ -20,14 +48,12 @@
       {% endfor %}
     {% endif %}
 
-    <!-- Feeds -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
     <!-- Scripts -->
     <script type="text/javascript" src="/js/jquery-1.11.3.min.js" defer></script>
     <script type="text/javascript" src="/js/velocity.min.js" defer></script>
     <script type="text/javascript" src="/js/page_anchors.js" defer></script>
 
+    <!-- Page-specif scripts -->
     {% if layout.custom_js %}
       {% for js_file in layout.custom_js %}
         <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
@@ -38,10 +64,3 @@
         <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
       {% endfor %}
     {% endif %}
-
-    <script>
-      (function(h,e,a,t,m,p) {
-      m=e.createElement(a);m.async=!0;m.src=t;
-      p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
-      })(window,document,'script','https://u.heatmap.it/log.js');
-    </script>

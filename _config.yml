@@ -18,7 +18,7 @@ avatar: "/assets/images/avatar.jpg"
 timezone: Europe/Rome
 
 # locale setting
-locale: en_us
+locale: en_US
 
 # Your website URL (e.g. http://fpira.com)
 # It's important to include http. If you use SSL, write https.
@@ -73,6 +73,13 @@ social-links:
   tumblr: pirafrank
   twitter: pirafrank
   youtube: pirafrank # channel/<your_long_string> or user/<user-name>
+
+# Links to use in JSON-LD metadata (SEO)
+seo_links:
+  - "http://twitter.com/pirafrank"
+  - "https://www.linkedin.com/in/fpira"
+  - "http://pirafrank.tumblr.com"
+  - "http://plus.google.com/+FrancescoPiraonline"
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account

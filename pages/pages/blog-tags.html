@@ -19,7 +19,8 @@ custom_css: "pages/blog"
     {% for tag in sorted_tags_by_name %}
       <div class="blog-entry">
         <span class="blog-entry-link">
-          <a href="{{ site.baseurl }}/blog/tags/{{ tag[0] }}">{{ tag[0] }}</a>
+          {% assign i = tag[0] | downcase | replace:' ','-' %}
+          <a href="{{ site.baseurl }}/blog/tags/{{ i }}">{{ tag[0] }}</a>
         </span>
         <span class="blog-entry-details">
           {% if tag[1] == 1 %}

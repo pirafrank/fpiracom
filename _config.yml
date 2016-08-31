@@ -34,7 +34,7 @@ domain: fpira.com
 baseurl: ""
 
 # Define a separator to put between the page.title and site.name
-title_seperator: "&#183;"
+title_separator: "&#183;"
 
 # Theme Engine
 # To change site-wide fonts and colors, go to _sass/_variables anche change the hex values.

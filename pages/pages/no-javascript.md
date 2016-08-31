@@ -3,6 +3,7 @@ layout: page
 title: Disabled JavaScript
 permalink: /help/no-javascript/
 show_title: true
+in_search: false
 ---
 
 JavaScript is disabled in your browser. 

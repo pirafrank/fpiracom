@@ -98,6 +98,8 @@ home:
   show_twitter_feed: true # NB. you have to REPLACE the code in home with the one for your twitter account.
 
 # Default values
+# has_fa: enable font-awesome
+# in_search: include in search. Posts are always included.
 defaults:
   -
     scope:
@@ -124,6 +126,7 @@ defaults:
     values:
       layout: "page"
       show_title: true
+      in_search: true
   -
     scope:
       path: "pages/projects"

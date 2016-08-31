@@ -101,10 +101,35 @@ home:
 defaults:
   -
     scope:
-      path: "pages"
+      path: ""
     values:
-      layout: "default"
       is_home: false
+      has_fa: false
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "page"
+      show_title: true
+  -
+    scope:
+      path: "pages/projects"
+      type: "pages"
+    values:
+      layout: "project"
 
 # jekyll-archives settings
 jekyll-archives:

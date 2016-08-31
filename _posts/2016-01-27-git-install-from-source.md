@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing git from source on Debian and CentOS
-categories: ['Linux']
+categories: ['How-tos']
 description: How to install git on Debian, CentOS and their derivatives.
 tags: ['Git','Debian','CentOS','Linux']
 ---

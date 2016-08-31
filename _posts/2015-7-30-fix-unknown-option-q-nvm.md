@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fix "unknown option '-q'" nvm install error
-categories: ['Web Development']
+categories: ['How-tos']
 description: A solution to unknown option -q error during nvm installation
 tags: ['node.js']
 ---

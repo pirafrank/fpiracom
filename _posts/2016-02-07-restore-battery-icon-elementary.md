@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restore disappeared tray battery icon in Elementary OS
-categories: ['Linux']
+categories: ['How-tos']
 description: Terminal command to show the tray battery icon in Elementary OS
 tags: ['Linux','elementaryOS']
 ---

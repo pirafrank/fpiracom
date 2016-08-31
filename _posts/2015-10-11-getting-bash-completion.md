@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting bash completion on OS X and Linux
-categories: ['Sys Admin']
+categories: ['How-tos']
 description: A guide to setup bash completion on Linux and OS X
 tags: ['Bash','macOS','Linux']
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: My 2-cents Guide For A Safe Upgrade To El Capitan
-categories: ['Guides']
+categories: ['Tutorials']
 description: An outline about a good way to upgrade your OS X installation to El Capitan safely
-tags: ['macOS','Guide']
+tags: ['macOS']
 ---
 
 Let's face it, you're a developer and you're jealous of your dev environment on your shiny Mac. But you're also a geek and you want to use the under-the-hood enhancements of OS X El Capitan.
@@ -26,7 +26,7 @@ You want a shiny upgrade, don't you?
 
 - check all the installed software to be compatible and to support the upgrade without any special procedure (if any, do it!)
 
-- update all apps (xcode included)
+- update all apps (Xcode included)
 
 - install all system updates
 
@@ -52,7 +52,7 @@ You want a shiny upgrade, don't you?
 
 - plug your Mac to the wall (in case it's a MacBook) and... update!
 
-(*) this may be an unneeded step, but in the past some reboots stumbled across that password. You now, better safe than sorry!
+*\* this may be an unneeded step, but in the past some reboots stumbled across that password. You know, better safe than sorry!*
 
 **Note** Don't worry about Filevault 2 to be enabled. The installation setup will take care of it and will upgrade without need to decrypt the startup volume.
 

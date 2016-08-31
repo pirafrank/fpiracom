@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Disable per-session history file in OS X El Capitan
-categories: ['Guides']
+categories: ['How-tos']
 description: How to disable per-session history in Terminal in OS X El Capitan
 tags: ['macOS','Bash']
 ---

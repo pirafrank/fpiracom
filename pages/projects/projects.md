@@ -21,10 +21,10 @@ Useful Alfred workflows to enhance your productivity on Mac. Great for developer
 Recipes for the popular iOS app [Workflow](https://workflow.is/download).
 
 #### [todabu](http://github.com/pirafrank/todabu)
-A simple way to backup user configuration files, info and installation status in a git repository.
+A simple way to backup user configuration files, status and more info in a git repository.
 
 #### [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer)
-Deploy a Jekyll website on your VPS with just a 'git push'. Great if you want to publish posts on-the-go.
+Deploy on your server any branch of your Jekyll website in a tap. Great if you want to publish posts on-the-go.
 
 #### [Battery Life Extender]({{ site.baseurl }}/projects/ble)
 The niblest solution of a battery life extender for OS X. Take care of your MacBook.

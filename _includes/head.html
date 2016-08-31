@@ -36,6 +36,14 @@
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
+    <!-- -->
+    {% if layout.has_fa %}
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    {% endif %}
+    {% if page.has_fa %}
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    {% endif %}
+
     <!-- Page-specif CSS -->
     {% if layout.custom_css %}
       {% for stylesheet in layout.custom_css %}

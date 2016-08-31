@@ -7,7 +7,7 @@ show_title: true
 
 A collection of handy cheat sheets.
 
-#### Programming languages
+#### Languages
 
 - [Bash scripting](http://steve-parker.org/sh/cheatsheet.pdf)
 - [C language](http://www.digilife.be/quickreferences/qrc/c%20reference%20card%20(ansi)%202.2.pdf)
@@ -16,8 +16,9 @@ A collection of handy cheat sheets.
 - [JavaScript](http://www.cheat-sheets.org/saved-copy/jsquick.pdf)
 - [Markdown](http://assemble.io/docs/Cheatsheet-Markdown.html)
 - [GitHub Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Liquid](https://shopify.github.io/liquid/)
 
-#### Programming tools
+#### Tools
 
 - [Git](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 - [Git LFS](https://www.evernote.com/l/AEP8T9PEm6BDp4I0PyLsBzjfv0-_Xe77QME) (*)

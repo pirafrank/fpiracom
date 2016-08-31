@@ -1,0 +1,96 @@
+---
+layout: project
+permalink: /utilities/bfc/
+title: Brute-force Calculator
+description: "How long does it take to brute-force crack your password?"
+tagline: "What if they brute-force your password?"
+custom_css: "utilities/bfc"
+custom_js: "utilities/bfc"
+---
+
+<div id="main" role="main" class="project container">
+    <div class="project-name">
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    <div class="project-tagline">
+        <b>{{ page.tagline }}</b>
+    </div>
+</div>
+
+<div class="gray-panel">
+  <div class="space container prj-container project center">
+    <h3>What is BFC?</h3>
+    <p>Dummy-proof utility to calculate how long it takes to brute-force crack your password.</p>
+  </div>
+</div>
+
+<div class="white-panel">
+  <div class="container prj-container project">
+    <div class="space center-mobile">
+      <div class="section group">
+        <div class="col span_6_of_12">
+          <h3>Password specs</h3>
+          <p>Elements</p>
+          <div class="smaller-text">
+            <input onblur="sumPasswsType()" type="checkbox" name="ptype" value="26" id="pt1" checked> Alpha (lower case)<br>
+            <input onblur="sumPasswsType()" type="checkbox" name="ptype" value="26" id="pt2"> Alpha (UPPER case)<br>
+            <input onblur="sumPasswsType()" type="checkbox" name="ptype" value="10" id="pt3" checked> Numbers<br>
+            <input onblur="sumPasswsType()" type="checkbox" name="ptype" value="34" id="pt4"> Symbols<br>
+          </div>
+          <p>
+            Length
+            <br>
+            <span class="input-box">
+              <input type="text" name="passwd_length" value="" id="getPL"> characters long
+            </span>
+          </p>
+          <p>
+            Time *
+            <br>
+            <span class="input-box">
+              <input type="text" name="passwd_type" value="80" id="getMs"> ms between each attempt
+            </span>
+          </p>
+          <br>
+          <a class="btn btn-medium prj-button center-mobile" href="javascript:calculate()">Calculate</a>
+          <p class="smallscreen-hiddden desktop-hidden results">(Scroll down to read the results)</p>
+        </div>
+        <div class="col span_6_of_12 vertical-line">
+            <h3>Results</h3>
+            <div class="results" id="results">
+              <p>&nbsp;<br></p>
+              <p>
+                &nbsp;
+              </p>
+              <p>
+                &nbsp;
+              </p>
+              <p>
+                &nbsp;
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="white-panel">
+  <div class="space container prj-container project">
+    <p class="smaller-text">
+      * 80ms is the delay enforced by Apple hardware on iOS devices (<a href="https://www.apple.com/business/docs/iOS_Security_Guide.pdf">read more here</a>).
+      <br>You can set this interval to 10ms as rule of thumb for other scenarios. Of course it heavily depends on the attacker hardware (a dual-core smartphone, a desktop power-horse, a GPU cluster, etc).
+    </p>
+  </div>
+</div>
+
+<div class="white-panel space">
+  <div class="container project">
+    <div class="space center">
+      {% include sharing-buttons.html %}
+    </div>
+  </div>
+</div>
+
+<div class="corner-btn share-corner"><a href="#share-links">Share</a></div>

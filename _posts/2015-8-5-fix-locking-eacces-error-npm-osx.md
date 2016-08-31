@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Fix 'locking EACCES' error in npm on OS X
-categories: node.js
+categories: ['How-tos']
 description: How to fix locking EACCES error in npm on OS X
-keywords: locking eacces,error,node.js,osx,OS X,fix
+tags: ['node.js','macOS']
 ---
 
 You were developing and suddenly got this:

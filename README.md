@@ -23,5 +23,5 @@ Look at the example below.
 **Example**
 
 ```
-ln -s /path/to/fpiracom_static/static /path/to/pirafrank.github.io/static
+ln -s /path/to/fpira.com_static/static /path/to/pirafrank.github.io/static
 ```

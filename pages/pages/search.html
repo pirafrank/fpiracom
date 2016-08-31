@@ -1,0 +1,31 @@
+---
+layout: default
+title: Search
+permalink: /search/
+show_title: false
+custom_css: "pages/search"
+in_search: false
+---
+
+    <div class="big_container">
+      <div class="container">
+        <br><br>
+        <h2 class="center">Search {{ site.url | replace: 'http://','' | replace:'https://','' }}</h2>
+
+        <div class="center">
+          <form action="get" id="site_search">
+              <input class="search-input" type="text" id="search_box">
+              <br><input class="btn btn-small btn-default" type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+
+      <br>
+      <div class="results-container">
+        <ul id="search_results"></ul>
+      </div>
+
+      <script src="/js/lunr.min.js"></script>
+      <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+      <script src="/js/search.js"></script>
+    </div>

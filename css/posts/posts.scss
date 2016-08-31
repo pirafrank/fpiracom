@@ -1,0 +1,158 @@
+---
+---
+
+@import "variables";
+
+//
+// .main for post pages
+//
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightestGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+
+  font-family: $defaultSansSerifBody;
+  font-size: 18px;
+  font-weight: 400; // font weight of post body
+  line-height: 1.6;
+  //color: $darkGray; // commented as it uses color from 'body' in _base.scss
+
+  strong, b {
+    font-weight: bold;
+  }
+
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-color: $darkerGray;
+    font-weight: bold;
+
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+
+    @include mobile {
+      line-height: 1.4;
+    }
+
+    @include retina {
+      font-weight: 400;
+    }
+  }
+
+  h5 { // use it for citations and to put some text in the spotlight
+    text-align: left;
+    font-family: $defaultSansSerifBody;
+    font-color: $lightGray;
+    color: $lightGray;
+    font-size: 26px;
+    font-style: italic;
+    margin-right: 16%;
+    margin-left: 14%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 10px;
+    border-width: 0px 0px 0px 2px;
+    border-style: solid;
+    border-color: $gray;
+  }
+
+  .post-title { // edit appearance of post title
+    padding-top: 2em;
+    margin-bottom: 0.4em;
+
+    h1 {
+      font-size: 38px;
+      font-family: $defaultSerif;
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      color: $darkerGray;
+      line-height: 1.2;
+    }
+  }
+
+  .post-subtitle { // edit appearance of post subtitle
+    margin-bottom: 1.5em;
+
+    strong {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: normal;
+      color: $gray;
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .post-details { // edit appearance of post details (date, category, ecc.)
+    i {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: normal;
+      color: $gray;
+      line-height: 1.0;
+      font-family: $defaultSansSerif;
+
+      a {
+        color: $darkBlue;
+      }
+
+      @include mobile {
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      .post-tags {
+        a {
+          font-size: 14px;
+          background-color: $lightestGray;
+          padding: 3px 8px 3px 8px;
+          margin-left: 5px;
+          color: $darkBlue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  //
+  // apparearance of post body is managed by post class. see above.
+  //
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+}
+
+.category {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+}

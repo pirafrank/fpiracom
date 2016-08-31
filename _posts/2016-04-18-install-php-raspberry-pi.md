@@ -2,9 +2,10 @@
 layout: post
 title: How to install PHP 5.6 or newer on Raspbian
 subtitle: Since no repo has an ARM version of PHP >5.4, compiling and installing by hand it's all we have.
-categories: raspberrypi
+categories: ['How-tos']
 description: A solution to install PHP >5.4 on your Raspberry Pi
 keywords: php,install,raspbian,debian,php 5.6,raspberry,raspberry pi,raspberrypi
+tags: ['Raspberry Pi','PHP','Debian']
 ---
 
 Raspberry Pi is an awesome piece of hardware so you might need PHP on it for whatever kind of project.

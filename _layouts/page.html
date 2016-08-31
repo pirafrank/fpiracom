@@ -2,16 +2,20 @@
 layout: default
 ---
 
-<article class="page">
+<div class="big_container">
+  <div id="main" role="main" class="container reading_container">
+    <article class="page">
 
-  {% if page.show_title %}
-    <div class="page-title">
-        <h1>{{ page.title }}</h1>
-    </div>
-  {% endif %}
+      {% if page.show_title %}
+        <div class="page-title">
+            <h1>{{ page.title | smartify }}</h1>
+        </div>
+      {% endif %}
 
-  <div class="entry">
-    {{ content }}
+      <div class="entry">
+        {{ content }}
+      </div>
+
+    </article>
   </div>
-
-</article>
+</div>

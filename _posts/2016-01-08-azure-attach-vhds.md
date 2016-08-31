@@ -2,9 +2,9 @@
 layout: post
 title: Azure, add a new drive to a Linux VM
 subtitle: A beginner guide to attach a new virtual drive to a Linux virtual machine
-categories: cloud
+categories: ['Tutorials']
 description: A beginner guide to attach a new virtual drive to a Linux virtual machine
-keywords: microsoft,azure,drive,virtual machine,drive,vhd
+tags: ['Sys Admin','Cloud','Microsoft Azure']
 ---
 
 Microsoft Azure is here and we want to deploy lots of virtual machines and attach them even more drives.

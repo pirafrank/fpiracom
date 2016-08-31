@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Restore the previous Apache configuration after upgrading to El Capitan
-categories: osx
+categories: ['How-tos']
 description: Restore the previous Apache configuration after El Capitan upgrade
-keywords: apache,upgrade,osx,OS X,el capitan
+tags: ['macOS','Apache']
 ---
 
 Since Mavericks, upgrading to a new major version of OS X restores the Apache settings to default. Luckily enough the setup backups the old configuration. Here's what I did to put it back.
@@ -12,7 +12,7 @@ It will take about 2 minutes.
 
 1. I checked my apache user conf file to be in path (/etc/apache2/users/francesco.conf)
 
-2. backed-up default elcapitan apache conf file (sudo cp httpd.conf httpd.conf.original.elcapitan)
+2. backed-up default El Capitan Apache conf file (sudo cp httpd.conf httpd.conf.original.elcapitan)
 
 3. removed default confif (sudo rm httpd.conf) and placed old custom one (sudo cp httpd.conf.pre-update httpd.conf)
 

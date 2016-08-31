@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Installing git from source on Debian and CentOS
-categories: git
-description: How to install git on Debian, CentOS and their derivatives. 
-keywords: debian,centos,git,source,installation,installing,distro,
+categories: ['How-tos']
+description: How to install git on Debian, CentOS and their derivatives.
+tags: ['Git','Debian','CentOS','Linux']
 ---
 
 Git is maybe the most used VCS in the world and one of the first things you install on a fresh new server. Package managers are a handy way to put new software in, but Git versions in repositories are often out-to-date. Compiling from source becomes a must.

@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Get Git completion to work on Linux and OS X
-categories: git
+categories: ['How-tos']
 description: A guide to setup Git completion on Linux and OS X
 keywords: git,git completion,osx,OS X,linux
+tags: ['Git','macOS','Linux']
 ---
 
 Admit it, bash completion is cool and having it also in git is even cooler. But when you install git from source it often doesn't work. Here's how to fix it. 

@@ -1,0 +1,97 @@
+---
+layout: default
+permalink: /projects/ble/
+title: Battery Life Extender
+description: "The nimblest battery life extender solution for your MacBook. Free."
+onGithub: true
+repourl: "https://github.com/pirafrank/battery_life_extender"
+downloadurl: "https://github.com/pirafrank/battery_life_extender/archive/master.zip"
+custom_css: ['projects/projects','projects/ble']
+---
+
+<div class="big_container project">
+  <div id="main" role="main" class="project container">
+      <div class="project-name">
+          <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="project-tagline">
+          <b>{{ page.description }}</b>
+      </div>
+
+      {% youtube AA42J7CJSwI %}
+  </div>
+
+  <div class="gray-panel">
+      <div class="container project">
+          <div class="space center">
+              <h3>What is BLE?</h3>
+              <p>A little utility to help you make your MacBook battery live as long as possible.
+              <br>It helps you by notifying when it's better to charge or unplug your beloved laptop.</p>
+              <br>
+              <p><i>"Apple does not recommend leaving your portable plugged in all the time."</i></p>
+          </div>
+      </div>
+  </div>
+
+  <div class="white-panel">
+      <div class="container project">
+          <div class="space">
+              <div class="section group">
+                  <div class="col span_6_of_12 center">
+                      <h3>How it works</h3>
+                      <p>A short bash script is copied in <code>/usr/local/bin</code> and it is executed every 8 minutes by the built-in OS X utility launchd (an Apple equivalent of Linux crontab).
+                      <br>It asks the operating system for the battery level. If it is &gt;80% while charging or &lt;40% while not in charge, it sends you a notification.</p>
+                      <p>The above battery levels were chosen after a long research on how lithium batteries work and how Apple implemented them in MacBooks. You can read it <a href="https://www.evernote.com/l/AENWkGxAKkNAg6M9v0Y5zByPtMaPXrGnlR8">here</a>.</p>
+                      <p>For further info and installation instructions, please have a look at the <a href="https://github.com/pirafrank/battery_life_extender/blob/master/README.md">README</a> file.</p>
+                  </div>
+                  <div class="col span_6_of_12 center">
+                      <div class="prj-img"><img src="/static/projectimages/ble/charging.png"></div>
+                      <div class="prj-img"><img src="/static/projectimages/ble/discharging.png"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="gray-panel">
+      <div class="container project">
+          <div class="space">
+              <div class="section group">
+                  <div class="col span_4_of_12 center prj-text">
+                      <h3>No Bloatware</h3>
+                      <p>BLE is nimble and unobtrusive because it uses the system utilities built in macOS.</p>
+                  </div>
+                  <div class="col span_4_of_12 center prj-text">
+                      <h3>Zero Maintenance</h3>
+                      <p>Easy to install and to remove, requires no user interaction to work.</p>
+                  </div>
+                  <div class="col span_4_of_12 center prj-text">
+                      <h3>Open Source</h3>
+                      <p>BLE is released under the GNU GPLv3 license and is availble <a href="https://github.com/pirafrank/battery_life_extender/">on GitHub</a>.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="white-panel">
+      <div class="container project">
+          <div class="center space">
+              <h3 class="center">Do you like it?</h3>
+              <a href="{{ page.downloadurl }}" class="btn btn-big prj-button">Download now</a>
+              <p>or check the <a href="https://github.com/pirafrank/battery_life_extender/releases">release notes</a>.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="white-panel">
+      <div class="container project">
+          <div class="space center">
+              {% include sharing-buttons.html %}
+          </div>
+      </div>
+  </div>
+
+  <div class="corner-btn share-corner"><a href="#share-links">Share</a></div>
+</div>

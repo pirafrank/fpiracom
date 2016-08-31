@@ -16,6 +16,12 @@
   text-align: center;
 }
 
+.center-mobile {
+  @include mobile {
+    text-align: center;
+  }
+}
+
 .monospaced {
   font-family: $defaultMonospaced;
   font-style: normal !important;

@@ -20,11 +20,14 @@ Useful Alfred workflows to enhance your productivity on Mac. Great for developer
 #### [Workflow for iOS recipes]({{ site.baseurl }}/projects/workflow-ios/)
 Recipes for the popular iOS app [Workflow](https://workflow.is/download).
 
-#### [todabu](http://github.com/pirafrank/todabu)
-A simple way to backup user configuration files, status and more info in a git repository.
-
 #### [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer)
 Deploy on your server any branch of your Jekyll website in a tap. Great if you want to publish posts on-the-go.
+
+#### [iA Writer templates](https://github.com/pirafrank/My-iA-Writer-templates)
+Self-made templates for the awesome [iA Writer](https://ia.net/writer).
+
+#### [todabu](http://github.com/pirafrank/todabu)
+A simple way to backup user configuration files, status and more info in a git repository.
 
 #### [Battery Life Extender]({{ site.baseurl }}/projects/ble)
 The niblest solution of a battery life extender for OS X. Take care of your MacBook.
@@ -41,8 +44,8 @@ Collection of OS X utilities to speed up your productivity and take care of your
 #### [CLI utils](https://github.com/pirafrank/CLI_utils)
 Useful bash hacks at your fingertips. For Linux and OS X.
 
-#### [iA Writer templates](https://github.com/pirafrank/My-iA-Writer-templates)
-Self-made templates for the awesome [iA Writer](https://ia.net/writer).
+#### [FlickrDownloadr (cli)](https://github.com/pirafrank/FlickrDownloadr_cli)
+Easy CLI utility to batch download images from flickr.
 
 #### [Eye Relief](https://github.com/pirafrank/Eye_Relief)
 A simple script trigged every 20 minutes reminds you to take a break. For OS X 10.8 and above.
@@ -52,9 +55,6 @@ A simple web panel to control your Raspberry Pi on a local network.
 
 #### [Elastic side panel](https://github.com/pirafrank/elastic-side-panel)
 A side panel with an elastic animation ready to be deployed on any html page without any CSS conflicts.
-
-#### [FlickrDownloadr (cli)](https://github.com/pirafrank/FlickrDownloadr_cli)
-Easy CLI utility to batch download images from flickr.
 
 #### This website
 Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), an heavily modified Jekyll Now fork with additional features and a custom SCSS framework coded from scratch. Most of the things I try here are then backported to Jekyll Blue.

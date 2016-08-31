@@ -44,7 +44,7 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 - [Projects page]({{ site.baseurl }}/projects)
 - [Snippet repository](http://github.com/pirafrank/snippets)
 - [My toolbelt]({{ site.baseurl }}/my-toolbelt)
-- [Cheat sheet page]({{site.baseurl}}/cheat-sheets)
+- [Cheat sheets]({{site.baseurl}}/cheat-sheets)
 
 <br>
 

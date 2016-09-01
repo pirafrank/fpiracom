@@ -1,14 +1,16 @@
-# Francesco Pira's website repository
+# fpira.com source code
 
 [fpira.com](http://fpira.com)
 
 ### About the website code
 
-Website code is based on Jekyll Blue. Please, head over [its repository]() if you like it.
+This Jekyll instance is a completely overhauled fork of [Jekyll Now](https://github.com/barryclark/jekyll-now) with new design and many more features. A complete list of them is available [here]().
 
 ### Content License
 
-The content of the website, which is also part of this repository as it's hosted by Github Pages, is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+To know about terms and license, please read the `terms.md` file in `pages/pages`.
+
+Source code is released under the terms of GNU GPLv3 license.
 
 ### Important notes
 
@@ -25,3 +27,6 @@ Look at the example below.
 ```
 ln -s /path/to/fpira.com_static/static /path/to/pirafrank.github.io/static
 ```
+### Further notes
+
+`has_fa` variable is not used right now. Font-awesome is always loaded. Variables in front-matter are kept in case I change my mind and put an `if` in font-awesome loading in `head.html` file.

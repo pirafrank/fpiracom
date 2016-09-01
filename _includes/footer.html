@@ -5,9 +5,7 @@
         <div class="line-separator"></div>
         {% if site.footersocial %}
           <br>
-          <div class="social" id="footer-social">
-            {% include svg-icons-custom.html %}
-          </div>
+          {% include social-icons.html %}
         {% endif %}
         <footer>
           <div class="footer-links">
@@ -28,10 +26,10 @@
                 <p>
                   <ul>
                     <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-                    <li><a href="http://fpira.com/feed.xml">Subscribe to RSS feeds</a></li>
-                    <li><a href="http://getpocket.com/@{{ site.social-links.pocket }}">Pocket</a> / <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Medium</a></li>
+                    <li><a href="{{ site.url }}/feed.xml">Subscribe to RSS feed</a></li>
+                    <li><a href="{{ site.baseurl }}/subscribe">Get the newsletter</a></li>
                     <li><a href="{{ site.baseurl}}/about-blog-comments/">About blog comments</a></li>
-                    <li><a href="{{ site.baseurl}}/terms">Terms and Conditions</a></li>
+                    <li><a href="{{ site.baseurl}}/terms">Terms and policies</a></li>
                     <br>
                   </ul>
                 </p>

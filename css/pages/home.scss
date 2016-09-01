@@ -188,34 +188,53 @@ h1, h2, h3, h4, h5, h6 {
 //
 
 .inner-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 890px;
   padding-top: 35px;
 
   @include mobile {
+    padding-left: 1em;
     padding-top: 15px;
   }
 }
 
-.searchbox {           // these settings overwrite the ones in style.scss
-  max-width: 240px;
-  
+.resEntry {
+  font-size: 16px;
+  padding-bottom: 20px;
+
+  p {
+    color: $darkGray;
+  }
+  p > a {
+    color: $darkGray;
+  }
+
   @include mobile {
-    max-width: none;
-    margin: 0px;
+    margin-right: 0em;
+    line-height: 2.0;
+    p {
+      font-size: 18px;
+    }
+    p > a {
+      font-size: 18px;
+    }
   }
 }
 
-//.sectionImportantLinks {
-//  font-size: 20px;
-//  @include mobile {
-//    font-size: 24px;
-//  }
-//}
-
 .sectionTitle {
-  font-size: 28px;
+  font-size: 24px;
   font-family: $defaultSansSerif;
   @include mobile {
-    font-size: 32px;
+    font-size: 26px;
+  }
+}
+
+.sectionTitleSmall {
+  font-size: 20px;
+
+  @include mobile {
+    font-size: 22px;
   }
 }
 
@@ -239,16 +258,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.resEntry {
-  font-size: 16px;
-  padding-bottom: 20px;
-
-  @include mobile {
-    margin-right: 0em;
-    font-size: 18px;
-  }
-}
-
 .newsTitle {
   font-size: 1.0em; // overridden by _base if in px
   font-weight: normal;
@@ -256,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1px;
 
   @include mobile {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @include retina {
@@ -295,3 +304,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+//
+// utils
+//
+
+.grayLinks {
+  color: $darkGray;
+
+  &:hover, &:focus {
+    color: $darkGray;
+  }
+}

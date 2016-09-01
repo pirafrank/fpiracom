@@ -48,6 +48,8 @@ Here's a list of all my social network profiles and public platforms.
             <h4>Blogging</h4>
             <a href="http://{{ site.social-links.tumblr }}.tumblr.com">tumblr</a>
             <br>
+            <a href="http://nuzzel.com/{{ site.social-links.nuzzel }}">nuzzel</a>
+            <br>
             <a href="http://getpocket.com/@{{ site.social-links.pocket }}">Pocket</a>
             <br>
             <a href="http://medium.com/@{{ site.social-links.medium }}">Medium</a>

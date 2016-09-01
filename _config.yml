@@ -61,6 +61,7 @@ social-links:
   lastfm: pirafrank
   linkedin: fpira
   medium: pirafrank # your medium username, e.g. https://medium.com/@johndoe
+  nuzzel: pirafrank # your nuzzel username, e.g. http://nuzzel.com/johndoe
   packal: pirafrank # your packal.org username, e.g. https://www.packal.org/users/johndoe
   pinterest:
   pocket: pirafrank # your pocket username, e.g. https://getpocket.com/@johndoe
@@ -95,7 +96,8 @@ home:
   max_posts: 6 # max number of latest posts to show in home page
   show_excerpt: false # choose whether to show or not excerpt of latest blog posts
   show_pinboard: true # set it to true to enable, false to disable right section in home
-  show_twitter_feed: true # NB. you have to REPLACE the code in home with the one for your twitter account.
+  show_twitter_feed: false # NB. you have to REPLACE the code in home with the one for your twitter account.
+  show_twitter_button: false # Choose whether to 'Follow me' button in home.
 
 # Default values
 # has_fa: enable font-awesome

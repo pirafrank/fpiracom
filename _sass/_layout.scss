@@ -158,12 +158,27 @@
 // other layout parts
 //
 
-.social {
-  text-align: center;
+.social-icons {
+
+  a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: $gray;
+
+    &:hover, &:focus {
+      color: $darkGray;
+      text-decoration: none;
+    }
+  }
+
   @include mobile {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.social-icons-medium {
+  font-size: 20px;
 }
 
 .spanIcons {

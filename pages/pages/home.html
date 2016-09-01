@@ -1,7 +1,10 @@
 ---
 layout: default
+permalink: /
 custom_css: "pages/home"
 is_home: true
+show_title: false
+in_search: false
 ---
 
   <div class="cover">
@@ -96,7 +99,7 @@ is_home: true
             </div>
           {% endfor %}
           <p>
-            <a href="{{ site.baseurl }}/blog/">...all blog posts</a>
+            <a class="grayLinks" href="{{ site.baseurl }}/blog/">...all blog posts</a>
           </p>
         </div>
         <div class="col span_5_of_12">
@@ -105,6 +108,23 @@ is_home: true
               {% include pinboard.html %}
             </div>
           {% endif %}
+          <div class="resEntry center-mobile">
+            {% if site.home.show_twitter_button %}
+            <a href="https://twitter.com/{{ site.social-links.twitter }}" class="twitter-follow-button center-mobile" data-show-count="false">Follow @{{ site.social-links.twitter }}</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            {% endif %}
+            <p>
+              <a href="{{ site.baseurl }}/subscribe"><i class="fa fa-twitter" aria-hidden="true"></i> Follow @pirafrank</a>
+              <br>
+              <a href="{{ site.baseurl }}/subscribe"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Subscribe to newsletter</a>
+            </p>
+            <p>
+              <a href="http://{{ site.social-links.tumblr }}.tumblr.com">Posted on the go</a>
+              <br>
+              <a href="http://getpocket.com/@{{ site.social-links.pocket }}">Recommended on Pocket</a>
+              <br>
+              <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Loved on Medium</a>
+            </p>
+          </div>
           {% if site.home.show_twitter_feed %}
             <div class="resEntry">
               <a class="twitter-timeline" href="https://twitter.com/pirafrank" data-widget-id="653244673704767488">Tweets by @pirafrank</a>

@@ -18,7 +18,7 @@ show_title: true
 
 Hello, my name is Francesco (Frank) Pira, I'm 23yo and live in Catania, Italy, where I study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
 
-My interests are web development, technology, big data, business and start-ups. Since I've started practising Jiu Jitsu, I got fascinated by the Japanese culture. I also like traveling and when I have the chance, I always do. Recently I've found out writing is one of my growing passions.
+My interests are programming (especially web development), technology, big data, business and start-ups. I like working in team on projects that challenge me and I'm fascinated by finding the *best practice* in doing something. I also like advising and motivating on topics I'm skilled. Recently I've found out writing is one of my growing passions.
 
 I've studied Mathematics and Physics in High School, taught myself English and how to code. I've also worked as a self-employed computer technician and in a small team I founded as web developer.
 
@@ -32,7 +32,7 @@ During my day, I write little [utilities]({{ site.baseurl }}/utilities/) to spee
 
 ### My toolbelt
 
-Curious about tools and utilities I use? [Here]({{ site.baseurl }}/my-toolbelt/) the answer you're looking for.
+Curious about tools and utilities I use? The answer you're looking for is [here]({{ site.baseurl }}/my-toolbelt/).
 
 ### Events
 

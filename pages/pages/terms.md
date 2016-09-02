@@ -13,12 +13,11 @@ All content provided is for informational purposes only and without warranties o
 
 ### Privacy policy
 
-This website is hosted on a virtual server maintained by me. I do not log accesses but I use a firewall and filters to reduce chances of denial of the service attacks. In firewall logs IP address, date and time stamp and other data may be collected. This data is anonymous and related to all accesses to the server (not only to this website). It is not linked in any wait to visitors of this website.
+This website is hosted on a virtual server maintained by me. I do not log accesses but I use a firewall and filters to reduce chances of denial of the service attacks. In firewall logs IP address, date and time stamp and other data may be collected. This data is anonymous and related to all accesses to the server (not only to this website). It is not linked in any way to visitors of this website.
 
+Some static files are hosted on Amazon Simple Storage Service (S3). Your IP address and other data transmitted upon the GET request may be logged by Amazon. Sorry, I cannot avoid this.
 
-Some static files are hosted on Amazon Simple Storage Service (S3). Your IP address and other data transmitted upon the GET request may be logged by Amazon. I cannot avoid this.
-
-In case we get in touch, I will never share your email address or any other personal information of yours to anyone without your direct consent.
+In case I get in touch with any personal information of yours (e.g. your email address), I will never share it to anyone without your direct consent.
 
 ### Cookies and beacons
 

@@ -1,0 +1,17 @@
+---
+---
+
+@import "variables";
+
+ul {
+  margin-right: 4em;
+
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+ul > li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}

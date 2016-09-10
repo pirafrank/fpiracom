@@ -3,7 +3,7 @@
 
 @import "variables";
 
-ul {
+.entry > ul {
   margin-right: 4em;
 
   @include mobile {
@@ -11,7 +11,7 @@ ul {
   }
 }
 
-ul > li {
+.entry > ul > li {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }

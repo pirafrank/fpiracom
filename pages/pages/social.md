@@ -8,8 +8,7 @@ custom_css: social
 
 <div class="container">
 
-Here's a list of all my social network profiles and public platforms.
-<br>Reach me on your platform of choice!
+Here are my places on the Web. Reach me on your platform of choice.
 
     <div class="section group">
         <div class="col span_7_of_12">

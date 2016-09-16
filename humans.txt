@@ -21,4 +21,4 @@
   JB vers.    : {{ site.version }}
   Build using : {{ jekyll.version }}
   Coded with  : love and tools from my
-                toolbelt (/resources/my-toolbelt)
+                toolbelt (/my-toolbelt)

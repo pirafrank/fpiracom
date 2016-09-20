@@ -1,0 +1,28 @@
+---
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Francesco Pira//fpira.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:{{ site.name }} - {{ site.domain }}
+X-WR-TIMEZONE:{{ site.timezone }}
+X-WR-RELCALID:C076E282-FP01-4257-ADB1-DAC49DCFPIRA
+X-APPLE-CALENDAR-COLOR:#3344AA
+X-WR-CALDESC:{{ site.name }} posts calendar. Know more at {{ site.url }}.
+{% for post in site.posts %}
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:{{ post.date | date: "%m/%d/%Y" }}
+DTEND;VALUE=DATE:{{ post.date | date: "%m/%d/%Y" }}
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:{{ post.title | strip_html | strip_newlines | capitalize }}
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT120M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+{% endfor %}
+END:VCALENDAR

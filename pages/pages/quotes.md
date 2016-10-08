@@ -59,3 +59,5 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 *"No man has good enough memory to make a successful liar."* <br> Abraham Lincoln
 
 *"Work until you no longer have to introduce yourself."* <br> Anonymous
+
+*"Sometimes shifting your perspective is more powerful than being smart."*<br> Astro Teller

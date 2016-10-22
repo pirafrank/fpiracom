@@ -25,9 +25,17 @@ I've studied Mathematics and Physics in High School, taught myself English and h
 
 In 2013 I joined EESTEC, a European network of engineering students where members can improve technical and soft skills. The next year I became president of the local committee and coordinator of the International IT team. In 2015, with a colleague at university, I started a company, Fileshute.
 
-I am currently involved in the local startup scene as start-upper and as VP of Youth Hub Catania, an association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
+I am currently involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
 ### Events and contributions
+
+[Linux Day Enna](http://enna.linux.it), Speaker
+<br>*October 22, 2016 @ Formasec, Enna*
+<br>Speech during the national Linux Day about moving the first steps with Git. Slides [here](http://www.slideshare.net/pirafrank/first-steps-with-git-linux-day-2016-enna).
+
+[Startup Weekend Catania 2016](http://swcatania.it), co-organiser and sponsorships
+<br>*October 14-16, 2016 @ Vecchia Dogana, Catania*
+<br>Record Startup Weekend edition in Catania with 148 participants and 12K Euros raised from sponsors. It was organised by Youth Hub Catania and some volunteers to promote young entrepreneurship and boost cooperations in the ecosystem. Find out more checking the hashtag [#SWCatania16](https://twitter.com/hashtag/swcatania16) or the [Facebook page](https://www.facebook.com/startupweekendcatania/).
 
 [Contamination Lab (CLab), 2016 Edition](), Trainer
 <br>*October 2016 @ CLab, University of Catania*

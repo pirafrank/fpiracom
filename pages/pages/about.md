@@ -33,7 +33,7 @@ I am currently involved in the local startup scene as start-upper and as VP of Y
 <br>*October 22, 2016 @ Formasec, Enna*
 <br>Speech during the national Linux Day about moving the first steps with Git. Slides [here](http://www.slideshare.net/pirafrank/first-steps-with-git-linux-day-2016-enna).
 
-[Startup Weekend Catania 2016](http://swcatania.it), co-organiser and sponsorships
+[Startup Weekend Catania 2016](http://swcatania.it), co-organiser and fund-raising team
 <br>*October 14-16, 2016 @ Vecchia Dogana, Catania*
 <br>Record Startup Weekend edition in Catania with 148 participants and 12K Euros raised from sponsors. It was organised by Youth Hub Catania and some volunteers to promote young entrepreneurship and boost cooperations in the ecosystem. Find out more checking the hashtag [#SWCatania16](https://twitter.com/hashtag/swcatania16) or the [Facebook page](https://www.facebook.com/startupweekendcatania/).
 

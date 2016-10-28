@@ -6,10 +6,10 @@ show_title: true
 ---
 
 - [Bio](#bio)
-- [Events and contributions](#events-and-contributions)
 - [Skills](#skills)
 - [Coding](#coding)
 - [My toolbelt](#my-toolbelt)
+- [Events and contributions](#events-and-contributions)
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
 - [Honors and certificates](#honors-and-certificates)
@@ -26,6 +26,26 @@ I've studied Mathematics and Physics in High School, taught myself English and h
 In 2013 I joined EESTEC, a European network of engineering students where members can improve technical and soft skills. The next year I became president of the local committee and coordinator of the International IT team. In 2015, with a colleague at university, I started a company, Fileshute.
 
 I am currently involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
+
+### Skills
+
+- **Front-end dev:** HTML, CSS, Sass/SCSS, JavaScript
+- **Back-end dev:** node.js, Express, Electron, Ruby on Rails, Flask
+- **Web servers and Databases:** nginx, Apache, Puma, PostgreSQL, SQLite
+- **Programming languages:** Python, JavaScript (+ES2015), Ruby, bash, C, Java
+- **Tools and Platforms:** Git, Amazon Web Services, Heroku, Debian Linux, CentOS, OS X
+- **CMS and static generators:** Prestashop, Wordpress, Jekyll
+- **Other skills:** Computer Security, Encryption, Computer Hardware
+- **Soft Skills:** Project Management, Team Management, Team Working, Social Networking, Event Organisation
+- **Graphical tools:** Photoshop (mostly for front-end assets), Sketch (by Bohemian Coding)
+
+### Coding
+
+During my day, I write little [utilities]({{ site.baseurl }}/utilities/) to speed up and simplify my work. And because I like coding, I found myself spending time on some [projects]({{ site.baseurl }}/projects/) which I usually release on GitHub as open-source.
+
+### My toolbelt
+
+Curious about tools and utilities I use? The answer you're looking for is [here]({{ site.baseurl }}/my-toolbelt/).
 
 ### Events and contributions
 
@@ -80,26 +100,6 @@ I am currently involved in the local startup scene as start-upper and as VP of Y
 [Android Day #1](http://www.eestec-catania.eu/2013/12/17/android-workshop-1-2/), Organiser
 <br>*December 20, 2013 @ University of Catania*
 <br>Workshop to teach the first steps in Android game development. The event was part of a Europe-wide series to support the Android Competition by [EESTEC](http://eestec.net).
-
-### Skills
-
-- **Front-end dev:** HTML, CSS, Sass/SCSS, JavaScript
-- **Back-end dev:** node.js, Express, Electron, Ruby on Rails, Flask
-- **Web servers and Databases:** nginx, Apache, Puma, PostgreSQL, SQLite
-- **Programming languages:** Python, JavaScript (+ES2015), Ruby, bash, C, Java
-- **Tools and Platforms:** Git, Amazon Web Services, Heroku, Debian Linux, CentOS, OS X
-- **CMS and static generators:** Prestashop, Wordpress, Jekyll
-- **Other skills:** Computer Security, Encryption, Computer Hardware
-- **Soft Skills:** Project Management, Team Management, Team Working, Social Networking, Event Organisation
-- **Graphical tools:** Photoshop (mostly for front-end assets), Sketch (by Bohemian Coding)
-
-### Coding
-
-During my day, I write little [utilities]({{ site.baseurl }}/utilities/) to speed up and simplify my work. And because I like coding, I found myself spending time on some [projects]({{ site.baseurl }}/projects/) which I usually release on GitHub as open-source.
-
-### My toolbelt
-
-Curious about tools and utilities I use? The answer you're looking for is [here]({{ site.baseurl }}/my-toolbelt/).
 
 ### Other things I like
 

@@ -1,5 +1,5 @@
 ---
-title: "Thoughts on the new MacBook Pro and Apple mobile computing"
+title: "Thoughts on the new MacBook Pro and Apple mobile computing (Updated)"
 subtitle: "Hardware changes, Apple embracing standards, their focus on creators and MacBook Air highly uncertain future"
 description: "Hardware changes, Apple embracing standards, their focus on creators and MacBook Air highly uncertain future"
 category: ['Articles']
@@ -37,7 +37,7 @@ Below in a easy to read bullet list.
 - Apple listened to user feedbacks and this second-gen keyboard with butterfly mechanism sports better key travel. Happy to hear that just because the 12" MacBook keys are just awkward;
 - The trackpad is twice as bigger, thanks to Force Touch;
 - Discrete graphics comes back standard on 15-inch model. It can drive two 5K or four 4K. The 13-inch model can drive one 5K or two 4K. All at 60Hz;
-- SSD are twice as fast and there's a 2TB option. Unfortunately they're now soldered;
+- SSD are twice as fast and there's a 2TB option. ~~Unfortunately they're now soldered~~ [It is not](http://www.macrumors.com/2016/10/28/new-macbook-pro-removable-ssd/);
 - 10-hour battery also for 15-inch model;
 - No ARM-powered laptop or iPad-book was shown. They're all Intel, yay!
 - Programmers are shifting out of Apple's customer target. Some Terminal shortcuts on the Touch Bar are not enough to keep them from going;
@@ -53,7 +53,24 @@ Although last year the iPad Pro was demoed alongside MacBooks, showing that it i
 
 The most Pro laptop ever is for top professionals who need the a super-portable-yet-powerful workstation and can pay for it. The hardware changes are speaking clearly, from improved speakers to wide gamut display: with this week announcement, Apple wants to go back to its original target. The new MacBook Pro is not for programmers, it's for media content creators, architects and designers.
 
+### USB-C accessories
+
+If you find yourself googling for some cheaper alternative dongles and other handy USB-C accessories, check the ones below. In particular, Dell appears to have some goodies which are even better than what Apple offers.
+
+- [Dell DA200 adapter](https://www.amazon.com/Dell-Adapter-Type-Ethernet-470-ABQN/dp/B012DT6KW2/ref=sr_1_1?ie=UTF8&qid=1477738121&sr=8-1&keywords=Dell+DA200+adapter), review [here](http://gtrusted.com/dell-usb-c-to-hdmivgaethernetusb-3-0-adapter-da200-working-with-the-apple-macbook-early-2016-using-displayport-and-usb-power-delivery)
+- [Dell WD15 Docking Station](https://www.amazon.com/Dell-Dock-WD15-Adapter-Type-C/dp/B01C8PHWQY/ref=sr_1_1?ie=UTF8&qid=1477738068&sr=8-1&keywords=Dell+Thunderbolt+Dock)
+- [VicTising Type C adapter](https://www.amazon.com/dp/B01BSJVY7Y/ref=psdc_3015403011_t2_B012DT6KW2)
+- [Aukey adapter](https://www.amazon.com/dp/B01ESWAVKE/ref=psdc_3015403011_t3_B012DT6KW2)
+- [CableCreation USB-C to HDMI Adapter](https://www.amazon.com/dp/B0123PJ9BK/ref=psdc_3015403011_t1_B012DT6KW2)
+- [Dell Power Companion](https://www.amazon.com/Dell-Power-Companion-18000-WCKF2/dp/B01B48YESU?th=1)
+
+*Note: The Dell Thunderbolt Dock seems to have been discountinued due to some issues. Don't buy it.*
+
 Thanks for reading.
+
+**Update:** Correction, the SSD isn't soldered.
+
+**Update 2**: Added USB-C accessories.
 
 ---
 

@@ -41,6 +41,7 @@ Below in a easy to read bullet list.
 - 10-hour battery also for 15-inch model;
 - No ARM-powered laptop or iPad-book was shown. They're all Intel, yay!
 - Programmers are shifting out of Apple's customer target. Some Terminal shortcuts on the Touch Bar are not enough to keep them from going;
+- The Thunderbolt 3 ports on the right side have capped speed ([source](http://www.macrumors.com/2016/10/28/macbook-pro-tb3-reduced-pci-express-bandwidth/)). Could they have unable to build a fast enough bridge to connect the right side logic boar to the main one?;
 - They are still selling the *old* MacBook Pro version, 13" version only. If you want a 15" MacBook, the new one is the only option to go for. Because Apple thinks this is the new declination of a Pro computer.
 
 ### Mobile choices
@@ -71,6 +72,8 @@ Thanks for reading.
 **Update:** Correction, the SSD isn't soldered.
 
 **Update 2**: Added USB-C accessories.
+
+**Update 3**: Added info about speed of Thunderbolt ports.
 
 ---
 

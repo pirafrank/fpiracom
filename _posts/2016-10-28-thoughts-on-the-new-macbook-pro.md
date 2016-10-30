@@ -34,6 +34,7 @@ Below in a easy to read bullet list.
 - The new MacBook Pro was the only cool thing to talk about;
 - The *MacBook Pro* text is back again below the monitor;
 - As for MacBook last year, the Apple logo is no longer back-illuminated;
+- The startup chime sound is [gone](http://www.macrumors.com/2016/10/30/classic-startup-chime-new-macbook-pros/). I'm actually happy about this, so many times I forgot to mute the volume and left the sound wake up people when working at night;
 - Apple listened to user feedbacks and this second-gen keyboard with butterfly mechanism sports better key travel. Happy to hear that just because the 12" MacBook keys are just awkward;
 - The trackpad is twice as bigger, thanks to Force Touch;
 - Discrete graphics comes back standard on 15-inch model. It can drive two 5K or four 4K. The 13-inch model can drive one 5K or two 4K. All at 60Hz;
@@ -74,6 +75,8 @@ Thanks for reading.
 **Update 2**: Added USB-C accessories.
 
 **Update 3**: Added info about speed of Thunderbolt ports.
+
+**Update 4**: Added info about the chime sound.
 
 ---
 

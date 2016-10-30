@@ -61,3 +61,8 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 *"Work until you no longer have to introduce yourself."* <br> Anonymous
 
 *"Sometimes shifting your perspective is more powerful than being smart."*<br> Astro Teller
+
+*"Most people do not listen with the intent to understand: they listen with the intent to reply"*<br> Stephen Covey
+
+*"In the new economy, computer science isn't an optional skill. It's a basic skill."*<br> Barack Obama
+

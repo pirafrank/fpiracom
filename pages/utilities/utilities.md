@@ -11,13 +11,17 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/).
 
 #### Utilities
 
-- [Brute-force calculator]({{ site.baseurl }}/utilities/bfc) - Dummy-proof utility to calculate how long it takes to brute-force crack your password.
+- [Brute-force calculator]({{ site.baseurl }}/utilities/bfc) (*) - Dummy-proof utility to calculate how long it takes to brute-force crack your password.
 - [Copy URL Bookmarklet](https://gist.github.com/pirafrank/5a4f6f56f3cf931ddf6b) - in Safari on Mac, copying the URL from the address bar can be tricky. This lets you quickly copy it with just 1 click and a CMD+C. It should work in other browsers, too.
 
-#### Command line tools
+#### Command line tools (mantained by me)
 
 - [gen_index.py](https://gist.github.com/pirafrank/970cbdb7542dab942da50cab408100d0) (*) - Generate an `index.html` page with links to files in the same folder. Use case: access files in a folder (e.g. dir with PDFs files) from browser and avoid turning directory listing on in your webserver. Python 2.7.x required.
 - [Download an entire website](https://gist.github.com/pirafrank/181360a3754abe79a5c8) (*) - Short bash script. It uses wget.
+- [YouTube uploader CLI](https://gist.github.com/pirafrank/20ecefda12e8bb47fe4eba59621b08ff) - Quick script to automate video upload from CLI to YouTube. Based on [youtube-upload](https://github.com/tokland/youtube-upload).
+
+#### Command line tools (recommended)
+
 - [PathPicker](https://github.com/facebook/PathPicker) - Facebook PathPicker is a simple command line tool that solves the perpetual problem of selecting files out of bash output.
 - [asciinema](http://asciinema.org) - Record and share your terminal sessions. Supports copy/paste from the video.
 

@@ -7,13 +7,14 @@ show_title: true
 custom_css: "pages/deals"
 ---
 
-Offers and promos convenient for you or the both of us.
+Offers and promos convenient for you or the both of us. Showed in A-Z order.
 
-- [Elevate](http://go.elevateapp.com/FRAN741118), awesome brain training app that boosts your memory, writing, reading, speaking and math skills
 - [AirBnB](http://www.airbnb.com/c/francescop462), when you travel on AirBnB, we both get &#8364;30 in travel credit
-- [Trello](https://trello.com/pirafrank/recommend), famous kanban service
 - [Airtable](https://airtable.com/invite/oOBPqTlc), a cool new way to handle databases
-- [privatetunnel.com](https://www.privatetunnel.com/home/?referral=NUTAYZHU54), a VPN service by OpenVPN labs
+- [Elevate](http://go.elevateapp.com/FRAN741118), awesome brain training app that boosts your memory, writing, reading, speaking and math skills. Register with via this link and we both get a free week of premium.
+- [privatetunnel.com](https://www.privatetunnel.com/home/?referral=NUTAYZHU54), a VPN service by OpenVPN labs. Signing up via this you get 2GB of traffic for free.
+- [Trello](https://trello.com/pirafrank/recommend) - Sign up and make your kanban :)
+- [Uber](https://www.uber.com/invite/1cwzvmrmue) - &#8364;10 coupon!
 
 <br><br>
 {% include sharing-buttons.html %}

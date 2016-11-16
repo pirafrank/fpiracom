@@ -49,6 +49,7 @@ google_analytics: "UA-59510020-2"
 # Includes a social icon in social divs and make a link to that profile work for each username you enter
 # Leave social links you don't have/use empty to disable them
 social-links:
+  angel: francescopira
   dribbble:
   email:
   facebook:

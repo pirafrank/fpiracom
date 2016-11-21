@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
 
+    <!-- Google AMP -->
+    {% if page.layout == 'post' %}
+        <link rel="amphtml" href="https://mercury.postlight.com/amp?url={{ site.url }}{{ page.url }}">
+    {% endif %}
+
     <!-- webmention.io stuff -->
     <link rel="pingback" href="https://webmention.io/{{ site.domain }}/xmlrpc">
     <link rel="webmention" href="https://webmention.io/{{ site.domain }}/webmention">

@@ -49,6 +49,10 @@ Curious about tools and utilities I use? The answer you're looking for is [here]
 
 ### Events and contributions
 
+[Startup Europe Awards](http://startupeuropeawards.com), Regional assessor
+<br>*November 2016 @ Catania*
+<br>Involved as Youth Hub Catania representative, I was one of the six regional assessors in Sicily evaluating the startups who applied to Startup Europe Awards during the first round of selections (regional call).
+
 [Linux Day Enna](http://enna.linux.it), Speaker
 <br>*October 22, 2016 @ Formasec, Enna*
 <br>Speech during the national Linux Day about moving the first steps with Git. Slides [here](http://www.slideshare.net/pirafrank/first-steps-with-git-linux-day-2016-enna).
@@ -116,14 +120,14 @@ Sometimes I find myself reading thrillers.
 
 ### Resume
 
-[Download]({{ site.baseurl }}/static/cv/resume-francesco-pira.pdf)
+[Download]({{ site.baseurl }}/static/files/cv/resume-francesco-pira.pdf)
 
 ### Honors and certificates
 
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015-2016_certificate.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015_certificate.pdf)
-- [EESTEC Contact Person training certificate]({{ site.baseurl }}/static/files/honors/eestec_contact_person_training_certificate.pdf)
 - [EYE - Enabling Youth Entrepreneurship Support Group Project - Recommendation letter]({{ site.baseurl }}/static/files/honors/EYE_recommendation_letter_Francesco_Pira.pdf)
+- [EESTEC Contact Person training certificate]({{ site.baseurl }}/static/files/honors/eestec_contact_person_training_certificate.pdf)
 - [Summer Entrepreneuship Training - Certificate of Appreciation]({{ site.baseurl }}/static/files/honors/SET14_certificate_of_appreciation.pdf)
 
 ### Contact me

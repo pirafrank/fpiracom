@@ -5,7 +5,7 @@ permalink: /developers/
 show_title: true
 ---
 
-A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need.
+A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need. You may also want to check the [Cheat Sheet]({{site.baseurl}}/cheat-sheets) page.
 
 #### Bash
 
@@ -26,6 +26,11 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 - [Open URL in default browser](https://gist.github.com/pirafrank/cd62f7def8f56ff986af) (*)
 - [Open with the default application](https://gist.github.com/pirafrank/159aa709cc86799b66f2) (*) : Short snippet to open a given file with the default application. Works on Linux, OS X and Windows. On Linux requires xdg-open (usually built-in).
 - [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8) (*) : a script to completely remove PyObjc from your Mac.
+
+#### Web Development
+
+- [freestack.co.uk](http://freestack.co.uk), collection of Free Design Tools & Resources for Graphic Designers
+- [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862#.vpz5mnnyy)
 
 #### Boilerplates
 

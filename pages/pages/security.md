@@ -17,7 +17,7 @@ Articles and links about improving the security of your computers and mobile dev
 
 **macOS**
 
-- [Harden macOS](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
+- [macOS security checklist]({% post_url 2016-11-27-macos-security-list %}) (*)
 - [How the NSA snoop-proofs its Macs](http://www.macworld.com/article/2048160/how-the-nsa-snoop-proofs-its-macs.html), a bit old but something you may want to check anyway
 
 **iOS**

@@ -42,9 +42,12 @@ theme_engine:
   primary_color: 3344aa
   secondary_color: 4183C4
 
+# Analytics
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
-# Leave it empty to disable
-google_analytics: "UA-59510020-2"
+# Leave it empty to disable any of the settings.
+analytics:
+  google: "UA-59510020-2"
+  heatmap: yes
 
 # Includes a social icon in social divs and make a link to that profile work for each username you enter
 # Leave social links you don't have/use empty to disable them

@@ -23,6 +23,9 @@ Recipes for the popular iOS app [Workflow](https://workflow.is/download).
 #### [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer)
 Deploy on your server any branch of your Jekyll website in a tap. Great if you want to publish posts on-the-go.
 
+#### [rebrandly cli]({{ site.baseurl }}/projects/rebrandly_cli)
+An unofficial command line client to shorten URL using rebrandly.com.
+
 #### [iA Writer templates](https://github.com/pirafrank/My-iA-Writer-templates)
 Self-made templates for the awesome [iA Writer](https://ia.net/writer).
 

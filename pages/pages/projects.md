@@ -11,7 +11,7 @@ Here are my spare time projects and more I code to face challenges I come across
 #### [Jekyll Blue](http://github.com/pirafrank/jekyll-blue)
 All-in-one easy Jekyll solution. Create your static website with blog in a quick and stylish way and deploy it on Github Pages.
 
-#### [electron-dash-docset](https://github.com/pirafrank/electron-dash-docset)
+#### [electron-dash-docset]({{ site.baseurl }}/projects/electron-dash)
 A repository to generate a [Dash](https://kapeli.com/dash) docset for the [electron](http://electron.atom.io) documentation. Now with automatic check for new releases.
 
 #### [Alfred Workflows](https://github.com/pirafrank/alfred_workflows)

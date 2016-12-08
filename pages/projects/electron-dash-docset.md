@@ -1,0 +1,64 @@
+---
+title: "electron dash docset"
+description: "A repository to generate Dash docsets for the electron documentation"
+permalink: /projects/electron-dash/
+github: "https://github.com/pirafrank/electron-dash-docset"
+---
+
+### What is *electron dash docset*?
+
+Electron Dash Docset is a tool to generate an offline package of the [electron](http://electron.atom.io/) documentation for [Dash](https://kapeli.com/dash), a great app by Kapeli.
+
+### How it works?
+
+It downloads the entire documentation from the electron website, create an index of it, put the index in a SQLite database and pack everything respecting the Kapeli guidelines.
+
+To import the `.tgz` package in Dash:
+
+1. Unzip it
+
+2. Go to Dash > Preferences > Docsets and press the + button in the bottom left corner
+
+3. Select the `.docset` file.
+
+### The Auto Mode
+
+As the maintainer of the user-contributed [Electron Dash docset](https://github.com/Kapeli/Dash-User-Contributions) running the tool manually was time consuming. That's why I've created Auto Mode.
+
+Auto Mode it's designed to be run by cron on a server (say a small VPS or even your Raspberry Pi with a public IP). In Auto Mode the script will check for a new version of the electron documentation (thanks to cron). If a new version is found, it will:
+
+1. Notify you via [Pushbullet](http://pushbullet.com)
+
+2. Run all the scripts and create an updated version of the docset
+
+3. Let you know via Pushbullet when it's done.
+
+### Download
+
+To know about requirements, installation and more, please read the readme on [GitHub]({{ page.github }}).
+
+### License
+
+Electron Dash Docset is released under the GNU GPLv3.
+
+### FAQs
+
+**How can I access the already packed docsets?**
+
+1. Download Dash
+
+2. Go to Preferences > Downloads > User Contributed and search for `electron`
+
+3. Download your version of choice
+
+**I have a compatible app. Is there any mirror of the packed docsets?**
+
+Sure. You can access all the packed versions from [here](http://cdn.{{ site.domain}}/public/electron/dash-docsets/).
+
+### Support
+
+If you like this, please consider [offering me a beer]({{ site.baseurl }}/support/).
+
+<br>
+
+{% include sharing-buttons.html %}

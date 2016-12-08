@@ -31,3 +31,11 @@ Evernote for iOS isn't as powerful as its Web or Android counterparts, so here's
 #### Social
 
 - [Save to Pocket and Tweet](https://workflow.is/workflows/3e508f3afda446eabfd92a4c535f94b4) - Spot a nice article? Save it for later but tweet it.
+
+### Support
+
+If you like this, please consider [offering me a beer]({{ site.baseurl }}/support/).
+
+<br>
+
+{% include sharing-buttons.html %}

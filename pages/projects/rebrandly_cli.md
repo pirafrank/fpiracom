@@ -3,6 +3,7 @@ title: "rebrandly cli"
 description: "An unofficial command line client for rebrandly.com"
 permalink: /projects/rebrandly_cli/
 asciinema: 94415
+github: "https://github.com/pirafrank/rebrandly_cli"
 ---
 
 ### What is *rebrandly cli*?
@@ -30,3 +31,11 @@ Please read the [readme](https://github.com/pirafrank/rebrandly_cli/blob/master/
 Can I join you in this?
 
 Sure. The whole code is released under the GNU GPLv3 terms and published on [GitHub](https://github.com/pirafrank/rebrandly_cli). Send me a PR if you add some cool features or improve the code!
+
+### Support
+
+If you like this, please consider [offering me a beer]({{ site.baseurl }}/support/).
+
+<br>
+
+{% include sharing-buttons.html %}

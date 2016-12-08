@@ -79,6 +79,11 @@ social-links:
   twitter: pirafrank
   youtube: pirafrank # channel/<your_long_string> or user/<user-name>
 
+# Payments
+pay:
+  coinbase: pirafrank # https://www.coinbase.com/joshdoe
+  paypal: pirafrank # https://paypal.me/joshdoe
+
 # Links to use in JSON-LD metadata (SEO)
 seo_links:
   - "http://twitter.com/pirafrank"

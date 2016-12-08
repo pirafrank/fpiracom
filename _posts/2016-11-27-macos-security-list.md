@@ -31,11 +31,11 @@ Some tools are tested and/or designed to work with specific version of macOS. Us
 - Disable *Spotlight suggestions*;
 - Disable sync of `~/Desktop` and `~/Documents` folders to iCloud (macOS Sierra only);
 - Move private data to encrypted containers (e.g. using VeraCrypt) before uploading to any cloud storage;
-- Using system keychain is safe, but do NOT safe PGP key passphrases there;
-- Use a VPN when connected to public hotspots and only use trusted ones. Consider deploying your own VPN. You may also use an SSH connection (e.g. to your own VPS) as a SOCKS proxy;
+- Using system keychain is safe, but do NOT save PGP key passphrases there;
+- Use a VPN when you connect to public hotspots and only use trusted VPNs. Consider deploying your own. You may also use an SSH connection (e.g. to your own VPS) as a SOCKS proxy;
 - Use [MacPorts](http://macports.org) or [Homebrew](http://brew.sh) to keep some userland tools (like bash!) up-to-date;
-- Install updated version of OpenSSL and cURL from [MacPorts](http://macports.org) or [Homebrew](http://brew.sh).
-- Considering installing `gpg` or [GPGTools](http://gpgtools.org);
+- Install updated versions of OpenSSL and cURL from [MacPorts](http://macports.org) or [Homebrew](http://brew.sh).
+- Consider installing `gpg` or [GPGTools](http://gpgtools.org);
 - Always verify PGP signatures for files and emails (note that PGP does not provide forward secrecy);
 - Edit the `/etc/hosts` file to block known malware, ads and other treats;
 - Don't use your ISP DNS. Use Google DNS instead, or better, use OpenDNS;

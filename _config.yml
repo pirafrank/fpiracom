@@ -133,6 +133,7 @@ defaults:
       layout: "page"
       show_title: true
       in_search: true
+      center: false
   -
     scope:
       path: "pages/projects"

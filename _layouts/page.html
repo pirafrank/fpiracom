@@ -7,13 +7,25 @@ layout: default
     <article class="page">
 
       {% if page.show_title %}
-        <div class="page-title">
-            <h1>{{ page.title | smartify }}</h1>
-        </div>
+        {% if page.center %}
+          <div class="page-title center">
+              <h1>{{ page.title | smartify }}</h1>
+          </div>
+        {% else %}
+          <div class="page-title">
+              <h1>{{ page.title | smartify }}</h1>
+          </div>
+        {% endif %}
       {% endif %}
 
       <div class="entry">
+      {% if page.center %}
+        <div class="center">
+          {{ content }}
+        </div>
+      {% else %}
         {{ content }}
+      {% endif %}
       </div>
 
     </article>

@@ -36,6 +36,7 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/).
 - [My toolbelt]({{site.baseurl}}/my-toolbelt)
 - [Alfred resources]({{site.baseurl}}/alfred-resources)
 - [Workflow for iOS recipes]({{site.baseurl}}/workflow-ios)
+- [Event feed calendar]({{ site.baseurl }}/calendars/eventfeed)
 
 <br>
 

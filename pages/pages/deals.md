@@ -13,6 +13,7 @@ Offers and promos convenient for you or the both of us. Showed in A-Z order.
 - [Airtable](https://airtable.com/invite/oOBPqTlc), a cool new way to handle databases
 - [Coinbase](https://www.coinbase.com/join/56d83b21a6c40a1bfa0000b3), Buy $100 USD of bitcoin or more, we both earn $10!
 - [Elevate](http://go.elevateapp.com/FRAN741118), awesome brain training app that boosts your memory, writing, reading, speaking and math skills. Register with via this link and we both get a free week of premium.
+- [Evernote](https://www.evernote.com/referral/Registration.action?sig=4280139b8af883cda8474cafab473b4722aa11e09e04220ff681a3c0bce708d9&uid=7451174), one of the best notes taking and archiving services. Register and we both get *Premium* plan.
 - [Hotjar](http://incoming.hotjar.com/s/10546) - Early access to *Free and Unlimited*, the incoming feedback tool by Hotjar labs. Using the link, we jump ahead in the waiting queue.
 - [privatetunnel.com](https://www.privatetunnel.com/home/?referral=NUTAYZHU54), a VPN service by OpenVPN labs. Signing up via this you get 2GB of traffic for free.
 - [Trello](https://trello.com/pirafrank/recommend) - Sign up and make your kanban :)

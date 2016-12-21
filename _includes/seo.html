@@ -70,8 +70,8 @@
 
     {% if page.author %}
     <meta name="author" content="{{ page.author }}" />
-    {% elsif site.author %}
-    <meta name="author" content="{{ site.author }}" />
+    {% elsif site.author.name %}
+    <meta name="author" content="{{ site.author.name }}" />
     {% endif %}
 
     <!-- Sharing meta -->
@@ -95,7 +95,7 @@
     <meta name="twitter:card" content="summary" />
     {% if page.date %}
     <meta property="og:type" content="article" />
-    <meta property="article:author" content="{{ site.author }}" />
+    <meta property="article:author" content="{{ site.author.name }}" />
     {% if site.social-links.twitter %}
     <meta name="twitter:creator" content="@{{ site.social-links.twitter }}" />
     {% endif %}

@@ -51,34 +51,6 @@ analytics:
   google: "UA-59510020-2"
   heatmap: yes
 
-# Includes a social icon in social divs and make a link to that profile work for each username you enter
-# Leave social links you don't have/use empty to disable them
-social-links:
-  angel: francescopira
-  dribbble:
-  facebook:
-  flickr: pirafrank
-  github: pirafrank
-  goodreads: pirafrank # your goodreads username, e.g. https://www.goodreads.com/johndoe
-  googleplus: +FrancescoPiraonline # your username, including the plus char, e.g. https://plus.google.com/+johndoe
-  instagram: pirafrank
-  keybase: pirafrank # your keybase username
-  lastfm: pirafrank
-  linkedin: fpira
-  medium: pirafrank # your medium username, e.g. https://medium.com/@johndoe
-  nuzzel: pirafrank # your nuzzel username, e.g. http://nuzzel.com/johndoe
-  packal: pirafrank # your packal.org username, e.g. https://www.packal.org/users/johndoe
-  pinterest:
-  pocket: pirafrank # your pocket username, e.g. https://getpocket.com/@johndoe
-  reddit: pirafrank
-  skype: francesco-pira
-  soundcloud: pirafrank
-  slideshare: pirafrank # your slideshare username, http://www.slideshare.net/pirafrank
-  stackoverflow: # your stackoverflow profile, e.g. "users/12345/john-doe"
-  tumblr: pirafrank
-  twitter: pirafrank
-  youtube: pirafrank # channel/<your_long_string> or user/<user-name>
-
 # Links to use in JSON-LD metadata (SEO)
 seo_links:
   - "http://twitter.com/pirafrank"

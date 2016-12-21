@@ -1,3 +1,5 @@
+# Includes a social icon in social divs and make a link to that profile work for each username you enter
+# Leave social links you don't have/use empty to disable them
 angel:
   category:
   url: 'https://angel.co/francescopira'

@@ -6,7 +6,7 @@ show_title: true
 ---
 
 Here are my spare time projects and more I code to face challenges I come across daily.
-<br>They are open-source, so feel free to fork me on [Github](http://github.com/{{ site.social-links.github }}).
+<br>They are open-source, so feel free to fork me on [Github]({{ site.data.social.github.url }}).
 
 #### [Jekyll Blue](http://github.com/pirafrank/jekyll-blue)
 All-in-one easy Jekyll solution. Create your static website with blog in a quick and stylish way and deploy it on Github Pages.

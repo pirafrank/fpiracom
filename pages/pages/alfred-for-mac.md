@@ -7,7 +7,7 @@ show_title: true
 
 Don't know Alfred? Know about it [here](https://www.alfredapp.com/).
 
-Workflows and themes I've developed are available [on Packal](http://www.packal.org/users/{{ site.social-links.packal }}).
+Workflows and themes I've developed are available [on Packal]({{ site.data.social.packal.url }}).
 
 #### Workflows
 

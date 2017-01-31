@@ -56,6 +56,7 @@ A comprehensive list is available in the [event page]({{ site.baseurl }}/events/
 
 ### Honors and certificates
 
+- [AngularJS Certificate by Bax Energy]({{ site.baseurl }}/static/files/honors/AngularJS_Certificate_Bax_Energy_oriz.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015-2016_certificate.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015_certificate.pdf)
 - [EYE - Enabling Youth Entrepreneurship Support Group Project - Recommendation letter]({{ site.baseurl }}/static/files/honors/EYE_recommendation_letter_Francesco_Pira.pdf)

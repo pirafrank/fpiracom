@@ -30,17 +30,23 @@ I am currently involved in the local startup scene as start-upper and as VP of Y
 ### Skills
 
 - **Front-end dev:** HTML, CSS, Sass/SCSS, JavaScript, AngularJS 1.x
-- **Back-end dev:** node.js, Express, Electron, Ruby on Rails, Flask
+- **Back-end dev:** Flask, node.js, Express, Electron, Ruby on Rails (beginner)
 - **Web servers:** nginx, Puma, Apache
 - **Databases:** PostgreSQL, SQLite, CouchDB, MySQL / MariaDB
 - **System Administration:** Server deployment, configuration and hardening (SSH, OpenVPN, etc.)
-- **Programming languages:** Python, JavaScript (+ES2015), Ruby, bash, C, Java. Currently exploring Golang, Xamarin.
+- **Programming languages:** Python, JavaScript (+ES2015), bash, C, Java, Ruby (beginner)
 - **Tools:** Git, Gulp, Bower, Let’s Encrypt, GrSecurity
 - **Platforms:** Amazon Web Services, Heroku, Debian Linux, CentOS, OS X
 - **CMS and static generators:** Prestashop, Wordpress, Jekyll
 - **Other technical skills:** Computer security, encryption and server hardware knowledge
 - **Graphical tools:** Photoshop (mostly for front-end assets), Sketch by Bohemian Coding
 - **Soft Skills:** Project Management, Team Management, Team Working, Social Networking, Event Organisation
+
+**What's next?**
+
+- Golang and Xamarin (mostly cross-platform mobile app development with shared core)
+- Machine learning and some Python applications of it
+- Advance my network security skills
 
 ### Coding
 

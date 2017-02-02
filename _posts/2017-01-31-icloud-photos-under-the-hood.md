@@ -9,7 +9,7 @@ tags: ['macOS','cloud','iOS']
 
 After some fiddling with Apple's photo management technology I've found some undocumented but interesting things.
 
-![Show Package Content]({{ site.baseurl }}/static/postimages/2017-01-23/001.png)
+![Show Package Content]({{ site.baseurl }}/static/postimages/2017-01-31/001.png)
 
 ### The setup
 
@@ -47,7 +47,7 @@ After some fiddling with Apple's photo management technology I've found some und
 
 ### The output
 
-![File sizes]({{ site.baseurl }}/static/postimages/2017-01-23/002.png)
+![File sizes]({{ site.baseurl }}/static/postimages/2017-01-31/002.png)
 
 #### Video details
 

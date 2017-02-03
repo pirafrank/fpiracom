@@ -5,7 +5,7 @@ permalink: /developers/
 show_title: true
 ---
 
-A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need. You may also want to check the [Cheat Sheet]({{site.baseurl}}/cheat-sheets) page.
+A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need. You may also want to check the [Learning]({{ site.baseurl }}/learning) and the [Cheat Sheet]({{site.baseurl}}/cheat-sheets) pages.
 
 #### Bash
 
@@ -44,7 +44,7 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 
 - [AngularJS package](https://github.com/angular-ui/AngularJS-sublime-package): AngularJS code completion, snippets, go to definition, quick panel search, and more
 
-#### Check also
+### Check also
 
 - [Projects page]({{ site.baseurl }}/projects)
 - [Cheat sheets]({{site.baseurl}}/cheat-sheets)

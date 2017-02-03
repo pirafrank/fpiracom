@@ -32,7 +32,7 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/).
 - [My favorite recipes](https://ifttt.com/p/pirafrank/favorites)
 - [Microsoft's channel](https://ifttt.com/p/microsoft/shared)
 
-#### Check also
+### Check also
 
 - [My toolbelt]({{site.baseurl}}/my-toolbelt)
 - [Alfred resources]({{site.baseurl}}/alfred-resources)

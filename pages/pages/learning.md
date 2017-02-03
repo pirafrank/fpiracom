@@ -24,3 +24,10 @@ A collection of learning material I share publicly or I've used during talks and
 #### JavaScript
 
 [Hands on: The sexy side of JavaScript (feat. node.js)](http://www.slideshare.net/pirafrank/hand-on-the-sexy-side-of-javascript-feat-nodejs)
+
+### Check also
+
+- [For developers]({{ site.baseurl }}/developers)
+- [Cheat sheets]({{ site.baseurl }}/cheat-sheets)
+- [Snippets repository](http://github.com/pirafrank/snippets)
+- [My toolbelt]({{ site.baseurl }}/my-toolbelt)

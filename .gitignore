@@ -8,4 +8,5 @@ package.json
 _sass/_cssdebug.scss
 static
 .jekyll-metadata
-2020-01-01-test.md
+_posts/2020-01-01-test.md
+pages/test.md

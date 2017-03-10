@@ -1,0 +1,101 @@
+# Includes a social icon in social divs and make a link to that profile work for each username you enter
+# Leave social links you don't have/use empty to disable them
+angel:
+  category:
+  url: 'https://angel.co/francescopira'
+  user: francescopira
+dribbble:
+  category:
+  url:
+  user:
+facebook:
+  category:
+  url:
+  user:
+flickr:
+  category:
+  url: 'http://flickr.com/pirafrank'
+  user: pirafrank
+github:
+  category:
+  url: 'https://github.com/pirafrank'
+  user: pirafrank
+goodreads:
+  category:
+  url: 'https://www.goodreads.com/pirafrank'
+  user: pirafrank
+googleplus:
+  category:
+  url: 'https://plus.google.com/+FrancescoPiraonline'
+  user: +FrancescoPiraonline
+instagram:
+  category:
+  url: 'http://instagram.com/pirafrank'
+  user: pirafrank
+keybase:
+  category:
+  url: 'http://keybase.io/pirafrank'
+  user: pirafrank
+lastfm:
+  category:
+  url: 'http://www.last.fm/user/pirafrank'
+  user: pirafrank
+linkedin:
+  category:
+  url: 'http://linkedin.com/in/fpira'
+  user: fpira
+medium:
+  category:
+  url: 'https://medium.com/@pirafrank'
+  user: pirafrank
+musicblog:
+  category: music
+  url: 'http://soundtrackofthedays.tumblr.com'
+nuzzel:
+  category:
+  url: 'http://nuzzel.com/pirafrank'
+  user: pirafrank
+packal:
+  category:
+  url: 'https://www.packal.org/users/pirafrank'
+  user: pirafrank
+pinterest:
+  category:
+  url:
+  user:
+pocket:
+  category:
+  url: 'https://getpocket.com/@pirafrank'
+  user: pirafrank
+reddit:
+  category:
+  url: 'https://www.reddit.com/user/pirafrank'
+  user: pirafrank
+skype:
+  category:
+  url: 'skype:francesco-pira?call'
+  user: francesco-pira
+soundcloud:
+  category:
+  url: 'https://soundcloud.com/pirafrank'
+  user: pirafrank
+slideshare:
+  category:
+  url: 'http://slideshare.net/pirafrank'
+  user: pirafrank
+stackoverflow:
+  category:
+  url:  # your stackoverflow profile, e.g. "users/12345/john-doe"
+  user:
+tumblr:
+  category:
+  url: 'http://pirafrank.tumblr.com'
+  user: pirafrank
+twitter:
+  category:
+  url: 'https://twitter.com/pirafrank'
+  user: pirafrank
+youtube:
+  category:
+  url: 'https://youtube.com/user/pirafrank'
+  user: pirafrank

@@ -110,10 +110,10 @@ in_search: false
           {% endif %}
           <div class="resEntry center-mobile">
             {% if site.home.show_twitter_button %}
-            <a href="https://twitter.com/{{ site.social-links.twitter }}" class="twitter-follow-button center-mobile" data-show-count="false">Follow @{{ site.social-links.twitter }}</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="{{ site.data.social.twitter.url }}" class="twitter-follow-button center-mobile" data-show-count="false">Follow @{{ site.data.social.twitter.user }}</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             {% endif %}
             <p>
-              <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/subscribe">Follow me!</a>
+              <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;<a href="{{ site.data.social.twitter.url }}">Follow me!</a>
               <br>
               <i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/subscribe">Subscribe to newsletter</a>
             </p>
@@ -123,9 +123,9 @@ in_search: false
               <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/support">Support me</a>
             </p>
             <p>
-              <a href="http://getpocket.com/@{{ site.social-links.pocket }}">Recommended on Pocket</a>
+              <a href="{{ site.data.social.pocket.url }}">Recommended on Pocket</a>
               <br>
-              <a href="https://medium.com/@{{ site.social-links.medium }}/has-recommended">Loved on Medium</a>
+              <a href="{{ site.data.social.medium.url }}/has-recommended">Loved on Medium</a>
             </p>
           </div>
           {% if site.home.show_twitter_feed %}

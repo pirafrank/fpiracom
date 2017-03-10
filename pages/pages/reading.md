@@ -16,12 +16,12 @@ custom_css: reading
 
 #### Social
 
-[Pocket](http://getpocket.com/@{{ site.social-links.pocket }})
+[Pocket]({{ site.data.social.pocket.url }})
 
-[Medium](https://medium.com/@{{ site.social-links.medium }}/) ([RSS feeds](https://medium.com/feed/@{{ site.social-links.medium }}/))
+[Medium]({{ site.data.social.medium.url }}) ([RSS feeds](https://medium.com/feed/@{{ site.data.social.medium.user }}/))
 
-[Medium recommendations](https://medium.com/@{{ site.social-links.medium }}/has-recommended) ([RSS feeds](https://medium.com/feed/@{{ site.social-links.medium }}/has-recommended))
+[Medium recommendations]({{ site.data.social.medium.url }}/has-recommended) ([RSS feeds](https://medium.com/feed/@{{ site.data.social.medium.user }}/has-recommended))
 
-[Goodreads profile](https://www.goodreads.com/{{ site.social-links.goodreads }})
+[Goodreads profile]({{ site.data.social.goodreads.url }})
 
-[Tumblr blog](http://{{ site.social-links.tumblr }}.tumblr.com) ([RSS feeds](http://{{ site.social-links.tumblr }}.tumblr.com/rss))
+[Tumblr blog]({{ site.data.social.tumblr }}) ([RSS feeds](http://{{ site.data.social.tumblr.url }}/rss))

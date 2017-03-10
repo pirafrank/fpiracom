@@ -1,0 +1,25 @@
+social-networks:
+  twitter: y
+  linkedin: y
+  slideshare: y
+  facebook:
+  googleplus: y
+  reddit: y
+  pinterest:
+coders:
+  github: y
+  stackoverflow:
+  packal: y
+  keybase: y
+blogging:
+  nuzzel: y
+  pocket: y
+  medium: y
+  tumblr: y
+music:
+  musicblog: y
+  soundcloud: y
+  lastfm: y
+photography:
+  flickr: y
+  instagram: y

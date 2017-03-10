@@ -3,12 +3,17 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Francesco Pira//fpira.com//EN
+URL:https://{{ site.domain }}/calendars/posts.ics
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:{{ site.name }} - {{ site.domain }}
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-WR-CALNAME:{{ site.name }} {{ site.domain }}
+DESCRIPTION:{{ site.name }} posts calendar. Know more at {{ site.url }}.
+TIMEZONE-ID:Europe/Berlin
 X-WR-TIMEZONE:{{ site.timezone }}
 X-WR-RELCALID:C076E282-FP01-4257-ADB1-DAC49DCFPIRA
 X-APPLE-CALENDAR-COLOR:#3344AA
+COLOR:33:44:AA
 X-WR-CALDESC:{{ site.name }} posts calendar. Know more at {{ site.url }}.{% for post in site.posts %}
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}

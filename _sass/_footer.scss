@@ -3,20 +3,10 @@
 // FOOTER CSS
 //
 
-.back-to-top {
-  margin-top: 50px;
-  margin-bottom: 5px;
-  margin-right: 1%;
-  text-align: right;
-  a {
-    text-decoration: underline;
-    color: $darkerGray;
-  }
-}
-
 .wrapper-footer {
   //border-top: 1px solid #ddd; // original ugly stuff
   //border-bottom: 1px solid #ddd; // original ugly stuff
+  margin-top: 4em;
   background-color: $lightestGray;
 }
 

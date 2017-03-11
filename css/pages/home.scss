@@ -21,17 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cover {
+  /*
   background-image: url("{{ site.baseurl }}/assets/images/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;  
+  background-position: center center;
+  */
+  background-color: $white;
 }
 
 .header {
-  * {
-    color: $white;
+  a {
+    color: $darkGray;
+    text-decoration: underline;
     &:hover, &:active {
-      color: $white;
+      color: $darkGray;
     }
   }
 }
@@ -62,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 120px;
     height: 120px;
     overflow: hidden; // auto-crop image to fit the set rounded border
-    border: 2px solid $lightestGray;
+    //border: 2px solid $lightestGray;
 
     img {
       width: 100%;
@@ -76,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .helloText {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   padding-top: 1.5em;
 }
 
@@ -86,17 +90,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 
   a {
-    font-size: 40px;
+    font-size: 28px;
     font-style: bold;
     text-decoration: none;
   }
 }
 
 .infoText {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   //color: $lightestGray;
   line-height: 1.4;
+}
+
+.home-social {
+  padding-top: 2em;
+  text-align: left;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  a {
+    color: $gray;
+    // hover color is inherited .header
+  }
 }
 
 //
@@ -183,8 +201,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.line-separator {
+  //height: 1px;
+  border: 1px solid $lighterGray;
+}
+
 //
-// news section
+// posts section
 //
 
 .inner-container {
@@ -200,6 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .resEntry {
+  text-align: left;
   font-size: 16px;
   padding-bottom: 20px;
 
@@ -223,14 +247,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sectionTitle {
-  font-size: 24px;
   font-family: $defaultSansSerif;
+  font-weight: bold;
+  font-size: 24px;
+
   @include mobile {
     font-size: 26px;
   }
 }
 
-.sectionTitleSmall {
+.sectionTitleSmall { // you have to use this w/ .sectionTitle
   font-size: 20px;
 
   @include mobile {
@@ -291,10 +317,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.newsExcerpt {
-
-}
-
 .newsDate {
   font-size: 14px;
   color: $gray;
@@ -304,12 +326,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.low-links {
+  padding-right: 1em;
+}
+
 //
 // utils
 //
 
 .grayLinks {
   color: $darkGray;
+  font-size: 14px;
 
   &:hover, &:focus {
     color: $darkGray;

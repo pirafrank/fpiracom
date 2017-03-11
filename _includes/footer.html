@@ -1,11 +1,15 @@
 
-    <div class="back-to-top"><a href="#top">Back to top</a></div>
     <div class="wrapper-footer">
       <div class="container reading_container">
-        <div class="line-separator"></div>
-        {% if site.footersocial %}
-          <br>
-          {% include social-icons.html %}
+        {% if page.is_home %}
+          <br><br>
+        {% else %}
+          {% if site.footersocial %}
+            <br>
+            <div class="social-icons social-icons-medium center" id="footer-social">
+              {% include social-icons.html %}
+            </div>
+          {% endif %}
         {% endif %}
         <footer>
           <div class="footer-links">
@@ -13,21 +17,22 @@
               <div class="col span_4_of_12">
                 <p>
                   <ul>
-                  <li><a href="{{ site.baseurl }}/">Home</a></li>
-                  <li><a href="{{ site.baseurl}}/projects/">Projects</a></li>
-                  <li><a href="{{ site.baseurl }}/utilities/">Utilities</a></li>
-                  <li><a href="{{ site.baseurl }}/learning/">Learning</a></li>
-                  <li><a href="{{ site.baseurl }}/more/">More</a></li>
-                  <br>
+                    <li><a href="{{ site.baseurl }}/">Home</a></li>
+                    <li><a href="{{ site.baseurl }}/projects/">Projects</a></li>
+                    <li><a href="{{ site.baseurl }}/utilities/">Utilities</a></li>
+                    <li><a href="{{ site.baseurl }}/learning/">Learning</a></li>
+                    <li><a href="{{ site.baseurl }}/deals/">Deals and offers</a></li>
+                    <li><a href="{{ site.baseurl }}/more/">More...</a></li>
+                    <br>
                   </ul>
                 </p>
               </div>
               <div class="col span_4_of_12">
                 <p>
                   <ul>
-                    <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+                    <li><a href="{{ site.baseurl }}/blog/">Read the blog</a></li>
+                    <li><a href="{{ site.baseurl }}/subscribe">Daily newsletter</a></li>
                     <li><a href="{{ site.baseurl | prepend: site.url }}/feed.xml">Subscribe to RSS feed</a></li>
-                    <li><a href="{{ site.baseurl }}/subscribe">Get the newsletter</a></li>
                     <li><a href="{{ site.baseurl}}/about-blog-comments/">About blog comments</a></li>
                     <li><a href="{{ site.baseurl}}/terms">Terms and policies</a></li>
                     <br>
@@ -43,7 +48,7 @@
                     <li><a href="{{ site.data.social.keybase.url] }}">Keybase</a></li>
                     <li><a href="{{ site.baseurl }}/support">Support</a></li>
                     <br>
-                    <li>A fork of <a href="http://github.com/pirafrank/Jekyll-Blue" style="text-decoration: underline;">Jekyll-Blue</a>.</li>
+                    <li><b>&lt;/&nbsp;&gt;</b> with &#x2764; in Sicily.</li>
                   </ul>
                 </p>
               </div>

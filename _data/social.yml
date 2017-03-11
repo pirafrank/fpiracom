@@ -87,6 +87,10 @@ stackoverflow:
   category:
   url:  # your stackoverflow profile, e.g. "users/12345/john-doe"
   user:
+telegram:
+  category:
+  url: 'http://t.me/pirafrank'
+  user: pirafrank
 tumblr:
   category:
   url: 'http://pirafrank.tumblr.com'

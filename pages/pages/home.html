@@ -10,7 +10,7 @@ in_search: false
   <div class="cover">
     <div class="container">
         <div class="section group header">
-          <div class="col span_10_of_12">
+          <div class="col span_4_of_12">
               <div class="headText">
                 <div class="userAvatarPlate userAvatar">
                   <img src="{{ site.avatar }}" width="120px;">
@@ -18,124 +18,108 @@ in_search: false
                 <div class="helloText">Hi, I'm</div>
                 <div class="nameText"><a href="{{ sita.baseurl }}/about">{{ site.name }}</a></div>
                 <div class="infoText">
-                    Web Developer
-                    <br>
-                    Co-Founder &amp; CEO Fileshute
-                    <br>
-                    Computer Engineering student at University of Catania - Catania, Italy
-                    <br>
-                    Former <a href="http://eestec.net">EESTEC International</a> IT Team Coordinator
-                    <br>
-                    VP at <a href="http://www.youthub.net">Youth Hub Catania</a>
-                  <br>
+                  Web Developer<br>
+                  Co-Founder &amp; CEO Fileshute<br>
+                  Computer Engineering student at University of Catania - Catania, Italy<br>
+                  Former <a href="http://eestec.net">EESTEC International</a> IT Team Coordinator<br>
+                  VP at <a href="http://www.youthub.net">Youth Hub Catania</a><br>
                 </div>
+                <div class="social-icons social-icons-medium home-social">
+                  {% if site.footersocial %}
+                    {% include social-icons.html %}
+                  {% endif %}
+                </div>
+                <div class="scrolldown desktop-hidden smallscreen-hidden"><a href="#posts"><img src="/assets/images/down-arrow.svg"></a></div>
+                <!--
+                <div>
+                  <p>
+                    <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/deals">Deals and offers</a>
+                    <br>
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/support">Support me</a>
+                  </p>
+                </div>
+                -->
               </div>
           </div>
-          <div class="col span_2_of_12">
+          <div id="posts" class="col span_8_of_12" style="padding-top: 1em;">
+            <div class="inner-container">
+              <!-- <div class="sectionTitle">Latest from blog</div> -->
+              {% for post in site.posts limit: site.home.max_posts %}
+                <div class="news newsEntry">
+                  <span class="news newsTitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
+                  <div class="newsDate">{{ post.date | date: "%d %B %Y" }}</div>
+                    {% if site.home.show_excerpt %}
+                        {% if post.subtitle %}
+                          <br>
+                          <div class="newsExcerpt">
+                            {{ post.subtitle | truncatehtml | truncatewords: 20 }}
+                            <br><br>
+                            <a href="{{ post.url }}">Read more...</a>
+                          </div>
+                        {% else %}
+                          <div class="newsExcerpt">
+                            {{ post.content | truncatehtml | truncatewords: 20 }}
+                            <a href="{{ post.url }}">Read more...</a>
+                          </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+              {% endfor %}
+              <p>
+                <span class="low-links"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;&nbsp;<a class="grayLinks" href="{{ site.baseurl }}/blog/">Older posts</a></span>
+                <span class="low-links mobile-hidden"><i class="fa fa-rss" aria-hidden="true"></i>&nbsp;&nbsp;<a class="grayLinks" href="{{ site.baseurl | prepend: site.url }}/feed.xml">RSS feed</a></span>
+                <span class="low-links"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a class="grayLinks" href="{{ site.baseurl }}/subscribe/">Newsletter</a></span>
+              </p>
+            </div>
           </div>
         </div>
-        <div style="color: #aaa; font-style: italic; font-size: 12px; text-align: right;">Etna view from the Ancient Theatre of Taormina</div>
-        <div class="scrolldown"><a href="#home"><img src="/assets/images/down-arrow.svg"></a></div>
     </div>
   </div>
 
-  <div class="middle desktop-hidden smallscreen-hidden">
-    {% if site.home.show_social %}
-      <div class="social">
-        {% include svg-icons.html %}
-      </div>
-    {% endif %}
-    <div class="content navLinks">
-      <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/about">ABOUT</a>
-      </div>
-      <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/contacts">CONTACTS</a>
-      </div>
-      <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/blog">BLOG</a>
-      </div>
-      <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/projects">PROJECTS</a>
-      </div>
-      <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/more">MORE...</a>
-      </div>
-      <div class="navLinkEntry">
-        <a href="{{ site.baseurl }}/search">SEARCH</a>
-      </div>
+  <div class="cover">
+    <div class="container">
+      <div class="scrolldown mobile-hidden"><a href="#home"><img src="/assets/images/down-arrow.svg"></a></div>
+      <br><br>
+      <div class="line-separator"></div>
     </div>
   </div>
 
   <div class="container">
     <div class="section group">
-      <div class="inner-container">
-        <div id="home" class="col span_7_of_12">
-          {% if site.home.show_pinboard %}
-            <div class="desktop-hidden smallscreen-hidden">
-              {% include pinboard.html %}
-            </div>
-          {% endif %}
-          <div class="sectionTitle">Latest from blog</div> <!-- news class removed reduce space from search box-->
-          {% for post in site.posts limit: site.home.max_posts %}
-            <div class="news newsEntry">
-              <span class="news newsTitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
-              <div class="newsDate">{{ post.date | date: "%d %B %Y" }}</div>
-                {% if site.home.show_excerpt %}
-                    {% if post.subtitle %}
-                      <br>
-                      <div class="newsExcerpt">
-                        {{ post.subtitle | truncatehtml | truncatewords: 20 }}
-                        <br><br>
-                        <a href="{{ post.url }}">Read more...</a>
-                      </div>
-                    {% else %}
-                      <div class="newsExcerpt">
-                        {{ post.content | truncatehtml | truncatewords: 20 }}
-                        <a href="{{ post.url }}">Read more...</a>
-                      </div>
-                    {% endif %}
-                {% endif %}
-            </div>
-          {% endfor %}
-          <p>
-            <a class="grayLinks" href="{{ site.baseurl }}/blog/">...all blog posts</a>
-          </p>
-        </div>
-        <div class="col span_5_of_12">
-          {% if site.home.show_pinboard %}
-            <div class="mobile-hidden">
-              {% include pinboard.html %}
-            </div>
-          {% endif %}
-          <div class="resEntry center-mobile">
-            {% if site.home.show_twitter_button %}
-            <a href="{{ site.data.social.twitter.url }}" class="twitter-follow-button center-mobile" data-show-count="false">Follow @{{ site.data.social.twitter.user }}</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            {% endif %}
+      <div id="home" class="inner-container">
+        <div class="col span_4_of_12">
+          <div class="resEntry">
+            <div class="sectionTitle">Featured resources</div>
             <p>
-              <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;<a href="{{ site.data.social.twitter.url }}">Follow me!</a>
-              <br>
-              <i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/subscribe">Subscribe to newsletter</a>
+              <a href="{{ site.baseurl }}/utilities">Utilities</a>
+              <br><a href="{{ site.baseurl }}/learning">Learning material</a>
+              <br><a href="{{ site.baseurl }}/developers">Resources for developers</a>
+              <br><a href="{{ site.baseurl }}/cheat-sheets">Cheat sheets for developers</a>
+              <br><a href="{{ site.baseurl }}/alfred-for-mac">Alfred for Mac resources</a>
             </p>
-            <p>
-              <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/deals">Deals and offers</a>
-              <br>
-              <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;<a href="{{ site.baseurl }}/support">Support me</a>
-            </p>
-            <!--
-            <p>
-              <a href="{{ site.data.social.pocket.url }}">Recommended on Pocket</a>
-              <br>
-              <a href="{{ site.data.social.medium.url }}/has-recommended">Loved on Medium</a>
-            </p>
-            -->
           </div>
-          {% if site.home.show_twitter_feed %}
-            <div class="resEntry">
-              <a class="twitter-timeline" href="https://twitter.com/pirafrank" data-widget-id="653244673704767488">Tweets by @pirafrank</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-          {% endif %}
+        </div>
+        <div class="col span_4_of_12">
+          <div class="resEntry">
+            <div class="sectionTitle">Projects spotlight</div>
+            <p>
+              <a href="{{ site.baseurl }}/projects/workflow-ios">Workflows for iOS</a>
+              <br><a href="http://github.com/pirafrank/jekyll-deployer">Jekyll deployer</a>
+              <br><a href="http://github.com/pirafrank/todabu">todabu</a>
+              <br><a href="{{ site.baseurl }}/projects/rebrandly_cli">Rebrandly CLI</a>
+              <br><a href="{{ site.baseurl }}/projects">Discover all...</a>
+            </p>
+          </div>
+        </div>
+        <div class="col span_4_of_12">
+          <div class="resEntry">
+            <div class="sectionTitle">Thank you!</div>
+            <p>
+              Thank you for beign here.<br>
+              Now let's get in touch!<br><br>
+              <a class="btn btn-small btn-default pull-left" href="{{ site.baseurl }}/contacts">Contact me</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

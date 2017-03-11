@@ -12,7 +12,9 @@ Here are my places on the Web. Reach me on your platform of choice.
     <div class="section group">
         <div class="col span_7_of_12">
             <h4>Social Networks</h4>
-            <a href="{{ site.data.social.twitter.url }}">twitter</a>
+            <a href="{{ site.data.social.twitter.url }}">Twitter</a>
+            <br>
+            <a href="{{ site.data.social.telegram.url }}">Telegram</a>
             <br>
             <a href="{{ site.data.social.linkedin.url }}">LinkedIn</a>
             <br>

@@ -14,6 +14,7 @@ You may also want to checkout the [Projects page]({{ site.baseurl }}/projects/).
 - [Brute-force calculator online]({{ site.baseurl }}/utilities/bfc) (*) - Dummy-proof utility to calculate how long it takes to brute-force crack your password.
 - [Copy URL Bookmarklet](https://gist.github.com/pirafrank/5a4f6f56f3cf931ddf6b) - in Safari on Mac, copying the URL from the address bar can be tricky. This lets you quickly copy it with just 1 click and a CMD+C. It should work in other browsers, too.
 - [Quit All Apps for macOS](https://cdn.fpira.com/public/mac/quit_all_apps_mac.zip) - A tiny application made using Automator to close all open apps at once.
+- [IT calendar]({{ site.baseurl }}/calendars/itcalendar/) (*) - A calendar for IT people
 
 #### Command line tools
 

@@ -1,12 +1,13 @@
 ---
 layout: page
-title: "Event Feed calendar"
-permalink: /calendars/eventfeed/
+title: "IT calendar"
+description: "A calendar for IT people"
+permalink: /calendars/itcalendar/
 show_title: true
 center: true
 ---
 
-A calendar for IT guys.
+A calendar for IT people.
 
 *Note: London Time Zone*
 

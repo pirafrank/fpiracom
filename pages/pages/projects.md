@@ -60,4 +60,4 @@ A simple web panel to control your Raspberry Pi on a local network.
 A side panel with an elastic animation ready to be deployed on any html page without any CSS conflicts.
 
 #### This website
-Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), an heavily modified Jekyll Now fork with additional features and a custom SCSS framework coded from scratch. Most of the things I try here are then backported to Jekyll Blue.
+Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), an heavily modified Jekyll Now fork with additional features and a custom SCSS framework coded from scratch. Most of the things I try here are usually backported to Jekyll Blue.

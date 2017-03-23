@@ -5,6 +5,7 @@ description: "Support my open-source projects and blog, help me pay for server a
 permalink: /support/
 show_title: true
 center: true
+custom_js: pages/support
 ---
 
 Do you like projects and blog posts I publish? Would you like to see more?
@@ -36,10 +37,10 @@ I would appreciate it so much!
 
 #### Want to stay anonymous?
 
+<p><i class="fa fa-btc" aria-hidden="true"></i> Pay with Bitcoin</p>
+
 <p>
-    <a class="btn btn-big btn-default" href="{{ site.data.payments['coinbase'] }}">
-        <i class="fa fa-btc" aria-hidden="true"></i> Pay with Bitcoin
-    </a>
+    <a class="btn btn-big btn-default" id="coinbase" onclick="showInPopup(document.getElementById('coinbase').innerHTML)">1CYVUUnCLgbkqjLrSAGL3X9YAkf4Jw2ZzP</a>
 </p>
 
 <br>

@@ -16,11 +16,11 @@ You can use it to shorten your URLs with ease, without leaving the terminal. Loo
 
 ### Why Rebrandly?
 
-Simply put, they offer unlimited short links for free, even using custom domains. That's a ton more compared to bit.ly which offer just 500 short links/month.
+Simply put, they offer unlimited short links for free, even using custom domains. That's a ton more compared to bit.ly which offers just 500 short links/month.
 
 ### Awesome! Requirements?
 
-Python 2.7 is all you need. I designed rebrandly_cli to work with you already have installed on your Mac, Linux, etc.
+Python 2.7 is all you need. I designed rebrandly_cli to work with what you already have installed on your Mac or Linux. It should work also on Windows if you install Python.
 
 ### How to use it?
 
@@ -30,7 +30,7 @@ Please read the [readme](https://github.com/pirafrank/rebrandly_cli/blob/master/
 
 Can I join you in this?
 
-Sure. The whole code is released under the GNU GPLv3 terms and published on [GitHub](https://github.com/pirafrank/rebrandly_cli). Send me a PR if you add some cool features or improve the code!
+Sure. The whole code is released under the GNU GPLv3 terms and published on [GitHub](https://github.com/pirafrank/rebrandly_cli). Send me a PR if you add some cool features or improve the repo!
 
 ### Support
 

@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting JDeveloper - Part 1"
+title: "Troubleshooting JDeveloper"
 subtitle: "Fixing 'Error: Unable to load class' in path with space characters"
 description: "Fixing 'Error: Unable to load class' in path with space characters"
 category: ['How-tos']

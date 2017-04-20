@@ -1,7 +1,7 @@
 ---
 title: Sorving *Service directory is not valid* in JDeveloper 12.2
 category: ['How-tos']
-tags: ['Oracle']
+tags: ['Oracle','JDeveloper']
 ---
 
 ![Service directory is not valid error]({{ site.baseurl }}/static/postimages/2017-04-24/001.PNG)

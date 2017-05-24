@@ -9,7 +9,7 @@ Often I'm asked about development tools and useful apps and services I use daily
 
 #### Development
 
-- OS X 10.11 with latest updates
+- macOS with latest updates
 - Sublime Text 3 + some useful packages
 - Terminal (sometimes iTerm2)
 - Macports
@@ -45,6 +45,7 @@ Often I'm asked about development tools and useful apps and services I use daily
 
 - Alfred + [my workflows](https://github.com/pirafrank/alfred_workflows)
 - Evernote (actually my second brain)
+- Simplenote
 - Skitch
 - Wunderlist
 - Trello
@@ -54,43 +55,68 @@ Often I'm asked about development tools and useful apps and services I use daily
 - GPG Suite
 - 1Password
 - VeraCrypt
+- Cryptomator
 - Tunnelblick
-- BoxSync, Google Drive, iCloud
-- GoodSync
+- Google Drive, iCloud Drive, Dropbox, Box
+- rsync
 - IFTTT
-- Flux (my eyes savior!)
+- Google Docs suite
 - Apple Keynote
 - Apple Pages
-- Google Docs suite
+- Office for Mac 2016
 - Capturer
 - Feedly
 - Pocket
 - Calibre (great if you have a Kindle)
-- Google Play Music
+- ~~Google Play Music~~ --> Apple Music
 
 #### iOS
 
 *Note: To avoid repetition, I've not included cross-platform apps and clients already listed above.*
 
-- iOS 9 with latest updates
+- iOS with latest updates
 - PDF Expert
 - Working Copy
 - Textastic
 - Serverauditor
 - Pythonista
 - Workflow
+- Pushbullet
+- FreeOTP
 - iA Writer
+- Day One
 - Notability
 - CamScanner HD
+- Apple Mail
+- Spark
+- Alto (email client)
+- iThoughts
 - iWorks
-- OfficeSuite
+- OfficeSuite Pro
 - Printer Pro
 - Penultimate
-- iThoughts
-- Overcast
-- narwhal
+- Tayasui Sketches Pro
+- Aftership
+- 60db (awesome morning reports!)
+- Pocket Casts
+- Bloomberg
+- MSN Money
+- SeekingAlpha
+- Reddit
 - Product Hunt
 - Hacker News
+- Money Pro
+- Fing
 - IP Tools
-- OsmAnd+ (awesome offline maps)
+- Nice Trace
+- Net Status
+- Kindle
+- Maps.me (awesome offline maps)
+- AirBnB
+- Hostelworld
+- Skyscanner
+- Shazam
+- Quora
+- Buffer
+- Google Analytics
 

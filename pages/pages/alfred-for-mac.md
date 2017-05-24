@@ -5,9 +5,9 @@ permalink: /alfred-for-mac/
 show_title: true
 ---
 
-Don't know Alfred? Know about it [here](https://www.alfredapp.com/).
+Don't you know Alfred? Know about it [here](https://www.alfredapp.com/).
 
-Workflows and themes I've developed are available [on Packal]({{ site.data.social.packal.url }}).
+You can get workflows and themes I've developed from links below. You can also download some of them from [Packal]({{ site.data.social.packal.url }}).
 
 #### Workflows
 
@@ -15,7 +15,7 @@ Workflows source files, as wells as the latest stable versions, are available [o
 
 #### Themes
 
-You can also download all themes as a zip archive from [here]({{site.baseurl}}/static/alfred-themes.zip).
+Get all themes in a compressed archive from [here]({{site.baseurl}}/static/alfred-themes.zip).
 
 #### Noteworthy 3rd-party workflows
 

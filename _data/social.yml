@@ -91,6 +91,10 @@ telegram:
   category:
   url: 'http://t.me/pirafrank'
   user: pirafrank
+telegram-im:
+  category:
+  url: 'http://t.me/francescopira'
+  user: francescopira
 tumblr:
   category:
   url: 'http://pirafrank.tumblr.com'

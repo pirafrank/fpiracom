@@ -1,16 +1,20 @@
 social-networks:
   twitter: y
   linkedin: y
+  xing: y
   slideshare: y
   facebook:
   googleplus: y
   reddit: y
   pinterest:
+chats:
+  telegram-im: y
+  messenger: y
+  keybase: y
 coders:
   github: y
   stackoverflow:
   packal: y
-  keybase: y
 blogging:
   nuzzel: y
   pocket: y

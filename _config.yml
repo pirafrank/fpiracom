@@ -69,7 +69,9 @@ footersocial: true
 # Home customisation
 home:
   show_social: false # Choose whether to display social link in mid of home page or not
-  max_posts: 6 # max number of latest posts to show in home page
+  max_posts: 5 # max number of latest posts to show in home page
+  max_projects: 3 # max number of projects to show in the home page
+  max_events: 3 # max number of entries from /events page to show in the home page
   show_excerpt: false # choose whether to show or not excerpt of latest blog posts
   show_pinboard: true # set it to true to enable, false to disable right section in home
   show_twitter_feed: false # NB. you have to REPLACE the code in home with the one for your twitter account.

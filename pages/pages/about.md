@@ -25,27 +25,30 @@ I've studied Mathematics and Physics in High School, taught myself English and h
 
 In 2013 I joined EESTEC, a European network of engineering students where members can improve technical and soft skills. The next year I became president of the local committee and coordinator of the International IT team. In 2015, with a colleague at university, I started a company, Fileshute.
 
-I am currently involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
+I have been involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
+
+I am currenty working as Oracle Enterprise Application Development Consultant and Java Developer at [Leonardo S.p.A.](http://leonardocompany.com).
 
 ### Skills
 
 - **Front-end dev:** HTML, CSS, Sass/SCSS, JavaScript, AngularJS 1.x
-- **Back-end dev:** Flask, node.js, Express, Electron, Ruby on Rails (beginner)
+- **Back-end dev:** node.js, Express, Electron, Ruby on Rails, Flask
 - **Web servers:** nginx, Puma, Apache
 - **Databases:** PostgreSQL, SQLite, CouchDB, MySQL / MariaDB
 - **System Administration:** Server deployment, configuration and hardening (SSH, OpenVPN, etc.)
-- **Programming languages:** Python, JavaScript (+ES2015), bash, C, Java, Ruby (beginner)
-- **Tools:** Git, Gulp, Bower, Let’s Encrypt, GrSecurity
-- **Platforms:** Amazon Web Services, Heroku, Debian Linux, CentOS, OS X
+- **Programming languages:** Python, JavaScript (+ES2015), bash, C, Java, Ruby (beginner).
+- **Version Control** Git, SVN
+- **Other tools:** XSLT, XQuery, Gulp, Bower, Let’s Encrypt, GrSecurity
+- **Platforms:** Amazon Web Services, Microsoft Azure, Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Debian Linux, CentOS, OS X
 - **CMS and static generators:** Prestashop, Wordpress, Jekyll
-- **Other technical skills:** Computer security, encryption and server hardware knowledge
+- **Other technical skills:** Computer security, knowledge in encryption and server hardware
 - **Graphical tools:** Photoshop (mostly for front-end assets), Sketch by Bohemian Coding
-- **Soft Skills:** Project Management, Team Management, Team Working, Social Networking, Event Organisation
+- **Soft Skills:** Project Management and Tracking, Team Leadership, Team Working, Social Networking, Event Organisation
 
 **What's next?**
 
-- Golang and Xamarin (mostly cross-platform mobile app development with shared core)
-- Machine learning and some Python applications of it
+- Golang, Swift and Xamarin (aiming mostly at cross-platform mobile app development with shared libraries)
+- Machine learning in Python
 - Advance my network security skills
 
 ### Coding
@@ -88,5 +91,4 @@ Sometimes I find myself reading thrillers.
 
 ### Contact me
 
-Looks interesting? Want to know more?
-Feel free to [get in touch with me]({{ site.baseurl }}/contacts).
+[Get in touch]({{ site.baseurl }}/contacts).

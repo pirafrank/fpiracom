@@ -1,0 +1,17 @@
+---
+layout: page
+title: Events
+permalink: /events2/
+show_title: true
+---
+
+A comprehensive list of events I've organised, participated as speaker or contributed to.
+
+{% assign sorted = (site.data.events | sort: 'date') | reverse %}
+{% for item in sorted limit: site.home.max_events %}
+    <p>
+        <a href="{{ item.url }}">{{ item.title }}</a>, {{ item.role }}
+        <br><i>{{ item.dateshow }} @ {{ item.location }}</i>
+        <br>{{ item.description }}
+    </p>
+{% endfor %}

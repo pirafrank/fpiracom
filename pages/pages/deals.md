@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Deals
-description: Offers and promos convenient for you or the both of us
+title: Referral links
+description: Referrals and offers convenient for you or the both of us
 permalink: /deals/
 show_title: true
 custom_css: "pages/deals"

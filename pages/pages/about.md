@@ -61,7 +61,7 @@ Curious about tools and utilities I use? The answer you're looking for is [here]
 
 ### Events and contributions
 
-A comprehensive list is available in the [event page]({{ site.baseurl }}/events/).
+A comprehensive list is available in the [events page]({{ site.baseurl }}/events/).
 
 ### Honors and certificates
 

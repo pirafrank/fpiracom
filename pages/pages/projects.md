@@ -20,6 +20,9 @@ Here are my spare time projects and more I code to face challenges I come across
 
 ### Developers
 
+#### [Cheat sheets](https://github.com/pirafrank/cheat-sheets)
+A collection of handy cheat sheets from the world *wild* web.
+
 #### [electron-dash-docset]({{ site.baseurl }}/projects/electron-dash)
 A repository to generate a [Dash](https://kapeli.com/dash) docset for the [electron](http://electron.atom.io) documentation. Now with automatic check for new releases.
 
@@ -48,7 +51,7 @@ Easy CLI utility to batch download images from flickr.
 
 ### Desktop
 
-#### [Alfred Workflows](https://github.com/pirafrank/alfred_workflows)
+#### [Alfred Workflows]({{ site.baseurl }}/alfred-for-mac)
 Useful Alfred workflows to enhance your productivity on Mac. Great for developers and power-users.
 
 #### [Battery Life Extender]({{ site.baseurl }}/projects/ble)

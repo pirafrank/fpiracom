@@ -28,6 +28,5 @@ A collection of learning material I share publicly or I've used during talks and
 ### Check also
 
 - [For developers]({{ site.baseurl }}/developers)
-- [Cheat sheets]({{ site.baseurl }}/cheat-sheets)
+- [Cheat sheets](http://github.com/pirafrank/cheat-sheets)
 - [Snippets repository](http://github.com/pirafrank/snippets)
-- [My toolbelt]({{ site.baseurl }}/my-toolbelt)

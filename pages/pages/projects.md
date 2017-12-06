@@ -90,6 +90,5 @@ A simple web panel to control your Raspberry Pi on a local network.
 ### Check also
 
 - [Resources for developers]({{site.baseurl}}/developers)
-- [Cheat sheets]({{site.baseurl}}/cheat-sheets)
+- [Cheat sheets](http://github.com/pirafrank/cheat-sheets)
 - [Utilities]({{site.baseurl}}/utilities)
-- [My toolbelt]({{site.baseurl}}/my-toolbelt)

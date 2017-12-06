@@ -47,10 +47,8 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 ### Check also
 
 - [Projects page]({{ site.baseurl }}/projects)
-- [Cheat sheets]({{site.baseurl}}/cheat-sheets)
+- [Cheat sheets](http://github.com/pirafrank/cheat-sheets)
 - [Snippet repository](http://github.com/pirafrank/snippets)
-- [My toolbelt]({{ site.baseurl }}/my-toolbelt)
-- [Event feed calendar]({{ site.baseurl }}/calendars/eventfeed)
 
 <br>
 

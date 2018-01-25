@@ -12,7 +12,7 @@
 
   Twitter     : @pirafrank
   GitHub      : /pirafrank
-  Location    : Sicily, Italy
+  Location    : Italy
 
   Language    : {{ site.locale }}
   Last update : {{ site.time }}

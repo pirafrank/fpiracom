@@ -8,7 +8,7 @@ show_title: true
 - [Bio](#bio)
 - [Skills](#skills)
 - [Coding](#coding)
-- [Talks](#talks)
+- [Talks and Events](#talks-and-events)
 - [Honors and certificates](#honors-and-certificates)
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
@@ -59,12 +59,12 @@ During my day I write little pieces of code to speed up my work and when in my s
 
 Curious about tools and utilities I use? Check [my toolbelt]({{ site.baseurl }}/my-toolbelt/).
 
-### Talks
+### Talks and Events
 
 - [Talks]({{ site.baseurl }}/talks/)
 - [Events and contributions]({{ site.baseurl }}/events/)
 
-### Honors and certificates
+### Honors and Certificates
 
 - [AngularJS Certificate by Bax Energy]({{ site.baseurl }}/static/files/honors/AngularJS_Certificate_Bax_Energy_oriz.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015-2016_certificate.pdf)

@@ -19,11 +19,11 @@ Here are my places on the Web. Reach me on your platform of choice.
             <a href="{{ site.data.social.xing.url }}">XING</a>
             <br>
             <a href="{{ site.data.social.slideshare.url }}">SlideShare</a>
+            <!--
             <br>
             <a href="{{ site.data.social.googleplus.url }}">Google+</a>
             <br>
             <a href="{{ site.data.social.reddit.url }}">reddit</a>
-            <!--
             <br>
             <a href="{{ site.data.social.pinterest.url }}">Pinterest</a>
             -->
@@ -51,16 +51,19 @@ Here are my places on the Web. Reach me on your platform of choice.
             <a href="{{ site.data.social.pocket.url }}">Pocket</a>
             <br>
             <a href="{{ site.data.social.medium.url }}">Medium</a>
+            <!--
             <br>
             <a href="{{ site.data.social.tumblr.url }}">tumblr</a>
             <h4>Reading</h4>
             <a href="{{ site.data.social.goodreads.url }}">Goodreads</a>
+            -->
         </div>
     </div>
+    <!--
     <div class="section group">
         <div class="col span_7_of_12">
             <h4>Music and Podcasts</h4>
-            <a href="http://soundtrackofthedays.tumblr.com/">soundtrackofthedays</a>
+            <a href="{{ site.data.social.musicblog.url }}">soundtrackofthedays</a>
             <br>
             <a href="{{ site.data.social.soundcloud.url }}">Soundcloud</a>
             <br>
@@ -72,4 +75,5 @@ Here are my places on the Web. Reach me on your platform of choice.
             <br>
             <a href="{{ site.data.social.flickr.url }}">flickr</a>
         </div>
+    -->
 </div>

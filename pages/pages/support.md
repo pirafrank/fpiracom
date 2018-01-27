@@ -40,7 +40,7 @@ I would appreciate it so much!
 <p><i class="fa fa-btc" aria-hidden="true"></i> Pay with Bitcoin</p>
 
 <p>
-    <a class="btn btn-big btn-default" id="coinbase" onclick="showInPopup(document.getElementById('coinbase').innerHTML)">1CYVUUnCLgbkqjLrSAGL3X9YAkf4Jw2ZzP</a>
+    <a class="btn btn-big btn-default" id="bitcoin" onclick="showInPopup(document.getElementById('bitcoin').innerHTML)">1CYVUUnCLgbkqjLrSAGL3X9YAkf4Jw2ZzP</a>
 </p>
 
 <br>

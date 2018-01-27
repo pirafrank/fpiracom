@@ -40,7 +40,7 @@ in_search: false
           </div>
           <div id="posts" class="col span_8_of_12" style="padding-top: 1em;">
             <div class="inner-container">
-              <!-- <div class="sectionTitle">Latest from blog</div> -->
+              <div class="sectionTitle">Latest from blog</div>
               {% for post in site.posts limit: site.home.max_posts %}
                 <div class="news newsEntry">
                   <span class="news newsTitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
@@ -69,14 +69,17 @@ in_search: false
               </p>
 
 
-              <div>
+              <div style="padding-top: 1em;">
+                <div class="sectionTitle">Resources</div>
                 <p>
                   <ul>
                     <li><a href="{{ site.baseurl }}/talks">Talks</a></li>
+                    <li><a href="{{ site.baseurl }}/events">Events</a></li>
                     <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
                     <li><a href="{{ site.baseurl }}/utilities">Utilities</a></li>
                     <li><a href="{{ site.baseurl }}/security">Security resources</a></li>
                     <li><a href="{{ site.baseurl }}/developers">Material for Developers</a></li>
+                    <li><a href="{{ site.baseurl }}/subscribe">Subscribe to the newsletter</a></li>
                   </ul>
                 </p>
               </div>

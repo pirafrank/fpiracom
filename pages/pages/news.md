@@ -67,7 +67,7 @@ News sources that build my (virtual) daily newspaper.
 
 [Android Central](http://www.androidcentral.com)
 
-[MacRumors](http://macrumors.com)
+[9to5mac](http://9to5mac.com)
 
 [Slashdot](http://slashdot.org)
 

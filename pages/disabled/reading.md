@@ -1,4 +1,4 @@
----
+-!--
 layout: page
 title: Reading
 permalink: /reading/
@@ -23,5 +23,3 @@ custom_css: reading
 [Medium recommendations]({{ site.data.social.medium.url }}/has-recommended) ([RSS feeds](https://medium.com/feed/@{{ site.data.social.medium.user }}/has-recommended))
 
 [Goodreads profile]({{ site.data.social.goodreads.url }})
-
-[Tumblr blog]({{ site.data.social.tumblr }}) ([RSS feeds](http://{{ site.data.social.tumblr.url }}/rss))

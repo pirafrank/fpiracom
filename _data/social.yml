@@ -5,37 +5,37 @@ angel:
   url: 'https://angel.co/francescopira'
   user: francescopira
 facebook:
-  category: #social
-  url:
-  user:
+  category: #disabled
+  url: #disabled
+  user: #disabled
 flickr:
-  category: photo
-  url: 'http://flickr.com/pirafrank'
-  user: pirafrank
+  category: #photo
+  url: #'http://flickr.com/pirafrank'
+  user: #pirafrank
 github:
   category: code
   url: 'https://github.com/pirafrank'
   user: pirafrank
 goodreads:
-  category: reading
-  url: 'https://www.goodreads.com/pirafrank'
-  user: pirafrank
+  category: #reading
+  url: #'https://www.goodreads.com/pirafrank'
+  user: #pirafrank
 googleplus:
-  category: news
-  url: 'https://plus.google.com/+FrancescoPiraonline'
-  user: +FrancescoPiraonline
+  category: #news
+  url: #'https://plus.google.com/+FrancescoPiraonline'
+  user: #+FrancescoPiraonline
 instagram:
-  category: photo
-  url: 'http://instagram.com/pirafrank'
-  user: pirafrank
+  category: #photo
+  url: #'http://instagram.com/pirafrank'
+  user: #pirafrank
 keybase:
   category: chat
   url: 'http://keybase.io/pirafrank'
   user: pirafrank
 lastfm:
-  category: music
-  url: 'http://www.last.fm/user/pirafrank'
-  user: pirafrank
+  category: #music
+  url: #'http://www.last.fm/user/pirafrank'
+  user: #pirafrank
 linkedin:
   category: work
   url: 'http://linkedin.com/in/fpira'
@@ -45,8 +45,8 @@ medium:
   url: 'https://medium.com/@pirafrank'
   user: pirafrank
 musicblog:
-  category: music
-  url: 'http://soundtrackofthedays.tumblr.com'
+  category: #music
+  url: #'http://soundtrackofthedays.tumblr.com'
 messenger:
   category: chat
   url: 'https://m.me/pirafrank'
@@ -55,6 +55,7 @@ nuzzel:
   category: news
   url: 'http://nuzzel.com/pirafrank'
   user: pirafrank
+  frequency: weekly
 packal:
   category: code
   url: 'https://www.packal.org/users/pirafrank'
@@ -68,17 +69,17 @@ pocket:
   url: 'https://getpocket.com/@pirafrank'
   user: pirafrank
 reddit:
-  category: social
-  url: 'https://www.reddit.com/user/pirafrank'
-  user: pirafrank
+  category: #social
+  url: #'https://www.reddit.com/user/pirafrank'
+  user: #pirafrank
 skype:
   category: chat
   url: 'skype:francesco-pira?call'
   user: francesco-pira
 soundcloud:
-  category: music
-  url: 'https://soundcloud.com/pirafrank'
-  user: pirafrank
+  category: #music
+  url: #'https://soundcloud.com/pirafrank'
+  user: #pirafrank
 slideshare:
   category: work
   url: 'http://slideshare.net/pirafrank'
@@ -96,9 +97,9 @@ telegram-im:
   url: 'http://t.me/francescopira'
   user: francescopira
 tumblr:
-  category: news
-  url: 'http://pirafrank.tumblr.com'
-  user: pirafrank
+  category: #news
+  url: #'http://pirafrank.tumblr.com'
+  user: #pirafrank
 twitter:
   category: news
   url: 'https://twitter.com/pirafrank'
@@ -108,6 +109,6 @@ xing:
   url: 'https://www.xing.com/profile/Francesco_Pira'
   user: Francesco_Pira
 youtube:
-  category: video
-  url: 'https://youtube.com/user/pirafrank'
-  user: pirafrank
+  category: #video
+  url: #'https://youtube.com/user/pirafrank'
+  user: #pirafrank

@@ -1,4 +1,4 @@
----
+-!--
 layout: page
 title: Podcasts
 permalink: /podcasts/
@@ -20,5 +20,3 @@ Podcasts I listen to during my daily commute or I watch in my spare time.
 #### Video
 
 [This week in startups](http://feeds.feedburner.com/twistvid)
-
-[Channels I recommend on YouTube](https://www.youtube.com/user/pirafrank/channels?flow=list&view=60)

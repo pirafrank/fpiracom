@@ -8,8 +8,7 @@ show_title: true
 - [Bio](#bio)
 - [Skills](#skills)
 - [Coding](#coding)
-- [My toolbelt](#my-toolbelt)
-- [Events and contributions](#events-and-contributions)
+- [Talks and Events](#talks-and-events)
 - [Honors and certificates](#honors-and-certificates)
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
@@ -17,7 +16,7 @@ show_title: true
 
 ### Bio
 
-Hello, my name is Francesco (Frank) Pira, I'm 23yo and live in Catania, Italy, where I study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
+Hello, my name is Francesco (Frank) Pira, I'm 24yo and live in Catania, Italy, where I study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
 
 My interests are programming (especially web development), technology, big data, business and start-ups. I like working in team on projects that challenge me and I'm fascinated by finding the *best practice* in doing something. I also like advising and motivating on topics I'm skilled. Recently I've found out writing is one of my growing passions.
 
@@ -27,7 +26,7 @@ In 2013 I joined EESTEC, a European network of engineering students where member
 
 I have been involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
-I am currenty working as Oracle Enterprise Application Development Consultant and Java Developer at [Leonardo S.p.A.](http://leonardocompany.com).
+I am currenty working as Oracle Enterprise Application Development Consultant and Java Developer at [Leonardo S.p.A.](http://leonardocompany.com)
 
 ### Skills
 
@@ -53,17 +52,19 @@ I am currenty working as Oracle Enterprise Application Development Consultant an
 
 ### Coding
 
-During my day, I write little [utilities]({{ site.baseurl }}/utilities/) to speed up and simplify my work. And because I like coding, I found myself spending time on some [projects]({{ site.baseurl }}/projects/) which I usually release on GitHub as open-source.
+During my day I write little pieces of code to speed up my work and when in my spare time I dedicate myself to some projects.
 
-### My toolbelt
+- [Projects]({{ site.baseurl }}/projects/)
+- [Utilities]({{ site.baseurl }}/utilities/)
 
-Curious about tools and utilities I use? The answer you're looking for is [here]({{ site.baseurl }}/my-toolbelt/).
+Curious about tools and utilities I use? Check [my toolbelt]({{ site.baseurl }}/my-toolbelt/).
 
-### Events and contributions
+### Talks and Events
 
-A comprehensive list is available in the [events page]({{ site.baseurl }}/events/).
+- [Talks]({{ site.baseurl }}/talks/)
+- [Events and contributions]({{ site.baseurl }}/events/)
 
-### Honors and certificates
+### Honors and Certificates
 
 - [AngularJS Certificate by Bax Energy]({{ site.baseurl }}/static/files/honors/AngularJS_Certificate_Bax_Energy_oriz.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015-2016_certificate.pdf)

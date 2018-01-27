@@ -5,7 +5,7 @@ permalink: /my-toolbelt/
 show_title: true
 ---
 
-Often I'm asked about development tools and useful apps and services I use daily, both on Mac and on my mobile devices. So I've decided to write down a list of them.
+I'm often asked about development tools and useful apps and services I use daily. Below there's a quite updated list of them.
 
 #### Development
 

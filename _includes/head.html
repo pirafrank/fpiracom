@@ -9,20 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
 
-    <!-- Google AMP -->
-    {% if page.layout == 'post' %}
-        <link rel="amphtml" href="https://mercury.postlight.com/amp?url={{ site.url }}{{ page.url }}">
-    {% endif %}
-
-    <!-- webmention.io stuff -->
-    <link rel="pingback" href="https://webmention.io/{{ site.domain }}/xmlrpc">
-    <link rel="webmention" href="https://webmention.io/{{ site.domain }}/webmention">
-
     <!-- rel me -->
     <link href="{{ site.data.social.twitter.url }}" rel="me">
     <link href="{{ site.data.social.github.url }}" rel="me">
     <link href="{{ site.data.social.linkedin.url }}" rel="me">
     <link href="{{ site.data.social.googleplus.url }}" rel="me">
+
+    <!-- webmention.io stuff -->
+    <link rel="pingback" href="https://webmention.io/{{ site.domain }}/xmlrpc">
+    <link rel="webmention" href="https://webmention.io/{{ site.domain }}/webmention">
 
     <!-- favicons and theme meta -->
     <!-- IE -->
@@ -30,8 +25,27 @@
     <!-- other browsers -->
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicons/favicon.png" />
 
+    <!-- PWA manifest -->
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/icon-152x152.png">
+    <!-- theme-color defines the top bar color -->
+    <meta name="theme-color" content="#3344aa"/>
+    <!-- Add to home screen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="apple-mobile-web-app-title" content="{{ site.name }}"/>
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/icon-152x152.png"/>
+    <!-- Add to home screen for Windows-->
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/images/icon-152x152.png"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+
     <!-- Feeds -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml" />
+
+    <!-- Google AMP -->
+    {% if page.layout == 'post' %}
+        <link rel="amphtml" href="https://mercury.postlight.com/amp?url={{ site.url }}{{ page.url }}">
+    {% endif %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -56,18 +70,18 @@
     {% endif %}
 
     <!-- Scripts -->
-    <script type="text/javascript" src="/js/jquery-1.11.3.min.js" defer></script>
-    <script type="text/javascript" src="/js/velocity.min.js" defer></script>
-    <script type="text/javascript" src="/js/page_anchors.js" defer></script>
+    <script async type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script async type="text/javascript" src="/js/velocity.min.js"></script>
+    <script async type="text/javascript" src="/js/page_anchors.js"></script>
 
     <!-- Page-specif scripts -->
     {% if layout.custom_js %}
       {% for js_file in layout.custom_js %}
-        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
+        <script async type="text/javascript" src='/js/{{ js_file }}.js'></script>
       {% endfor %}
     {% endif %}
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
-        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
+        <script async type="text/javascript" src='/js/{{ js_file }}.js'></script>
       {% endfor %}
     {% endif %}

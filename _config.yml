@@ -170,3 +170,4 @@ exclude:
     - README.md
     - deploy.sh
     - CONTRIBUTOR
+    - sw-config.js

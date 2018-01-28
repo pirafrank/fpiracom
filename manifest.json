@@ -1,7 +1,7 @@
 ---
 ---
 {
-  "name": "Francesco Pira’s website",
+  "name": "{{ site.name }}",
   "short_name": "{{ site.domain }}",
   "theme_color": "#3344aa",
   "background_color": "#ffffff",

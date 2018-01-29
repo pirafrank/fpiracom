@@ -57,7 +57,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
     <!-- Font-Awesome -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Page-specif CSS -->
     {% if layout.custom_css %}
@@ -79,14 +79,14 @@
     <!-- Page-specif scripts -->
     {% if layout.custom_js %}
       {% for js_file in layout.custom_js %}
-        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
+        <script type="text/javascript" src='{{ site.baseurl }}/js/{{ js_file }}.js' defer></script>
       {% endfor %}
     {% endif %}
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
-        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
+        <script type="text/javascript" src='{{ site.baseurl }}/js/{{ js_file }}.js' defer></script>
       {% endfor %}
     {% endif %}
 
     <!-- SW registration -->
-    <script src="/js/service-worker-register.js"/>
+    <script src="{{ site.baseurl }}/js/service-worker-register.js"/>

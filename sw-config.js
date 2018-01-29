@@ -1,3 +1,5 @@
+// note that {{ site.baseurl }}/ is not present
+
 module.exports = {
   staticFileGlobs: [
     '_site/css/**/*.css',

@@ -3,6 +3,7 @@
 {
   "name": "{{ site.name }}",
   "short_name": "{{ site.domain }}",
+  "start_url": "index.html",
   "theme_color": "#3344aa",
   "background_color": "#ffffff",
   "display": "standalone",

@@ -160,6 +160,18 @@ gems:
   - jekyll-gist # Support for GitHub gists
   - jekyll-paginate # pagination support
   - jekyll-archives
+  #- jekyll-minifier # compress html, css and js
+
+# read default jekyll-minifier settings here:
+# https://github.com/digitalsparky/jekyll-minifier
+#jekyll-minifier:
+#  exclude:
+#    - 'feed.xml'
+#    - '/**/*.min.js'
+#    - '/**/*.min.css'
+#    - '/**/*.min.map'
+#    - 'humans.txt'
+#    - 'robots.txt'
 
 # Exclude these files from your production _site
 exclude:

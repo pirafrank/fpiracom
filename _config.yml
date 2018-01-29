@@ -187,3 +187,4 @@ exclude:
     - deploy.sh
     - CONTRIBUTOR
     - sw-config.js
+    - scripts

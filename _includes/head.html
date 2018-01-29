@@ -43,9 +43,11 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml" />
 
     <!-- Google AMP -->
+    <!--
     {% if page.layout == 'post' %}
         <link rel="amphtml" href="https://mercury.postlight.com/amp?url={{ site.url }}{{ page.url }}">
     {% endif %}
+    -->
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -70,18 +72,18 @@
     {% endif %}
 
     <!-- Scripts -->
-    <script async type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-    <script async type="text/javascript" src="/js/velocity.min.js"></script>
-    <script async type="text/javascript" src="/js/page_anchors.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.x.min.js" defer></script>
+    <script type="text/javascript" src="/js/velocity.min.js" defer></script>
+    <script type="text/javascript" src="/js/page_anchors.js" defer></script>
 
     <!-- Page-specif scripts -->
     {% if layout.custom_js %}
       {% for js_file in layout.custom_js %}
-        <script async type="text/javascript" src='/js/{{ js_file }}.js'></script>
+        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
       {% endfor %}
     {% endif %}
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
-        <script async type="text/javascript" src='/js/{{ js_file }}.js'></script>
+        <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
       {% endfor %}
     {% endif %}

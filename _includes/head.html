@@ -72,9 +72,9 @@
     {% endif %}
 
     <!-- Scripts -->
-    <script type="text/javascript" src="/js/jquery-1.x.min.js" defer></script>
-    <script type="text/javascript" src="/js/velocity.min.js" defer></script>
-    <script type="text/javascript" src="/js/page_anchors.js" defer></script>
+    <script type="text/javascript" src="/js/jquery-1.x.min.js" defer/></script>
+    <script type="text/javascript" src="/js/velocity.min.js" defer/></script>
+    <script type="text/javascript" src="/js/page_anchors.js" defer/></script>
 
     <!-- Page-specif scripts -->
     {% if layout.custom_js %}
@@ -87,3 +87,6 @@
         <script type="text/javascript" src='/js/{{ js_file }}.js' defer></script>
       {% endfor %}
     {% endif %}
+
+    <!-- SW registration -->
+    <script src="/js/service-worker-register.js"/>

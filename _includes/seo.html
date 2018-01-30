@@ -49,13 +49,13 @@
     {% if page.image.image %}
         {% assign meta_image = site.url | append: site.baseurl | append: '/static/images/' | append: page.image.image %}
     {% else %}
-        {% assign meta_image = site.url | append: site.baseurl | append: '/assets/images/meta_icon.jpg' %}
+        {% assign meta_image = site.url | append: site.baseurl | append: '/assets/icons/fp/blue/icon-242x242.png' %}
     {% endif %}
 
     {% if site.meta_logo %}
         {% assign meta_logo = site.meta_logo %}
     {% else %}
-        {% assign meta_logo = site.url | append: site.baseurl | append: '/assets/images/logo.jpg' %}
+        {% assign meta_logo = site.url | append: site.baseurl | append: '/assets/icons/fp/blue/icon-242x242.png' %}
     {% endif %}
 
     {% if site.seo_links %}

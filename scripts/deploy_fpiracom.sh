@@ -102,3 +102,5 @@ All done! Bye $(whoami)...
 date: $(date)
 script run in $(($DURATION / 60)) minutes and $(($DURATION % 60)) seconds.
 "
+exit 0
+

@@ -65,7 +65,7 @@ if [ ! -z "$WEB_ROOT" ]; then
     rm -rf _site
     if [ $1 == "s" ]; then
         JEKYLL_ENV="production" jekyll build
-        sw-precache --config sw-config.js
+        sw-precache --config sw-config.js # 'npm install --global sw-precache' needed
     else
         JEKYLL_ENV="development" jekyll build --drafts --future
     fi

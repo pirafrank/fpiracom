@@ -1,1 +1,1 @@
-0 15 * * * /bin/bash /home/francesco/Repositories/pirafrank.github.io/scripts/deploy_and_notify.sh s
+0 15 * * * /bin/bash /home/francesco/Repositories/pirafrank.github.io/scripts/deploy_and_notify.sh s > /dev/null 2>&1

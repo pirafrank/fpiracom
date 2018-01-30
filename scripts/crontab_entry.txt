@@ -1,0 +1,1 @@
+0 15 * * * /bin/bash /home/francesco/Repositories/pirafrank.github.io/scripts/deploy_and_notify.sh s > /home/francesco/deploy_fpiracom.log

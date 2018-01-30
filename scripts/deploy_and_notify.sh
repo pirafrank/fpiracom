@@ -3,7 +3,7 @@
 website_name='fpira.com'
 source "$HOME/.config/secrets/pushbullet.sh"
 
-bash deploy_fpiracom.sh s > "$HOME/deploy_fpiracom.log"
+bash $HOME/Repositories/pirafrank.github.io/scripts/deploy_fpiracom.sh s > "$HOME/deploy_fpiracom.log"
 
 if [[ $? -eq 0 ]]; then
 MESSAGE="SUCCESS, $website_name deployed!"

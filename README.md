@@ -16,9 +16,7 @@ Source code is released under the terms of GNU GPLv3 license.
 
 Static resources (like post images, project page images and files) are NOT hosted here. They're hosted in *fpiracom_static* repo.
 
-In order to have previews with images and those files when running `jekyll serve`, also clone that repo and symlink `static` subfolder in that repo to the root here.
-
-Note that `static` symlink or dir is already excluded in this repo `.gitignore`.
+In order to have static files and images working when running `jekyll serve`, you need to clone that repo and creat a symlink named `static` pointing to the _static_ subfolder in it. The symlink must be in this repo root and it is already excluded by `.gitignore`.
 
 Look at the example below.
 

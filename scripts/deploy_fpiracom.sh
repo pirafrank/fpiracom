@@ -14,6 +14,7 @@ TEST_PATH="/var/www/test.fpira.com"
 WEB_ROOT=""
 MASTER="master"
 DEVELOP="develop"
+TODAY="$(date '+%Y-%m-%d %H:%M:%S')"
 
 #
 # Script
@@ -32,7 +33,7 @@ fi
 echo "
 Hi $(whoami)!
 uptime: $(uptime)
-date  : $(date)
+date  : $(date '+%Y-%m-%d %H:%M:%S')
 "
 
 SECONDS=0
@@ -73,6 +74,7 @@ if [ ! -z "$WEB_ROOT" ]; then
     # rsync -avhz -c --delete _site/ $USER@$SERVER:"$WEB_ROOT" # remote deploy
     rsync -avhz -c --delete _site/ "$WEB_ROOT" # local deploy
     if [ $1 == "s" ]; then cp service-worker.js "$WEB_ROOT/"; fi
+    printf "deployed at: %s<br>branch: %s<br>commit: %s" "$TODAY" "$2" "$(git rev-parse HEAD)" > "$WEB_ROOT"/release.html
     echo "Deployed to $WEB_ROOT !"
 else
     echo "An error has occurred! Aborting..."
@@ -99,7 +101,7 @@ DURATION=$SECONDS
 # Greetings
 echo "
 All done! Bye $(whoami)...
-date: $(date)
+date: $(date '+%Y-%m-%d %H:%M:%S')
 script run in $(($DURATION / 60)) minutes and $(($DURATION % 60)) seconds.
 "
 exit 0

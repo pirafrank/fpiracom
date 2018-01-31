@@ -5,23 +5,26 @@
 
 
 #
-# Variables
+# Global Variables
 #
 
 REPO_DIR="/home/francesco/Repositories/pirafrank.github.io" # change this to the dir where the repo has been cloned to.
 STABLE_PATH="/var/www/fpira.com"
 TEST_PATH="/var/www/test.fpira.com"
+
+#
+# Script Variables
+#
+
 WEB_ROOT=""
 MASTER="master"
 DEVELOP="develop"
 TODAY="$(date '+%Y-%m-%d %H:%M:%S')"
+SECONDS=0
 
 #
 # Script
 #
-
-cd $REPO_DIR
-CURRENT_BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 if [[ $# != 1 ]] && [[ $# != 2 ]]; then
     echo "Error: wrong number of arguments"
@@ -30,13 +33,13 @@ if [[ $# != 1 ]] && [[ $# != 2 ]]; then
     exit 1
 fi
 
+cd $REPO_DIR
+
 echo "
 Hi $(whoami)!
 uptime: $(uptime)
 date  : $(date '+%Y-%m-%d %H:%M:%S')
 "
-
-SECONDS=0
 
 if [ $1 == "s" ]; then
     git checkout -f $MASTER
@@ -44,7 +47,7 @@ if [ $1 == "s" ]; then
     git reset --hard HEAD
     git pull origin $MASTER
     WEB_ROOT=$STABLE_PATH
-    STATUS="1"
+    #STATUS="1"
 elif [[ $1 == "t" ]] && [[ ! -z $2 ]]; then
     # git checkout -f $DEVELOP
     git checkout -f $2
@@ -53,10 +56,10 @@ elif [[ $1 == "t" ]] && [[ ! -z $2 ]]; then
     # git pull origin $DEVELOP
     git pull origin $2
     WEB_ROOT=$TEST_PATH
-    STATUS="1"
+    #STATUS="1"
 else
-    echo "Error: branch to deploy missing!"
-    echo "Usage: ./deploy.sh -t <branch>"
+    echo "ERROR: branch to deploy missing!"
+    echo "Usage: ./deploy_fpiracom.sh -t <branch>"
     echo "Options: 's' to deploy to stable, use 't' [branch] to deploy to given branch to test.fpira.com."
     exit 1
 fi
@@ -74,7 +77,8 @@ if [ ! -z "$WEB_ROOT" ]; then
     # rsync -avhz -c --delete _site/ $USER@$SERVER:"$WEB_ROOT" # remote deploy
     rsync -avhz -c --delete _site/ "$WEB_ROOT" # local deploy
     if [ $1 == "s" ]; then cp service-worker.js "$WEB_ROOT/"; fi
-    printf "deployed at: %s<br>branch: %s<br>commit: %s" "$TODAY" "$2" "$(git rev-parse HEAD)" > "$WEB_ROOT"/release.html
+    CURRENT_BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+    printf "Deployed at: %s<br>branch: %s<br>commit: %s" "$TODAY" "$CURRENT_BRANCH" "$(git rev-parse HEAD)" > "$WEB_ROOT"/release.html
     echo "Deployed to $WEB_ROOT !"
 else
     echo "An error has occurred! Aborting..."

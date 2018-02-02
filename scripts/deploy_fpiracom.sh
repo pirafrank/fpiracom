@@ -93,8 +93,6 @@ if [ $1 == "s" ]; then
     # these scripts will run after deploying production
     #/home/francesco/fpira.com_static_backup_and_deploy.sh
     bash /home/francesco/utils/ftp_mirror/fpira.com_static_backup_from_ftp.sh
-    # Tweet if any new post has been published
-    bash scripts/tweet_latest_post.sh "$website_domain"
 else
     echo "No post-run scripts to run after deploying test version. Bye!"
 fi

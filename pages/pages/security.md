@@ -11,9 +11,20 @@ Cherry picked security resources and best practices.
 
 - [Get S/MIME on your iPhone and iPad](https://nerd.one/how-to-set-up-smime-on-iphone-and-mac/)
 
+#### Distros
+
+- [Kali Linux](http://kali.org)
+- [Tails](http://tails.boum.org)
+
 #### Harden your OS
 
-Articles and links about improving the security of your computers and mobile devices and protecting your privacy.
+**Linux**
+
+- [GrSecurity](https://grsecurity.net/), a set of patches to harden the Linux kernel
+- SELinux, built-in into the Linux kernel for years. I am not really a big fan of it.
+- [Tomoyo](http://tomoyo.osdn.jp/), a MAC good enough to be used as a system analysis tool, its rules are easy to write
+
+I gave two talks about them, *Hardening One* and *Hardening Two*. Find more [here]({{ site.baseurl }}/talks/).
 
 **macOS**
 
@@ -47,14 +58,11 @@ Articles and links about improving the security of your computers and mobile dev
 
 - [Offensive Security](http://offensive-security.com)
 - [OWASP](http://owasp.org/) and its [periodic table](https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities#Periodic_Table_of_Vulnerabilities)
+- [Krebs on Security](https://krebsonsecurity.com/)
 - [Schneier On Security](http://www.schneier.com/blog/)
 - [Google Project Zero](http://googleprojectzero.blogspot.com)
 - [Naked Security](https://nakedsecurity.sophos.com/)
-
-#### Distros
-
-- [Kali Linux](http://kali.org)
-- [Tails](http://tails.boum.org)
+- [The Hacker News](https://thehackernews.com/)
 
 <br>
 

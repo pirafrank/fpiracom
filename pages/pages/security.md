@@ -50,8 +50,10 @@ I gave two talks about them, *Hardening One* and *Hardening Two*. Find more [her
 - [Wireshark](http://wireshark.org/)
 - [Debookee](http://debookee.com) (macOS only)
 
-#### Services
+#### VPNs
 
+- It is best to deploy your own by installing OpenVPN on a VPS of yours
+- [ProtonVPN](https://protonvpn.com)
 - [privatetunnel.com](https://www.privatetunnel.com/home/?referral=NUTAYZHU54), a consumer VPN by OpenVPN
 
 #### Websites and blogs

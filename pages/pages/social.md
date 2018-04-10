@@ -30,8 +30,6 @@ Here are my places on the Web. Reach me on your platform of choice.
             <h4>Chats</h4>
             <a href="{{ site.data.social.telegram-im.url }}">Telegram</a>
             <br>
-            <a href="{{ site.data.social.messenger.url }}">Messenger</a>
-            <br>
             <a href="{{ site.data.social.keybase.url }}">Keybase</a>
         </div>
         <div class="col span_5_of_12">
@@ -48,9 +46,9 @@ Here are my places on the Web. Reach me on your platform of choice.
             <br>
             <a href="{{ site.data.social.nuzzel.url }}">nuzzel</a>
             <br>
-            <a href="{{ site.data.social.pocket.url }}">Pocket</a>
-            <br>
             <a href="{{ site.data.social.medium.url }}">Medium</a>
+            <br>
+            <a href="{{ site.data.social.pocket.url }}">Pocket</a>
             <!--
             <br>
             <a href="{{ site.data.social.tumblr.url }}">tumblr</a>

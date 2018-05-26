@@ -5,7 +5,7 @@ permalink: /developers/
 show_title: true
 ---
 
-A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need. You may also want to check the [Learning]({{ site.baseurl }}/learning) and the [Cheat Sheet]({{site.baseurl}}/cheat-sheets) pages.
+A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need. You may also want to check the [Talks]({{ site.baseurl }}/talks) and the [Cheat Sheet]({{site.data.social.github.url}}/cheat-sheets) pages.
 
 #### Bash
 
@@ -17,15 +17,15 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 
 #### Rails
 
-- [gitignore for Rails app](https://gist.github.com/pirafrank/7c7303c039e2fa8df529) (*)
-- [pumascript.sh](https://gist.github.com/pirafrank/ea64dfbaceca755c3891) (*) : a script to start and stop [Puma](http://puma.io) server.
+- [gitignore for Rails app](https://gist.github.com/pirafrank/7c7303c039e2fa8df529) (\*)
+- [pumascript.sh](https://gist.github.com/pirafrank/ea64dfbaceca755c3891) (\*) : a script to start and stop [Puma](http://puma.io) server.
 
 #### Python
 
-- [Get Platform details](https://gist.github.com/pirafrank/a6421e09c2b8b17426da) (*) : Get platform details for current OS (print or use as a library). Works with Linux, OS X and Windows.
-- [Open URL in default browser](https://gist.github.com/pirafrank/cd62f7def8f56ff986af) (*)
-- [Open with the default application](https://gist.github.com/pirafrank/159aa709cc86799b66f2) (*) : Short snippet to open a given file with the default application. Works on Linux, OS X and Windows. On Linux requires xdg-open (usually built-in).
-- [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8) (*) : a script to completely remove PyObjc from your Mac.
+- [Get Platform details](https://gist.github.com/pirafrank/a6421e09c2b8b17426da) (\*) : Get platform details for current OS (print or use as a library). Works with Linux, OS X and Windows.
+- [Open URL in default browser](https://gist.github.com/pirafrank/cd62f7def8f56ff986af) (\*)
+- [Open with the default application](https://gist.github.com/pirafrank/159aa709cc86799b66f2) (\*) : Short snippet to open a given file with the default application. Works on Linux, OS X and Windows. On Linux requires xdg-open (usually built-in).
+- [PyObjc Python modules cleaner](https://gist.github.com/pirafrank/ffa76def386a989ad2b8) (\*) : a script to completely remove PyObjc from your Mac.
 
 #### Web Development
 
@@ -34,7 +34,7 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 
 #### Boilerplates
 
-- [heroku-static-website](https://github.com/pirafrank/heroku-static-website) (*) : A boilerplate to deploy a static website on heroku.
+- [heroku-static-website](https://github.com/pirafrank/heroku-static-website) (\*) : A boilerplate to deploy a static website on heroku.
 
 #### Testing tools
 
@@ -46,13 +46,13 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 
 ### Check also
 
-- [Projects page]({{ site.baseurl }}/projects)
-- [Cheat sheets](http://github.com/pirafrank/cheat-sheets)
-- [Snippet repository](http://github.com/pirafrank/snippets)
+- [Projects]({{ site.baseurl }}/projects)
+- [Cheat sheets]({{site.data.social.github.url}}/cheat-sheets)
+- [Snippets]({{site.data.social.github.url}}/snippets)
 
 <br>
 
 ---
 
-(*) Mantained by me. Please, [tell me]({{ site.baseurl }}/contacts) about your suggestions or any bug you spot.
+(\*) Mantained by me. Please, [tell me]({{ site.baseurl }}/contacts) about your suggestions or any bug you spot.
 

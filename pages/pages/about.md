@@ -9,14 +9,14 @@ show_title: true
 - [Skills](#skills)
 - [Coding](#coding)
 - [Talks and Events](#talks-and-events)
-- [Honors and certificates](#honors-and-certificates)
+- [Honours and certificates](#honours-and-certificates)
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
 - [Contact me](#contact-me)
 
 ### Bio
 
-Hello, my name is Francesco (Frank) Pira, I'm 24yo and live in Catania, Italy, where I study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
+Hello, my name is Francesco (Frank) Pira, I'm 25yo and live in Catania, Italy, where I study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
 
 My interests are programming (especially web development), technology, big data, business and start-ups. I like working in team on projects that challenge me and I'm fascinated by finding the *best practice* in doing something. I also like advising and motivating on topics I'm skilled. Recently I've found out writing is one of my growing passions.
 
@@ -30,25 +30,27 @@ I am currenty working as Oracle Enterprise Application Development Consultant an
 
 ### Skills
 
-- **Front-end dev:** HTML, CSS, Sass/SCSS, JavaScript, AngularJS 1.x
-- **Back-end dev:** node.js, Express, Electron, Ruby on Rails, Flask
+- **Front-end dev:** HTML, CSS, SCSS, JavaScript, AngularJS, Angular, IceFaces 3.x
+- **Back-end dev:** Flask, node.js (ExpressJS), ElectronJS, Ruby on Rails
 - **Web servers:** nginx, Puma, Apache
-- **Databases:** PostgreSQL, SQLite, CouchDB, MySQL / MariaDB
+- **Databases:** Oracle DB, PostgreSQL, SQLite, CouchDB, MySQL / MariaDB
 - **System Administration:** Server deployment, configuration and hardening (SSH, OpenVPN, etc.)
-- **Programming languages:** Python, JavaScript (+ES2015), bash, C, Java, Ruby (beginner).
-- **Version Control** Git, SVN
-- **Other tools:** XSLT, XQuery, Gulp, Bower, Let’s Encrypt, GrSecurity
-- **Platforms:** Amazon Web Services, Microsoft Azure, Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Debian Linux, CentOS, OS X
-- **CMS and static generators:** Prestashop, Wordpress, Jekyll
-- **Other technical skills:** Computer security, knowledge in encryption and server hardware
+- **Programming languages:** Python 2/3, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, Bash, C
+- **Version Control** Git, SVN (including TortoiseSVN)
+- **Operating Systems:** Debian Linux-based, CentOS, macOS, Windows 7+
+- **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c
+- **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode
+- **CMS and static site generators:** Prestashop, Wordpress, Jekyll
+- **Other tools:** Docker, XSLT, XQuery, Let’s Encrypt, GrSecurity, Gulp, Bower
+- **Other technical skills:** Computer security fundamentals, cryptography and server hardware
 - **Graphical tools:** Photoshop (mostly for front-end assets), Sketch by Bohemian Coding
 - **Soft Skills:** Project Management and Tracking, Team Leadership, Team Working, Social Networking, Event Organisation
 
 **What's next?**
 
-- Golang, Swift and Xamarin (aiming mostly at cross-platform mobile app development with shared libraries)
+- Golang and Swift
 - Machine learning in Python
-- Advance my network security skills
+- Advance my network and computer security skills
 
 ### Coding
 
@@ -64,7 +66,7 @@ Curious about tools and utilities I use? Check [my toolbelt]({{ site.baseurl }}/
 - [Talks]({{ site.baseurl }}/talks/)
 - [Events and contributions]({{ site.baseurl }}/events/)
 
-### Honors and Certificates
+### Honours and Certificates
 
 - [AngularJS Certificate by Bax Energy]({{ site.baseurl }}/static/files/honors/AngularJS_Certificate_Bax_Energy_oriz.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015-2016_certificate.pdf)

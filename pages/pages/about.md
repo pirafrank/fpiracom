@@ -30,16 +30,16 @@ I am currenty working as Oracle Enterprise Application Development Consultant an
 
 ### Skills
 
-- **Front-end dev:** HTML, CSS, SCSS, JavaScript, AngularJS, Angular, IceFaces 3.x
+- **Front-end dev:** HTML, CSS, SCSS, JavaScript, AngularJS, Angular 6 
 - **Back-end dev:** Flask, node.js (ExpressJS), ElectronJS, Ruby on Rails
-- **Web servers:** nginx, Puma, Apache
+- **Web servers:** nginx, Apache, Puma
 - **Databases:** Oracle DB, PostgreSQL, SQLite, CouchDB, MySQL / MariaDB
 - **System Administration:** Server deployment, configuration and hardening (SSH, OpenVPN, etc.)
 - **Programming languages:** Python 2/3, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, Bash, C
-- **Version Control** Git, SVN (including TortoiseSVN)
+- **VCS** Git, SVN (including TortoiseSVN)
 - **Operating Systems:** Debian Linux-based, CentOS, macOS, Windows 7+
-- **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c
-- **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode
+- **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Oracle WebLogic
+- **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode, Aruba Cloud
 - **CMS and static site generators:** Prestashop, Wordpress, Jekyll
 - **Other tools:** Docker, XSLT, XQuery, Let’s Encrypt, GrSecurity, Gulp, Bower
 - **Other technical skills:** Computer security fundamentals, cryptography and server hardware
@@ -73,7 +73,7 @@ Curious about tools and utilities I use? Check [my toolbelt]({{ site.baseurl }}/
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015_certificate.pdf)
 - [EYE - Enabling Youth Entrepreneurship Support Group Project - Recommendation letter]({{ site.baseurl }}/static/files/honors/EYE_recommendation_letter_Francesco_Pira.pdf)
 - [EESTEC Contact Person training certificate]({{ site.baseurl }}/static/files/honors/eestec_contact_person_training_certificate.pdf)
-- [Summer Entrepreneuship Training - Certificate of Appreciation]({{ site.baseurl }}/static/files/honors/SET14_certificate_of_appreciation.pdf)
+- [Summer Entrepreneurship Training - Certificate of Appreciation]({{ site.baseurl }}/static/files/honors/SET14_certificate_of_appreciation.pdf)
 
 ### Other things I like
 

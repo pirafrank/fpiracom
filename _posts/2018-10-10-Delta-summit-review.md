@@ -4,6 +4,7 @@ subtitle: Notes and thoughts about the blockchain summit held in Malta
 description: Notes and thoughts about the blockchain summit held in Malta
 category: ["Articles"]
 tags: ["Events", "Blockchain"]
+seoimage: "2018-10-10/001.jpg"
 ---
 
 A few days have passed since [Delta Summit](https://delta-summit.com/), held in Malta a few days ago, on 3-5 October. It was the first edition of an event promoted by Malta government and focused on blockchain. Many startup and some big companies joined the event, like Huawei, Microsoft Malta, Vodafone Malta, Revolut and Wyzer just to name a few. Almost all of them were showing off blockchain-based products and services, some of them were related to the financial world, while others were not. The cryptocurrency world was represented by exchanges Binance and Changelly. Bloomberg was there, too. The Delta Summit also incorporated the ZEST conference, where in my opinion the best talks were held.

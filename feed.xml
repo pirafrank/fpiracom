@@ -14,7 +14,11 @@ layout: null
     {% for post in site.posts limit:15 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | truncatewords: 25 | xml_escape }}</description>
+        {% if post.subtitle %}
+        <description>{{ post.subtitle | truncatehtml | truncatewords: 25 | xml_escape }}</description>
+        {% else %}
+        <description>{{ post.content | truncatehtml | truncatewords: 25 | xml_escape }}</description>
+        {% endif %}
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>

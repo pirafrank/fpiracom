@@ -16,8 +16,8 @@ X-APPLE-CALENDAR-COLOR:#3344AA
 COLOR:33:44:AA
 X-WR-CALDESC:{{ site.name }} posts calendar. Know more at {{ site.url }}.{% for post in site.posts %}
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}T000000
-DTEND;VALUE=DATE:{{ post.date | date: "%Y%m%d" | plus:1 }}T000000
+DTSTART;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
+DTEND;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:[Blog post] {{ post.title | strip_html | strip_newlines | capitalize }}

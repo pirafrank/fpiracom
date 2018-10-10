@@ -20,7 +20,8 @@ DTSTART;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
 DTEND;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:{{ post.title | strip_html | strip_newlines | capitalize }}
+SUMMARY:[Blog post] {{ post.title | strip_html | strip_newlines | capitalize }}
+DESCRIPTION:{% if post.subtitle %}{{ post.subtitle }}{% else %}{{ post.content | truncatewords: 20}}{% endif %}.\nRead more at {{site.url}}{{site.baseurl}}{{post.url}}
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 TRIGGER:-PT120M

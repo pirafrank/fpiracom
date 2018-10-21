@@ -4,6 +4,7 @@ subtitle: "It speeds up how you list and clone your repositories on the Microsof
 description: "It speeds up how you list and clone your repositories on the Microsoft code hosting platform"
 category: ["How-tos"]
 tags: ["iOS","Git"]
+seoimage: 2018-10-21/001.jpg
 ---
 
 [Working Copy](https://workingcopyapp.com) is *THE* git client for iOS. It packs a lot of awesome features. Adding a new hosting provider is among these, so you can easily access GitHub, BitBucket and more via their REST API and list your hosted repositories in one tap.

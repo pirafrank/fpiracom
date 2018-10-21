@@ -4,7 +4,7 @@ title: "My Jekyll workflow: Part 2"
 subtitle: Improving my Jekyll publishing workflow
 category: ['Tutorials']
 description: Tips to improve your Jekyll publish workflow
-tags: ['Jekyll','Pythonista','Blogging']
+tags: ['Jekyll','Pythonista','Blogging','Python']
 ---
 
 In [part 1]({{ site.baseurl }}/blog/2016/09/my-jekyll-workflow-part1) I wrote about my basic workflow. It worked fine but the most important part, the writing experience, was not that great. So I decided to leave move on and leave the built-in Working Copy editor for another one which would have improved my blogging experience.

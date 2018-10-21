@@ -46,7 +46,7 @@
         {% assign seo_type = "WebPage" %}
     {% endif %}
 
-    {% comment %} !! /static/ subfolders need to match the ones in the filesystem !! {% endcomment %}
+    {% comment %} !! /static/ subfolders need to match the ones in cdn.fpira.com !! {% endcomment %}
     {% if page.seoimage %}
         {% if page.layout == "page" %}
             {% assign meta_image = site.url | append: site.baseurl | append: '/static/pageimages/' | append: page.seoimage %}

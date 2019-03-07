@@ -18,8 +18,9 @@ in_search: false
                 <div class="helloText">Hi, I'm</div>
                 <div class="nameText"><a href="{{ sita.baseurl }}/about">{{ site.name }}</a></div>
                 <div class="infoText">
-                  Java EE and Oracle Middleware Development Consultant at <a href="http://leonardocompany.com">Leonardo</a>.
-                  <br>Computer Engineering student at University of Catania - Catania, Italy
+                  Java and Oracle Developer at <a href="http://leonardocompany.com/en">Leonardo</a>.
+                  <br><br>Opinions are mine, here and on twitter.
+                  <br>Thanks for being here, I hope you have a good read.
                 </div>
                 <div class="social-icons social-icons-medium home-social">
                   {% if site.footersocial %}
@@ -40,7 +41,7 @@ in_search: false
           </div>
           <div id="posts" class="col span_8_of_12" style="padding-top: 1em;">
             <div class="inner-container">
-              <div class="sectionTitle">Latest from blog</div>
+              <div class="sectionTitle">Latest blog posts</div>
               {% for post in site.posts limit: site.home.max_posts %}
                 <div class="news newsEntry">
                   <span class="news newsTitle"><a href="{{ post.url }}">{{ post.title }}</a></span>

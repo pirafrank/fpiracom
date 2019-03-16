@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Material for developers
+title: Resources for developers
 permalink: /developers/
 show_title: true
 ---

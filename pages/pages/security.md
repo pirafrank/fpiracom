@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Security
+title: Security Resources
 permalink: /security/
 show_title: true
 ---
 
-Cherry picked security resources and best practices.
+A collection of security guides, tools, cheat sheets and best practices I've found to be useful.
 
 #### Communications
 

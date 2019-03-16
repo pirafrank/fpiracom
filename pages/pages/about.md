@@ -95,4 +95,8 @@ Sometimes I find myself reading thrillers.
 
 ### Contact me
 
-[Get in touch]({{ site.baseurl }}/contacts).
+{% include contacts/main.html %}
+
+{% include contacts/pgp.html %}
+
+Thanks for reading this page. I look forward to hearing from you.

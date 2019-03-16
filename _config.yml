@@ -66,6 +66,9 @@ disqus:
 # Choose whether to display social links in footer or not
 footersocial: true
 
+# Choose whether to display experimental features
+experimental: false
+
 # Home customisation
 home:
   show_social: false # Choose whether to display social link in mid of home page or not

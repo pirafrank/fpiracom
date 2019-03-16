@@ -74,3 +74,14 @@
         }
     }
 }
+
+.btn-no-text-decoration {
+    text-decoration: none !important;
+    &:hover, &:active {
+        text-decoration: none !important;
+    }
+}
+
+.btn-wide {
+    width: 80%;
+}

@@ -18,15 +18,22 @@ in_search: false
                 <div class="helloText">Hi, I'm</div>
                 <div class="nameText"><a href="{{ sita.baseurl }}/about">{{ site.name }}</a></div>
                 <div class="infoText">
-                  Java and Oracle Developer at <a href="http://leonardocompany.com/en">Leonardo</a>.
+                  Java and Oracle developer at <a href="http://leonardocompany.com/en">Leonardo</a>.
+                  <br>*NIX sysadmin and Python for passion.
+                  <br><br>Know more <a href="{{ site.baseurl}}/about">about me</a>.
                   <br><br>Opinions are mine, here and on twitter.
                   <br>Thanks for being here, I hope you have a good read.
                 </div>
-                <div class="social-icons social-icons-medium home-social">
+                <div class="social-icons social-icons-medium home-social center">
                   {% if site.footersocial %}
                     {% include social-icons.html %}
                   {% endif %}
                 </div>
+                {% if site.experimental %}
+                <div>
+                  <a class="btn btn-medium btn-default btn-no-text-decoration btn-wide center" href="{{ site.baseurl }}/contacts">Get in touch</a>
+                </div>
+                {% endif %}
                 <div class="scrolldown desktop-hidden smallscreen-hidden"><a href="#posts"><img src="/assets/icons/down-arrow.svg"></a></div>
                 <!--
                 <div>

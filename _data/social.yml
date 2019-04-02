@@ -16,14 +16,11 @@ github:
   category: code
   url: 'https://github.com/pirafrank'
   user: pirafrank
+  gist: 'https://gist.github.com/pirafrank'
 goodreads:
   category: #reading
   url: #'https://www.goodreads.com/pirafrank'
   user: #pirafrank
-googleplus:
-  category: #news
-  url: #'https://plus.google.com/+FrancescoPiraonline'
-  user: #+FrancescoPiraonline
 instagram:
   category: #photo
   url: #'http://instagram.com/pirafrank'
@@ -104,6 +101,10 @@ tumblr:
 twitter:
   category: news
   url: 'https://twitter.com/pirafrank'
+  user: pirafrank
+twitter-dm:
+  category: news
+  url: 'https://twitter.com/messages/compose?recipient_id=156289750'
   user: pirafrank
 xing:
   category: work

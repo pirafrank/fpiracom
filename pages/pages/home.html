@@ -18,13 +18,19 @@ in_search: false
                 <div class="helloText">Hi, I'm</div>
                 <div class="nameText"><a href="{{ sita.baseurl }}/about">{{ site.name }}</a></div>
                 <div class="infoText">
-                  Oracle Enterprise Application Dev. Consultant at <a href="http://leonardocompany.com">Leonardo S.p.A.</a>
-                  <br>Computer Engineering student at University of Catania - Catania, Italy
+                  Java and Oracle developer at <a href="http://leonardocompany.com/en">Leonardo</a>.
+                  <br>*NIX sysadmin and Python for passion.
+                  <br>Know more <a href="{{ site.baseurl}}/about">about me</a>.
+                  <br><br>Opinions are mine, here and on twitter.
+                  <br>Thanks for being here, I hope you have a good read.
                 </div>
-                <div class="social-icons social-icons-medium home-social">
+                <div class="social-icons social-icons-medium home-social center">
                   {% if site.footersocial %}
                     {% include social-icons.html %}
                   {% endif %}
+                </div>
+                <div class="desktop-hidden smallscreen-hidden">
+                  <a class="btn btn-medium btn-default btn-no-text-decoration btn-wide-60 center" href="{{ site.baseurl }}/contacts">Get in touch</a>
                 </div>
                 <div class="scrolldown desktop-hidden smallscreen-hidden"><a href="#posts"><img src="/assets/icons/down-arrow.svg"></a></div>
                 <!--
@@ -40,7 +46,7 @@ in_search: false
           </div>
           <div id="posts" class="col span_8_of_12" style="padding-top: 1em;">
             <div class="inner-container">
-              <div class="sectionTitle">Latest from blog</div>
+              <div class="sectionTitle">Latest blog posts</div>
               {% for post in site.posts limit: site.home.max_posts %}
                 <div class="news newsEntry">
                   <span class="news newsTitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
@@ -73,12 +79,11 @@ in_search: false
                 <div class="sectionTitle">Resources</div>
                 <p>
                   <ul>
-                    <li><a href="{{ site.baseurl }}/talks">Talks</a></li>
-                    <li><a href="{{ site.baseurl }}/events">Events</a></li>
                     <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
-                    <li><a href="{{ site.baseurl }}/utilities">Utilities</a></li>
                     <li><a href="{{ site.baseurl }}/security">Security resources</a></li>
                     <li><a href="{{ site.baseurl }}/developers">Material for Developers</a></li>
+                    <li><a href="{{ site.baseurl }}/talks">Talks</a></li>
+                    <li><a href="{{ site.baseurl }}/events">Events</a></li>
                     <li><a href="{{ site.baseurl }}/subscribe">Subscribe to the newsletter</a></li>
                   </ul>
                 </p>

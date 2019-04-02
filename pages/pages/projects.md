@@ -20,34 +20,22 @@ Here are my spare time projects and more I code to face challenges I come across
 
 ### Developers
 
-#### [Cheat sheets](https://github.com/pirafrank/cheat-sheets)
-A collection of handy cheat sheets from the world *wild* web.
-
 #### [electron-dash-docset]({{ site.baseurl }}/projects/electron-dash)
 A repository to generate a [Dash](https://kapeli.com/dash) docset for the [electron](http://electron.atom.io) documentation. Now with automatic check for new releases.
 
-#### [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer)
-Deploy on your server any branch of your Jekyll website in a tap. Great if you want to publish posts on-the-go.
+### CLI
 
 #### [todabu](http://github.com/pirafrank/todabu)
 A simple way to backup user configuration files, status and more info in a git repository.
 
-#### [Snippets](https://github.com/pirafrank/snippets)
-Snippets for Sys admins, DevOps, Developers, power users, drunk people with a keyboard and everyone in between.
-
-### CLI
+#### [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer)
+Deploy on your server any branch of your Jekyll website in a tap. Great if you want to publish posts on-the-go.
 
 #### [rebrandly cli]({{ site.baseurl }}/projects/rebrandly_cli)
 An unofficial command line client to shorten URL using rebrandly.com.
 
 #### [Google Photos EXIF fixer](https://github.com/pirafrank/Google-Photos-EXIF-fixer)
 Script to fix pictures EXIF metadata before upload them to Google Photos.
-
-#### [CLI utils](https://github.com/pirafrank/CLI_utils)
-Useful bash hacks at your fingertips. For Linux and OS X.
-
-#### [FlickrDownloadr (cli)](https://github.com/pirafrank/FlickrDownloadr_cli)
-Easy CLI utility to batch download images from flickr.
 
 ### Desktop
 
@@ -79,9 +67,6 @@ All-in-one easy Jekyll solution. Create your static website with blog in a quick
 #### This website
 Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), an heavily modified Jekyll Now fork with additional features and a custom SCSS framework coded from scratch. Most of the things I try here are usually backported to Jekyll Blue.
 
-#### [Elastic side panel](https://github.com/pirafrank/elastic-side-panel)
-A side panel with an elastic animation ready to be deployed on any html page without any CSS conflicts.
-
 ### Raspberry-Pi
 
 #### [Raspberrypi web panel](https://github.com/pirafrank/raspberrypi-web-panel)
@@ -91,4 +76,3 @@ A simple web panel to control your Raspberry Pi on a local network.
 
 - [Resources for developers]({{site.baseurl}}/developers)
 - [Cheat sheets](http://github.com/pirafrank/cheat-sheets)
-- [Utilities]({{site.baseurl}}/utilities)

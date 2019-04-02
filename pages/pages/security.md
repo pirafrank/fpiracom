@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Security
+title: Security Resources
 permalink: /security/
 show_title: true
 ---
 
-Cherry picked security resources and best practices.
+A collection of security guides, tools, cheat sheets and best practices I've found to be useful.
 
 #### Communications
 
@@ -34,6 +34,7 @@ I gave two talks about them, *Hardening One* and *Hardening Two*. Find more [her
 **iOS**
 
 - [iOS configuration hardening guide by Australian Department of Defence](http://www.asd.gov.au/publications/iOS8_Hardening_Guide.pdf)
+- [A deep dive into the world of 'dev-fused' iDevices](https://motherboard.vice.com/en_us/article/gyakgw/the-prototype-dev-fused-iphones-that-hackers-use-to-research-apple-zero-days) ([archived page](https://web.archive.org/web/20190307000111/https://motherboard.vice.com/en_us/article/gyakgw/the-prototype-dev-fused-iphones-that-hackers-use-to-research-apple-zero-days))
 
 **Android**
 
@@ -70,4 +71,4 @@ I gave two talks about them, *Hardening One* and *Hardening Two*. Find more [her
 
 ---
 
-(*) Mantained by me. Please, [tell me]({{ site.baseurl }}/contacts) about your suggestions or any bug you spot.
+(*) Mantained by me. Please, [tell me]({{ site.baseurl }}/contacts) about your suggestions or any broken link you spot.

@@ -4,7 +4,7 @@ title: Generate your index and keep directory listing off
 subtitle: An easy way to access files in a folder on your webserver while keeping directory listing off
 category: ['How-tos']
 description: An easy way to access files in a folder on your webserver while keeping directory listing off
-tags: ['nginx','Apache','Security']
+tags: ['nginx','Apache','Security','Python']
 ---
 
 Directory listing is a useful feature available in many common web server, it shows the content of a directory (without any html index file) in browser as it would be a file manager.

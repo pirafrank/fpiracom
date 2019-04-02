@@ -16,7 +16,7 @@ show_title: true
 
 ### Bio
 
-Hello, my name is Francesco (Frank) Pira, I'm 25yo and live in Catania, Italy, where I study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
+Hello, my name is Francesco (Frank) Pira, I'm 26yo and live in Catania, Italy, where I part-time study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
 
 My interests are programming (especially web development), technology, big data, business and start-ups. I like working in team on projects that challenge me and I'm fascinated by finding the *best practice* in doing something. I also like advising and motivating on topics I'm skilled. Recently I've found out writing is one of my growing passions.
 
@@ -26,14 +26,15 @@ In 2013 I joined EESTEC, a European network of engineering students where member
 
 I have been involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
-I am currenty working as Oracle Enterprise Application Development Consultant and Java Developer at [Leonardo S.p.A.](http://leonardocompany.com)
+Today I work as Java and Oracle developer at [Leonardo Company](http://leonardocompany.com/en). And I'm always ready for the next big thing in tech.
 
 ### Skills
 
-- **Front-end dev:** HTML, CSS, SCSS, JavaScript, AngularJS, Angular 6 
+- **Front-end dev:** HTML, CSS, SCSS, JavaScript, AngularJS, Angular 6
 - **Back-end dev:** Flask, node.js (ExpressJS), ElectronJS, Ruby on Rails
 - **Web servers:** nginx, Apache, Puma
-- **Databases:** Oracle DB, PostgreSQL, SQLite, CouchDB, MySQL / MariaDB
+- **Application servers:** Oracle WebLogic, IBM WebSphere
+- **Databases:** Oracle DB, PostgreSQL, SQLite, CouchDB, MySQL/MariaDB
 - **System Administration:** Server deployment, configuration and hardening (SSH, OpenVPN, etc.)
 - **Programming languages:** Python 2/3, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, Bash, C
 - **VCS** Git, SVN (including TortoiseSVN)
@@ -48,18 +49,15 @@ I am currenty working as Oracle Enterprise Application Development Consultant an
 
 **What's next?**
 
-- Golang and Swift
-- Machine learning in Python
 - Advance my network and computer security skills
+- Begin Swift and iOS app development
+- Machine learning and Python for data analysis
 
 ### Coding
 
-During my day I write little pieces of code to speed up my work and when in my spare time I dedicate myself to some projects.
+Usually I write little pieces of code to speed up my work and when I have some spare time I dedicate myself to weekend projects.
 
-- [Projects]({{ site.baseurl }}/projects/)
-- [Utilities]({{ site.baseurl }}/utilities/)
-
-Curious about tools and utilities I use? Check [my toolbelt]({{ site.baseurl }}/my-toolbelt/).
+[Check my code and tooling]({{ site.baseurl }}/code/).
 
 ### Talks and Events
 
@@ -88,10 +86,19 @@ Sometimes I find myself reading thrillers.
 
 **Traveling** Visiting new places and discovering new cultures widens your mind and challenges you. When I have the chance to leave, I always do.
 
+Plus every now and then I find inspiring media and quotes. Have a look.
+
+- [Inspiring media]({{ site.baseurl }}/inspiring/)
+- [Quotes]({{ site.baseurl }}/quotes/)
+
 ### Resume
 
-[Download]({{ site.baseurl }}/static/files/cv/resume-francesco-pira.pdf)
+[Download my resume]({{ site.baseurl }}/static/files/cv/resume-francesco-pira.pdf)
 
 ### Contact me
 
-[Get in touch]({{ site.baseurl }}/contacts).
+{% include contacts/main.html %}
+
+{% include contacts/pgp.html %}
+
+Thanks for reading this page. I look forward to hearing from you.

@@ -46,10 +46,17 @@
         {% assign seo_type = "WebPage" %}
     {% endif %}
 
-    {% if page.image.image %}
-        {% assign meta_image = site.url | append: site.baseurl | append: '/static/images/' | append: page.image.image %}
+    {% comment %} !! /static/ subfolders need to match the ones in cdn.fpira.com !! {% endcomment %}
+    {% if page.seoimage %}
+        {% if page.layout == "page" %}
+            {% assign meta_image = site.url | append: site.baseurl | append: '/static/pageimages/' | append: page.seoimage %}
+        {% elsif page.layout == "post" %}
+            {% assign meta_image = site.url | append: site.baseurl | append: '/static/postimages/' | append: page.seoimage %}
+        {% elsif page.layout == "project" %}
+            {% assign meta_image = site.url | append: site.baseurl | append: '/static/projectimages/' | append: page.seoimage %}
+        {% endif %}
     {% else %}
-        {% assign meta_image = site.url | append: site.baseurl | append: '/assets/icons/fp/blue/icon-242x242.png' %}
+        {% assign meta_image = site.url | append: site.baseurl | append: '/assets/images/og_image.png' %}
     {% endif %}
 
     {% if site.meta_logo %}

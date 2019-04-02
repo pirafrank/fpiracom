@@ -10,113 +10,95 @@ I'm often asked about development tools and useful apps and services I use daily
 #### Development
 
 - macOS with latest updates
+- VSCode
 - Sublime Text 3 + some useful packages
-- Terminal (sometimes iTerm2)
+- iTerm2 + zsh
 - Macports
 - Git 2
+- Safari
+- Google Chrome
+- Firefox
 - Sourcetree
 - Kaleidoscope
 - Dash
-- Python 2.7.x and 3.4.x + pip + virtualenv
-- Ruby + Bundler + Rails + rvm
+- Python 2.7 or 3.x + pip + virtualenv
+- SQL Developer
 - node.js + npm + nvm
-- Electron
-- yeoman
-- bower
-- CodeKit
-- Apache + MySQL + virtualhost
 - Postgres.app
-- Datum (check SQLite dbs in a snap)
+- Datum (check SQLite DBs in a snap)
 - Bitbucket
-- Github
-- ~~Heroku toolbelt~~ (no more since Docker)
-- ForkLift and rsync
-- Parallels + Linux and Windows VMs
+- GitHub
 - Docker
-- Vagrant
-- Django
-- Flask
-- golang
+- Cyberduck
+- ForkLift and rsync
+- Parallels Desktop
+- VMware Fusion
+- Docker
 - Tens of free custom fonts
 - Photoshop + Cooler + Sketch
-- [scripts]({{site.baseurl}}/projects) and [utilities]({{site.baseurl}}/resources/utilities) of mine
+- [my dotfiles]({{ site.data.social.github.url }}/dotfiles)
 
 #### Useful apps and services
 
 - Alfred + [my workflows](https://github.com/pirafrank/alfred_workflows)
-- Evernote (actually my second brain)
-- Simplenote
-- Skitch
-- Wunderlist
-- Trello
-- ~~Sunrise Calendar~~ (shut down)
-- Slack
+- Notes
+- Evernote
+- Reminders
+- Calendar
 - Mail
 - GPG Suite
 - 1Password
 - VeraCrypt
 - Cryptomator
 - Tunnelblick
-- Google Drive, iCloud Drive, Dropbox, Box
+- OneDrive, Google Drive, iCloud Drive, Dropbox, Box
 - rsync
 - IFTTT
-- Google Docs suite
-- Apple Keynote
-- Apple Pages
-- Office for Mac 2016
-- Capturer
+- Google Docs and co.
+- iWork (Pages and Keynote)
+- Office 365 for Mac
 - Feedly
 - Pocket
 - Calibre (great if you have a Kindle)
-- ~~Google Play Music~~ --> Apple Music
+- Apple Music
 
 #### iOS
 
-*Note: To avoid repetition, I've not included cross-platform apps and clients already listed above.*
-
 - iOS with latest updates
+- Blink
 - PDF Expert
+- PDF Viewer (by PSPDFKit creators)
 - Working Copy
 - Textastic
-- Serverauditor
 - Pythonista
-- Workflow
-- Pushbullet
-- FreeOTP
+- play.js
+- Shortcuts
+- OTP app
 - iA Writer
-- Day One
 - Notability
 - CamScanner HD
 - Apple Mail
-- Spark
-- Alto (email client)
 - iThoughts
-- iWorks
-- OfficeSuite Pro
+- MindNode
+- iWorks (Pages and Keynote)
+- Microsoft Word and Excel
 - Printer Pro
-- Penultimate
-- Tayasui Sketches Pro
-- Aftership
-- 60db (awesome morning reports!)
 - Pocket Casts
 - Bloomberg
-- MSN Money
 - SeekingAlpha
+- Crypto Pro
+- Twitter
+- Buffer
 - Reddit
 - Product Hunt
-- Hacker News
-- Money Pro
 - Fing
 - IP Tools
 - Nice Trace
 - Net Status
 - Kindle
+- Google Maps
 - Maps.me (awesome offline maps)
 - AirBnB
 - Hostelworld
 - Skyscanner
 - Shazam
-- Quora
-- Buffer
-- Google Analytics
-

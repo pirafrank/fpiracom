@@ -5,43 +5,12 @@ permalink: /contacts/
 show_title: true
 ---
 
-<p>
-    The best way is by email, <span class="safe-email"><i>me @ this domain</i></span>.
-    <br>
-    I am also reachable via <a href="{{ site.data.social.twitter.url }}">twitter DM</a>.
-</p>
+{% include contacts/main.html %}
 
-<h4>PGP</h4>
+{% include contacts/pgp.html %}
 
-<p>
-    For a secure communication, please send me an email to the above address using PGP.
-    <br>You can retrieve the public key from <a href="{{ site.baseurl }}/pgp.txt">this website</a> or from <a href="https://keybase.io/pirafrank/key.asc">Keybase</a>.
-    <br>The fingerprint is <code class="highlighter-rouge">00F1 7C2C 8570 B082 2DF0  2CC6 DC80 5C4B D79E C530</code>.
-    <br>This key superseded <a href="{% post_url 2018-04-01-pgp-update %}">my old one</a>.
-</p>
-<p>
-    You can also <a href="{{ site.data.social.keybase.url }}">verify my identity on Keybase</a> and <a href="https://keybase.io/docs">use it for chatting or sharing data</a>.
-    <br>Please notify me ahead via any of the channels above if you want to go the Keybase way.
-</p>
+{% include contacts/follow-me.html %}
 
-<!--
-<p>
-    I am also reachable via XMPP at the same email address and I use the same certificate of this website. I just don't keep the app open all the time, so please ping me by email or twitter DM first. I use OTR and don’t log. I request you do the same.
-    <br><i class="monospaced">A9283A3E 4F4D8E7C 683857E3 B38B8178 3149B917 (laptop)</i>
-    <br><i class="monospaced">20A020F5 F60E4E1B 095A3119 3FCF96DF 17780A8E (mobile)</i>
-</p>
--->
-
-<h4>Follow me</h4>
-
-<p>
-    Best is on twitter, <a href="{{ site.data.social.twitter.url }}">@pirafrank</a>.
-    <br>
-    You can also <a href="{{ site.baseurl }}/subscribe">subscribe</a> to my daily newsletter.
-</p>
-<p>
-    On the world <i>wild</i> web, I'm usually <i>pirafrank</i>. A list of my social profiles is available <a href="{{ site.baseurl }}/social">here</a>.
-</p>
 <p>
     Thanks for reaching this page. I look forward to hearing from you!
 </p>

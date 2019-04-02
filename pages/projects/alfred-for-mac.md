@@ -7,7 +7,7 @@ show_title: true
 
 Don't you know Alfred? Know about it [here](https://www.alfredapp.com/).
 
-You can get workflows and themes I've developed from links below. You can also download some of them from [Packal]({{ site.data.social.packal.url }}).
+You can get workflows and themes I've developed from links below.
 
 #### Workflows
 

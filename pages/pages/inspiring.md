@@ -19,12 +19,12 @@ A collection of speeches, poetries, videos and more things that have inspired me
 
 ['Invictus'](http://www.poetryfoundation.org/poem/182194) by William Ernest Henley
 
-[Take your startup to the next level](https://www.youtube.com/watch?v=X-b2Zrr8BEk) by Michał Sadowski
-
 [The Life of an Entrepreneur in 90 Seconds](https://www.youtube.com/watch?v=h-KHWUq3B7I)
+
+[Take your startup to the next level](https://www.youtube.com/watch?v=X-b2Zrr8BEk) by Michał Sadowski
 
 [The Mountain](https://vimeo.com/22439234) by [Terje Sorgjerd](http://vimeo.com/terjes)
 
-[#DearDaddy, I'm going to be called a whore](https://www.youtube.com/watch?v=yB8tgVqmKzw)
+[#DearDaddy, I'm going to be called a whore](https://www.youtube.com/watch?v=dP7OXDWof30)
 
-[Audi R8 Big Game Commercial – Commander](https://youtu.be/yB8tgVqmKzw), One of the best commercials I've ever seen.
+[Audi R8 Big Game Commercial – Commander](https://www.youtube.com/watch?v=XfMt2jtbW3Q), One of the best commercials I've ever seen.

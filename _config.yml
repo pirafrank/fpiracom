@@ -49,6 +49,7 @@ theme_engine:
 # Leave it empty to disable any of the settings.
 analytics:
   google: "UA-59510020-2"
+  matomo: "1"
   heatmap: yes
 
 # Links to use in JSON-LD metadata (SEO)

@@ -1,0 +1,104 @@
+---
+layout: page
+permalink: /2/
+custom_css: "pages/homev2"
+is_home: true
+show_title: false
+in_search: false
+---
+
+  <div class="cover">
+    <div class="container">
+        <div class="section group header">
+          
+          <div style="min-height: 90vh;">
+          
+            <div style="min-height: 65vh; padding-top: 2em;">
+              <div class="col span_5_of_12" style="padding-top: 1em;">
+                <div class="userAvatarPlate userAvatar floatRightDesktop">
+                  <img src="{{ site.avatar }}" width="120px;">
+                </div>
+              </div>
+              <div class="col span_7_of_12">
+                  <div class="headText">
+                    <div class="helloText">Hi, I'm</div>
+                    <div class="nameText"><a href="{{ sita.baseurl }}/about">{{ site.name }}</a></div>
+                    <div class="infoText">
+                      Java and Oracle developer at <a href="http://leonardocompany.com/en">Leonardo</a>.
+                      <br>*NIX sysadmin and Python for passion.
+                      <br>
+                      <br>Know more <a href="{{ site.baseurl}}/about">about me</a> or scroll down to read the blog.
+                      <br>Opinions are mine, here and on twitter, where I am mostly active. Thanks for being here, I hope you have a good read.
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col span_12_of_12">
+              <div class="social-icons social-icons-medium home-social center">
+                {% if site.footersocial %}
+                {% include social-icons.html %}
+                {% endif %}
+              </div>
+              <div class="scrolldown">
+                <a href="#posts"><img src="/assets/icons/down-arrow.svg"></a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+          <div id="posts" class="col span_8_of_12" style="padding-top: 1em;">
+            <div class="inner-container">
+              <div class="sectionTitle">Latest blog posts</div>
+              {% for post in site.posts limit: site.home.max_posts %}
+                <div class="news newsEntry">
+                  <span class="news newsTitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
+                  <div class="newsDate">{{ post.date | date: "%d %B %Y" }}</div>
+                    {% if site.home.show_excerpt %}
+                        {% if post.subtitle %}
+                          <br>
+                          <div class="newsExcerpt">
+                            {{ post.subtitle | truncatehtml | truncatewords: 20 }}
+                            <br><br>
+                            <a href="{{ post.url }}">Read more...</a>
+                          </div>
+                        {% else %}
+                          <div class="newsExcerpt">
+                            {{ post.content | truncatehtml | truncatewords: 20 }}
+                            <a href="{{ post.url }}">Read more...</a>
+                          </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+              {% endfor %}
+              <p>
+                <span class="low-links"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;&nbsp;<a class="grayLinks"
+                    href="{{ site.baseurl }}/blog/">Older posts</a></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col span_8_of_12" style="padding-top: 2em;">
+              <div class="inner-container">
+                <div class="sectionTitle">Resources</div>
+                <p>
+                  <ul>
+                    <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+                    <li><a href="{{ site.baseurl }}/security">Security resources</a></li>
+                    <li><a href="{{ site.baseurl }}/developers">Material for Developers</a></li>
+                    <li><a href="{{ site.baseurl }}/talks">Talks</a></li>
+                    <li><a href="{{ site.baseurl }}/events">Events</a></li>
+                    <li><a href="{{ site.baseurl }}/subscribe">Subscribe to the newsletter</a></li>
+                  </ul>
+                </p>
+              </div>
+          </div>
+
+
+
+        </div>
+    </div>
+  </div>

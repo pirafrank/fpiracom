@@ -12,7 +12,7 @@ This post tries to gather information about them. I will update it as new ones a
 
 ### Get to know them
 
- We can group them in the following families:
+ We can group them in the following sub-families:
 
 **Spectre**
 

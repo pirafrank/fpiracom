@@ -1,10 +1,12 @@
 ---
-title: Speculative execution side-channel vulnerabilities
+title: Speculative execution side-channel vulnerabilities [Updated]
 subtitle: Keep track of them and check for mitigations to be installed and enabled
 description: "Speculative execution side-channel vulnerabilities: keeping track of them and checking for mitigations to be installed and enabled"
 category: ['Articles']
 tags: ["security", "malware", "hardware"]
 ---
+
+*Update: Added notes about libgo improvements landing in GCC 10 Git.*
 
 It’s been over a year since speculative execution side-channel vulnerabilities are making the headlines.
 Understanding and knowledge of them are essential to protect against attacks that use them.
@@ -85,6 +87,8 @@ Mitigation: Full generic retpoline, STIBP: disabled, RSB filling
 ### Benchmarks
 
 Phoronix has written an interesting post with a comparison of 2nd and 3rd gen Intel CPU performances, with and without mitigations applied. [Check it out](https://www.phoronix.com/scan.php?page=article&item=sandy-fx-zombieload&num=1).
+
+On May 31 2019, GCC developers have pushed code for libgo runtime library aimed at improving context switch speed of golang code running on Linux machines with a x86_64 CPU. More details are available [here](https://www.phoronix.com/scan.php?page=news_item&px=Golang-Cheaper-Context-Switches).
 
 ### Conclusions
 

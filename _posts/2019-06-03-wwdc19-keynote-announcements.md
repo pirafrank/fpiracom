@@ -18,7 +18,7 @@ It will be updated as new features and hidden tricks are discovered.
 - over 1000 developers attending
 - 97% customer satisfaction of iOS 12
 - 85% iOS 12 install-base
-- 100.000 radio stations
+- 100.000 radio stations in Apple Music
 - 75% cars globally feature CarPlay
 - macOS is #1 in customer satisfaction
 - over 450,000 apps in the App Store using Swift

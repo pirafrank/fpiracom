@@ -6,7 +6,9 @@ category: ["Articles"]
 tags: ["Apple", "iOS", "macOS", "hardware"]
 ---
 
-*Updated: added information about features and changes announced today during the State of the Union keynote.*
+*Update 1: added information about features and changes announced today during the State of the Union keynote.*
+
+*Update 2: added links to previews on Apple's website.*
 
 A (very long) list of today's announcements. The source is mainly the today keynote, otherwise sources are linked.
 
@@ -23,12 +25,12 @@ It will be updated as new features and hidden tricks are discovered.
 
 ### Software announcements
 
-#### tvOS
+#### tvOS 13
 - multi-user support
 - Xbox One S and PS4 controller support
 - new underwater screensaver
 
-#### watchOS
+#### watchOS 6
 - new watchfaces, including a new one that recalls the Siri one of today. All of them supports new complications (maybe on S4 only, though)
 - haptic and audio chimes trigger each new hour
 - new apps: *Apple Books* for audiobooks, *Voice Memos*, *Calculator*, all of them with their complications
@@ -52,7 +54,9 @@ It will be updated as new features and hidden tricks are discovered.
 - automatic software updates
 - new watch bands
 
-#### iOS
+watchOS features preview available [on Apple's website](https://www.apple.com/watchos/watchos-preview/).
+
+#### iOS 13
 - (the much awaited) dark mode
 - performance and speed optimizations
 - 30% faster FaceID
@@ -98,7 +102,9 @@ It will be updated as new features and hidden tricks are discovered.
     - works on HomePod, too
 - *Neural TTS* for all-software and much more 'natural' voice play
 
-#### iPadOS
+iOS features preview available [on Apple's website](https://www.apple.com/ios/ios-13-preview/features/).
+
+#### iPadOS 13
 
 - widget pinning on the homescreen
 - drag to easily swap between apps opened in slide-over mode
@@ -125,6 +131,8 @@ It will be updated as new features and hidden tricks are discovered.
 - dragging from the corner with the Apple Pencil takes a screenshot and opens the image annotating tools
 - new *full-page* capture mode trims just the content, similar to what window-capture does today on macOS
 
+iPadOS features preview available [on Apple's website](https://www.apple.com/ipados/ipados-preview/).
+
 #### macOS 10.15 Catalina
 
 - iTunes is finally and officially dead. New apps Podcasts, Music and TV taking place
@@ -141,6 +149,8 @@ It will be updated as new features and hidden tricks are discovered.
 - apps need user authorization to read/write Desktop, Documents, iCloud Drive and external drives
 - zsh to be the default shell ([source](https://twitter.com/krzyzanowskim/status/1135670186932080641))
 - ... last but not least, the official name of 'Marzipan' is *Project Catalyst*
+
+macOS 10.15 features preview available [on Apple's website](https://www.apple.com/macos/catalina-preview/).
 
 #### iOS, iPadOS and macOS
 
@@ -164,7 +174,7 @@ It will be updated as new features and hidden tricks are discovered.
     - *HomeKit Secure Video*: your home videos are analyzed locally on your HomeKit hub device (HomePod, AppleTV or iPad) and only the analysis result is uploaded to your iCloud account and made available to apps. Them won't get the original video and it is never uploaded on to the cloud
     - HomeKit coming to routers, it actually is a firewall to stop private home-related data going out
 
-#### Swift, SDK and frameworks updates
+#### Swift 5, SDK and frameworks updates
 
 - [Swift 5](https://swift.org/blog/swift-5-released/)
     - has reached ABI and module stability

@@ -28,7 +28,7 @@ Apple it's very likely to drop support for A8(X) and earlier devices in iOS 13. 
 
 Now let's wait for tomorrow announcements.
 
-*Update: 9to5mac has published the [iOS 13 list of compatible devices](https://9to5mac.com/2019/06/03/iphone-ipad-ios-13-compatibility/). As expected, iPhone 5S/6/6+ and iPod Touch 6th generation are not supported by next iOS update. iPhone SE also to be uptated, so 4-inch screen layouts are here to stay. Surprisingly enough, the iPad Air 2 is still on board. What an long-living device!*
+**Update:** 9to5mac has published the [iOS 13 list of compatible devices](https://9to5mac.com/2019/06/03/iphone-ipad-ios-13-compatibility/). As expected, iPhone 5S/6/6+ and iPod Touch 6th generation are not supported by next iOS update. iPhone SE also to be uptated, so 4-inch screen layouts are here to stay. Surprisingly enough, the iPad Air 2 is still on board. What an long-living device!
 
 Thanks for reading.
 

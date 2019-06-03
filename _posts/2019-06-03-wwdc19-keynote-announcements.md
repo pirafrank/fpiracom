@@ -6,6 +6,8 @@ category: ["Articles"]
 tags: ["Apple", "iOS", "macOS", "hardware"]
 ---
 
+*Updated: added information about features and changes announced today during the State of the Union keynote.*
+
 A (very long) list of today's announcements. The source is mainly the today keynote, otherwise sources are linked.
 
 It will be updated as new features and hidden tricks are discovered.
@@ -32,8 +34,14 @@ It will be updated as new features and hidden tricks are discovered.
 - new apps: *Apple Books* for audiobooks, *Voice Memos*, *Calculator*, all of them with their complications
 - *Calculator* comes with support for bill splitting and tip calculator)
 - watchOS apps no longer need its companion iPhone one
-- ...and it gets the AppStore, search it by voice, scribble or using Siri
-- Extended Runtime API
+- ...it gets the AppStore, search it by voice, scribble or using Siri
+- ...and it is now an indipendent push notification target
+- text fields for account creation and sign in directly on the Apple Watch
+- Extended Runtime API, apps in these categories can run in the background even after the user lowers his wirst:
+    - self-care
+    - mindfulness
+    - medical therapy
+    - home monitoring
 - Streaming Audio API to stream whatever you want
 - new *Noise* app uses Apple Watch microphone to tell you if you are in a loud environment. It collects small audio sample and no data is stored.
 - new *Cycle Tracking* app for women, including notification and predictions. It will also be available in *Health* app in next iOS release
@@ -81,8 +89,13 @@ It will be updated as new features and hidden tricks are discovered.
 - HomePod gets multi-users supports, in the form of recognizing user voices
 - new CarPlay dashboard
 - Do-Not-Disturb while driving in CarPlay
-- *Shortcuts* is now a system-app and is getting multi-step commands
-- suggested automations
+- *Shortcuts*:
+    - it is now a system-app and is getting multi-step commands
+    - provides suggested automations
+    - conversational shortcuts
+    - Automation supporting specific triggers (pretty much a `cron` with a GUI)
+    - recording Siri Shortcut audio is no longer needed and phrases can be added with a tap
+    - works on HomePod, too
 - *Neural TTS* for all-software and much more 'natural' voice play
 
 #### iPadOS
@@ -107,7 +120,7 @@ It will be updated as new features and hidden tricks are discovered.
     - 3-finger pinch to copy and 3-finger spread to paste
     - 3-finder swipe to undo
 - Apple Pencil latency down to 9ms (from 20ms)
-- PencilKit API
+- *PencilKit* API
 - ability to drag Apple Pencil tools panel anywhere on the screen
 - dragging from the corner with the Apple Pencil takes a screenshot and opens the image annotating tools
 - new *full-page* capture mode trims just the content, similar to what window-capture does today on macOS
@@ -124,6 +137,9 @@ It will be updated as new features and hidden tricks are discovered.
 - T2 chip providing activation lock to enabled Macs (and I am wondering how it is different from today)
 - new gallery view in *Notes*
 - ScreenTime
+- *DriveKit* moves kernel extensions to userland, aiming to enhance security. Original kind of kernel extensions to be dropped in the future
+- apps need user authorization to read/write Desktop, Documents, iCloud Drive and external drives
+- zsh to be the default shell ([source](https://twitter.com/krzyzanowskim/status/1135670186932080641))
 - ... last but not least, the official name of 'Marzipan' is *Project Catalyst*
 
 #### iOS, iPadOS and macOS
@@ -143,6 +159,7 @@ It will be updated as new features and hidden tricks are discovered.
     - sign up and login to web apps using your Apple ID, but you choose what details of your Apple account you share
     - it creates a random email addresses and emails are forwarded to the real inbox. Each app gets a different, random email address
     - Available on iOS, macOS, tvOS and the web
+    - accounts are already verified and protected by [2-factor authentication](https://support.apple.com/en-us/HT204915)
 - HomeKit privacy improvements
     - *HomeKit Secure Video*: your home videos are analyzed locally on your HomeKit hub device (HomePod, AppleTV or iPad) and only the analysis result is uploaded to your iCloud account and made available to apps. Them won't get the original video and it is never uploaded on to the cloud
     - HomeKit coming to routers, it actually is a firewall to stop private home-related data going out
@@ -155,9 +172,7 @@ It will be updated as new features and hidden tricks are discovered.
 - [Xcode 11 comes with built-in Swift Package Manager](https://twitter.com/johnsundell/status/1135629223224328193) and [lets you create a Swift package straight from the File menu](https://twitter.com/johnsundell/status/1135647878523830273)
 - TestFlight getting 'Feedback' feature and users can submit screenshots, too
 - RxSwift-like framework called *Combine* ([source](https://twitter.com/johnsundell/status/1135633624366223360))
-- RealityKit, a new framework for easier integration of 3D modeling into apps
-- *Reality Composer* app, a fast and easy way to create 3D models. Coming to iOS and macOS
-- new in ARKit:
+- new in ARKit 3:
     - people occlusion, to render object correctly as people move among them
     - visual coherence
     - motion capture
@@ -175,6 +190,11 @@ It will be updated as new features and hidden tricks are discovered.
     - audio support in AR Quick Look
     - AR coaching
     - last but not least, Minecraft coming to i*OS playable in real world thanks to ARKit. Players can even 'jump into' the game field
+- *RealityKit*, a new framework for easier integration of 3D modeling into apps
+- *Reality Composer* app
+    - a fast and easy way to create 3D models
+    - WYSIWYG editor
+    - Coming to iOS and macOS
 - *SwiftUI*, a new declarative UI framework, featuring:
     - drag-n-drop support
     - built-in inspector
@@ -190,6 +210,12 @@ It will be updated as new features and hidden tricks are discovered.
     - integrates with existing code
     - new workflow in Xcode dedicated to it
     - interactive online documentation
+- MLKit, new features:
+    - new image saliency
+    - on-device speech (similar to what Google showed at the I/O in May)
+    - text recognition
+    - support for 100+ ML model types
+    - model personalization to let apps update models in the background using anonymized bits of user data
 - new watchOS framework to develop native apps
 
 ### Hardware announcements

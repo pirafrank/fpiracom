@@ -1,10 +1,12 @@
 ---
-title: What does a new iPod Touch means for us?
+title: What does a new iPod Touch means for us? [Updated]
 subtitle: Ahead of WWDC updating the little guy may be a preview of what's next
 description: What does a new iPod Touch means for the iOS ecosystem ahead of tomorrow WWDC
 category: ["Articles"]
 tags: ["Apple", "iOS", "hardware"]
 ---
+
+*Update: edited the 'Conclusions' paragraph such as now it takes into account the released iOS 13 compatibility list.*
 
 4 days ago Apple launched a new iPod Touch. So what could the launch of a new iPod Touch mean for the iOS ecosystem ahead of WWDC and iOS 13?
 
@@ -25,6 +27,8 @@ A9 was quite a big leap forward back in 2015 featuring advances in performance, 
 Apple it's very likely to drop support for A8(X) and earlier devices in iOS 13. This would make sense to create an homogeneous base of devices having common minimum hardware requirements, yet powerful enough as 2018 flagship Android phones. iPad Air 2 and iPhone 6/6+ owners shouldn't be shocked: although still popular these devices will be 5 years old in a couple of months. On the other hand, iPhone 7/7+ owners may get even longer lifespan for their smartphones. And I'm pretty sure these will grab even more attention in the refurbished market.
 
 Now let's wait for tomorrow announcements.
+
+*Update: 9to5mac has published the [iOS 13 list of compatible devices](https://9to5mac.com/2019/06/03/iphone-ipad-ios-13-compatibility/). As expected, iPhone 5S/6/6+ and iPod Touch 6th generation are not supported by next iOS update. iPhone SE also to be uptated, so 4-inch screen layouts are here to stay. Surprisingly enough, the iPad Air 2 is still on board. What an long-living device!*
 
 Thanks for reading.
 

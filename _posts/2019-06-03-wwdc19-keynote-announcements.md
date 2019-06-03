@@ -81,7 +81,7 @@ watchOS features preview available [on Apple's website](https://www.apple.com/wa
 **Photos and Camera**
 
 - Scan library and uses ML to automatically find duplicates
-- *Hi-Kimono* camera portrait effect
+- *High‑Key Mono* camera portrait effect
 - option to rotate videos
 - a new Photos layout, one view with Years, Months, Days and All Photos
 - memories are collected by event and shown by year, video memories autoplay
@@ -131,7 +131,7 @@ iOS features preview available [on Apple's website](https://www.apple.com/ios/io
 - dragging from the corner with the Apple Pencil takes a screenshot and opens the image annotating tools
 - new *full-page* capture mode trims just the content, similar to what window-capture does today on macOS
 
-iPadOS features preview available [on Apple's website](https://www.apple.com/ipados/ipados-preview/).
+iPadOS features preview available [on Apple's website](https://www.apple.com/ipados/ipados-preview/features/).
 
 #### macOS 10.15 Catalina
 
@@ -150,7 +150,7 @@ iPadOS features preview available [on Apple's website](https://www.apple.com/ipa
 - zsh to be the default shell ([source](https://twitter.com/krzyzanowskim/status/1135670186932080641))
 - ... last but not least, the official name of 'Marzipan' is *Project Catalyst*
 
-macOS 10.15 features preview available [on Apple's website](https://www.apple.com/macos/catalina-preview/).
+macOS 10.15 features preview available [on Apple's website](https://www.apple.com/macos/catalina-preview/features/).
 
 #### iOS, iPadOS and macOS
 

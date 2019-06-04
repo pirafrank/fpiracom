@@ -225,6 +225,7 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
     - integrates with existing code
     - new workflow in Xcode dedicated to it
     - interactive online documentation
+    - check [this thread](https://twitter.com/b3ll/status/1135757988612861952) for an 'Hello World!' and some notes about SwiftUI
 - MLKit, new features:
     - new image saliency
     - on-device speech (similar to what Google showed at the I/O in May)

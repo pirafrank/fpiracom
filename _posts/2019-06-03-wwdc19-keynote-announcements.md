@@ -10,6 +10,10 @@ tags: ["Apple", "iOS", "macOS", "hardware"]
 
 *Update 2: added links to previews on Apple's website.*
 
+*Update 3: PWA improvements notes.*
+
+<br/>
+
 A (very long) list of today's announcements. The source is mainly the today keynote, otherwise sources are linked.
 
 It will be updated as new features and hidden tricks are discovered.
@@ -159,6 +163,7 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
     - merges *Find My Devices* and *Find My Friends* apps
     - find your devices offline by using other devices as mesh networks
     - encrypted and anonymous
+- iOS and iPadOS have a much improved PWA support. Check [this thread](https://twitter.com/firt/status/1135709949772881921) for screenshots and features
 
 **New privacy settings and features**
 

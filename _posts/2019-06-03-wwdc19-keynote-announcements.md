@@ -82,6 +82,13 @@ watchOS features preview available [on Apple's website](https://www.apple.com/wa
     - Animoji get makeup option and cartoon AirPods
     - Memoji stickers to stick memoji in messages, in a similar way to what you do. Available on A9 and later devices, True Depth camera not a requirement
 - separated iCloud accounts for work and personal life
+- redesigned *Reminders* app
+- *Find My* app
+    - merges *Find My Devices* and *Find My Friends* apps
+    - find your devices offline by using other devices as mesh networks
+    - encrypted and anonymous
+- peek and pop, quick actions in homescreen and Control Center and other 3D-touch-specific features coming to iPhone and iPads as 'Haptic Touch' features
+- much improved PWA support. Check [this thread](https://twitter.com/firt/status/1135709949772881921) for screenshots and features
 - iPads got their own iOS branch, called *iPadOS*, albeit Gui Rambo [has proved](https://twitter.com/_inside/status/1135640410175332356) it's just a marketing name. It's still iOS under the hood, not a fork the way tvOS is
 
 **Photos and Camera**
@@ -89,8 +96,11 @@ watchOS features preview available [on Apple's website](https://www.apple.com/wa
 - Scan library and uses ML to automatically find duplicates
 - *High‑Key Mono* camera portrait effect
 - option to rotate videos
-- a new Photos layout, one view with Years, Months, Days and All Photos
-- memories are collected by event and shown by year, video memories autoplay
+- revamped *Photos* app with new Photos tab layout. You can now move between different views, such as: Years, Months, Days and All Photos
+- memories are collected by event and shown by year
+- video memories autoplay
+
+The Sweet Setup [wrote about it](https://thesweetsetup.com/a-closer-look-at-the-upcoming-photos-and-camera-apps-in-ios-13/).
 
 **Carplay, HomePod and Siri**
 
@@ -110,14 +120,32 @@ watchOS features preview available [on Apple's website](https://www.apple.com/wa
 
 iOS features preview available [on Apple's website](https://www.apple.com/ios/ios-13-preview/features/).
 
-#### iPadOS 13
+**New privacy settings and features**
+
+Note: many of these fetures are available on macOS, too.
+
+- share your location just once
+- Wi-Fi and Bluetooth protection to avoid being tracked via those wireless signals
+- background tracking alerts
+- *Sign-in with Apple*
+    - sign up and login to web apps using your Apple ID, but you choose what details of your Apple account you share
+    - it creates a random email addresses and emails are forwarded to the real inbox. Each app gets a different, random email address
+    - Available on iOS, macOS, tvOS and the web
+    - accounts are already verified and protected by [2-factor authentication](https://support.apple.com/en-us/HT204915)
+- HomeKit privacy improvements
+    - *HomeKit Secure Video*: your home videos are analyzed locally on your HomeKit hub device (HomePod, AppleTV or iPad) and only the analysis result is uploaded to your iCloud account and made available to apps. Them won't get the original video and it is never uploaded on to the cloud
+    - HomeKit coming to routers, it actually is a firewall to stop private home-related data going out
+
+#### iPadOS 13 exclusive features
+
+Besides iOS improvements coming to iPhone and iPod Touch, the ones below are iPad exclusives.
 
 - widget pinning on the homescreen
 - drag to easily swap between apps opened in slide-over mode
 - split-view now supporting multiple views of the same app, thus enabling multi-window
 - tap and hold to preview links
 - iCloud Drive now supports file and folder sharing
-- Files app getting support for thumb-drives, SD cards and SMB shares
+- Files app getting support for thumb-drives, SD cards and SMB shares. Only on USB-C equipped iPads.
 - Apps such as Lightroom can import files w/o passing throught the gallery.
 - Safari on iPad gets:
     - desktop-class browsing
@@ -151,36 +179,12 @@ iPadOS features preview available [on Apple's website](https://www.apple.com/ipa
 - T2 chip providing activation lock to enabled Macs (and I am wondering how it is different from today)
 - new gallery view in *Notes*
 - ScreenTime
-- *DriveKit* moves kernel extensions to userland, aiming to enhance security. Original kind of kernel extensions to be dropped in the future
+- *[DriverKit](https://developer.apple.com/documentation/driverkit)*, to move kernel extensions to userland for enhanced security. Traditional kernel extensions to be dropped in the future (no ETA given yet)
 - apps need user authorization to read/write Desktop, Documents, iCloud Drive and external drives
 - zsh to be the default shell ([source](https://twitter.com/krzyzanowskim/status/1135670186932080641))
 - ... last but not least, the official name of 'Marzipan' is *Project Catalyst*
 
 macOS 10.15 features preview available [on Apple's website](https://www.apple.com/macos/catalina-preview/features/).
-
-#### iOS, iPadOS and macOS
-
-- peek and pop, quick actions in homescreen and Control Center and other 3D-touch-specific features coming to iPhone and iPads as 'Haptic Touch' features
-- redesigned *Reminders* app
-- *Find My*
-    - merges *Find My Devices* and *Find My Friends* apps
-    - find your devices offline by using other devices as mesh networks
-    - encrypted and anonymous
-- iOS and iPadOS have a much improved PWA support. Check [this thread](https://twitter.com/firt/status/1135709949772881921) for screenshots and features
-
-**New privacy settings and features**
-
-- share your location just once
-- Wi-Fi and Bluetooth protection to avoid being tracked via those wireless signals
-- background tracking alerts
-- *Sign-in with Apple*
-    - sign up and login to web apps using your Apple ID, but you choose what details of your Apple account you share
-    - it creates a random email addresses and emails are forwarded to the real inbox. Each app gets a different, random email address
-    - Available on iOS, macOS, tvOS and the web
-    - accounts are already verified and protected by [2-factor authentication](https://support.apple.com/en-us/HT204915)
-- HomeKit privacy improvements
-    - *HomeKit Secure Video*: your home videos are analyzed locally on your HomeKit hub device (HomePod, AppleTV or iPad) and only the analysis result is uploaded to your iCloud account and made available to apps. Them won't get the original video and it is never uploaded on to the cloud
-    - HomeKit coming to routers, it actually is a firewall to stop private home-related data going out
 
 #### Swift 5, SDK and frameworks updates
 

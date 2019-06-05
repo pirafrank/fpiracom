@@ -6,11 +6,13 @@ category: ["Articles"]
 tags: ["Apple", "iOS", "macOS", "hardware"]
 ---
 
-*Update 1: added information about features and changes announced today during the State of the Union keynote.*
+*Update 1 (June 3): added information about features and changes announced today during the State of the Union keynote.*
 
-*Update 2: added links to previews on Apple's website.*
+*Update 2 (June 3: added links to previews on Apple's website.*
 
-*Update 3: PWA improvements notes.*
+*Update 3 (June 4): PWA improvements notes.*
+
+*Update 4 (June 5): ARKit 3 requirements*
 
 <br/>
 
@@ -112,9 +114,9 @@ iOS features preview available [on Apple's website](https://www.apple.com/ios/io
 
 - widget pinning on the homescreen
 - drag to easily swap between apps opened in slide-over mode
-- split-view now supporting multiple views of the same app
+- split-view now supporting multiple views of the same app, thus enabling multi-window
 - tap and hold to preview links
-- iCloud Drive now supports file sharing
+- iCloud Drive now supports file and folder sharing
 - Files app getting support for thumb-drives, SD cards and SMB shares
 - Apps such as Lightroom can import files w/o passing throught the gallery.
 - Safari on iPad gets:
@@ -158,6 +160,7 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
 
 #### iOS, iPadOS and macOS
 
+- peek and pop, quick actions in homescreen and Control Center and other 3D-touch-specific features coming to iPhone and iPads as 'Haptic Touch' features
 - redesigned *Reminders* app
 - *Find My*
     - merges *Find My Devices* and *Find My Friends* apps
@@ -205,6 +208,8 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
     - audio support in AR Quick Look
     - AR coaching
     - last but not least, Minecraft coming to i*OS playable in real world thanks to ARKit. Players can even 'jump into' the game field
+    - ARKit 3 will be available on devices currently supporting it, but some features will be restricted to iPhones and iPads with A12/A12X Bionic chips. Those are: people occlusion, motion capture, simultaneous front and back camera usage, and multiple face tracking. [Apple docs here](https://developer.apple.com/augmented-reality/arkit/)
+    - Full coverage on ARKit 3 by 9to5mac available [here](https://9to5mac.com/2019/06/03/apple-arkit-3/)
 - *RealityKit*, a new framework for easier integration of 3D modeling into apps
 - *Reality Composer* app
     - a fast and easy way to create 3D models
@@ -232,7 +237,12 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
     - text recognition
     - support for 100+ ML model types
     - model personalization to let apps update models in the background using anonymized bits of user data
-- new watchOS framework to develop native apps
+- [VisionKit](https://developer.apple.com/documentation/visionkit), to use the camera of iOS devices to scan documents
+- [PencilKit](https://developer.apple.com/documentation/pencilkit), to easily handle drawing
+- [CryptoKit](https://developer.apple.com/documentation/cryptokit), to perform common cryptographic operations
+- new watchOS framework to develop native indipendent apps
+
+*Hacking with Swift* published [a comprehensive article](https://www.hackingwithswift.com/articles/193/whats-new-in-ios-13) covering all announcements for developers.
 
 ### Hardware announcements
 

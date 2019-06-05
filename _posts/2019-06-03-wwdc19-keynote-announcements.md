@@ -210,8 +210,8 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
     - last but not least, Minecraft coming to i*OS playable in real world thanks to ARKit. Players can even 'jump into' the game field
     - ARKit 3 will be available on devices currently supporting it, but some features will be restricted to iPhones and iPads with A12/A12X Bionic chips. Those are: people occlusion, motion capture, simultaneous front and back camera usage, and multiple face tracking. [Apple docs here](https://developer.apple.com/augmented-reality/arkit/)
     - Full coverage on ARKit 3 by 9to5mac available [here](https://9to5mac.com/2019/06/03/apple-arkit-3/)
-- *RealityKit*, a new framework for easier integration of 3D modeling into apps
-- *Reality Composer* app
+- [RealityKit](https://developer.apple.com/documentation/realitykit), a new framework for easier integration of 3D modeling into apps
+- *[Reality Composer](https://developer.apple.com/augmented-reality/reality-composer/)* app
     - a fast and easy way to create 3D models
     - WYSIWYG editor
     - Coming to iOS and macOS
@@ -231,7 +231,7 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
     - new workflow in Xcode dedicated to it
     - interactive online documentation
     - check [this thread](https://twitter.com/b3ll/status/1135757988612861952) for an 'Hello World!' and some notes about SwiftUI
-- MLKit, new features:
+- [CoreML](https://developer.apple.com/machine-learning/) new features:
     - new image saliency
     - on-device speech (similar to what Google showed at the I/O in May)
     - text recognition

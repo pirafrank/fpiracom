@@ -14,6 +14,10 @@ tags: ["Apple", "iOS", "macOS", "hardware"]
 
 *Update 4 (June 5): ARKit 3 requirements*
 
+*Update 5 (June 7): operating systems and Sidecar requirements. New section highlightning interviews.*
+
+For live updates, please follow me on [twitter]({{ site.data.social.twitter.url }}).
+
 <br/>
 
 A (very long) list of today's announcements. The source is mainly the today keynote, otherwise sources are linked.
@@ -37,6 +41,7 @@ It will be updated as new features and hidden tricks are discovered.
 - new underwater screensaver
 
 #### watchOS 6
+
 - new watchfaces, including a new one that recalls the Siri one of today. All of them supports new complications (maybe on S4 only, though)
 - haptic and audio chimes trigger each new hour
 - new apps: *Apple Books* for audiobooks, *Voice Memos*, *Calculator*, all of them with their complications
@@ -62,7 +67,10 @@ It will be updated as new features and hidden tricks are discovered.
 
 watchOS features preview available [on Apple's website](https://www.apple.com/watchos/watchos-preview/).
 
+Available as a free update for Apple Watch capable of running watchOS 5, so since gen 1.
+
 #### iOS 13
+
 - (the much awaited) dark mode
 - performance and speed optimizations
 - 30% faster FaceID
@@ -87,8 +95,11 @@ watchOS features preview available [on Apple's website](https://www.apple.com/wa
     - merges *Find My Devices* and *Find My Friends* apps
     - find your devices offline by using other devices as mesh networks
     - encrypted and anonymous
+    - available on macOS Catalina, too. This is a great news for all those devices (including Macs not having cellular connectivity)
+    - for many other details on how it works, check [this article by WIRED](https://www.wired.com/story/apple-find-my-cryptography-bluetooth/)
 - peek and pop, quick actions in homescreen and Control Center and other 3D-touch-specific features coming to iPhone and iPads as 'Haptic Touch' features
 - much improved PWA support. Check [this thread](https://twitter.com/firt/status/1135709949772881921) for screenshots and features
+- you can set Safari to autoclose tabs after a day, a week or a month
 - iPads got their own iOS branch, called *iPadOS*, albeit Gui Rambo [has proved](https://twitter.com/_inside/status/1135640410175332356) it's just a marketing name. It's still iOS under the hood, not a fork the way tvOS is
 
 **Photos and Camera**
@@ -136,6 +147,8 @@ Note: many of these fetures are available on macOS, too.
     - *HomeKit Secure Video*: your home videos are analyzed locally on your HomeKit hub device (HomePod, AppleTV or iPad) and only the analysis result is uploaded to your iCloud account and made available to apps. Them won't get the original video and it is never uploaded on to the cloud
     - HomeKit coming to routers, it actually is a firewall to stop private home-related data going out
 
+iOS 13 will be available as a free update for iPhone 6S, SE and later and the recently announced iPod Touch 7th gen.
+
 #### iPadOS 13 exclusive features
 
 Besides iOS improvements coming to iPhone and iPod Touch, the ones below are iPad exclusives.
@@ -167,12 +180,16 @@ Besides iOS improvements coming to iPhone and iPod Touch, the ones below are iPa
 
 iPadOS features preview available [on Apple's website](https://www.apple.com/ipados/ipados-preview/features/).
 
+It will be available as a free update for iPad Air 2 and later, including all iPad Pro.
+
 #### macOS 10.15 Catalina
 
-- iTunes is finally and officially dead. New apps Podcasts, Music and TV taking place
+- iTunes is finally and officially dead. New apps *Podcasts*, *Music* and *TV* taking place
+    - *Music* and *TV* apps are based on AppKit, *Podcasts* on UIKit for Mac
+    - [Apple has published a support article on the matter](https://support.apple.com/en-us/HT210200).
 - iOS device management being integrated in Finder sidebar. (I think it makes sense)
 - TV app to support 4K HDR and Dolby Atmos
-- Sidecar to turn you iPad as a secondary display, like to what Duet and Luna display do. Apple Pencil supported as input device, too
+- Sidecar to turn you iPad as a secondary display, like to what Duet and Luna display do. It also provides virtual Touch Bar on iPad screen even to Macs which don't have it. Apple Pencil supported as input device, too. [These are the supported Macs](https://twitter.com/stroughtonsmith/status/1136413491462594560)
 - new Accessibility features:
     - Voice Control to control the Mac entirely by voice
     - full 'voice control' coming to iOS and macOS, keywords like  *numbers* and *grid* show up numbers on the screen to enable selection of GUI areas. Audio is processed locally. Personally those are UX features you'd expect by Apple
@@ -185,6 +202,16 @@ iPadOS features preview available [on Apple's website](https://www.apple.com/ipa
 - ... last but not least, the official name of 'Marzipan' is *Project Catalyst*
 
 macOS 10.15 features preview available [on Apple's website](https://www.apple.com/macos/catalina-preview/features/).
+
+It will be available as a free update for:
+
+- MacBook 2015 and later
+- MacBook Air 2012 and later
+- MacBook Pro 2012 and later
+- Mac Mini 2012 and later
+- iMac 2012 and later
+- iMac Pro (all)
+- Mac Pro 2013 and later
 
 #### Swift 5, SDK and frameworks updates
 
@@ -297,6 +324,12 @@ macOS 10.15 features preview available [on Apple's website](https://www.apple.co
 
 All of those goodness will be available in the fall. Usually in late September for iOS, watchOS and tvOS and first half of October for macOS.
 
-Wow! That's it for now.
+### Interviews
+
+Doug Brooks, the Apple Product Manager for new Mac Pro has been interviewed by folks running the Mac Power Users podcast. You can listen to it [here](https://www.relay.fm/mpu/485).
+
+Also, Federico Viticci got the priviledge to interview Craig Federighi, Apple's current VP of Software Engineering, in his AppStories podcast. The episode is really a worth a listen. [Grab it here](https://www.macstories.net/news/craig-federighi-the-appstories-interview/).
+
+That's all for now.
 
 Thanks for reading.

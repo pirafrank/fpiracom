@@ -143,6 +143,7 @@ Note: many of these fetures are available on macOS, too.
     - it creates a random email addresses and emails are forwarded to the real inbox. Each app gets a different, random email address
     - Available on iOS, macOS, tvOS and the web
     - accounts are already verified and protected by [2-factor authentication](https://support.apple.com/en-us/HT204915)
+    - TechCrunch has wrote [FAQs](https://techcrunch.com/2019/06/07/answers-to-your-burning-questions-about-how-sign-in-with-apple-works/) on the matter. 
 - HomeKit privacy improvements
     - *HomeKit Secure Video*: your home videos are analyzed locally on your HomeKit hub device (HomePod, AppleTV or iPad) and only the analysis result is uploaded to your iCloud account and made available to apps. Them won't get the original video and it is never uploaded on to the cloud
     - HomeKit coming to routers, it actually is a firewall to stop private home-related data going out

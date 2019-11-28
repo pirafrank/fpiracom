@@ -65,10 +65,11 @@ I'm often asked about development tools and useful apps and services I use daily
 #### iOS
 
 - iOS with latest updates
-- Blink
+- Blink shell
 - PDF Expert
 - PDF Viewer (by PSPDFKit creators)
 - Working Copy
+- ShellFish
 - Textastic
 - Pythonista
 - play.js
@@ -82,7 +83,6 @@ I'm often asked about development tools and useful apps and services I use daily
 - MindNode
 - iWorks (Pages and Keynote)
 - Microsoft Word and Excel
-- Printer Pro
 - Pocket Casts
 - Bloomberg
 - SeekingAlpha
@@ -97,7 +97,6 @@ I'm often asked about development tools and useful apps and services I use daily
 - Net Status
 - Kindle
 - Google Maps
-- Maps.me (awesome offline maps)
 - AirBnB
 - Hostelworld
 - Skyscanner

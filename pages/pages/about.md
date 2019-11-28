@@ -26,17 +26,18 @@ In 2013 I joined EESTEC, a European network of engineering students where member
 
 I have been involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
-Today I work as back-end developer at [Leonardo Company](http://leonardocompany.com/en). There are many projects I'm involved in, mainly Java ones running in Docker or IBM WebSphere, while others built on Oracle Middleware platform. I'm tuned to Apple security news and I'm always ready for the next big thing in tech.
+Today I work as back-end developer at [Leonardo Company](http://leonardocompany.com/en). There are many projects I'm involved in, mainly Java ones running in Docker or IBM WebSphere, while others built on Oracle Middleware platform.
+
+I'm tuned to Apple security news and I think GUIs are largely overrated. My daily carry is an iPad moshed to zsh and nvim. If you're curious about my setup, feel free to check my [dotfiles]({{site.data.social.github.url}}/dotfiles) repo and [toolbelt]({{site.baseurl}}/my-toolbelt) page.
 
 ### Skills
 
 - **Front-end dev:** Vue.js, CSS, SCSS. Some experience in AngularJS and Angular 6
-- **Back-end dev:** Java EE, Flask, node.js and ExpressJS, ElectronJS. Some experience in Ruby on Rails.
-- **Web servers:** nginx, Apache
+- **Back-end dev:** Java EE, Flask, node.js and ExpressJS, ElectronJS. In the past: Ruby on Rails
 - **Application servers:** Oracle WebLogic, IBM WebSphere, Tomcat
 - **Databases:** Oracle DB, PostgreSQL, mongoDB, SQLite, CouchDB, MySQL/MariaDB
-- **System Administration:** Server deployment, configuration and hardening (SSH, OpenVPN, etc.)
-- **Programming languages:** Python 2/3, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, Bash, C
+- **SysAdmin:** Bash scripting, nginx configuration, server deployment, configuration and hardening (SSH config, Iptables, firewalld, OpenVPN, etc.)
+- **Languages:** Python 2/3, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, C
 - **VCS** Git (on GitHub, Azure DevOps, BitBucket), SVN
 - **Operating Systems:** Debian Linux-based, CentOS 6+, macOS 10.7+, Windows XP+
 - **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Oracle WebLogic

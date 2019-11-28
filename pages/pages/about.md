@@ -26,26 +26,26 @@ In 2013 I joined EESTEC, a European network of engineering students where member
 
 I have been involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
-Today I work as Java and Oracle developer at [Leonardo Company](http://leonardocompany.com/en). And I'm always ready for the next big thing in tech.
+Today I work as back-end developer at [Leonardo Company](http://leonardocompany.com/en). There are many projects I'm involved in, mainly Java ones running in Docker or IBM WebSphere, while others built on Oracle Middleware platform. I'm tuned to Apple security news and I'm always ready for the next big thing in tech.
 
 ### Skills
 
-- **Front-end dev:** HTML, CSS, SCSS, JavaScript, AngularJS, Angular 6
-- **Back-end dev:** Flask, node.js (ExpressJS), ElectronJS, Ruby on Rails
-- **Web servers:** nginx, Apache, Puma
-- **Application servers:** Oracle WebLogic, IBM WebSphere
-- **Databases:** Oracle DB, PostgreSQL, SQLite, CouchDB, MySQL/MariaDB
+- **Front-end dev:** Vue.js, CSS, SCSS. Some experience in AngularJS and Angular 6
+- **Back-end dev:** Java EE, Flask, node.js and ExpressJS, ElectronJS. Some experience in Ruby on Rails.
+- **Web servers:** nginx, Apache
+- **Application servers:** Oracle WebLogic, IBM WebSphere, Tomcat
+- **Databases:** Oracle DB, PostgreSQL, mongoDB, SQLite, CouchDB, MySQL/MariaDB
 - **System Administration:** Server deployment, configuration and hardening (SSH, OpenVPN, etc.)
 - **Programming languages:** Python 2/3, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, Bash, C
-- **VCS** Git, SVN (including TortoiseSVN)
-- **Operating Systems:** Debian Linux-based, CentOS, macOS, Windows 7+
+- **VCS** Git (on GitHub, Azure DevOps, BitBucket), SVN
+- **Operating Systems:** Debian Linux-based, CentOS 6+, macOS 10.7+, Windows XP+
 - **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Oracle WebLogic
 - **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode, Aruba Cloud
-- **CMS and static site generators:** Prestashop, Wordpress, Jekyll
-- **Other tools:** Docker, XSLT, XQuery, Let’s Encrypt, GrSecurity, Gulp, Bower
-- **Other technical skills:** Computer security fundamentals, cryptography and server hardware
-- **Graphical tools:** Photoshop (mostly for front-end assets), Sketch by Bohemian Coding
-- **Soft Skills:** Project Management and Tracking, Team Leadership, Team Working, Social Networking, Event Organisation
+- **Other tools:** Docker, XSLT, XQuery, Let’s Encrypt, GrSecurity, Gulp, Bower, Webpack, Babel
+- **Static-site generators and CMS:** Jekyll, Wordpress, and in the past Prestashop
+- **Other technical skills:** Fundamentals of computer security, cryptography and server hardware knowledge
+- **Graphical tools:** Photoshop (mostly for front-end assets), Sketch by Bohemian Coding, paint.net
+- **Soft Skills:** Problem Solving, Team Working, Project Management and Tracking, Team Leadership, Social Networking, Event Organisation
 
 **What's next?**
 

@@ -42,7 +42,10 @@ if ('serviceWorker' in navigator) {
                 // It's the perfect time to display a "New content is available; please refresh."
                 // message in the page's interface.
                 console.log('New or updated content is available.');
-                location.reload();
+                if (window.confirm("New content is available. Refresh the page?")) {
+                  console.log("You pressed OK!");
+                  window.location.reload();
+                }
               } else {
                 // At this point, everything has been precached.
                 // It's the perfect time to display a "Content is cached for offline use." message.

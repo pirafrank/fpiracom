@@ -192,3 +192,5 @@ exclude:
     - CONTRIBUTOR
     - sw-config.js
     - scripts
+    - _jekyll_ignore
+    - .gitignore

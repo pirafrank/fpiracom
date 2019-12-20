@@ -2,12 +2,13 @@ _site
 .DS_Store
 .jekyll
 .bundle
+*.lock
 .sass-cache
 node_modules
-package.json
 _sass/_cssdebug.scss
 static
 .jekyll-metadata
 _posts/2020-01-01-test.md
 pages/test.md
 service-worker.js
+.jekyll-cache

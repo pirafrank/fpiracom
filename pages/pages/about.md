@@ -13,6 +13,7 @@ show_title: true
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
 - [Contact me](#contact-me)
+- [Follow me](#follow-me)
 
 ### Bio
 
@@ -37,14 +38,14 @@ I'm tuned to Apple security news and I think GUIs are largely overrated. My dail
 - **Application servers:** Oracle WebLogic, IBM WebSphere, Tomcat
 - **Databases:** Oracle DB, PostgreSQL, mongoDB, SQLite, CouchDB, MySQL/MariaDB
 - **SysAdmin:** Bash scripting, nginx configuration, server deployment, configuration and hardening (SSH config, Iptables, firewalld, OpenVPN, etc.)
-- **Languages:** Python 2/3, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, C
-- **VCS** Git (on GitHub, Azure DevOps, BitBucket), SVN
-- **Operating Systems:** Debian Linux-based, CentOS 6+, macOS 10.7+, Windows XP+
+- **Languages:** Python, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, C
+- **VCS** Git (including platforms for Agile integration like Azure DevOps and GitHub), SVN
+- **Operating Systems:** Debian Linux-based, CentOS 6+, macOS 10.6+, Windows XP+, iOS and Android
 - **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Oracle WebLogic
-- **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode, Aruba Cloud
-- **Other tools:** Docker, XSLT, XQuery, Let’s Encrypt, GrSecurity, Gulp, Bower, Webpack, Babel
-- **Static-site generators and CMS:** Jekyll, Wordpress, and in the past Prestashop
-- **Other technical skills:** Fundamentals of computer security, cryptography and server hardware knowledge
+- **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode, Aruba Cloud, Scaleway
+- **Other tools:** Docker, XSLT, XQuery, Let’s Encrypt, GrSecurity, Webpack, Babel
+- **Static-site generators and CMS:** Jekyll. In the past: Wordpress and Prestashop
+- **Other technical skills:** Fundamentals of computer security and cryptography
 - **Graphical tools:** Photoshop (mostly for front-end assets), Sketch by Bohemian Coding, paint.net
 - **Soft Skills:** Problem Solving, Team Working, Project Management and Tracking, Team Leadership, Social Networking, Event Organisation
 
@@ -101,5 +102,7 @@ Plus every now and then I find inspiring media and quotes. Have a look.
 {% include contacts/main.html %}
 
 {% include contacts/pgp.html %}
+
+{% include contacts/follow-me.html %}
 
 Thanks for reading this page. I look forward to hearing from you.

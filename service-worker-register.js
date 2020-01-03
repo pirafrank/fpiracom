@@ -44,7 +44,7 @@ if ('serviceWorker' in navigator) {
                 console.log('New or updated content is available.');
                 if (window.confirm("New content is available. Refresh the page?")) {
                   console.log("You pressed OK!");
-                  window.location.reload();
+                  window.location.reload(true); // force reloading the page to update browser cache
                 }
               } else {
                 // At this point, everything has been precached.

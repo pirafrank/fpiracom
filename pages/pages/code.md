@@ -13,14 +13,13 @@ While I cannot tell about things I work on daily, there are weekend projects, to
 - [dotfiles]({{ site.data.social.github.url }}/dotfiles)
 - [gists]({{ site.data.social.github.gist }})
 - [My toolbelt]({{ site.baseurl }}/my-toolbelt/)
-- [Snippets]({{ site.data.social.github.url }}/snippets)
 
 #### Useful resources
 
 Coder? Power-user? I hope these links can be helpful to you.
 
-- [For developers]({{ site.baseurl }}/developers)
 - [Security]({{ site.baseurl }}/security)
 - [Cheat-sheets]({{ site.data.social.github.url }}/cheat-sheets)
+- [Snippets]({{ site.data.social.github.url }}/snippets)
 - [Brute-force calculator online]({{ site.baseurl }}/utilities/bfc)
 - [IT calendar]({{ site.baseurl }}/calendars/itcalendar/)

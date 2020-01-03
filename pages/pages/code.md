@@ -7,7 +7,7 @@ show_title: true
 
 I code, for passion and for work. And I like to share it, too.
 
-While I cannot tell about things I work on daily, there are weekend projects, tools, utilities and more code I can put up here. You can find a comprehensive list of them all below.
+While I cannot tell about things I work on daily, there are weekend projects, tools, utilities and more code I can put up here. They are listed below.
 
 - [Projects]({{ site.baseurl }}/projects/)
 - [dotfiles]({{ site.data.social.github.url }}/dotfiles)

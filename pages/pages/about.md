@@ -68,6 +68,7 @@ Usually I write little pieces of code to speed up my work and when I have some s
 
 ### Honours and Certificates
 
+- AZ-900 - Microsoft Azure Fundamentals, 2019
 - [AngularJS Certificate by Bax Energy]({{ site.baseurl }}/static/files/honors/AngularJS_Certificate_Bax_Energy_oriz.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015-2016_certificate.pdf)
 - [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015]({{ site.baseurl }}/static/files/honors/eestec_ittc_2015_certificate.pdf)

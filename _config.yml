@@ -194,3 +194,4 @@ exclude:
     - scripts
     - _jekyll_ignore
     - .gitignore
+    - list_tags.sh

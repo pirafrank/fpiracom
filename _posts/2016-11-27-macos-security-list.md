@@ -1,7 +1,7 @@
 ---
 title: macOS security list
 subtitle: A short guide to harden your Mac and keep it safe
-categories: ['Guides']
+categories: ['How-tos']
 tags: ['Security','macOS','best practices']
 
 ---

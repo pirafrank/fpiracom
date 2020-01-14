@@ -195,3 +195,4 @@ exclude:
     - _jekyll_ignore
     - .gitignore
     - list_tags.sh
+    - '/**/*.disabled'

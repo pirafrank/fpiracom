@@ -89,10 +89,10 @@ Sometimes I find myself reading thrillers.
 
 **Traveling** Visiting new places and discovering new cultures widens your mind and challenges you. When I have the chance to leave, I always do.
 
-Plus every now and then I find inspiring media and quotes. Have a look.
+Plus, every now and then I find quotes and media that inspire me. They are listed below.
 
-- [Inspiring media]({{ site.baseurl }}/inspiring/)
 - [Quotes]({{ site.baseurl }}/quotes/)
+- [Media]({{ site.baseurl }}/inspiring/)
 
 ### Resume
 

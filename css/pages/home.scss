@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .headText {
   margin: 0 auto;
-  padding: 10px 20px 40px 25px;
+  padding: 10px 20px 40px 0px; // dont add left padding please
   padding-top: 4em;
   width: 100%;
   text-align: left;
@@ -89,18 +89,26 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.2em;
   padding-top: 0.1em;
   font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  font-family: $defaultSerif;
 
   a {
-    font-size: 28px;
-    font-style: bold;
     text-decoration: none;
   }
 }
 
 .infoText {
-  font-size: 14px;
+  //font-size: 14px;
   font-weight: 300;
   //color: $lightestGray;
+  line-height: 1.4;
+}
+
+.whisper {
+  font-size: 14px;
+  font-weight: normal;
+  color: $lightGray;
   line-height: 1.4;
 }
 
@@ -215,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   width: 100%;
   max-width: 890px;
-  padding-top: 35px;
+  //padding-top: 35px;
 
   @include mobile {
     padding-left: 1em;
@@ -248,8 +256,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sectionTitle {
-  font-family: $defaultSansSerif;
-  font-weight: bold;
+  padding-top: 1em;
+  font-family: $defaultSerif;
+  font-weight: normal;
   font-size: 24px;
 
   @include mobile {

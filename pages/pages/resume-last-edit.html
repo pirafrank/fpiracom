@@ -1,0 +1,24 @@
+<script>
+  function httpGetResumeLastEditAsync(callback) {
+    var url = "https://cdn.fpira.com/static/files/cv/resume-francesco-pira.pdf";
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if (request.readyState == 4 && request.status == 200) {
+        var lastEdit = request.getResponseHeader("Last-Modified");
+        var lastEditDate = lastEdit.substring(5, 16)
+        console.log("last edited on: ");
+        console.log(lastEditDate);
+        //alert(lastEditDate);
+        document.getElementById('resume-last-edit-date').innerHTML = "Last edit: " + lastEditDate;
+      }
+    }
+    request.open("GET", url, true); // true for asynchronous
+    request.send(null);
+
+  }
+  window.onload = httpGetResumeLastEditAsync();
+</script>
+
+<p>
+  <em id="resume-last-edit-date"></em>
+</p>

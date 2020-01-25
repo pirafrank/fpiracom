@@ -99,6 +99,8 @@ Plus, every now and then I find quotes and media that inspire me. They are liste
 
 [Download my resume]({{ site.baseurl }}/static/files/cv/resume-francesco-pira.pdf)
 
+{% include_relative resume-last-edit.html %}
+
 ### Contact me
 
 {% include_relative contacts/main.html %}

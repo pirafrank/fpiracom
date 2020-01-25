@@ -18,7 +18,7 @@ show_title: true
 
 ### Bio
 
-Hello, my name is Francesco (Frank) Pira, I'm 26yo and live in Catania, Italy, where I part-time study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
+Hello, my name is Francesco (Frank) Pira, I'm 27yo and live in Catania, Italy, where I part-time study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
 
 My interests are programming (especially web development), technology, big data, business and start-ups. I like working in team on projects that challenge me and I'm fascinated by finding the *best practice* in doing something. I also like advising and motivating on topics I'm skilled. Recently I've found out writing is one of my growing passions.
 

@@ -13,6 +13,7 @@ show_title: true
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
 - [Contact me](#contact-me)
+- [Verify my identity](#verify-my-identity)
 - [Follow me](#follow-me)
 
 ### Bio
@@ -103,6 +104,8 @@ Plus, every now and then I find quotes and media that inspire me. They are liste
 {% include_relative contacts/main.html %}
 
 {% include_relative contacts/pgp.html %}
+
+{% include_relative contacts/identity-verification.html %}
 
 {% include_relative contacts/follow-me.html %}
 

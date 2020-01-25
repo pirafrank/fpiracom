@@ -18,9 +18,13 @@ github:
   user: pirafrank
   gist: 'https://gist.github.com/pirafrank'
 goodreads:
-  category: #reading
-  url: #'https://www.goodreads.com/pirafrank'
-  user: #pirafrank
+  category: reading
+  url: 'https://www.goodreads.com/pirafrank'
+  user: pirafrank
+gravatar:
+  category: 'web identity'
+  url: 'https://gravatar.com/pirafrank'
+  user: pirafrank
 instagram:
   category: #photo
   url: #'http://instagram.com/pirafrank'

@@ -100,10 +100,10 @@ Plus, every now and then I find quotes and media that inspire me. They are liste
 
 ### Contact me
 
-{% include contacts/main.html %}
+{% include_relative contacts/main.html %}
 
-{% include contacts/pgp.html %}
+{% include_relative contacts/pgp.html %}
 
-{% include contacts/follow-me.html %}
+{% include_relative contacts/follow-me.html %}
 
 Thanks for reading this page. I look forward to hearing from you.

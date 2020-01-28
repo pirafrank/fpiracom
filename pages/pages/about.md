@@ -13,7 +13,7 @@ show_title: true
 - [Other things I like](#other-things-i-like)
 - [Resume](#resume)
 - [Contact me](#contact-me)
-- [Verify my identity](#verify-my-identity)
+- [Verify my identity](#verify)
 - [Follow me](#follow-me)
 
 ### Bio

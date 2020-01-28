@@ -163,6 +163,7 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-gist # Support for GitHub gists
   - jekyll-archives
+  - jekyll-admin
   #- jekyll-minifier # compress html, css and js
 
 # read default jekyll-minifier settings here:

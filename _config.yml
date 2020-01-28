@@ -162,7 +162,6 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-gist # Support for GitHub gists
-  - jekyll-paginate # pagination support
   - jekyll-archives
   #- jekyll-minifier # compress html, css and js
 

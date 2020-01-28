@@ -34,7 +34,12 @@
 }
 
 .smaller-text {
-    font-size: 14px;
+  font-size: $bodySizeSmaller;
+}
+
+.whisper-text {
+  font-size: 0.8em;
+  color: $gray;
 }
 
 .line-separator {

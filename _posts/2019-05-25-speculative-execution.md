@@ -1,12 +1,17 @@
 ---
-title: Speculative execution side-channel vulnerabilities [Updated]
+title: Speculative execution side-channel vulnerabilities [Update 2]
 subtitle: Keep track of them and check for mitigations to be installed and enabled
 description: "Speculative execution side-channel vulnerabilities: keeping track of them and checking for mitigations to be installed and enabled"
 category: ['Articles']
 tags: ["security", "malware", "hardware"]
+updated: 2020-01-28
 ---
 
-*Update: Added notes about libgo improvements landing in GCC 10 Git.*
+*Update (June 2, 2019): Added notes about libgo improvements landing in GCC 10 Git.*
+
+*Update 2 (Jan 28, 2020): Added CVE-2019-1125, CVE-2019-11135, CVE-2019-12207, CVE-2020-0549, CVE-2020-0548 and updated [spreadsheet](https://z.fpira.com/cpuvulns).*
+
+---
 
 It’s been over a year since speculative execution side-channel vulnerabilities are making the headlines.
 Understanding and knowledge of them are essential to protect against attacks that use them.
@@ -25,6 +30,7 @@ This post tries to gather information about them. I will update it as new ones a
 | CVE-2017-5754 | rogue data cache load | 'Meltdown' or 'Variant 3'
 | CVE-2018-3640 | rogue system register read | 'Variant 3a'
 | CVE-2018-3639 | speculative store bypass | 'Variant 4'
+| CVE-2019-1125 | SWAPGS | SWAPGS ('Spectre Variant 1')
 
 **Foreshadow**
 
@@ -42,15 +48,21 @@ This post tries to gather information about them. I will update it as new ones a
 | CVE-2018-12130 | microarchitectural fill buffer<br>data sampling (MFBDS) | 'ZombieLoad'
 | CVE-2018-12127 | microarchitectural load port<br>data sampling (MLPDS) | 'RIDL'
 | CVE-2019-11091 | microarchitectural data sampling<br>uncacheable memory (MDSUM) | 'RIDL'
+| CVE-2019-11135 | TAA | 'ZombieLoad V2'
+| CVE-2018-12207 | MCEPSC | 'No eXcuses' or 'iTLB Multihit'
+| CVE-2020-0549 | L1D Eviction Sampling | L1DES
+| CVE-2020-0548 | Vector Register Sampling | VRS
 
 While Spectre variants affect almost all chips featuring out-of-order execution, Intel chips are vulnerable to all speculative execution side-channel attacks.
 
-I've gathered information in resources linked below:
+I've made a spreadsheet (and I'll keep it updated) with more details and a links to *deep dives* by Intel:
 
-- [Comprehensive Google Spreadsheet](https://z.fpira.com/cpuvulns).
+- [Comprehensive Google Spreadsheet](https://z.fpira.com/cpuvulns)
+
+I also advise you to check the following links:
+
+- [Intel security software guidance](https://software.intel.com/security-software-guidance/)
 - [Thread about MDS OS patches](https://twitter.com/pirafrank/status/1128400923632574467)
-
-It is worth to also check [Intel security software guidance](https://software.intel.com/security-software-guidance/).
 
 ### Check for mitigations to be installed and enabled:
 
@@ -89,6 +101,11 @@ Mitigation: Full generic retpoline, STIBP: disabled, RSB filling
 Phoronix has written an interesting post with a comparison of 2nd and 3rd gen Intel CPU performances, with and without mitigations applied. [Check it out](https://www.phoronix.com/scan.php?page=article&item=sandy-fx-zombieload&num=1).
 
 On May 31 2019, GCC developers have pushed code for libgo runtime library aimed at improving context switch speed of golang code running on Linux machines with a x86_64 CPU. More details are available [here](https://www.phoronix.com/scan.php?page=news_item&px=Golang-Cheaper-Context-Switches).
+
+For more comparisons about performance penalties, these articles have information worth checking out:
+
+- [The Combined Impact Of Mitigations On Cascade Lake Following Recent JCC Erratum + TAA](https://www.phoronix.com/scan.php?page=article&item=cascadelake-jcc-taa&num=1)
+- [Debian 7 Through Debian Testing Benchmarks With/Without Mitigations](https://www.phoronix.com/scan.php?page=article&item=debian-7-2020&num=1)
 
 ### Conclusions
 

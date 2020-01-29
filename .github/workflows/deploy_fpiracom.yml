@@ -1,0 +1,67 @@
+# deploy fpira.com using GitHub Actions
+
+name: 'deploy_fpiracom'
+
+on:
+  push:
+    branches:
+      - master 
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Workdir
+      run: pwd
+    - name: Listing files in workspace
+      #run: ls -lah /home/runner/work/fpiracom/fpiracom
+      run: ls -lah
+    - name: Set up Ruby 2.4
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.4
+    - name: Cache ruby gems
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Build jekyll website
+      env:
+        JEKYLL_ENV: production
+      run: |
+        #sudo apt-get -yqq install libpq-dev
+        #gem update --system
+        gem install bundler:2.1.4
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+        bundle exec jekyll build
+    - name: Setup node.js environment
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Installing sw-precache
+      run: npm install --global sw-precache
+    - name: Creating sw-config.js file
+      run: sw-precache --config sw-config.js
+    - name: Copying sw-config.js to _site/ directory
+      run: cp service-worker.js _site/
+    - name: Deploy to server
+      uses: AEnterprise/rsync-deploy@v1.0
+      env:
+        DEPLOY_KEY: ${{ secrets.LEIA_RSA_PRIV_KEY }}
+        ARGS: "-e -c -avhz --delete"
+        SERVER_PORT: ${{ secrets.LEIA_SSH_PORT }}
+        FOLDER: "./_site/"
+        SERVER_IP: ${{ secrets.LEIA_SSH_HOST }}
+        USERNAME: ${{ secrets.LEIA_USERNAME }}
+        SERVER_DESTINATION: ${{ secrets.LEIA_DESTINATION }}
+    - name: Send Push Notification
+      uses: techulus/push-github-action@v0.0.2
+      env:
+        API_KEY: ${{ secrets.PUSHBYTECHULUS }}
+        MESSAGE: "Build of fpira.com (master) succeeded!"

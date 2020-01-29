@@ -2,7 +2,6 @@ _site
 .DS_Store
 .jekyll
 .bundle
-*.lock
 .sass-cache
 node_modules
 _sass/_cssdebug.scss

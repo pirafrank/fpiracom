@@ -3,7 +3,7 @@ title: OpenSSH on Windows 10
 subtitle: Install and configure OpenSSH server and client on Windows 10
 description: Install and configure OpenSSH server and client on Windows 10
 category: ["How-tos"]
-tags: ["Sys Admin", "Windows10", "Windows"]
+tags: ["Sys Admin", "Windows 10", "Windows"]
 ---
 
 Well, you want to install OpenSSH server in Windows 10.

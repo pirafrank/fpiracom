@@ -3,25 +3,25 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Francesco Pira//fpira.com//EN
-URL:https://{{ site.domain }}/calendars/posts.ics
+URL:{{ site.url | append: site.baseurl }}/calendars/posts.ics
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-WR-CALNAME:{{ site.name }} {{ site.domain }}
-DESCRIPTION:{{ site.name }} posts calendar. Know more at {{ site.url }}.
+DESCRIPTION:{{ site.name }} posts calendar. Know more at {{ site.url | append: site.baseurl }}.
 TIMEZONE-ID:Europe/Berlin
 X-WR-TIMEZONE:{{ site.timezone }}
 X-WR-RELCALID:C076E282-FP01-4257-ADB1-DAC49DCFPIRA
 X-APPLE-CALENDAR-COLOR:#3344AA
 COLOR:33:44:AA
-X-WR-CALDESC:Calendar of {{ site.name }}'s blog posts. Know more at {{ site.url }}.{% for post in site.posts %}
+X-WR-CALDESC:Calendar of {{ site.name }}'s blog posts. Know more at {{ site.url | append: site.baseurl }}.{% for post in site.posts %}
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
 DTEND;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:[Blog post] {{ post.title | strip_html | strip_newlines | capitalize }}
-DESCRIPTION:{% if post.subtitle %}{{ post.subtitle }}{% else %}{{ post.content | truncatewords: 20}}{% endif %}.\nRead more at {{site.url}}{{site.baseurl}}{{post.url}}
+DESCRIPTION:{% if post.subtitle %}{{ post.subtitle }}{% else %}{{ post.content | truncatewords: 20}}{% endif %}.\nRead more at {{site.url | append: site.baseurl | append: post.url}}
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 TRIGGER:-PT120M

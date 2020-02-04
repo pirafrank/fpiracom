@@ -7,7 +7,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url | append: site.baseurl }}/sitemap.xml">
 
     <!-- rel me -->
     <link href="{{ site.data.social.twitter.url }}" rel="me">
@@ -40,12 +40,12 @@
     <meta name="msapplication-TileColor" content="#3344aa"/>
 
     <!-- Feeds -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url | append: site.baseurl }}/feed.xml" />
 
     <!-- Google AMP -->
     <!--
     {% if page.layout == 'post' %}
-        <link rel="amphtml" href="https://mercury.postlight.com/amp?url={{ site.url }}{{ page.url }}">
+        <link rel="amphtml" href="https://mercury.postlight.com/amp?url={{ site.url | append: site.baseurl | append: page.url }}">
     {% endif %}
     -->
 
@@ -62,12 +62,12 @@
     <!-- Page-specif CSS -->
     {% if layout.custom_css %}
       {% for stylesheet in layout.custom_css %}
-        <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
     {% if page.custom_css %}
       {% for stylesheet in page.custom_css %}
-        <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
 

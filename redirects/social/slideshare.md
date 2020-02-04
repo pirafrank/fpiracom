@@ -11,6 +11,6 @@ show_title: false
 
 {% else %}
 
-<META http-equiv="refresh" content="0;URL={{ site.url }}">
+<META http-equiv="refresh" content="0;URL={{ site.url | append: site.baseurl }}">
 
 {% endif %}

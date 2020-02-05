@@ -29,7 +29,7 @@ custom_css: "pages/blog"
                   <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 </div>
                 <div class="blog-entry-details">
-                  {{ post.date | date: "%B %e, %Y" }}
+                  {{ post.date | date: "%B %-d, %Y" }}
                 </div>
                 <div class="blog-entry-details-thin">
                   Category: {{ post.categories }}

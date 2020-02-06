@@ -164,6 +164,7 @@ plugins:
   - jekyll-gist # Support for GitHub gists
   - jekyll-archives
   - jekyll-admin
+  - jekyll-environment-variables # make ENV vars accessible via site.env
   #- jekyll-minifier # compress html, css and js
 
 # read default jekyll-minifier settings here:

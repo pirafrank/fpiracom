@@ -17,8 +17,5 @@
   Language    : {{ site.locale }}
   Last update : {{ site.time }}
 
-  Based on    : Jekyll Blue
-  JB vers.    : {{ site.version }}
-  Build using : {{ jekyll.version }}
-  Coded with  : love and tools from my
-                toolbelt (/my-toolbelt)
+  Built using : Jekyll {{ jekyll.version }} + plugins ({{ site.plugins | join: ', ' }})
+  Coded with  : love and tools from /my-toolbelt

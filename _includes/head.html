@@ -65,21 +65,21 @@
     {% endif %}
 
     <!-- Scripts -->
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-1.x.min.js" defer />
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/velocity.min.js" defer />
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/page_anchors.js" defer />
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-1.x.min.js" defer ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/velocity.min.js" defer ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/page_anchors.js" defer ></script>
 
     <!-- Page-specific scripts -->
     {% if layout.custom_js %}
       {% for js_file in layout.custom_js %}
-        <script type="text/javascript" src="{{ site.baseurl }}/assets/{{ js_file }}.js" defer />
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/{{ js_file }}.js" defer ></script>
       {% endfor %}
     {% endif %}
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
-        <script type="text/javascript" src="{{ site.baseurl }}/assets/{{ js_file }}.js" defer />
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/{{ js_file }}.js" defer ></script>
       {% endfor %}
     {% endif %}
 
     <!-- SW registration -->
-    <script src="{{ site.baseurl }}/service-worker-register.js"/>
+    <script src="{{ site.baseurl }}/service-worker-register.js" ></script>

@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 custom_css: "pages/home"
-is_home: truem
+is_home: true
 show_title: false
 in_search: false
 ---
@@ -32,7 +32,7 @@ in_search: false
       <!-- end of header info -->
       <!-- content section -->
 
-        <div class="sectionTitle">Latest blog posts</div>
+        <div id="posts" class="sectionTitle">Latest blog posts</div>
         {% for post in site.posts limit: site.home.max_posts %}
           <div class="news newsEntry">
             <span class="news newsTitle"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>

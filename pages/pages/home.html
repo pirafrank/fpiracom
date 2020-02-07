@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 custom_css: "pages/home"
-is_home: truem
+is_home: true
 show_title: false
 in_search: false
 ---
@@ -12,7 +12,7 @@ in_search: false
       <!-- header info -->
       <div class="headText">
         <div class="userAvatarPlate userAvatar">
-          <img src="{{ site.avatar }}" width="120px;">
+          <img src="{{ site.avatar | prepend: site.baseurl }}" width="120px;">
         </div>
         <div class="helloText">Hi, I'm</div>
         <div class="nameText">{{ site.name }}</div>
@@ -27,15 +27,15 @@ in_search: false
         <div class="desktop-hidden smallscreen-hidden">
           <a class="btn btn-medium btn-default btn-no-text-decoration btn-wide-60 center" href="{{ site.baseurl }}/contacts">Get in touch</a>
         </div>
-        <div class="scrolldown desktop-hidden smallscreen-hidden"><a href="#posts"><img src="/assets/icons/down-arrow.svg"></a></div>
+        <div class="scrolldown desktop-hidden smallscreen-hidden"><a href="#posts"><img src="{{ site.baseurl }}/assets/icons/down-arrow.svg"></a></div>
       </div>
       <!-- end of header info -->
       <!-- content section -->
 
-        <div class="sectionTitle">Latest blog posts</div>
+        <div id="posts" class="sectionTitle">Latest blog posts</div>
         {% for post in site.posts limit: site.home.max_posts %}
           <div class="news newsEntry">
-            <span class="news newsTitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
+            <span class="news newsTitle"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
             <div class="newsDate">{{ post.date | date: "%d %B %Y" }}</div>
               {% if site.home.show_excerpt %}
                   {% if post.subtitle %}
@@ -43,12 +43,12 @@ in_search: false
                     <div class="newsExcerpt">
                       {{ post.subtitle | truncatehtml | truncatewords: 20 }}
                       <br><br>
-                      <a href="{{ post.url }}">Read more...</a>
+                      <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
                     </div>
                   {% else %}
                     <div class="newsExcerpt">
                       {{ post.content | truncatehtml | truncatewords: 20 }}
-                      <a href="{{ post.url }}">Read more...</a>
+                      <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
                     </div>
                   {% endif %}
               {% endif %}

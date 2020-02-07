@@ -41,6 +41,8 @@ GEM
       sinatra-contrib (~> 1.4)
     jekyll-archives (2.2.1)
       jekyll (>= 3.6, < 5.0)
+    jekyll-environment-variables (1.0.1)
+      jekyll (>= 3.0, < 5.x)
     jekyll-feed (0.13.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
@@ -115,6 +117,7 @@ DEPENDENCIES
   jekyll (= 4.0.0)
   jekyll-admin
   jekyll-archives
+  jekyll-environment-variables
   jekyll-feed
   jekyll-gist
   jekyll-minifier

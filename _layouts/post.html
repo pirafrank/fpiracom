@@ -1,6 +1,6 @@
 ---
 layout: default
-custom_css: ['posts/posts']
+custom_css: ['layouts/posts']
 ---
 
 <div class="big_container">
@@ -12,14 +12,19 @@ custom_css: ['posts/posts']
         <div class="post-title">
           <h1>{{ page.title | smartify }}</h1>
         </div>
+        {% if page.subtitle %}
         <div class="post-subtitle">
           <strong>{{ page.subtitle }}</strong>
         </div>
+        {% endif %}
         <div class="post-details">
           <i>
             {% assign readtime = page.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
-            Published on {{ page.date | date: "%B %e, %Y" }} in <a href="{{ site.baseurl }}/blog/categories/{{ page.categories[0] | downcase | replace:' ','-' }}">{{ page.categories }}</a>&nbsp;&#8212;&nbsp;{% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read<br>
+            Published on {{ page.date | date: "%B %-d, %Y" }} in <a href="{{ site.baseurl }}/blog/categories/{{ page.categories[0] | downcase | replace:' ','-' }}">{{ page.categories }}</a>&nbsp;&#8212;&nbsp;{% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read
+            {% if page.tags != empty %}
+            <br>
             Tags: {% for tag in page.tags %} <span class="post-tags"><a href="{{ site.baseurl }}/blog/tags/{{ tag | downcase | replace:' ','-' }}">{{ tag }}</a></span> {% endfor %}
+            {% endif %}
           </i>
         </div>
       </div>

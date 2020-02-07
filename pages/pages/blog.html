@@ -10,8 +10,8 @@ in_search: false
 
 <div>
   <div class="blog-page-options">
-    <h5>Timeline / 
-      <a href="{{ site.baseurl }}/blog/categories/">Categories</a> / 
+    <h5>Timeline /
+      <a href="{{ site.baseurl }}/blog/categories/">Categories</a> /
       <a href="{{ site.baseurl }}/blog/tags">Tags</a> /
       <a href="{{ site.baseurl }}/feed.xml">RSS</a> <a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a>
     </h5>
@@ -29,7 +29,7 @@ in_search: false
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </div>
         <div class="blog-entry-details">
-          {{ post.date | date: "%B %e, %Y" }}
+          {{ post.date | date: "%B %-d, %Y" }}
         </div>
         <div class="blog-entry-details-thin">
           Category: {{ post.categories }}

@@ -24,6 +24,7 @@ locale: en_US
 
 # Your website URL (e.g. http://fpira.com)
 # It's important to include http. If you use SSL, write https.
+# This should not include baseurl, if any.
 url: https://fpira.com
 
 # Your website domain (without http:// and https://)
@@ -163,6 +164,7 @@ plugins:
   - jekyll-gist # Support for GitHub gists
   - jekyll-archives
   - jekyll-admin
+  - jekyll-environment-variables # make ENV vars accessible via site.env
   #- jekyll-minifier # compress html, css and js
 
 # read default jekyll-minifier settings here:

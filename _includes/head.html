@@ -7,7 +7,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url | append: site.baseurl }}/sitemap.xml">
 
     <!-- rel me -->
     <link href="{{ site.data.social.twitter.url }}" rel="me">
@@ -40,14 +40,7 @@
     <meta name="msapplication-TileColor" content="#3344aa"/>
 
     <!-- Feeds -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml" />
-
-    <!-- Google AMP -->
-    <!--
-    {% if page.layout == 'post' %}
-        <link rel="amphtml" href="https://mercury.postlight.com/amp?url={{ site.url }}{{ page.url }}">
-    {% endif %}
-    -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url | append: site.baseurl }}/feed.xml" />
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -59,34 +52,34 @@
     <!-- Font-Awesome -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Page-specif CSS -->
+    <!-- Page-specific CSS -->
     {% if layout.custom_css %}
       {% for stylesheet in layout.custom_css %}
-        <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
     {% if page.custom_css %}
       {% for stylesheet in page.custom_css %}
-        <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
 
     <!-- Scripts -->
-    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.x.min.js" defer/>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/velocity.min.js" defer/>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/page_anchors.js" defer/>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-1.x.min.js" defer ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/velocity.min.js" defer ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/page_anchors.js" defer ></script>
 
-    <!-- Page-specif scripts -->
+    <!-- Page-specific scripts -->
     {% if layout.custom_js %}
       {% for js_file in layout.custom_js %}
-        <script type="text/javascript" src='{{ site.baseurl }}/js/{{ js_file }}.js' defer/>
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/{{ js_file }}.js" defer ></script>
       {% endfor %}
     {% endif %}
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
-        <script type="text/javascript" src='{{ site.baseurl }}/js/{{ js_file }}.js' defer/>
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/{{ js_file }}.js" defer ></script>
       {% endfor %}
     {% endif %}
 
     <!-- SW registration -->
-    <script src="{{ site.baseurl }}/service-worker-register.js"/>
+    <script src="{{ site.baseurl }}/service-worker-register.js" ></script>

@@ -1,3 +1,5 @@
+---
+---
 
 // Credits to: Raymond T. Hightower
 // http://rayhightower.com/blog/2016/01/04/how-to-make-lunrjs-jekyll-work-together/
@@ -13,7 +15,7 @@ jQuery(function() {
   });
 
   // Get the generated search_data.json file so lunr.js can search it locally.
-  window.data = $.getJSON('/search_data.json');
+  window.data = $.getJSON('{{site.baseurl}}/search_data.json');
 
   // Wait for the data to load and add it to lunr
   window.data.then(function(loaded_data){

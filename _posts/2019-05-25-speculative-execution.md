@@ -9,7 +9,7 @@ updated: 2020-01-28
 
 *Update (June 2, 2019): Added notes about libgo improvements landing in GCC 10 Git.*
 
-*Update 2 (Jan 28, 2020): Added CVE-2019-1125, CVE-2019-11135, CVE-2019-12207, CVE-2020-0549, CVE-2020-0548 and updated [spreadsheet](https://z.fpira.com/cpuvulns).*
+*Update 2 (Jan 28, 2020): Added CVE-2019-1125, CVE-2019-11135, CVE-2019-12207, CVE-2020-0549, CVE-2020-0548 and updated [spreadsheet](https://a.fpira.com/cpuvulns).*
 
 ---
 
@@ -57,7 +57,7 @@ While Spectre variants affect almost all chips featuring out-of-order execution,
 
 I've made a spreadsheet (and I'll keep it updated) with more details and a links to *deep dives* by Intel:
 
-- [Comprehensive Google Spreadsheet](https://z.fpira.com/cpuvulns)
+- [Comprehensive Google Spreadsheet](https://a.fpira.com/cpuvulns)
 
 I also advise you to check the following links:
 
@@ -109,6 +109,6 @@ For more comparisons about performance penalties, these articles have informatio
 
 ### Conclusions
 
-Speculative execution side-channel vulnerabilities make a relatively new topic in InfoSec and more are likely to be found down the road. I will update this post and the [linked Google Spreadsheet](https://z.fpira.com/cpuvulns) as new vulnerabilities are discovered.
+Speculative execution side-channel vulnerabilities make a relatively new topic in InfoSec and more are likely to be found down the road. I will update this post and the [linked Google Spreadsheet](https://a.fpira.com/cpuvulns) as new vulnerabilities are discovered.
 
 Thanks for reading.

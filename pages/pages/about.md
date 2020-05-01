@@ -97,7 +97,7 @@ Plus, every now and then I find quotes and media that inspire me. They are liste
 
 ### Resume
 
-[Download my resume]({{ site.baseurl }}/static/files/cv/resume-francesco-pira.pdf)
+[Download my resume]({{ site.baseurl }}/public/cv/resume-francesco-pira.pdf)
 
 {% include_relative about/resume-last-edit.html %}
 

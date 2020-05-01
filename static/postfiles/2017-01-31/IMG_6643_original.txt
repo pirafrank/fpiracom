@@ -1,0 +1,84 @@
+General
+Complete name                            : /Users/francesco/Desktop/IMG_6643_original.MOV
+Format                                   : MPEG-4
+Format profile                           : QuickTime
+Codec ID                                 : qt  
+File size                                : 564 MiB
+Duration                                 : 5mn 7s
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 15.4 Mbps
+Encoded date                             : UTC 2017-01-21 20:10:35
+Tagged date                              : UTC 2017-01-21 20:15:43
+Writing library                          : Apple QuickTime
+com.apple.quicktime.location.ISO6709     : +37.xxxx+xxx.xxxx+xxx.xxx/
+com.apple.quicktime.make                 : Apple
+com.apple.quicktime.model                : iPhone 6
+com.apple.quicktime.software             : 10.2
+com.apple.quicktime.creationdate         : 2017-01-21T21:10:34+0100
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.0
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 1 frame
+Format settings, GOP                     : M=1, N=30
+Codec ID                                 : avc1
+Codec ID/Info                            : Advanced Video Coding
+Duration                                 : 5mn 7s
+Bit rate                                 : 15.3 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Rotation                                 : 90°
+Frame rate mode                          : Variable
+Frame rate                               : 29.970 fps
+Minimum frame rate                       : 28.571 fps
+Maximum frame rate                       : 30.000 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.246
+Stream size                              : 561 MiB (99%)
+Title                                    : Core Media Video
+Encoded date                             : UTC 2017-01-21 20:10:35
+Tagged date                              : UTC 2017-01-21 20:15:43
+Color primaries                          : BT.709
+Transfer characteristics                 : BT.709
+Matrix coefficients                      : BT.709
+
+Audio
+ID                                       : 2
+Format                                   : AAC
+Format/Info                              : Advanced Audio Codec
+Format profile                           : LC
+Codec ID                                 : 40
+Duration                                 : 5mn 7s
+Source duration                          : 5mn 7s
+Bit rate mode                            : Variable
+Bit rate                                 : 89.9 Kbps
+Channel(s)                               : 1 channel
+Channel positions                        : Front: C
+Sampling rate                            : 44.1 KHz
+Compression mode                         : Lossy
+Stream size                              : 3.30 MiB (1%)
+Source stream size                       : 3.30 MiB (1%)
+Title                                    : Core Media Audio
+Encoded date                             : UTC 2017-01-21 20:10:35
+Tagged date                              : UTC 2017-01-21 20:15:43
+
+Other #1
+Type                                     : meta
+Duration                                 : 5mn 7s
+Bit rate mode                            : VBR
+
+Other #2
+Type                                     : meta
+Duration                                 : 5mn 7s
+Duration_FirstFrame                      : 143033
+Duration_LastFrame                       : 159273
+Bit rate mode                            : CBR
+
+

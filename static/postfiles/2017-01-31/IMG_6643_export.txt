@@ -1,0 +1,84 @@
+General
+Complete name                            : /Users/francesco/Desktop/IMG_6643_export.m4v
+Format                                   : MPEG-4
+Format profile                           : QuickTime
+Codec ID                                 : qt  
+File size                                : 389 MiB
+Duration                                 : 5mn 7s
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 10.6 Mbps
+Encoded date                             : UTC 2017-01-23 07:28:02
+Tagged date                              : UTC 2017-01-23 07:29:01
+Writing library                          : Apple QuickTime
+com.apple.quicktime.make                 : Apple
+com.apple.quicktime.model                : iPhone 6
+com.apple.quicktime.software             : 10.2
+com.apple.quicktime.creationdate         : 2017-01-21T21:10:34+0100
+
+Video
+ID                                       : 2
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.0
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Format settings, GOP                     : M=2, N=30
+Codec ID                                 : avc1
+Codec ID/Info                            : Advanced Video Coding
+Duration                                 : 5mn 7s
+Bit rate mode                            : Variable
+Bit rate                                 : 10.5 Mbps
+Maximum bit rate                         : 768 Kbps
+Width                                    : 1 080 pixels
+Height                                   : 1 920 pixels
+Display aspect ratio                     : 0.562
+Frame rate mode                          : Variable
+Frame rate                               : 29.970 fps
+Original frame rate                      : 25.000 fps
+Minimum frame rate                       : 28.571 fps
+Maximum frame rate                       : 30.000 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.169
+Stream size                              : 385 MiB (99%)
+Title                                    : Core Media Video
+Encoded date                             : UTC 2017-01-23 07:28:02
+Tagged date                              : UTC 2017-01-23 07:29:01
+Color primaries                          : BT.709
+Transfer characteristics                 : BT.709
+Matrix coefficients                      : BT.709
+
+Audio
+ID                                       : 1
+Format                                   : AAC
+Format/Info                              : Advanced Audio Codec
+Format profile                           : LC
+Codec ID                                 : 40
+Duration                                 : 5mn 7s
+Source duration                          : 5mn 7s
+Bit rate mode                            : Variable
+Bit rate                                 : 89.9 Kbps
+Channel(s)                               : 1 channel
+Channel positions                        : Front: C
+Sampling rate                            : 44.1 KHz
+Compression mode                         : Lossy
+Stream size                              : 3.30 MiB (1%)
+Source stream size                       : 3.30 MiB (1%)
+Title                                    : Core Media Audio
+Encoded date                             : UTC 2017-01-23 07:28:02
+Tagged date                              : UTC 2017-01-23 07:29:01
+
+Other #1
+Type                                     : meta
+Duration                                 : 5mn 7s
+Bit rate mode                            : VBR
+
+Other #2
+Type                                     : meta
+Duration                                 : 5mn 7s
+Duration_FirstFrame                      : 143033
+Duration_LastFrame                       : 159273
+
+

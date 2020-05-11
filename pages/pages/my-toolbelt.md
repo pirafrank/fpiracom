@@ -5,7 +5,7 @@ permalink: /my-toolbelt/
 show_title: true
 ---
 
-I'm often asked about development tools and useful apps and services I use daily. Below there's a quite updated list of them.
+I'm often asked about development tools and useful apps and services I use daily. This list is updated every now and then.
 
 #### Development
 

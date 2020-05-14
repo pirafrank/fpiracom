@@ -3,7 +3,7 @@ title: Speculative execution side-channel vulnerabilities [Update 2]
 subtitle: Keep track of them and check for mitigations to be installed and enabled
 description: "Speculative execution side-channel vulnerabilities: keeping track of them and checking for mitigations to be installed and enabled"
 category: ['Articles']
-tags: ["security", "malware", "hardware"]
+tags: ["Security", "malware", "hardware"]
 updated: 2020-01-28
 ---
 

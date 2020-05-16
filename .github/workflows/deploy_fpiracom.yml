@@ -44,12 +44,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: Installing sw-precache
-      run: npm install --global sw-precache
-    - name: Creating sw-config.js file
-      run: sw-precache --config sw-config.js
-    - name: Copying sw-config.js to _site/ directory
-      run: cp service-worker.js _site/
+    #- name: Installing sw-precache
+    #  run: npm install --global sw-precache
+    #- name: Creating service-worker.js file
+    #  run: sw-precache --config sw-config.js
+    #- name: Copying service-worker.js to _site/ directory
+    #  run: cp service-worker.js _site/
     - name: Deploy to server
       uses: AEnterprise/rsync-deploy@v1.0
       env:

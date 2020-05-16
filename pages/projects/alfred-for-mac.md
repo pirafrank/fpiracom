@@ -13,7 +13,7 @@ You can get workflows and themes I've developed from links below.
 
 Source files and the latest stable version are available on [Github](https://github.com/pirafrank/alfred_workflows).
 
-I also publish workflows on [Packal]({{ site.data.social.packal.url }})
+I also publish workflows on [Packal]({{ site.data.social.packal.url }}).
 
 #### Themes
 

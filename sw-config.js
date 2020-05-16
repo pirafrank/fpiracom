@@ -2,12 +2,14 @@
 
 module.exports = {
   staticFileGlobs: [
-    '_site/css/**/*.css',
-    '_site/**/*.html',
-    '_site/**/*.jpg',
-    '_site/**/*.jpeg',
-    '_site/**/*.png',
-    '_site/js/**/*.js'
+    "_site/index.html",
+    "_site/assets/favicons/*.png",
+    "_site/assets/icons/**/*.png",
+    "_site/assets/icons/**/*.svg",
+    "_site/assets/images/**/*.jpg",
+    "_site/assets/pages/home.css",
+    "_site/assets/js/*.js",
+    "_site/style.css"
   ],
-  stripPrefix: '_site',
-}
+  stripPrefix: "_site",
+};

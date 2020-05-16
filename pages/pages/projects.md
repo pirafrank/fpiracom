@@ -41,7 +41,7 @@ Self-made templates for the awesome [iA Writer](https://ia.net/writer). You can 
 ### Desktop
 
 #### [Alfred Workflows]({{ site.baseurl }}/alfred-for-mac)
-Useful Alfred workflows to enhance your productivity on Mac. Great for developers and power-users.
+Useful Alfred workflows to enhance your productivity on Mac. Good for developers and power-users.
 
 #### [Battery Life Extender]({{ site.baseurl }}/projects/ble)
 The niblest solution of a battery life extender for OS X. Take care of your MacBook.

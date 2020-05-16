@@ -11,11 +11,13 @@ You can get workflows and themes I've developed from links below.
 
 #### Workflows
 
-Workflows source files, as wells as the latest stable versions, are available [on Github](https://github.com/pirafrank/alfred_workflows).
+Source files and the latest stable version are available on [Github](https://github.com/pirafrank/alfred_workflows).
+
+I also publish workflows on [Packal]({{ site.data.social.packal.url }})
 
 #### Themes
 
-Get all themes in a compressed archive from [here]({{site.baseurl}}/static/alfred-themes.zip).
+A zip archive with them all is available [here](http://a.fpira.com/alfredthemes).
 
 #### Noteworthy 3rd-party workflows
 

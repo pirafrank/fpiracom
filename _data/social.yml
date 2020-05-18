@@ -4,6 +4,12 @@ angel:
   category: work
   url: 'https://angel.co/francescopira'
   user: francescopira
+# docker hub
+docker:
+  category: code
+  url: 'http://hub.docker.com/u/pirafrank'
+  user: pirafrank
+  reporoot: 'https://hub.docker.com/r/pirafrank'
 facebook:
   category: #disabled
   url: #disabled

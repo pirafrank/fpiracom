@@ -10,9 +10,9 @@ I code, for passion and for work. And I like to share it, too.
 While I cannot tell about things I work on daily, there are weekend projects, tools, utilities and more code of mine I publicly share.
 
 - [GitHub]({{ site.data.social.github.url }})
-- [Gists]({{ site.data.social.github.gist }})
+- [dotfiles]({{ site.data.social.github.url }}/dotfiles) and [workspace]({{ site.data.social.docker.reporoot}}/workspace)
 - [Projects]({{ site.baseurl }}/projects/)
-- [dotfiles]({{ site.data.social.github.url }}/dotfiles)
+- [Snippets]({{ site.data.social.github.gist }})
 - [My toolbelt]({{ site.baseurl }}/my-toolbelt/)
 
 #### Useful resources

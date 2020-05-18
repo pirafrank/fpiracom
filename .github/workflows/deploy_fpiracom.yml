@@ -19,10 +19,10 @@ jobs:
     - name: Listing files in workspace
       #run: ls -lah /home/runner/work/fpiracom/fpiracom
       run: ls -lah
-    - name: Set up Ruby 2.4
+    - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 2.4
+        ruby-version: 2.5
     - name: Cache ruby gems
       uses: actions/cache@v1
       with:

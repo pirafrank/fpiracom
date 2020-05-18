@@ -103,12 +103,6 @@ Plus, every now and then I find quotes and media that inspire me. They are liste
 
 ### Contact me
 
-{% include_relative contacts/main.html %}
-
-{% include_relative contacts/pgp.html %}
-
-{% include_relative contacts/identity-verification.html %}
-
-{% include_relative contacts/follow-me.html %}
+[Get in touch]({{ site.baseurl }}/contacts).
 
 Thanks for reading this page. I look forward to hearing from you.

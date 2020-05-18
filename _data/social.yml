@@ -77,9 +77,9 @@ pocket:
   url: 'https://getpocket.com/@pirafrank'
   user: pirafrank
 reddit:
-  category: #social
-  url: #'https://www.reddit.com/user/pirafrank'
-  user: #pirafrank
+  category: social
+  url: 'https://www.reddit.com/user/pirafrank'
+  user: pirafrank
 skype:
   category: chat
   url: 'skype:francesco-pira?call'

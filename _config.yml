@@ -199,3 +199,4 @@ exclude:
     - .gitignore
     - list_tags.sh
     - '/**/*.disabled'
+    - '*.sh'

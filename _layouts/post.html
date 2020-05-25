@@ -20,7 +20,8 @@ custom_css: ['layouts/posts']
         <div class="post-details">
           <i>
             {% assign readtime = page.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
-            Published on {{ page.date | date: "%B %-d, %Y" }} in <a href="{{ site.baseurl }}/blog/categories/{{ page.categories[0] | downcase | replace:' ','-' }}">{{ page.categories }}</a>&nbsp;&#8212;&nbsp;{% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read
+            Published on {{ page.date | date: "%B %-d, %Y" }} in <a href="{{ site.baseurl }}/blog/categories/{{ page.categories[0] | downcase | replace:' ','-' }}">{{ page.categories }}</a>
+            <br>Read time:&nbsp;{% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min
             {% if page.tags != empty %}
             <br>
             Tags: {% for tag in page.tags %} <span class="post-tags"><a href="{{ site.baseurl }}/blog/tags/{{ tag | downcase | replace:' ','-' }}">{{ tag }}</a></span> {% endfor %}

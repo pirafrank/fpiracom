@@ -39,7 +39,7 @@ jobs:
         gem install bundler:2.1.4
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
-        bundle exec jekyll build
+        bundle exec jekyll build --trace
     #- name: Setup node.js environment
     #  uses: actions/setup-node@v1
     #  with:

@@ -1,8 +1,9 @@
 // use this in browser console to unregister all service workers
 navigator.serviceWorker.getRegistrations().then(
     function(registrations) {
-        for(let registration of registrations) {  
-            registration.unregister();
+			  var i=0
+				for(i; i<registrations.length; i++) {
+						registrations[i].unregister();
         }
 });
 
@@ -15,7 +16,9 @@ self.addEventListener("activate", function(e) {
 		return self.clients.matchAll();
 	})
 	.then(function(clients) {
-		clients.forEach(client => client.navigate(client.url));
+    clients.forEach(function (client) {
+      return client.navigate(client.url);
+    });
 	});
 });
 

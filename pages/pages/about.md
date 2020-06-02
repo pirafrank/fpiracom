@@ -7,14 +7,12 @@ show_title: true
 
 - [Bio](#bio)
 - [Skills](#skills)
+- [Resume](#resume)
 - [Coding](#coding)
 - [Talks and Events](#talks-and-events)
 - [Honours and certificates](#honours-and-certificates)
 - [Other things I like](#other-things-i-like)
-- [Resume](#resume)
 - [Contact me](#contact-me)
-- [Verify my identity](#verify)
-- [Follow me](#follow-me)
 
 ### Bio
 
@@ -56,11 +54,17 @@ I'm tuned to Apple security news and I think GUIs are largely overrated. My dail
 - Begin Swift and iOS app development
 - Machine learning and Python for data analysis
 
+### Resume
+
+[Download my resume]({{ site.baseurl }}/public/cv/resume-francesco-pira.pdf)
+
+{% include_relative about/resume-last-edit.html %}
+
 ### Coding
 
 Usually I write little pieces of code to speed up my work and when I have some spare time I dedicate myself to weekend projects.
 
-[Check my code and tooling]({{ site.baseurl }}/code/).
+- [GitHub]({{ site.data.social.github.url }})
 
 ### Talks and Events
 
@@ -94,12 +98,6 @@ Plus, every now and then I find quotes and media that inspire me. They are liste
 
 - [Quotes]({{ site.baseurl }}/quotes/)
 - [Media]({{ site.baseurl }}/inspiring/)
-
-### Resume
-
-[Download my resume]({{ site.baseurl }}/public/cv/resume-francesco-pira.pdf)
-
-{% include_relative about/resume-last-edit.html %}
 
 ### Contact me
 

@@ -100,6 +100,10 @@ telegram:
   category: news
   url: 'http://t.me/pirafrank'
   user: pirafrank
+telegram-feed:
+  category: news
+  url: 'http://t.me/fpira'
+  user: fpira
 telegram-im:
   category: chat
   url: 'http://t.me/francescopira'

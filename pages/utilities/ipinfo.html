@@ -1,0 +1,29 @@
+---
+layout: page
+permalink: /utilities/ipinfo/
+title: IP Info
+description: "Get IP address information"
+tagline: "Get IP address information"
+custom_js: "utilities/ipinfo"
+---
+
+<p>
+  Get IP address information such as hostname, location, timezone, ISP and more.
+</p>
+
+<p>
+  Type here the IP Address.
+<p>
+<span class="input-box">
+  <input type="text" name="ipaddr" value="" id="ipaddr"/>
+  <a class="btn btn-small btn-default center-mobile" href="javascript:ipinfo()">Go</a>
+</span>
+</p>
+
+<h4>How it works</h4>
+
+<ul>
+  <li>It relies on <a href="http://ipinfo.io">ipinfo.io</a> service</li>
+  <li>It actually just opens an URL in another tab. The IP Address is part the URL.</li>
+  <li>String concatenation happens on your browser. Your input won't be visible to me in any way.</li>
+</ul>

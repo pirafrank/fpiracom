@@ -1,2 +1,3 @@
 - [Brute-force calculator]({{ site.baseurl }}/utilities/bfc)
+- [Open in WhatsApp]({{ site.baseurl}}/utilities/open-in-whatsapp)
 - [IT calendar]({{ site.baseurl }}/calendars/itcalendar/)

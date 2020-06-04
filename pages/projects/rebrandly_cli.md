@@ -32,10 +32,6 @@ Can I join you in this?
 
 Sure. The whole code is released under the GNU GPLv3 terms and published on [GitHub](https://github.com/pirafrank/rebrandly_cli). Send me a PR if you add some cool features or improve the repo!
 
-### Support
-
-If you like this, please consider [offering me a beer]({{ site.baseurl }}/support/).
-
 <br>
 
 {% include sharing-buttons.html %}

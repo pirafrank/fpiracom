@@ -55,10 +55,6 @@ Electron Dash Docset is released under the GNU GPLv3.
 
 Sure. You can access all the packed versions from [here](http://cdn.{{ site.domain}}/public/electron/dash-docsets/).
 
-### Support
-
-If you like this, please consider [offering me a beer]({{ site.baseurl }}/support/).
-
 <br>
 
 {% include sharing-buttons.html %}

@@ -36,10 +36,6 @@ The missing web clippers for Evernote on iOS. Notes will also have a *from workf
 - [Evernote Save Bookmark](https://workflow.is/workflows/c373a2047f3c4ce9874cf8325fa6cdcf) - Save a bookmark for that webpage in default notebook. Express solution.
 - [Evernote Save Bookmark Pro](https://workflow.is/workflows/b9ed8af01f2d4f9bb089cd968fd4bea9) - Save a bookmark for that webpage in default notebook. This Pro version comes with notebook and tags choice and option to open the app after clipping.
 
-### Support
-
-If you like this, please consider [offering me a beer]({{ site.baseurl }}/support/).
-
 <br>
 
 {% include sharing-buttons.html %}

@@ -2,7 +2,7 @@
 layout: post
 title: "Hands on: The sexy side of JavaScript (feat. node.js)"
 subtitle: My experience at Google I/O Extended 2016 in Catania as a speaker
-categories: ['Articles']
+categories: ['Posts']
 description: About my speech and experience at Google I/O Extended 2016 in Catania
 tags: ['node.js','JavaScript','ES2015']
 ---

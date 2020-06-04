@@ -2,7 +2,7 @@
 title: What's new from WWDC19 keynote [Updated]
 subtitle: Today's announcements in one page
 description: Read what's has been announced at the WWDC19 keynote
-category: ["Articles"]
+category: ['Posts']
 tags: ["Apple", "iOS", "macOS", "hardware"]
 ---
 

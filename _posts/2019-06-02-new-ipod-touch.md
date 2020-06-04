@@ -2,7 +2,7 @@
 title: What does a new iPod Touch means for us? [Updated]
 subtitle: Ahead of WWDC updating the little guy may be a preview of what's next
 description: What does a new iPod Touch means for the iOS ecosystem ahead of tomorrow WWDC
-category: ["Articles"]
+category: ['Posts']
 tags: ["Apple", "iOS", "hardware"]
 ---
 

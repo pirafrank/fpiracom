@@ -2,7 +2,7 @@
 title: "Thoughts on the new MacBook Pro and Apple mobile computing (Updated)"
 subtitle: "Hardware changes, Apple embracing standards, their focus on creators and MacBook Air highly uncertain future"
 description: "Hardware changes, Apple embracing standards, their focus on creators and MacBook Air highly uncertain future"
-category: ['Articles']
+category: ['Posts']
 tags: ['Apple','Review']
 ---
 

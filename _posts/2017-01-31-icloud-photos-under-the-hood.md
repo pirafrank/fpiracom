@@ -2,7 +2,7 @@
 layout: post
 title: iCloud Photo Library under the hood
 subtitle: Undocumented facts in Apple's photo management technology
-categories: ['Articles']
+categories: ['Posts']
 description: Undocumented facts in Apple's photo management technology
 tags: ['macOS','Cloud','iOS']
 ---

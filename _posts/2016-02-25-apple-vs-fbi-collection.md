@@ -2,7 +2,7 @@
 layout: post
 title: "The Apple vs. FBI case: A collection of the best articles"
 subtitle: Articles on this much talked case to have a complete overview.
-category: ['Articles']
+category: ['Posts']
 description: "A collection of articles on the Apple vs. FBI case to have a complete overview"
 tags: ['Privacy','Apple']
 ---

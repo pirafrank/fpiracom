@@ -2,7 +2,7 @@
 title: "Apple Watch has reached stable"
 subtitle: "With the release of the Apple Watch 4, the device is now ready for prime time"
 description: "With the release of the Apple Watch 4, the device is now ready for prime time"
-category: ["Articles"]
+category: ['Posts']
 tags: ["Apple"]
 ---
 

@@ -2,7 +2,7 @@
 title: "I've updated my PGP keys"
 subtitle: "Check the blog post to read about the new fingerprint"
 description: PSA about my PGP key being superseded.
-category: ['Articles']
+category: ['Posts']
 tags: ['PGP']
 ---
 

@@ -5,8 +5,8 @@ permalink: /projects/
 show_title: true
 ---
 
-Here are my spare time projects and more I code to face challenges I come across daily.
-<br>They are open-source, so feel free to fork me on [Github]({{ site.data.social.github.url }}).
+Here are some of my spare time projects. They may not have been updated recently.
+<br>Code is available on [Github]({{ site.data.social.github.url }}), feel free to fork me.
 
 ### Table of Contents
 
@@ -14,7 +14,6 @@ Here are my spare time projects and more I code to face challenges I come across
 - [Mobile](#mobile)
 - [Desktop](#desktop)
 - [Other](#other)
-- [Check also](#check-also)
 
 ### CLI
 
@@ -59,8 +58,3 @@ A simple web panel to control your Raspberry Pi on a local network.
 
 #### This website
 Based on [Jekyll Blue](http://github.com/pirafrank/jekyll-blue), an heavily modified Jekyll Now fork with additional features and a custom SCSS framework coded from scratch. Most of the things I try here are usually backported to Jekyll Blue.
-
-### Check also
-
-- [Resources for developers]({{site.baseurl}}/developers)
-- [Cheat sheets](http://github.com/pirafrank/cheat-sheets)

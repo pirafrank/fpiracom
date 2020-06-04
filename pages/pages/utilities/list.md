@@ -1,0 +1,2 @@
+- [Brute-force calculator]({{ site.baseurl }}/utilities/bfc)
+- [IT calendar]({{ site.baseurl }}/calendars/itcalendar/)

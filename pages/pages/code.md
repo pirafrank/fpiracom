@@ -22,5 +22,4 @@ While I cannot tell about things I work on daily, there are weekend projects, to
 
 #### Utilities
 
-- [Brute-force calculator]({{ site.baseurl }}/utilities/bfc)
-- [IT calendar]({{ site.baseurl }}/calendars/itcalendar/)
+{% include_relative utilities/list.md %}

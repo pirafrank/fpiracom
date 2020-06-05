@@ -64,7 +64,7 @@ I'm tuned to Apple security news and I think GUIs are largely overrated. My dail
 
 Usually I write little pieces of code to speed up my work and when I have some spare time I dedicate myself to weekend projects.
 
-- [GitHub]({{ site.data.social.github.url }})
+- [Code]({{ site.baseurl }}/code)
 
 ### Talks and Events
 

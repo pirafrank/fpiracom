@@ -27,9 +27,11 @@ This website uses Google Analytics and heatmap.me services. Both of them collect
 
 Google Analytics is a web analytics tool. It reports website trends using cookies and web beacons without identifying individual visitors. You can read their privacy policy [here](http://www.google.com/analytics/learn/privacy.html).
 
+<!--
 #### heatmap.me
 
 heatmap.me is a service offering real-time statistics of user's clicks on page. They do not key-log, sniff cookies or log IP addresses. Read more about it [here](https://heatmap.me/).
+-->
 
 ### License
 

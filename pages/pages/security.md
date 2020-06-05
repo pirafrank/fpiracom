@@ -11,6 +11,10 @@ A collection of security guides, tools, cheat sheets and best practices I've fou
 
 - [Get S/MIME on your iPhone and iPad](https://nerd.one/how-to-set-up-smime-on-iphone-and-mac/)
 
+#### CPU vulns
+
+- [Speculative execution]({% post_url 2019-05-25-speculative-execution %})
+
 #### Distros
 
 - [Kali Linux](http://kali.org)

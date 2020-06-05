@@ -56,7 +56,7 @@ I'm tuned to Apple security news and I think GUIs are largely overrated. My dail
 
 ### Resume
 
-[Download my resume]({{ site.baseurl }}/public/cv/resume-francesco-pira.pdf)
+[Download my resume]({{ site.data.cv.resume }})
 
 {% include_relative about/resume-last-edit.html %}
 

@@ -18,7 +18,8 @@ While I cannot tell about things I work on daily, there are weekend projects, to
 #### Resources
 
 - [Security resources]({{ site.baseurl }}/security)
-- [Cheat-sheets]({{ site.data.social.github.url }}/cheat-sheets)
+- [Java new features]({{ site.data.res.java-new-features }}), since 1.3
+- [Cheat-sheets]({{ site.data.res.cheat-sheets }})
 
 #### Utilities
 

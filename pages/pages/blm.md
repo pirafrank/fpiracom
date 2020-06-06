@@ -2,10 +2,15 @@
 layout: page
 title: Black lives matter
 permalink: /blm/
-show_title: true
+show_title: false
+seoimage: blm/seo.png
 ---
 
-During these times I feel I have to speech.
+<br>
+
+![Black lives matter]({{ site.baseurl }}/static/pageimages/blm/hdr.png)
+
+I can't be silent.
 
 I am a guy working in the IT and I feel priviledged for being male, for being white. Something's gone wrong and we have to fix. These privileges shouldn't have existed in first place.
 

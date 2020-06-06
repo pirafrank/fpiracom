@@ -40,6 +40,7 @@ If you believe in true freedom and equality, please join me.
 
 Many tech communities are showing support to the #BLM cause. I think it's right to list them here.
 
+- [Coursera](https://www.coursera.org/collections/race-inequality-social-justice)
 - [nodejs](https://nodejs.org/en/)
 - [React](https://reactjs.org)
 - [Kubernetes](https://kubernetes.io)

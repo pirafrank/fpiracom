@@ -17,9 +17,17 @@ While I cannot tell about things I work on daily, there are weekend projects, to
 
 #### Resources
 
+Pages I keep updated.
+
 - [Security resources]({{ site.baseurl }}/security)
 - [Java new features]({{ site.data.res.java-new-features }}), since 1.3
 - [Cheat-sheets]({{ site.data.res.cheat-sheets }})
+
+#### External resources
+
+Links worth sharing.
+
+- [How Signal works](https://signal.org/blog/looking-back-as-the-world-moves-forward/)
 
 #### Utilities
 

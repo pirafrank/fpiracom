@@ -4,6 +4,7 @@ title: Black lives matter
 permalink: /blm/
 show_title: false
 seoimage: blm/seo.png
+description: "I stand against inequality and racism, please join me"
 ---
 
 <br>

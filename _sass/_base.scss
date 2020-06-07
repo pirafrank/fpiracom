@@ -143,6 +143,17 @@ tbody > tr:nth-child(even) > td {
   background-color: $lightestGray;
 }
 
+figcaption {
+  font-size: 0.8em;
+  color: $gray;
+  text-align: center;
+  //font-style: italic;
+  a {
+    color: $gray;
+    text-decoration: underline;
+  }
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;

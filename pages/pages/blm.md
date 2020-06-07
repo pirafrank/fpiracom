@@ -33,6 +33,7 @@ If you believe in true freedom and equality, please join me.
 - [I Run With Maud](https://www.gofundme.com/f/i-run-with-maud)
 - [Justice for Mike Ramos](https://www.gofundme.com/f/justice-for-mike-ramos)
 - [National Bail Fund Network](https://www.communityjusticeexchange.org/nbfn-directory)
+- [Black protestor run over by car in Bakersfield](https://www.gofundme.com/f/car-speeds-up-into-bakersfield-protester), details [here](https://twitter.com/dewybleach/status/1269457620428943365?s=21)
 
 #### Sign
 

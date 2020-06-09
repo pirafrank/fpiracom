@@ -13,7 +13,7 @@ url="/static/postimages/2020-06-10/head.jpg"
 
 *Disclaimer: I am not affiliate to Notion or its team.*
 
-In my previous blog post about productivity, I wrote about how the brain works and a few tips on choosing a tool.
+In my [previous blog post]({% post_url 2020-06-08-productivity-and-brain %}) about productivity, I wrote about how the brain works and a few tips on choosing a tool.
 
 The truth is that keeping track of how we spend our time is hard. Very hard, and no tool can fit all. Sometimes a simple to-do list on a paper sheet can make it, but we often find ourselves overwhelmed by multitasking and information overload. We then start going all digital hoping to magically fix it all and for geeks like me, that means to risk of getting lost in looking for *the best tool* or being trapped in testing multiple tools.
 
@@ -71,7 +71,7 @@ credits="https://unsplash.com/@jsweissphoto"
 
 {% include image.html 
 url="/static/postimages/2020-06-10/list.jpg"
-desc="My databases and notebooks"
+desc="My databases and notebooks 3 days after sign up"
 %}
 
 At the time of writing, I mainly create databases for life wiki, tasks, and note-taking. Here they are:
@@ -138,4 +138,4 @@ If you find yourself looking for a tool that can put together Trello, Reminders,
 
 It may take some time to fully assimilate and take advantage of its data structures, find how to build and evolve a setup that fits your needs, but give Notion a chance and let it grow on you.
 
-Thanks for reading.
+I hope it helps. Thanks for reading.

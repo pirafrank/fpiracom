@@ -39,16 +39,8 @@ in_search: false
             <div class="newsDate">{{ post.date | date: "%d %B %Y" }}</div>
               {% if site.home.show_excerpt %}
                   {% if post.subtitle %}
-                    <br>
                     <div class="newsExcerpt">
                       {{ post.subtitle | truncatehtml | truncatewords: 20 }}
-                      <br><br>
-                      <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
-                    </div>
-                  {% else %}
-                    <div class="newsExcerpt">
-                      {{ post.content | truncatehtml | truncatewords: 20 }}
-                      <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
                     </div>
                   {% endif %}
               {% endif %}

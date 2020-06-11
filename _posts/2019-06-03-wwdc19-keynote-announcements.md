@@ -4,6 +4,7 @@ subtitle: Today's announcements in one page
 description: Read what's has been announced at the WWDC19 keynote
 category: ['Posts']
 tags: ["Apple", "iOS", "macOS", "hardware"]
+last_modified_at: 2019-06-07
 ---
 
 *Update 1 (June 3): added information about features and changes announced today during the State of the Union keynote.*

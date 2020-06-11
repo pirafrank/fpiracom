@@ -4,6 +4,7 @@ subtitle: Ahead of WWDC updating the little guy may be a preview of what's next
 description: What does a new iPod Touch means for the iOS ecosystem ahead of tomorrow WWDC
 category: ['Posts']
 tags: ["Apple", "iOS", "hardware"]
+last_modified_at: 2019-06-03
 ---
 
 *Update: edited the 'Conclusions' paragraph such as now it takes into account the released iOS 13 compatibility list.*

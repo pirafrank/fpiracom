@@ -33,10 +33,13 @@ in_search: false
       <!-- content section -->
 
         <div id="posts" class="sectionTitle">Latest blog posts</div>
-        {% for post in site.posts limit: site.home.max_posts %}
+        {% assign sortedPosts = site.posts | sort: 'last_update' | reverse %}
+        {% for post in sortedPosts limit: site.home.max_posts %}
           <div class="news newsEntry">
             <span class="news newsTitle"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-            <div class="newsDate">{{ post.date | date: "%d %B %Y" }}</div>
+            <div class="newsDate">{{ post.date | date: "%B %-d, %Y" }}
+              {% if post.last_modified_at %}(Updated: {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif %}
+            </div>
               {% if site.home.show_excerpt %}
                   {% if post.subtitle %}
                     <div class="newsExcerpt">

@@ -18,11 +18,15 @@ in_search: false
   </div>
 
   <div class="line-separator"></div>
-  <br>
 
   <div>
+    <p class="smaller-text">
+      <em>Sorted by last update date.</em>
+    </p>
+    <br>
 
-    {% for post in site.posts %}
+    {% assign sortedPosts = site.posts | sort: 'last_update' | reverse %}
+    {% for post in sortedPosts %}
 
       <div class="blog-entry">
         <div class="blog-entry-link">
@@ -30,6 +34,7 @@ in_search: false
         </div>
         <div class="blog-entry-details">
           {{ post.date | date: "%B %-d, %Y" }}
+          {% if post.last_modified_at %}(Updated: {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif %}
         </div>
         <div class="blog-entry-details-thin">
           Category: {{ post.categories }}

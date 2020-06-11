@@ -20,6 +20,7 @@
 .wrapper-masthead {
   background-color: $darkBlue; // change color of navbar
   margin-bottom: 0px;
+  isolation: isolate;
 }
 
 .masthead {

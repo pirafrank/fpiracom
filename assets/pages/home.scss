@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .helloText {
-  font-weight: 300;
+  font-weight: $thin;
   font-size: 20px;
   padding-top: 1.5em;
 }
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 .nameText {
   padding-bottom: 0.2em;
   padding-top: 0.1em;
-  font-weight: 300;
+  font-weight: $thin;
   font-size: 32px;
   font-style: normal;
   font-family: $defaultSerif;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .infoText {
   //font-size: 14px;
-  font-weight: 300;
+  font-weight: $thin;
   //color: $lightestGray;
   line-height: 1.4;
 }
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 20px 0px 20px;
   padding-right: 25px;
   text-align: right;
-  font-weight: 300;
+  font-weight: $thin;
 
   * {
     color: $white;
@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1.0em;
   margin-right: 3em;
   font-size: 16px;
-  //font-weight: 400;
+  //font-weight: $normal;
 
   @include mobile {
     margin-right: 0em;
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   @include retina {
-    font-weight: 300;
+    font-weight: $thin;
   }
 
   a {

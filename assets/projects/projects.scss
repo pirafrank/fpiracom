@@ -14,7 +14,7 @@
 .project {
   font-family: $defaultSansSerifBody;
   font-size: 16px;
-  font-weight: 400; // font weight of post body
+  font-weight: $normal; // font weight of post body
   line-height: 1.6;
 
   strong, b {
@@ -29,7 +29,7 @@
   h1 {
     font-size: 38px;
     font-family: $defaultSansSerif;
-    font-weight: 400;
+    font-weight: $normal;
     letter-spacing: -0.05em;
     color: $darkerGray;
     line-height: 1.2;

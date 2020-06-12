@@ -21,7 +21,7 @@
 
   font-family: $defaultSansSerifBody;
   font-size: 18px;
-  font-weight: 400; // font weight of post body
+  font-weight: $normal; // font weight of post body
   line-height: 1.6;
   //color: $darkGray; // commented as it uses color from 'body' in _base.scss
 
@@ -51,7 +51,7 @@
     }
 
     @include retina {
-      font-weight: 400;
+      font-weight: $normal;
     }
   }
 
@@ -79,7 +79,7 @@
     h1 {
       font-size: 38px;
       font-family: $defaultSerif;
-      font-weight: 400;
+      font-weight: $normal;
       letter-spacing: -0.05em;
       color: $darkerGray;
       line-height: 1.2;

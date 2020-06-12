@@ -28,9 +28,9 @@
     }
 
     @include retina {
-      font-weight: 300;
+      font-weight: $thin;
       strong, b {
-        font-weight: 400;
+        font-weight: $normal;
       }
     }
 }

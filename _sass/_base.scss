@@ -11,17 +11,17 @@ body {
   font-size: $bodySize;
   line-height: 1.5;
   font-family: $defaultSansSerifBody;
-  font-weight: 400;
+  font-weight: $normal;
   color: $darkGray; // site-wide font color (overridden multiple times...)
 
   @include mobile {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: $normal;
     line-height: 1.3;
   }
 
   @include retina {
-    font-weight: 300;
+    font-weight: $thin;
   }
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   @include retina {
-    font-weight: 300;
+    font-weight: $thin;
   }
 }
 
@@ -112,7 +112,7 @@ strong, b {
   font-weight: bold;
 
   @include retina {
-    font-weight: 400;
+    font-weight: $normal;
   }
 }
 

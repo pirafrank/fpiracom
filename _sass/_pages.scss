@@ -4,7 +4,7 @@
 //
 
 .page {
-  font-weight: 400;
+  font-weight: $normal;
   //color: $darkGray; // commented as it uses color from 'body' in _base.scss
 
   @include retina {

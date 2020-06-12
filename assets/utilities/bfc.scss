@@ -60,17 +60,17 @@ p {
 .results {
     p {
         font-size: 14px;
-        font-weight: 700;
+        font-weight: $bold;
     }
 
     p:first-child {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: $normal;
     }
 
     p > u {
         font-size: 22px;
-        font-weight: 300;
+        font-weight: $thin;
         text-decoration: none;
     }
 }

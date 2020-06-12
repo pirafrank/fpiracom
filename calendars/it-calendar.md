@@ -15,7 +15,7 @@ A calendar for IT people.
 
 <a class="btn btn-medium btn-default" href="http://a.fpira.com/eventfeedsubscribe">Subscribe</a>
 
-<p class="smaller-text">
+<p class="text-smaller">
     You can use the subscription link in apps such as <i>Calendar</i>, <i>Outlook</i>, etc.
 </p>
 

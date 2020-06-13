@@ -25,7 +25,9 @@ If you believe in true freedom and equality, please join me.
 
 ### Act
 
-[blacklivesmatters.carrd.co](https://blacklivesmatters.carrd.co/#)
+[Get started, stay informed](http://standwithblm.org/).
+
+Check also, [blacklivesmatters.carrd.co](https://blacklivesmatters.carrd.co/#).
 
 #### Donate
 

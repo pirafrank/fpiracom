@@ -58,6 +58,7 @@ Many tech communities are showing support to the #BLM cause. I think it's right 
 - [Sony](https://twitter.com/PlayStation/status/1267525525825900549)
 - [Apple](https://www.apple.com/speaking-up-on-racism/)
 - [Microsoft](https://twitter.com/satyanadella/status/1267492314584236032)
+- [Vue.js](https://vuejs.org/)
 
 Last but not least, [a video](https://twitter.com/Casey/status/1268923560887644160) by a famous youtuber it is worth listening to.
 

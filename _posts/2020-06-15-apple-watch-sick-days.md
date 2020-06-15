@@ -13,7 +13,7 @@ desc="Sometimes you need to rest and reset"
 credits="https://unsplash.com/@brina_blum"
 %}
 
-*I've originally written this blog post during last Xmas holidays. It has been sitting around for maybe too long and now I'd like to share it, ahead of WWDC next week. It is pretty much a feature request before Apple official announces watchOS 7 new features. The original blog post follows.*
+*I've originally written this blog post during last Xmas holidays. It has been sitting around for maybe too long and now I'd like to share it. It is pretty much a feature request before Apple announces watchOS 7 at WWDC next week. The original blog post follows.*
 
 <br>
 

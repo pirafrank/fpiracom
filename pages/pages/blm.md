@@ -59,6 +59,11 @@ Many tech communities are showing support to the #BLM cause. I think it's right 
 - [Apple](https://www.apple.com/speaking-up-on-racism/)
 - [Microsoft](https://twitter.com/satyanadella/status/1267492314584236032)
 - [Vue.js](https://vuejs.org/)
+- [Google](https://google.com/racialequity)
+- [Amazon](https://blog.aboutamazon.com/policy/amazon-donates-10-million-to-organizations-supporting-justice-and-equity)
+- [Kickstarter](https://blacklivesmatter.com/defundthepolice/)
+- [Chromium](https://www.chromium.org/Home), in their release notes
+- [webdriver.io](https://webdriver.io/)
 
 Last but not least, [a video](https://twitter.com/Casey/status/1268923560887644160) by a famous youtuber it is worth listening to.
 

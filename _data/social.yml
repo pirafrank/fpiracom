@@ -108,6 +108,10 @@ telegram-im:
   category: chat
   url: 'http://t.me/francescopira'
   user: francescopira
+telegram-apple-dev-releases:
+  category: chat
+  url: 'https://t.me/appledeveloperreleases'
+  user: appledeveloperreleases
 tumblr:
   category: #news
   url: #'http://pirafrank.tumblr.com'

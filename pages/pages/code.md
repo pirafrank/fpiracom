@@ -17,11 +17,12 @@ While I cannot tell about things I work on daily, there are weekend projects, to
 
 #### Resources
 
-Pages I keep updated.
+Pages and more I keep updated.
 
 - [Security resources]({{ site.baseurl }}/security)
 - [Java new features]({{ site.data.res.java-new-features }}), since 1.3
 - [Cheat-sheets]({{ site.data.res.cheat-sheets }})
+- Telegram channel of [Apple Developer releases]({{ site.data.social.telegram-apple-dev-releases.url }})
 
 #### External resources
 

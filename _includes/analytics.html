@@ -36,5 +36,18 @@
 		<!-- End Google Analytics -->
 	{% endif %}
 
+	{% if site.analytics.gtag %}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- new google analytics tag -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.gtag }}"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', '{{ site.analytics.gtag }}');
+		</script>
+	{% endif %}
+
 {% endif %}
 <!-- End Analytics -->

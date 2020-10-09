@@ -49,7 +49,8 @@ theme_engine:
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
 # Leave it empty to disable any of the settings.
 analytics:
-  google: "UA-59510020-2"
+  google:
+  gtag: "UA-59510020-2" # new google analytics tag
   matomo:
     host:
     id:

@@ -15,6 +15,10 @@ While I cannot tell about things I work on daily, there are weekend projects, to
 - [dotfiles]({{ site.data.social.github.url }}/dotfiles) and [workspace]({{ site.data.social.docker.reporoot}}/workspace)
 - [My toolbelt]({{ site.baseurl }}/my-toolbelt/)
 
+#### Utilities
+
+{% include_relative utilities/list.md %}
+
 #### Resources
 
 Pages and more I keep updated.
@@ -29,7 +33,3 @@ Pages and more I keep updated.
 Links worth sharing.
 
 - [How Signal works](https://signal.org/blog/looking-back-as-the-world-moves-forward/)
-
-#### Utilities
-
-{% include_relative utilities/list.md %}

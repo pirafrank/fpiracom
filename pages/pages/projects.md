@@ -23,6 +23,9 @@ An unofficial command line client to shorten URL using rebrandly.com.
 #### [Google Photos EXIF fixer](https://github.com/pirafrank/Google-Photos-EXIF-fixer)
 Script to fix pictures EXIF metadata before upload them to Google Photos.
 
+#### [Scaleway client](https://github.com/pirafrank/scaleway_api)
+Very simple Python module calling Scaleway APIs to create/manage/undeploy virtual servers. I've created it for my own needs before `scw`, so today you may want to use that instead.
+
 #### [todabu](http://github.com/pirafrank/todabu)
 A simple way to backup user configuration files, status and more info in a git repository.
 

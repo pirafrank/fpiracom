@@ -27,6 +27,7 @@ Pages and more I keep updated.
 - [Java new features]({{ site.data.res.java-new-features }}), since 1.3
 - [Cheat-sheets]({{ site.data.res.cheat-sheets }})
 - Telegram channel of [Apple Developer releases]({{ site.data.social.telegram-apple-dev-releases.url }})
+- [IT calendar]({{ site.baseurl }}/calendars/itcalendar/)
 
 #### External resources
 

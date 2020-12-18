@@ -51,6 +51,7 @@ theme_engine:
 analytics:
   google:
   gtag: "UA-59510020-2" # new google analytics tag
+  cloudflare: "dc9f863da2fe48788d94228c140bd56d"
   matomo:
     host:
     id:

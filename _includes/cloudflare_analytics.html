@@ -1,0 +1,8 @@
+{% if jekyll.environment == "production" %}
+  <!-- Cloudflare Web Analytics -->
+  {% if site.analytics.cloudflare %}
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+      data-cf-beacon='{"token": "{{ site.analytics.cloudflare }}" }'></script>
+  {% endif %}
+  <!-- End Cloudflare Web Analytics -->
+{% endif %}

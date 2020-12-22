@@ -2,6 +2,10 @@
 # This file contains configuration flags to customize your site
 #
 
+# listening port and host
+host: '127.0.0.1'
+port: 4001
+
 # Name of your site (displayed in the header)
 name: "Francesco Pira"
 

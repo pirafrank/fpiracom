@@ -13,7 +13,7 @@ I’ve removed `+python` (python2 support) from the `./configure` script because
 
 <br>
 
-Hi everyone, while customizing my `.vimrc` ([here]({{ data.social.github.url }}/dotfiles)), I found out Ubuntu 20.04 version of vim is a bit old and doesn't come with `+python3` support. So I wrote a quick snippet to build vim 8.2 from source with it, and a couple of features more.
+Hi everyone, while customizing my `.vimrc` ([here]({{ site.data.social.github.url }}/dotfiles)), I found out Ubuntu 20.04 version of vim is a bit old and doesn't come with `+python3` support. So I wrote a quick snippet to build vim 8.2 from source with it, and a couple of features more.
 
 Just check the images below for a quick comparison.
 

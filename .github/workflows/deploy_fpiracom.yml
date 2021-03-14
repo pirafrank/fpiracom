@@ -62,7 +62,8 @@ jobs:
         SERVER_DESTINATION: ${{ secrets.LEIA_DESTINATION }}
     - name: Send Push Notification
       uses: fjogeleit/http-request-action@master
+      if: always()
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (main) succeeded!" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (main) finished with status ${{job.status}}" }'

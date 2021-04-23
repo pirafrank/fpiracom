@@ -20,7 +20,7 @@ jobs:
       #run: ls -lah /home/runner/work/fpiracom/fpiracom
       run: ls -lah
     - name: Set up Ruby
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6.6
     - name: Cache ruby gems

@@ -32,13 +32,15 @@ I'm tuned to Apple security news and I think GUIs are largely overrated. My dail
 
 ### Skills
 
-- **Front-end dev:** Vue.js, CSS, SCSS. Some experience in AngularJS and Angular 6
-- **Back-end dev:** Java EE, Flask, node.js and ExpressJS, ElectronJS. In the past: Ruby on Rails
-- **Application servers:** Oracle WebLogic, IBM WebSphere, Tomcat
-- **Databases:** Oracle DB, PostgreSQL, mongoDB, SQLite, CouchDB, MySQL/MariaDB
-- **SysAdmin:** Bash scripting, nginx configuration, server deployment, configuration and hardening (SSH config, Iptables, firewalld, OpenVPN, etc.)
-- **Languages:** Python, Java SE 8, Java EE 7, JavaScript (ES5+), TypeScript, C
-- **VCS** Git (including platforms for Agile integration like Azure DevOps and GitHub), SVN
+- **Cloud-native:** Kubernetes (including AKS and OKD), Apache Kafka and Strimzi
+- **Front-end dev:** Vue.js, CSS, SCSS. Some experience in Angular
+- **Back-end dev:** node.js, SpringBoot, Java EE, Flask. In the past: Ruby on Rails
+- **J2EE Application servers:** Oracle WebLogic, IBM WebSphere, Tomcat
+- **Databases:** MongoDB, PostgreSQL, Oracle DB 9 and 12c, SQLite, CouchDB, MySQL/MariaDB
+- **CI/CD:** Azure DevOps, GitHub Actions, Jenkins
+- **System Administration:** Bash scripting, nginx configuration, server deployment, configuration and hardening (sshd hardening, Iptables, firewalld, OpenVPN, etc.)
+- **Languages:** Java 6+, Java EE 7+, JavaScript (ES5+), TypeScript, Python, C
+- **VCS** Git (including platforms for Agile project management like Azure DevOps and GitHub), SVN
 - **Operating Systems:** Debian Linux-based, CentOS 6+, macOS 10.6+, Windows XP+, iOS and Android
 - **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Oracle WebLogic
 - **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode, Aruba Cloud, Scaleway

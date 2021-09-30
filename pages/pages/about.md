@@ -11,6 +11,7 @@ show_title: true
 - [Coding](#coding)
 - [Talks and Events](#talks-and-events)
 - [Honours and certificates](#honours-and-certificates)
+- [Languages](#languages)
 - [Other things I like](#other-things-i-like)
 - [Contact me](#contact-me)
 
@@ -87,6 +88,12 @@ Usually I write little pieces of code to speed up my work and when I have some s
 - [EYE - Enabling Youth Entrepreneurship Support Group Project - Recommendation letter]({{ site.baseurl }}/assets/files/honors/EYE_recommendation_letter_Francesco_Pira.pdf)
 - [EESTEC Contact Person training certificate]({{ site.baseurl }}/assets/files/honors/eestec_contact_person_training_certificate.pdf)
 - [Summer Entrepreneurship Training - Certificate of Appreciation]({{ site.baseurl }}/assets/files/honors/SET14_certificate_of_appreciation.pdf)
+
+## Languages
+
+- Italian, native proficiency 
+- English, CEFR Level C1 ([test results]({{ site.baseurl }}/assets/files/certs/CEPTCandidateTestReport_20210930.pdf))
+- Spanish, elementary proficiency
 
 ### Other things I like
 

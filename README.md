@@ -1,5 +1,7 @@
 # fpira.com source code
 
+[![deploy_fpiracom](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_fpiracom.yml/badge.svg?branch=main)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_fpiracom.yml)
+
 Visit [fpira.com](https://fpira.com) for a live version.
 
 ## About the website code

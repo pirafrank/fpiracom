@@ -25,6 +25,10 @@ jobs:
     - name: Listing files in workspace
       #run: ls -lah /home/runner/work/fpiracom/fpiracom
       run: ls -lah
+    - name: Extract branch name
+      id: extract_branch_name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
@@ -72,4 +76,4 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (main) finished with status ${{job.status}}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (branch ${{ steps.extract_branch_name.outputs.branch }}) finished with status ${{job.status}}" }'

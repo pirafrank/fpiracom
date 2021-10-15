@@ -1,0 +1,6 @@
+- [Oracle Certified Professional - Java SE 11 Developer](https://catalog-education.oracle.com/pls/certview/sharebadge?id=36AA615B4F75E27A071063A0FDD8B00EA42590B89200BE7BBBB7D9166BF75F94) (April 2021)
+- [AWS Certified Developer - Associate](https://www.youracclaim.com/badges/a1aea53e-dad2-441a-a95f-dcc0735f1c49/public_url) (September 2020)
+- [AWS Certified Cloud Practitioner](https://www.youracclaim.com/badges/89778d72-5e8f-4521-9197-cd7c9b3d1f23/public_url) (September 2020)
+- [AWS Certified Solutions Architect - Associate](https://www.youracclaim.com/badges/07aecb45-7bc0-4482-8411-108c87a4bdf2/public_url) (June 2020)
+- [AZ-900 - Microsoft Azure Fundamentals]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-900.pdf) (July 2019)
+- [DASA DevOps Fundamentals](https://www.youracclaim.com/badges/dcc645b3-3594-4183-bbe9-d116c1a872ee/public_url) (May 2019)

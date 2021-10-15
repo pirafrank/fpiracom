@@ -1,0 +1,6 @@
+- [AngularJS Certificate by Bax Energy]({{ site.baseurl }}/assets/files/honors/AngularJS_Certificate_Bax_Energy_oriz.pdf) (October 2016)
+- [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/assets/files/honors/eestec_ittc_2015-2016_certificate.pdf)
+- [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015]({{ site.baseurl }}/assets/files/honors/eestec_ittc_2015_certificate.pdf)
+- [EYE - Enabling Youth Entrepreneurship Support Group Project - Recommendation letter]({{ site.baseurl }}/assets/files/honors/EYE_recommendation_letter_Francesco_Pira.pdf) (August 2015)
+- [EESTEC Contact Person training certificate]({{ site.baseurl }}/assets/files/honors/eestec_contact_person_training_certificate.pdf) (October 2014)
+- [Summer Entrepreneurship Training - Certificate of Appreciation]({{ site.baseurl }}/assets/files/honors/SET14_certificate_of_appreciation.pdf) (August 2014)

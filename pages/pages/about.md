@@ -10,7 +10,8 @@ show_title: true
 - [Resume](#resume)
 - [Coding](#coding)
 - [Talks and Events](#talks-and-events)
-- [Honours and certificates](#honours-and-certificates)
+- [Certifications](#certifications)
+- [Honours](#honours)
 - [Languages](#languages)
 - [Other things I like](#other-things-i-like)
 - [Contact me](#contact-me)
@@ -54,8 +55,8 @@ I'm tuned to Apple security news and I think GUIs are largely overrated. My dail
 **What's next?**
 
 - Advance my network and computer security skills
-- Begin Swift and iOS app development
-- Machine learning and Python for data analysis
+- Machine learning and MLOps
+- Rust
 
 ### Resume
 
@@ -74,20 +75,13 @@ Usually I write little pieces of code to speed up my work and when I have some s
 - [Talks]({{ site.baseurl }}/talks/)
 - [Events and contributions]({{ site.baseurl }}/events/)
 
-### Honours and Certificates
+### Certifications
 
-- [Oracle Certified Professional - Java SE 11 Developer](https://catalog-education.oracle.com/pls/certview/sharebadge?id=36AA615B4F75E27A071063A0FDD8B00EA42590B89200BE7BBBB7D9166BF75F94) (April 2021)
-- [AWS Certified Developer - Associate](https://www.youracclaim.com/badges/a1aea53e-dad2-441a-a95f-dcc0735f1c49/public_url) (September 2020)
-- [AWS Certified Cloud Practitioner](https://www.youracclaim.com/badges/89778d72-5e8f-4521-9197-cd7c9b3d1f23/public_url) (September 2020)
-- [AWS Certified Solutions Architect - Associate](https://www.youracclaim.com/badges/07aecb45-7bc0-4482-8411-108c87a4bdf2/public_url) (June 2020)
-- [AZ-900 - Microsoft Azure Fundamentals]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-900.pdf) (July 2019)
-- [DASA DevOps Fundamentals](https://www.youracclaim.com/badges/dcc645b3-3594-4183-bbe9-d116c1a872ee/public_url) (May 2019)
-- [AngularJS Certificate by Bax Energy]({{ site.baseurl }}/assets/files/honors/AngularJS_Certificate_Bax_Energy_oriz.pdf)
-- [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015-2016]({{ site.baseurl }}/assets/files/honors/eestec_ittc_2015-2016_certificate.pdf)
-- [Certificate of Appreciation for coordinating IT Team in EESTEC, 2015]({{ site.baseurl }}/assets/files/honors/eestec_ittc_2015_certificate.pdf)
-- [EYE - Enabling Youth Entrepreneurship Support Group Project - Recommendation letter]({{ site.baseurl }}/assets/files/honors/EYE_recommendation_letter_Francesco_Pira.pdf)
-- [EESTEC Contact Person training certificate]({{ site.baseurl }}/assets/files/honors/eestec_contact_person_training_certificate.pdf)
-- [Summer Entrepreneurship Training - Certificate of Appreciation]({{ site.baseurl }}/assets/files/honors/SET14_certificate_of_appreciation.pdf)
+{% include_relative about/certs.md %}
+
+### Honours
+
+{% include_relative about/honours.md %}
 
 ## Languages
 

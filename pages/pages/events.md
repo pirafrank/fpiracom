@@ -5,6 +5,33 @@ permalink: /events/
 show_title: true
 ---
 
+- [Attended](#attended)
+- [Organized](#organized)
+
+### Attended
+
+Notable conferences and events I joined. I hope to see you at the next one!
+
+#### 2021
+
+- KubeCon + CloudNativeCon North America, Oct 2021 (virtual)
+- O'Reilly Rada event - Data & AI - Oct 14, 2021 (virtual)
+- Cloudflare week - Sept 2021 (online)
+- Codemotion Spring 2021 - March 2021 (virtual)
+
+#### Past
+
+- Cloudflare week - Sept 2020 (online)
+- Microsoft BUILD - May 2020 (online)
+- Red Hat Open Source Day - Nov 20, 2019 - Rome
+- Cloudflare week - Sept 2019 (online)
+- Microsoft BUILD - May 2019 (online)
+- Codemotion - March 2016 - Rome
+- Microsoft Future Decoded - Nov 12, 2015 - Rome
+- ESOCC European Conference on Service-Oriented and Cloud Computing - Sept 15, 2015 - Taormina ([link](https://link.springer.com/conference/esocc))
+
+### Organized
+
 A comprehensive list of events I've organised or contributed to.
 
 #### [Startup Europe Awards](http://startupeuropeawards.com), Regional assessor

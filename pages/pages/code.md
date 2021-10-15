@@ -12,7 +12,7 @@ While I cannot tell about things I work on daily, there are weekend projects, to
 - [GitHub]({{ site.data.social.github.url }})
 - [Snippets]({{ site.data.social.github.gist }})
 - [Projects]({{ site.baseurl }}/projects/)
-- [dotfiles]({{ site.data.social.github.url }}/dotfiles) and [workspace]({{ site.data.social.docker.reporoot}}/workspace)
+- [dotfiles]({{ site.data.social.github.url }}/dotfiles)
 - [My toolbelt]({{ site.baseurl }}/my-toolbelt/)
 
 #### Utilities

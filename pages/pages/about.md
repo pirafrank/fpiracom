@@ -30,7 +30,7 @@ I have been involved in the local startup scene as start-upper and as VP of Yout
 
 Today I work as back-end developer at [Leonardo Company](http://leonardocompany.com/en). There are many projects I'm involved in, mainly Java ones running in Docker or IBM WebSphere, while others built on Oracle Middleware platform.
 
-I'm tuned to Apple security news and I think GUIs are largely overrated. My daily carry is an iPad moshed to zsh and nvim. If you're curious about my setup, feel free to check my [dotfiles]({{site.data.social.github.url}}/dotfiles) repo and [toolbelt]({{site.baseurl}}/my-toolbelt) page.
+I'm tuned to Apple security news and I think GUIs are largely overrated. My daily carry is an iPad moshed to zsh and nvim. If you're curious about my setup, feel free to check my [dotfiles]({{site.data.social.github.url}}/dotfiles) and [workspace]({{site.data.social.github.url}}/workspace) repositories, and [toolbelt]({{site.baseurl}}/my-toolbelt) page.
 
 ### Skills
 

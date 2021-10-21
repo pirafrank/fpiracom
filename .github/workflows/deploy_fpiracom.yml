@@ -8,7 +8,12 @@ on:
       - main
     paths-ignore:
       - '.github/**'
+      - '_jekyll_ignore/**'
+      - list_categories.sh
+      - list_tags.sh
       - README.md
+      - '.gitignore'
+      - '_drafts'
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * 3'

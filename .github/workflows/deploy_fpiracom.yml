@@ -81,4 +81,4 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (branch ${{ steps.extract_branch_name.outputs.branch }}) finished with status ${{job.status}}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (branch ${{ steps.extract_branch_name.outputs.branch }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

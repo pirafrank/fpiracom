@@ -33,7 +33,7 @@ Very simple Python module calling Scaleway APIs to create/manage/undeploy virtua
 #### [todabu](http://github.com/pirafrank/todabu)
 A simple way to backup user configuration files, status and more info in a git repository.
 
-#### [electron-dash-docset]({{ site.baseurl }}/projects/electron-dash)
+#### [electron-dash-docset]({{ site.data.social.github.url }}/electron-dash-docset)
 A repository to generate a [Dash](https://kapeli.com/dash) docset for the [electron](http://electron.atom.io) documentation. Now with automatic check for new releases.
 
 ### Mobile

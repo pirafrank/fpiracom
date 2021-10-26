@@ -6,7 +6,7 @@
   "start_url": "index.html",
   "theme_color": "#3344aa",
   "background_color": "#ffffff",
-  "display": "standalone",
+  "display": "minimal-ui",
   "description": "{{ site.description }}",
   "icons": [
     {

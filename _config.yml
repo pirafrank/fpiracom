@@ -206,3 +206,5 @@ exclude:
     - list_tags.sh
     - '/**/*.disabled'
     - '*.sh'
+    - .bundle
+    - vendor

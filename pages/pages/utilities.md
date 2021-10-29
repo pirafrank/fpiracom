@@ -5,4 +5,6 @@ permalink: /utilities/
 show_title: true
 ---
 
-{% include_relative utilities/list.md %}
+- [IP info]({{ site.baseurl}}/utilities/ipinfo)
+- [Brute-force calculator]({{ site.baseurl }}/utilities/bfc)
+- [Open in WhatsApp]({{ site.baseurl}}/utilities/open-in-whatsapp)

@@ -14,8 +14,9 @@ Notable conferences and events I joined. I hope to see you at the next one!
 
 #### 2021
 
+- GitHub Universe 2021 - Oct 2021 (online)
 - KubeCon + CloudNativeCon North America, Oct 2021 (virtual)
-- O'Reilly Rada event - Data & AI - Oct 14, 2021 (virtual)
+- O'Reilly Radar event - Data & AI - Oct 14, 2021 (online)
 - Cloudflare week - Sept 2021 (online)
 - Codemotion Spring 2021 - March 2021 (virtual)
 

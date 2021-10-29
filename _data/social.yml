@@ -25,7 +25,7 @@ github:
   category: code
   url: 'https://github.com/pirafrank'
   user: pirafrank
-  gist: 'https://gist.github.com/pirafrank'
+  gist: 'https://gist.github.com/pirafrank?direction=desc&sort=updated'
 goodreads:
   category: social
   url: 'https://www.goodreads.com/pirafrank'

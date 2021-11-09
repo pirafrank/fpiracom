@@ -11,6 +11,7 @@ Offers and promos convenient for you or the both of us. Showed in A-Z order.
 
 - [AirBnB](http://www.airbnb.com/c/francescop462), when you travel on AirBnB, we both get &#8364;30 in travel credit
 - [Airtable](https://airtable.com/invite/oOBPqTlc), a cool new way to handle databases
+- [Balance](https://www.balanceapp.com/referral-social), to improve your sleep, stress, mood, and more. They're offering a free year to all new members.
 - [Elevate](http://go.elevateapp.com/FRAN741118), awesome brain training app that boosts your memory, writing, reading, speaking and math skills. Register with via this link and we both get a free week of premium.
 - [Evernote](https://www.evernote.com/referral/Registration.action?sig=4280139b8af883cda8474cafab473b4722aa11e09e04220ff681a3c0bce708d9&uid=7451174), one of the best notes taking and archiving services. Register and we both get *Premium* plan.
 - [Freeletics](https://www.freeletics.com/r/125385466), grab a 20% discount on Freeletics Coach and start your training today.

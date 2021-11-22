@@ -133,6 +133,30 @@ project|https://fpira.com/static/projectimages/ + page.seoimage
 
 A folder for generic SEO images in posts exists, it's called `common`. So the resulting URL for those is `https://fpira.com/static/postimages/common/` + image filename.
 
+### SEO images in RSS feed
+
+Check the guide below to make IFTTT EntryImageURL work ([source](https://en.philipp-guttmann.de/Blog/IFTTT_Photo_RSS_EntryImageURL/)).
+
+First specify the `xmlns:content` namespace.
+
+```xml
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+```
+
+Then add `content:encoded` tag to every feed item. See below how to specify the URL in the `img` tag.
+
+```xml
+<item>...
+<content:encoded><![CDATA[<img src="Your Image URL" />]]></content:encoded>
+...</item>
+```
+
+Now IFTTT can get the URL from the `img` tag and make it available to applet via the `EntryImageURL` ingredient.
+
+### Adding filters to IFTTT RSS feed trigger
+
+- [IFTTT - Why is there a “File not found” image on my post?](https://help.ifttt.com/hc/en-us/articles/115010361748/)
+
 ## Further notes
 
 `has_fa` variable is not used right now. Font-awesome is always loaded. Variables in front-matter are kept in case I change my mind and put an `if` in font-awesome loading in `head.html` file.

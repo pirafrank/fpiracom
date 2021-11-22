@@ -14,19 +14,92 @@ To know about terms and license, please read the `terms.md` file in `pages/pages
 
 Source code is released under the terms of GNU GPLv3 license.
 
-## Important notes
-
-Static resources (like post images, project page images and files) are NOT hosted here. They're hosted in *fpiracom_static* repo.
-
-In order to have static files and images working when running `jekyll serve`, you need to clone that repo and creat a symlink named `static` pointing to the _static_ subfolder in it. The symlink must be in this repo root and it is already excluded by `.gitignore`.
-
-Look at the example below.
-
-### Example
+## Setup
 
 ```sh
-ln -s /path/to/fpira.com_static/static /path/to/pirafrank.github.io/static
+gem install bundler
+bundle install
 ```
+
+## Run it
+
+Use either:
+
+```sh
+bundle exec jekyll serve
+bundle exec jekyll
+jekyll serve
+jekyll s
+```
+
+add `--future` to compile and show post with later date than today.
+
+## Build it
+
+Use either:
+
+```sh
+bundle exec jekyll build
+bundle exec jekyll b
+jekyll build
+jekyll b
+```
+
+### Production build
+
+Prepend `JEKYLL_ENV=production` to commands above.
+
+## Embed content
+
+### Images
+
+Use standard markdown format:
+
+```md
+![alternative description](https://)
+```
+
+E.g.
+
+```md
+![Attach Disk to VM]({{ site.baseurl }}/static/postimages/2016-01-08/001.jpg)
+```
+
+### GitHub Gist
+
+Write the gist id in a Liquid tag like the following:
+
+```txt
+{% gist 40880dbc3e2dcfbdc1dd817b8880fa66 %}
+```
+
+Powered by [https://github.com/jekyll/jekyll-gist](https://github.com/jekyll/jekyll-gist)
+
+### twitter posts
+
+Just post the twitter post URL standalone in the markdown file. For example:
+
+```md
+
+https://twitter.com/pirafrank/status/1353708824558002177
+
+```
+
+Powered by `LazyTweetEmbedding` plugin ([link](https://github.com/takuti/jekyll-lazy-tweet-embedding)).
+
+The plugin is in the `_plugins` folder.
+
+## SEO images
+
+resource|path
+---|---
+page|https://fpira.com/static/pageimages/ + page.seoimage
+post|https://fpira.com/static/postimages/ + page.seoimage
+project|https://fpira.com/static/projectimages/ + page.seoimage
+
+`page.seoimage` refers to the `seoimage` variable specified in the front-matter.
+
+A folder for generic SEO images in posts exists, it's called `common`. So the resulting URL for those is `https://fpira.com/static/postimages/common/` + image filename.
 
 ## Further notes
 

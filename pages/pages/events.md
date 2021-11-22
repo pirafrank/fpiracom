@@ -14,11 +14,12 @@ Notable conferences and events I joined. I hope to see you at the next one!
 
 #### 2021
 
+- Codemotion Autumn 2021 Italian Edition - 9-11, November 2021 (online)
 - GitHub Universe 2021 - Oct 2021 (online)
-- KubeCon + CloudNativeCon North America, Oct 2021 (virtual)
+- KubeCon + CloudNativeCon North America, Oct 2021 (online)
 - O'Reilly Radar event - Data & AI - Oct 14, 2021 (online)
 - Cloudflare week - Sept 2021 (online)
-- Codemotion Spring 2021 - March 2021 (virtual)
+- Codemotion Spring 2021 Italian Edition - 23-25, March 2021 (online)
 
 #### Past
 

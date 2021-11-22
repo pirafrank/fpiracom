@@ -32,7 +32,9 @@ jekyll serve
 jekyll s
 ```
 
-add `--future` to compile and show post with later date than today.
+add `--future` to compile and show post with later date than today;
+
+add `--drafts` to compile and show drafts.
 
 ## Build it
 

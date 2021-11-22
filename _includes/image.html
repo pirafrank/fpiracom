@@ -1,18 +1,20 @@
 <figure class="image">
-  <img src="{{ site.baseurl }}{{ include.url }}" alt="{{ include.desc }}">
-  {% if include.link %}
-    <figcaption>
-      <a href="{{ include.link }}">{{ include.desc }}</a>
-      {% if include.credits %}
-        (<a href="{{ include.credits }}">credits</a>)
-      {% endif %}
-    </figcaption>
-  {% else %}
-    <figcaption>
-      {{ include.desc }}
-      {% if include.credits %}
-        (<a href="{{ include.credits }}">credits</a>)
-      {% endif %}
-    </figcaption>
-  {% endif %}
+  <div style="display:flex; flex-direction: column; align-items: center">
+    <img src="{{ site.baseurl }}{{ include.url }}" alt="{{ include.desc }}">
+    {% if include.link %}
+      <figcaption>
+        <a href="{{ include.link }}">{{ include.desc }}</a>
+        {% if include.credits %}
+          (<a href="{{ include.credits }}">credits</a>)
+        {% endif %}
+      </figcaption>
+    {% else %}
+      <figcaption>
+        {{ include.desc }}
+        {% if include.credits %}
+          (<a href="{{ include.credits }}">credits</a>)
+        {% endif %}
+      </figcaption>
+    {% endif %}
+  </div>
 </figure>

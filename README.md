@@ -65,6 +65,36 @@ E.g.
 ![Attach Disk to VM]({{ site.baseurl }}/static/postimages/2016-01-08/001.jpg)
 ```
 
+### Images with captions and/or links
+
+This is done using the `_includes/image.html` include.
+
+```txt
+{% include image.html 
+url="/static/postimages/2020-06-08/office.jpg"
+desc="Image by Markus Spiske from Pixabay"
+credits="https://pixabay.com/users/markusspiske-670330/"
+%}
+```
+
+or if caption has a link
+
+```txt
+{% include image.html 
+url="/static/postimages/2020-06-08/office.jpg"
+desc="Image by Markus Spiske from Pixabay"
+link="https://somehost.local/some/article"
+credits="https://pixabay.com/users/markusspiske-670330/"
+%}
+```
+
+attribute|required|use
+---|---|---
+`url`|yes|image url
+`desc`|yes|image caption and alt text
+`link`|no|if your caption needs to point to a url
+`credits`|no|url to image author
+
 ### GitHub Gist
 
 Write the gist id in a Liquid tag like the following:

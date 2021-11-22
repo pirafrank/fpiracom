@@ -203,8 +203,8 @@ exclude:
     - scripts
     - _jekyll_ignore
     - .gitignore
-    - list_tags.sh
     - '/**/*.disabled'
     - '*.sh'
     - .bundle
     - vendor
+    - 'repo_utils/**'

@@ -71,7 +71,7 @@ E.g.
 
 This is done using the `_includes/image.html` include.
 
-```txt
+```text
 {% include image.html 
 url="/static/postimages/2020-06-08/office.jpg"
 desc="Image by Markus Spiske from Pixabay"
@@ -81,7 +81,7 @@ credits="https://pixabay.com/users/markusspiske-670330/"
 
 or if caption has a link
 
-```txt
+```text
 {% include image.html 
 url="/static/postimages/2020-06-08/office.jpg"
 desc="Image by Markus Spiske from Pixabay"
@@ -101,7 +101,7 @@ attribute|required|use
 
 Write the gist id in a Liquid tag like the following:
 
-```txt
+```text
 {% gist 40880dbc3e2dcfbdc1dd817b8880fa66 %}
 ```
 

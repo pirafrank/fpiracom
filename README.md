@@ -125,9 +125,9 @@ The plugin is in the `_plugins` folder.
 
 resource|path
 ---|---
-page|https://fpira.com/static/pageimages/ + page.seoimage
-post|https://fpira.com/static/postimages/ + page.seoimage
-project|https://fpira.com/static/projectimages/ + page.seoimage
+page|`https://fpira.com/static/pageimages/` + `page.seoimage`
+post|`https://fpira.com/static/postimages/` + `page.seoimage`
+project|`https://fpira.com/static/projectimages/` + `page.seoimage`
 
 `page.seoimage` refers to the `seoimage` variable specified in the front-matter.
 
@@ -156,6 +156,16 @@ Now IFTTT can get the URL from the `img` tag and make it available to applet via
 ### Adding filters to IFTTT RSS feed trigger
 
 - [IFTTT - Why is there a “File not found” image on my post?](https://help.ifttt.com/hc/en-us/articles/115010361748/)
+
+## Theming
+
+```xml
+<meta name="theme-color" content="#3344aa">
+```
+
+Links:
+
+- [Meta Theme Color and Trickery](https://css-tricks.com/meta-theme-color-and-trickery/)
 
 ## Further notes
 

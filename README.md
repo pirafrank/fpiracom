@@ -131,6 +131,8 @@ project|`https://fpira.com/static/projectimages/` + `page.seoimage`
 
 `page.seoimage` refers to the `seoimage` variable specified in the front-matter.
 
+If `seoimage` is not specified, `https://fpira.com/assets/images/og_image.png` will be used instead, as written in `_includes/seo.html`.
+
 A folder for generic SEO images in posts exists, it's called `common`. So the resulting URL for those is `https://fpira.com/static/postimages/common/` + image filename.
 
 ### SEO images in RSS feed

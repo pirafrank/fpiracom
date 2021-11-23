@@ -1,7 +1,7 @@
 ---
 title: Signing git commits and tags
 subtitle: "Show proof of your identity... and get the 'verified' badges on GitHub"
-description: ""
+description: "Show proof of your identity and get the 'verified' badges on GitHub"
 categories: ['How-tos']
 tags: ['PGP','Git']
 seoimage: 2021-11-22/github.png

@@ -208,3 +208,4 @@ exclude:
     - .bundle
     - vendor
     - 'repo_utils/**'
+    - vercel.json

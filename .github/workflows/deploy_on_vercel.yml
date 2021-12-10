@@ -1,0 +1,73 @@
+# deploy fpira.com using GitHub Actions
+
+name: 'deploy on vercel'
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+      - '_jekyll_ignore/**'
+      - list_categories.sh
+      - list_tags.sh
+      - README.md
+      - '.gitignore'
+      - '_drafts'
+      - 'repo_utils/**'
+  # schedule is in UTC using cron syntax
+  schedule:
+    - cron: '45 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  checks:
+    name: Checks
+    runs-on: ubuntu-20.04
+    outputs:
+      RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check for new blog posts
+        id: check_new_posts
+        shell: bash
+        run: |
+          # if run on schedule, check for new posts
+          if [ ${GITHUB_EVENT_NAME} = 'schedule' ]; then
+            if [ $(ls -1 _posts | grep $(date '+%Y-%m-%d')) ]; then
+              echo "New posts found with today date"
+              echo "::set-output name=RUN_BUILD::true"
+            else
+              echo "No new posts to publish with today date."
+              echo "::set-output name=RUN_BUILD::false"
+            fi
+          else
+            echo "No checks to perform, about to run build..."
+            echo "::set-output name=RUN_BUILD::true"
+          fi
+  build:
+    name: Deploy on vercel
+    runs-on: ubuntu-20.04
+    needs: [checks]
+    if: contains(needs.checks.outputs.RUN_BUILD, 'true')
+    steps:
+    - uses: actions/checkout@v2
+    - name: Extract branch name
+      id: extract_branch_name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+    - name: Deploy to vercel
+      uses: amondnet/vercel-action@v20
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        vercel-args: '--prod'
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+    # - name: Send Push Notification
+    #   uses: fjogeleit/http-request-action@master
+    #   if: always()
+    #   with:
+    #     url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
+    #     method: 'POST'
+    #     data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (branch ${{ steps.extract_branch_name.outputs.branch }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

@@ -11,3 +11,4 @@ pages/test.md
 service-worker.js
 .jekyll-cache
 vendor
+.vercel

@@ -64,10 +64,10 @@ jobs:
         vercel-args: '--prod'
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-    # - name: Send Push Notification
-    #   uses: fjogeleit/http-request-action@master
-    #   if: always()
-    #   with:
-    #     url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
-    #     method: 'POST'
-    #     data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (branch ${{ steps.extract_branch_name.outputs.branch }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+    - name: Send Push Notification
+      uses: fjogeleit/http-request-action@master
+      if: always()
+      with:
+        url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
+        method: 'POST'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (branch ${{ steps.extract_branch_name.outputs.branch }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

@@ -1,6 +1,7 @@
 # fpira.com source code
 
 [![deploy_fpiracom](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_fpiracom.yml/badge.svg?branch=main)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_fpiracom.yml)
+[![deploy on vercel](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_on_vercel.yml/badge.svg)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_on_vercel.yml)
 
 Visit [fpira.com](https://fpira.com) for a live version.
 

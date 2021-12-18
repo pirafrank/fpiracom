@@ -1,13 +1,17 @@
 # Includes a social icon in social divs and make a link to that profile work for each username you enter
 # Leave social links you don't have/use empty to disable them
 aboutme:
-  category: personalpage
+  category: social
   url: 'https://about.me/pirafrank'
   user: pirafrank
 angel:
   category: social
   url: 'https://angel.co/francescopira'
   user: francescopira
+credly:
+  category: code
+  url: 'https://www.credly.com/users/francesco-pira/badges'
+  user: 'francesco-pira'
 docker: # docker hub
   category: code
   url: 'http://hub.docker.com/u/pirafrank'
@@ -31,7 +35,7 @@ goodreads:
   url: 'https://www.goodreads.com/pirafrank'
   user: pirafrank
 gravatar:
-  category: 'web identity'
+  category: social
   url: 'https://gravatar.com/pirafrank'
   user: pirafrank
 instagram:
@@ -53,11 +57,11 @@ linkedin:
   user: pirafrank
   recentActivity: 'https://www.linkedin.com/in/pirafrank/detail/recent-activity/'
 linktree:
-  category: personalpage
+  category: social
   url: 'https://linktr.ee/pirafrank'
   user: pirafrank
 medium:
-  category: news
+  category: blog
   url: 'https://medium.com/@pirafrank'
   user: pirafrank
 musicblog:
@@ -67,11 +71,6 @@ messenger:
   category: chat
   url: 'https://m.me/pirafrank'
   user: pirafrank
-nuzzel:
-  category: news
-  url: 'http://nuzzel.com/pirafrank'
-  user: pirafrank
-  frequency: weekly
 packal:
   category: code
   url: 'https://www.packal.org/users/pirafrank'
@@ -81,7 +80,7 @@ pinterest:
   url:
   user:
 pocket:
-  category: news
+  category: blog
   url: 'https://getpocket.com/@pirafrank'
   user: '@pirafrank'
 producthunt:
@@ -109,11 +108,11 @@ stackoverflow:
   url:  # your stackoverflow profile, e.g. "users/12345/john-doe"
   user:
 telegram: # twitter mirror channel
-  category: news
+  category: social
   url: 'http://t.me/pirafrank'
   user: pirafrank
 telegram-feed: # fpira.com feed
-  category: news
+  category: blog
   url: 'http://t.me/fpira'
   user: fpira
 telegram-im:
@@ -121,11 +120,11 @@ telegram-im:
   url: 'http://t.me/francescopira'
   user: francescopira
 telegram-apple-dev-releases:
-  category: news
+  category: social
   url: 'https://t.me/appledeveloperreleases'
   user: appledeveloperreleases
 tumblr:
-  category: #news
+  category: #blog
   url: #'http://pirafrank.tumblr.com'
   user: #pirafrank
 twitter:

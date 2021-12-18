@@ -9,8 +9,6 @@ on:
     paths-ignore:
       - '.github/**'
       - '_jekyll_ignore/**'
-      - list_categories.sh
-      - list_tags.sh
       - README.md
       - '.gitignore'
       - '_drafts'

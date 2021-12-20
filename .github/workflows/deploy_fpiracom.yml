@@ -13,6 +13,9 @@ on:
       - '.gitignore'
       - '_drafts'
       - 'repo_utils/**'
+      - '.vscode'
+      - '.vercelignore'
+      - 'vercel.json'
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * *'

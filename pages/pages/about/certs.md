@@ -1,6 +1,10 @@
-- [Oracle Certified Professional - Java SE 11 Developer](https://catalog-education.oracle.com/pls/certview/sharebadge?id=36AA615B4F75E27A071063A0FDD8B00EA42590B89200BE7BBBB7D9166BF75F94) (April 2021)
-- [AWS Certified Developer - Associate](https://www.youracclaim.com/badges/a1aea53e-dad2-441a-a95f-dcc0735f1c49/public_url) (September 2020)
-- [AWS Certified Cloud Practitioner](https://www.youracclaim.com/badges/89778d72-5e8f-4521-9197-cd7c9b3d1f23/public_url) (September 2020)
-- [AWS Certified Solutions Architect - Associate](https://www.youracclaim.com/badges/07aecb45-7bc0-4482-8411-108c87a4bdf2/public_url) (June 2020)
+- [AZ-400 - Designing and Implementing Microsoft DevOps Solutions]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-400.pdf) (December 2021)
+- [AZ-204 - Developing Solutions for Microsoft Azure]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-204.pdf) (December 2021)
+- [Oracle Certified Professional - Java SE 11 Developer]({{ site.baseurl }}/assets/files/honors/Oracle_Java_SE_11_Developer_certification.pdf) (April 2021)
+- [AWS Certified Developer - Associate]({{ site.baseurl }}/assets/files/honors/AWS_Certified_Developer_Associate_certificate.pdf) (September 2020)
+- [AWS Certified Cloud Practitioner]({{ site.baseurl }}/assets/files/honors/AWS_Certified_Cloud_Practitioner_certificate.pdf) (September 2020)
+- [AWS Certified Solutions Architect - Associate]({{ site.baseurl }}/assets/files/honors/AWS_Certified_Solutions_Architect_Associate_certificate.pdf) (June 2020)
 - [AZ-900 - Microsoft Azure Fundamentals]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-900.pdf) (July 2019)
-- [DASA DevOps Fundamentals](https://www.youracclaim.com/badges/dcc645b3-3594-4183-bbe9-d116c1a872ee/public_url) (May 2019)
+- [DASA DevOps Fundamentals]({{ site.baseurl }}/assets/files/honors/DASA_DevOps_Certificate.pdf) (May 2019)
+
+Badges are also available on [Credly]({{ site.data.social.credly.url }}).

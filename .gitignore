@@ -26,3 +26,6 @@ vendor
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# OWASP Dependency-Check reports
+dependency-check-report.html

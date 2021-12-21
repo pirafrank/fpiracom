@@ -8,7 +8,7 @@ $(document).ready(function() {
         // set target to anchor's "href" attribute
         var target = $(this).attr("href");
         // scroll to each target
-        $(target).velocity("scroll", {
+        $(target).velocity({scrollBottom: "500px"}, {
             duration: 700,
             offset: -40,
             easing: "ease-in-out"

@@ -28,29 +28,13 @@ Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.na
 
 ### Skills
 
-- **Cloud-native:** Kubernetes (including AKS and OKD), Apache Kafka and Strimzi
-- **Front-end dev:** Vue.js, CSS, SCSS. Some experience in Angular
-- **Back-end dev:** node.js, SpringBoot, Java EE, Flask. In the past: Ruby on Rails
-- **J2EE Application servers:** Oracle WebLogic, IBM WebSphere, Tomcat
-- **Databases:** MongoDB, PostgreSQL, Oracle DB 9 and 12c, SQLite, CouchDB, MySQL/MariaDB
-- **CI/CD:** Azure DevOps, GitHub Actions, Jenkins
-- **System Administration:** Bash scripting, nginx configuration, server deployment, configuration and hardening (sshd hardening, Iptables, firewalld, OpenVPN, etc.)
-- **Languages:** Java 6+, Java EE 7+, JavaScript (ES5+), TypeScript, Python, C
-- **VCS** Git (including platforms for Agile project management like Azure DevOps and GitHub), SVN
-- **Operating Systems:** Debian Linux-based, CentOS 6+, macOS 10.6+, Windows XP+, iOS and Android
-- **SOA products:** Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Oracle WebLogic
-- **Cloud platforms:** Amazon Web Services, Microsoft Azure, Hetzner, Linode, Aruba Cloud, Scaleway
-- **Other tools:** Docker, XSLT, XQuery, Let’s Encrypt, GrSecurity, Webpack, Babel
-- **Static-site generators and CMS:** Jekyll. In the past: Wordpress and Prestashop
-- **Other technical skills:** Fundamentals of computer security and cryptography
-- **Graphical tools:** Photoshop (mostly for front-end assets), Sketch by Bohemian Coding, paint.net
-- **Soft Skills:** Problem Solving, Team Working, Project Management and Tracking, Team Leadership, Social Networking, Event Organisation
+{% for skill in site.data.cv.skills %}- **{{ skill.area }}**: {{ skill.value }}
+{% endfor %}
 
 **What's next?**
 
-- Advance my network and computer security skills
-- Machine learning and MLOps
-- Rust
+{% for nextskill in site.data.cv.whatsnext %}- {{ nextskill }}
+{% endfor %}
 
 ### Resume
 

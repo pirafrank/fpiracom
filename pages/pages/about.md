@@ -34,17 +34,17 @@ I usually work in zsh, vim and VSCode, I think GUIs are largely overrated. If yo
 
 ### Skills
 
-{% for skill in site.data.cv.skills %}- **{{ skill.area }}**: {{ skill.value }}
+{% for skill in site.data.cv.skills.skills %}- **{{ skill.area }}**: {{ skill.desc }}
 {% endfor %}
 
 **What's next?**
 
-{% for nextskill in site.data.cv.whatsnext %}- {{ nextskill }}
+{% for nextskill in site.data.cv.skills.whatsnext %}- {{ nextskill }}
 {% endfor %}
 
 ### Resume
 
-[Download my resume]({{ site.data.resume.pdf }})
+[Download my resume]({{ site.data.resume.url }})
 
 {% include_relative about/resume-last-edit.html %}
 
@@ -69,7 +69,7 @@ Usually I write little pieces of code to speed up my work and when I have some s
 
 ## Languages
 
-- Italian, native proficiency 
+- Italian, native proficiency
 - English, CEFR Level C1 ([test results]({{ site.baseurl }}/assets/files/certs/CEPTCandidateTestReport_20210930.pdf))
 - Spanish, elementary proficiency
 

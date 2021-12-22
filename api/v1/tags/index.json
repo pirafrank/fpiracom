@@ -1,0 +1,16 @@
+---
+layout: compress
+---
+{% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
+[{% for tag in sorted_tags_by_name %}
+  {
+    "type": "tag",
+    {% assign tagName = tag[0] %}
+    {% assign tagId = tagName | downcase | replace:' ','-' %}
+    {% assign numberOfpostsWithTag = tag[1] %}
+    "id": "{{ tagId }}",
+    "name": "{{ tagName }}",
+    "url": "{{ site.baseurl | prepend: site.url }}/blog/tags/{{ tagId }}",
+    "count": "{{ numberOfpostsWithTag }}"
+  }{% unless forloop.last %},{% endunless %}{% endfor %}
+]

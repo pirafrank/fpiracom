@@ -1,0 +1,16 @@
+---
+layout: compress
+---
+{% assign sorted_categories = site.categories | sort %}
+[{% for category in sorted_categories %}
+  {
+    "type": "category",
+    {% assign categoryName = category[0] %}
+    {% assign categoryId = categoryName | downcase | replace:' ','-' %}
+    {% assign postsInCategory = category[1] %}
+    "id": "{{ categoryId }}",
+    "name": "{{ categoryName }}",
+    "url": "{{ site.baseurl | prepend: site.url }}/blog/categories/{{ categoryId }}",
+    "count": "{{ postsInCategory.size }}"
+  }{% unless forloop.last %},{% endunless %}{% endfor %}
+]

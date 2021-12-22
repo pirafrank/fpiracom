@@ -1,0 +1,77 @@
+{
+  "skills": [
+    {
+      "area": "Cloud-native",
+      "desc": "Kubernetes (including AKS and OKD), Apache Kafka and Strimzi"
+    },
+    {
+      "area": "Front-end dev",
+      "desc": "Vue.js, CSS, SCSS. Some experience in Angular"
+    },
+    {
+      "area": "Back-end dev",
+      "desc": "node.js, SpringBoot, Java EE, Flask. In the past: Ruby on Rails"
+    },
+    {
+      "area": "J2EE Application servers",
+      "desc": "Oracle WebLogic, IBM WebSphere, Tomcat"
+    },
+    {
+      "area": "Databases",
+      "desc": "MongoDB, PostgreSQL, Oracle DB 9 and 12c, SQLite, CouchDB, MySQL/MariaDB"
+    },
+    {
+      "area": "CI/CD",
+      "desc": "Azure DevOps, GitHub Actions, Jenkins"
+    },
+    {
+      "area": "System Administration",
+      "desc": "Bash scripting, nginx configuration, server deployment, configuration and hardening (sshd hardening, Iptables, firewalld, OpenVPN, etc.)"
+    },
+    {
+      "area": "Languages",
+      "desc": "Java 6+, Java EE 7+, JavaScript (ES5+), TypeScript, Python, C"
+    },
+    {
+      "area": "VCS",
+      "desc": "Git (including platforms for Agile project management like Azure DevOps and GitHub), SVN"
+    },
+    {
+      "area": "Operating Systems",
+      "desc": "Debian Linux-based, CentOS 6+, macOS 10.6+, Windows XP+, iOS and Android"
+    },
+    {
+      "area": "SOA products",
+      "desc": "Oracle Fusion Middleware 12c (including JDeveloper), Oracle Service Bus 12c, Oracle WebLogic"
+    },
+    {
+      "area": "Cloud platforms",
+      "desc": "Amazon Web Services, Microsoft Azure, Hetzner, Linode, Aruba Cloud, Scaleway"
+    },
+    {
+      "area": "Other tools",
+      "desc": "Docker, XSLT, XQuery, Let's Encrypt, GrSecurity, Webpack, Babel"
+    },
+    {
+      "area": "Static-site generators and CMS",
+      "desc": "Jekyll. In the past: Wordpress and Prestashop"
+    },
+    {
+      "area": "Other technical skills",
+      "desc": "Fundamentals of computer security and cryptography"
+    },
+    {
+      "area": "Graphical tools",
+      "desc": "Photoshop (mostly for front-end assets), Sketch by Bohemian Coding, paint.net"
+    },
+    {
+      "area": "Soft Skills",
+      "desc": "Problem Solving, Team Working, Project Management and Tracking, Team Leadership, Social Networking, Event Organisation"
+    }
+  ],
+  "whatsnext": [
+    "Advance my network and computer security skills",
+    "Machine learning and MLOps",
+    "Rust"
+  ]
+}

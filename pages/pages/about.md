@@ -28,12 +28,12 @@ Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.na
 
 ### Skills
 
-{% for skill in site.data.cv.skills %}- **{{ skill.area }}**: {{ skill.value }}
+{% for skill in site.data.cv.skills.skills %}- **{{ skill.area }}**: {{ skill.desc }}
 {% endfor %}
 
 **What's next?**
 
-{% for nextskill in site.data.cv.whatsnext %}- {{ nextskill }}
+{% for nextskill in site.data.cv.skills.whatsnext %}- {{ nextskill }}
 {% endfor %}
 
 ### Resume

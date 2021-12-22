@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Francesco Pira",
+    "born": "Jan 21, 1993",
+    "job": "DevOps Engineer",
+    "location": "Catania, Italy",
+    "isAvailableToMove": true,
+    "preferRemoteWork": true,
+    "tagline": [
+      "DevOps Engineer and curious mind, interested in infosec and business. Co-founder of a grant-winning web-services startup, with experience in students' associations.",
+      "My aim is to improve people's lives."
+    ]
+  },
+  "infoTable": {
+    "born": {
+      "label": "born",
+      "value": "Jan 21, 1993"
+    },
+    "website": {
+      "label": "website",
+      "value": "fpira.com",
+      "link": "https://fpira.com"
+    },
+    "email": {
+      "label": "email",
+      "value": "inbox@fpira.com",
+      "link": "mailto:inbox@fpira.com"
+    },
+    "GitHub": {
+      "label": "GitHub",
+      "value": "github.com/pirafrank",
+      "link": "https://github.com/pirafrank"
+    },
+    "telegram": {
+      "label": "telegram",
+      "value": "t.me/francescopira",
+      "link": "https://t.me/francescopira"
+    },
+    "LinkedIn": {
+      "label": "LinkedIn",
+      "value": "in/pirafrank",
+      "link": "https://linkedin.com/in/pirafrank"
+    },
+    "Location": {
+      "label": "Location",
+      "value": "Catania, Italy"
+    },
+    "SlideShare": {
+      "label": "SlideShare",
+      "value": "slideshare.net/pirafrank",
+      "link": "https://slideshare.net/pirafrank"
+    },
+    "availableToMove": {
+      "label": "",
+      "value": "Available to move."
+    },
+    "twitter": {
+      "label": "twitter",
+      "value": "@pirafrank",
+      "link": "https://twitter.com/pirafrank"
+    }
+  }
+}

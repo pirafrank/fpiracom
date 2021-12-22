@@ -234,3 +234,4 @@ exclude:
     - Dockerfile
     - '_posts/accordions/**'
     - '.html_proofer_cache/**'
+    - 'cv-generator/**'

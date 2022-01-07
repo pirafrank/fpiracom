@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - dev
     paths-ignore:
       - '.github/**'
       - '_jekyll_ignore/**'
@@ -19,6 +20,11 @@ on:
   schedule:
     - cron: '45 8 * * *'
   workflow_dispatch:
+    inputs:
+      target_ref:
+        description: "branch or ref to checkout to"
+        required: false
+        default: ''
 
 jobs:
   checks:
@@ -28,6 +34,8 @@ jobs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.target_ref }}
       - name: Check for new blog posts
         id: check_new_posts
         shell: bash
@@ -52,16 +60,30 @@ jobs:
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.inputs.target_ref }}
     - name: Extract branch name
       id: extract_branch_name
       shell: bash
       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-    - name: Deploy to vercel
+    - name: Deploy to vercel (--prod)
       uses: amondnet/vercel-action@v20
+      # weird 'if' syntax due to issue: https://github.com/actions/runner/issues/1173
+      if: github.ref == format('refs/heads/{0}', 'main')
       with:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
         vercel-args: '--prod'
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+    - name: Deploy to vercel (dev)
+      uses: amondnet/vercel-action@v20
+      # weird 'if' syntax due to issue: https://github.com/actions/runner/issues/1173
+      if: github.ref != format('refs/heads/{0}', 'main')
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        vercel-args: ''
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
     - name: Send Push Notification
@@ -70,4 +92,4 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (branch ${{ steps.extract_branch_name.outputs.branch }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ github.ref }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

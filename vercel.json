@@ -4,6 +4,7 @@
     "enabled": false,
     "silent": true
   },
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",

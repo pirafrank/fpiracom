@@ -71,6 +71,10 @@ messenger:
   category: chat
   url: 'https://m.me/pirafrank'
   user: pirafrank
+npmjs:
+  category: code
+  url: 'https://www.npmjs.com/~pirafrank'
+  user: pirafrank
 packal:
   category: code
   url: 'https://www.packal.org/users/pirafrank'

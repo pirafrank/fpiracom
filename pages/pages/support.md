@@ -2,7 +2,7 @@
 layout: page
 title: Support me
 description: "Support my open-source projects and blog, help me pay for server and storage"
-permalink: /support/
+permalink: /support
 show_title: true
 center: true
 custom_js: pages/support
@@ -19,16 +19,16 @@ I would appreciate it so much!
 #### Donate via PayPal
 
 <p>
-    <a class="btn btn-big btn-default" href="{{ site.data.payments['paypal'] }}/1">
+    <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}/1">
         <i class="fa fa-paypal" aria-hidden="true"></i> 1 &euro;
     </a>
-    <a class="btn btn-big btn-default" href="{{ site.data.payments['paypal'] }}/4">
+    <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}/4">
         <i class="fa fa-paypal" aria-hidden="true"></i> 4 &euro;
     </a>
-    <a class="btn btn-big btn-default" href="{{ site.data.payments['paypal'] }}/10">
+    <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}/10">
         <i class="fa fa-paypal" aria-hidden="true"></i> 10 &euro;
     </a>
-    <a class="btn btn-big btn-default" href="{{ site.data.payments['paypal'] }}">
+    <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}">
         <i class="fa fa-paypal" aria-hidden="true"></i> Other
     </a>
 </p>
@@ -40,7 +40,7 @@ I would appreciate it so much!
 <p><i class="fa fa-btc" aria-hidden="true"></i> Pay with Bitcoin</p>
 
 <p>
-    <a class="btn btn-big btn-default" id="bitcoin" onclick="showInPopup(document.getElementById('bitcoin').innerHTML)">1CYVUUnCLgbkqjLrSAGL3X9YAkf4Jw2ZzP</a>
+    <a class="btn btn-big btn-default" id="bitcoin" onclick="showInPopup(document.getElementById('bitcoin').innerHTML)">{{ site.data.donate.bitcoin }}</a>
 </p>
 
 <br>

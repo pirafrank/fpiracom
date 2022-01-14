@@ -86,6 +86,8 @@
       "destination": "https://twitter.com/pirafrank",
       "permanent": false
     },
-    { "source": "/pgp", "destination": "/pgp.txt", "permanent": true }
+    { "source": "/pgp", "destination": "/pgp.txt", "permanent": true },
+    { "source": "/utils", "destination": "/code", "permanent": false },
+    { "source": "/utilities", "destination": "/code", "permanent": false }
   ]
 }

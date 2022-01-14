@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - main
-      - dev
+      - develop
     paths-ignore:
       - '.github/**'
       - '_jekyll_ignore/**'
@@ -76,7 +76,7 @@ jobs:
         vercel-args: '--prod'
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-    - name: Deploy to vercel (dev)
+    - name: Deploy to vercel (test)
       uses: amondnet/vercel-action@v20
       # weird 'if' syntax due to issue: https://github.com/actions/runner/issues/1173
       if: github.ref != format('refs/heads/{0}', 'main')

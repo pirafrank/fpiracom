@@ -79,5 +79,13 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/google+",
+      "destination": "https://twitter.com/pirafrank",
+      "permanent": false
+    },
+    { "source": "/pgp", "destination": "/pgp.txt", "permanent": true }
   ]
 }

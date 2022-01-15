@@ -62,28 +62,42 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: ${{ github.event.inputs.target_ref }}
-    - name: Extract branch name
-      id: extract_branch_name
+    - name: Get current ref (branch name or commit id)
+      id: get_current_ref
       shell: bash
-      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-    - name: Deploy to vercel (--prod)
+      run: |
+        # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
+        # even if actions/checkout@v2 checkouts to a different ref
+        if [ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]; then
+          if [ "$(git rev-parse --abbrev-ref HEAD)" == 'HEAD' ]; then
+            # case detached HEAD
+            REF="$(git rev-parse --short HEAD)"
+          else
+            # HEAD pointing to a branch
+            REF="$(git rev-parse --abbrev-ref HEAD)"
+          fi
+        else
+          REF="${GITHUB_REF#refs/heads/}"
+        fi
+        # set as step output and as env
+        echo "::set-output name=REF::${REF}"
+        echo "GIT_REF=${REF}" >> $GITHUB_ENV
+    - name: Get vercel args
+      id: get_vercel_args
+      shell: bash
+      run: |
+        if [ ${{ env.GIT_REF }} == 'main' ]; then
+          echo "::set-output name=VERCEL_ARGS::$(echo '--prod')"
+        else
+          echo "::set-output name=VERCEL_ARGS::$(echo '')"
+        fi
+    - name: Deploy to vercel
+      id: deploy_to_vercel
       uses: amondnet/vercel-action@v20
-      # weird 'if' syntax due to issue: https://github.com/actions/runner/issues/1173
-      if: github.ref == format('refs/heads/{0}', 'main')
       with:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        vercel-args: '--prod'
-        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-    - name: Deploy to vercel (test)
-      uses: amondnet/vercel-action@v20
-      # weird 'if' syntax due to issue: https://github.com/actions/runner/issues/1173
-      if: github.ref != format('refs/heads/{0}', 'main')
-      with:
-        vercel-token: ${{ secrets.VERCEL_TOKEN }}
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        vercel-args: ''
+        vercel-args: ${{ steps.get_vercel_args.outputs.VERCEL_ARGS }}
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
     - name: Send Push Notification
@@ -92,4 +106,4 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ github.ref }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ env.GIT_REF }}) finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

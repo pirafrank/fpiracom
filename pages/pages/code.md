@@ -10,7 +10,6 @@ I code, for passion and for work. And I like to share it, too.
 While I cannot tell about things I work on daily, there are side projects, tools, utilities and more code of mine I am happy to share publicly.
 
 - [GitHub]({{ site.data.social.github.url }})
-- [Snippets]({{ site.data.social.github.gist }})
 - [Docker Hub]({{ site.data.social.docker.url }})
 - [npm.js]({{ site.data.social.npmjs.url }})
 - [dotfiles]({{ site.data.social.github.url }}/dotfiles)
@@ -18,7 +17,7 @@ While I cannot tell about things I work on daily, there are side projects, tools
 
 #### Side Projects
 
-{% include_relative includes/side-projects.md %}
+Please check them in the [Projects]({{ site.baseurl }}/projects) page.
 
 #### Utilities
 

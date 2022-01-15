@@ -1,0 +1,99 @@
+{
+  "projects": [
+    {
+      "name": "workspace",
+      "description": "A workspace-in-a-container development environment, based on my dotfiles.",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/workspace#readme",
+      "repourl": "https://github.com/pirafrank/workspace",
+      "license": "MIT",
+      "creationDate": "2020-05-09T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false
+    },
+    {
+      "name": "ephemeral",
+      "description": "Bookmarkable, ephemeral text editor that runs in your browser",
+      "group": "",
+      "homepage": "https://edit.fpira.com",
+      "repourl": "https://github.com/pirafrank/ephemeral",
+      "license": "",
+      "creationDate": "2021-08-05T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "isLegacy": false
+    },
+    {
+      "name": "notion-to-text",
+      "description": "Get content of notion.site pages in plain text or as JSON",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/notion-to-text/tree/main/standalone#readme",
+      "repourl": "https://github.com/pirafrank/notion-to-text",
+      "license": "",
+      "creationDate": "2021-11-22T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "isLegacy": false
+    },
+    {
+      "name": "fpira.com",
+      "description": "My website. It is an heavily modified fork of Jekyll Now with more features and a custom SCSS framework coded from scratch. Hosted on Vercel, built on GitHub Actions.",
+      "group": "",
+      "homepage": "https://fpira.com",
+      "repourl": "https://github.com/pirafrank/fpiracom",
+      "license": "",
+      "creationDate": "2015-03-13T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "isLegacy": false
+    },
+    {
+      "name": "Rebrandly CLI",
+      "description": "An unofficial command line client to shorten URL using rebrandly.com.",
+      "group": "",
+      "homepage": "https://fpira.com/projects/rebrandly_cli",
+      "repourl": "https://github.com/pirafrank/rebrandly_cli",
+      "license": "GNU GPLv3",
+      "creationDate": "2016-11-16T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "isLegacy": false
+    },
+    {
+      "name": "iA Writer templates",
+      "description": "Self-made templates for the awesome iA Writer. You can use them on both mobile and desktop version of the app.",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/My-iA-Writer-templates#readme",
+      "repourl": "https://github.com/pirafrank/My-iA-Writer-templates",
+      "license": "GNU GPLv3",
+      "creationDate": "2016-07-19T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "isLegacy": false
+    },
+    {
+      "name": "Alfred Workflows",
+      "description": "Useful Alfred workflows to enhance your productivity on Mac. Good for developers and power-users.",
+      "group": "",
+      "homepage": "https://fpira.com/alfred-for-mac",
+      "repourl": "https://github.com/pirafrank/alfred_workflows",
+      "license": "GNU GPLv3",
+      "creationDate": "2016-02-07T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "isLegacy": false
+    },
+    {
+      "name": "Google Photos EXIF fixer",
+      "description": "Script to fix pictures EXIF metadata before upload them to Google Photos.",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/Google-Photos-EXIF-fixer#readme",
+      "repourl": "https://github.com/pirafrank/Google-Photos-EXIF-fixer",
+      "license": "GNU GPLv3",
+      "creationDate": "2015-05-30T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "isLegacy": false
+    }
+  ]
+}

@@ -5,9 +5,7 @@ permalink: /code/
 show_title: true
 ---
 
-I code, for passion and for work. And I like to share it, too.
-
-While I cannot tell about things I work on daily, there are side projects, tools, utilities and more code of mine I am happy to share publicly.
+I code for passion and for work, I grab the keyboard whenever creativity sparks or if I need a tailor-made tool.
 
 - [GitHub]({{ site.data.social.github.url }})
 - [Docker Hub]({{ site.data.social.docker.url }})

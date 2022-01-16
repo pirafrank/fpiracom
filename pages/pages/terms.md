@@ -2,26 +2,24 @@
 layout: page
 title: Terms and Policies
 permalink: /terms/
-date: 2016-08-25
+date: 2021-01-16
 show_title: true
 ---
 
 This is my personal website. I write and edit it. I also check and revise this page occasionally.
 By using this website, in any and all forms, you accept the following terms and policies.
 
-All content provided is for informational purposes only and without warranties of any kind. I do not guarantee completeness of any information found here or by following any links. I will not be liable for any errors or omissions in this information nor for the availability of this information. I will not be liable for any losses, injuries, or damages from the display or use of this information.
+All content provided is for informational purposes only and without warranties of any kind. I do not guarantee completeness of any information found here or by following any links here published. I will not be liable for any errors or omissions in this information nor for the availability of this information. I will not be liable for any losses, injuries, or damages from the display or use of this information.
 
 ### Privacy policy
 
-This website is hosted on a virtual server maintained by me. I do not log accesses but I use a firewall and filters to reduce chances of denial of the service attacks. In firewall logs IP address, date and time stamp and other data may be collected. This data is anonymous and related to all accesses to the server (not only to this website). It is not linked in any way to visitors of this website.
-
-Some static files are hosted on Amazon Simple Storage Service (S3). Your IP address and other data transmitted upon the GET request may be logged by Amazon. Sorry, I cannot avoid this.
+This website is deployed and hosted on Vercel. Please read their [privacy policy](https://vercel.com/legal/privacy-policy) to know about how they manage personal information (e.g. your IP) when loading content of websites hosted on their platform.
 
 In case I get in touch with any personal information of yours (e.g. your email address), I will never share it to anyone without your direct consent.
 
 ### Cookies and beacons
 
-This website uses Google Analytics and heatmap.me services. Both of them collect data anonymously. Data is collected at the sole purpose of understanding visitor engagement with the website and therefore improve its content.
+This website uses Google Analytics. Data is collected anonymously and at the sole purpose of understanding visitor engagement with the website itself.
 
 #### Google Analytics
 
@@ -41,5 +39,9 @@ All the original content on this website is licensed under a [Creative Commons A
 
 In giving me credit, a link back to the source page attributed to me is fine. Please don't steal the original content I post and republish it as your own.
 
+#### Code
+
+This website code is published on [GitHub](https://github.com/pirafrank/fpiracom). Apart from content, which license model is mentioned above, the rest of code files are published with a GNU GPLv3 license.
+
 <br>
-*Last updated: {{ page.date }}*
+*Last updated: {{ page.date | date: "%-d %B %Y" }}*

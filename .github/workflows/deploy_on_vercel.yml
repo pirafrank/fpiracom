@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-      - develop
     paths-ignore:
       - '.github/**'
       - '_jekyll_ignore/**'

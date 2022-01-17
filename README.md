@@ -3,17 +3,11 @@
 [![deploy_fpiracom](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_fpiracom.yml/badge.svg?branch=main)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_fpiracom.yml)
 [![deploy on vercel](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_on_vercel.yml/badge.svg)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_on_vercel.yml)
 
-Visit [fpira.com](https://fpira.com) for a live version.
+Just my website. Visit [fpira.com](https://fpira.com) for a live version.
 
 ## About the website code
 
-This Jekyll instance is a completely overhauled fork of [Jekyll Now](https://github.com/barryclark/jekyll-now) with new design and many more features.
-
-## Content License
-
-To know about terms and license, please read the `terms.md` file in `pages/pages`.
-
-Source code is released under the terms of GNU GPLv3 license.
+This website is powered by Jekyll. It started in 2015 as an overhauled fork of [Jekyll Now](https://github.com/barryclark/jekyll-now) with custom CSS designed from scratch. Over the years, I've implemented many additional features, tailored on my needs.
 
 ## Setup
 
@@ -160,6 +154,12 @@ Now IFTTT can get the URL from the `img` tag and make it available to applet via
 
 - [IFTTT - Why is there a “File not found” image on my post?](https://help.ifttt.com/hc/en-us/articles/115010361748/)
 
+## APIs
+
+`api` folder contains an attempt to provide APIs out of a Jekyll website. Those can be useful for integrations: e.g. I use `/api/v1/ifttt/posts/latest` to fetch details of the last published blog post from an RSS trigger on IFTTT.
+
+Check the folder to find the structure.
+
 ## Theming
 
 ```xml
@@ -173,3 +173,9 @@ Links:
 ## Further notes
 
 `has_fa` variable is not used right now. Font-awesome is always loaded. Variables in front-matter are kept in case I change my mind and put an `if` in font-awesome loading in `head.html` file.
+
+## License
+
+Source code is released under GNU GPLv3 license. Website and blog content are released under Creative Commons Attribution-NonCommercial 4.0.
+
+To know more about terms and license, please read the [terms](pages/pages/terms.md) page.

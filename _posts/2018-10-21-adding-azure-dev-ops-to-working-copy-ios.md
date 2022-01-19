@@ -5,7 +5,7 @@ description: "It speeds up how you list and clone your repositories on the Micro
 category: ["How-tos"]
 tags: ["iOS","Git"]
 seoimage: 2018-10-21/001.jpg
-last_modified_at: 2018-10-22
+last_edit_at: 2018-10-22
 ---
 
 *Update (Oct 22): Working Copy v3.5.7, released today, fixes an issue that prevented you to clone from Azure DevOps using SSH.*

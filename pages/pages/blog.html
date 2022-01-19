@@ -34,7 +34,7 @@ in_search: false
         </div>
         <div class="blog-entry-details">
           {{ post.date | date: "%B %-d, %Y" }}
-          {% if post.last_modified_at %}(Updated: {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif %}
+          {% if post.last_edit_at %}(Updated: {{ post.last_edit_at | date: "%B %-d, %Y" }}){% endif %}
         </div>
         <div class="blog-entry-details-thin">
           Category: {{ post.categories }}

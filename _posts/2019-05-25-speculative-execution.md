@@ -4,7 +4,7 @@ subtitle: Keep track of them and check for mitigations to be installed and enabl
 description: "Speculative execution side-channel vulnerabilities: keeping track of them and checking for mitigations to be installed and enabled"
 category: ['Posts']
 tags: ["Security", "malware", "hardware"]
-last_modified_at: 2020-01-28
+last_edit_at: 2020-01-28
 ---
 
 *Update (June 2, 2019): Added notes about libgo improvements landing in GCC 10 Git.*

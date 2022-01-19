@@ -60,6 +60,10 @@ analytics:
     host:
     id:
   heatmap:
+  umami:
+    website-id: aa9c9ccb-6115-4a3a-ad70-88aaf5ec049b
+    endpoint: https://umami-pirafrank.vercel.app/umami.js
+
 
 # Links to use in JSON-LD metadata (SEO)
 seo_links:

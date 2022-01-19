@@ -49,5 +49,11 @@
 		</script>
 	{% endif %}
 
+  {% if site.analytics.umami.website-id and site.analytics.umami.endpoint %}
+  <!-- start umami analytics -->
+    <script async defer data-website-id="{{ site.analytics.umami.website-id }}" src="{{ site.analytics.umami.endpoint }}"></script>
+  <!-- end umami analytics -->
+  {% endif %}
+
 {% endif %}
 <!-- End Analytics -->

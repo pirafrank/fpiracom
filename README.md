@@ -92,6 +92,34 @@ attribute|required|use
 `link`|no|if your caption needs to point to a url
 `credits`|no|url to image author
 
+### Video embeds
+
+You only need the video ID from the link URL (e.g. abc123abc123)
+
+YouTube
+
+```text
+
+{% youtube abc123abc123 %}
+
+```
+
+Vimeo
+
+```text
+
+{% vimeo abc123abc123 %}
+
+```
+
+TED talks
+
+```text
+
+{% ted abc123abc123 %}
+
+```
+
 ### GitHub Gist
 
 Write the gist id in a Liquid tag like the following:

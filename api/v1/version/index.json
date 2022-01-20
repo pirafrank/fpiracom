@@ -1,0 +1,10 @@
+---
+layout: compress
+---
+{% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
+{
+  "build":  {
+    "dateTime": "{{ "now" | date: "%Y-%m-%dT%H:%M:%S%z" }}"
+  },
+  {% repodetails %}
+}

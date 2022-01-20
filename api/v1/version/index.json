@@ -1,10 +1,20 @@
 ---
 layout: compress
+name: version
 ---
 {% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
 {
   "build":  {
     "dateTime": "{{ "now" | date: "%Y-%m-%dT%H:%M:%S%z" }}"
   },
-  {% repodetails %}
+  "lastCommit": {
+    "author": {
+      "name": "{{ page.git_commit_author_name }}",
+      "email": "{{ page.git_commit_author_email }}"
+    },
+    "hash": "{{ page.git_commit_hash }}",
+    "dateTime": "{{ page.git_commit_date }}",
+    "branch": "{{ page.git_branch }}",
+    "tag": "{{ page.git_tag }}"
+  }
 }

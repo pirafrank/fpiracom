@@ -8,13 +8,15 @@ name: version
     "dateTime": "{{ "now" | date: "%Y-%m-%dT%H:%M:%S%z" }}"
   },
   "lastCommit": {
-    "author": {
-      "name": "{{ page.git_commit_author_name }}",
-      "email": "{{ page.git_commit_author_email }}"
-    },
     "hash": "{{ page.git_commit_hash }}",
+    "url": "{{ site.data.social.github.url }}/fpiracom/commit/{{ page.git_commit_hash }}",
     "dateTime": "{{ page.git_commit_date }}",
-    "branch": "{{ page.git_branch }}",
-    "tag": "{{ page.git_tag }}"
+    "branch": {
+      "name": "{{ page.git_branch }}",
+      "url": "{{ site.data.social.github.url }}/fpiracom/tree/{{ page.git_branch }}",
+    },
+    "tags": [
+      "{{ page.git_tag }}"
+    ]
   }
 }

@@ -5,6 +5,8 @@ permalink: /about/
 show_title: true
 ---
 
+{{ page.path_is }}
+
 - [Bio](#bio)
 - [Skills](#skills)
 - [Resume](#resume)

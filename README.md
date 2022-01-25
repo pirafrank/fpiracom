@@ -42,9 +42,33 @@ jekyll build
 jekyll b
 ```
 
+### Use environment variables
+
+Thanks to the `jekyll-environment-variables` plugin, you can use `{{ site.env.MYENV }}` in Liquid expressions.
+
 ### Production build
 
 Prepend `JEKYLL_ENV=production` to commands above.
+
+## Web Analytics
+
+Configure the following environment variables at build time if web analytics have to be set. Don't set to disable.
+
+```text
+ANALYTICS_GOOGLE='UA-1234567-1'
+
+ANALYTICS_GTAG='UA-1234567-8'
+
+ANALYTICS_HEATMAP=abc123abc123
+
+ANALYTICS_MATOMO_HOST=somematomo.host.com
+ANALYTICS_MATOMO_ID=abc123abc123
+
+ANALYTICS_CLOUDFLARE=abc123abc123
+
+ANALYTICS_UMAMI_WEBSITEID=abc123abc123
+ANALYTICS_UMAMI_ENDPOINT=umami.instance.com
+```
 
 ## Embed content
 

@@ -49,21 +49,8 @@ theme_engine:
   primary_color: 3344aa
   secondary_color: 4183C4
 
-# Analytics
-# Enter your Google Analytics web tracking code (e.g. UA-1234567-1) to activate tracking
-# Leave it empty to disable any of the settings.
-analytics:
-  google:
-  gtag: "UA-59510020-2" # new google analytics tag
-  cloudflare: "dc9f863da2fe48788d94228c140bd56d"
-  matomo:
-    host:
-    id:
-  heatmap:
-  umami:
-    website-id: aa9c9ccb-6115-4a3a-ad70-88aaf5ec049b
-    endpoint: https://umami-pirafrank.vercel.app/umami.js
-
+# Web Analytics
+# Please check the README file to know which env vars to set.
 
 # Links to use in JSON-LD metadata (SEO)
 seo_links:

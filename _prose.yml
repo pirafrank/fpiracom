@@ -59,6 +59,7 @@ prose:
           label: "Tags"
           placeholder: "Choose tags"
           options: 'https://fpiracom-pirafrank.vercel.app/jsonp/tags.jsonp'
+          alterable: true
       - name: "seoimage"
         field:
           element: "text"

@@ -52,13 +52,13 @@ prose:
           element: "multiselect"
           label: "Categories"
           placeholder: "Choose categories"
-          options: 'https://fpira.com/jsonp/categories.jsonp'
+          options: 'https://fpiracom-pirafrank.vercel.app/jsonp/categories.jsonp'
       - name: "tags"
         field:
           element: "multiselect"
           label: "Tags"
           placeholder: "Choose tags"
-          options: 'https://fpira.com/jsonp/tags.jsonp'
+          options: 'https://fpiracom-pirafrank.vercel.app/jsonp/tags.jsonp'
       - name: "seoimage"
         field:
           element: "text"

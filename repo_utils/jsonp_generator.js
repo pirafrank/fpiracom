@@ -38,7 +38,7 @@ function work(what){
   // processLineByLine(`path.resolve(__dirname + `/../${what}.txt`, objs)
   processStdinLineByLine([])
     .then(r => {
-      let output = 'callback(' + JSON.stringify(r) + ')'
+      let output = `${what}Callback(` + JSON.stringify(r) + ')'
       console.log(`${what} processed. Output written to file: ${output}`)
 
       let filePath = path.resolve(__dirname + `/../jsonp/${what}.jsonp`)

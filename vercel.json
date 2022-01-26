@@ -78,6 +78,23 @@
           "value" : "public, max-age=3600"
         }
       ]
+    },
+    {
+      "source": "/jsonp/(.*)",
+      "headers" : [
+        {
+          "key" : "Content-Type",
+          "value" : "application/json"
+        },
+        {
+          "key" : "X-Content-Type-Options",
+          "value" : ""
+        },
+        { "key": "Access-Control-Allow-Credentials", "value": "true" },
+        { "key": "Access-Control-Allow-Origin", "value": "prose.io" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
+      ]
     }
   ],
   "redirects": [

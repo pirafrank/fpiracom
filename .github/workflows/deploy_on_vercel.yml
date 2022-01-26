@@ -90,6 +90,15 @@ jobs:
         else
           echo "::set-output name=VERCEL_ARGS::$(echo '')"
         fi
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Generate JSONP files
+      shell: bash
+      run: |
+        bash repo_utils/list_categories.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js categories
+        bash repo_utils/list_tags.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js tags
     - name: Deploy to vercel
       id: deploy_to_vercel
       uses: amondnet/vercel-action@v20

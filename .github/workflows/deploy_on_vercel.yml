@@ -99,6 +99,8 @@ jobs:
         vercel-args: ${{ steps.get_vercel_args.outputs.VERCEL_ARGS }}
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        alias-domains: |
+          fpiracom-{{BRANCH}}-pirafrank.vercel.app
     - name: Send Push Notification
       uses: fjogeleit/http-request-action@master
       if: always()

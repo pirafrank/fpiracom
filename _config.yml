@@ -132,6 +132,10 @@ jekyll-archives:
     tag: '/blog/tags/:name/'
     category: '/blog/categories/:name/'
 
+github:
+  repo: pirafrank/fpiracom
+  branch: postviaweb
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #

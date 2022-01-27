@@ -84,7 +84,7 @@
       "headers" : [
         {
           "key" : "Content-Type",
-          "value" : "application/json"
+          "value" : "text/javascript"
         },
         {
           "key" : "X-Content-Type-Options",

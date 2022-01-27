@@ -1,0 +1,22 @@
+---
+layout: compress
+name: version
+---
+{% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
+{
+  "build":  {
+    "dateTime": "{{ "now" | date: "%Y-%m-%dT%H:%M:%S%z" }}"
+  },
+  "lastCommit": {
+    "hash": "{{ page.git_commit_hash }}",
+    "url": "{{ site.data.social.github.url }}/fpiracom/commit/{{ page.git_commit_hash }}",
+    "dateTime": "{{ page.git_commit_date }}",
+    "branch": {
+      "name": "{{ page.git_branch }}",
+      "url": "{{ site.data.social.github.url }}/fpiracom/tree/{{ page.git_branch }}",
+    },
+    "tags": [
+      "{{ page.git_tag }}"
+    ]
+  }
+}

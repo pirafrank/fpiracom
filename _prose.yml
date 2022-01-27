@@ -2,6 +2,8 @@ prose:
   siteurl: 'https://fpira.com'
   media: 'static/media'
   ignore:
+    - /.github
+    - /.vscode
     - /api
     - /calendars
     - /_includes
@@ -12,10 +14,13 @@ prose:
     - /repo_utils
     - /_sass
     - /jsonp
+    - /.gitignore
+    - /.vercelignore
     - 404.html
     - atom.xml
     - CNAME
     - _config.yml
+    - /_prose.yml
     - feed.xml
     - Gemfile
     - Gemfile.lock

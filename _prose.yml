@@ -1,0 +1,94 @@
+prose:
+  siteurl: 'https://fpira.com'
+  media: 'static/media'
+  ignore:
+    - /.github
+    - /.vscode
+    - /api
+    - /calendars
+    - /_includes
+    - /_jekyll_ignore
+    - /_layouts
+    - /_plugins
+    - /redirects
+    - /repo_utils
+    - /_sass
+    - /jsonp
+    - /.gitignore
+    - /.vercelignore
+    - 404.html
+    - atom.xml
+    - CNAME
+    - _config.yml
+    - /_prose.yml
+    - feed.xml
+    - Gemfile
+    - Gemfile.lock
+    - google22694754120b0882.html
+    - humans.txt
+    - keybase.txt
+    - manifest.json
+    - pgp.txt
+    - README.md
+    - search_data.json
+    - service-worker-register.js
+    - style.scss
+    - sw-config.js
+    - vercel.json
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+          value: ""
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Categories"
+          placeholder: "Choose categories"
+          options: 'https://fpiracom-pirafrank.vercel.app/jsonp/categories.jsonp?callback=categoriesCallback'
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tags"
+          placeholder: "Choose tags"
+          options: 'https://fpiracom-pirafrank.vercel.app/jsonp/tags.jsonp?callback=tagsCallback'
+          alterable: true
+      - name: "seoimage"
+        field:
+          element: "text"
+          label: "SEO image path"
+          help: "Relative to /static/postimages/ dir. e.g. 2021-12-15/log4shell.png"
+          value: "common/"
+    pages:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "show_title"
+        field:
+          element: "checkbox"
+          label: "Show title"
+          help: "Show page title in page"
+          value: true
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""

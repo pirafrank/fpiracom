@@ -168,6 +168,10 @@ Powered by `LazyTweetEmbedding` plugin ([link](https://github.com/takuti/jekyll-
 
 The plugin is in the `_plugins` folder.
 
+## Media files
+
+Static media files are stored in `static/media`.
+
 ## SEO images
 
 resource|path
@@ -211,6 +215,21 @@ Now IFTTT can get the URL from the `img` tag and make it available to applet via
 `api` folder contains an attempt to provide APIs out of a Jekyll website. Those can be useful for integrations: e.g. I use `/api/v1/ifttt/posts/latest` to fetch details of the last published blog post from an RSS trigger on IFTTT.
 
 Check the folder to find the structure.
+
+## CMS
+
+### prose.io
+
+CMS-like functionality can be experiences using [prose.io](https://prose.io).
+
+Prose.io uses `_prose.yml` in the repo root. To provide a list of actual tags and categories available on the website two JSONP files are used. Run the following to generate them.
+
+```sh
+bash repo_utils/list_categories.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js categories
+bash repo_utils/list_tags.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js tags
+```
+
+which will generate `jsonp/categories.jsonp` and `jsonp/tags.jsonp` files.
 
 ## Theming
 

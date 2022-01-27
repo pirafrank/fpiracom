@@ -1,4 +1,6 @@
 ---
+layout: null
+permalink: /cms
 ---
 <html>
 
@@ -16,7 +18,7 @@
 
 <body>
 	<div class="container" id="container1" >
-	<h5>Create new post at {{ site.title }}</h5>
+	<h5>Create new post at {{ site.domain }}</h5>
 	{% if site.github.repo == none %}
 		<div class="alert alert-danger" role="alert"><code>github.repo</code> is not set. Check <a href="https://github.com/vrypan/jekyll-post-via-web"
 		>github.com/vrypan/jekyll-post-via-web</a> for instructions.</div>
@@ -135,7 +137,7 @@
 		$.ajax({
 			dataType: "json",
 			contentType: 'application/json; charset=UTF-8',
-			url: API_NEW_POST+post_file(title)+'.markdown',
+			url: API_NEW_POST+post_file(title)+'.md',
 			type: "PUT",
 			data: JSON.stringify({
 				content: btoa(unescape(encodeURIComponent(p_body))),
@@ -147,7 +149,7 @@
 			},
 			success: function(data) {
 				posted_ok = true ;
-				$('#container1').html('<h2>Successfully posted to {{ site.title }}</h2') ;
+				$('#container1').html('<h2>Successfully posted to {{ site.github.repo }}</h2') ;
 			},
 			error: function(request, status, error) {
 				responseText = jQuery.parseJSON( request.responseText );

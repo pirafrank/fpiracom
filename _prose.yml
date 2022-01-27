@@ -57,13 +57,13 @@ prose:
           element: "multiselect"
           label: "Categories"
           placeholder: "Choose categories"
-          options: 'https://fpiracom-pirafrank.vercel.app/jsonp/categories.jsonp?callback=categoriesCallback'
+          options: 'https://fpira.com/jsonp/categories.jsonp?callback=categoriesCallback'
       - name: "tags"
         field:
           element: "multiselect"
           label: "Tags"
           placeholder: "Choose tags"
-          options: 'https://fpiracom-pirafrank.vercel.app/jsonp/tags.jsonp?callback=tagsCallback'
+          options: 'https://fpira.com/jsonp/tags.jsonp?callback=tagsCallback'
           alterable: true
       - name: "seoimage"
         field:

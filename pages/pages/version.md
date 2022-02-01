@@ -8,6 +8,6 @@ show_title: true
 
 ---|---
 Built date|{{ "now" | date: "%d %B %Y %H:%M:%S %Z" }}
-Last commit hash|[{{ page.git_commit_hash }}]({{ site.data.social.github.url }}/fpiracom/commit/{{ page.git_commit_hash }})
-Last commit date|{{ page.git_commit_date | date: "%d %B %Y %H:%M:%S %Z" }}
-Last commit branch|[{{ page.git_branch }}]({{ site.data.social.github.url }}/fpiracom/tree/{{ page.git_branch }})
+Last commit hash|[{{ site.data.git.commit_hash }}]({{ site.data.social.github.url }}/fpiracom/commit/{{ site.data.git.commit_hash }})
+Last commit date|{{ site.data.git.commit_date | date: "%d %B %Y %H:%M:%S %Z" }}
+Last commit branch|[{{ site.data.git.branch }}]({{ site.data.social.github.url }}/fpiracom/tree/{{ site.data.git.branch }})

@@ -30,3 +30,6 @@ vendor
 # jsonp files for prose.io
 jsonp/categories.jsonp
 jsonp/tags.jsonp
+
+# ignore generated _data/gitinfo.json file
+_data/git.json

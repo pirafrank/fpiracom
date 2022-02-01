@@ -99,6 +99,10 @@ jobs:
       run: |
         bash repo_utils/list_categories.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js categories
         bash repo_utils/list_tags.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js tags
+    - name: Generate _data/git.json file
+      shell: bash
+      run: |
+        node repo_utils/git_info.js
     - name: Deploy to vercel
       id: deploy_to_vercel
       uses: amondnet/vercel-action@v20

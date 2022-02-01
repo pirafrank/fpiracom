@@ -1,40 +1,37 @@
 # powered by ruby-git (https://github.com/ruby-git/ruby-git)
 # https://rubydoc.info/gems/git/Git.html?ref=https://githubhelp.com
 #
-# author: pirafrank < dev at fpira dot com >
+# author: @pirafrank
 #
 
 require 'git'
 
-module Jekyll
-  class Repodetails < Generator
-    def generate(site)
-      date_format = "%Y-%m-%dT%H:%M:%S%z"
+Jekyll::Hooks.register :site, :pre_render do |site, payload|
+    date_format = "%Y-%m-%dT%H:%M:%S%z"
 
-      # working_dir set to current dir ('.')
-      g = Git.open('.', {})
-      current_commit = g.gcommit('HEAD')
+    # checking for _data/git.json file to exist, if not create it
+    git_data = File.join('_data','git.json')
+    if(File.file?(git_data))
+        puts "\t#{git_data} exists, site.data.git will read from it"
+    elsif(File.directory?('.git'))
+        g = Git.open('.', {})
+        current_commit = g.gcommit('HEAD')
 
-      author_name = current_commit.author.name
-      author_email = current_commit.author.email
-      commit_hash = g.revparse('HEAD')
-      commit_date = current_commit.author.date.strftime(date_format)
-      branch = g.current_branch
-      tag = g.describe('HEAD', {:all => false, :tags => true})
+        author_name = current_commit.author.name
+        author_email = current_commit.author.email
+        commit_hash = g.revparse('HEAD')
+        commit_date = current_commit.author.date.strftime(date_format)
+        branch = g.current_branch
+        tag = g.describe('HEAD', {:all => false, :tags => true})
 
-      # do this only for pages with 'name: version' in front matter.
-      # posts are not included in loop over pages.
-      site.pages.each do |doc|
-        if doc.data['name'] == 'version'
-          doc.data['git_commit_author_name'] = author_name
-          doc.data['git_commit_author_email'] = author_email
-          doc.data['git_commit_hash'] = commit_hash
-          doc.data['git_commit_date'] = commit_date
-          doc.data['git_branch'] = branch
-          doc.data['git_tag'] = tag
-        end
-      end
-
+        payload.site.data['git'] = {}
+        payload.site.data['git']['author_name'] = author_name
+        payload.site.data['git']['author_email'] = author_email
+        payload.site.data['git']['commit_hash'] = commit_hash
+        payload.site.data['git']['commit_date'] = commit_date
+        payload.site.data['git']['branch'] = branch
+        payload.site.data['git']['tags'] = tag
+    else
+      raise "#{git_data} does not exist and dir is not a git working copy."
     end
-  end
 end

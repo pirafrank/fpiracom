@@ -117,6 +117,11 @@ defaults:
       type: "pages"
     values:
       layout: "project"
+  -
+    scope:
+      path: "pages/admin/**/*"
+    values:
+      sitemap: false
 
 # jekyll-archives settings
 jekyll-archives:
@@ -131,6 +136,10 @@ jekyll-archives:
     day: '/blog/:year/:month/:day/'
     tag: '/blog/tags/:name/'
     category: '/blog/categories/:name/'
+
+github:
+  repo: 'pirafrank/fpiracom'
+  branch: 'postviaweb'
 
 #
 # !! You don't need to change any of the configuration flags below !!

@@ -35,6 +35,7 @@ prose:
     - style.scss
     - sw-config.js
     - vercel.json
+    - pages/admin
   metadata:
     _posts:
       - name: "title"

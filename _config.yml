@@ -139,7 +139,7 @@ jekyll-archives:
 
 github:
   repo: 'pirafrank/fpiracom'
-  branch: 'postviaweb'
+  branch: 'main'
 
 #
 # !! You don't need to change any of the configuration flags below !!

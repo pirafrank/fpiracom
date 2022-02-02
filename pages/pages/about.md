@@ -18,7 +18,7 @@ show_title: true
 
 ### Bio
 
-Hello, my name is Francesco (Frank) Pira, I'm 27yo and live in Catania, Italy, where I part-time study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
+Hello, my name is Francesco (Frank) Pira, I'm 29yo and live in Catania, Italy, where I part-time study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
 
 My interests are programming (especially web development), technology, big data, business and start-ups. I like working in team on projects that challenge me and I'm fascinated by finding the *best practice* in doing something. I also like advising and motivating on topics I'm skilled. Recently I've found out writing is one of my growing passions.
 
@@ -28,9 +28,9 @@ In 2013 I joined EESTEC, a European network of engineering students where member
 
 I have been involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
-Today I work as back-end developer at [Leonardo Company](http://leonardocompany.com/en). There are many projects I'm involved in, mainly Java ones running in Docker or IBM WebSphere, while others built on Oracle Middleware platform.
+Today I work as DevOps Engineer at [Leonardo Company](https://leonardo.com/en), Hybrid Cloud Applications department. There are many projects I'm involved in, mainly Java and JavaScript ones running on Kubernetes.
 
-I'm tuned to Apple security news and I think GUIs are largely overrated. My daily carry is an iPad moshed to zsh and nvim. If you're curious about my setup, feel free to check my [dotfiles]({{site.data.social.github.url}}/dotfiles) and [workspace]({{site.data.social.github.url}}/workspace) repositories, and [toolbelt]({{site.baseurl}}/my-toolbelt) page.
+I usually work in zsh, vim and VSCode, I think GUIs are largely overrated. If you're curious about my setup, feel free to check my [dotfiles]({{site.data.social.github.url}}/dotfiles) and [toolbelt]({{site.baseurl}}/my-toolbelt).
 
 ### Skills
 

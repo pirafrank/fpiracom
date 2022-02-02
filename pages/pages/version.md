@@ -5,6 +5,7 @@ title: version info
 permalink: /version/
 show_title: true
 sitemap: false
+in_search: false
 ---
 
 ---|---

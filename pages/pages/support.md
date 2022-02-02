@@ -2,7 +2,7 @@
 layout: page
 title: Support me
 description: "Support my open-source projects and blog, help me pay for server and storage"
-permalink: /support
+permalink: /support/
 show_title: true
 center: true
 custom_js: pages/support

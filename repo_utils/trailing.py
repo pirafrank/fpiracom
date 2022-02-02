@@ -38,7 +38,7 @@ def process_input_lines(input_lines, script_dir, have_to_remove):
                 file_path = os.path.join(script_dir, "../", file_path)
                 replace_line_in_file(file_path, match, updated_line)
 
-remove_traling_slash = True
+remove_traling_slash = False
 where_the_script_lives = pathlib.Path(__file__).parent.resolve()
 print(f"Script dir: {where_the_script_lives}")
 process_input_lines(sys.stdin, where_the_script_lives, remove_traling_slash)

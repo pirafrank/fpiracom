@@ -23,14 +23,14 @@ const hitTemplate = function(hit) {
   let breadcrumbs = '';
   if (hit._highlightResult.headings) {
     breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
+      return `# &nbsp;<span class="post-breadcrumb">${match.value}</span>`
     }).join(' > ')
   }
   const content = hit._highlightResult.html.value;
 
   return `
     <div class="post-item">
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
+      <h2 class="post-height"><a class="post-link" href="${url}">${title}</a></h2>
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
       <div class="post-snippet">${content}</div>
       <span class="post-meta">${date}</span>
@@ -67,10 +67,17 @@ search.start();
 .post-item {
   margin-bottom: 30px;
 }
+.post-height {
+  line-height: 100%;
+}
+.post-link {
+  font-size: 24px;
+  font-family: 'Merriweather', serif;
+}
 .post-link .ais-Highlight {
-  color: #111;
+  /* color: #111; */
   font-style: normal;
-  text-decoration: underline;
+  background: #fef8c0; /* using same color of text selection */
 }
 .post-breadcrumbs {
   color: #424242;
@@ -81,13 +88,15 @@ search.start();
   color: #424242;
 }
 .post-breadcrumb .ais-Highlight {
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
+  background: #fef8c0; /* using same color of text selection */
 }
 .post-snippet .ais-Highlight {
-  color: #2a7ae2;
+  /* color: #2a7ae2; */
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
+  background: #fef8c0; /* using same color of text selection */
 }
 .post-snippet img {
   display: none;

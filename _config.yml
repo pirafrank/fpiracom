@@ -165,6 +165,10 @@ version: v3.0.0
 sass:
   style: compressed # If you want to un-minify, set to :expanded
 
+algolia:
+  application_id: '8VRY5ROZOT'
+  index_name: fpiracom_algolia_index
+
 # Use the following plug-ins
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

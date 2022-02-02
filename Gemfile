@@ -10,4 +10,5 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-minifier'
   gem 'jekyll-environment-variables'
+  gem 'jekyll-algolia'
 end

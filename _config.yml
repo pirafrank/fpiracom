@@ -165,9 +165,12 @@ version: v3.0.0
 sass:
   style: compressed # If you want to un-minify, set to :expanded
 
+# jekyll-algolia configuration
+# Docs: https://community.algolia.com/jekyll-algolia/getting-started.html
 algolia:
   application_id: '8VRY5ROZOT'
   index_name: fpiracom_algolia_index
+  search_only_api_key: 0915e51e1af71d63c0f5948c3e5c426e
 
 # Use the following plug-ins
 plugins:

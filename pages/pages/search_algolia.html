@@ -1,0 +1,34 @@
+---
+layout: page
+title: Search
+permalink: /search/
+show_title: true
+custom_css: "pages/search"
+in_search: false
+---
+
+    <div class="big_container">
+      <div class="container">
+
+        <br>
+        <div class="center">
+          <div id="search-searchbar"></div>
+        </div>
+
+        <br>
+        <div class="post-list" id="search-hits">
+          {% for post in site.posts %}
+            <div class="post-item">
+              <h2>
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </h2>
+              <div class="post-snippet">{{ post.excerpt }}</div>
+              <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+
+    {% include algolia.html %}

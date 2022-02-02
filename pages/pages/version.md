@@ -2,7 +2,7 @@
 layout: page
 name: version
 title: version info
-permalink: /version
+permalink: /version/
 show_title: true
 ---
 

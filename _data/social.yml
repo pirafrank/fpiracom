@@ -10,8 +10,8 @@ angel:
   user: francescopira
 credly:
   category: code
-  url: 'https://www.credly.com/users/francesco-pira/badges'
-  user: 'francesco-pira'
+  url: 'https://www.credly.com/users/pirafrank/badges'
+  user: 'pirafrank'
 docker: # docker hub
   category: code
   url: 'http://hub.docker.com/u/pirafrank'

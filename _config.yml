@@ -168,9 +168,9 @@ sass:
 # jekyll-algolia configuration
 # Docs: https://community.algolia.com/jekyll-algolia/getting-started.html
 algolia:
-  application_id: '8VRY5ROZOT'
+  application_id: 'UYX4VWZEEN'
   index_name: fpiracom_algolia_index
-  search_only_api_key: 0915e51e1af71d63c0f5948c3e5c426e
+  search_only_api_key: 2e769ad6db81137ccf2e4e23d59f13cd
 
 # Use the following plug-ins
 plugins:

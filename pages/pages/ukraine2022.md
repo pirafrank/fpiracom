@@ -4,7 +4,7 @@ title: Supporting the Ukrainian people
 permalink: /ukraine/
 show_title: false
 seoimage: ukraine/Flag_of_Ukraine.jpg
-description: "I stand against inequality and racism, please join me"
+description: "Every bit of help can be precious, please join me"
 ---
 
 # 🇺🇦 Supporting the Ukrainian people

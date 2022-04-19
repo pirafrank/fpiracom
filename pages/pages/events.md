@@ -12,6 +12,10 @@ show_title: true
 
 Notable conferences and events I joined. I hope to see you at the next one!
 
+#### 2022
+
+- Codemotion Online Tech Conference - Italian Edition - 23-24, March 2022 (online)
+
 #### 2021
 
 - Codemotion Autumn 2021 Italian Edition - 9-11, November 2021 (online)
@@ -21,13 +25,19 @@ Notable conferences and events I joined. I hope to see you at the next one!
 - Cloudflare week - Sept 2021 (online)
 - Codemotion Spring 2021 Italian Edition - 23-25, March 2021 (online)
 
-#### Past
+#### 2020
 
 - Cloudflare week - Sept 2020 (online)
 - Microsoft BUILD - May 2020 (online)
+
+#### 2019
+
 - Red Hat Open Source Day - Nov 20, 2019 - Rome
 - Cloudflare week - Sept 2019 (online)
 - Microsoft BUILD - May 2019 (online)
+
+#### Past
+
 - Codemotion - March 2016 - Rome
 - Microsoft Future Decoded - Nov 12, 2015 - Rome
 - ESOCC European Conference on Service-Oriented and Cloud Computing - Sept 15, 2015 - Taormina ([link](https://link.springer.com/conference/esocc))

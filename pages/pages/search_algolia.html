@@ -15,17 +15,7 @@ in_search: false
           <div id="search-searchbar"></div>
         </div>
 
-        <div class="post-list" id="search-hits">
-          {% for post in site.posts %}
-            <div class="post-item">
-              <h2 class="post-height">
-                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-              </h2>
-              <div class="post-snippet">{{ post.excerpt }}</div>
-              <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-            </div>
-          {% endfor %}
-        </div>
+        <div class="post-list" id="search-hits" />
 
       </div>
     </div>

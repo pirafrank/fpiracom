@@ -168,6 +168,26 @@ Powered by `LazyTweetEmbedding` plugin ([link](https://github.com/takuti/jekyll-
 
 The plugin is in the `_plugins` folder.
 
+### External links
+
+To add `target="_blank" rel="noopener noreferrer"` to markdown, write links as follows:
+
+```md
+[Awesome link]({{ site.data.res.awesomelink }}){:target="_blank"}{:rel="noopener noreferrer"}.
+```
+
+which generates:
+
+```html
+<a href="https://www.someexternal.site" target="_blank" rel="noopener noreferrer">here</a>
+```
+
+To add a font-awesome icon:
+
+```html
+<i class="fa fa-external-link" aria-hidden="true"></i>
+```
+
 ## Media files
 
 Static media files are stored in `static/media`.

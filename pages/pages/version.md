@@ -1,7 +1,7 @@
 ---
 layout: page
 name: version
-title: version info
+title: Current website version
 permalink: /version/
 show_title: true
 sitemap: false

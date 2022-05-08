@@ -10,7 +10,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
-      - 'dependabot/**'
+      - 'main'
 
 jobs:
   build:

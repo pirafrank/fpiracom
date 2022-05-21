@@ -60,7 +60,7 @@ I usually work in zsh, vim and VSCode, I think GUIs are largely overrated. If yo
 
 ### Resume
 
-[Download my resume]({{ site.data.cv.resume }})
+[Download my resume]({{ site.data.resume.pdf }})
 
 {% include_relative about/resume-last-edit.html %}
 

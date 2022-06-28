@@ -17,7 +17,7 @@ in_search: false
         <div class="helloText">Hi, I'm</div>
         <div class="nameText">{{ site.name }}</div>
         <div class="infoText">
-          {% include_relative home-info-text.html %}
+          {% include_relative home/home-info-text.html %}
         </div>
         <div class="social-icons social-icons-medium home-social center">
           {% if site.footersocial %}
@@ -31,6 +31,11 @@ in_search: false
       </div>
       <!-- end of header info -->
       <!-- content section -->
+
+      <div class="resources">
+        <div class="sectionTitle">Resources</div>
+        {% include_relative home/resources.html %}
+      </div>
 
         <div id="posts" class="sectionTitle">Latest blog posts</div>
         {% assign sortedPosts = site.posts | sort: 'last_update' | reverse %}
@@ -53,8 +58,8 @@ in_search: false
           <span class="low-links"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;&nbsp;<a class="grayLinks" href="{{ site.baseurl }}/blog/">All blog posts</a></span>
         </p>
         <div class="resources">
-          <div class="sectionTitle">Resources</div>
-          {% include_relative home/resources.html %}
+          <div class="sectionTitle">More</div>
+          {% include_relative home/resources_bottom.html %}
         </div>
 
       <!-- content section -->

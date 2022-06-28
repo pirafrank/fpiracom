@@ -5,9 +5,9 @@ permalink: /lastfm/
 show_title: false
 ---
 
-{% if site.social-links.lastfm %}
+{% if site.data.social.lastfm.url %}
 
-<META http-equiv="refresh" content="0;URL=http://www.last.fm/user/{{ site.social-links.lastfm }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.lastfm.url }}">
 
 {% else %}
 

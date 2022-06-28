@@ -5,9 +5,9 @@ permalink: /instagram/
 show_title: false
 ---
 
-{% if site.social-links.instagram %}
+{% if site.data.social.instagram.url %}
 
-<META http-equiv="refresh" content="0;URL=http://instagram.com/{{ site.social-links.instagram }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.instagram.url }}">
 
 {% else %}
 

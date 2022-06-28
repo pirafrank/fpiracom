@@ -5,9 +5,9 @@ permalink: /youtube/
 show_title: false
 ---
 
-{% if site.social-links.youtube %}
+{% if site.data.social.youtube.url %}
 
-<META http-equiv="refresh" content="0;URL=http://youtube.com/{{ site.social-links.youtube }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.youtube.url }}">
 
 {% else %}
 

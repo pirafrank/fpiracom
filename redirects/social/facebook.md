@@ -5,9 +5,9 @@ permalink: /facebook/
 show_title: false
 ---
 
-{% if site.social-links.facebook %}
+{% if site.data.social.facebook.url %}
 
-<META http-equiv="refresh" content="0;URL=http://facebook.com/{{ site.social-links.facebook }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.facebook.url }}">
 
 {% else %}
 

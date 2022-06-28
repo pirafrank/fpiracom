@@ -5,9 +5,9 @@ permalink: /twitter/
 show_title: false
 ---
 
-{% if site.social-links.twitter %}
+{% if site.data.social.twitter.url %}
 
-<META http-equiv="refresh" content="0;URL=http://twitter.com/{{ site.social-links.twitter }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.twitter.url }}">
 
 {% else %}
 

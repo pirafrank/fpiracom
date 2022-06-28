@@ -5,9 +5,9 @@ permalink: /medium/
 show_title: false
 ---
 
-{% if site.social-links.medium %}
+{% if site.data.social.medium.url %}
 
-<META http-equiv="refresh" content="0;URL=http://medium.com/@{{ site.social-links.medium }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.medium.url }}">
 
 {% else %}
 

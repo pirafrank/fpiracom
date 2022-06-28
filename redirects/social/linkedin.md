@@ -5,9 +5,9 @@ permalink: /linkedin/
 show_title: false
 ---
 
-{% if site.social-links.linkedin %}
+{% if site.data.social.linkedin.url %}
 
-<META http-equiv="refresh" content="0;URL=http://linkedin.com/in/{{ site.social-links.linkedin }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.linkedin.url }}">
 
 {% else %}
 

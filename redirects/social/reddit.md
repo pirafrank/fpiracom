@@ -5,9 +5,9 @@ permalink: /reddit/
 show_title: false
 ---
 
-{% if site.social-links.reddit %}
+{% if site.data.social.reddit.url %}
 
-<META http-equiv="refresh" content="0;URL=https://www.reddit.com/user/{{ site.social-links.reddit }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.reddit.url }}">
 
 {% else %}
 

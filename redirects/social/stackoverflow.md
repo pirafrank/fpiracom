@@ -5,9 +5,9 @@ permalink: /stackoverflow/
 show_title: false
 ---
 
-{% if site.social-links.stackoverflow %}
+{% if site.data.social.stackoverflow.url %}
 
-<META http-equiv="refresh" content="0;URL=http://stackoverflow.com/{{ site.social-links.stackoverflow }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.stackoverflow.url }}">
 
 {% else %}
 

@@ -5,9 +5,9 @@ permalink: /keybase/
 show_title: false
 ---
 
-{% if site.social-links.keybase %}
+{% if site.data.social.keybase.url %}
 
-<META http-equiv="refresh" content="0;URL=https://keybase.io/{{ site.social-links.keybase }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.keybase.url }}">
 
 {% else %}
 

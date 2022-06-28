@@ -5,9 +5,9 @@ permalink: /flickr/
 show_title: false
 ---
 
-{% if site.social-links.flickr %}
+{% if site.data.social.flickr.url %}
 
-<META http-equiv="refresh" content="0;URL=http://flickr.com/{{ site.social-links.flickr }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.flickr.url }}">
 
 {% else %}
 

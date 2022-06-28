@@ -100,6 +100,7 @@
   "redirects": [
     { "source": "/pgp", "destination": "/pgp.txt", "permanent": true },
     { "source": "/utils", "destination": "/code", "permanent": false },
-    { "source": "/utilities", "destination": "/code", "permanent": false }
+    { "source": "/utilities", "destination": "/code", "permanent": false },
+    { "source": "/fileshute", "destination": "http://web.archive.org/web/20220112113123/https://fileshute.com/", "permanent": false }
   ]
 }

@@ -1,0 +1,70 @@
+
+name: 'Check build'
+
+on:
+  # Note that GITHUB_SHA for this event is the last merge commit of the pull
+  # request merge branch. If you want to get the commit ID for the last commit
+  # to the head branch of the pull request,
+  # use github.event.pull_request.head.sha instead.
+  # Docs: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    name: Build website
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+      # no need to specify the ref, the GITHUB_REF of pull request event is the PR merge branch.
+      # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
+    - name: Get current ref  # branch name or commit id
+      id: get_current_ref
+      shell: bash
+      run: |
+        echo "::set-output name=REF::${GITHUB_REF#refs/heads/}"
+        echo "GIT_REF=${REF}" >> $GITHUB_ENV
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Generate JSONP files
+      shell: bash
+      run: |
+        bash repo_utils/list_categories.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js categories
+        bash repo_utils/list_tags.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js tags
+    - name: Generate _data/git.json file
+      shell: bash
+      run: |
+        node repo_utils/git_info.js
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6.6
+    - name: Cache ruby gems
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Build jekyll website
+      env:
+        JEKYLL_ENV: production
+        ANALYTICS_GOOGLE: ${{ secrets.ANALYTICS_GOOGLE }}
+        ANALYTICS_GTAG: ${{ secrets.ANALYTICS_GTAG }}
+        ANALYTICS_HEATMAP: ${{ secrets.ANALYTICS_HEATMAP }}
+        ANALYTICS_MATOMO_HOST: ${{ secrets.ANALYTICS_MATOMO_HOST }}
+        ANALYTICS_MATOMO_ID: ${{ secrets.ANALYTICS_MATOMO_ID }}
+        ANALYTICS_CLOUDFLARE: ${{ secrets.ANALYTICS_CLOUDFLARE }}
+        ANALYTICS_UMAMI_WEBSITEID: ${{ secrets.ANALYTICS_UMAMI_WEBSITEID }}
+        ANALYTICS_UMAMI_ENDPOINT: ${{ secrets.ANALYTICS_UMAMI_ENDPOINT }}
+      run: |
+        #sudo apt-get -yqq install libpq-dev
+        gem update --system
+        gem install bundler:2.1.4
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+        bundle exec jekyll build --trace

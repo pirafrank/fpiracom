@@ -39,7 +39,7 @@ GEM
     ffi (1.15.4)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
-    git (1.10.2)
+    git (1.11.0)
       rchardet (~> 1.8)
     htmlcompressor (0.4.0)
     http_parser.rb (0.8.0)

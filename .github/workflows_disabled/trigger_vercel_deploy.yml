@@ -37,6 +37,8 @@ jobs:
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
     - name: Deploy to vercel
+      # deploy on vercel by triggering their webhook and letting them pull
+      # and build the repo, instead of pushing as you'd do with vercel CLI.
       uses: fjogeleit/http-request-action@master
       with:
         url: ${{ secrets.VERCEL_DEPLOY_HOOK }}

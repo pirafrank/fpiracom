@@ -1,3 +1,4 @@
+- [Arcitura Certified Cloud Professional]({{ site.baseurl }}/assets/files/honors/114825_F_Pira_Arcitura_Cloud_Professional.pdf) (April 2022)
 - [AZ-400 - Designing and Implementing Microsoft DevOps Solutions]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-400.pdf) (December 2021)
 - [AZ-204 - Developing Solutions for Microsoft Azure]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-204.pdf) (December 2021)
 - [Oracle Certified Professional - Java SE 11 Developer]({{ site.baseurl }}/assets/files/honors/Oracle_Java_SE_11_Developer_certification.pdf) (April 2021)

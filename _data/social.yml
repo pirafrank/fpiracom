@@ -8,10 +8,14 @@ angel:
   category: social
   url: 'https://angel.co/francescopira'
   user: francescopira
+cncf:
+  category: code
+  url: https://community.cncf.io/u/mmfzj9
+  user: mmfzj9
 credly:
   category: code
-  url: 'https://www.credly.com/users/francesco-pira/badges'
-  user: 'francesco-pira'
+  url: 'https://www.credly.com/users/pirafrank/badges'
+  user: 'pirafrank'
 docker: # docker hub
   category: code
   url: 'http://hub.docker.com/u/pirafrank'

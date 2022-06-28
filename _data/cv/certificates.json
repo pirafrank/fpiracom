@@ -47,6 +47,12 @@
       "issuer": "Microsoft",
       "file": "Microsoft_Certified_Professional_Certificate_AZ-400.pdf",
       "date": "2021-12-20T00:00:00Z"
+    },
+    {
+      "title": "Arcitura Certified Cloud Professional",
+      "issuer": "Arcitura",
+      "file": "114825_F_Pira_Arcitura_Cloud_Professional.pdf",
+      "date": "2022-04-07T00:00:00Z"
     }
   ]
 }

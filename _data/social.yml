@@ -13,7 +13,7 @@ cncf:
   url: https://community.cncf.io/u/mmfzj9
   user: mmfzj9
 credly:
-  category: code
+  category: certifications
   url: 'https://www.credly.com/users/pirafrank/badges'
   user: 'pirafrank'
 docker: # docker hub
@@ -68,6 +68,10 @@ medium:
   category: blog
   url: 'https://medium.com/@pirafrank'
   user: pirafrank
+microsoft_learn:
+  category: certifications
+  url: https://docs.microsoft.com/it-it/users/pirafrank/certifications/certifications
+  user: pirafrank  
 musicblog:
   category: #music
   url: #'http://soundtrackofthedays.tumblr.com'

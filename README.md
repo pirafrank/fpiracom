@@ -50,6 +50,34 @@ Thanks to the `jekyll-environment-variables` plugin, you can use `{{ site.env.MY
 
 Prepend `JEKYLL_ENV=production` to commands above.
 
+### Algolia search
+
+Algolia settings are stored in `_config.yml`. It uses the search-only API key.
+
+To update the Algolia index run:
+
+```sh
+ALGOLIA_API_KEY='123abc123abc123abc123abc123abc12' bundle exec jekyll algolia
+```
+
+where the `ALGOLIA_API_KEY` is the Admin API Key you get from [your account dashboard](https://www.algolia.com/account/api-keys/all).
+
+## GitHub Actions
+
+To run a GitHub Actions workflow on any branch use the `--ref` flag. This works even if you have never merged the workflow file in the repository's default branch.
+
+```sh
+gh workflow run workflow --ref branch-name
+```
+
+or for input params
+
+```sh
+gh workflow run workflow --ref branch-name -f myparameter=myvalue
+```
+
+For futher info, [check the docs](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow#running-a-workflow-using-github-cli).
+
 ## Web Analytics
 
 Configure the following environment variables at build time if web analytics have to be set. Don't set to disable.
@@ -167,6 +195,26 @@ https://twitter.com/pirafrank/status/1353708824558002177
 Powered by `LazyTweetEmbedding` plugin ([link](https://github.com/takuti/jekyll-lazy-tweet-embedding)).
 
 The plugin is in the `_plugins` folder.
+
+### External links
+
+To add `target="_blank" rel="noopener noreferrer"` to markdown, write links as follows:
+
+```md
+[Awesome link]({{ site.data.res.awesomelink }}){:target="_blank"}{:rel="noopener noreferrer"}.
+```
+
+which generates:
+
+```html
+<a href="https://www.someexternal.site" target="_blank" rel="noopener noreferrer">here</a>
+```
+
+To add a font-awesome icon:
+
+```html
+<i class="fa fa-external-link" aria-hidden="true"></i>
+```
 
 ## Media files
 

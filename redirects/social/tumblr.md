@@ -5,9 +5,9 @@ permalink: /tumblr/
 show_title: false
 ---
 
-{% if site.social-links.tumblr %}
+{% if site.data.social.tumblr.url %}
 
-<META http-equiv="refresh" content="0;URL=http://{{ site.social-links.tumblr }}.tumblr.com">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.tumblr.url }}">
 
 {% else %}
 

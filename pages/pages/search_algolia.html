@@ -1,0 +1,23 @@
+---
+layout: page
+title: Search
+permalink: /search/
+show_title: true
+custom_css: "pages/search"
+in_search: false
+---
+
+    <div class="big_container">
+      <div class="container">
+
+        <br>
+        <div class="center">
+          <div id="search-searchbar"></div>
+        </div>
+
+        <div class="post-list" id="search-hits" />
+
+      </div>
+    </div>
+
+    {% include algolia.html %}

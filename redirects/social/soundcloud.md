@@ -5,9 +5,9 @@ permalink: /soundcloud/
 show_title: false
 ---
 
-{% if site.social-links.soundcloud %}
+{% if site.data.social.soundcloud.url %}
 
-<META http-equiv="refresh" content="0;URL=https://soundcloud.com/{{ site.social-links.soundcloud }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.soundcloud.url }}">
 
 {% else %}
 

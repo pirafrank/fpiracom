@@ -5,9 +5,9 @@ permalink: /slideshare/
 show_title: false
 ---
 
-{% if site.social-links.slideshare %}
+{% if site.data.social.slideshare.url %}
 
-<META http-equiv="refresh" content="0;URL=http://www.slideshare.net/{{ site.social-links.slideshare }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.slideshare.url }}">
 
 {% else %}
 

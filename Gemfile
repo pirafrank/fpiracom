@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '4.2.1'
 gem 'git'
+gem 'nokogiri'
 
 group :jekyll_plugins do
   gem 'jekyll-gist'
@@ -10,4 +11,5 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-minifier'
   gem 'jekyll-environment-variables'
+  gem 'jekyll-algolia'
 end

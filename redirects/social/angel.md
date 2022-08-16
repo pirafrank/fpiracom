@@ -5,9 +5,10 @@ permalink: /angel/
 show_title: false
 ---
 
-{% if site.social-links.angel %}
 
-<META http-equiv="refresh" content="0;URL=https://angel.co/{{ site.social-links.angel }}">
+{% if site.data.social.angel.url %}
+
+<META http-equiv="refresh" content="0;URL={{ site.data.social.angel.url }}">
 
 {% else %}
 

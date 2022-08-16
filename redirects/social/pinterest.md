@@ -5,9 +5,9 @@ permalink: /pinterest/
 show_title: false
 ---
 
-{% if site.social-links.pinterest %}
+{% if site.data.social.pinterest.url %}
 
-<META http-equiv="refresh" content="0;URL=http://pinterest.com/{{ site.social-links.pinterest }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.pinterest.url }}">
 
 {% else %}
 

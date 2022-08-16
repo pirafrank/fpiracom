@@ -5,9 +5,9 @@ permalink: /gist/
 show_title: false
 ---
 
-{% if site.social-links.github %}
+{% if site.data.social.github.gist %}
 
-<META http-equiv="refresh" content="0;URL=http://gist.github.com/{{ site.social-links.github }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.github.gist }}">
 
 {% else %}
 

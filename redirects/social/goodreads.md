@@ -5,9 +5,9 @@ permalink: /goodreads/
 show_title: false
 ---
 
-{% if site.social-links.goodreads %}
+{% if site.data.social.goodreads.url %}
 
-<META http-equiv="refresh" content="0;URL=https://www.goodreads.com/{{ site.social-links.goodreads }}">
+<META http-equiv="refresh" content="0;URL={{ site.data.social.goodreads.url }}">
 
 {% else %}
 

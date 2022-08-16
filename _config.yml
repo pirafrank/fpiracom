@@ -165,6 +165,15 @@ version: v3.0.0
 sass:
   style: compressed # If you want to un-minify, set to :expanded
 
+# jekyll-algolia configuration
+# Docs: https://community.algolia.com/jekyll-algolia/getting-started.html
+algolia:
+  application_id: 'UYX4VWZEEN'
+  index_name: fpiracom_algolia_index
+  search_only_api_key: 2e769ad6db81137ccf2e4e23d59f13cd
+  files_to_exclude:
+    - pages/search_algolia.html
+
 # Use the following plug-ins
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

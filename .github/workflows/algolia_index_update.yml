@@ -50,7 +50,7 @@ jobs:
       shell: bash
       env:
         JEKYLL_ENV: production
-        ALGOLIA_API_KEY: {{ secrets.ALGOLIA_API_KEY }}
+        ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
       run: |
         #bundle exec jekyll build --trace
         bundle exec jekyll algolia

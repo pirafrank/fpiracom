@@ -114,6 +114,15 @@ jobs:
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
         alias-domains: |
           fpiracom-{{BRANCH}}-pirafrank.vercel.app
+    - name: Update Algolia Index
+      # always build from production branch
+      if: github.ref == 'refs/heads/main'
+      shell: bash
+      env:
+        JEKYLL_ENV: production
+        ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+      run: |
+        bundle exec jekyll algolia
     - name: Send Push Notification
       uses: fjogeleit/http-request-action@master
       if: always()

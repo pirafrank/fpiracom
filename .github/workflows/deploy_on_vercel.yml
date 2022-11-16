@@ -12,7 +12,8 @@ on:
       - README.md
       - '.gitignore'
       - '_drafts'
-      - 'repo_utils/**'
+      - 'repo_utils/.*'
+      - 'repo_utils/input.txt'
       - '.vscode'
       - '.vercelignore'
   # schedule is in UTC using cron syntax

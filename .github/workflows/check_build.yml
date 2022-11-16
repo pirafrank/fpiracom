@@ -17,19 +17,19 @@ jobs:
     name: Build website
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       # no need to specify the ref, the GITHUB_REF of pull request event is the PR merge branch.
       # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
     - name: Get current ref  # branch name or commit id
       id: get_current_ref
       shell: bash
       run: |
-        echo "::set-output name=REF::${GITHUB_REF#refs/heads/}"
+        echo "REF=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
         echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Setup node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '16'
     - name: Generate JSONP files
       shell: bash
       run: |
@@ -44,7 +44,7 @@ jobs:
       with:
         ruby-version: 2.6.6
     - name: Cache ruby gems
-      uses: actions/cache@v1
+      uses: actions/cache@v3
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}

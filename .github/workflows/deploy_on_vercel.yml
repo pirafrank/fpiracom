@@ -32,7 +32,7 @@ jobs:
     outputs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.target_ref }}
       - name: Check for new blog posts
@@ -43,14 +43,14 @@ jobs:
           if [ ${GITHUB_EVENT_NAME} = 'schedule' ]; then
             if [ $(ls -1 _posts | grep $(date '+%Y-%m-%d')) ]; then
               echo "New posts found with today date"
-              echo "::set-output name=RUN_BUILD::true"
+              echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
             else
               echo "No new posts to publish with today date."
-              echo "::set-output name=RUN_BUILD::false"
+              echo "RUN_BUILD=false" >> $GITHUB_OUTPUT
             fi
           else
             echo "No checks to perform, about to run build..."
-            echo "::set-output name=RUN_BUILD::true"
+            echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
           fi
   build:
     name: Deploy on vercel
@@ -58,7 +58,7 @@ jobs:
     needs: [checks]
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
@@ -79,21 +79,21 @@ jobs:
           REF="${GITHUB_REF#refs/heads/}"
         fi
         # set as step output and as env
-        echo "::set-output name=REF::${REF}"
+        echo "REF=${REF}" >> $GITHUB_OUTPUT
         echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Get vercel args
       id: get_vercel_args
       shell: bash
       run: |
         if [ ${{ env.GIT_REF }} == 'main' ]; then
-          echo "::set-output name=VERCEL_ARGS::$(echo '--prod')"
+          echo "VERCEL_ARGS=$(echo '--prod')" >> $GITHUB_OUTPUT
         else
-          echo "::set-output name=VERCEL_ARGS::$(echo '')"
+          echo "VERCEL_ARGS=$(echo '')" >> $GITHUB_OUTPUT
         fi
     - name: Setup node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '16'
     - name: Generate JSONP files
       shell: bash
       run: |
@@ -105,7 +105,7 @@ jobs:
         node repo_utils/git_info.js
     - name: Deploy to vercel
       id: deploy_to_vercel
-      uses: amondnet/vercel-action@v20
+      uses: amondnet/vercel-action@v25.1.0
       with:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -128,7 +128,7 @@ jobs:
     # run this only if building from production branch
     if: github.ref == 'refs/heads/main'
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
@@ -149,14 +149,14 @@ jobs:
           REF="${GITHUB_REF#refs/heads/}"
         fi
         # set as step output and as env
-        echo "::set-output name=REF::${REF}"
+        echo "REF=${REF}" >> $GITHUB_OUTPUT
         echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6.6
     - name: Cache ruby gems
-      uses: actions/cache@v1
+      uses: actions/cache@v3
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
@@ -172,9 +172,9 @@ jobs:
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
     - name: Setup node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '16'
     - name: Generate _data/git.json file
       shell: bash
       run: |

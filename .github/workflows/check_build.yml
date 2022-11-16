@@ -24,7 +24,7 @@ jobs:
       id: get_current_ref
       shell: bash
       run: |
-        echo "::set-output name=REF::${GITHUB_REF#refs/heads/}"
+        echo "REF=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
         echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Setup node.js
       uses: actions/setup-node@v3

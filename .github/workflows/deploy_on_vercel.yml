@@ -43,14 +43,14 @@ jobs:
           if [ ${GITHUB_EVENT_NAME} = 'schedule' ]; then
             if [ $(ls -1 _posts | grep $(date '+%Y-%m-%d')) ]; then
               echo "New posts found with today date"
-              echo "::set-output name=RUN_BUILD::true"
+              echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
             else
               echo "No new posts to publish with today date."
-              echo "::set-output name=RUN_BUILD::false"
+              echo "RUN_BUILD=false" >> $GITHUB_OUTPUT
             fi
           else
             echo "No checks to perform, about to run build..."
-            echo "::set-output name=RUN_BUILD::true"
+            echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
           fi
   build:
     name: Deploy on vercel
@@ -79,16 +79,16 @@ jobs:
           REF="${GITHUB_REF#refs/heads/}"
         fi
         # set as step output and as env
-        echo "::set-output name=REF::${REF}"
+        echo "REF=${REF}" >> $GITHUB_OUTPUT
         echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Get vercel args
       id: get_vercel_args
       shell: bash
       run: |
         if [ ${{ env.GIT_REF }} == 'main' ]; then
-          echo "::set-output name=VERCEL_ARGS::$(echo '--prod')"
+          echo "VERCEL_ARGS=$(echo '--prod')" >> $GITHUB_OUTPUT
         else
-          echo "::set-output name=VERCEL_ARGS::$(echo '')"
+          echo "VERCEL_ARGS=$(echo '')" >> $GITHUB_OUTPUT
         fi
     - name: Setup node.js
       uses: actions/setup-node@v3
@@ -149,7 +149,7 @@ jobs:
           REF="${GITHUB_REF#refs/heads/}"
         fi
         # set as step output and as env
-        echo "::set-output name=REF::${REF}"
+        echo "REF=${REF}" >> $GITHUB_OUTPUT
         echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1

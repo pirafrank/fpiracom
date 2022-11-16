@@ -124,8 +124,7 @@ jobs:
   algolia:
     name: Algolia index update
     runs-on: ubuntu-20.04
-    needs: [checks]
-    if: contains(needs.checks.outputs.RUN_BUILD, 'true')
+    needs: [build]
     steps:
     - uses: actions/checkout@v2
       with:

@@ -32,7 +32,7 @@ jobs:
     outputs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.target_ref }}
       - name: Check for new blog posts
@@ -58,7 +58,7 @@ jobs:
     needs: [checks]
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
@@ -93,7 +93,7 @@ jobs:
     - name: Setup node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: '16'
     - name: Generate JSONP files
       shell: bash
       run: |
@@ -105,7 +105,7 @@ jobs:
         node repo_utils/git_info.js
     - name: Deploy to vercel
       id: deploy_to_vercel
-      uses: amondnet/vercel-action@v20
+      uses: amondnet/vercel-action@v25.1.0
       with:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -128,7 +128,7 @@ jobs:
     # run this only if building from production branch
     if: github.ref == 'refs/heads/main'
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
@@ -174,7 +174,7 @@ jobs:
     - name: Setup node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: '16'
     - name: Generate _data/git.json file
       shell: bash
       run: |

@@ -17,7 +17,7 @@ jobs:
     name: Build website
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       # no need to specify the ref, the GITHUB_REF of pull request event is the PR merge branch.
       # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
     - name: Get current ref  # branch name or commit id
@@ -29,7 +29,7 @@ jobs:
     - name: Setup node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: '16'
     - name: Generate JSONP files
       shell: bash
       run: |

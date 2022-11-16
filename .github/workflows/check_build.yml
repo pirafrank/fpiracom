@@ -27,7 +27,7 @@ jobs:
         echo "::set-output name=REF::${GITHUB_REF#refs/heads/}"
         echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Setup node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: '16'
     - name: Generate JSONP files

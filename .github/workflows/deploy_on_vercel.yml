@@ -125,10 +125,32 @@ jobs:
     name: Algolia index update
     runs-on: ubuntu-20.04
     needs: [build]
+    # run this only if building from production branch
+    if: github.ref == 'refs/heads/main'
     steps:
     - uses: actions/checkout@v2
       with:
         ref: ${{ github.event.inputs.target_ref }}
+    - name: Get current ref (branch name or commit id)
+      id: get_current_ref
+      shell: bash
+      run: |
+        # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
+        # even if actions/checkout@v2 checkouts to a different ref
+        if [ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]; then
+          if [ "$(git rev-parse --abbrev-ref HEAD)" == 'HEAD' ]; then
+            # case detached HEAD
+            REF="$(git rev-parse --short HEAD)"
+          else
+            # HEAD pointing to a branch
+            REF="$(git rev-parse --abbrev-ref HEAD)"
+          fi
+        else
+          REF="${GITHUB_REF#refs/heads/}"
+        fi
+        # set as step output and as env
+        echo "::set-output name=REF::${REF}"
+        echo "GIT_REF=${REF}" >> $GITHUB_ENV
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
@@ -149,9 +171,14 @@ jobs:
         gem install bundler:2.1.4
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Generate _data/git.json file
+      shell: bash
+      run: |
+        node repo_utils/git_info.js
     - name: Update Algolia Index
-      # always build from production branch
-      if: github.ref == 'refs/heads/main'
       shell: bash
       env:
         JEKYLL_ENV: production

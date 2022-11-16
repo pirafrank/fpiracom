@@ -8,7 +8,8 @@ const fs = require('fs')
 const path = require('path')
 const readline = require('readline');
 
-async function processLineByLine(filepath, targetObj) {
+/*
+async function processFileLineByLine(filepath, targetObj) {
   const fileStream = fs.createReadStream(filepath);
 
   const rl = readline.createInterface({
@@ -18,12 +19,13 @@ async function processLineByLine(filepath, targetObj) {
     targetObj.push({ name: line, value: line })
   }
 }
+*/
 
 async function processStdinLineByLine(targetObj) {
   const rl = readline.createInterface({
     input: process.stdin,
   });
-  return new Promise(resolve => {
+  return await new Promise(resolve => {
     rl.on('line', function(line){
       line = line.trim()
       targetObj.push({ name: line, value: line })
@@ -38,14 +40,14 @@ function work(what){
   // processLineByLine(`path.resolve(__dirname + `/../${what}.txt`, objs)
   processStdinLineByLine([])
     .then(r => {
-      let output = `${what}Callback(` + JSON.stringify(r) + ')'
-      console.log(`${what} processed. Output written to file: ${output}`)
+      const output = `${what}Callback(` + JSON.stringify(r) + ')'
 
-      let filePath = path.resolve(__dirname + `/../jsonp/${what}.jsonp`)
+      const filePath = path.join(__dirname, '..', 'jsonp', `${what}.jsonp`)
       // write output to file (overwrites existant with same name)
       fs.writeFile(filePath, output, err => {
-        if (err) console.error("ERROR while writing:" + err.message)
+        if (err) console.error(`ERROR while writing to file=${filePath}: ${err.message}`)
         // else file has been written successfully
+        console.log(`${what} has been processed.\nOutput file: ${filePath}\nOutput written to file: ${output}`)
       })
     })
     .catch(e => {

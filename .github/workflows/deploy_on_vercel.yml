@@ -96,9 +96,11 @@ jobs:
         node-version: '16'
     - name: Generate JSONP files
       shell: bash
+      working-directory: repo_utils
       run: |
-        bash repo_utils/list_categories.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js categories
-        bash repo_utils/list_tags.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js tags
+        echo "Current workdir: $(pwd -P)"
+        bash list_categories.sh | awk '{ print $2 }' | sort | node jsonp_generator.js categories
+        bash list_tags.sh | awk '{ print $2 }' | sort | node jsonp_generator.js tags
     - name: Generate _data/git.json file
       shell: bash
       run: |

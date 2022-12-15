@@ -14,6 +14,7 @@ Jekyll::Hooks.register :site, :pre_render do |site, payload|
     if(File.file?(git_data))
         puts "\t#{git_data} exists, site.data.git will read from it"
     elsif(File.directory?('.git'))
+        puts "\t#{git_data} does not exists, attempting to read repo info git to populate site.data.git"
         g = Git.open('.', {})
         current_commit = g.gcommit('HEAD')
 
@@ -31,6 +32,8 @@ Jekyll::Hooks.register :site, :pre_render do |site, payload|
         payload.site.data['git']['commit_date'] = commit_date
         payload.site.data['git']['branch'] = branch
         payload.site.data['git']['tags'] = tag
+
+        puts "\tsite.data.git populated with data from repo."
     else
       raise "#{git_data} does not exist and dir is not a git working copy."
     end

@@ -110,6 +110,10 @@ pocket:
   category: blog
   url: 'https://getpocket.com/@pirafrank'
   user: '@pirafrank'
+polywork:
+  category: social
+  url: 'https://www.polywork.com/pirafrank'
+  user: pirafrank
 producthunt:
   category: social
   url: 'https://producthunt.com/@pirafrank'

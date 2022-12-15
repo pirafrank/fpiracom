@@ -64,6 +64,10 @@ linktree:
   category: social
   url: 'https://linktr.ee/pirafrank'
   user: pirafrank
+mastodon:
+  category: social
+  url: 'https://mastodon.uno/@pirafrank'
+  user: '@pirafrank'
 medium:
   category: blog
   url: 'https://medium.com/@pirafrank'

@@ -1,5 +1,8 @@
 # Includes a social icon in social divs and make a link to that profile work for each username you enter
 # Leave social links you don't have/use empty to disable them
+# distinct of categories here:
+#   yq '.*.category' social.yml | sort | uniq
+# note: 'bio' is the category for link aggregators, e.g. linktr.ee
 aboutme:
   category: social
   url: 'https://about.me/pirafrank'
@@ -8,6 +11,10 @@ angel:
   category: social
   url: 'https://angel.co/francescopira'
   user: francescopira
+blog:
+  category: blog
+  url: 'https://fpira.com/blog'
+  user: pirafrank
 cncf:
   category: code
   url: https://community.cncf.io/u/mmfzj9
@@ -61,9 +68,13 @@ linkedin:
   user: pirafrank
   recentActivity: 'https://www.linkedin.com/in/pirafrank/detail/recent-activity/'
 linktree:
-  category: social
+  category: bio
   url: 'https://linktr.ee/pirafrank'
   user: pirafrank
+mastodon:
+  category: social
+  url: 'https://mastodon.uno/@pirafrank'
+  user: '@pirafrank'
 medium:
   category: blog
   url: 'https://medium.com/@pirafrank'
@@ -71,7 +82,7 @@ medium:
 microsoft_learn:
   category: certifications
   url: https://docs.microsoft.com/it-it/users/pirafrank/certifications/certifications
-  user: pirafrank  
+  user: pirafrank
 musicblog:
   category: #music
   url: #'http://soundtrackofthedays.tumblr.com'
@@ -103,6 +114,10 @@ producthunt:
   category: social
   url: 'https://producthunt.com/@pirafrank'
   user: '@pirafrank'
+rebrandly:
+  category: bio
+  url: 'https://Link.Gallery/pirafrank'
+  user: pirafrank
 reddit:
   category: social
   url: 'https://www.reddit.com/user/pirafrank'

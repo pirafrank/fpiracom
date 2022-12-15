@@ -212,7 +212,8 @@ which generates:
 To add a font-awesome icon:
 
 ```html
-<i class="fa fa-external-link" aria-hidden="true"></i>
+<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+<i class="fa-brands fa-github" aria-hidden="true"></i>
 ```
 
 ## Media files

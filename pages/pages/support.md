@@ -20,16 +20,16 @@ I would appreciate it so much!
 
 <p>
     <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}/1">
-        <i class="fa fa-paypal" aria-hidden="true"></i> 1 &euro;
+        <i class="fa-brands fa-paypal" aria-hidden="true"></i> 1 &euro;
     </a>
     <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}/4">
-        <i class="fa fa-paypal" aria-hidden="true"></i> 4 &euro;
+        <i class="fa-brands fa-paypal" aria-hidden="true"></i> 4 &euro;
     </a>
     <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}/10">
-        <i class="fa fa-paypal" aria-hidden="true"></i> 10 &euro;
+        <i class="fa-brands fa-paypal" aria-hidden="true"></i> 10 &euro;
     </a>
     <a class="btn btn-big btn-default" href="{{ site.data.donate.paypal }}">
-        <i class="fa fa-paypal" aria-hidden="true"></i> Other
+        <i class="fa-brands fa-paypal" aria-hidden="true"></i> Other
     </a>
 </p>
 
@@ -37,7 +37,7 @@ I would appreciate it so much!
 
 #### Want to stay anonymous?
 
-<p><i class="fa fa-btc" aria-hidden="true"></i> Pay with Bitcoin</p>
+<p><i class="fa-brands fa-btc" aria-hidden="true"></i> Pay with Bitcoin</p>
 
 <p>
     <a class="btn btn-big btn-default" id="bitcoin" onclick="showInPopup(document.getElementById('bitcoin').innerHTML)">{{ site.data.donate.bitcoin }}</a>

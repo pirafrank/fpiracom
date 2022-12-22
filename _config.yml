@@ -200,6 +200,9 @@ jekyll-minifier:
 #    - 'manifest.json'
 #    - 'service-worker.js'
 
+include:
+  - .well-known/nostr.json
+
 # Exclude these files from your production _site
 exclude:
     - Gemfile

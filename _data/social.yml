@@ -90,6 +90,10 @@ musicblog:
 #  category: chat
 #  url: 'https://m.me/pirafrank'
 #  user: pirafrank
+nostr:
+  category: social
+  url: 'https://nostr.rocks/fc42d5bd0fdf687caafb9c0cb1cd545e5a99041348d120236eba14aae921cc90'
+  user: fc42d5bd0fdf687caafb9c0cb1cd545e5a99041348d120236eba14aae921cc90
 npmjs:
   category: code
   url: 'https://www.npmjs.com/~pirafrank'

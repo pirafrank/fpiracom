@@ -14,6 +14,9 @@ Notable conferences and events I joined. I hope to see you at the next one!
 
 #### 2022
 
+- [Codemotion Milan 2022](https://extra.codemotion.com/conference-milan-2022/) - 18-19 October 2022 - Milan
+- [ITMeeting](https://www.uniroma1.it/it/notizia/47deg-itmeeting-27-giugno-2022), recruiting day and metaverse panel - 27 June, 2022 - Sapienza Università di Roma (Rome)
+- [Crypto Expo Milan 2022](https://www.cryptoexpomilan.com/), blockchain and metaverse conference - 23-26 June, 2022 - Milan
 - Codemotion Online Tech Conference - Italian Edition - 23-24, March 2022 (online)
 
 #### 2021
@@ -36,8 +39,14 @@ Notable conferences and events I joined. I hope to see you at the next one!
 - Cloudflare week - Sept 2019 (online)
 - Microsoft BUILD - May 2019 (online)
 
+#### 2018
+
+- [Delta Summit 2018](https://delta-summit.com/delta-summit-2018/), blockchain conference - October 3-5, 2018 - Malta
+- [YouStartIT](https://www.crunchbase.com/organization/youstartit-by-mita-innovation-hub), pitch contest for [Togenesis](https://www.togenesis.eu) (friends' startup) - October 1-2, 2018 - MITA, Malta
+
 #### Past
 
+- WebSummit 2016, won tickets as GitHub open-source contributor to pitch [Fileshute](http://fpira.com/fileshute) (what was my startup idea at the time) to guests and investors - November 7-10, 2016 - Lisbon
 - Codemotion - March 2016 - Rome
 - Microsoft Future Decoded - Nov 12, 2015 - Rome
 - ESOCC European Conference on Service-Oriented and Cloud Computing - Sept 15, 2015 - Taormina ([link](https://link.springer.com/conference/esocc))

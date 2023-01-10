@@ -200,7 +200,7 @@ The plugin is in the `_plugins` folder.
 To add `target="_blank" rel="noopener noreferrer"` to markdown, write links as follows:
 
 ```md
-[Awesome link]({{ site.data.res.awesomelink }}){:target="_blank"}{:rel="noopener noreferrer"}.
+[Awesome link]({{ site.data.external.awesomelink }}){:target="_blank"}{:rel="noopener noreferrer"}.
 ```
 
 which generates:

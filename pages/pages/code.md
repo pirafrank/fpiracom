@@ -11,7 +11,7 @@ I code for passion and for work, I grab the keyboard whenever creativity sparks 
 - [Docker Hub]({{ site.data.social.docker.url }})
 - [npm.js]({{ site.data.social.npmjs.url }})
 - [dotfiles]({{ site.data.social.github.url }}/dotfiles)
-- [My toolbelt]({{ site.data.res.my-toolbelt }})
+- [My toolbelt]({{ site.data.external.my-toolbelt }})
 
 #### Side Projects
 

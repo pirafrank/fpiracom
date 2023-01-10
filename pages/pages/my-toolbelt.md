@@ -7,4 +7,4 @@ show_title: true
 
 Tools and useful apps and services I use daily.
 
-Moved [here]({{ site.data.res.my-toolbelt }}).
+Moved [here]({{ site.data.external.my-toolbelt }}).

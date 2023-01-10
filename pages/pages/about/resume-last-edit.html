@@ -1,22 +1,38 @@
 <script>
-  function httpGetResumeLastEditAsync(callback) {
-    var url = "{{ site.data.resume.pdf }}"
+  function setDateInHtml(lastEdit){
+    var lastEditDate = lastEdit.substring(5, 16);
+    // set date in html
+    document.getElementById('resume-last-edit-date').innerHTML = lastEditDate;
+    // and show paragraph
+    var p = document.getElementById('resume-last-edit');
+    p.style.display = 'block';
+  }
+
+  // call url endpoint and follow redirects up to a set max number of times
+  function httpGetResumeLastEditAsync(callback,
+    url = "{{ site.data.external.resume }}",
+    redirects = 0
+  ){
+    var maxRedirects = 3;
+    if (redirects >= maxRedirects) {
+        console.error("httpGetResumeLastEditAsync: Too many redirects.");
+        return;
+    }
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
-      if (request.readyState == 4 && request.status == 200) {
-        var lastEdit = request.getResponseHeader("Last-Modified");
-        var lastEditDate = lastEdit.substring(5, 16)
-        // set date in html
-        document.getElementById('resume-last-edit-date').innerHTML = lastEditDate;
-        // and show paragraph
-        var p = document.getElementById('resume-last-edit');
-        p.style.display = 'block';
+      if (request.readyState === 4){ // 4 = XMLHttpRequest.DONE
+        if(request.status === 200) {
+          var lastEdit = request.getResponseHeader("Last-Modified");
+          setDateInHtml(lastEdit);
+        } else if(request.status === 301 || request.status === 302) {
+          httpGetResumeLastEditAsync(callback, request.getResponseHeader("Location"), redirects + 1);
+        }
       }
     }
     request.open("GET", url, true); // true for asynchronous
     request.send(null);
-
   }
+
   window.onload = httpGetResumeLastEditAsync();
 </script>
 

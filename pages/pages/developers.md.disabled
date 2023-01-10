@@ -5,7 +5,7 @@ permalink: /developers/
 show_title: true
 ---
 
-A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need. You may also want to check the [Talks]({{ site.baseurl }}/talks) and the [Cheat Sheet]({{ site.data.res.cheat-sheets }}) pages.
+A collection of tools, notes, snippets, links and more I've found to be useful or developed by me upon my needs. Feel free to have a look around and take what you want/need. You may also want to check the [Talks]({{ site.baseurl }}/talks) and the [Cheat Sheet]({{ site.data.external.cheat-sheets }}) pages.
 
 #### Bash
 
@@ -47,7 +47,7 @@ A collection of tools, notes, snippets, links and more I've found to be useful o
 ### Check also
 
 - [Projects]({{ site.baseurl }}/projects)
-- [Cheat sheets]({{ site.data.res.cheat-sheets }})
+- [Cheat sheets]({{ site.data.external.cheat-sheets }})
 - [Snippets]({{site.data.social.github.url}}/snippets)
 
 <br>

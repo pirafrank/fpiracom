@@ -1,187 +1,249 @@
 # Includes a social icon in social divs and make a link to that profile work for each username you enter
 # Leave social links you don't have/use empty to disable them
 # distinct of categories here:
-#   yq '.*.category' social.yml | sort | uniq
+#   yq '.*.categories.[]' social.yml | sort | uniq
 # note: 'bio' is the category for link aggregators, e.g. linktr.ee
 aboutme:
-  category: social
+  categories:
+    - bio
   url: 'https://about.me/pirafrank'
   user: pirafrank
 angel:
-  category: social
+  categories:
+    - social
   url: 'https://angel.co/francescopira'
   user: francescopira
+bitcoin:
+  categories:
+    - crypto
+    - money
+  url: 'https://chart.googleapis.com/chart?chs=512x512&cht=qr&chl=1CYVUUnCLgbkqjLrSAGL3X9YAkf4Jw2ZzP&choe=UTF-8'
+  address: 1CYVUUnCLgbkqjLrSAGL3X9YAkf4Jw2ZzP
 blog:
-  category: blog
+  categories:
+    - blog
   url: 'https://fpira.com/blog'
   user: pirafrank
 cncf:
-  category: code
+  categories:
+    - dev
   url: https://community.cncf.io/u/mmfzj9
   user: mmfzj9
 credly:
-  category: certifications
+  categories:
+    - certifications
   url: 'https://www.credly.com/users/pirafrank/badges'
   user: 'pirafrank'
 docker: # docker hub
-  category: code
+  categories:
+    - dev
   url: 'http://hub.docker.com/u/pirafrank'
   user: pirafrank
   reporoot: 'https://hub.docker.com/r/pirafrank'
+ens:
+  categories:
+    - crypto
+    - money
+  url: 'https://chart.googleapis.com/chart?chs=512x512&cht=qr&chl=pirafrank.eth&choe=UTF-8'
+  address: 'pirafrank.eth'
 facebook:
-  category: #disabled
+  categories:
+    - #disabled
   url: #disabled
   user: #disabled
 flickr:
-  category: #photo
+  categories:
+    - #photo
   url: #'http://flickr.com/pirafrank'
   user: #pirafrank
 github:
-  category: code
+  categories:
+    - dev
   url: 'https://github.com/pirafrank'
   user: pirafrank
   gist: 'https://gist.github.com/pirafrank?direction=desc&sort=updated'
 goodreads:
-  category: social
+  categories:
+    - social
   url: 'https://www.goodreads.com/pirafrank'
   user: pirafrank
 gravatar:
-  category: social
+  categories:
+    - social
   url: 'https://gravatar.com/pirafrank'
   user: pirafrank
 instagram:
-  category: #photo
+  categories:
+    - #photo
   url: #'http://instagram.com/pirafrank'
   user: #pirafrank
 keybase:
-  category: social
+  categories:
+    - social
   url: 'http://keybase.io/pirafrank'
   user: pirafrank
   pgp: https://keybase.io/pirafrank/key.asc
 lastfm:
-  category: #music
+  categories:
+    - #music
   url: #'http://www.last.fm/user/pirafrank'
   user: #pirafrank
 linkedin:
-  category: work
+  categories:
+    - social
   url: 'http://linkedin.com/in/pirafrank'
   user: pirafrank
   recentActivity: 'https://www.linkedin.com/in/pirafrank/detail/recent-activity/'
 linktree:
-  category: bio
+  categories:
+    - bio
   url: 'https://linktr.ee/pirafrank'
   user: pirafrank
 mastodon:
-  category: social
+  categories:
+    - social
   url: 'https://mastodon.uno/@pirafrank'
   user: '@pirafrank'
 medium:
-  category: blog
+  categories:
+    - blog
   url: 'https://medium.com/@pirafrank'
   user: pirafrank
 microsoft_learn:
-  category: certifications
+  categories:
+    - certifications
   url: https://docs.microsoft.com/it-it/users/pirafrank/certifications/certifications
   user: pirafrank
-musicblog:
-  category: #music
-  url: #'http://soundtrackofthedays.tumblr.com'
+#musicblog:
+#  categories:
+#    - music
+#  url: 'https://soundtrackofthedays.tumblr.com'
 #messenger:
-#  category: chat
+#  categories:
+#    - chat
 #  url: 'https://m.me/pirafrank'
 #  user: pirafrank
 nostr:
-  category: social
+  categories:
+    - social
+    - chat
   url: 'https://nostr.rocks/fc42d5bd0fdf687caafb9c0cb1cd545e5a99041348d120236eba14aae921cc90'
   pubkey:
     hex: fc42d5bd0fdf687caafb9c0cb1cd545e5a99041348d120236eba14aae921cc90
     npub: npub1l3pdt0g0ma58e2hmnsxtrn25tedfjpqnfrgjqgmwhg2246fpejgqx264wj
   nip05: pirafrank@fpira.com
 npmjs:
-  category: code
+  categories:
+    - dev
   url: 'https://www.npmjs.com/~pirafrank'
   user: pirafrank
 oku:
-  category: social
+  categories:
+    - social
   url: 'https://oku.club/user/pirafrank'
   user: pirafrank
 packal:
-  category: code
+  categories:
+    - dev
   url: 'https://www.packal.org/users/pirafrank'
   user: pirafrank
+paypal:
+  categories:
+    - money
+  url: https://paypal.me/pirafrank
+  user: pirafrank
 pinterest:
-  category: #social
+  categories:
+    - #social
   url:
   user:
 pocket:
-  category: blog
+  categories:
+    - blog
   url: 'https://getpocket.com/@pirafrank'
   user: '@pirafrank'
 polywork:
-  category: social
+  categories:
+    - social
   url: 'https://www.polywork.com/pirafrank'
   user: pirafrank
 producthunt:
-  category: social
+  categories:
+    - social
   url: 'https://producthunt.com/@pirafrank'
   user: '@pirafrank'
 rebrandly:
-  category: bio
+  categories:
+    - bio
   url: 'https://Link.Gallery/pirafrank'
   user: pirafrank
 reddit:
-  category: social
+  categories:
+    - social
   url: 'https://www.reddit.com/user/pirafrank'
   user: pirafrank
 skype:
-  category: chat
+  categories:
+    - chat
   url: 'skype:francesco-pira?call'
   user: francesco-pira
 soundcloud:
-  category: #music
+  categories:
+    - #music
   url: #'https://soundcloud.com/pirafrank'
   user: #pirafrank
 slideshare:
-  category: work
+  categories:
+    - social
   url: 'https://www.slideshare.net/pirafrank'
   user: pirafrank
 stackoverflow:
-  category: # code
+  categories:
+    - # code
   url:  # your stackoverflow profile, e.g. "users/12345/john-doe"
   user:
 telegram: # twitter mirror channel
-  category: social
+  categories:
+    - social
   url: 'http://t.me/pirafrank'
   user: pirafrank
 telegram-feed: # fpira.com feed
-  category: blog
+  categories:
+    - blog
   url: 'http://t.me/fpira'
   user: fpira
 telegram-im:
-  category: chat
+  categories:
+    - chat
   url: 'http://t.me/francescopira'
   user: francescopira
 telegram-apple-dev-releases:
-  category: social
+  categories:
+    - social
   url: 'https://t.me/appledeveloperreleases'
   user: appledeveloperreleases
 tumblr:
-  category: #blog
+  categories:
+    - #blog
   url: #'http://pirafrank.tumblr.com'
   user: #pirafrank
 twitter:
-  category: social
+  categories:
+    - social
   url: 'https://twitter.com/pirafrank'
   user: pirafrank
 twitter-dm:
-  category: chat
+  categories:
+    - chat
   url: 'https://twitter.com/messages/compose?recipient_id=156289750'
   user: pirafrank
 xing:
-  category: work
+  categories:
+    - social
   url: 'https://www.xing.com/profile/Francesco_Pira'
   user: Francesco_Pira
 youtube:
-  category: social
+  categories:
+    - social
   url: 'https://youtube.com/user/pirafrank'
   user: pirafrank

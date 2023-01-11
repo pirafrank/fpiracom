@@ -8,7 +8,9 @@
     p.style.display = 'block';
   }
 
-  // call url endpoint and follow redirects up to a set max number of times
+  // call url endpoint and follow redirects up to a set max number of times.
+  // NB. Url shorter service needs to set Access-Control-Allow-Origin to avoid CORS issues,
+  //     rebrandly and bit.ly do not allow you to specify CORS policies.
   function httpGetResumeLastEditAsync(callback,
     url = "{{ site.data.external.resume }}",
     redirects = 0

@@ -9,11 +9,11 @@ Recently I've got interested in `nostr`, which is increasing in popularity, and 
 
 Below, details on how to look for me.
 
-#### Hex
+#### Hex key
 
 `{{ site.data.social.nostr.pubkey.hex }}`
 
-#### npub
+#### npub key
 
 `{{ site.data.social.nostr.pubkey.npub }}`
 
@@ -24,6 +24,12 @@ Below, details on how to look for me.
 which is verified via DNS as per [NIP-05](https://github.com/nostr-protocol/nips/blob/master/05.md).
 
 NB. this isn't a real email address. Check [here]({{ site.baseurl }}/contacts) to get in touch.
+
+#### nostr.directory link
+
+[nostr.directory](https://nostr.directory) is a public key database to find twitter users on nostr.
+
+[{{ site.data.social.nostr.url }}]({{ site.data.social.nostr.url }})
 
 ### Useful links
 

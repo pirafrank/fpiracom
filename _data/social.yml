@@ -46,16 +46,16 @@ ens:
     - money
   url: 'https://chart.googleapis.com/chart?chs=512x512&cht=qr&chl=pirafrank.eth&choe=UTF-8'
   address: 'pirafrank.eth'
-facebook:
-  categories:
-    - #disabled
-  url: #disabled
-  user: #disabled
-flickr:
-  categories:
-    - #photo
-  url: #'http://flickr.com/pirafrank'
-  user: #pirafrank
+#facebook:
+#  categories:
+#    - social
+#  url:
+#  user:
+#flickr:
+#  categories:
+#    - social
+#  url: 'http://flickr.com/pirafrank'
+#  user: pirafrank
 github:
   categories:
     - dev
@@ -72,22 +72,22 @@ gravatar:
     - social
   url: 'https://gravatar.com/pirafrank'
   user: pirafrank
-instagram:
-  categories:
-    - #photo
-  url: #'http://instagram.com/pirafrank'
-  user: #pirafrank
+#instagram:
+#  categories:
+#    - social
+#  url: 'http://instagram.com/pirafrank'
+#  user: pirafrank
 keybase:
   categories:
     - social
   url: 'http://keybase.io/pirafrank'
   user: pirafrank
   pgp: https://keybase.io/pirafrank/key.asc
-lastfm:
-  categories:
-    - #music
-  url: #'http://www.last.fm/user/pirafrank'
-  user: #pirafrank
+#lastfm:
+#  categories:
+#    - music
+#  url: 'http://www.last.fm/user/pirafrank'
+#  user: pirafrank
 linkedin:
   categories:
     - social
@@ -152,11 +152,11 @@ paypal:
     - money
   url: https://paypal.me/pirafrank
   user: pirafrank
-pinterest:
-  categories:
-    - #social
-  url:
-  user:
+#pinterest:
+#  categories:
+#    - social
+#  url:
+#  user:
 pocket:
   categories:
     - blog
@@ -187,21 +187,21 @@ skype:
     - chat
   url: 'skype:francesco-pira?call'
   user: francesco-pira
-soundcloud:
-  categories:
-    - #music
-  url: #'https://soundcloud.com/pirafrank'
-  user: #pirafrank
+#soundcloud:
+#  categories:
+#    - music
+#  url: 'https://soundcloud.com/pirafrank'
+#  user: pirafrank
 slideshare:
   categories:
     - social
   url: 'https://www.slideshare.net/pirafrank'
   user: pirafrank
-stackoverflow:
-  categories:
-    - # code
-  url:  # your stackoverflow profile, e.g. "users/12345/john-doe"
-  user:
+#stackoverflow:
+#  categories:
+#    - code
+#  url:  # your stackoverflow profile, e.g. "users/12345/john-doe"
+#  user:
 telegram: # twitter mirror channel
   categories:
     - social
@@ -222,11 +222,11 @@ telegram-apple-dev-releases:
     - social
   url: 'https://t.me/appledeveloperreleases'
   user: appledeveloperreleases
-tumblr:
-  categories:
-    - #blog
-  url: #'http://pirafrank.tumblr.com'
-  user: #pirafrank
+#tumblr:
+#  categories:
+#    - blog
+#  url: 'http://pirafrank.tumblr.com'
+#  user: pirafrank
 twitter:
   categories:
     - social

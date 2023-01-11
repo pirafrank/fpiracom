@@ -8,6 +8,12 @@ aboutme:
     - bio
   url: 'https://about.me/pirafrank'
   user: pirafrank
+alby:
+  categories:
+    - crypto
+    - money
+  url: https://getalby.com/p/pirafrank
+  address: pirafrank@getalby.com
 angel:
   categories:
     - social

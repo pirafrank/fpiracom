@@ -61,6 +61,42 @@ ALGOLIA_API_KEY='123abc123abc123abc123abc123abc12' bundle exec jekyll algolia
 
 where the `ALGOLIA_API_KEY` is the Admin API Key you get from [your account dashboard](https://www.algolia.com/account/api-keys/all).
 
+## Run in Docker
+
+You can run the development server in a docker container. The image contains: `rvm`, `ruby`, `nvm`, and `nodejs`.
+
+On Linux:
+
+```sh
+docker build -t pirafrank/jekyll -f ./repo_utils/Dockerfile .
+docker run -it --name fpiracom -v $(pwd -P):/home/jekyll/app -p 4001:4001 pirafrank/jekyll:latest
+```
+
+On Windows:
+
+```powershell
+docker build -t pirafrank/jekyll -f .\repo_utils\Dockerfile .
+docker run -it --name fpiracom -v ${PWD}:/home/jekyll/app -p 4001:4001 pirafrank/jekyll:latest
+```
+
+You can add `--build-arg RUBY_VERSION=2.6.6 --build-arg NODE_VERSION=16.18.1` to build command to specify which Ruby and/or nodejs version to use.
+
+After the container has started, you need to run `bundle install`. This is because the source is mounted via Docker and not included in the image.
+
+**Important**: when launching jekyll serve, be sure to bind to all interfaces:
+
+```txt
+bundle exec jekyll serve --host=0.0.0.0
+```
+
+or just use the alias:
+
+```sh
+jks
+```
+
+otherwise the server won't be accessible from the host even if the port has been bound.
+
 ## GitHub Actions
 
 To run a GitHub Actions workflow on any branch use the `--ref` flag. This works even if you have never merged the workflow file in the repository's default branch.

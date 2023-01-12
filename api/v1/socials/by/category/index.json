@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+{
+  {% assign data = site.data.social | sort %}
+  {% assign data_array = data | hash_to_array %}
+
+  {% assign grouped_data = data_array | group_by_array_prop: 'categories' | sort %}
+  {% for group in grouped_data %}
+  {% assign key = group[0] %}
+  {% assign socials = group[1] %}
+    "{{ key }}": [
+      {% for social in socials %}
+        "{{ social.id }}": "{{ social.url }}"
+      {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+}

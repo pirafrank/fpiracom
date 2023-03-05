@@ -222,3 +222,4 @@ exclude:
     - vendor
     - 'repo_utils/**'
     - vercel.json
+    - Dockerfile

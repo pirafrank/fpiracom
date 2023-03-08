@@ -79,7 +79,7 @@ docker build -t pirafrank/jekyll -f .\repo_utils\Dockerfile .
 docker run -it --name fpiracom -v ${PWD}:/home/jekyll/app -p 4001:4001 pirafrank/jekyll:latest
 ```
 
-You can add `--build-arg RUBY_VERSION=2.6.6 --build-arg NODE_VERSION=16.18.1` to build command to specify which Ruby and/or nodejs version to use.
+You can add `--build-arg RUBY_VERSION=x.y.z --build-arg NODE_VERSION=x.y.z` to build command to specify which Ruby and/or nodejs version to use.
 
 After the container has started, you need to run `bundle install`. This is because the source is mounted via Docker and not included in the image.
 

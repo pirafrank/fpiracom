@@ -2,7 +2,7 @@ FROM ruby:2.6.6
 
 # set ruby and nodejs versions to install during Docker image build
 ARG RUBY_VERSION=2.6.6
-ARG NODE_VERSION=16.18.1
+ARG NODE_VERSION=18.15.0
 
 ARG USER_UID=1000
 

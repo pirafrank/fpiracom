@@ -1,6 +1,17 @@
 {
   "projects": [
     {
+      "name": "zenpath.xplr",
+      "description": "A xplr theme inspired by zentable.xplr",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/zenpath.xplr#readme",
+      "repourl": "https://github.com/pirafrank/zenpath.xplr",
+      "license": "MIT",
+      "creationDate": "2023-03-21T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false
+    },
+    {
       "name": "workspace",
       "description": "A workspace-in-a-container development environment, based on my dotfiles.",
       "group": "",

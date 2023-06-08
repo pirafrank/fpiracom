@@ -17,6 +17,7 @@ on:
       - 'repo_utils/input.txt'
       - '.vscode'
       - '.vercelignore'
+      - Dockerfile
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * *'

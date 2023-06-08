@@ -33,7 +33,7 @@ GEM
     httpclient (2.8.3)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    jekyll (4.3.1)
+    jekyll (4.3.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -130,7 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   git
-  jekyll (= 4.3.1)
+  jekyll (= 4.3.2)
   jekyll-algolia
   jekyll-archives
   jekyll-environment-variables

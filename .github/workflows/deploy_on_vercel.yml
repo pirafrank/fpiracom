@@ -109,7 +109,7 @@ jobs:
         node repo_utils/git_info.js
     - name: Deploy to vercel
       id: deploy_to_vercel
-      uses: amondnet/vercel-action@v25.1.0
+      uses: amondnet/vercel-action@v25.1.1
       with:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}

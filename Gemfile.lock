@@ -21,6 +21,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
+    faraday-retry (2.2.0)
+      faraday (~> 2.0)
     ffi (1.15.5)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
@@ -129,6 +131,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  faraday-retry
   git
   jekyll (= 4.3.2)
   jekyll-algolia

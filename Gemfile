@@ -4,6 +4,7 @@ gem 'jekyll', '4.3.2'
 gem 'git'
 gem 'nokogiri'
 gem 'webrick'
+gem 'faraday-retry'
 
 group :jekyll_plugins do
   gem 'jekyll-gist'

@@ -108,6 +108,19 @@
           "value": "application/json"
         }
       ]
+    },
+    {
+      "source": "/.well-known/openpgpkey/hu/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        }
+      ]
     }
   ],
   "redirects": [

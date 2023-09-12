@@ -202,6 +202,8 @@ jekyll-minifier:
 
 include:
   - .well-known/nostr.json
+  - .well-known/openpgpkey/policy
+  - .well-known/openpgpkey/hu/s8y7oh5xrdpu9psba3i5ntk64ohouhga
 
 # Exclude these files from your production _site
 exclude:

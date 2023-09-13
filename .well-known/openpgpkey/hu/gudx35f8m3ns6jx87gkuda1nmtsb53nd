@@ -1,0 +1,14 @@
+pub   rsa4096/0xDC805C4BD79EC530 2018-04-01 [SC]
+      Key fingerprint = 00F1 7C2C 8570 B082 2DF0  2CC6 DC80 5C4B D79E C530
+uid                   [ultimate] Francesco Pira (Supersedes 0xC9DC0E67) <me@fpira.com>
+                      s8y7oh5xrdpu9psba3i5ntk64ohouhga@fpira.com
+uid                   [ultimate] Francesco Pira (Supersedes 0xC9DC0E67) <pira.frank@gmail.com>
+                      fu1s3quc95yxqa7qnefed6wpjqxzh85d@gmail.com
+uid                   [ultimate] Francesco Pira (Supersedes 0xC9DC0E67) <dev@fpira.com>
+                      gudx35f8m3ns6jx87gkuda1nmtsb53nd@fpira.com
+uid                   [ultimate] Francesco Pira (Supersedes 0xC9DC0E67) <pirafrank@keybase.io>
+                      5647h1xp38cjzdttwgnrbpw3gi76b6uu@keybase.io
+sub   rsa4096/0x6313D43EF04C054A 2018-04-01 [S]
+sub   rsa4096/0x5F394C0FC62DBE20 2018-04-01 [E]
+sub   rsa4096/0x8C2A96C91C4E5175 2018-04-01 [A]
+

@@ -204,6 +204,7 @@ include:
   - .well-known/nostr.json
   - .well-known/openpgpkey/policy
   - .well-known/openpgpkey/hu/s8y7oh5xrdpu9psba3i5ntk64ohouhga
+  - .well-known/openpgpkey/hu/gudx35f8m3ns6jx87gkuda1nmtsb53nd
 
 # Exclude these files from your production _site
 exclude:

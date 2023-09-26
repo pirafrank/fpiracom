@@ -224,5 +224,6 @@ exclude:
     - .bundle
     - vendor
     - 'repo_utils/**'
+    - '_templates/**'
     - vercel.json
     - Dockerfile

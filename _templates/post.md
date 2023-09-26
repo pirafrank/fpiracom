@@ -12,4 +12,3 @@ seoimage: "300x/some-pic-seo.jpg"
 Here goes the blog post text...
 
 I hope it helps. Thank for reading.
-

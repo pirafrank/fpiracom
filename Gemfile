@@ -14,4 +14,5 @@ group :jekyll_plugins do
   gem 'jekyll-minifier'
   gem 'jekyll-environment-variables'
   gem 'jekyll-algolia'
+  gem 'jekyll-json-feed'
 end

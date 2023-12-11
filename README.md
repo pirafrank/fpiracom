@@ -133,6 +133,16 @@ ANALYTICS_UMAMI_WEBSITEID=abc123abc123
 ANALYTICS_UMAMI_ENDPOINT=umami.instance.com
 ```
 
+## Feeds
+
+The website supports the following feeds:
+
+- RSS
+- Atom
+- JSON Feed, ([more](https://www.jsonfeed.org/))
+
+and allows them to be [easily discovered](https://rknight.me/please-expose-your-rss/).
+
 ## Embed content
 
 ### Images

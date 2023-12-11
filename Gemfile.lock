@@ -68,6 +68,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-json-feed (1.0.1)
+      jekyll (>= 3.3, < 5.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -139,6 +141,7 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-feed
   jekyll-gist
+  jekyll-json-feed
   jekyll-minifier
   jekyll-sitemap
   nokogiri

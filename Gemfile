@@ -5,6 +5,7 @@ gem 'git'
 gem 'nokogiri'
 gem 'webrick'
 gem 'faraday-retry'
+gem "digest", "~> 3.1"
 
 group :jekyll_plugins do
   gem 'jekyll-gist'
@@ -14,5 +15,4 @@ group :jekyll_plugins do
   gem 'jekyll-minifier'
   gem 'jekyll-environment-variables'
   gem 'jekyll-algolia'
-  gem 'jekyll-json-feed'
 end

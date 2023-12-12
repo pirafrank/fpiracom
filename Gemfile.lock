@@ -12,6 +12,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
     cssminify2 (2.0.1)
+    digest (3.1.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -68,8 +69,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
-    jekyll-json-feed (1.0.1)
-      jekyll (>= 3.3, < 5.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -133,6 +132,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  digest (~> 3.1)
   faraday-retry
   git
   jekyll (= 4.3.2)
@@ -141,11 +141,10 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-feed
   jekyll-gist
-  jekyll-json-feed
   jekyll-minifier
   jekyll-sitemap
   nokogiri
   webrick
 
 BUNDLED WITH
-   2.4.13
+   2.4.3

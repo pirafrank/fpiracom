@@ -15,6 +15,8 @@ description: "Software craftsman, driven by curiosity. Interested in tech and bu
 # Author
 author:
   name: "Francesco Pira"
+  url: "https://fpira.com"
+  avatar: "/assets/images/avatar.jpg"
   email: ""
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
@@ -181,7 +183,6 @@ plugins:
   - jekyll-gist # Support for GitHub gists
   - jekyll-archives
   - jekyll-environment-variables # make ENV vars accessible via site.env
-  - jekyll-json-feed
   #- jekyll-minifier # compress html, css and js
 
 # read default jekyll-minifier settings here:

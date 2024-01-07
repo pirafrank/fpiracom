@@ -1,12 +1,15 @@
-- [AWS Certified DevOps Engineer – Professional]({{ site.baseurl }}/assets/files/honors/AWS_Certified_DevOps_Engineer_Professional_certificate.pdf) (November 2022)
-- [Arcitura Certified Cloud Professional]({{ site.baseurl }}/assets/files/honors/114825_F_Pira_Arcitura_Cloud_Professional.pdf) (April 2022)
-- [AZ-400 - Microsoft Azure DevOps Engineer Expert]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-400.pdf) (December 2021)
-- [AZ-204 - Microsoft Azure Developer Associate]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-204.pdf) (December 2021)
-- [Oracle Certified Professional - Java SE 11 Developer]({{ site.baseurl }}/assets/files/honors/Oracle_Java_SE_11_Developer_certification.pdf) (April 2021)
-- [AWS Certified Developer - Associate]({{ site.baseurl }}/assets/files/honors/AWS_Certified_Developer_Associate_certificate.pdf) (September 2020)
-- [AWS Certified Cloud Practitioner]({{ site.baseurl }}/assets/files/honors/AWS_Certified_Cloud_Practitioner_certificate.pdf) (September 2020)
-- [AWS Certified Solutions Architect - Associate]({{ site.baseurl }}/assets/files/honors/AWS_Certified_Solutions_Architect_Associate_certificate.pdf) (June 2020)
-- [AZ-900 - Microsoft Azure Fundamentals]({{ site.baseurl }}/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-900.pdf) (July 2019)
-- [DASA DevOps Fundamentals]({{ site.baseurl }}/assets/files/honors/DASA_DevOps_Certificate.pdf) (May 2019)
+{% assign certifications = site.data.cv.certifications %}
+{% for cert in certifications %}
+{% assign da = cert.dateAchieved | date: "%B, %Y" %}
+{% if cert.dateExpires != "" %}{% assign dexp = cert.dateExpires | date: "%B, %Y" | prepend: ' Expires in ' %}
+{% else %}{% assign dexp = "" %}{% endif %}
+{% if cert.code != "" %}{% assign code = cert.code | prepend: " \(" | append: "\)" %}
+{% else %}{% assign code = "" %}{% endif %}
+{% if cert.url != "" %}
+- [{{ cert.name }}{{code}}]({{ cert.url }})<br>Achieved in {{ da }}.{{ dexp }}
+{% else %}
+- {{ cert.name }}{{code}}<br>Achieved in {{ da }}.{{ dexp }}
+{% endif %}
+{% endfor %}
 
 Badges are also available on [Credly]({{ site.data.social.credly.url }}).

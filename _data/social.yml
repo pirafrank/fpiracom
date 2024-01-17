@@ -30,6 +30,11 @@ blog:
     - blog
   url: 'https://fpira.com/blog'
   user: pirafrank
+bluesky:
+  categories:
+    - social
+  url: 'https://bsky.app/profile/pirafrank.bsky.social'
+  user: 'pirafrank.bsky.social'
 cncf:
   categories:
     - dev
@@ -43,7 +48,7 @@ credly:
 docker: # docker hub
   categories:
     - dev
-  url: 'http://hub.docker.com/u/pirafrank'
+  url: 'https://hub.docker.com/u/pirafrank'
   user: pirafrank
   reporoot: 'https://hub.docker.com/r/pirafrank'
 ethereum:
@@ -86,7 +91,7 @@ gravatar:
 keybase:
   categories:
     - social
-  url: 'http://keybase.io/pirafrank'
+  url: 'https://keybase.io/pirafrank'
   user: pirafrank
   pgp: https://keybase.io/pirafrank/key.asc
 #lastfm:
@@ -103,7 +108,7 @@ lightning: # bitcoin lightning
 linkedin:
   categories:
     - social
-  url: 'http://linkedin.com/in/pirafrank'
+  url: 'https://linkedin.com/in/pirafrank'
   user: pirafrank
   recentActivity: 'https://www.linkedin.com/in/pirafrank/detail/recent-activity/'
 linktree:
@@ -219,17 +224,17 @@ slideshare:
 telegram: # twitter mirror channel
   categories:
     - social
-  url: 'http://t.me/pirafrank'
+  url: 'https://t.me/pirafrank'
   user: pirafrank
 telegram-feed: # fpira.com feed
   categories:
     - blog
-  url: 'http://t.me/fpira'
+  url: 'https://t.me/fpira'
   user: fpira
 telegram-im:
   categories:
     - chat
-  url: 'http://t.me/francescopira'
+  url: 'https://t.me/francescopira'
   user: francescopira
 telegram-apple-dev-releases:
   categories:
@@ -241,6 +246,11 @@ telegram-apple-dev-releases:
 #    - blog
 #  url: 'http://pirafrank.tumblr.com'
 #  user: pirafrank
+threads:
+  categories:
+    - social
+  url: 'https://threads.net/pirafrank'
+  user: pirafrank
 twitter:
   categories:
     - social

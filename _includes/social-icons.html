@@ -22,6 +22,12 @@
     title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
 {% endif %}
 
+{% if site.data.social.threads.url %}
+<a href="{{ site.data.social.threads.url }}"
+    alt="threads"
+    title="Threads"><i class="fa-brands fa-threads"></i></a>
+{% endif %}
+
 {% if site.data.social.keybase.url %}
 <a href="{{ site.data.social.keybase.url }}"
     alt="Keybase"

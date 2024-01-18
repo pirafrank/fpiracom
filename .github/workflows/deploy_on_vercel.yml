@@ -168,8 +168,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
     - name: Setup Jekyll environment
-      env:
-        JEKYLL_ENV: production
       run: |
         BUNDLER_VERSION=$(grep 'BUNDLED WITH' -A1 Gemfile.lock | tail -n1 | awk '{print $1}')
         #sudo apt-get -yqq install libpq-dev

@@ -18,6 +18,7 @@ on:
       - '.vscode'
       - '.vercelignore'
       - Dockerfile
+      - '.devcontainer/*'
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * *'

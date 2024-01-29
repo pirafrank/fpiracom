@@ -4,7 +4,7 @@
   "name": "Rust",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   // info about this base image: https://github.com/devcontainers/images/tree/main/src/jekyll
-  "image": "mcr.microsoft.com/devcontainers/jekyll:bookworm",
+  "image": "mcr.microsoft.com/devcontainers/jekyll:2.0.5-bookworm",
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {

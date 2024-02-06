@@ -119,7 +119,7 @@ linktree:
 mastodon:
   categories:
     - social
-  url: 'https://mastodon.uno/@pirafrank'
+  url: 'https://mastodon.social/@pirafrank'
   user: '@pirafrank'
 medium:
   categories:

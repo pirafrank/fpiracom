@@ -249,7 +249,7 @@ telegram-apple-dev-releases:
 threads:
   categories:
     - social
-  url: 'https://threads.net/pirafrank'
+  url: 'https://threads.net/@pirafrank'
   user: pirafrank
 twitter:
   categories:

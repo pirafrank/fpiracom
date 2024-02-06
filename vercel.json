@@ -143,10 +143,11 @@
     { "source": "/fileshute", "destination": "http://web.archive.org/web/20220112113123/https://fileshute.com/", "permanent": false },
     { "source": "/twitter", "destination": "https://twitter.com/pirafrank", "permanent": false },
     { "source": "/mastodon", "destination": "https://mastodon.social/@pirafrank", "permanent": false },
-    { "source": "/linkedin", "destination": "http://linkedin.com/in/pirafrank", "permanent": false },
+    { "source": "/threads", "destination": "https://threads.net/@pirafrank", "permanent": false },
+    { "source": "/linkedin", "destination": "https://linkedin.com/in/pirafrank", "permanent": false },
     { "source": "/github", "destination": "https://github.com/pirafrank", "permanent": false },
     { "source": "/gist", "destination": "https://gist.github.com/pirafrank?direction=desc&sort=updated", "permanent": false },
-    { "source": "/telegram", "destination": "http://t.me/pirafrank", "permanent": false },
+    { "source": "/telegram", "destination": "https://t.me/pirafrank", "permanent": false },
     { "source": "/meet", "destination": "https://cal.com/pirafrank/meet", "permanent": false },
     { "source": "/certificates", "destination": "/certs", "permanent": false }
   ]

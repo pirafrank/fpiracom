@@ -149,7 +149,7 @@
     { "source": "/gist", "destination": "https://gist.github.com/pirafrank?direction=desc&sort=updated", "permanent": false },
     { "source": "/keybase", "destination": "https://keybase.io/pirafrank", "permanent": false },
     { "source": "/keyoxide", "destination": "https://keyoxide.org/00F17C2C8570B0822DF02CC6DC805C4BD79EC530", "permanent": false },
-    { "source": "/aspe", "destination": "https://keyoxide.org/aspe:keyoxide.org:QITV3373KPVHKJ5YESI6AW5EJQ", "permanent": false },
+    { "source": "/aspe", "destination": "https://keyoxide.org/aspe%3Akeyoxide.org%3AQITV3373KPVHKJ5YESI6AW5EJQ", "permanent": false },
     { "source": "/telegram", "destination": "https://t.me/pirafrank", "permanent": false },
     { "source": "/meet", "destination": "https://cal.com/pirafrank/meet", "permanent": false },
     { "source": "/certificates", "destination": "/certs", "permanent": false }

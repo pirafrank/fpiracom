@@ -90,10 +90,14 @@ gravatar:
 #  user: pirafrank
 keybase:
   categories:
-    - social
+    - pgp
   url: 'https://keybase.io/pirafrank'
   user: pirafrank
-  pgp: https://keybase.io/pirafrank/key.asc
+  key: https://keybase.io/pirafrank/key.asc
+keyoxide:
+  categories:
+    - pgp
+  url: 'https://keyoxide.org/00F17C2C8570B0822DF02CC6DC805C4BD79EC530'
 #lastfm:
 #  categories:
 #    - music
@@ -116,6 +120,10 @@ linktree:
     - bio
   url: 'https://linktr.ee/pirafrank'
   user: pirafrank
+matrix:
+  categories:
+    - social
+  user: '@pirafrank:matrix.org'
 mastodon:
   categories:
     - social
@@ -221,12 +229,12 @@ slideshare:
 #    - code
 #  url:  # your stackoverflow profile, e.g. "users/12345/john-doe"
 #  user:
-telegram: # twitter mirror channel
+telegram: # mastodon mirror channel
   categories:
     - social
   url: 'https://t.me/pirafrank'
   user: pirafrank
-telegram-feed: # fpira.com feed
+telegram-feed: # fpira.com website blog post links
   categories:
     - blog
   url: 'https://t.me/fpira'

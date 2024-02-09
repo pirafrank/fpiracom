@@ -7,18 +7,18 @@ show_title: true
 
 The best way is by sending an email to <span class="safe-email"><i>me@thisdomain</i></span>.
 
-I am also available to chat on [Twitter DM]({{ site.data.social.twitter-dm.url }}) or via [Telegram]({{ site.data.social.telegram-im.url }}).
+I am also available to chat via Matrix DM (`{{ site.data.social.matrix.user }}`) or via [Telegram]({{ site.data.social.telegram-im.url }}).
 
 ### Follow me
 
 I publish most content and status updates on socials. Content is mirrored. You can follow me on any of these.
 
-- [Twitter]({{ site.data.social.twitter.url }})
 - [Mastodon]({{ site.data.social.mastodon.url }})
-- [Telegram]({{ site.data.social.telegram.url }})
+- [Twitter]({{ site.data.social.twitter.url }})
 - [LinkedIn]({{ site.data.social.linkedin.url }})
+- [Telegram]({{ site.data.social.telegram.url }})
 
-If you prefer less frequent updates, you can just tune to blog updates on:
+If you prefer less frequent updates, you can just tune to blog posts publishing on:
 
 - [RSS feed]({{ site.url | append: site.baseurl }}/feed.xml)
 - [Atom feed]({{ site.url | append: site.baseurl }}/atom.xml)

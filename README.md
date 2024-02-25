@@ -68,14 +68,14 @@ You can run the development server in a docker container. The image contains: `r
 On Linux:
 
 ```sh
-docker build -t pirafrank/jekyll -f ./repo_utils/Dockerfile .
+docker build -t pirafrank/jekyll -f ./Dockerfile .
 docker run -it --name fpiracom -v $(pwd -P):/home/jekyll/app -p 4001:4001 pirafrank/jekyll:latest
 ```
 
 On Windows:
 
 ```powershell
-docker build -t pirafrank/jekyll -f .\repo_utils\Dockerfile .
+docker build -t pirafrank/jekyll -f .\Dockerfile .
 docker run -it --name fpiracom -v ${PWD}:/home/jekyll/app -p 4001:4001 pirafrank/jekyll:latest
 ```
 

@@ -1,7 +1,7 @@
-FROM ruby:2.6.6
+FROM ruby:3.2.2
 
 # set ruby and nodejs versions to install during Docker image build
-ARG RUBY_VERSION=2.6.6
+ARG RUBY_VERSION=3.2.2
 ARG NODE_VERSION=18.15.0
 
 ARG USER_UID=1000
@@ -27,7 +27,7 @@ ENV PATH /home/jekyll/.rvm/bin/rvm:$PATH
 # install ruby
 RUN /bin/bash -l -c "rvm install ${RUBY_VERSION}"
 RUN /bin/bash -l -c "rvm use ${RUBY_VERSION} --default"
-RUN /bin/bash -l -c "gem update --system && gem install bundler:2.4.3"
+RUN /bin/bash -l -c "gem update --system && gem install bundler:2.5.6"
 
 # install nvm
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash

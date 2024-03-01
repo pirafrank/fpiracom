@@ -80,7 +80,7 @@ goodreads:
   user: pirafrank
 gravatar:
   categories:
-    - social
+    - identity
   url: 'https://gravatar.com/pirafrank'
   user: pirafrank
 #instagram:
@@ -103,6 +103,11 @@ keyoxide:
 #    - music
 #  url: 'http://www.last.fm/user/pirafrank'
 #  user: pirafrank
+libravatar:
+  categories:
+    - identity
+  url: https://seccdn.libravatar.org/avatar/288f3fa441bcda2899130caea74324ac84f57c43018f608e1c19b2b8d3c68996
+  user: pirafrank
 lightning: # bitcoin lightning
   categories:
     - crypto

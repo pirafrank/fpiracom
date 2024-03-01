@@ -5,17 +5,11 @@ permalink: /code/
 show_title: true
 ---
 
-I code for passion and for work, I grab the keyboard whenever creativity sparks or if I need a tailor-made tool.
-
 - [GitHub]({{ site.data.social.github.url }})
 - [Docker Hub]({{ site.data.social.docker.url }})
 - [npm.js]({{ site.data.social.npmjs.url }})
-- [dotfiles]({{ site.data.social.github.url }}/dotfiles)
-- [My toolbelt]({{ site.data.external.my-toolbelt }})
 
-#### Side Projects
-
-Please check them in the [Projects]({{ site.baseurl }}/projects) page.
+While I don't like to put my code in the spotlight, some of it somehow went pinned in the [Projects]({{ site.baseurl }}/projects) page for easy access.
 
 #### Utilities
 

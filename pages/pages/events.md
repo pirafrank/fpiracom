@@ -12,6 +12,10 @@ show_title: true
 
 Notable conferences and events I joined. I hope to see you at the next one!
 
+#### 2024
+
+- FOSDEM 2024, Brussels
+
 #### 2022
 
 - [Codemotion Milan 2022](https://extra.codemotion.com/conference-milan-2022/) - 18-19 October 2022 - Milan
@@ -46,7 +50,7 @@ Notable conferences and events I joined. I hope to see you at the next one!
 
 #### Past
 
-- WebSummit 2016, won tickets as GitHub open-source contributor to pitch [Fileshute](http://fpira.com/fileshute) (what was my startup idea at the time) to guests and investors - November 7-10, 2016 - Lisbon
+- WebSummit 2016, won tickets as GitHub open-source contributor to pitch [Fileshute]({{ site.data.about.fileshute.url }}) (what was my startup idea at the time) to guests and investors - November 7-10, 2016 - Lisbon
 - Codemotion - March 2016 - Rome
 - Microsoft Future Decoded - Nov 12, 2015 - Rome
 - ESOCC European Conference on Service-Oriented and Cloud Computing - Sept 15, 2015 - Taormina ([link](https://link.springer.com/conference/esocc))

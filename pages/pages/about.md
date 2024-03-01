@@ -18,19 +18,13 @@ show_title: true
 
 ### Bio
 
-Hello, my name is Francesco (Frank) Pira, I'm 29yo and live in Catania, Italy, where I part-time study Computer Engineering and work as developer. I often describe myself as a curious mind striving for more.
+Hello, I am Francesco Pira, from Catania, Italy. I am interested in technology, business, and start-ups. I like working in team on projects that challenge me, and I'm fascinated by finding the *best practice* in doing something. I often describe myself as a curious mind, striving to learn and achieve more.
 
-My interests are programming (especially web development), technology, big data, business and start-ups. I like working in team on projects that challenge me and I'm fascinated by finding the *best practice* in doing something. I also like advising and motivating on topics I'm skilled. Recently I've found out writing is one of my growing passions.
+I've studied Mathematics and Physics in High School, taught myself English and how to code. Back then, I used to work as a self-employed computer technician before founding a small web development team when I was 18.
 
-I've studied Mathematics and Physics in High School, taught myself English and how to code. I've also worked as a self-employed computer technician and in a small team I founded as web developer.
+In 2013 I joined EESTEC, the European network of engineering students. The next year I became president of the local committee and coordinator of the International IT team. In 2015 I started a company with a university mate, [Fileshute]({{ site.data.about.fileshute.url }}). I have been involved in the local startup scene both as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
-In 2013 I joined EESTEC, a European network of engineering students where members can improve technical and soft skills. The next year I became president of the local committee and coordinator of the International IT team. In 2015, with a colleague at university, I started a company, Fileshute.
-
-I have been involved in the local startup scene as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
-
-Today I work as DevOps Engineer at [Leonardo Company](https://leonardo.com/en), Hybrid Cloud Applications department. There are many projects I'm involved in, mainly Java and JavaScript ones running on Kubernetes.
-
-I usually work in zsh, vim and VSCode, I think GUIs are largely overrated. If you're curious about my setup, feel free to check my [dotfiles]({{site.data.social.github.url}}/dotfiles) and [toolbelt]({{site.baseurl}}/my-toolbelt).
+Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.name}}]({{ site.data.about.company.url }}), in the {{ site.data.about.company.dept }} department. I usually work with *terminal_I_like_here* + zsh + VSCode. If you're curious about my setup, you can check it in my [dotfiles]({{site.data.social.github.url}}/dotfiles).
 
 ### Skills
 
@@ -66,9 +60,9 @@ I usually work in zsh, vim and VSCode, I think GUIs are largely overrated. If yo
 
 ### Coding
 
-Usually I write little pieces of code to speed up my work and when I have some spare time I dedicate myself to weekend projects.
+I write little pieces of code to speed up my work and when I have some spare time I dedicate myself to weekend projects.
 
-- [Code]({{ site.baseurl }}/code)
+As usual, available on [GitHub]({{site.data.social.github.url}}).
 
 ### Talks and Events
 
@@ -85,7 +79,7 @@ Usually I write little pieces of code to speed up my work and when I have some s
 
 ## Languages
 
-- Italian, native proficiency 
+- Italian, native proficiency
 - English, CEFR Level C1 ([test results]({{ site.baseurl }}/assets/files/certs/CEPTCandidateTestReport_20210930.pdf))
 - Spanish, elementary proficiency
 

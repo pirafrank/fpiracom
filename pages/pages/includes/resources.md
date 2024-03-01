@@ -1,4 +1,3 @@
-Pages and more I keep updated.
 
 - [Security resources]({{ site.baseurl }}/security)
 - [Java new features]({{ site.data.external.java-new-features }}), since 1.3

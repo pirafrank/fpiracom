@@ -1,3 +1,0 @@
-- [workspace](https://github.com/pirafrank/workspace), a workspace-in-a-container dev environment
-- [edit.fpira.com](http://edit.fpira.com), bookmarkable ephemeral text editor that runs in your browser
-- [notion-to-text](https://github.com/pirafrank/notion-to-text), get content of notion.site pages in plain text or as JSON

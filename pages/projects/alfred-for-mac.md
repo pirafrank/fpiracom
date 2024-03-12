@@ -17,7 +17,7 @@ I also publish workflows on [Packal]({{ site.data.social.packal.url }}).
 
 #### Themes
 
-A zip archive with them all is available [here](http://a.fpira.com/alfredthemes).
+A zip archive with them all is available [here]({{ site.data.external.alfredthemes }}).
 
 #### Noteworthy 3rd-party workflows
 

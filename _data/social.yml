@@ -249,11 +249,6 @@ telegram-im:
     - chat
   url: 'https://t.me/francescopira'
   user: francescopira
-telegram-apple-dev-releases:
-  categories:
-    - social
-  url: 'https://t.me/appledeveloperreleases'
-  user: appledeveloperreleases
 #tumblr:
 #  categories:
 #    - blog

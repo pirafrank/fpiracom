@@ -2,6 +2,6 @@
 - [Security resources]({{ site.baseurl }}/security)
 - [Java new features]({{ site.data.external.java-new-features }}), since 1.3
 - [Cheat-sheets]({{ site.data.external.cheat-sheets }})
-- Telegram channel of [Apple Developer releases]({{ site.data.social.telegram-apple-dev-releases.url }})
-- [Apple Silicon IRL](https://a.fpira.com/applesilicon), tips and tricks about VMs on M1 and real-life usage
-- [iOS Scriptable scripts](https://a.fpira.com/scriptable), a collection of the best scripts I've found so far
+- Telegram channel of [Apple Developer releases]({{ site.data.external.telegram-apple-dev-releases }})
+- [Apple Silicon IRL]({{ site.data.external.apple-silicon }}), tips and tricks about VMs on M1 and real-life usage
+- [iOS Scriptable scripts]({{ site.data.external.scriptable }}), a collection of the best scripts I've found so far

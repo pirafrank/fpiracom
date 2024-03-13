@@ -7,6 +7,8 @@ import pathlib
 
 
 """
+How to use:
+
 fd -e md -e html -e disabled --exclude 'vendor/**' --exclude '_posts/**' | \
 xargs -I {} grep 'permalink' "{}" /dev/null | \
 python repo_utils/trailing.py

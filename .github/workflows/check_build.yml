@@ -62,13 +62,5 @@ jobs:
     - name: Build jekyll website
       env:
         JEKYLL_ENV: production
-        ANALYTICS_GOOGLE: ${{ secrets.ANALYTICS_GOOGLE }}
-        ANALYTICS_GTAG: ${{ secrets.ANALYTICS_GTAG }}
-        ANALYTICS_HEATMAP: ${{ secrets.ANALYTICS_HEATMAP }}
-        ANALYTICS_MATOMO_HOST: ${{ secrets.ANALYTICS_MATOMO_HOST }}
-        ANALYTICS_MATOMO_ID: ${{ secrets.ANALYTICS_MATOMO_ID }}
-        ANALYTICS_CLOUDFLARE: ${{ secrets.ANALYTICS_CLOUDFLARE }}
-        ANALYTICS_UMAMI_WEBSITEID: ${{ secrets.ANALYTICS_UMAMI_WEBSITEID }}
-        ANALYTICS_UMAMI_ENDPOINT: ${{ secrets.ANALYTICS_UMAMI_ENDPOINT }}
       run: |
         bundle exec jekyll build --trace

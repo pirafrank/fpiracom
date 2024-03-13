@@ -38,7 +38,8 @@ jobs:
     outputs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
     steps:
-      - uses: actions/checkout@v3
+      - name: Clone repo
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.target_ref }}
       - name: Check for new blog posts
@@ -64,7 +65,8 @@ jobs:
     needs: [checks]
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
-    - uses: actions/checkout@v3
+    - name: Clone repo
+      uses: actions/checkout@v3
       with:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
@@ -107,7 +109,7 @@ jobs:
         echo "Current workdir: $(pwd -P)"
         bash list_categories.sh | awk '{ print $2 }' | sort | node jsonp_generator.js categories
         bash list_tags.sh | awk '{ print $2 }' | sort | node jsonp_generator.js tags
-    - name: Generate _data/git.json file
+    - name: Generate _data/git.json
       shell: bash
       run: |
         node repo_utils/git_info.js
@@ -115,6 +117,7 @@ jobs:
       id: deploy_to_vercel
       uses: amondnet/vercel-action@v25.1.1
       with:
+        # analytics env vars are set on Vercel bc build happens there!
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
         vercel-args: ${{ steps.get_vercel_args.outputs.VERCEL_ARGS }}
@@ -124,6 +127,7 @@ jobs:
           fpiracom-{{BRANCH}}-pirafrank.vercel.app
     - name: Send Push Notification
       uses: fjogeleit/http-request-action@master
+      # in good and bad times, let me know how it went
       if: always()
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
@@ -195,6 +199,7 @@ jobs:
         bundle exec jekyll algolia
     - name: Send Push Notification
       uses: fjogeleit/http-request-action@master
+      # in good and bad times, let me know how it went
       if: always()
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}

@@ -115,7 +115,7 @@ For futher info, [check the docs](https://docs.github.com/en/actions/managing-wo
 
 ## Web Analytics
 
-Configure the following environment variables at build time if web analytics have to be set. Don't set to disable.
+Configure the following environment variables at build time if web analytics have to be set. Don't set any of them to disable it.
 
 ```text
 ANALYTICS_GOOGLE='UA-1234567-1'
@@ -132,6 +132,8 @@ ANALYTICS_CLOUDFLARE=abc123abc123
 ANALYTICS_UMAMI_WEBSITEID=abc123abc123
 ANALYTICS_UMAMI_ENDPOINT=umami.instance.com
 ```
+
+Environment variables must be set where the website is actually built, e.g. if the GitHub Action pipeline builds and deploys via Vercel, then set env vars there, not in the pipeline.
 
 ## Feeds
 
@@ -164,7 +166,7 @@ E.g.
 This is done using the `_includes/image.html` include.
 
 ```text
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-08/office.jpg"
 desc="Image by Markus Spiske from Pixabay"
 credits="https://pixabay.com/users/markusspiske-670330/"
@@ -174,7 +176,7 @@ credits="https://pixabay.com/users/markusspiske-670330/"
 or if caption has a link
 
 ```text
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-08/office.jpg"
 desc="Image by Markus Spiske from Pixabay"
 link="https://somehost.local/some/article"

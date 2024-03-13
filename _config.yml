@@ -10,9 +10,11 @@ port: 4001
 name: "Francesco Pira"
 
 # Short bio or description (displayed in the header)
+# because of some Jekyll plugins expect this
 description: "Software craftsman, driven by curiosity. Interested in tech and business."
 
 # Author
+# because of some Jekyll plugins expect this
 author:
   name: "Francesco Pira"
   url: "https://fpira.com"
@@ -34,6 +36,7 @@ locale: en_US
 url: https://fpira.com
 
 # Your website domain (without http:// and https://)
+# because of some Jekyll plugins expect this
 domain: fpira.com
 
 # If you're hosting your site at a Project repository on GitHub pages
@@ -56,9 +59,10 @@ theme_engine:
 
 # Links to use in JSON-LD metadata (SEO)
 seo_links:
-  - "https://twitter.com/pirafrank"
   - "https://github.com/pirafrank"
+  - "https://mastodon.social/@pirafrank"
   - "https://www.linkedin.com/in/pirafrank"
+  - "https://twitter.com/pirafrank"
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account

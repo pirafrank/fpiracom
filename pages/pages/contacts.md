@@ -5,13 +5,13 @@ permalink: /contacts/
 show_title: true
 ---
 
-The best way is by sending an email to <span class="safe-email"><i>me@thisdomain</i></span>.
+The best way is by sending an email to <span class="safe-email"><i>me at thisdomain</i></span>.
 
 I am also available to chat via Matrix DM (`{{ site.data.social.matrix.user }}`) or via [Telegram]({{ site.data.social.telegram-im.url }}).
 
 ### Follow me
 
-I publish most content and status updates on socials. Content is mirrored. You can follow me on any of these.
+I publish most content and status updates on socials. You can follow me on any of these. Content on the Telegram channel is mirrored from Mastodon.
 
 - [Mastodon]({{ site.data.social.mastodon.url }})
 - [Twitter]({{ site.data.social.twitter.url }})

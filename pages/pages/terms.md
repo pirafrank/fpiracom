@@ -6,7 +6,12 @@ date: 2021-01-16
 show_title: true
 ---
 
-This is my personal website. I write and edit it. I also check and revise this page occasionally.
+This is my personal website, I write and edit it. Opinions here are solely my own.
+
+I check and revise this page occasionally in an effort to keep it up-to-date.
+
+### Terms
+
 By using this website, in any and all forms, you accept the following terms and policies.
 
 All content provided is for informational purposes only and without warranties of any kind. I do not guarantee completeness of any information found here or by following any links here published. I will not be liable for any errors or omissions in this information nor for the availability of this information. I will not be liable for any losses, injuries, or damages from the display or use of this information.
@@ -19,17 +24,11 @@ In case I get in touch with any personal information of yours (e.g. your email a
 
 ### Cookies and beacons
 
-This website uses Google Analytics. Data is collected anonymously and at the sole purpose of understanding visitor engagement with the website itself.
+No cookies or beacons are used.
 
-#### Google Analytics
+#### Analytics
 
-Google Analytics is a web analytics tool. It reports website trends using cookies and web beacons without identifying individual visitors. You can read their privacy policy [here](http://www.google.com/analytics/learn/privacy.html).
-
-<!--
-#### heatmap.me
-
-heatmap.me is a service offering real-time statistics of user's clicks on page. They do not key-log, sniff cookies or log IP addresses. Read more about it [here](https://heatmap.me/).
--->
+This website used to have Google Analytics, but I do not like the way they do their business. So I changed analytics tools a couple of times, until I settled on [Umami](https://github.com/umami-software/umami), a privacy-focused alternative. Instead of self-hosting, I deployed it as a separate website on Vercel for the sake of uptime. I use it only to have some general understanding of how many users find content I post useful and the country they read it from.
 
 ### License
 
@@ -37,7 +36,9 @@ All the original content on this website is licensed under a [Creative Commons A
 
 #### Attribution
 
-In giving me credit, a link back to the source page attributed to me is fine. Please don't steal the original content I post and republish it as your own.
+In giving me credit, a link back to the source page attributed to me is just fine. Please don't steal the original content I post to republish it as your own.
+
+In turn, I will attribute any non-original content of mine to his author.
 
 #### Code
 

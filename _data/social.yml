@@ -19,6 +19,11 @@ angel:
     - social
   url: 'https://angel.co/francescopira'
   user: francescopira
+aspe:
+  categories:
+    - social
+  url: 'https://keyoxide.org/aspe:keyoxide.org:QITV3373KPVHKJ5YESI6AW5EJQ'
+  username: pirafrank
 bitcoin: # segwit
   categories:
     - crypto
@@ -128,6 +133,7 @@ linktree:
 matrix:
   categories:
     - social
+  url: 'https://matrix.to/#/@pirafrank:matrix.org'
   user: '@pirafrank:matrix.org'
 mastodon:
   categories:

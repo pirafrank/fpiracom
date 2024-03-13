@@ -7,7 +7,7 @@ show_title: true
 
 The best way is by sending an email to <span class="safe-email"><i>me at thisdomain</i></span>.
 
-I am also available to chat via Matrix DM (`{{ site.data.social.matrix.user }}`) or via [Telegram]({{ site.data.social.telegram-im.url }}).
+I am also available to chat via [Matrix]({{ site.data.social.matrix.url }}) or via [Telegram]({{ site.data.social.telegram-im.url }}).
 
 ### Follow me
 
@@ -26,11 +26,13 @@ If you prefer less frequent updates, you can just tune to blog posts publishing 
 
 On the world *wild* web I'm usually *pirafrank*. Here's a full list of [my social profiles]({{ site.baseurl }}/social).
 
+### Verify my identity
+
+{% include_relative contacts/identity-verification.md %}
+
 ### PGP
 
 {% include_relative contacts/pgp.html %}
-
-{% include_relative contacts/identity-verification.html %}
 
 <br>
 

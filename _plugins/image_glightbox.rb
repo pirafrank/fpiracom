@@ -1,6 +1,6 @@
 module Jekyll
   module Converters
-    class Markdown < Converter
+    class ImageMarkdown < Markdown
 
       def convert_line(line)
         if line.is_a?(String) && line.start_with?('![')

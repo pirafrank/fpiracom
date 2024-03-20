@@ -1,3 +1,8 @@
+PATH
+  remote: /workspaces/jekyll-listme
+  specs:
+    jekyll-listme (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -141,6 +146,7 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-feed
   jekyll-gist
+  jekyll-listme (= 0.1.0)!
   jekyll-minifier
   jekyll-sitemap
   nokogiri

@@ -15,4 +15,5 @@ group :jekyll_plugins do
   gem 'jekyll-minifier'
   gem 'jekyll-environment-variables'
   gem 'jekyll-algolia'
+  gem 'jekyll-listme', '0.1.0', :path => '/workspaces/jekyll-listme'
 end

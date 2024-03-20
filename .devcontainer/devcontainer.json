@@ -50,6 +50,20 @@
         "GitHub.copilot", // gh copilot
         "GitHub.copilot-chat" // gh copilot chat
       ]
+    },
+    "codespaces": {
+      "repositories": {
+        "pirafrank/notion-to-jekyll": {
+          "permissions": {
+            "contents": "write"
+          }
+        },
+        "pirafrank/jekyll-listme": {
+          "permissions": {
+            "contents": "write"
+          }
+        }
+      }
     }
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.

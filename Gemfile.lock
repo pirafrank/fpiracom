@@ -1,5 +1,7 @@
-PATH
-  remote: /workspaces/jekyll-listme
+GIT
+  remote: https://github.com/pirafrank/jekyll-listme
+  revision: 2f6587c5ea7c601406abcaa395df5ca8825c8404
+  branch: main
   specs:
     jekyll-listme (0.1.0)
 
@@ -146,7 +148,7 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-feed
   jekyll-gist
-  jekyll-listme (= 0.1.0)!
+  jekyll-listme!
   jekyll-minifier
   jekyll-sitemap
   nokogiri

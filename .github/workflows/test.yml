@@ -1,0 +1,54 @@
+# deploy fpira.com using GitHub Actions
+
+name: 'Test pipeline'
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_ref:
+        description: "branch or ref to checkout to"
+        required: false
+        default: ''
+
+jobs:
+  build:
+    name: Test run
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.inputs.target_ref }}
+    - name: Get current ref (branch name or commit id)
+      id: get_current_ref
+      shell: bash
+      run: |
+        # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
+        # even if actions/checkout@v2 checkouts to a different ref
+        if [ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]; then
+          if [ "$(git rev-parse --abbrev-ref HEAD)" == 'HEAD' ]; then
+            # case detached HEAD
+            REF="$(git rev-parse --short HEAD)"
+          else
+            # HEAD pointing to a branch
+            REF="$(git rev-parse --abbrev-ref HEAD)"
+          fi
+        else
+          REF="${GITHUB_REF#refs/heads/}"
+        fi
+        # set as step output and as env
+        echo "REF=${REF}" >> $GITHUB_OUTPUT
+        echo "GIT_REF=${REF}" >> $GITHUB_ENV
+    - name: Get vercel args
+      id: get_vercel_args
+      shell: bash
+      run: |
+        if [ ${{ env.GIT_REF }} == 'main' ]; then
+          echo "VERCEL_ARGS=$(echo '--prod')" >> $GITHUB_OUTPUT
+        else
+          echo "VERCEL_ARGS=$(echo '')" >> $GITHUB_OUTPUT
+        fi
+    - name: Write git info to site data
+      uses: ./.github/actions/git-info
+      with:
+        target_file: ${{ github.workspace }}/_data/git.json

@@ -1,0 +1,20 @@
+# .github/actions/git-info/action.yml
+
+name: Git Info
+description: Get current repository git info written to a JSON file
+inputs:
+  target_file:
+    description: 'The file to write the git info to'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Build Signed Release
+      shell: bash
+      env:
+        TARGET_FILE: ${{ inputs.target_file }}
+        ACTION_PATH: ${{ github.action_path }}
+      run: |
+        bash ${ACTION_PATH}/git_info.sh > $TARGET_FILE
+        echo "About to print the contents of $TARGET_FILE"
+        cat $TARGET_FILE

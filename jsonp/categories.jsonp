@@ -1,0 +1,7 @@
+---
+layout: compress
+---
+{% assign sorted_categories = site.categories | sort %}
+categoriesCallback([{% for category in sorted_categories %}
+{"name":"{{ category[0] }}","value":"{{ category[0] }}"}{% if forloop.last == false %},{% endif %}
+{% endfor %}])

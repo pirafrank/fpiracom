@@ -1,0 +1,7 @@
+---
+layout: compress
+---
+{% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
+tagsCallback([{% for tag in sorted_tags_by_name %}
+{"name":"{{ tag[0] }}","value":"{{ tag[0] }}"}{% if forloop.last == false %},{% endif %}
+{% endfor %}])

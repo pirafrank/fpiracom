@@ -1,6 +1,8 @@
 <figure class="image">
   <div style="display:flex; flex-direction: column; align-items: center">
-    <img src="{{ site.baseurl }}{{ include.url }}" alt="{{ include.desc }}">
+    <a href="{{ site.baseurl }}{{ include.url }}" class="glightbox">
+      <img src="{{ site.baseurl }}{{ include.url }}" alt="{{ include.desc }}">
+    </a>
     {% if include.link %}
       <figcaption>
         <a href="{{ include.link }}">{{ include.desc }}</a>

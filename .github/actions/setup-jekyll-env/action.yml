@@ -5,10 +5,18 @@ description: Install Ruby, Bundler and Jekyll dependencies
 runs:
   using: "composite"
   steps:
-    - name: Set up Ruby
+    - name: Extract Ruby version
+      id: get_ruby_version
+      shell: bash
+      env:
+        GITHUB_WORKSPACE: ${{ github.workspace }}
+      run: |
+        ruby_version=$(cat ${GITHUB_WORKSPACE}/.ruby-version | head -n1 | grep -oE '[0-9\.]*')
+        echo "ruby_version=${ruby_version}" >> $GITHUB_OUTPUT
+    - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.2.2
+        ruby-version: ${{ steps.get_ruby_version.outputs.ruby_version }}
     - name: Cache ruby gems
       uses: actions/cache@v3
       with:

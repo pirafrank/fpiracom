@@ -38,7 +38,7 @@ jobs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
     steps:
       - name: Clone repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.target_ref }}
       - name: Check for new blog posts
@@ -52,7 +52,7 @@ jobs:
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
     - name: Clone repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: ${{ github.event.inputs.target_ref }}
         fetch-tags: true
@@ -100,7 +100,7 @@ jobs:
     # run this only if building from production branch
     if: github.ref == 'refs/heads/main'
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         ref: ${{ github.event.inputs.target_ref }}
         fetch-tags: true

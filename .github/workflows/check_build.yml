@@ -18,7 +18,7 @@ jobs:
     name: Build website
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       # no need to specify the ref, the GITHUB_REF of pull request event is the PR merge branch.
       # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
     - name: Setup Jekyll environment

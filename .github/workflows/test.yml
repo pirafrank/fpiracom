@@ -37,3 +37,8 @@ jobs:
         target_file: _data/git.json
     - name: Setup Jekyll environment
       uses: ./.github/actions/setup-jekyll-env
+    - name: Build jekyll website
+      env:
+        JEKYLL_ENV: production
+      run: |
+        bundle exec jekyll build --trace

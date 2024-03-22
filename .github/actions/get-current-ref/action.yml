@@ -34,8 +34,8 @@ runs:
             REF_TYPE='branch'
           fi
         else
-          REF="$(print $GITHUB_REF | cut -d'/' -f3-)"
-          TYPE="$(print $GITHUB_REF | cut -d'/' -f2)"
+          REF="$(printf $GITHUB_REF | cut -d'/' -f3-)"
+          TYPE="$(printf $GITHUB_REF | cut -d'/' -f2)"
           case $TYPE in
             heads)
               REF_TYPE='branch'
@@ -52,8 +52,8 @@ runs:
           esac
         fi
         # print findings
-        echo "ref: $REF"
-        echo "ref_type: $REF_TYPE"
+        echo "ref: ${REF}"
+        echo "ref_type: ${REF_TYPE}"
         # set as step output and as env
         echo "ref=${REF}" >> $GITHUB_OUTPUT
         echo "ref_type=${REF_TYPE}" >> $GITHUB_OUTPUT

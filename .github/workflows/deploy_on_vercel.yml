@@ -43,21 +43,8 @@ jobs:
           ref: ${{ github.event.inputs.target_ref }}
       - name: Check for new blog posts
         id: check_new_posts
-        shell: bash
-        run: |
-          # if run on schedule, check for new posts
-          if [ ${GITHUB_EVENT_NAME} = 'schedule' ]; then
-            if [ $(ls -1 _posts | grep $(date '+%Y-%m-%d')) ]; then
-              echo "New posts found with today date"
-              echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
-            else
-              echo "No new posts to publish with today date."
-              echo "RUN_BUILD=false" >> $GITHUB_OUTPUT
-            fi
-          else
-            echo "No checks to perform, about to run build..."
-            echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
-          fi
+        uses: ./.github/actions/check-for-posts
+
   build:
     name: Deploy on vercel
     runs-on: ubuntu-20.04
@@ -115,6 +102,7 @@ jobs:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
         data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ steps.get_current_ref.outputs.ref }}) finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+
   algolia:
     name: Algolia index update
     runs-on: ubuntu-20.04

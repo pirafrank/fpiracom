@@ -1,0 +1,33 @@
+# .github/actions/check-for-posts/action.yml
+
+name: Check for posts
+description: Check the _posts for blog posts with today's date
+outputs:
+  RUN_BUILD:
+    description: 'Whether to run the build or not'
+    value: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
+runs:
+  using: "composite"
+  steps:
+    - name: Git Info
+      id: check_new_posts
+      shell: bash
+      env:
+        GITHUB_EVENT_NAME: ${{ github.event_name }}
+        ACTION_PATH: ${{ github.action_path }}
+        GITHUB_WORKSPACE: ${{ github.workspace }}
+      run: |
+        cd $GITHUB_WORKSPACE
+        # if run on schedule, check for new posts
+        if [ ${GITHUB_EVENT_NAME} = 'schedule' ]; then
+          if [ $(ls -1 _posts | grep $(date '+%Y-%m-%d')) ]; then
+            echo "New posts found with today date"
+            echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
+          else
+            echo "No new posts to publish with today date."
+            echo "RUN_BUILD=false" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "No checks to perform, about to run build..."
+          echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
+        fi

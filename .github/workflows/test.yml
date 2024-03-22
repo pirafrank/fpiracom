@@ -35,3 +35,5 @@ jobs:
       uses: ./.github/actions/git-info
       with:
         target_file: _data/git.json
+    - name: Setup Jekyll environment
+      uses: ./.github/actions/setup-jekyll-env

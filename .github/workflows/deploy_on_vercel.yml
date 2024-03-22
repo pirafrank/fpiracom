@@ -68,17 +68,6 @@ jobs:
         else
           echo "VERCEL_ARGS=$(echo '')" >> $GITHUB_OUTPUT
         fi
-    - name: Setup node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-    - name: Generate JSONP files
-      shell: bash
-      working-directory: repo_utils
-      run: |
-        echo "Current workdir: $(pwd -P)"
-        bash list_categories.sh | awk '{ print $2 }' | sort | node jsonp_generator.js categories
-        bash list_tags.sh | awk '{ print $2 }' | sort | node jsonp_generator.js tags
     - name: Write git info to site data
       uses: ./.github/actions/git-info
       with:

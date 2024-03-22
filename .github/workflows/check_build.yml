@@ -23,6 +23,10 @@ jobs:
       # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
     - name: Setup Jekyll environment
       uses: ./.github/actions/setup-jekyll-env
+    - name: Write git info to site data
+      uses: ./.github/actions/git-info
+      with:
+        target_file: _data/git.json
     - name: Build jekyll website
       env:
         JEKYLL_ENV: production

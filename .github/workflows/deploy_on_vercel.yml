@@ -12,15 +12,14 @@ on:
       - '_jekyll_ignore/**'
       - README.md
       - '.gitignore'
-      - '_drafts'
-      - 'repo_utils/.*'
-      - 'repo_utils/input.txt'
+      - '_drafts/**'
+      - 'repo_utils/**'
       - '.vscode'
       - '.vercelignore'
       - Dockerfile
       - .dockerignore
       - .editorconfig
-      - '.devcontainer/*'
+      - '.devcontainer/**'
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * *'

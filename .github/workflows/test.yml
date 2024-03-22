@@ -34,4 +34,4 @@ jobs:
     - name: Write git info to site data
       uses: ./.github/actions/git-info
       with:
-        target_file: ${{ github.workspace }}/_data/git.json
+        target_file: _data/git.json

@@ -14,7 +14,11 @@ runs:
       env:
         TARGET_FILE: ${{ inputs.target_file }}
         ACTION_PATH: ${{ github.action_path }}
+        GITHUB_WORKSPACE: ${{ github.workspace }}
       run: |
+        if [[ $TARGET_FILE != /* ]]; then
+          TARGET_FILE="${GITHUB_WORKSPACE}/${TARGET_FILE}"
+        fi
         bash ${ACTION_PATH}/git_info.sh > $TARGET_FILE
         echo "About to print the contents of $TARGET_FILE"
         cat $TARGET_FILE

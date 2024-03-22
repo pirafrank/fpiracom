@@ -16,5 +16,5 @@ group :jekyll_plugins do
   gem 'jekyll-environment-variables'
   gem 'jekyll-algolia'
   gem 'jekyll-listme', git: 'https://github.com/pirafrank/jekyll-listme', branch: 'main'
-  #gem 'jekyll-listme', '0.1.0', path: '/home/francesco/Code/projects/jekyll-listme'
+  #gem 'jekyll-listme', '0.2.0', path: '/home/francesco/Code/projects/jekyll-listme'
 end

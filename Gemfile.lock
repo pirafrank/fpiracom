@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/pirafrank/jekyll-listme
-  revision: 2f6587c5ea7c601406abcaa395df5ca8825c8404
+  revision: 2b4a634e05102fdf3b76ec79a6dd48999452cd6b
   branch: main
   specs:
-    jekyll-listme (0.1.0)
+    jekyll-listme (0.2.0)
 
 GEM
   remote: https://rubygems.org/

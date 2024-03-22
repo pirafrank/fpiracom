@@ -1,4 +1,4 @@
-name: 'Trigger deploy on vercel'
+name: 'Trigger Deploy on Vercel'
 
 on:
   #schedule:

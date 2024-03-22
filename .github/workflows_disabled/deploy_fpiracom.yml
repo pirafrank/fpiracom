@@ -1,6 +1,6 @@
 # deploy fpira.com using GitHub Actions
 
-name: 'deploy_fpiracom'
+name: 'Deploy to VPS'
 
 on:
   push:

@@ -9,7 +9,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Build Signed Release
+    - name: Git Info
       shell: bash
       env:
         TARGET_FILE: ${{ inputs.target_file }}

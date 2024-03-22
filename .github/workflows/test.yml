@@ -21,29 +21,12 @@ jobs:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
       id: get_current_ref
-      shell: bash
-      run: |
-        # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
-        # even if actions/checkout@v2 checkouts to a different ref
-        if [ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]; then
-          if [ "$(git rev-parse --abbrev-ref HEAD)" == 'HEAD' ]; then
-            # case detached HEAD
-            REF="$(git rev-parse --short HEAD)"
-          else
-            # HEAD pointing to a branch
-            REF="$(git rev-parse --abbrev-ref HEAD)"
-          fi
-        else
-          REF="${GITHUB_REF#refs/heads/}"
-        fi
-        # set as step output and as env
-        echo "REF=${REF}" >> $GITHUB_OUTPUT
-        echo "GIT_REF=${REF}" >> $GITHUB_ENV
+      uses: ./.github/actions/get-current-ref
     - name: Get vercel args
       id: get_vercel_args
       shell: bash
       run: |
-        if [ ${{ env.GIT_REF }} == 'main' ]; then
+        if [ ${{ steps.get_current_ref.outputs.ref }} == 'main' ]; then
           echo "VERCEL_ARGS=$(echo '--prod')" >> $GITHUB_OUTPUT
         else
           echo "VERCEL_ARGS=$(echo '')" >> $GITHUB_OUTPUT

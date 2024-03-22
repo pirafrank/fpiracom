@@ -1,0 +1,59 @@
+# .github/actions/get-current-ref/action.yml
+
+name: Get current ref
+description: Get current repository ref info
+outputs:
+  ref:
+    description: 'The current ref'
+    value: ${{ steps.get_current_ref.outputs.ref }}
+  ref_type:
+    description: 'The type of ref'
+    value: ${{ steps.get_current_ref.outputs.ref_type }}
+runs:
+  using: "composite"
+  steps:
+    - name: Get current ref
+      id: get_current_ref
+      shell: bash
+      env:
+        GITHUB_EVENT_NAME: ${{ github.event_name }}
+        GITHUB_WORKSPACE: ${{ github.workspace }}
+        GITHUB_REF: ${{ github.ref }}
+      run: |
+        # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
+        # even if actions/checkout@v2 checkouts to a different ref.
+        cd $GITHUB_WORKSPACE
+        if [ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]; then
+          if [ "$(git rev-parse --abbrev-ref HEAD)" == 'HEAD' ]; then
+            # case detached HEAD
+            REF="$(git rev-parse --short HEAD)"
+            REF_TYPE='detached'
+          else
+            # HEAD pointing to a branch
+            REF="$(git rev-parse --abbrev-ref HEAD)"
+            REF_TYPE='branch'
+          fi
+        else
+          REF="$(print $GITHUB_REF | cut -d'/' -f3-)"
+          TYPE="$(print $GITHUB_REF | cut -d'/' -f2)"
+          case $TYPE in
+            heads)
+              REF_TYPE='branch'
+              ;;
+            tags)
+              REF_TYPE='tag'
+              ;;
+            pull)
+              REF_TYPE='pull_request'
+              ;;
+            *)
+              REF_TYPE='unknown'
+              ;;
+          esac
+        fi
+        # print findings
+        echo "ref: $REF"
+        echo "ref_type: $REF_TYPE"
+        # set as step output and as env
+        echo "ref=${REF}" >> $GITHUB_OUTPUT
+        echo "ref_type=${REF_TYPE}" >> $GITHUB_OUTPUT

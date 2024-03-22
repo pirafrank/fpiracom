@@ -71,29 +71,12 @@ jobs:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
       id: get_current_ref
-      shell: bash
-      run: |
-        # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
-        # even if actions/checkout@v2 checkouts to a different ref
-        if [ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]; then
-          if [ "$(git rev-parse --abbrev-ref HEAD)" == 'HEAD' ]; then
-            # case detached HEAD
-            REF="$(git rev-parse --short HEAD)"
-          else
-            # HEAD pointing to a branch
-            REF="$(git rev-parse --abbrev-ref HEAD)"
-          fi
-        else
-          REF="${GITHUB_REF#refs/heads/}"
-        fi
-        # set as step output and as env
-        echo "REF=${REF}" >> $GITHUB_OUTPUT
-        echo "GIT_REF=${REF}" >> $GITHUB_ENV
+      uses: ./.github/actions/get-current-ref
     - name: Get vercel args
       id: get_vercel_args
       shell: bash
       run: |
-        if [ ${{ env.GIT_REF }} == 'main' ]; then
+        if [ ${{ steps.get_current_ref.outputs.ref }} == 'main' ]; then
           echo "VERCEL_ARGS=$(echo '--prod')" >> $GITHUB_OUTPUT
         else
           echo "VERCEL_ARGS=$(echo '')" >> $GITHUB_OUTPUT
@@ -132,7 +115,7 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ env.GIT_REF }}) finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ steps.get_current_ref.outputs.ref }}) finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
   algolia:
     name: Algolia index update
     runs-on: ubuntu-20.04
@@ -145,24 +128,7 @@ jobs:
         ref: ${{ github.event.inputs.target_ref }}
     - name: Get current ref (branch name or commit id)
       id: get_current_ref
-      shell: bash
-      run: |
-        # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
-        # even if actions/checkout@v2 checkouts to a different ref
-        if [ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]; then
-          if [ "$(git rev-parse --abbrev-ref HEAD)" == 'HEAD' ]; then
-            # case detached HEAD
-            REF="$(git rev-parse --short HEAD)"
-          else
-            # HEAD pointing to a branch
-            REF="$(git rev-parse --abbrev-ref HEAD)"
-          fi
-        else
-          REF="${GITHUB_REF#refs/heads/}"
-        fi
-        # set as step output and as env
-        echo "REF=${REF}" >> $GITHUB_OUTPUT
-        echo "GIT_REF=${REF}" >> $GITHUB_ENV
+      uses: ./.github/actions/get-current-ref
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
@@ -196,4 +162,4 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Update of Algolia index for fpira.com (ref ${{ env.GIT_REF }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Update of Algolia index for fpira.com (ref ${{ steps.get_current_ref.outputs.ref }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

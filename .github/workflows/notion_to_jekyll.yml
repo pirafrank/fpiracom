@@ -1,6 +1,6 @@
 # deploy fpira.com using GitHub Actions
 
-name: 'Test pipeline'
+name: 'Notion to Jekyll'
 
 on:
   workflow_dispatch:

@@ -41,9 +41,16 @@ jobs:
         DELETED: ${{ steps.notion_to_jekyll.outputs.deleted }}
         DRY_RUN: ${{ steps.notion_to_jekyll.outputs.dry-run }}
       run: |
+        printf "\n******* workflow variables ********\n\n"
         echo "OWNER=$OWNER"
         echo "REPO=$REPO"
         echo "BRANCH=$BRANCH"
+        printf "\n\n****** repository variables *******\n\n"
+        echo NOTION_TO_JEKYLL_PUBLISH_TO_POSTS=${{ vars.NOTION_TO_JEKYLL_PUBLISH_TO_POSTS }}
+        echo NOTION_TO_JEKYLL_RELATIVE_DATE=${{ vars.NOTION_TO_JEKYLL_RELATIVE_DATE }}
+        echo NOTION_TO_JEKYLL_DRY_RUN=${{ vars.NOTION_TO_JEKYLL_DRY_RUN }}
+        echo RUN_COMMIT_CHANGES=${{ vars.RUN_COMMIT_CHANGES }}
+        printf "\n\n***** Notion to Jekyll output *****\n\n"
         echo "CHANGED=$CHANGED"
         echo "DELETED=$DELETED"
         echo "DRY_RUN=$DRY_RUN"
@@ -52,6 +59,7 @@ jobs:
       run: |
         today=$(date +"%Y-%m-%d %H:%M:%S")
         export MESSAGE="Scheduled automatic update from Notion @ ${today}"
+        echo "Commit message: ${MESSAGE}"
         echo "message=${MESSAGE}" >> $GITHUB_OUTPUT
     - name: Commit changes
       id: commit_changes

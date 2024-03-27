@@ -32,10 +32,13 @@ on:
 
 jobs:
   checks:
-    name: Checks
+    name: Checks and Deploy Info
     runs-on: ubuntu-20.04
     outputs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
+      REF_NAME: ${{ steps.get_current_ref.outputs.ref }}
+      VERCEL_ARGS: ${{ steps.get_deployment_info.outputs.VERCEL_ARGS }}
+      ENV_NAME: ${{ steps.get_deployment_info.outputs.ENV_NAME }}
     steps:
       - name: Clone repo
         uses: actions/checkout@v4
@@ -44,12 +47,22 @@ jobs:
       - name: Check for new blog posts
         id: check_new_posts
         uses: ./.github/actions/check-for-posts
+      - name: Get current ref (branch name or commit id)
+        id: get_current_ref
+        uses: ./.github/actions/get-current-ref
+      - name: Get deployment info
+        id: get_deployment_info
+        uses: ./.github/actions/get-deployment-info
+        with:
+          ref: ${{ steps.get_current_ref.outputs.ref }}
 
   build:
     name: Deploy on vercel
     runs-on: ubuntu-20.04
-    environment: production
-    concurrency: production
+    environment:
+      name: ${{ needs.checks.outputs.ENV_NAME }}
+      url: ${{ steps.deploy_to_vercel.outputs.preview-url }}
+    concurrency: ${{ needs.checks.outputs.ENV_NAME }}
     needs: [checks]
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
@@ -58,18 +71,6 @@ jobs:
       with:
         ref: ${{ github.event.inputs.target_ref }}
         fetch-tags: true
-    - name: Get current ref (branch name or commit id)
-      id: get_current_ref
-      uses: ./.github/actions/get-current-ref
-    - name: Get vercel args
-      id: get_vercel_args
-      shell: bash
-      run: |
-        if [ ${{ steps.get_current_ref.outputs.ref }} == 'main' ]; then
-          echo "VERCEL_ARGS=$(echo '--prod')" >> $GITHUB_OUTPUT
-        else
-          echo "VERCEL_ARGS=$(echo '')" >> $GITHUB_OUTPUT
-        fi
     - name: Write git info to site data
       uses: ./.github/actions/git-info
       with:
@@ -81,7 +82,7 @@ jobs:
         # analytics env vars are set on Vercel bc build happens there!
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        vercel-args: ${{ steps.get_vercel_args.outputs.VERCEL_ARGS }}
+        vercel-args:  ${{ needs.checks.outputs.VERCEL_ARGS }}
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
         alias-domains: |
@@ -93,7 +94,7 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ steps.get_current_ref.outputs.ref }}) finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
 
   algolia:
     name: Algolia index update

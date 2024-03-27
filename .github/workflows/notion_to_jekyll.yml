@@ -9,20 +9,45 @@ on:
     - cron: '15 8 * * *'
 
 jobs:
+  checks:
+    name: Checks and Deploy Info
+    runs-on: ubuntu-20.04
+    outputs:
+      RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
+      REF_NAME: ${{ steps.get_current_ref.outputs.ref }}
+      VERCEL_ARGS: ${{ steps.get_deployment_info.outputs.VERCEL_ARGS }}
+      ENV_NAME: ${{ steps.get_deployment_info.outputs.ENV_NAME }}
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+        with:
+          # always checkout main branch
+          ref: 'main'
+      - name: Check for new blog posts
+        id: check_new_posts
+        uses: ./.github/actions/check-for-posts
+      - name: Get current ref (branch name or commit id)
+        id: get_current_ref
+        uses: ./.github/actions/get-current-ref
+      - name: Get deployment info
+        id: get_deployment_info
+        uses: ./.github/actions/get-deployment-info
+        with:
+          ref: ${{ steps.get_current_ref.outputs.ref }}
+
   build:
     name: Notion to Jekyll
     runs-on: ubuntu-20.04
-    environment: production
-    concurrency: production
+    environment:
+      name: ${{ needs.checks.outputs.ENV_NAME }}
+    concurrency: ${{ needs.checks.outputs.ENV_NAME }}
+    needs: [checks]
     steps:
     - name: Clone repo
       uses: actions/checkout@v4
       with:
         # always checkout main branch
         ref: main
-    - name: Get current ref (branch name or commit id)
-      id: get_current_ref
-      uses: ./.github/actions/get-current-ref
     - name: Notion to Jekyll
       uses: pirafrank/notion-to-jekyll@v1
       id: notion_to_jekyll

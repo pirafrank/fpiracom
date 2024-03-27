@@ -1,0 +1,32 @@
+# .github/actions/get-current-ref/action.yml
+
+name: Get deployment info
+description: Get deployment info for current ref
+inputs:
+  ref:
+    description: 'The ref to calculate info for'
+    required: false
+    default: ${{ github.ref_name }}
+outputs:
+  vercel_args:
+    description: 'Optional arguments to pass to Vercel Action for deployment'
+    value: ${{ steps.get_deployment_info.outputs.vercel_args }}
+  env_name:
+    description: 'Environment name for GitHub Environment integration'
+    value: ${{ steps.get_deployment_info.outputs.env_name }}
+runs:
+  using: "composite"
+  steps:
+    - name: Get deployment info
+      id: get_deployment_info
+      shell: bash
+      env:
+        REF: ${{ inputs.ref }}
+      run: |
+        if [ ${REF} == 'main' ]; then
+          echo "vercel_args=$(echo '--prod')" >> $GITHUB_OUTPUT
+          echo "env_name=$(echo 'Production')" >> $GITHUB_OUTPUT
+        else
+          echo "vercel_args=$(echo '')" >> $GITHUB_OUTPUT
+          echo "env_name=$(echo 'Preview')" >> $GITHUB_OUTPUT
+        fi

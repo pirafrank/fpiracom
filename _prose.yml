@@ -36,6 +36,8 @@ prose:
     - sw-config.js
     - vercel.json
     - pages/admin
+    - /keys
+    - /.well-known
   metadata:
     _posts:
       - name: "title"

@@ -48,6 +48,8 @@ jobs:
   build:
     name: Deploy on vercel
     runs-on: ubuntu-20.04
+    environment: production
+    concurrency: production
     needs: [checks]
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:

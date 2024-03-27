@@ -12,6 +12,8 @@ jobs:
   build:
     name: Notion to Jekyll
     runs-on: ubuntu-20.04
+    environment: production
+    concurrency: production
     steps:
     - name: Clone repo
       uses: actions/checkout@v4

@@ -2,12 +2,21 @@
   <ul class="accordion_include">
     <li>
       <input id="accordion{{ include.id }}" type="checkbox"/>
-        <label for="accordion{{ include.id }}"><span>&nbsp;</span>{{ include.title }}</label>
-      {% capture accordion_include %}
-        {% include_relative accordions/{{ page.date | date: "%Y-%m-%d" }}/{{ include.content }} %}
-      {% endcapture %}
-      <div>{{ accordion_include | markdownify }}</div>
+      <label for="accordion{{ include.id }}"><span>&nbsp;</span>{{ include.title }}</label>
+      {% assign is_markdown = include.file | regex_match: ".md$" %}
+      {% assign is_html = include.file | regex_match: ".html$" %}
+      {% if is_markdown %}
+        {% capture accordion_include %}
+          {% include_relative accordions/{{ page.date | date: "%Y-%m-%d" }}/{{ include.file }} %}
+        {% endcapture %}
+        <div>
+          {{ accordion_include | markdownify }}
+        </div>
+      {% elsif is_html %}
+        <div>
+          {% include_relative accordions/{{ page.date | date: "%Y-%m-%d" }}/{{ include.file }} %}
+        </div>
+      {% endif %}
     </li>
   </ul>
 </div>
-

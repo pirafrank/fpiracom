@@ -46,7 +46,9 @@
       }
     }
 
-    div {
+    // apply this rule only to the first div which is
+    // the container for the content in the accordion.
+    & > div {
       display: none;
       padding-bottom: 1.2rem;
       border-top: 1px solid rgba(0, 0, 0, 0.25);

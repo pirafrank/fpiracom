@@ -5,9 +5,9 @@ permalink: /certs/
 show_title: true
 ---
 
-{% include_relative about/certs.md %}
+{% include about/certs.md %}
 
 ### Honours
 
-{% include_relative about/honours.md %}
+{% include about/honours.md %}
 

@@ -13,12 +13,12 @@ While I don't like to put my code in the spotlight, some of it somehow went pinn
 
 #### Utilities
 
-{% include_relative includes/utilities.md %}
+{% include partials/utilities.md %}
 
 #### Resources
 
-{% include_relative includes/resources.md %}
+{% include partials/resources.md %}
 
 #### External resources
 
-{% include_relative includes/external-links.md %}
+{% include partials/external-links.md %}

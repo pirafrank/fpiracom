@@ -28,11 +28,11 @@ On the world *wild* web I'm usually *pirafrank*. Here's a full list of [my socia
 
 ### Verify my identity
 
-{% include_relative contacts/identity-verification.md %}
+{% include contacts/identity-verification.md %}
 
 ### PGP
 
-{% include_relative contacts/pgp.html %}
+{% include contacts/pgp.html %}
 
 <br>
 

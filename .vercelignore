@@ -24,3 +24,4 @@ venv
 .jekyll-metadata
 vendor
 _site
+.html_proofer_cache

@@ -6,6 +6,8 @@ gem 'nokogiri'
 gem 'webrick'
 gem 'faraday-retry'
 gem "digest", "~> 3.1"
+gem 'html-proofer'
+gem 'rake'
 
 group :jekyll_plugins do
   gem 'jekyll-gist'

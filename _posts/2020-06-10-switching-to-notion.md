@@ -23,7 +23,7 @@ I have used Evernote for years, it was love at first sight back in 2010. But rec
 
 I didn’t get that far. My first stop was already on my iPhone. I moved to the built-in Notes app, reviewing and exporting data from Evernote using my Mac as I needed to make changes. It was good enough as a backup plan but I had to find an alternative. I knew that was a temporary solution already showing some cracks. For example, it didn’t play well with my work Windows laptop and Linux Desktop, links kept infecting nearby text and nested folder have not been a thing on iOS until its 13th iteration.
 
-I come up with a private git repository called *notes* (I admit I wasn’t that creative here) and stored text and markdown files, as well as their attachments, in it. Using a git repo for note-taking across multiple devices (Mac, iPad, iPhone, Windows PC, and a Linux Desktop) may sound crazy at least but if you know how to use git from command-line and have apps like [Typora](https://typora.io/) and [Working Copy](http://workingcopyapp.com/) it is a bliss. And it has some nice pros:
+I come up with a private git repository called *notes* (I admit I wasn’t that creative here) and stored text and markdown files, as well as their attachments, in it. Using a git repo for note-taking across multiple devices (Mac, iPad, iPhone, Windows PC, and a Linux Desktop) may sound crazy at least but if you know how to use git from command-line and have apps like [Typora](https://typora.io/) and [Working Copy](https://workingcopyapp.com/) it is a bliss. And it has some nice pros:
 
 - it is highly portable: zero chance to be locked into the platform or fear service termination (because of failure of the company running it, acquisitions, etc.)
 - versioning is included (of course)

@@ -22,7 +22,7 @@ You want a shiny upgrade, don't you?
 
 ### Prepare
 
-- check all installed applications to be compatible ([this is a handy website to do that](http://roaringapps.com/apps:table))
+- check all installed applications to be compatible ([this is a handy website to do that](https://roaringapps.com/apps:table))
 
 - check all the installed software to be compatible and to support the upgrade without any special procedure (if any, do it!)
 
@@ -78,7 +78,7 @@ Go grab some food. It will take awhile to install the new OS. Mine took about 30
 
     - restore previous ports following the migration guide above (really easy!)
 
-- fix apache ([here's how]({{ site.baseurl }}/blog/2015/10/restore-old-apache-conf-after-osx-upgrade/)) and any other broken things (like installing [Apple's version of Java 6](https://support.apple.com/kb/DL1824) to make Android Studio, [Matlab 2013a](http://www.mathworks.com/matlabcentral/answers/246135-is-matlab-compatible-with-mac-os-x-10-11-el-capitan) and other software work again)
+- fix apache ([here's how]({{ site.baseurl }}/blog/2015/10/restore-old-apache-conf-after-osx-upgrade/)) and any other broken things (like installing [Apple's version of Java 6](https://support.apple.com/kb/DL1824) to make Android Studio, [Matlab 2013a](https://www.mathworks.com/matlabcentral/answers/246135-is-matlab-compatible-with-mac-os-x-10-11-el-capitan) and other software work again)
 
 - buy and install tuxera 2015.02 (If you used to had like me. It will overwrite any previous install)
 

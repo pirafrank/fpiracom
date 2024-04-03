@@ -32,7 +32,7 @@ This website used to have Google Analytics, but I do not like the way they do th
 
 ### License
 
-All the original content on this website is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/) unless otherwise noted. This means you are free to share, transmit, distribute, remix, transform, and build on my work as long as you don't use it for commercial purposes without my prior written consent.
+All the original content on this website is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise noted. This means you are free to share, transmit, distribute, remix, transform, and build on my work as long as you don't use it for commercial purposes without my prior written consent.
 
 #### Attribution
 

@@ -15,15 +15,15 @@ A collection of speeches, poetries, videos and more things that have inspired me
 
 [The first 20 hours - How to learn anything](https://www.youtube.com/watch?v=5MgBikgcWnY) by Josh Kaufman
 
-[Steve Jobs' Commencement address (2005)](http://news.stanford.edu/news/2005/june15/jobs-061505.html)
+[Steve Jobs' Commencement address (2005)](https://news.stanford.edu/news/2005/june15/jobs-061505.html)
 
-['Invictus'](http://www.poetryfoundation.org/poem/182194) by William Ernest Henley
+['Invictus'](https://www.poetryfoundation.org/poem/182194) by William Ernest Henley
 
 [The Life of an Entrepreneur in 90 Seconds](https://www.youtube.com/watch?v=h-KHWUq3B7I)
 
 [Take your startup to the next level](https://www.youtube.com/watch?v=X-b2Zrr8BEk) by Michał Sadowski
 
-[The Mountain](https://vimeo.com/22439234) by [Terje Sorgjerd](http://vimeo.com/terjes)
+[The Mountain](https://vimeo.com/22439234) by [Terje Sorgjerd](https://vimeo.com/terjes)
 
 [#DearDaddy, I'm going to be called a whore](https://www.youtube.com/watch?v=dP7OXDWof30)
 

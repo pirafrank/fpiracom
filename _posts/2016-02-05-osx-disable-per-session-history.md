@@ -14,7 +14,7 @@ I’ve been noticing this new (weird) way right after the installation of the la
 
 ### Solution
 
-As stated in [this StackOverflow answer](http://stackoverflow.com/questions/32418438/how-can-i-disable-bash-sessions-in-os-x-el-capitan), bash runs a check every time a new  session in started. Disabling the per-session history is as easy as:
+As stated in [this StackOverflow answer](https://stackoverflow.com/questions/32418438/how-can-i-disable-bash-sessions-in-os-x-el-capitan), bash runs a check every time a new  session in started. Disabling the per-session history is as easy as:
 
 ```sh
 touch .bash_sessions_disable

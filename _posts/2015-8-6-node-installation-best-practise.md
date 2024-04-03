@@ -54,4 +54,4 @@ Thanks for reading.
 ---
 **Credits**
 
-This blog post takes a lot from [this great reply on stackoverflow](http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo). Thanks to the author.
+This blog post takes a lot from [this great reply on stackoverflow](https://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo). Thanks to the author.

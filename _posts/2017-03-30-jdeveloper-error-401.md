@@ -22,7 +22,7 @@ Before we start (change to your version):
 - assume wrong java version is (aka too new): 1.8.0_121
 - assume correct java version is (aka 1.7.55+ and < 1.8): 1.7.0_80
 - integrated weblogic default domain is in `C:\Users\FRANCE~1\AppData\Roaming\JDeveloper\system12.1.3.0.41.140521.1008\DefaultDomain` (yes, it doesn't live anymore in `C:\Oracle\Middleware\Oracle_Home\user_projects\applications`)
-- you know we need to use DOS path names in settings (read more [here](http://www.thinkplexx.com/learn/howto/dos/bat/find-out-dos-path-name-8-character-for-the-directory)).
+- you know we need to use DOS path names in settings (read more [here](https://www.thinkplexx.com/learn/howto/dos/bat/find-out-dos-path-name-8-character-for-the-directory)).
 
 Let's go:
 

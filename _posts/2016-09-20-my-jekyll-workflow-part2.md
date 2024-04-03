@@ -37,7 +37,7 @@ Before exporting from iA Writer to Working Copy or committing on desktop, do a q
 
 #### Option 2: a bit of automation
 
-I wrote a little script for [Pythonista](http://omz-software.com/pythonista/), a cool iOS app which provides a full Python IDE and environment.
+I wrote a little script for [Pythonista](https://omz-software.com/pythonista/), a cool iOS app which provides a full Python IDE and environment.
 
 The script ([available here](https://gist.github.com/pirafrank/e0db410304d6543a78bdf713b1f5c118)) takes text shared to it as input, performs the substitutions and prompts you the share menu, ready to export text to Working Copy. Look at the video below.
 
@@ -45,7 +45,7 @@ The script ([available here](https://gist.github.com/pirafrank/e0db410304d6543a7
 
 ### Deploying without SSH-ing: jekyll-deployer
 
-Deploying on the go using an ssh client is cool but typing the same commands over and over is not, so I decided to improve this using Pythonista once again. I wrote [jekyll-deployer](http://github.com/pirafrank/jekyll-deployer), a tiny flask app and a Python script to act as client on iOS.
+Deploying on the go using an ssh client is cool but typing the same commands over and over is not, so I decided to improve this using Pythonista once again. I wrote [jekyll-deployer](https://github.com/pirafrank/jekyll-deployer), a tiny flask app and a Python script to act as client on iOS.
 
 The flask app handles a POST request made the script and notifies to me on the [Pushbullet](https://www.pushbullet.com) app. To make it dead-simple, there's no login and security is obtained using a randomly generated 20-chars-long alpha-numeric url. The url is actually a *location* in the nginx configuration (it acts as proxy to the app listening on port `5090`).
 

@@ -106,7 +106,7 @@ keyoxide:
 #lastfm:
 #  categories:
 #    - music
-#  url: 'http://www.last.fm/user/pirafrank'
+#  url: 'https://www.last.fm/user/pirafrank'
 #  user: pirafrank
 libravatar:
   categories:

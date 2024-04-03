@@ -75,7 +75,7 @@ Thanks for reading.
 
 - https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/
 - https://flexion.org/posts/2012-10-migrating-bzr-to-git.html
-- http://design.canonical.com/2015/01/converting-projects-between-git-and-bazaar/
+- https://design.canonical.com/2015/01/converting-projects-between-git-and-bazaar/
 
 
 

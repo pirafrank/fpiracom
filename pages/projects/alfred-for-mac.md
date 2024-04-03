@@ -22,4 +22,4 @@ A zip archive with them all is available [here]({{ site.data.external.alfredthem
 #### Noteworthy 3rd-party workflows
 
 - [Alfred Process Killer](https://github.com/ngreenstein/alfred-process-killer) by ngreenstein
-- [Evernote](http://www.alfredforum.com/topic/840-evernote-791-search-create-append-text-preview-reminders-and-more-all-within-alfred) by Carlos A. Sztoltz
+- [Evernote](https://www.alfredforum.com/topic/840-evernote-791-search-create-append-text-preview-reminders-and-more-all-within-alfred) by Carlos A. Sztoltz

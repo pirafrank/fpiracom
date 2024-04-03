@@ -59,7 +59,7 @@ Notable conferences and events I joined. I hope to see you at the next one!
 
 A comprehensive list of events I've organised or contributed to.
 
-#### [Startup Europe Awards](http://startupeuropeawards.com), Regional assessor
+#### [Startup Europe Awards](https://startupeuropeawards.com), Regional assessor
 
 *November 2016 @ Catania*
 
@@ -111,4 +111,4 @@ First-ever workshop about AngularJS in our University.
 
 *December 20, 2013 @ University of Catania*
 
-Workshop to teach the first steps in Android game development. The event was part of a Europe-wide series to support the Android Competition by [EESTEC](http://eestec.net).
+Workshop to teach the first steps in Android game development. The event was part of a Europe-wide series to support the Android Competition by [EESTEC](https://eestec.net).

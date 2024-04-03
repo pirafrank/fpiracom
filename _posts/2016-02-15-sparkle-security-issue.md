@@ -11,7 +11,7 @@ Many OS X apps use [Sparkle](https://sparkle-project.org/) as update library.
 
 Recently a vulnerability in the software has been discovered. Affected apps are those using a vulnerable version of Sparkle on an unencrypted HTTP connection to receive data from their update servers. Those apps are subject to man-in-the-middle attacks that could install malicious code. 
 
-You can read more about this security issue on [ArsTecnica](http://arstechnica.com/security/2016/02/huge-number-of-mac-apps-vulnerable-to-hijacking-and-a-fix-is-elusive/).
+You can read more about this security issue on [ArsTecnica](https://arstechnica.com/security/2016/02/huge-number-of-mac-apps-vulnerable-to-hijacking-and-a-fix-is-elusive/).
 
 ### List of safe apps (Updated!)
 
@@ -19,7 +19,7 @@ In alphabetical order, the minimum safe versions of apps using Sparkle.
 
 **App name / Safe since / Notes**
 
-- CodeKit 1.7.1, [prior releases should be unaffected](http://incident57.com/codekit/versionhistory.html)
+- CodeKit 1.7.1, [prior releases should be unaffected](https://incident57.com/codekit/versionhistory.html)
 - Dash 3.2.2
 - iTerm 2.1.4 and 2.9
 - SourceTree 2.2

@@ -1,11 +1,28 @@
 require 'html-proofer'
+require 'find'
+
+# default task
 
 task :default => :check_install
 
-task :ci => [:check_urls]
+# task groups
+
+task :ci => [:check_urls, :check_api]
+
+#
+# task definitions
+#
 
 task :cleanup do
   sh "rm -rf _site"
+end
+
+task :serve do
+  sh "bundle exec jekyll serve --livereload --future --drafts"
+end
+
+task :build => :cleanup do
+  sh "bundle exec jekyll build"
 end
 
 task :list_tags do
@@ -20,9 +37,7 @@ task :check_install do
   sh "bundle exec jekyll doctor"
 end
 
-task :check_urls do
-  Rake::Task[:cleanup].execute
-  sh "bundle exec jekyll build"
+task :check_urls => :build do
   options = {
     :allow_hash_href => true,
     :allow_missing_href => true,
@@ -75,4 +90,32 @@ task :check_urls do
   }
 
   HTMLProofer.check_directory('_site/', options).run
+end
+
+task :check_api => :build do
+  api_path = "_site/api"
+
+  puts "\n\nChecking API files in '#{api_path}' for valid JSON content\n\n"
+  api_files = []
+  Find.find(api_path) do |path|
+    if path =~ /index\.json$/
+      puts "Found API file: #{path}"
+      api_files << path
+    end
+  end
+  puts "\nFound #{api_files.length} API file#{api_files.length > 1 ? 's' : ''}\n\n"
+
+  onError = 0
+  api_files.each do |file|
+    json_content = File.read(file)
+    begin
+      JSON.parse(json_content)
+    rescue JSON::ParserError => e
+      onError += 1
+      puts "Invalid JSON content in file: #{file}"
+      puts "#{e.message}\n\n"
+    end
+  end
+  puts "\nFinished: Found #{onError} files with invalid JSON content\n\n"
+  exit 1 if onError > 0
 end

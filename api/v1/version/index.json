@@ -13,7 +13,7 @@ name: version
     "dateTime": "{{ site.data.git.commit_date }}",
     "branch": {
       "name": "{{ site.data.git.branch }}",
-      "url": "{{ site.data.social.github.url }}/fpiracom/tree/{{ site.data.git.branch }}",
+      "url": "{{ site.data.social.github.url }}/fpiracom/tree/{{ site.data.git.branch }}"
     },
     "tags": [
       {% for tag in site.data.git.tags %}

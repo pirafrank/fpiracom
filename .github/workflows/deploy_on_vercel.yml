@@ -92,7 +92,7 @@ jobs:
     - name: CI checks
       if: github.ref == 'refs/heads/main'
       shell: bash
-      run: rake ci
+      run: bundle exec rake ci
 
     # Vercel deploy
     - name: Deploy to vercel

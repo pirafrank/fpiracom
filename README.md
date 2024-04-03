@@ -1,6 +1,6 @@
 # fpira.com source code
 
-[![deploy on vercel](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_on_vercel.yml/badge.svg)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy_on_vercel.yml)
+[![Build and Deploy](https://github.com/pirafrank/fpiracom/actions/workflows/deploy.yml/badge.svg)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy.yml)
 
 Just my website. Visit [fpira.com](https://fpira.com) for a live version.
 

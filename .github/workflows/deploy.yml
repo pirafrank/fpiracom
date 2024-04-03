@@ -1,6 +1,6 @@
 # deploy fpira.com using GitHub Actions
 
-name: 'Deploy on Vercel'
+name: 'Build and Deploy'
 
 on:
   push:
@@ -58,7 +58,7 @@ jobs:
           ref: ${{ steps.get_current_ref.outputs.ref }}
 
   build:
-    name: Deploy on vercel
+    name: Build and Deploy
     runs-on: ubuntu-20.04
     environment:
       name: ${{ needs.checks.outputs.ENV_NAME }}
@@ -84,18 +84,16 @@ jobs:
     # Perform CI checks
     - name: Cache HTMLProofer
       id: cache-htmlproofer
-      if: github.ref == 'refs/heads/main'
       uses: actions/cache@v2
       with:
         path: .html_proofer_cache/cache.json
         key: ${{ runner.os }}-htmlproofer
     - name: CI checks
-      if: github.ref == 'refs/heads/main'
       shell: bash
       run: bundle exec rake ci
 
     # Vercel deploy
-    - name: Build and Deploy
+    - name: Deploy on Vercel
       id: deploy_to_vercel
       uses: amondnet/vercel-action@v25.1.1
       with:

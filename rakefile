@@ -7,7 +7,7 @@ task :default => :check_install
 
 # task groups
 
-task :ci => [:check_urls, :check_api]
+task :ci => [:check_internal_urls, :check_api]
 
 #
 # task definitions

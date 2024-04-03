@@ -95,7 +95,7 @@ jobs:
       run: bundle exec rake ci
 
     # Vercel deploy
-    - name: Deploy to vercel
+    - name: Build and Deploy
       id: deploy_to_vercel
       uses: amondnet/vercel-action@v25.1.1
       with:

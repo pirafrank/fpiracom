@@ -15,7 +15,7 @@ There's still more room to improve and I drove that way.
 
 I want to offload my little VPS resources and bandwidth by hosting `/static` files to Amazon S3 storage. It is friendly to use and cheap: for a blog it should cost less then $1 per month.
 
-First of all I created an account on AWS. They give you 12-month [free tier](aws.amazon.com/free) upon sign up.
+First of all I created an account on AWS. They give you 12-month [free tier](https://aws.amazon.com/free) upon sign up.
 
 #### Configuring AWS
 

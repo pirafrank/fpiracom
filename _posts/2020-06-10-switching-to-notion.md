@@ -63,7 +63,7 @@ credits="https://unsplash.com/@jsweissphoto"
 
 **Search that works.** It does and fairly predicts the item I'm likely to pick among the results.
 
-**Keyboard shortcuts.** It has a lot of them, you can check them [here](https://www.notion.so/Learn-the-shortcuts-66e28cec810548c3a4061513126766b0). My favorite one is `CMD+p` which works pretty much like *Goto Anything* option in Sublime Text.
+**Keyboard shortcuts.** It has a lot of them, you can check them [here](https://www.notion.so/help/keyboard-shortcuts). My favorite one is `CMD+p` which works pretty much like *Goto Anything* option in Sublime Text.
 
 **It has a Web Clipper.** And works as I expected, the only acting like the elephant-themed one, properly clipping articles and adding a link to the source. Available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/notion-web-clipper/) and [Chrome](https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk?hl=en).
 

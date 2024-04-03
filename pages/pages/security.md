@@ -9,11 +9,11 @@ A collection of security guides, tools, cheat sheets and best practices I've fou
 
 #### Communications
 
-- [Get S/MIME on your iPhone and iPad](https://nerd.one/how-to-set-up-smime-on-iphone-and-mac/)
+- [Get S/MIME on your iPhone and iPad](https://web.archive.org/web/20211202001345/https://nerd.one/how-to-set-up-smime-on-iphone-and-mac/)
 
 #### SSH
 
-- A very good introduction to SSH ([part 1](https://scottwillsey.com/blog/comp/sshbasics/), [part 2](https://scottwillsey.com/blog/comp/sshkeytheory/), and [part 3](https://scottwillsey.com/blog/comp/sshkeygen/))
+- A very good introduction to SSH ([part 1](https://web.archive.org/web/20220703203844/https://scottwillsey.com/blog/comp/sshbasics/), [part 2](https://web.archive.org/web/20220527194742/https://scottwillsey.com/blog/comp/sshkeytheory/), and [part 3](https://web.archive.org/web/20220527174629/https://scottwillsey.com/blog/comp/sshkeygen/))
 - [Top 20 OpenSSH Server Best Security Practices](http://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html)
 
 #### VPNs
@@ -32,7 +32,7 @@ A collection of security guides, tools, cheat sheets and best practices I've fou
 
 - [GrSecurity](https://grsecurity.net/), a set of patches to harden the Linux kernel
 - SELinux, built-in into the Linux kernel for years. I am not really a big fan of it.
-- [Tomoyo](http://tomoyo.osdn.jp/), a MAC good enough to be used as a system analysis tool, its rules are easy to write
+- [Tomoyo](https://web.archive.org/web/20161222155130/http://tomoyo.osdn.jp//), a MAC good enough to be used as a system analysis tool, its rules are easy to write
 
 I gave two talks about them, *Hardening One* and *Hardening Two*. Find more [here]({{ site.baseurl }}/talks/).
 
@@ -52,7 +52,7 @@ I gave two talks about them, *Hardening One* and *Hardening Two*. Find more [her
 
 #### Tools
 
-- [Brute-force calculator]({{ site.baseurl }}/projects/bfc) (*)
+- [Brute-force calculator]({{ site.baseurl }}/utilities/bfc) (*)
 - [nmap](http://nmap.org)
 - [Wireshark](http://wireshark.org/)
 - [Debookee](http://debookee.com) (macOS only)

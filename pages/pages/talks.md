@@ -21,7 +21,7 @@ Speech during the national Linux Day about moving the first steps with Git.
 
 An event promoted by the city administration of Syracuse, part of the European project *[Tech Town (Urbact programme)](http://urbact.eu)*. My speech was about the role of Youth Hub Catania in the Sicilian startup ecosystem.
 
-#### [Hardening Two](http://hardeningtwo.fileshute.com)
+#### [Hardening Two](https://www.dmi.unict.it/giamp/hardening/?link=2016%20Edition)
 
 *June 13, 2016 @ University of Catania*
 
@@ -30,7 +30,7 @@ OpenDay about understanding Linux hardening. SELinux, GrSecurity, Tomoyo 1.8 and
 - [Slides GrSecurity](http://www.slideshare.net/pirafrank/getting-started-with-grsecurity)
 - [Slides Apparmor](http://www.slideshare.net/pirafrank/getting-started-with-apparmor)
 
-#### [Google I/O Extended 2016 Catania](https://developers.google.com/events/6168172246073344/)
+#### Google I/O Extended 2016 Catania
 
 *May 19, 2016 @ University of Catania*
 
@@ -39,7 +39,7 @@ Workshop about JavaScript, ES2015 and node.js titled Hands on: The sexy side of 
 - [Slides](http://www.slideshare.net/pirafrank/hand-on-the-sexy-side-of-javascript-feat-nodejs)
 - [Blog post]({{ site.baseurl }}/blog/2016/05/speech-the-sexy-side-of-javascript-nodejs/)
 
-#### [Hardening One](http://www.dmi.unict.it/%7Egiamp/hardening/15edition)
+#### [Hardening One](https://www.dmi.unict.it/giamp/hardening/?link=2015%20Edition)
 
 *May 19, 2015 @ University of Catania*
 

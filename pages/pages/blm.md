@@ -25,13 +25,11 @@ If you believe in true freedom and equality, please join me.
 
 ### Act
 
-[Get started, stay informed](http://standwithblm.org/).
-
-Check also, [blacklivesmatters.carrd.co](https://blacklivesmatters.carrd.co/#).
+Check [blacklivesmatters.carrd.co](https://blacklivesmatters.carrd.co/#).
 
 #### Donate
 
-- [Equal Justice Initiative](https://support.eji.org/give/153413/#!/donation/checkout)
+- [Equal Justice Initiative](https://support.eji.org/give/153413)
 - [Official George Floyd Memorial Fund](https://www.gofundme.com/f/georgefloyd)
 - [Justice for Breonna Taylor](https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor)
 - [I Run With Maud](https://www.gofundme.com/f/i-run-with-maud)
@@ -41,7 +39,7 @@ Check also, [blacklivesmatters.carrd.co](https://blacklivesmatters.carrd.co/#).
 
 #### Sign
 
-- [Justice for George Floyd](https://www.amnesty.org/en/get-involved/take-action/george-floyd-police-violence-usa/)
+- [Justice for George Floyd](https://www.change.org/p/mayor-jacob-frey-justice-for-george-floyd)
 - [Justice For Emerald Black](https://www.change.org/p/san-leandro-police-deartment-justice-for-emerald-black)
 - [Julius Jones is innocent](https://www.change.org/p/julius-jones-is-innocent-don-t-let-him-be-executed-by-the-state-of-oklahoma)
 - [Justice for Breonna Taylor](https://www.change.org/p/andy-beshear-justice-for-breonna-taylor)

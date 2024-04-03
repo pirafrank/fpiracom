@@ -1,0 +1,16 @@
+# .github/actions/ci-checks/action.yml
+
+name: Perform CI checks
+description: Perform CI checks using 'rake ci'
+runs:
+  using: "composite"
+  steps:
+    - name: Cache HTMLProofer
+      id: cache-htmlproofer
+      uses: actions/cache@v2
+      with:
+        path: .html_proofer_cache/cache.json
+        key: ${{ runner.os }}-htmlproofer
+    - name: CI checks
+      shell: bash
+      run: bundle exec rake ci

@@ -82,15 +82,8 @@ jobs:
         target_file: _data/git.json
 
     # Perform CI checks
-    - name: Cache HTMLProofer
-      id: cache-htmlproofer
-      uses: actions/cache@v2
-      with:
-        path: .html_proofer_cache/cache.json
-        key: ${{ runner.os }}-htmlproofer
     - name: CI checks
-      shell: bash
-      run: bundle exec rake ci
+      uses: ./.github/actions/ci-checks
 
     # Vercel deploy
     - name: Deploy on Vercel

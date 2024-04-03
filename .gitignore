@@ -29,3 +29,6 @@ vendor
 
 # ignore generated _data/gitinfo.json file
 _data/git.json*
+
+# ignore html-proofer cache
+.html_proofer_cache/*.json

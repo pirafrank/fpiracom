@@ -23,7 +23,7 @@ I have used Evernote for years, it was love at first sight back in 2010. But rec
 
 I didn’t get that far. My first stop was already on my iPhone. I moved to the built-in Notes app, reviewing and exporting data from Evernote using my Mac as I needed to make changes. It was good enough as a backup plan but I had to find an alternative. I knew that was a temporary solution already showing some cracks. For example, it didn’t play well with my work Windows laptop and Linux Desktop, links kept infecting nearby text and nested folder have not been a thing on iOS until its 13th iteration.
 
-I come up with a private git repository called *notes* (I admit I wasn’t that creative here) and stored text and markdown files, as well as their attachments, in it. Using a git repo for note-taking across multiple devices (Mac, iPad, iPhone, Windows PC, and a Linux Desktop) may sound crazy at least but if you know how to use git from command-line and have apps like [Typora](https://typora.io/) and [Working Copy](http://workingcopyapp.com/) it is a bliss. And it has some nice pros:
+I come up with a private git repository called *notes* (I admit I wasn’t that creative here) and stored text and markdown files, as well as their attachments, in it. Using a git repo for note-taking across multiple devices (Mac, iPad, iPhone, Windows PC, and a Linux Desktop) may sound crazy at least but if you know how to use git from command-line and have apps like [Typora](https://typora.io/) and [Working Copy](https://workingcopyapp.com/) it is a bliss. And it has some nice pros:
 
 - it is highly portable: zero chance to be locked into the platform or fear service termination (because of failure of the company running it, acquisitions, etc.)
 - versioning is included (of course)
@@ -63,7 +63,7 @@ credits="https://unsplash.com/@jsweissphoto"
 
 **Search that works.** It does and fairly predicts the item I'm likely to pick among the results.
 
-**Keyboard shortcuts.** It has a lot of them, you can check them [here](https://www.notion.so/Learn-the-shortcuts-66e28cec810548c3a4061513126766b0). My favorite one is `CMD+p` which works pretty much like *Goto Anything* option in Sublime Text.
+**Keyboard shortcuts.** It has a lot of them, you can check them [here](https://www.notion.so/help/keyboard-shortcuts). My favorite one is `CMD+p` which works pretty much like *Goto Anything* option in Sublime Text.
 
 **It has a Web Clipper.** And works as I expected, the only acting like the elephant-themed one, properly clipping articles and adding a link to the source. Available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/notion-web-clipper/) and [Chrome](https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk?hl=en).
 

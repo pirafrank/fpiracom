@@ -9,68 +9,66 @@ News sources that build my (virtual) daily newspaper.
 
 #### World News
 
-[Reuters](http://www.reuters.com/)
+[Reuters](https://www.reuters.com/)
 
-[New York Times](http://www.nytimes.com/)
+[New York Times](https://www.nytimes.com/)
 
-[Telegraph.co.uk](http://www.telegraph.co.uk/)
+[Telegraph.co.uk](https://www.telegraph.co.uk/)
 
-[Al Jazeera (ENG)](http://www.aljazeera.com)
+[Al Jazeera (ENG)](https://www.aljazeera.com)
 
 #### Entrepreneurship
 
-[Inc.com](http://www.inc.com/)
+[Inc.com](https://www.inc.com/)
 
-[Fast Company](http://www.fastcompany.com/)
+[Fast Company](https://www.fastcompany.com/)
 
-[Forbes](http://www.forbes.com/entrepreneurs/)
+[Forbes](https://www.forbes.com/entrepreneurs/)
 
-[Venture Beat](http://venturebeat.com/)
+[Venture Beat](https://venturebeat.com/)
 
 #### Development
 
-[Creative Bloq Web Design](http://www.creativebloq.com/web-design)
+[Creative Bloq Web Design](https://www.creativebloq.com/web-design)
 
-[Planet NodeJS](http://planetnodejs.com/)
+[Planet NodeJS](https://planetnodejs.com/)
 
-[React Native](http://blog.reactnative.com/)
-
-[Planet Python](http://planetpython.org/)
+[Planet Python](https://planetpython.org/)
 
 [Facebook Developers](https://developers.facebook.com/blog/)
 
-[Google Developers](http://googledevelopers.blogspot.com/)
+[Google Developers](https://googledevelopers.blogspot.com/)
 
-[Android Developers](http://android-developers.blogspot.com/)
+[Android Developers](https://android-developers.blogspot.com/)
 
-[Apple Developer](http://developer.apple.com/news/)
+[Apple Developer](https://developer.apple.com/news/)
 
 [Microsoft Azure Blog](https://azure.microsoft.com/blog/)
 
 #### Security
 
-[Schneier On Security](http://www.schneier.com/blog/)
+[Schneier On Security](https://www.schneier.com/blog/)
 
-[Google Project Zero](http://googleprojectzero.blogspot.com)
+[Google Project Zero](https://googleprojectzero.blogspot.com)
 
 [Naked Security](https://nakedsecurity.sophos.com/)
 
 #### Technology
 
-[TechCrunch](http://http://techcrunch.com/)
+[TechCrunch](https://techcrunch.com/)
 
-[Product Hunt](http://www.producthunt.com)
+[Product Hunt](https://www.producthunt.com)
 
-[Hacker News](http://news.ycombinator.com/)
+[Hacker News](https://news.ycombinator.com/)
 
-[AnandTech](http://www.anandtech.com)
+[AnandTech](https://www.anandtech.com)
 
-[Android Central](http://www.androidcentral.com)
+[Android Central](https://www.androidcentral.com)
 
-[9to5mac](http://9to5mac.com)
+[9to5mac](https://9to5mac.com)
 
-[Slashdot](http://slashdot.org)
+[Slashdot](https://slashdot.org)
 
 #### Design
 
-[InVision Blog](http://blog.invisionapp.com/)
+[InVision Blog](https://blog.invisionapp.com/)

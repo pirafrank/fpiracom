@@ -56,7 +56,7 @@ Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.na
 
 [Download my resume]({{ site.data.external.resume }})
 
-{% include_relative about/resume-last-edit.html %}
+{% include about/resume-last-edit.html %}
 
 ### Coding
 
@@ -71,11 +71,11 @@ As usual, available on [GitHub]({{site.data.social.github.url}}).
 
 ### Certifications
 
-{% include_relative about/certs.md %}
+{% include about/certs.md %}
 
 ### Honours
 
-{% include_relative about/honours.md %}
+{% include about/honours.md %}
 
 ## Languages
 

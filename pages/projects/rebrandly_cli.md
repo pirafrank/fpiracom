@@ -8,7 +8,7 @@ github: "https://github.com/pirafrank/rebrandly_cli"
 
 ### What is *rebrandly cli*?
 
-Rebrandly_cli is an unofficial command line client for [Rebrandly](http://rebrandly.com).
+Rebrandly_cli is an unofficial command line client for [Rebrandly](https://rebrandly.com).
 
 You can use it to shorten your URLs with ease, without leaving the terminal. Look at the example below to have an idea.
 

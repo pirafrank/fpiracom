@@ -9,7 +9,7 @@ tags: ['Sys Admin','Cloud','Microsoft Azure']
 
 Microsoft Azure is here and we want to deploy lots of virtual machines and attach them even more drives.
 
-First, we need to attach a new drive. Go to [portal.azure.com](http://portal.azure.com), then look for your virtual machine of choice in the *Virtual Machines* menu.
+First, we need to attach a new drive. Go to [portal.azure.com](https://portal.azure.com), then look for your virtual machine of choice in the *Virtual Machines* menu.
 
 Then *Settings* > *Disks* > *Attach new*. Now choose a nice name (it will be seen only in the portal, btw) and the desired virtual drive dimension. As a side note, Azure pricing is currently set to count only data actually written to disk, not the dimension of the whole disk.
 

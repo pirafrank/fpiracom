@@ -12,7 +12,7 @@ But recently three white blinks of the LED told me my earbuds were dead. Battery
 
 ### One last hope...
 
-Googling around, I've found a reset procedure on the [Beats website](https://www.beatsbydre.com/support/how-to/set-up-and-use-beatsx-earphones#reset-beatsx) to bring them back to life.
+Googling around, I've found a reset procedure on the [Beats website](https://www.beatsbydre.com/support/how-to/set-up-and-use-beatsx-earphones) to bring them back to life.
 
 1. Unplug headphones from charging (if they were)
 2. Hold down the following buttons for 10 seconds:

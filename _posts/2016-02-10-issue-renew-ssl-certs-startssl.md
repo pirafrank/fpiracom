@@ -89,7 +89,7 @@ In case you need to chain the cert by hand, here you go. For Nginx we have to co
 
 ### Deploying
 
-**Be careful:** As stated in the [nginx SSL documentation](http://nginx.org/en/docs/http/ngx_http_ssl_module.html), in the website config file, the server certificate line has to be inserted BEFORE the one with the key.
+**Be careful:** As stated in the [nginx SSL documentation](https://nginx.org/en/docs/http/ngx_http_ssl_module.html), in the website config file, the server certificate line has to be inserted BEFORE the one with the key.
 
 ```sh
 ssl_certificate /etc/nginx/ssl/example.com.crt; <--- the chained one!

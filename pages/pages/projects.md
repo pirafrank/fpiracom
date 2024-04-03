@@ -28,7 +28,7 @@ Very simple Python module calling Scaleway APIs to create/manage/undeploy virtua
 
 #### [electron-dash-docset]({{ site.data.social.github.url }}/electron-dash-docset)
 
-A repository to generate a [Dash](https://kapeli.com/dash) docset for the [electron](http://electron.atom.io) documentation. Now with automatic check for new releases.
+A repository to generate a [Dash](https://kapeli.com/dash) docset for the [electron](https://electron.atom.io) documentation. Now with automatic check for new releases.
 
 #### [Workflow for iOS recipes]({{ site.baseurl }}/projects/workflow-ios/)
 

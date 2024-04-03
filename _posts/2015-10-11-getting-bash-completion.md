@@ -67,6 +67,6 @@ Thanks for reading.
 
 Sources:
 
-- http://superuser.com/questions/31744/how-to-get-git-completion-bash-to-work-on-mac-os-x
+- https://superuser.com/questions/31744/how-to-get-git-completion-bash-to-work-on-mac-os-x
 
-- http://askubuntu.com/questions/33440/tab-completion-doesnt-work-for-commands
+- https://askubuntu.com/questions/33440/tab-completion-doesnt-work-for-commands

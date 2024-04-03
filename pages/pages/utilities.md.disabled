@@ -5,4 +5,4 @@ permalink: /utilities/
 show_title: true
 ---
 
-{% include_relative includes/utilities.md %}
+{% include partials/utilities.md %}

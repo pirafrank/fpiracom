@@ -2,7 +2,7 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
   <id>https://fpira.com/blog</id>
   <title>{{ site.name | xml_escape }}</title>
   <subtitle>{{ site.description | xml_escape }}</subtitle>

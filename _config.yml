@@ -82,7 +82,6 @@ home:
   max_projects: 3 # max number of projects to show in the home page
   max_events: 3 # max number of entries from /events page to show in the home page
   show_excerpt: true # choose whether to show or not excerpt of latest blog posts
-  show_pinboard: true # set it to true to enable, false to disable right section in home
   show_twitter_feed: false # NB. you have to REPLACE the code in home with the one for your twitter account.
   show_twitter_button: false # Choose whether to 'Follow me' button in home.
 
@@ -234,3 +233,4 @@ exclude:
     - vercel.json
     - Dockerfile
     - '_posts/accordions/**'
+    - '.html_proofer_cache/**'

@@ -25,7 +25,7 @@ in_search: false
     {% for tag in sorted_tags_by_name %}
       <div class="blog-entry">
         <span class="blog-entry-link">
-          {% assign i = tag[0] | downcase | replace:' ','-' %}
+          {% assign i = tag[0] | downcase | replace:' ','-' | replace: '.','-' %}
           <a href="{{ site.baseurl }}/blog/tags/{{ i }}">{{ tag[0] }}</a>
         </span>
         <span class="blog-entry-details">

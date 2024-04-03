@@ -6,7 +6,7 @@ layout: compress
   {
     "type": "category",
     {% assign categoryName = category[0] %}
-    {% assign categoryId = categoryName | downcase | replace:' ','-' %}
+    {% assign categoryId = categoryName | downcase | replace:' ','-' | replace: '.','-' %}
     {% assign postsInCategory = category[1] %}
     "id": "{{ categoryId }}",
     "name": "{{ categoryName }}",

@@ -26,7 +26,7 @@ in_search: false
     {% for category in sorted_categories %}
       <div class="blog-entry">
         <div class="blog-entry-link">
-          <a href="{{ site.baseurl }}/blog/categories/{{ category | first | downcase | replace:' ','-' }}">{{ category | first }}</span>
+          <a href="{{ site.baseurl }}/blog/categories/{{ category | first | downcase | replace:' ','-' | replace: '.','-' }}">{{ category | first }}</span>
         </div>
       </div>
     {% endfor %}

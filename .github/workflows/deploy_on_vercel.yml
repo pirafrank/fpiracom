@@ -20,6 +20,7 @@ on:
       - .dockerignore
       - .editorconfig
       - '.devcontainer/**'
+      - '.html_proofer_cache/**'
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * *'
@@ -71,10 +72,29 @@ jobs:
       with:
         ref: ${{ github.event.inputs.target_ref }}
         fetch-tags: true
+
+    # Prepare environment
+    - name: Setup Jekyll environment
+      uses: ./.github/actions/setup-jekyll-env
     - name: Write git info to site data
       uses: ./.github/actions/git-info
       with:
         target_file: _data/git.json
+
+    # Perform CI checks
+    - name: Cache HTMLProofer
+      id: cache-htmlproofer
+      if: github.ref == 'refs/heads/main'
+      uses: actions/cache@v2
+      with:
+        path: .html_proofer_cache/cache.json
+        key: ${{ runner.os }}-htmlproofer
+    - name: CI checks
+      if: github.ref == 'refs/heads/main'
+      shell: bash
+      run: rake ci
+
+    # Vercel deploy
     - name: Deploy to vercel
       id: deploy_to_vercel
       uses: amondnet/vercel-action@v25.1.1
@@ -87,47 +107,24 @@ jobs:
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
         alias-domains: |
           fpiracom-{{BRANCH}}-pirafrank.vercel.app
-    - name: Send Push Notification
-      uses: fjogeleit/http-request-action@master
-      # in good and bad times, let me know how it went
-      if: always()
-      with:
-        url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
-        method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
 
-  algolia:
-    name: Algolia index update
-    runs-on: ubuntu-20.04
-    needs: [build]
-    # run this only if building from production branch
-    if: github.ref == 'refs/heads/main'
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        ref: ${{ github.event.inputs.target_ref }}
-        fetch-tags: true
-    - name: Get current ref (branch name or commit id)
-      id: get_current_ref
-      uses: ./.github/actions/get-current-ref
-    - name: Setup Jekyll environment
-      uses: ./.github/actions/setup-jekyll-env
-    - name: Write git info to site data
-      uses: ./.github/actions/git-info
-      with:
-        target_file: _data/git.json
+    # Algolia search index update
     - name: Update Algolia Index
+      if: github.ref == 'refs/heads/main'
       shell: bash
       env:
         JEKYLL_ENV: production
         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
       run: |
         bundle exec jekyll algolia
-    - name: Send Push Notification
+
+    # In good and bad times, let me know how it went.
+    # This must stay at the bottom of the job.
+    - name: Send Build Push Notification
       uses: fjogeleit/http-request-action@master
-      # in good and bad times, let me know how it went
       if: always()
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Update of Algolia index for fpira.com (ref ${{ steps.get_current_ref.outputs.ref }}) finished with status ${{job.status}}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ needs.checks.outputs.REF_NAME }}) and Algolia index update finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+

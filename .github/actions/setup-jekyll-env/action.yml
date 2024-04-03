@@ -47,3 +47,6 @@ runs:
         echo "Jekyll version: $(bundle exec jekyll --version)"
         # add bundle path to github output
         echo "bundle_path=${bundle_path}" >> $GITHUB_OUTPUT
+    - name: Check Jekyll installation
+      shell: bash
+      run: bundle exec jekyll doctor

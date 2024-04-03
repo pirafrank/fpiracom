@@ -233,3 +233,4 @@ exclude:
     - '_templates/**'
     - vercel.json
     - Dockerfile
+    - '_posts/accordions/**'

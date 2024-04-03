@@ -1,8 +1,9 @@
 <div>
   <ul class="accordion_include">
     <li>
-      <input id="accordion{{ include.id }}" type="checkbox"/>
-      <label for="accordion{{ include.id }}"><span>&nbsp;</span>{{ include.title }}</label>
+      {% capture id %}{% random 1,1000000 %}{% endcapture %}
+      <input id="accordion{{ id }}" type="checkbox"/>
+      <label for="accordion{{ id }}"><span>&nbsp;</span>{{ include.title }}</label>
       {% assign is_markdown = include.file | regex_match: ".md$" %}
       {% assign is_html = include.file | regex_match: ".html$" %}
       {% if is_markdown %}

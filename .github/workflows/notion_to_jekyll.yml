@@ -49,7 +49,7 @@ jobs:
         # always checkout main branch
         ref: main
     - name: Notion to Jekyll
-      uses: pirafrank/notion-to-jekyll@v1
+      uses: pirafrank/notion-to-jekyll@develop
       id: notion_to_jekyll
       with:
         notion-token: ${{ secrets.NOTION_TOKEN }}

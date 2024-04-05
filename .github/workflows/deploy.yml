@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - main
-      - preview/*
+      - preview
     paths-ignore:
       - '.github/**'
       - '_jekyll_ignore/**'

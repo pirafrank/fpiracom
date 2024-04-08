@@ -191,6 +191,23 @@ attribute|required|use
 `link`|no|if your caption needs to point to a url
 `credits`|no|url to image author
 
+### Toggle lists / accordions
+
+This is done using the `_includes/accordion.html` include.
+
+```text
+{% include accordion.html title="this is a toggle" file="some_file.md" %}
+```
+
+where:
+
+- `title` is the title of the toggle
+- `some_file.md` is a markdown file in `_posts/accordions/YYYY-MM-DD/` folder
+- `YYYY-MM-DD` is the date of the post the toggle is in
+- the markdown file contains the content of the toggle
+
+Included `file` can be `.md` or `.html`. Content is rendered depending on the file extension.
+
 ### Video embeds
 
 You only need the video ID from the link URL (e.g. abc123abc123)

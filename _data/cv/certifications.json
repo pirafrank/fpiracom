@@ -6,7 +6,7 @@
     "id": "",
     "url": "",
     "credlyUrl": "https://www.credly.com/badges/30478cd5-7f84-4617-ab4a-80479508dd23",
-    "dateAchieved": "24/03/2023",
+    "dateAchieved": "2023-03-24T00:00:00Z",
     "dateRenewed": "",
     "dateExpires": ""
   },
@@ -15,20 +15,20 @@
     "issuer": "AWS",
     "code": "",
     "id": "66BNLWDCZ2F4Q7K4",
-    "url": "/assets/files/honors/AWS_Certified_DevOps_Engineer_Professional_certificate.pdf",
+    "url": "/assets/files/certs/AWS_Certified_DevOps_Engineer_Professional_certificate.pdf",
     "credlyUrl": "https://www.credly.com/badges/aec05044-e905-4bd2-9f0b-b46ed60332fa",
-    "dateAchieved": "09/11/2022",
-    "dateRenewed": "09/11/2022",
-    "dateExpires": "09/11/2025"
+    "dateAchieved": "2022-11-09T00:00:00Z",
+    "dateRenewed": "2022-11-09T00:00:00Z",
+    "dateExpires": "2025-11-09T00:00:00Z"
   },
   {
     "name": "Arcitura Certified Cloud Professional",
     "issuer": "Arcitura",
     "code": "",
     "id": "114825",
-    "url": "/assets/files/honors/114825_F_Pira_Arcitura_Cloud_Professional.pdf",
+    "url": "/assets/files/certs/114825_F_Pira_Arcitura_Cloud_Professional.pdf",
     "credlyUrl": "https://www.credly.com/badges/30478cd5-7f84-4617-ab4a-80479508dd23",
-    "dateAchieved": "04/04/2022",
+    "dateAchieved": "2022-04-04T00:00:00Z",
     "dateRenewed": "",
     "dateExpires": ""
   },
@@ -37,31 +37,31 @@
     "issuer": "Microsoft",
     "code": "AZ-400",
     "id": "I082-7442",
-    "url": "/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-400.pdf",
+    "url": "/assets/files/certs/Microsoft_Certified_Professional_Certificate_AZ-400.pdf",
     "credlyUrl": "https://www.credly.com/badges/7b4de1bf-f197-4cd9-9c86-c8e0e3b3f6ec",
-    "dateAchieved": "20/12/2021",
-    "dateRenewed": "28/11/2022",
-    "dateExpires": "21/12/2024"
+    "dateAchieved": "2021-12-20T00:00:00Z",
+    "dateRenewed": "2022-11-28T00:00:00Z",
+    "dateExpires": "2024-12-21T00:00:00Z"
   },
   {
     "name": "Microsoft Azure Developer Associate",
     "issuer": "Microsoft",
     "code": "AZ-204",
     "id": "I072-7874",
-    "url": "/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-204.pdf",
+    "url": "/assets/files/certs/Microsoft_Certified_Professional_Certificate_AZ-204.pdf",
     "credlyUrl": "https://www.credly.com/badges/00d10b0b-8cb3-495c-a328-5a09a9091580",
-    "dateAchieved": "14/12/2021",
-    "dateRenewed": "28/11/2022",
-    "dateExpires": "15/12/2024"
+    "dateAchieved": "2021-12-14T00:00:00Z",
+    "dateRenewed": "2022-11-28T00:00:00Z",
+    "dateExpires": "2024-12-15T00:00:00Z"
   },
   {
     "name": "Oracle Certified Professional - Java SE 11 Developer",
     "issuer": "Oracle",
     "code": "",
     "id": "283530731OCPJSE11-J",
-    "url": "/assets/files/honors/Oracle_Java_SE_11_Developer_certification.pdf",
+    "url": "/assets/files/certs/Oracle_Java_SE_11_Developer_certification.pdf",
     "credlyUrl": "https://www.credly.com/badges/0ac7d617-d38e-4b70-bef1-d8237b6d52f5",
-    "dateAchieved": "22/04/2021",
+    "dateAchieved": "2021-04-22T00:00:00Z",
     "dateRenewed": "",
     "dateExpires": ""
   },
@@ -70,42 +70,42 @@
     "issuer": "AWS",
     "code": "",
     "id": "3GYBXTEJ11EE1E37",
-    "url": "/assets/files/honors/AWS_Certified_Developer_Associate_certificate.pdf",
+    "url": "/assets/files/certs/AWS_Certified_Developer_Associate_certificate.pdf",
     "credlyUrl": "https://www.credly.com/badges/c124f91e-f06d-4225-992d-0ebd7cfffa86",
-    "dateAchieved": "17/09/2020",
-    "dateRenewed": "09/11/2022",
-    "dateExpires": "09/11/2025"
+    "dateAchieved": "2020-09-17T00:00:00Z",
+    "dateRenewed": "2022-11-09T00:00:00Z",
+    "dateExpires": "2025-11-09T00:00:00Z"
   },
   {
     "name": "AWS Certified Cloud Practitioner",
     "issuer": "AWS",
     "code": "",
     "id": "MWZDXGWJC2411G3J",
-    "url": "/assets/files/honors/AWS_Certified_Cloud_Practitioner_certificate.pdf",
+    "url": "/assets/files/certs/AWS_Certified_Cloud_Practitioner_certificate.pdf",
     "credlyUrl": "https://www.credly.com/badges/b7dda8be-eb8c-49dd-8f5e-223457f45807",
-    "dateAchieved": "17/09/2020",
-    "dateRenewed": "09/11/2022",
-    "dateExpires": "09/11/2025"
+    "dateAchieved": "2020-09-17T00:00:00Z",
+    "dateRenewed": "2022-11-09T00:00:00Z",
+    "dateExpires": "2025-11-09T00:00:00Z"
   },
   {
     "name": "AWS Certified Solutions Architect - Associate",
     "issuer": "AWS",
     "code": "",
     "id": "03SKXWGLKMR4103G",
-    "url": "/assets/files/honors/AWS_Certified_Solutions_Architect_Associate_certificate.pdf",
+    "url": "/assets/files/certs/AWS_Certified_Solutions_Architect_Associate_certificate.pdf",
     "credlyUrl": "https://www.credly.com/badges/07aecb45-7bc0-4482-8411-108c87a4bdf2",
-    "dateAchieved": "23/07/2020",
+    "dateAchieved": "2020-07-23T00:00:00Z",
     "dateRenewed": "",
-    "dateExpires": "23/06/2023"
+    "dateExpires": "2023-06-23T00:00:00Z"
   },
   {
     "name": "Microsoft Azure Fundamentals",
     "issuer": "Microsoft",
     "code": "AZ-900",
     "id": "H201-0570",
-    "url": "/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-900.pdf",
+    "url": "/assets/files/certs/Microsoft_Certified_Professional_Certificate_AZ-900.pdf",
     "credlyUrl": "https://www.credly.com/badges/23220c37-5e62-4d34-a21a-e07002dd1864",
-    "dateAchieved": "31/07/2019",
+    "dateAchieved": "2019-07-31T00:00:00Z",
     "dateRenewed": "",
     "dateExpires": ""
   },
@@ -114,9 +114,9 @@
     "issuer": "DASA",
     "code": "",
     "id": "92B4E738D929B386A5",
-    "url": "/assets/files/honors/DASA_DevOps_Certificate.pdf",
+    "url": "/assets/files/certs/DASA_DevOps_Certificate.pdf",
     "credlyUrl": "https://www.credly.com/badges/dcc645b3-3594-4183-bbe9-d116c1a872ee",
-    "dateAchieved": "25/05/2019",
+    "dateAchieved": "2019-05-25T00:00:00Z",
     "dateRenewed": "",
     "dateExpires": ""
   }

@@ -233,4 +233,5 @@ exclude:
     - vercel.json
     - Dockerfile
     - '_posts/accordions/**'
+    - '_drafts/accordions/**'
     - '.html_proofer_cache/**'

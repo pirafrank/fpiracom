@@ -67,6 +67,8 @@ jobs:
         CHANGED: ${{ steps.notion_to_jekyll.outputs.changed }}
         DELETED: ${{ steps.notion_to_jekyll.outputs.deleted }}
         DRY_RUN: ${{ steps.notion_to_jekyll.outputs.dry-run }}
+        SUCCEEDED: ${{ steps.notion_to_jekyll.outputs.succeeded }}
+        FAILED: ${{ steps.notion_to_jekyll.outputs.failed }}
       run: |
         printf "\n******* workflow variables ********\n\n"
         echo "OWNER=$OWNER"
@@ -81,6 +83,10 @@ jobs:
         echo "CHANGED=$CHANGED"
         echo "DELETED=$DELETED"
         echo "DRY_RUN=$DRY_RUN"
+        echo "SUCCEEDED:"
+        echo ${SUCCEEDED} | tr ';' '\n'
+        echo "FAILED:"
+        echo ${FAILED} | tr ';' '\n'
     - name: Generate commit message
       id: generate_commit_message
       run: |
@@ -96,7 +102,24 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage=${{ steps.generate_commit_message.outputs.message }} --changed ${{ steps.notion_to_jekyll.outputs.changed }} --deleted ${{ steps.notion_to_jekyll.outputs.deleted }}"
-    - name: Print output of commit changes step
+    - name: Print commit URL
       if: ${{ vars.RUN_COMMIT_CHANGES == 'true' }}
       run: |
         echo "${{ steps.commit_changes.outputs.commitUrl }}"
+    - name: Prepare notification payload
+      id: notification_payload
+      shell: bash
+      env:
+        SUCCEEDED: ${{ steps.notion_to_jekyll.outputs.succeeded }}
+        FAILED: ${{ steps.notion_to_jekyll.outputs.failed }}
+      run: |
+        SX="$(echo ${SUCCEEDED} | sed 's/;/<br><br>/g')"
+        FX="$(echo ${FAILED} | sed 's/;/<br><br>/g')"
+        echo "succeeded=$SX" >> "$GITHUB_OUTPUT"
+        echo "failed=$FX" >> "$GITHUB_OUTPUT"
+    - name: Send Build Push Notification
+      uses: fjogeleit/http-request-action@master
+      with:
+        url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
+        method: 'POST'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Notion-to-Jekyll run (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{job.status}}.<br><br><b>SUCCEEDED</b><br><br>${{ steps.notification_payload.outputs.succeeded }}<br><br><b>FAILED</b><br><br>${{ steps.notification_payload.outputs.failed }}<br>", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

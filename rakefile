@@ -7,7 +7,7 @@ task :default => :check_install
 
 # task groups
 
-task :ci => [:check_internal_urls, :check_api]
+task :ci => [:check_install, :check_internal_urls, :check_api]
 
 #
 # task definitions
@@ -25,12 +25,11 @@ task :build => :cleanup do
   sh "bundle exec jekyll build"
 end
 
-task :list_tags do
-  sh "bundle exec jekyll list --tags --output csv"
-end
-
-task :list_categories do
-  sh "bundle exec jekyll list --categories --output csv"
+# call with `rake list[tags]` or `rake list[tags, json]`
+task :list, [:what, :format] do |t, args|
+  what = args[:what]
+  format = args[:format] || "csv"
+  sh "bundle exec jekyll list #{what} --output #{format}"
 end
 
 task :check_install do

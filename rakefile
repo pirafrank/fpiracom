@@ -7,7 +7,7 @@ task :default => :check_install
 
 # task groups
 
-task :ci => [:check_install, :check_internal_urls, :check_api]
+task :ci => [:check_install, :check_internal_urls, :check_api, :check_jsonp]
 
 #
 # task definitions
@@ -98,24 +98,25 @@ task :check_internal_urls => :build do
   HTMLProofer.check_directory('_site/', options).run
 end
 
-task :check_api => :build do
-  api_path = "_site/api"
-
-  puts "\n\nChecking API files in '#{api_path}' for valid JSON content\n\n"
-  api_files = []
-  Find.find(api_path) do |path|
-    if path =~ /index\.json$/
-      puts "Found API file: #{path}"
-      api_files << path
+def get_files(label, files_path, regex)
+  results = []
+  puts "\n\nChecking #{label} files in '#{files_path}' for valid JSON content\n\n"
+  Find.find(files_path) do |path|
+    if path =~ regex
+      puts "Found #{label} file: #{path}"
+      results << path
     end
   end
-  puts "\nFound #{api_files.length} API file#{api_files.length > 1 ? 's' : ''}\n\n"
+  puts "\nFound #{results.length} #{label} file#{results.length > 1 ? 's' : ''}\n\n"
+  results
+end
 
+def process_files(files, callback)
   onError = 0
-  api_files.each do |file|
-    json_content = File.read(file)
+  files.each do |file|
+    raw_content = File.read(file)
     begin
-      JSON.parse(json_content)
+      send(callback, raw_content)
     rescue JSON::ParserError => e
       onError += 1
       puts "Invalid JSON content in file: #{file}"
@@ -123,6 +124,31 @@ task :check_api => :build do
     end
   end
   puts "\nFinished: Found #{onError} files with invalid JSON content\n\n"
+  onError
+end
+
+def process_API_file(content)
+  JSON.parse(content)
+end
+
+def process_JSONP_file(content)
+  json_content = content[content.index('[')..content.rindex(']')]
+  JSON.parse(json_content)
+end
+
+task :check_api => :build do
+  api_path = "_site/api"
+  regex = /index\.json$/
+  api_files = get_files("API", api_path, regex)
+  onError = process_files(api_files, :process_API_file)
+  exit 1 if onError > 0
+end
+
+task :check_jsonp => :build do
+  jsonp_path = "_site/jsonp"
+  regex = /\.jsonp$/
+  jsonp_files = get_files("JSONP", jsonp_path, regex)
+  onError = process_files(jsonp_files, :process_JSONP_file)
   exit 1 if onError > 0
 end
 

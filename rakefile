@@ -125,3 +125,7 @@ task :check_api => :build do
   puts "\nFinished: Found #{onError} files with invalid JSON content\n\n"
   exit 1 if onError > 0
 end
+
+task :build_docker_image do
+  sh "docker build -t pirafrank/fpiracom -f Dockerfile ."
+end

@@ -2,7 +2,8 @@ FROM ruby:3.2.2
 
 # set ruby and nodejs versions to install during Docker image build
 ARG RUBY_VERSION=3.2.2
-ARG NODE_VERSION=18.15.0
+ARG NODE_VERSION=20.11.1
+ARG BUNDLER_VERSION=2.5.6
 
 ARG USER_UID=1000
 
@@ -19,7 +20,7 @@ USER jekyll
 
 # install rvm
 RUN curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-Run curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
+RUN curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
 RUN curl -sSL https://get.rvm.io | bash -s stable
 
 ENV PATH /home/jekyll/.rvm/bin/rvm:$PATH
@@ -27,7 +28,7 @@ ENV PATH /home/jekyll/.rvm/bin/rvm:$PATH
 # install ruby
 RUN /bin/bash -l -c "rvm install ${RUBY_VERSION}"
 RUN /bin/bash -l -c "rvm use ${RUBY_VERSION} --default"
-RUN /bin/bash -l -c "gem update --system && gem install bundler:2.5.6"
+RUN /bin/bash -l -c "gem install bundler -v ${BUNDLER_VERSION}"
 
 # install nvm
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
@@ -41,6 +42,7 @@ RUN . $NVM_DIR/nvm.sh \
     && nvm install ${NODE_VERSION} \
     && nvm use ${NODE_VERSION}
 
+RUN echo "alias jk='bundle exec jekyll'" >> $HOME/.bashrc
 RUN echo "alias jks='bundle exec jekyll serve --host=0.0.0.0'" >> $HOME/.bashrc
 
 RUN mkdir /home/jekyll/app

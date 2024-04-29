@@ -66,7 +66,7 @@ jobs:
         BRANCH: ${{ github.ref_name }}
         CHANGED: ${{ steps.notion_to_jekyll.outputs.changed }}
         DELETED: ${{ steps.notion_to_jekyll.outputs.deleted }}
-        DRY_RUN: ${{ steps.notion_to_jekyll.outputs.dry-run }}
+        DIRTY: ${{ steps.notion_to_jekyll.outputs.dirty }}
         SUCCEEDED: ${{ steps.notion_to_jekyll.outputs.succeeded }}
         FAILED: ${{ steps.notion_to_jekyll.outputs.failed }}
       run: |
@@ -79,13 +79,14 @@ jobs:
         echo NOTION_TO_JEKYLL_RELATIVE_DATE=${{ vars.NOTION_TO_JEKYLL_RELATIVE_DATE }}
         echo NOTION_TO_JEKYLL_DRY_RUN=${{ vars.NOTION_TO_JEKYLL_DRY_RUN }}
         echo RUN_COMMIT_CHANGES=${{ vars.RUN_COMMIT_CHANGES }}
+        echo DRY_RUN=${{ vars.NOTION_TO_JEKYLL_DRY_RUN }}
         printf "\n\n***** Notion to Jekyll output *****\n\n"
         echo "CHANGED=$CHANGED"
         echo "DELETED=$DELETED"
-        echo "DRY_RUN=$DRY_RUN"
-        echo "SUCCEEDED:"
+        echo "DIRTY=$DIRTY"
+        echo "SUCCEEDED: $(printf ${SUCCEEDED} | tr ';' '\n' | wc -l) items"
         echo ${SUCCEEDED} | tr ';' '\n'
-        echo "FAILED:"
+        echo "FAILED: $(printf ${FAILED} | tr ';' '\n' | wc -l) items"
         echo ${FAILED} | tr ';' '\n'
     - name: Generate commit message
       id: generate_commit_message
@@ -97,13 +98,13 @@ jobs:
     - name: Commit changes
       id: commit_changes
       uses: pirafrank/github-graphql-client@v1
-      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && vars.NOTION_TO_JEKYLL_DRY_RUN != 'true' }}
+      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.notion_to_jekyll.outputs.dirty == 'true' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage=${{ steps.generate_commit_message.outputs.message }} --changed ${{ steps.notion_to_jekyll.outputs.changed }} --deleted ${{ steps.notion_to_jekyll.outputs.deleted }}"
+        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage='${{ steps.generate_commit_message.outputs.message }}' --changed ${{ steps.notion_to_jekyll.outputs.changed }} --deleted ${{ steps.notion_to_jekyll.outputs.deleted }}"
     - name: Print commit URL
-      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' }}
+      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.notion_to_jekyll.outputs.dirty == 'true' }}
       run: |
         echo "${{ steps.commit_changes.outputs.commitUrl }}"
     - name: Prepare notification payload

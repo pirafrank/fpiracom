@@ -17,6 +17,6 @@ group :jekyll_plugins do
   gem 'jekyll-minifier'
   gem 'jekyll-environment-variables'
   gem 'jekyll-algolia'
-  gem 'jekyll-listme', git: 'https://github.com/pirafrank/jekyll-listme', branch: 'main'
+  gem 'jekyll-listme', github: 'pirafrank/jekyll-listme'
   #gem 'jekyll-listme', path: '/home/francesco/Code/projects/jekyll-listme'
 end

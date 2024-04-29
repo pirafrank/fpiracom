@@ -84,9 +84,9 @@ jobs:
         echo "CHANGED=$CHANGED"
         echo "DELETED=$DELETED"
         echo "DIRTY=$DIRTY"
-        echo "SUCCEEDED: $(printf ${SUCCEEDED} | tr ';' '\n' | wc -l) items"
+        echo "SUCCEEDED:"
         echo ${SUCCEEDED} | tr ';' '\n'
-        echo "FAILED: $(printf ${FAILED} | tr ';' '\n' | wc -l) items"
+        echo "FAILED:"
         echo ${FAILED} | tr ';' '\n'
     - name: Generate commit message
       id: generate_commit_message
@@ -102,7 +102,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage='${{ steps.generate_commit_message.outputs.message }}' --changed ${{ steps.notion_to_jekyll.outputs.changed }} --deleted ${{ steps.notion_to_jekyll.outputs.deleted }}"
+        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage=\"${{ steps.generate_commit_message.outputs.message }}\" --changed ${{ steps.notion_to_jekyll.outputs.changed }} --deleted ${{ steps.notion_to_jekyll.outputs.deleted }}"
     - name: Print commit URL
       if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.notion_to_jekyll.outputs.dirty == 'true' }}
       run: |
@@ -123,4 +123,4 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Notion-to-Jekyll run (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{job.status}}.<br><br><b>SUCCEEDED</b><br><br>${{ steps.notification_payload.outputs.succeeded }}<br><br><b>FAILED</b><br><br>${{ steps.notification_payload.outputs.failed }}<br>", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Notion-to-Jekyll run (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{job.status}}.<br><br><b>SUCCEEDED</b><br>${{ steps.notification_payload.outputs.succeeded }}<br><b>FAILED</b><br>${{ steps.notification_payload.outputs.failed }}<br>", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

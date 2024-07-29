@@ -15,9 +15,18 @@ gem install bundler
 bundle install
 ```
 
-## Run it
+## Build and run it
 
-Use either:
+Via rake, running either:
+
+```sh
+rake build
+rake serve
+```
+
+to build or serve.
+
+Or, as usual for Jekyll websites, you can use:
 
 ```sh
 bundle exec jekyll serve
@@ -30,16 +39,11 @@ add `--future` to compile and show post with later date than today;
 
 add `--drafts` to compile and show drafts.
 
-## Build it
+### Rake
 
-Use either:
+As many other Ruby-based projects, most tasks listed in this readme are also available as `rake` tasks for brevity and consistency.
 
-```sh
-bundle exec jekyll build
-bundle exec jekyll b
-jekyll build
-jekyll b
-```
+You can check the `rakefile` and use `rake -AT` to list all of them.
 
 ### Use environment variables
 
@@ -61,9 +65,9 @@ ALGOLIA_API_KEY='123abc123abc123abc123abc123abc12' bundle exec jekyll algolia
 
 where the `ALGOLIA_API_KEY` is the Admin API Key you get from [your account dashboard](https://www.algolia.com/account/api-keys/all).
 
-## Run in Docker
+## Dev/Preview in Docker
 
-You can run the development server in a docker container. The image contains: `rvm`, `ruby`, `nvm`, and `nodejs`.
+You can run the development server in a docker container. The image is not specifi to the blog and it's built as a general purpose Jekyll one. It contains: `rvm`, `ruby`, `jekyll`, `nvm`, and `nodejs`.
 
 On Linux:
 

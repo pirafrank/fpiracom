@@ -52,3 +52,4 @@ WORKDIR /home/jekyll/app
 # And do not forget to run 'bundle install'!
 
 CMD ["/bin/bash"]
+

@@ -2,36 +2,43 @@ require 'html-proofer'
 require 'find'
 
 # default task
-
+desc "default task to run then no task is specified to rake"
 task :default => :check_install
 
+#
 # task groups
+#
 
+desc "group of tasks to run in CI environments"
 task :ci => [:check_install, :check_internal_urls, :check_api, :check_jsonp]
 
 #
 # task definitions
 #
 
+desc "remove _site dir and its contents"
 task :cleanup do
   sh "rm -rf _site"
 end
 
+desc "live website server with livereload, drafts, and future posts"
 task :serve do
   sh "bundle exec jekyll serve --livereload --future --drafts"
 end
 
+desc "remove _site dir, then build website"
 task :build => :cleanup do
   sh "bundle exec jekyll build"
 end
 
-# call with `rake list[tags]` or `rake list[tags, json]`
+desc "list tags, categories, etc (Eg `rake list[tags]` or `rake list[tags, json]`)"
 task :list, [:what, :format] do |t, args|
   what = args[:what]
   format = args[:format] || "csv"
   sh "bundle exec jekyll list #{what} --output #{format}"
 end
 
+desc "run jekyll doctor"
 task :check_install do
   sh "bundle exec jekyll doctor"
 end
@@ -86,12 +93,14 @@ check_urls_options = {
   }
 }
 
+desc "check href attributes in generated website for broken links (all)"
 task :check_urls => :build do
   options = check_urls_options
   options[:disable_external] = false
   HTMLProofer.check_directory('_site/', options).run
 end
 
+desc "check href attributes in generated website for broken links (internal links only)"
 task :check_internal_urls => :build do
   options = check_urls_options
   options[:disable_external] = true
@@ -136,6 +145,7 @@ def process_JSONP_file(content)
   JSON.parse(json_content)
 end
 
+desc "check static JSON files providing APIs to be valid"
 task :check_api => :build do
   api_path = "_site/api"
   regex = /index\.json$/
@@ -144,6 +154,7 @@ task :check_api => :build do
   exit 1 if onError > 0
 end
 
+desc "check static JSONP files providing website metadata to be valid"
 task :check_jsonp => :build do
   jsonp_path = "_site/jsonp"
   regex = /\.jsonp$/
@@ -152,6 +163,8 @@ task :check_jsonp => :build do
   exit 1 if onError > 0
 end
 
+desc "build a general purpose Jekyll Docker image to run the website"
 task :build_docker_image do
-  sh "docker build -t pirafrank/fpiracom -f Dockerfile ."
+  sh "docker build -t pirafrank/jekyll -f Dockerfile ."
 end
+

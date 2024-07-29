@@ -168,3 +168,87 @@ task :build_docker_image do
   sh "docker build -t pirafrank/jekyll -f Dockerfile ."
 end
 
+def generate_website()
+  require 'jekyll'
+
+  # Set up Jekyll configuration
+  config = Jekyll.configuration({
+    'source' => '.', # Assumes the task is run from the root of your Jekyll project
+    'destination' => '_site',
+    'show_drafts' => true,
+    'serving' => false
+  })
+
+  # Create the site object
+  site = Jekyll::Site.new(config)
+
+  # Process the site to gather categories
+  site.reset
+  site.read
+  site
+end
+
+def get_categories(site)
+  categories = site.categories.keys
+  categories.sort
+end
+
+def get_tags(site)
+  tags = site.tags.keys
+  tags.sort
+end
+
+def format_list_as_yaml(items)
+  formatted = items.sort.map { |i| "\"#{i}\"" }.join(", ")
+  "[#{formatted}]"
+end
+
+def create_new(item_type)
+  site = generate_website()
+  categories = site.categories.keys
+  tags = site.tags.keys
+
+  date = Time.now
+  day = date.strftime('%Y-%m-%d').to_s
+
+  puts "Please enter a title for the #{item_type}:\n"
+  title = STDIN.gets.chomp
+
+  formatted_title = title.downcase.split(" ").join("-")
+  filename = "#{day}-#{formatted_title}.md"
+  contents = <<-STR
+---
+title: "#{title}"
+date: #{day}
+subtitle: Some subtitle
+description: Write here a longer description about the blog post.
+category: #{format_list_as_yaml(categories)}
+tags: #{format_list_as_yaml(tags)}
+seoimage: "300x/some-seo-pic.jpg"
+---
+
+![image description]({{ site.baseurl }}/static/postimages/300x/some-pic.jpg)
+
+Here goes the blog post text...
+
+I hope it helps. Thank for reading.
+
+---
+  STR
+
+  File.open("_#{item_type}s/#{filename}", "w") do |f|
+    f.write(contents)
+  end
+  puts "New post generated"
+end
+
+desc "create a new blog post from template"
+task :new_post do
+  create_new("post")
+end
+
+desc "create a new blog draft from template"
+task :new_draft do
+  create_new("draft")
+end
+

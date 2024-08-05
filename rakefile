@@ -252,3 +252,8 @@ task :new_draft do
   create_new("draft")
 end
 
+desc "Show size of all post images"
+task :post_image_size do
+  sh 'find static/postimages -type f \( -iname "*.jpeg" -o -iname "*.jpg" -o -iname "*.png" \) -exec identify -format "%[fx:w]x%[fx:h] %[f]\n" {} \; | awk \'{print $2, $1}\''
+end
+

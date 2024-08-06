@@ -1,13 +1,16 @@
 ---
-title: "Oh my! Terminals are dropping from above"
-subtitle: "A look at quake-mode for terminal applications"
-description: "A look at quake-mode and terminals supporting it"
+title: "Oh my! Terminals dropping from above"
+subtitle: "A look at quake-mode in terminal applications"
+description: "A look at quake-mode and terminal applications supporting it"
 category: [ "Posts" ]
 tags: [ "terminal setup", "Linux", "Windows", "Tools" ]
-seoimage: ""
+seoimage: "3006/32659-quake-mode.jpg"
 ---
 
-![default caption](https://fpira.com/static/postimages/3006/32659-quake-mode.jpg)
+{% include image.html
+url="/static/postimages/3006/32659-quake-mode.jpg"
+desc="Hyper terminal running in quake-mode on Windows 11"
+%}
 
 As a developer, your terminal is an essential tool and often the first piece of software you customize. It's where you run commands, code, connect to servers, interact with CLI tools, and so much more. For many of us, it’s our working home. Thus having a quick access to our terminal can save precious seconds that add up until the end of the day (night?).
 
@@ -97,4 +100,3 @@ Cross-platform:
 As a developer, optimizing your tools for efficiency is crucial. Quake mode terminals provide a seamless and efficient way to keep your terminal always within reach. Whether you’re using Linux, macOS, or Windows, there’s a terminal with quake-mode that fits your needs. Explore these options and integrate one into your workflow to experience a significant boost in productivity.
 
 I hope it helps. Thanks for reading.
-

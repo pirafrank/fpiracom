@@ -4,10 +4,14 @@ subtitle: "A collection of essential CLI tools to work with Kubernetes"
 description: "A collection of essential command-line tools to work with Kubernetes"
 category: [ "Posts" ]
 tags: [ "Kubernetes", "terminal setup", "Tools", "Linux" ]
-seoimage: ""
+seoimage: "3008/57860-untitled.png"
 ---
 
-![default caption](https://fpira.com/static/postimages/3008/57860-untitled.png)
+{% include image.html
+url="/static/postimages/3008/57860-untitled.png"
+alt="A captain sailing away in a ship. Image generated with AI."
+desc="Image generated with AI"
+%}
 
 Kubernetes is right now one of the most common systems to deploy containerized services at scale and has become the de facto standard for container orchestration in the industry. You need the right tools to take the most out of it. Here are a few which have become my daily drivers helping deploying, monitoring, and debugging through the lifecycle. I consider them the bare minimum for people working with Kubernetes.
 

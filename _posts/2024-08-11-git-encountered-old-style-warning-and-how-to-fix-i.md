@@ -1,7 +1,7 @@
 ---
-title: "‘git encountered old-style’ warning and how to fix it"
-subtitle: "some subtitle"
-description: "some desc"
+title: "How to fix ‘git encountered old-style’ warning"
+subtitle: "A quick fix for this warning in git CLI"
+description: "A quick fix for 'old-style' warning in git"
 category: [ "How-tos" ]
 tags: [ "git" ]
 seoimage: ""
@@ -14,7 +14,8 @@ Git is a very powerful piece of software, capable of tracking thousands of files
 If you are reading this, you may have encountered an error like the one below:
 
 ```text
-warning: encountered old-style '/Users/francesco/dotfiles/git/hooks' that should be '%(prefix)//Users/francesco/dotfiles/git/hooks’
+warning: encountered old-style '/Users/francesco/dotfiles/git/hooks'
+that should be '%(prefix)//Users/francesco/dotfiles/git/hooks’
 ```
 
 ### Solution
@@ -28,4 +29,3 @@ warning: encountered old-style '/Users/francesco/dotfiles/git/hooks' that should
 Curious about why it happens? Read more [here](https://git-scm.com/docs/git-config#Documentation/git-config.txt-pathname).
 
 I hope it helps. Thanks for reading.
-

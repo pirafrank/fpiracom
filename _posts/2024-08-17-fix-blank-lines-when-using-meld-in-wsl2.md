@@ -4,10 +4,13 @@ subtitle: "Meld may show a blank content when running on Ubuntu on WSL2 (WSLg)"
 description: "How to fix Meld showing blank content when running on Ubuntu on WSL2 (WSLg)"
 category: [ "How-tos" ]
 tags: [ "Linux", "WSL", "terminal setup" ]
-seoimage: ""
+seoimage: "3007/30013-meld-on-wslg.jpg"
 ---
 
-![default caption](https://fpira.com/static/postimages/3007/30013-meld-on-wslg.jpg)
+{% include image.html
+url="/static/postimages/3007/30013-meld-on-wslg.jpg"
+desc="Meld running via WSLg on Windows 11"
+%}
 
 WSL (Windows Subsystem for Linux) is a compatibility layer in Windows that allows you to run native Linux environments directly on Windows. It has gained traction becoming a must for many developers whose employer provides Windows machines. And as part of improvements in Windows 11, WSL2 includes [_WSLg_](https://github.com/microsoft/wslg), which enables running graphic applications on WSL and have them sit aside native Windows apps. WSLg on Windows 11 is enabled by default, just install some X11 app and test yourself. For example:
 

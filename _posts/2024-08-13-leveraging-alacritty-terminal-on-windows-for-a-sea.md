@@ -1,5 +1,5 @@
 ---
-title: "Leveraging Alacritty Terminal on Windows for a Seamless Experience in Both PowerShell and WSL2"
+title: "Leveraging Alacritty terminal on Windows for a seamless experience in both PowerShell and WSL2"
 subtitle: "A Windows terminal setup to bridge PowerShell and WSL out of Windows Terminal"
 description: "Find out how to quickstart a new terminal experience in both PowerShell and WSL2 by using Alacritty on Windows"
 category: [ "How-tos" ]
@@ -7,7 +7,11 @@ tags: [ "Windows", "Windows 10", "terminal setup", "Alacritty" ]
 seoimage: "3005/19650-d65cf697-84e1-4a00-8f16-16bcc334044f001.jpg"
 ---
 
-# Leveraging Alacritty Terminal on Windows for a Seamless Experience in Both PowerShell and WSL2
+{% include image.html
+url="/static/postimages/3005/19650-d65cf697-84e1-4a00-8f16-16bcc334044f001.jpg"
+alt="A lady using a laptop with a terminal window open. Image generated with AI."
+desc="Image generated with AI"
+%}
 
 [Alacritty](https://github.com/alacritty/alacritty) is a Rust-coded high-performance terminal emulator known for its speed and efficiency. It stands out because of its OpenGL ES-based GPU acceleration, multi-window support, and cross-platform capabilities as it runs on Linux, BSD, macOS as well as Windows.. This makes it a flexible terminal and one of the best out there.
 
@@ -63,11 +67,12 @@ and `start in` to:
 C:\Users\francesco\scoop\apps\alacritty\current
 ```
 
-Substitute `<WSL_DISTRO_NAME>` with your specific WSL distribution name. For more details on zsh configurations, check the zsh dir in my dotfiles repo.
+Substitute `<WSL_DISTRO_NAME>` with your specific WSL distribution name and change your username and config files names in paths to yours. For more details on zsh configurations, check the zsh dir in my dotfiles repo.
+
+As above, you can move the shortcut to Desktop, Start Menu, or StartUp apps folder.
 
 ## Conclusion
 
 I use Alacritty for both Linux and PowerShell environments on Windows as it brings big performance and usability benefits. Its choice not to support splits and tabs alike removes a variable from the equation and lets you focus on your task or run your multiplexer of choice. It has been my go-to choice for some time and I like how it allows for various degrees of customizations to create a setup that best meets your workflow needs.
 
 Thanks for reading. I hope it helps.
-

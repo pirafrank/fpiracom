@@ -1,6 +1,7 @@
 # fpira.com source code
 
 [![Build and Deploy](https://github.com/pirafrank/fpiracom/actions/workflows/deploy.yml/badge.svg)](https://github.com/pirafrank/fpiracom/actions/workflows/deploy.yml)
+[![Notion to Jekyll](https://github.com/pirafrank/fpiracom/actions/workflows/notion_to_jekyll.yml/badge.svg)](https://github.com/pirafrank/fpiracom/actions/workflows/notion_to_jekyll.yml)
 
 Just my website. Visit [fpira.com](https://fpira.com) for a live version.
 

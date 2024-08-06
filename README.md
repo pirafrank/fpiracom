@@ -271,7 +271,7 @@ The plugin is in the `_plugins` folder.
 
 Posts can be easily linked using:
 
-```
+```md
 [some text]({% post_url 2016-09-13-my-jekyll-workflow-part1 %})
 ```
 
@@ -279,13 +279,13 @@ where `2016-09-13-my-jekyll-workflow-part1` is the filename in `_posts` dir with
 
 Anything else can be linked like:
 
-```
+```text
 {% link static/postfiles/my-jekyll-workflow-part3/policy.txt %}
 ```
 
 which specifies the full path from Jekyll root folder to the file, including filename and extension.
 
-More details here: https://mademistakes.com/mastering-jekyll/how-to-link/.
+More details here: <https://mademistakes.com/mastering-jekyll/how-to-link/>.
 
 ### External links
 

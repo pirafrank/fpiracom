@@ -3,7 +3,7 @@ require 'find'
 
 # default task
 desc "default task to run then no task is specified to rake"
-task :default => :check_install
+task :default => [:check_install, :tasks]
 
 #
 # task groups
@@ -15,6 +15,11 @@ task :ci => [:check_install, :check_internal_urls, :check_api, :check_jsonp]
 #
 # task definitions
 #
+
+desc "show rake tasks"
+task :tasks do
+  sh "rake -AT"
+end
 
 desc "remove _site dir and its contents"
 task :cleanup do
@@ -29,6 +34,11 @@ end
 desc "remove _site dir, then build website"
 task :build => :cleanup do
   sh "bundle exec jekyll build"
+end
+
+desc "remove _site dir, then build website (include drafts and future posts)"
+task :build_all => :cleanup do
+  sh "bundle exec jekyll build --future --drafts"
 end
 
 desc "list tags, categories, etc (Eg `rake list[tags]` or `rake list[tags, json]`)"
@@ -229,9 +239,29 @@ seoimage: "300x/some-seo-pic.jpg"
 
 ![image description]({{ site.baseurl }}/static/postimages/300x/some-pic.jpg)
 
+{% include image.html
+url="/static/postimages/2020-06-08/office.jpg"
+desc="Image by Markus Spiske from Pixabay"
+credits="https://pixabay.com/users/markusspiske-670330/"
+%}
+
+{% gist 40880dbc3e2dcfbdc1dd817b8880fa66 %}
+
+{% youtube abc123abc123 %}
+
+{% vimeo abc123abc123 %}
+
+{% ted abc123abc123 %}
+
+[some text for relative link]({% post_url 2016-09-13-my-jekyll-workflow-part1 %})
+
+{% link static/postfiles/my-jekyll-workflow-part3/policy.txt %}
+
+[Some external link]({{ site.data.external.awesomelink }}){:target="_blank"}{:rel="noopener noreferrer"}
+
 Here goes the blog post text...
 
-I hope it helps. Thank for reading.
+I hope it helps. Thanks for reading.
 
 ---
   STR
@@ -256,4 +286,3 @@ desc "Show size of all post images"
 task :post_image_size do
   sh 'find static/postimages -type f \( -iname "*.jpeg" -o -iname "*.jpg" -o -iname "*.png" \) -exec identify -format "%[fx:w]x%[fx:h] %[f]\n" {} \; | awk \'{print $2, $1}\''
 end
-

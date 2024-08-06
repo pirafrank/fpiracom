@@ -1,16 +1,17 @@
+{% assign alt_text = include.alt | default: include.desc %}
 <figure class="image">
   <div style="display:flex; flex-direction: column; align-items: center">
     <a href="{{ site.baseurl }}{{ include.url }}" class="glightbox">
-      <img src="{{ site.baseurl }}{{ include.url }}" alt="{{ include.desc }}">
+      <img src="{{ site.baseurl }}{{ include.url }}" alt="{{ alt_text }}">
     </a>
-    {% if include.link %}
+    {% if include.link and include.desc %}
       <figcaption>
         <a href="{{ include.link }}">{{ include.desc }}</a>
         {% if include.credits %}
           (<a href="{{ include.credits }}">credits</a>)
         {% endif %}
       </figcaption>
-    {% else %}
+    {% elsif include.desc %}
       <figcaption>
         {{ include.desc }}
         {% if include.credits %}

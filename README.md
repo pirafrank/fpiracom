@@ -174,6 +174,7 @@ This is done using the `_includes/image.html` include.
 {% include image.html
 url="/static/postimages/2020-06-08/office.jpg"
 desc="Image by Markus Spiske from Pixabay"
+alt="An office with a desk and a computer mouse"
 credits="https://pixabay.com/users/markusspiske-670330/"
 %}
 ```
@@ -184,17 +185,19 @@ or if caption has a link
 {% include image.html
 url="/static/postimages/2020-06-08/office.jpg"
 desc="Image by Markus Spiske from Pixabay"
+alt="An office with a desk and a computer mouse"
 link="https://somehost.local/some/article"
 credits="https://pixabay.com/users/markusspiske-670330/"
 %}
 ```
 
-attribute|required|use
----|---|---
-`url`|yes|image url
-`desc`|yes|image caption and alt text
-`link`|no|if your caption needs to point to a url
-`credits`|no|url to image author
+attribute|type|required|use
+---|---|---|---
+`url`|URL path|yes|image url relative path, prepended by `{{ site.baseurl }}`
+`alt`|text|if no `desc`|alt text
+`desc`|text|if no `alt`|image caption. Also alt text if `alt` is not specified
+`link`|URL|no|if your caption needs to point to a url, this will be the link to it
+`credits`|URL|no|url to credit image author
 
 ### Toggle lists / accordions
 

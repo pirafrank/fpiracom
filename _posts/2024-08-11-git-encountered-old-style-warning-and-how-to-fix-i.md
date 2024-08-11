@@ -3,7 +3,7 @@ title: "How to fix ‘git encountered old-style’ warning"
 subtitle: "A quick fix for this warning in git CLI"
 description: "A quick fix for 'old-style' warning in git"
 category: [ "How-tos" ]
-tags: [ "git" ]
+tags: [ "Git" ]
 seoimage: ""
 ---
 

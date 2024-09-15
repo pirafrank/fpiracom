@@ -102,6 +102,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-make-sitemap (1.2.1)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -193,6 +194,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-gist
   jekyll-listme!
+  jekyll-make-sitemap
   jekyll-minifier
   jekyll-sitemap
   nokogiri

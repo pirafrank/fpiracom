@@ -205,6 +205,13 @@ jekyll-minifier:
 #    - 'manifest.json'
 #    - 'service-worker.js'
 
+jekyll-make-sitemap:
+  pages: true
+  posts: true
+  environments:
+   - development
+   - production
+
 include:
   - .well-known/nostr.json
   - .well-known/openpgpkey/policy

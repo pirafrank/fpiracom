@@ -22,7 +22,7 @@ task :tasks do
 end
 
 desc "remove _site dir and its contents"
-task :cleanup do
+task :clean do
   sh "rm -rf _site"
 end
 
@@ -32,13 +32,19 @@ task :serve do
 end
 
 desc "remove _site dir, then build website"
-task :build => :cleanup do
+task :build => :clean do
   sh "bundle exec jekyll build"
 end
 
 desc "remove _site dir, then build website (include drafts and future posts)"
-task :build_all => :cleanup do
+task :build_all => :clean do
   sh "bundle exec jekyll build --future --drafts"
+end
+
+desc "remove _site dir, then build website for production"
+task :release => :clean do
+  ENV['JEKYLL_ENV'] = 'production'
+  sh 'echo "Building for $JEKYLL_ENV" ; bundle exec jekyll build'
 end
 
 desc "list tags, categories, etc (Eg `rake list[tags]` or `rake list[tags, json]`)"

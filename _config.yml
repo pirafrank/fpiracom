@@ -237,4 +237,5 @@ exclude:
     - '.html_proofer_cache/**'
     - zj-workspace.kdl
     - .zellij_layout.kdl
+    - schemas/**
 

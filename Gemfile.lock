@@ -52,7 +52,7 @@ GEM
     git (1.18.0)
       addressable (~> 2.8)
       rchardet (~> 1.8)
-    google-protobuf (3.25.2)
+    google-protobuf (3.25.5)
     hashery (2.1.2)
     html-proofer (5.0.8)
       addressable (~> 2.3)

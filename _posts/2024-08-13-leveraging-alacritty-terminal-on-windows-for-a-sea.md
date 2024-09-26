@@ -1,11 +1,13 @@
 ---
-title: "Leveraging Alacritty terminal on Windows for a seamless experience in both PowerShell and WSL2"
+title: "Leveraging Alacritty terminal on Windows for a seamless experience in both PowerShell and WSL2 (Updated)"
 subtitle: "A Windows terminal setup to bridge PowerShell and WSL out of Windows Terminal"
 description: "Find out how to quickstart a new terminal experience in both PowerShell and WSL2 by using Alacritty on Windows"
 category: [ "How-tos" ]
 tags: [ "Windows", "Windows 10", "terminal setup", "Alacritty" ]
 seoimage: "3005/19650-d65cf697-84e1-4a00-8f16-16bcc334044f001.jpg"
 ---
+
+*Update (Sept 26, 2024): Changed --working-directory option for WSL2 setup to open shell in WSL2 home dir.*
 
 {% include image.html
 url="/static/postimages/3005/19650-d65cf697-84e1-4a00-8f16-16bcc334044f001.jpg"
@@ -35,7 +37,7 @@ The main configuration file is `alacritty.yml` and allows substantial customizat
 
 Configuring Alacritty to work with PowerShell can be done via the YAML config file.
 
-An alternative is to create a shortcut in Windows and start Alacritty by passing a different configuration to it. Create the shortcut, then in _Properties_ set `target` to:
+An alternative is to create a shortcut in Windows and start Alacritty by passing a different configuration to it. Create the shortcut, then in *Properties* set `target` to:
 
 ```text
 C:\Users\francesco\scoop\apps\alacritty\current\alacritty.exe --config-file "C:\Users\francesco\dotfiles\gui_terminals\alacritty\alacritty_pwsh.yml" --working-directory "C:\Users\francesco"
@@ -55,10 +57,10 @@ Now you can now move it to Desktop, Start Menu (`C:\ProgramData\Microsoft\Window
 
 To open WSL2 sessions seamlessly with Alacritty, you can make it run `wsl.exe` . In this case ensure it is configured correctly to launch your preferred distro running your favorite shell (in my case, `zsh`). Alternatively, like above, it is possible to create a Windows shortcut to streamline this process and make it work with different WSL2 distro setups.
 
-Create the shortcut, then in _Properties_ set `target` to:
+Create the shortcut, then in *Properties* set `target` to:
 
 ```text
-C:\\Users\\francesco\\scoop\\apps\\alacritty\\current\\alacritty.exe --working-directory "%USERPROFILE%" -e wsl -d <WSL_DISTRO_NAME> zsh
+C:\\Users\\francesco\\scoop\\apps\\alacritty\\current\\alacritty.exe --working-directory=\\wsl$\Ubuntu-20.04\home\francesco -e wsl -d <WSL_DISTRO_NAME> zsh
 ```
 
 and `start in` to:

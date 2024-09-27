@@ -16,6 +16,7 @@ runs:
         ACTION_PATH: ${{ github.action_path }}
         GITHUB_WORKSPACE: ${{ github.workspace }}
       run: |
+        # prepend GITHUB_WORKSPACE if target_file is not an absolute path
         if [[ $TARGET_FILE != /* ]]; then
           TARGET_FILE="${GITHUB_WORKSPACE}/${TARGET_FILE}"
         fi

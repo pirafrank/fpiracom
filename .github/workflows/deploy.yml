@@ -12,7 +12,6 @@ on:
       - '_jekyll_ignore/**'
       - README.md
       - '.gitignore'
-      - '_drafts/**'
       - 'repo_utils/**'
       - '.vscode'
       - '.vercelignore'
@@ -84,6 +83,7 @@ jobs:
     # Perform CI checks
     - name: CI checks
       uses: ./.github/actions/ci-checks
+      if: github.ref == 'refs/heads/main'
 
     # Vercel deploy
     - name: Deploy on Vercel

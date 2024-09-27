@@ -231,6 +231,7 @@ exclude:
     - 'repo_utils/**'
     - '_templates/**'
     - vercel.json
+    - vercel.sh
     - Dockerfile
     - '_posts/accordions/**'
     - '_drafts/accordions/**'

@@ -1,5 +1,5 @@
 
-name: 'Check build'
+name: 'CI'
 
 on:
   # Note that GITHUB_SHA for this event is the last merge commit of the pull

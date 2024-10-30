@@ -1,5 +1,27 @@
 [
   {
+    "name": "Practical DevSecOps Certified DevSecOps Expert",
+    "issuer": "Practical DevSecOps",
+    "code": "CDE",
+    "id": "CDEBEFBOE7F",
+    "url": "/assets/files/honors/CDE-Francesco-Pira-certificate.pdf",
+    "credlyUrl": "https://www.credly.com/badges/3febd710-0c16-473c-a619-f85d066e076c",
+    "dateAchieved": "30/10/2024",
+    "dateRenewed": "",
+    "dateExpires": ""
+  },
+  {
+    "name": "Practical DevSecOps Certified DevSecOps Professional",
+    "issuer": "Practical DevSecOps",
+    "code": "CDP",
+    "id": "CDPBEFBOE7F",
+    "url": "/assets/files/honors/CDP-Francesco-Pira-certificate.pdf",
+    "credlyUrl": "https://www.credly.com/badges/6a6cb794-b292-48ae-b095-89514e4826d0",
+    "dateAchieved": "09/10/2024",
+    "dateRenewed": "",
+    "dateExpires": ""
+  },
+  {
     "name": "MongoDB Developer Foundation",
     "issuer": "MongoDB",
     "code": "DF01",

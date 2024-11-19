@@ -1,10 +1,18 @@
 ---
-title: "Docker Desktop's Compose Plugin Bug: A Quick Fix for Windows 11 Users"
+title: "Docker Desktop's Compose Plugin Bug: A Quick Fix for Windows 11 Users (updated)"
 subtitle: Upgrading Docker Compose plugin on Docker for Windows and WSL2
 description: "How to upgrade Docker Compose plugin on Docker for Windows and WSL2"
 category: [ "How-tos" ]
 tags: [ "Windows", "Docker", "WSL" ]
 seoimage: "3010/15610-screenshot_768.png"
+---
+
+### Update (November 20, 2024)
+
+Docker Desktop `4.36` has just been released ([notes here](https://docs.docker.com/desktop/release-notes/#4360)) and it ships with `docker-compose` version `2.30.3`.
+
+Original post follows.
+
 ---
 
 Like many developers working on Windows 11, I rely on Docker Desktop with WSL2 integration for running containers, a setup that has proven both reliable and efficient. However, after upgrading to Docker Desktop 4.35.1, I encountered an unexpected issue: the "_unexpected character '-' in variable name_" error in the docker-compose plugin.

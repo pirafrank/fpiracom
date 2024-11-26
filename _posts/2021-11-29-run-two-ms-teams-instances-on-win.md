@@ -7,7 +7,15 @@ tags: ['Windows','Windows 10']
 seoimage: 2021-11-29/teams.png
 ---
 
-{% include image.html url="/static/postimages/2021-11-29/teams.png" desc="Two Microsoft Teams instances 
+### Update (November 26, 2024)
+
+The procedure described in this blog post is no longer applicable to recent versions of Microsoft Teams, referred to as "New." In 2024, Microsoft transitioned users to this updated version. The procedure is now unnecessary because the new Teams provides native support for managing multiple accounts and organizations within the same account. To switch between them, simply click on your profile picture. Additionally, a new icon featuring a user and a bell and located in the top-right corner of the app, helps you stay in the loop by displaying notifications across all the organizations you've signed into.
+
+The original post follows.
+
+---
+
+{% include image.html url="/static/postimages/2021-11-29/teams.png" desc="Two Microsoft Teams instances
 running on Windows 10" %}
 
 Since the pandemic, Microsoft Teams has been the central hub of work communication for me. But not only me, other companies and clients we work with have adopted it as their go-to tool. They have their own organizations and sometimes we get (and have to use) an account there to comply to their policies.
@@ -24,4 +32,4 @@ I've tested it on Windows 10 21H1 and it looks like it works well enough. Here's
 
 {% gist 40880dbc3e2dcfbdc1dd817b8880fa66 %}
 
-Hope it helps. Thanks for reading.
+I hope it helps. Thanks for reading.

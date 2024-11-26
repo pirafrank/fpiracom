@@ -1,10 +1,10 @@
 ---
 title: "Fixing vim-plug update error on Neovim on Windows"
-subtitle: "About PlugUpdate quitting on error because ‘remote process closed or ended abnormally’"
-description: "A guide to fix ‘An unknown element \\"\\" was received’ while upgrading plugins with vim-plug on Neovim on Windows"
+subtitle: "About PlugUpdate quitting on error because 'remote process closed or ended abnormally'"
+description: 'A guide to fix `An unknown element \\"\\" was received` while upgrading plugins with vim-plug on Neovim on Windows'
 category: [ "How-tos" ]
 tags: [ "terminal setup", "Neovim" ]
-seoimage: ""
+seoimage: "44053-untitled.png"
 ---
 
 ![default caption](https://fpira.com/static/postimages/3012/44053-untitled.png)
@@ -68,4 +68,3 @@ You can now update your plugins.
 This setting is temporary and will reset the next time you load your configuration.
 
 I hope it helps. Thanks for reading.
-

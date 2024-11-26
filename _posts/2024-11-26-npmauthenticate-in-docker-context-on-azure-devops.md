@@ -4,7 +4,7 @@ subtitle: "Access to private npm registry while running npm install inside Docke
 description: "Access to private npm registry while running npm install inside Docker images builded on Azure DevOps pipelines"
 category: [ "How-tos" ]
 tags: [ "Docker", "Azure", "CI" ]
-seoimage: ""
+seoimage: "3011/44727-001.jpg"
 ---
 
 ![default caption](https://fpira.com/static/postimages/3011/44727-001.jpg)
@@ -62,4 +62,3 @@ RUN npm install --omit=dev
 That’s it!
 
 I hope it helps. Thanks for reading.
-

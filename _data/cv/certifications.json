@@ -59,22 +59,22 @@
     "issuer": "Microsoft",
     "code": "AZ-400",
     "id": "I082-7442",
-    "url": "/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-400.pdf",
+    "url": "/assets/files/honors/Microsoft_DevOps_Engineer_Expert.pdf",
     "credlyUrl": "https://www.credly.com/badges/7b4de1bf-f197-4cd9-9c86-c8e0e3b3f6ec",
     "dateAchieved": "20/12/2021",
-    "dateRenewed": "28/11/2022",
-    "dateExpires": "21/12/2024"
+    "dateRenewed": "14/11/2024",
+    "dateExpires": "21/12/2025"
   },
   {
     "name": "Microsoft Azure Developer Associate",
     "issuer": "Microsoft",
     "code": "AZ-204",
     "id": "I072-7874",
-    "url": "/assets/files/honors/Microsoft_Certified_Professional_Certificate_AZ-204.pdf",
+    "url": "/assets/files/honors/Microsoft_Azure_Developer_Associate.pdf",
     "credlyUrl": "https://www.credly.com/badges/00d10b0b-8cb3-495c-a328-5a09a9091580",
     "dateAchieved": "14/12/2021",
-    "dateRenewed": "28/11/2022",
-    "dateExpires": "15/12/2024"
+    "dateRenewed": "14/11/2024",
+    "dateExpires": "15/12/2025"
   },
   {
     "name": "Oracle Certified Professional - Java SE 11 Developer",
@@ -106,8 +106,8 @@
     "url": "/assets/files/honors/AWS_Certified_Cloud_Practitioner_certificate.pdf",
     "credlyUrl": "https://www.credly.com/badges/b7dda8be-eb8c-49dd-8f5e-223457f45807",
     "dateAchieved": "17/09/2020",
-    "dateRenewed": "09/11/2022",
-    "dateExpires": "09/11/2025"
+    "dateRenewed": "18/12/2024",
+    "dateExpires": "18/12/2027"
   },
   {
     "name": "AWS Certified Solutions Architect - Associate",
@@ -115,10 +115,10 @@
     "code": "",
     "id": "03SKXWGLKMR4103G",
     "url": "/assets/files/honors/AWS_Certified_Solutions_Architect_Associate_certificate.pdf",
-    "credlyUrl": "https://www.credly.com/badges/07aecb45-7bc0-4482-8411-108c87a4bdf2",
+    "credlyUrl": "https://www.credly.com/badges/9e6827da-f38a-4ba0-942e-6a56e95aec42",
     "dateAchieved": "23/07/2020",
-    "dateRenewed": "",
-    "dateExpires": "23/06/2023"
+    "dateRenewed": "18/12/2024",
+    "dateExpires": "18/12/2027"
   },
   {
     "name": "Microsoft Azure Fundamentals",

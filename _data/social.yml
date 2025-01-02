@@ -30,6 +30,11 @@ bitcoin: # segwit
     - money
   url: 'https://chart.googleapis.com/chart?chs=512x512&cht=qr&choe=UTF-8&chl=bc1q7r7mhmg7tgy4ntps0nnu9gt4uclcspjyh6z4hy6tyykxx3qygjus8ehyu7'
   address: bc1q7r7mhmg7tgy4ntps0nnu9gt4uclcspjyh6z4hy6tyykxx3qygjus8ehyu7
+bentome:
+  categories:
+    - social
+  url: 'https://bento.me/pirafrank'
+  user: pirafrank
 blog:
   categories:
     - blog

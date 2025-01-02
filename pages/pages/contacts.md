@@ -11,20 +11,22 @@ I am also available to chat via [Matrix]({{ site.data.social.matrix.url }}) or v
 
 ### Follow me
 
-I publish most content and status updates on socials. You can follow me on any of these. Content on the Telegram channel is mirrored from Mastodon.
+I publish most content and status updates on socials, albeit not that often. You can follow me on any of these as I usually cross-post. Content on Telegram is mirrored from Mastodon.
 
 - [Mastodon]({{ site.data.social.mastodon.url }})
-- [Twitter]({{ site.data.social.twitter.url }})
+- [Threads]({{ site.data.social.threads.url }})
+- [Blue Sky]({{ site.data.social.bluesky.url }})
 - [LinkedIn]({{ site.data.social.linkedin.url }})
 - [Telegram]({{ site.data.social.telegram.url }})
+- ~~[Twitter]({{ site.data.social.twitter.url }})~~
 
-If you prefer less frequent updates, you can just tune to blog posts publishing on:
+If you prefer less frequent updates, you can tune directly to blog post publishing via:
 
 - [RSS feed]({{ site.url | append: site.baseurl }}/feed.xml)
 - [Atom feed]({{ site.url | append: site.baseurl }}/atom.xml)
 - [Telegram channel]({{ site.data.social.telegram-feed.url }})
 
-On the world *wild* web I'm usually *pirafrank*. Here's a full list of [my social profiles]({{ site.baseurl }}/social).
+On the world *wild* web I'm usually *pirafrank*. Here's an almost up-to-date list of [my active social profiles]({{ site.data.social.bentome.url }}).
 
 ### Verify my identity
 

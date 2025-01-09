@@ -1,0 +1,10 @@
+---
+layout: compress
+---
+[{% for post in site.posts %}
+  {
+    "value1": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
+    "value2": "{{ post.title | escape }}<br>{{ post.subtitle | truncatewords: 15 | escape }}",
+    "value3": "{% if post.seoimage %}{{ post.seoimage | prepend: '/static/postimages/' | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/images/og_image.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}"
+  }{% unless forloop.last %},{% endunless %}{% endfor %}
+]

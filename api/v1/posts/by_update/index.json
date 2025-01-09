@@ -1,11 +1,9 @@
 ---
 layout: compress
 ---
-[{% for post in site.posts %}
+[{% assign sorted_posts = site.posts | sort: 'last_update' | reverse %}{% for post in sorted_posts %}
   {
     "type": "post",
-    {% assign post_id = post.path | replace: "_posts/", "" | replace: ".md", "" | replace: ".markdown", "" | replace: ".html", "" %}
-    "id": "{{ post_id }}",
     "postUrl": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
     "published": "{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}",
     "updated": "{{ post.last_update | date: "%Y-%m-%dT%H:%M:%S%z" }}",

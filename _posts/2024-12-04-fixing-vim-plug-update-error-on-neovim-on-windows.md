@@ -4,7 +4,7 @@ subtitle: "About PlugUpdate quitting on error because 'remote process closed or 
 description: 'A guide to fix `An unknown element \\"\\" was received` while upgrading plugins with vim-plug on Neovim on Windows'
 category: [ "How-tos" ]
 tags: [ "terminal setup", "Neovim" ]
-seoimage: "44053-untitled.png"
+seoimage: "3012/44053-untitled.png"
 ---
 
 ![default caption](https://fpira.com/static/postimages/3012/44053-untitled.png)

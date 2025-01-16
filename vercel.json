@@ -154,6 +154,7 @@
     { "source": "/twitter", "destination": "https://twitter.com/pirafrank", "permanent": false },
     { "source": "/mastodon", "destination": "https://mastodon.social/@pirafrank", "permanent": false },
     { "source": "/threads", "destination": "https://threads.net/@pirafrank", "permanent": false },
+    { "source": "/bluesky", "destination": "https://bsky.app/profile/pirafrank.bsky.social", "permanent": false },
     { "source": "/linkedin", "destination": "https://linkedin.com/in/pirafrank", "permanent": false },
     { "source": "/github", "destination": "https://github.com/pirafrank", "permanent": false },
     { "source": "/gist", "destination": "https://gist.github.com/pirafrank?direction=desc&sort=updated", "permanent": false },

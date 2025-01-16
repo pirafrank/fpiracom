@@ -16,18 +16,32 @@
     title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
 {% endif %}
 
+{% if site.data.social.telegram.url %}
+<a href="{{ site.data.social.telegram.url }}"
+    alt="telegram"
+    title="telegram"><i class="fa-brands fa-telegram"></i></a>
+{% endif %}
+
 {% if site.data.social.threads.url %}
 <a href="{{ site.data.social.threads.url }}"
     alt="threads"
     title="Threads"><i class="fa-brands fa-threads"></i></a>
 {% endif %}
 
+{% if site.data.social.bluesky.url %}
+<a href="{{ site.data.social.bluesky.url }}"
+    alt="bluesky"
+    title="bluesky"><i class="fa-brands fa-bluesky"></i></a>
+{% endif %}
+
+<!--
 {% if site.data.social.keybase.url %}
 <a href="{{ site.data.social.keybase.url }}"
     alt="Keybase"
     title="Keybase"><i class="fa-solid fa-key"></i></a>
 {% endif %}
+-->
 
 <a href="{{ site.baseurl }}/feed.xml"
     alt="RSS feed"
-    title="RSS feed"><i class="fa-solid fa-rss"></i></a>
+    title="RSS feed"><i class="fa-solid fa-square-rss"></i></a>

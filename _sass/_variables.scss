@@ -42,12 +42,6 @@ $thin: 400;
 $normal: 400;
 $bold: 700;
 
-// shortcuts
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-$courier: 'Courier', monospace;
-
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {

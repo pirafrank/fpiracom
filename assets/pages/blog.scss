@@ -40,6 +40,7 @@
   a {
     font-family: $defaultSerif;
     font-size: 20px;
+    color: $darkerGray;
     @include mobile {
       font-size: 18px;
     }

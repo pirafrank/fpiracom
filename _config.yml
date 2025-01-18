@@ -236,3 +236,6 @@ exclude:
     - '_posts/accordions/**'
     - '_drafts/accordions/**'
     - '.html_proofer_cache/**'
+    - zj-workspace.kdl
+    - .zellij_layout.kdl
+

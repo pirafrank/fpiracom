@@ -25,3 +25,6 @@ venv
 vendor
 _site
 .html_proofer_cache
+zj-workspace.kdl
+.zellij_layout.kdl
+

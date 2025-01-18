@@ -28,3 +28,5 @@ A collection of speeches, poetries, videos and more things that have inspired me
 [#DearDaddy, I'm going to be called a whore](https://www.youtube.com/watch?v=dP7OXDWof30)
 
 [Audi R8 Big Game Commercial – Commander](https://www.youtube.com/watch?v=XfMt2jtbW3Q), one of the best commercials I've ever seen.
+
+[Google zeitgeist 2011](https://www.youtube.com/watch?v=SAIEamakLoY)

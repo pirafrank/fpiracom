@@ -28,16 +28,18 @@ layout {
         }
     }
 
-    tab name="Tab 1" focus=true {
-        pane
+    tab name="Rake" focus=true {
+        pane command="rake" name="Live Server" {
+            args "serve"
+        }
     }
 
-    tab name="Tab 2" {
-        pane
+    tab name="Code" {
+        pane command="nvim" name="Neovim"
     }
 
-    tab name="Tab 3" {
-        pane
+    tab name="Git" {
+        pane command="lazygit" name="Git"
     }
 }
 

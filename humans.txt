@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 
   |   |o    |                        |
@@ -10,12 +11,12 @@
   fpira.com
   Francesco Pira's personal website
 
-  Twitter     : @pirafrank
   GitHub      : /pirafrank
-  Location    : Italy
+  Location    : Sicily, Italy
 
   Language    : {{ site.locale }}
   Last update : {{ site.time }}
 
+  Built on    : {{ "now" | date: "%Y %m %d %H:%M:%S %z" }}
   Built using : Jekyll {{ jekyll.version }} + plugins ({{ site.plugins | join: ', ' }})
-  Coded with  : love and tools from /my-toolbelt
+  Coded with  : love and tools from my github.com/pirafrank/dotfiles

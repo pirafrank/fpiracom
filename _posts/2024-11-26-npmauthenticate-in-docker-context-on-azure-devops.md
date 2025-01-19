@@ -3,11 +3,11 @@ title: "NpmAuthenticate in Docker context on Azure DevOps pipeline"
 subtitle: "Access to private npm registry while running npm install inside Docker images builded on Azure DevOps pipelines"
 description: "Access to private npm registry while running npm install inside Docker images builded on Azure DevOps pipelines"
 category: [ "How-tos" ]
-tags: [ "Docker", "Azure", "CI" ]
+tags: [ "Docker", "Azure", "CI-CD" ]
 seoimage: "3011/44727-001.jpg"
 ---
 
-![default caption](https://fpira.com/static/postimages/3011/44727-001.jpg)
+![Floating containers](https://fpira.com/static/postimages/3011/44727-001.jpg)
 
 Are you utilizing a Docker container for your application builds? If so, and you're implementing a staged build strategy, you might need to authenticate with your Azure DevOps artifact repository from within the build container. Here's how to achieve that:
 

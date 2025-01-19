@@ -4,12 +4,12 @@ subtitle: "A practical guide to build Rust applications across multiple platform
 description: "Learn how to configure your Rust development environment for cross compilation, enabling your applications to run smoothly on multiple platforms."
 category: [ "How-tos" ]
 tags: [ "Rust", "CI-CD" ]
-seoimage: ""
+seoimage: "3013/90363-rust-cross-compilation.jpg"
 ---
 
-![default caption](https://fpira.com/static/postimages/3013/90363-rust-cross-compilation.jpg)
+![Cross compile in Rust]({{ site.baseurl }}/static/postimages/3013/90363-rust-cross-compilation.jpg)
 
-One of the advantages of Rust applications is the possibility to ship the same code across different targets, with many CPU architecture and operating systems setup supported as first-class citizen. In such scenario, cross compilation is a fundamental technique for developers who want their Rust applications to run on multiple platforms, as it would be highly unpractical to parallel develop and test on each of your targets. By configuring your development environment to target different architectures, you can build software that operates seamlessly across various systems, and by setting up CI/CD pipelines for cross compilation you can develop on one platform while building, testing, and shipping for all of them in an automated fashion. 
+One of the advantages of Rust applications is the possibility to ship the same code across different targets, with many CPU architecture and operating systems setup supported as first-class citizen. In such scenario, cross compilation is a fundamental technique for developers who want their Rust applications to run on multiple platforms, as it would be highly unpractical to parallel develop and test on each of your targets. By configuring your development environment to target different architectures, you can build software that operates seamlessly across various systems, and by setting up CI/CD pipelines for cross compilation you can develop on one platform while building, testing, and shipping for all of them in an automated fashion.
 
 In this article, I'll tell about how to move the first steps for cross compilation in Rust, address common challenges, and provide practical examples for a CI/CD environment.
 
@@ -82,34 +82,35 @@ cross build --target x86_64-unknown-linux-gnu
 cross build --target aarch64-unknown-linux-gnu
 ```
 
-## Going GitHub Actions
+### Going GitHub Actions
 
 To cross compile on a GitHub Action, the process is pretty similar. You just need to setup the Rust stable toolchain, then install cross as you’d do locally. Considering I did not want to setup _cargo-binstall_ on the Action, I went with `cargo install`.
 
 ```yaml
-	- name: Setup Rust
-	  uses: actions-rust-lang/setup-rust-toolchain@v1
-	  with:
-	    toolchain: stable
-	
-	- name: Setup cross toolchain
-	  run: cargo install cross
-	  
-	- name: cross compile
-	  run: |
+  - name: Setup Rust
+    uses: actions-rust-lang/setup-rust-toolchain@v1
+    with:
+      toolchain: stable
+
+  - name: Setup cross toolchain
+    run: cargo install cross
+
+  - name: cross compile
+    run: |
       cross build --release --target x86_64-unknown-linux-gnu
       cross build --release --target aarch64-unknown-linux-gnu
 ```
 
 For a full setup, including a release pipeline with assets, please check my [Appimage Updater](https://github.com/pirafrank/appimage_updater/blob/e5b616af6466baa80fb16e3890fbfb5cc85ef7a3/.github/workflows/release.yml) project.
 
-## A different GitHub Action approach
+### A different GitHub Action approach
 
 A different approach, one with more targets, may use a GitHub Action matrix configuration to compile on different runners with different host operating systems. It may help parallelizing the build and speed up CI and release pipelines.
 
 Here's an example of a CI pipeline I built for one of my private projects that's still in development. For the sake of clarity, I put combinations of OS and targets I want to compile on on a separate file called `matrix.jsonc`.  Consider that GitHub Actions hosted runners have a limited set of available OS so cross compilation is needed.
 
 ```json
+{% raw %}
 {
     "include": [
         { "os": "ubuntu-latest", "target": "x86_64-unknown-linux-gnu" },
@@ -124,11 +125,13 @@ Here's an example of a CI pipeline I built for one of my private projects that's
         { "os": "windows-latest", "target": "aarch64-pc-windows-msvc" }
     ]
 }
+{% endraw %}
 ```
 
 The workflow file has a job called `make_matrix` to parse and process `matrix.jsonc`, which is then set as a output for later retrieval in the next `ci` job. The process configures tooling via [taiki-e/setup-cross-toolchain-action](https://github.com/taiki-e/setup-cross-toolchain-action), a GitHub Action for easy setup of toolchains for cross compilation and cross testing for Rust. Each combination of the matrix is an input of such step, sparking a dedicated parallel run. If any of those runs fails, other jobs are stopped and the whole workflow run quits on failure, as you would expect for a CI job.
 
 ```yaml
+{% raw %}
 name: CI
 
 on:
@@ -197,6 +200,7 @@ jobs:
         if: ${{ !contains(matrix.target, 'freebsd') && !contains(matrix.target, 'aarch64-pc-windows-msvc') }}
         run: cargo test --verbose
 
+{% endraw %}
 ```
 
 Note I made some adjustments to comply with the scenarios supported by _setup-cross-toolchain-action_. For example, `cargo test` is unsupported when compile for `freebsd` ([source](https://github.com/taiki-e/setup-cross-toolchain-action?tab=readme-ov-file#freebsd)) or for triple `aarch64-pc-windows-msvc` ([source](https://github.com/taiki-e/setup-cross-toolchain-action?tab=readme-ov-file#windows-msvc)) so I’ve disabled it.
@@ -208,4 +212,3 @@ Cross compiling Rust code can be achieved through multiple ways, from the standa
 The choice between these methods depends on your specific needs: for local development, `cross` provides a clean containerized solution, while for automated builds GitHub Actions with matrix configurations offer scalable and parallel compilation across multiple targets and architectures.
 
 I hope it helps. Thank for reading.
-

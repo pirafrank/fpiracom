@@ -1,13 +1,13 @@
 ---
 title: "Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy"
-subtitle: "Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy"
-description: "Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy"
+subtitle: "Little how to on upgrading from Ubuntu 20.04 Focal to Ubuntu 22.04 Jammy, even if 24.04 has already been released"
+description: "Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy, even if 24.04 has already been released"
 category: [ "How-tos" ]
 tags: [ "WSL", "Windows", "Linux" ]
-seoimage: ""
+seoimage: "3014/557-002.jpg"
 ---
 
-![default caption](https://fpira.com/static/postimages/3014/557-002.jpg)
+![Ubuntu on a laptop]({{ site.baseurl }}/static/postimages/3014/557-002.jpg)
 
 Ubuntu 22.04 (Jammy Jellyfish) has been around for long and it’s now time to replace old 20.04 (Focal Fossa) LTS as the chosen one around the web, meaning cloud environments, CI pipelines, and more. So it’s time for a WSL2 VM upgrade, too. And here’s how.
 

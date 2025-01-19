@@ -1,4 +1,10 @@
 {
+  "[ics]": { // Configuration for .ics files
+    "files.eol": "\r\n"
+  },
+  "files.associations": {
+    "*.ics": "ics" // Ensure .ics files are associated with ics language mode
+  },
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true
 }

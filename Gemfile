@@ -8,6 +8,7 @@ gem 'faraday-retry'
 gem "digest", "~> 3.1"
 gem 'html-proofer'
 gem 'rake'
+gem "icalendar", "~> 2.10"
 
 group :jekyll_plugins do
   gem 'jekyll-gist'

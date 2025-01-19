@@ -1,5 +1,6 @@
 require 'html-proofer'
 require 'find'
+require "icalendar"
 
 # default task
 desc "default task to run then no task is specified to rake"
@@ -10,7 +11,7 @@ task :default => [:check_install, :tasks]
 #
 
 desc "group of tasks to run in CI environments"
-task :ci => [:check_install, :check_internal_urls, :check_api, :check_jsonp]
+task :ci => [:check_install, :check_internal_urls, :check_api, :check_jsonp, :check_ics]
 
 #
 # task definitions
@@ -119,7 +120,7 @@ end
 
 def get_files(label, files_path, regex)
   results = []
-  puts "\n\nChecking #{label} files in '#{files_path}' for valid JSON content\n\n"
+  puts "\n\nChecking #{label} files in '#{files_path}' for valid content\n\n"
   Find.find(files_path) do |path|
     if path =~ regex
       puts "Found #{label} file: #{path}"
@@ -140,9 +141,13 @@ def process_files(files, callback)
       onError += 1
       puts "Invalid JSON content in file: #{file}"
       puts "#{e.message}\n\n"
+    rescue StandardError => e
+      onError += 1
+      puts "Error processing file: #{file}"
+      puts "#{e.message}\n\n"
     end
   end
-  puts "\nFinished: Found #{onError} files with invalid JSON content\n\n"
+  puts "\nFinished: Found #{onError} files with invalid content\n\n"
   onError
 end
 
@@ -153,6 +158,37 @@ end
 def process_JSONP_file(content)
   json_content = content[content.index('[')..content.rindex(']')]
   JSON.parse(json_content)
+end
+
+def process_ICS_file(content)
+  content.index('BEGIN:VCALENDAR') or raise "Missing BEGIN:VCALENDAR"
+  content.index('END:VCALENDAR') or raise "Missing END:VCALENDAR"
+  read_calendar(content)
+end
+
+def read_calendar(input)
+    #calendar_file = File.open(calendar_filename)
+    #events = Icalendar::Event.parse(calendar_file)
+    events = Icalendar::Event.parse(input)
+
+    hash = {}
+    counter = 0
+
+    # loop through the events in the calendars
+    # and map the values you want into a variable and then return it:
+
+    events.each do |event|
+      hash[counter] = {
+        "summary" => event.summary,
+        "dtstart" => event.dtstart,
+        "dtend" => event.dtend,
+        "description" => event.description
+      }
+
+      counter += 1
+    end
+
+    return hash
 end
 
 desc "check static JSON files providing APIs to be valid"
@@ -170,6 +206,15 @@ task :check_jsonp => :build do
   regex = /\.jsonp$/
   jsonp_files = get_files("JSONP", jsonp_path, regex)
   onError = process_files(jsonp_files, :process_JSONP_file)
+  exit 1 if onError > 0
+end
+
+desc "check static ICS files providing calendars to be valid"
+task :check_ics => :build do
+  ics_path = "_site/calendars"
+  regex = /\.ics$/
+  ics_files = get_files("ICS", ics_path, regex)
+  onError = process_files(ics_files, :process_ICS_file)
   exit 1 if onError > 0
 end
 

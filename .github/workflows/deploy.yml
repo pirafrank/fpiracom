@@ -85,6 +85,12 @@ jobs:
       uses: ./.github/actions/ci-checks
       if: github.ref == 'refs/heads/main'
 
+    # Be sure calendars have CRLF line endings
+    - name: dos2unix
+      run: |
+        sudo apt install -y dos2unix
+        unix2dos calendars/*.ics
+
     # Vercel deploy
     - name: Deploy on Vercel
       id: deploy_to_vercel

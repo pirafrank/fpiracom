@@ -1,8 +1,9 @@
 ---
+layout: null
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Francesco Pira//fpira.com//EN
+PRODID:https://fpira.com
 URL:{{ site.url | append: site.baseurl }}/calendars/posts.ics
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
@@ -16,12 +17,14 @@ X-APPLE-CALENDAR-COLOR:#3344AA
 COLOR:33:44:AA
 X-WR-CALDESC:Calendar of {{ site.name }}'s blog posts. Know more at {{ site.url | append: site.baseurl }}.{% for post in site.posts %}
 BEGIN:VEVENT
+UID:{% capture id %}{% random 1,1000000 %}{% endcapture %}{{ post.date | date: "%Y%m%d" | append: "010000" | append: "-fpiracom-" | append: id }}@fpira.com
+DTSTAMP:{{ post.date | date: "%Y%m%d" }}T010000Z
 DTSTART;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
 DTEND;VALUE=DATE:{{ post.date | date: "%Y%m%d" }}
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:[Blog post] {{ post.title | strip_html | strip_newlines | capitalize }}
-DESCRIPTION:{% if post.subtitle %}{{ post.subtitle }}{% else %}{{ post.content | truncatewords: 20}}{% endif %}.\nRead more at {{site.url | append: site.baseurl | append: post.url}}
+SUMMARY:[Blog post] {{ post.title | strip_html | strip_newlines | capitalize | remove: ',' | remove: ';' }}
+DESCRIPTION:{% if post.subtitle %}{{ post.subtitle }}{% elsif post.description %}{{ post.description | truncatewords: 20}}{% endif %}. Read more at {{ site.url | append: site.baseurl | append: post.url}}
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 TRIGGER:-PT120M

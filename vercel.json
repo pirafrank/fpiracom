@@ -9,22 +9,22 @@
   "headers": [
     {
       "source": "/(.*)",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Strict-Transport-Security",
-          "value" : "max-age=7776000;"
+          "key": "Strict-Transport-Security",
+          "value": "max-age=7776000;"
         },
         {
-          "key" : "X-Content-Type-Options",
-          "value" : "nosniff"
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         },
         {
-          "key" : "X-XSS-Protection",
-          "value" : "1; mode=block"
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
         },
         {
-          "key" : "X-Frame-Options",
-          "value" : "SAMEORIGIN"
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
         },
         {
           "key": "Referrer-Policy",
@@ -34,80 +34,92 @@
     },
     {
       "source": "/static/(.*)",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Cache-Control",
-          "value" : "public, max-age=600"
+          "key": "Cache-Control",
+          "value": "public, max-age=600"
         }
       ]
     },
     {
       "source": "/api/(.*)",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Content-Type",
-          "value" : "application/json"
+          "key": "Content-Type",
+          "value": "application/json"
         },
         {
-          "key" : "Cache-Control",
-          "value" : "public, max-age=60"
+          "key": "Cache-Control",
+          "value": "public, max-age=60"
         }
       ]
     },
     {
       "source": "/feed.xml",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Content-Type",
-          "value" : "application/rss+xml"
+          "key": "Content-Type",
+          "value": "application/rss+xml"
         },
         {
-          "key" : "Cache-Control",
-          "value" : "public, max-age=3600"
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
         }
       ]
     },
     {
       "source": "/atom.xml",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Content-Type",
-          "value" : "application/atom+xml"
+          "key": "Content-Type",
+          "value": "application/atom+xml"
         },
         {
-          "key" : "Cache-Control",
-          "value" : "public, max-age=3600"
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
         }
       ]
     },
     {
       "source": "/feed.json",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Content-Type",
-          "value" : "application/feed+json"
+          "key": "Content-Type",
+          "value": "application/feed+json"
         },
         {
-          "key" : "Cache-Control",
-          "value" : "public, max-age=3600"
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
         }
       ]
     },
     {
       "source": "/jsonp/(.*)",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Content-Type",
-          "value" : "text/javascript"
+          "key": "Content-Type",
+          "value": "text/javascript"
         },
         {
-          "key" : "X-Content-Type-Options",
-          "value" : ""
+          "key": "X-Content-Type-Options",
+          "value": ""
         },
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "prose.io" },
         { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+        }
+      ]
+    },
+    {
+      "source": "/calendars/posts.ics",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/calendar"
+        }
       ]
     },
     {

@@ -193,18 +193,19 @@ plugins:
 jekyll-minifier:
   uglifier_args:
     harmony: true
-#  exclude:
-#    - 'feed.xml'
-#    - 'sitemap.xml'
-#    - '/**/*.min.js'
-#    - '/**/*.min.css'
-#    - '/**/*.min.map'
-#    - 'humans.txt'
-#    - 'robots.txt'
+  exclude:
+    - CNAME
+    - '*.txt'
+    - 'calendars/*.ics'
+    - '*.xml'
+    - '/**/*.min.js'
+    - '/**/*.min.css'
+    - '/**/*.min.map'
 #    - 'search_data.json'
 #    - 'manifest.json'
 #    - 'service-worker.js'
 
+# Files to explicitly include in generated website
 include:
   - humans.txt
   - .well-known/nostr.json

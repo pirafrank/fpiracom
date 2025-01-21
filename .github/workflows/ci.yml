@@ -17,6 +17,9 @@ jobs:
   build:
     name: Build website
     runs-on: ubuntu-20.04
+    environment:
+      name: CI
+      url: ${{ steps.deploy_to_vercel.outputs.preview-url }}
     steps:
     - uses: actions/checkout@v4
       # no need to specify the ref, the GITHUB_REF of pull request event is the PR merge branch.
@@ -34,9 +37,25 @@ jobs:
     - name: CI checks
       uses: ./.github/actions/ci-checks
 
-    # Build Jekyll website
+    # Build Jekyll website to check for possible build errors
     - name: Build jekyll website
       env:
         JEKYLL_ENV: production
       run: |
         bundle exec jekyll build --trace
+
+    # Perform a Vercel deploy, to check for ability to build on Vercel.
+    # This should always perform a preview deploy.
+    - name: Deploy on Vercel
+      id: deploy_to_vercel
+      uses: amondnet/vercel-action@v25.2.0
+      with:
+        # analytics env vars are set on Vercel bc build happens there!
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        # PR won't release to production, so no vercel-args (defaults to preview)
+        vercel-args:  ''
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        alias-domains: |
+          fpiracom-{{PR_NUMBER}}-pirafrank.vercel.app

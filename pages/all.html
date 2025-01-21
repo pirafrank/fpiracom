@@ -1,0 +1,19 @@
+---
+layout: page
+title: All pages
+show_title: false
+permalink: /pages/
+in_search: false
+---
+
+{% assign layoutpages = site.pages | where: "layout", "page" | where_exp: "page", "page.title != nil and page.title != ''" | sort: "title" %}
+
+<h1>All Pages ({{ layoutpages.size }})</h1>
+
+<ul>
+{% for page in layoutpages %}
+<li>
+  <a href="{{ page.url }}">{{ page.title }}</a>, {{ page.url }}
+</li>
+{% endfor %}
+</ul>

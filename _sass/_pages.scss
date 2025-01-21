@@ -3,6 +3,8 @@
 // Pages
 //
 
+@use "variables" as *;
+
 .page {
   font-weight: $normal;
   //color: $darkGray; // commented as it uses color from 'body' in _base.scss

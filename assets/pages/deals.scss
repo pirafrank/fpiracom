@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "variables";
+@use "variables" as * ;
 
 .entry > ul {
   margin-right: 4em;

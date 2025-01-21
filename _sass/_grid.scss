@@ -30,6 +30,11 @@
   margin: 1% 0 1% 1.6%;
 
   &:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+  @include mobile {
+    margin: 1% 0 1% 0%;
+  }
+
 }
 
 .group {
@@ -43,12 +48,6 @@
   }
 
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-.col {
-  @include mobile {
-    margin: 1% 0 1% 0%;
-  }
 }
 
 .span_12_of_12 {

@@ -39,7 +39,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-color: $darkerGray;
+    color: $darkerGray;
     font-weight: bold;
 
     line-height: 1.7;
@@ -58,7 +58,6 @@
   h5 { // use it for citations and to put some text in the spotlight
     text-align: left;
     font-family: $defaultSansSerifBody;
-    font-color: $lightGray;
     color: $lightGray;
     font-size: 26px;
     font-style: italic;

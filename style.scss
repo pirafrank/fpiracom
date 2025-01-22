@@ -1,51 +1,47 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
-@import "reset";
-@import "fonts";
-@import "variables";
+@use "reset" as *;
+@use "fonts" as *;
+@use "variables" as *;
 // Syntax highlighting @import is at the bottom of this file
 
 // handy CSS import to help DIVs design highlightning DIVs with colors
 // @import "cssdebug";
 
 // base css
-@import "base";
+@use "base" as *;
 
 // bootstrap grid system
-@import "grid";
+@use "grid" as *;
 
 // navbar, siteavatar, sitename, ...
-@import "layout";
+@use "layout" as *;
 
 // css for hiding classes
-@import "hidden";
+@use "hidden" as *;
 
 // utilities (center, pull-right, monospaced, ...)
-@import "utilities";
+@use "utilities" as *;
 
 // buttons
-@import "buttons";
+@use "buttons" as *;
 
 // share buttons css
-@import "share";
+@use "share" as *;
 
 // responsive video support
-@import "responsive-video";
+@use "responsive-video" as *;
 
 // css for pages (not posts)
-@import "pages";
+@use "pages" as *;
 
 // css for markdown toggle list / accordion include
-@import "accordion";
+@use "accordion" as *;
 
 // footer css
-@import "footer";
+@use "footer" as *;
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
+@use "highlights" as *;

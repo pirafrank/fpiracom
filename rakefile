@@ -65,7 +65,7 @@ check_urls_options = {
   :check_internal_hash => true,
   :directory_index_file => 'index.html',
   :enforce_https => true,
-  :ignore_empty_mailto => false,
+  :ignore_empty_mailto => true,  # because of sharing-buttons.html
   :ignore_files => [
     # skip very old blog posts
     %r{^_site\/blog\/201\d{1}\/.*\/index.html$},

@@ -1,11 +1,44 @@
+<div id="share-links">
+  <div class="share-div">
+    <input type="checkbox" id="share-toggle" class="share-toggle-checkbox" hidden>
+    <label for="share-toggle" class="share-toggle-label">Share this page&nbsp;<i class="fa-solid fa-share" /></label>
+    <div class="share-buttons-container">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url | append: site.baseurl | append: page.url }}&via={{ site.data.social.twitter.user }}&related={{ site.data.social.twitter.user }}"
+        class="btn btn-small btn-default share-btn" rel="nofollow" target="_blank" title="Share on Twitter"><i
+          class="fa-brands fa-x-twitter" /> Twitter</a>
 
-<div id="share-links" class="share-div">
-    Share this via&nbsp;
-    <a href="https://facebook.com/sharer.php?u={{ site.url | append: site.baseurl | append: page.url }}" class="btn btn-small btn-default share-btn" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url | append: site.baseurl | append: page.url }}&via={{ site.data.social.twitter.user }}&related={{ site.data.social.twitter.user }}" class="btn btn-small btn-default share-btn" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: site.baseurl | append: page.url }}&title={{ page.title }}&summary=&source={{ site.data.social.linkedin.user }}" class="btn btn-small btn-default share-btn">LinkedIn</a>
-    <a href="https://www.reddit.com/submit?url={{ site.url | append: site.baseurl | append: page.url }}&title={{ page.title }}" class="btn btn-small btn-default share-btn">Reddit</a>
-    <a href="whatsapp://send?text={{ page.title }}+%7C+{{ site.url | append: site.baseurl | append: page.url }}" class="desktop-hidden smallscreen-hidden btn btn-small btn-default share-btn">Whatsapp</a>
-    <a href="https://telegram.me/share/url?url={{ site.url | append: site.baseurl | append: page.url }}&text={{ page.title }}" class="btn btn-small btn-default share-btn">Telegram</a>
+      <a href="#" onclick="shareMastodon(event, `{{ page.title | url_encode }}\n\n{{ site.url | append: site.baseurl | append: page.url }}`)" class="btn btn-small btn-default share-btn" rel="nofollow"
+        title="Share on Mastodon"><i class="fa-brands fa-mastodon" /> Mastodon</a>
+
+      <a href="https://threads.com/intent/post?text={{ page.title | url_encode }}%0A%0A{{ site.url | append: site.baseurl | append: page.url }}"
+        class="btn btn-small btn-default share-btn" rel="nofollow" target="_blank" title="Share on Threads"><i
+          class="fa-brands fa-threads" /> Threads</a>
+
+      <a href="https://bsky.app/intent/compose?text={{ page.title | url_encode }}%0A%0A%0A{{ site.url | append: site.baseurl | append: page.url }}"
+        class="btn btn-small btn-default share-btn" rel="nofollow" target="_blank" title="Share on Bluesky"><i
+          class="fa-brands fa-bluesky" /> Bluesky</a>
+
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: site.baseurl | append: page.url }}&title={{ page.title | url_encode }}&summary=&source={{ site.data.social.linkedin.user }}"
+        class="btn btn-small btn-default share-btn"><i class="fa-brands fa-linkedin" /> LinkedIn</a>
+
+      <a href="https://www.reddit.com/submit?url={{ site.url | append: site.baseurl | append: page.url }}&title={{ page.title | url_encode }}"
+        class="btn btn-small btn-default share-btn"><i class="fa-brands fa-reddit" /> Reddit</a>
+
+      <a href="https://news.ycombinator.com/submitlink?u={{ site.url | append: site.baseurl | append: page.url }}&t={{ page.title | url_encode }}"
+        class="btn btn-small btn-default share-btn"><i class="fa-brands fa-hacker-news" /> Hacker News</a>
+
+      <a href="https://telegram.me/share/url?url={{ site.url | append: site.baseurl | append: page.url }}&text={{ page.title | url_encode }}"
+        class="btn btn-small btn-default share-btn"><i class="fa-brands fa-telegram" /> Telegram</a>
+
+      <a href="whatsapp://send?text={{ page.title | url_encode }}%0A%0A{{ site.url | append: site.baseurl | append: page.url }}"
+        class="btn btn-small btn-default share-btn"><i
+          class="fa-brands fa-whatsapp" /> Whatsapp</a>
+
+      <a href="mailto:?subject={{ page.title }}&body={{ site.url | append: site.baseurl | append: page.url }}"
+        class="btn btn-small btn-default share-btn"><i class="fa-solid fa-envelope" /> Email</a>
+
+      <a onclick="navigator.clipboard.writeText(window.location.href)"
+        class="btn btn-small btn-default share-btn"><i class="fa-solid fa-link" /> Copy Link</a>
+    </div>
+  </div>
 </div>
-

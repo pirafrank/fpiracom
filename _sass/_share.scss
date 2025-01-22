@@ -12,7 +12,7 @@
 
 .share-div { // edit appearance of share div
   margin-top: 3em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   font-size: 14px;
   color: $gray;
 
@@ -25,10 +25,83 @@
 .share-btn {
   display: inline;
   width: 100%;
+  border: 0px;
+  color: $gray;
+
+  &:hover {
+    background-color: $lightestGray;
+  }
 
   @include mobile {
     display: table; // center divs in mobile view (IE8 compatible)
     width: 100%;
     max-width: 180px;
+  }
+}
+
+.share-toggle-checkbox {
+  display: none;
+
+  &:checked {
+    &+.share-toggle-label {
+      border: 0px;
+
+      &::after {
+        content: '';  // '▲';
+      }
+    }
+
+    &~.share-buttons-container {
+      padding: 1rem 0.5rem 1rem 0.5rem;
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+      border: 1px solid $lightestGray;
+      border-radius: 10px;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.share-toggle-label {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  background-color: $white;
+  color: $darkGray;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid $gray;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $lightestGray;
+    border: 1px solid $darkBlue;
+    color: $darkBlue;
+  }
+
+  &::after {
+    content: '';  // '▼';
+  }
+
+}
+
+.share-buttons-container {
+  margin-top: 0.5rem;
+  display: none;
+  width: 100%;
+  padding: 0.5em;
+  background-color: $white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

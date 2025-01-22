@@ -201,7 +201,7 @@ DEPENDENCIES
   jekyll-listme!
   jekyll-minifier
   jekyll-sitemap
-  nokogiri (>= 1.16.5, < 1.17)
+  nokogiri (>= 1.16.5, < 1.18)
   rake
   webrick
 

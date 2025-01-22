@@ -11,6 +11,21 @@ on:
     types: [opened, synchronize, reopened]
     branches:
       - 'main'
+  push:
+    branches:
+      - develop
+    paths-ignore:
+      - '_jekyll_ignore/**'
+      - README.md
+      - '.gitignore'
+      - 'repo_utils/**'
+      - '.vscode'
+      - '.vercelignore'
+      - Dockerfile
+      - .dockerignore
+      - .editorconfig
+      - '.devcontainer/**'
+      - '.html_proofer_cache/**'
   workflow_dispatch:
 
 jobs:
@@ -44,6 +59,17 @@ jobs:
       run: |
         bundle exec jekyll build --trace
 
+    - name: Get current ref
+      id: get_current_ref
+      uses: ./.github/actions/get-current-ref
+
+    - name: Set Vercel alias domain
+      id: set_alias
+      env:
+        REF: ${{ steps.get_current_ref.outputs.ref }}
+      run: |
+          echo "alias=fpiracom-${{ steps.get_current_ref.outputs.ref }}-pirafrank.vercel.app" >> $GITHUB_OUTPUT
+
     # Perform a Vercel deploy, to check for ability to build on Vercel.
     # This should always perform a preview deploy.
     - name: Deploy on Vercel
@@ -58,4 +84,4 @@ jobs:
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
         alias-domains: |
-          fpiracom-{{PR_NUMBER}}-pirafrank.vercel.app
+          ${{ steps.set_alias.outputs.alias }}

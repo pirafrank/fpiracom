@@ -19,6 +19,7 @@ runs:
         GITHUB_EVENT_NAME: ${{ github.event_name }}
         GITHUB_WORKSPACE: ${{ github.workspace }}
         GITHUB_REF: ${{ github.ref }}
+        PR_NUMBER: ${{ github.event.number }}
       run: |
         # workflow_dispatch issue: $GITHUB_REF is set to the default branch,
         # even if actions/checkout@v2 checkouts to a different ref.
@@ -45,6 +46,8 @@ runs:
               ;;
             pull)
               REF_TYPE='pull_request'
+              # as per https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#pull_request
+              REF="$PR_NUMBER"
               ;;
             *)
               REF_TYPE='unknown'

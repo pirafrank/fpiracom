@@ -1,8 +1,0 @@
--!--
-layout: redirect
-title: Honours and Certificates
-permalink: /certificates/
-show_title: true
----
-
-<META http-equiv="refresh" content="0;URL={{ site.baseurl }}/about/#honours-and-certificates">

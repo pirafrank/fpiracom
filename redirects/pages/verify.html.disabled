@@ -1,8 +1,0 @@
--!--
-layout: redirect
-title: Verify my identity
-permalink: /verify/
-show_title: true
----
-
-<META http-equiv="refresh" content="0;URL={{ site.baseurl }}/contacts/#verify-my-identity">

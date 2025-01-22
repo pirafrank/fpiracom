@@ -1,8 +1,0 @@
--!--
-layout: redirect
-title: Follow me
-permalink: /follow/
-show_title: true
----
-
-<META http-equiv="refresh" content="0;URL={{ site.baseurl }}/contacts/#follow-me">

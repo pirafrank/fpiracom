@@ -4,9 +4,9 @@
 .btn {
     display: inline-block;
     text-align: center;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: $buttonBorderRadius;
+    -moz-border-radius: $buttonBorderRadius;
+    border-radius: $buttonBorderRadius;
     height: 100%;
 
     &:hover, &:active {
@@ -14,7 +14,6 @@
     }
 
     @include mobile {
-        //display: block;
         display: table; // center divs in mobile view (IE8 compatible)
         text-align: center;
     }

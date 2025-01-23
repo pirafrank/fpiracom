@@ -369,6 +369,19 @@ Docs:
 
 - [IFTTT - Why is there a “File not found” image on my post?](https://help.ifttt.com/hc/en-us/articles/115010361748/)
 
+## Plugins
+
+Apart from Jekyll plugins available as gems and declared in `Gemfile`, there are quite a few custom plugins in the `_plugins` folder. Not all code is mine, and some has been modified to fit my needs, but I've tried to give credit where it's due.
+
+Most plugins are used to extend Jekyll functionalities, by adding new Liquid tags or filters, to edit the markdown conversion process, or to populate `site.data` with additional info (for example, with current git commit data).
+
+### AddPostUpdateInfo
+
+This plugin reorders the `post.updates` array and adds two property to each post:
+
+- `most_recent_edit`: this is the most recent edit, which either the creation date or the last update date
+- `most_recent_update`: this is the last update date, if any, otherwise it's null
+
 ## APIs
 
 `api` folder contains an attempt to provide APIs out of a Jekyll website. Those can be useful for integrations: e.g. I use `/api/v1/ifttt/posts/latest` to fetch details of the last published blog post from an RSS trigger on IFTTT.

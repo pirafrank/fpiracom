@@ -13,7 +13,7 @@ layout: null
   <link href="{{ site.url | append: site.baseurl }}/atom.xml" rel="self" type="application/atom+xml" />
   <updated>{{ site.time | date_to_rfc822 }}</updated>
   <generator>Jekyll v{{ jekyll.version }}</generator>
-  {% assign sortedPosts = site.posts | sort: 'last_update' | reverse %}
+  {% assign sortedPosts = site.posts | sort: 'most_recent_edit' | reverse %}
   {% for post in sortedPosts limit: site.home.max_posts %}
     <entry>
       <id>{{ post.url | prepend: site.baseurl | prepend: site.url }}</id>

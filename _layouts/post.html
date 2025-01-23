@@ -21,9 +21,6 @@ custom_css: ['layouts/posts']
           <i>
             {% assign readtime = page.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
             Published on {{ page.date | date: "%B %-d, %Y" }} in <a href="{{ site.baseurl }}/blog/categories/{{ page.categories[0] | downcase | replace:' ','-' | replace: '.','-' }}">{{ page.categories }}</a>
-            {% if page.last_edit_at %}
-            <br>Updated on: {{ page.last_edit_at | date: "%B %-d, %Y" }}
-            {% endif %}
             <br>Read time:&nbsp;{% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min
             {% if page.tags != empty %}
             <br>

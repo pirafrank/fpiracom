@@ -1,13 +1,14 @@
 ---
-title: "Leveraging Alacritty terminal on Windows for a seamless experience in both PowerShell and WSL2 (Updated)"
+title: "Leveraging Alacritty terminal on Windows for a seamless experience in both PowerShell and WSL2"
 subtitle: "A Windows terminal setup to bridge PowerShell and WSL out of Windows Terminal"
 description: "Find out how to quickstart a new terminal experience in both PowerShell and WSL2 by using Alacritty on Windows"
 category: [ "How-tos" ]
 tags: [ "Windows", "Windows 10", "terminal setup", "Alacritty" ]
 seoimage: "3005/19650-d65cf697-84e1-4a00-8f16-16bcc334044f001.jpg"
+updates:
+  - date: "2024-09-26"
+    content: "Changed `--working-directory` option for WSL2 setup to open shell in WSL2 home dir."
 ---
-
-*Update (Sept 26, 2024): Changed --working-directory option for WSL2 setup to open shell in WSL2 home dir.*
 
 {% include image.html
 url="/static/postimages/3005/19650-d65cf697-84e1-4a00-8f16-16bcc334044f001.jpg"

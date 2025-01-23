@@ -1,31 +1,28 @@
 ---
-title: What's new from WWDC19 keynote [Updated]
+title: What's new from WWDC19 keynote
 subtitle: Today's announcements in one page
 description: Read what's has been announced at the WWDC19 keynote
 category: ['Posts']
 tags: ["Apple", "iOS", "macOS", "hardware"]
-last_edit_at: 2019-06-07
+updates:
+  - date: 2019-06-03
+    content: Added information about features and changes announced today during the State of the Union keynote.
+  - date: 2019-06-03
+    content: Added links to previews on Apple's website.
+  - date: 2019-06-04
+    content: Added PWA improvements notes.
+  - date: 2019-06-05
+    content: Added ARKit 3 requirements
+  - date: 2019-06-07
+    content: Added operating systems and Sidecar requirements. New section highlightning interviews.
 ---
-
-*Update 1 (June 3): added information about features and changes announced today during the State of the Union keynote.*
-
-*Update 2 (June 3: added links to previews on Apple's website.*
-
-*Update 3 (June 4): PWA improvements notes.*
-
-*Update 4 (June 5): ARKit 3 requirements*
-
-*Update 5 (June 7): operating systems and Sidecar requirements. New section highlightning interviews.*
-
-For live updates, please follow me on [twitter]({{ site.data.social.twitter.url }}).
-
-<br/>
 
 A (very long) list of today's announcements. The source is mainly the today keynote, otherwise sources are linked.
 
 It will be updated as new features and hidden tricks are discovered.
 
 ### WWDC by the numbers
+
 - over 1000 developers attending
 - 97% customer satisfaction of iOS 12
 - 85% iOS 12 install-base
@@ -37,6 +34,7 @@ It will be updated as new features and hidden tricks are discovered.
 ### Software announcements
 
 #### tvOS 13
+
 - multi-user support
 - Xbox One S and PS4 controller support
 - new underwater screensaver
@@ -144,7 +142,7 @@ Note: many of these fetures are available on macOS, too.
     - it creates a random email addresses and emails are forwarded to the real inbox. Each app gets a different, random email address
     - Available on iOS, macOS, tvOS and the web
     - accounts are already verified and protected by [2-factor authentication](https://support.apple.com/en-us/HT204915)
-    - TechCrunch has wrote [FAQs](https://techcrunch.com/2019/06/07/answers-to-your-burning-questions-about-how-sign-in-with-apple-works/) on the matter. 
+    - TechCrunch has wrote [FAQs](https://techcrunch.com/2019/06/07/answers-to-your-burning-questions-about-how-sign-in-with-apple-works/) on the matter.
 - HomeKit privacy improvements
     - *HomeKit Secure Video*: your home videos are analyzed locally on your HomeKit hub device (HomePod, AppleTV or iPad) and only the analysis result is uploaded to your iCloud account and made available to apps. Them won't get the original video and it is never uploaded on to the cloud
     - HomeKit coming to routers, it actually is a firewall to stop private home-related data going out

@@ -1,9 +1,18 @@
 ---
-title: "Thoughts on the new MacBook Pro and Apple mobile computing (Updated)"
+title: "Thoughts on the new MacBook Pro and Apple mobile computing"
 subtitle: "Hardware changes, Apple embracing standards, their focus on creators and MacBook Air highly uncertain future"
 description: "Hardware changes, Apple embracing standards, their focus on creators and MacBook Air highly uncertain future"
 category: ['Posts']
 tags: ['Apple','Review']
+updates:
+  - date: 2016-10-29
+    content: "Correction, the SSD isn't soldered."
+  - date: 2016-10-29
+    content: "Added USB-C accessories."
+  - date: 2016-10-29
+    content: "Added info about speed of Thunderbolt ports."
+  - date: 2016-10-30
+    content: "Added info about the chime sound."
 ---
 
 In a changing world curious things happen. This week Microsoft aimed at creatives with a desktop computer and Apple just did with a laptop during its October 27th event.
@@ -69,14 +78,6 @@ If you find yourself googling for some cheaper alternative dongles and other han
 *Note: The Dell Thunderbolt Dock seems to have been discountinued due to some issues. Don't buy it.*
 
 Thanks for reading.
-
-**Update:** Correction, the SSD isn't soldered.
-
-**Update 2**: Added USB-C accessories.
-
-**Update 3**: Added info about speed of Thunderbolt ports.
-
-**Update 4**: Added info about the chime sound.
 
 ---
 

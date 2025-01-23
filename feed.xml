@@ -10,7 +10,7 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% assign sortedPosts = site.posts | sort: 'last_update' | reverse %}
+    {% assign sortedPosts = site.posts | sort: 'most_recent_edit' | reverse %}
     {% for post in sortedPosts limit: site.home.max_posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>

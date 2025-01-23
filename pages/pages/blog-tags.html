@@ -9,30 +9,24 @@ in_search: false
 
 
 <div>
-  <div class="blog-page-options">
-    <h5>
-      <a href="{{ site.baseurl }}/blog">Timeline</a> / 
-      <a href="{{ site.baseurl }}/blog/categories">Categories</a> / 
-      Tags / 
-      <a href="{{ site.baseurl }}/feed.xml"><i class="fa-solid fa-square-rss"></i></a> <a href="{{ site.baseurl }}/feed.xml">RSS</a>
-    </h5>
-  </div>
-  <div class="line-separator"></div>
-  <br>
+
+  {% include blog/blog-nav.html %}
 
   <div>
     {% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
     {% for tag in sorted_tags_by_name %}
+    {% assign tagName = tag[0] %}
+    {% assign tagId = tagName | downcase | replace:' ','-' | replace: '.','-' %}
+    {% assign numberOfpostsWithTag = tag[1] %}
       <div class="blog-entry">
         <span class="blog-entry-link">
-          {% assign i = tag[0] | downcase | replace:' ','-' | replace: '.','-' %}
-          <a href="{{ site.baseurl }}/blog/tags/{{ i }}">{{ tag[0] }}</a>
+          <a href="{{ site.baseurl }}/blog/tags/{{ tagId }}">{{ tagName }}</a>
         </span>
         <span class="blog-entry-details">
-          {% if tag[1] == 1 %}
-           &#183; {{ tag[1] }} post
+          {% if numberOfpostsWithTag == 1 %}
+           &#183; {{ numberOfpostsWithTag }} post
           {% else %}
-           &#183; {{ tag[1] }} posts
+           &#183; {{ numberOfpostsWithTag }} posts
           {% endif %}
         </span>
       </div>

@@ -17,13 +17,12 @@ custom_css: "pages/blog"
           {% endif %}
         </div>
         <div>
-          <div class="blog-page-options">
-            <h5><a href="{{ site.baseurl }}/blog">Timeline</a> / <a href="{{ site.baseurl }}/blog/categories/">Categories</a> / <a href="{{ site.baseurl }}/blog/tags">Tags</a> / <a href="{{ site.baseurl }}/feed.xml">RSS</a> <a href="{{ site.baseurl }}/feed.xml"><i class="fa-solid fa-rss"></i></a></h5>
-          </div>
-          <div class="line-separator"></div>
-          <br>
+
+          {% include blog/blog-nav.html %}
+
           <div>
-            {% for post in page.posts %}
+            {% assign sortedPosts = page.posts | sort: 'most_recent_edit' | reverse %}
+            {% for post in sortedPosts %}
               <div class="blog-entry">
                 <div class="blog-entry-link">
                   <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>

@@ -7,24 +7,11 @@ custom_css: "pages/blog"
 in_search: false
 ---
 
-
 <div>
-  <div class="blog-page-options">
-    <h5>Timeline /
-      <a href="{{ site.baseurl }}/blog/categories/">Categories</a> /
-      <a href="{{ site.baseurl }}/blog/tags">Tags</a> /
-      <a href="{{ site.baseurl }}/feed.xml"><i class="fa-solid fa-square-rss"></i></a> <a href="{{ site.baseurl }}/feed.xml">RSS</a>
-    </h5>
-  </div>
 
-  <div class="line-separator"></div>
+  {% include blog/blog-nav.html %}
 
   <div>
-    <p class="text-smaller">
-      <em>Sorted by last update date.</em>
-    </p>
-    <br>
-
     {% assign sortedPosts = site.posts | sort: 'most_recent_edit' | reverse %}
     {% for post in sortedPosts %}
 

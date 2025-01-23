@@ -421,6 +421,10 @@ Links:
 - [`theme-color`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color)
 - [Meta Theme Color and Trickery](https://css-tricks.com/meta-theme-color-and-trickery/)
 
+### Dark mode support
+
+- [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+
 ## Further notes
 
 `has_fa` variable is not used right now. Font-awesome is always loaded. Variables in front-matter are kept in case I change my mind and put an `if` in font-awesome loading in `head.html` file.

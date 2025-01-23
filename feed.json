@@ -22,7 +22,11 @@ layout: null
         {% assign meta_image = site.url | append: site.baseurl | append: '/static/postimages/' | append: post.seoimage %}
         {
             "id": "{{ post.url | to_hash: 'sha256' }}",
-            "title": {{ post.title | jsonify }},
+            {% assign updated = "" %}
+            {% if post.most_recent_update %}
+              {% assign updated = "(Updated) " %}
+            {% endif %}
+            "title": {{ post.title | prepend: updated | jsonify }},
             "url": "{{ post.url | absolute_url }}",
             "summary": {{ post.description | jsonify }},
             "content_text": {{ post.content | truncatehtml | truncatewords: 25 | strip_html | strip_newlines | jsonify }},
@@ -38,7 +42,7 @@ layout: null
               "size_in_bytes": "{{ post.enclosure_length }}"
             },{% endif %}
             "date_published": "{{ post.date | date_to_xmlschema }}",
-            "date_modified": "{{ post.date | date_to_xmlschema }}",
+            "date_modified": "{{ post.most_recent_edit | date_to_xmlschema }}",
             {% if post.author %}
                 "author": {% if post.author.name %} {
                 "name": "{{ post.author.name }}",

@@ -75,6 +75,9 @@ footersocial: true
 # Choose whether to display experimental features
 experimental: false
 
+feeds:
+  legacy_threshold: '2025-01-21'
+
 # Home customisation
 home:
   show_social: false # Choose whether to display social link in mid of home page or not
@@ -162,9 +165,6 @@ excerpt_separator: "\n\n"
 
 # reading speed (avg.)
 words_per_minute: 200
-
-# Jekyll Blue version in use
-version: v3.0.0
 
 # Set the Sass partials directory, as we're using @imports
 sass:

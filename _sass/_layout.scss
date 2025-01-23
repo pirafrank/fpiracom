@@ -34,39 +34,6 @@
   }
 }
 
-/*
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-*/
-
-/*.site-info {
-  float: left;
-
-  h3 {
-    font-size: 20px;
-  }
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}*/
-
 .site-name { // edit this to change appearance of name in navbar
   float: left; // imported from site info
   margin: 0px; // make it equal to .nav is fonts have same size
@@ -75,7 +42,6 @@
   font-family: $defaultSansSerif;
   font-weight: $thin;
   line-height: 1.0;
-  //text-transform: uppercase;
 
   a {
     color: $white;
@@ -94,17 +60,6 @@
     margin: 0 auto; // imported from site info
   }
 }
-
-/*.site-description { // edit this to change appearance of the line under the name in navbar
-  margin: -5px 0 0 0;
-  color: $white;
-  font-size: 16px;
-  font-weight: $thin;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}*/
 
 .nav { // edit this to change navbar appearance
   float: right;
@@ -182,17 +137,4 @@
 
 .social-icons-medium {
   font-size: 20px;
-}
-
-.spanIcons {
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-top: 15px;
-
-  img {
-    width: 24px;
-    height: 24px;
-    display: inline-block; /* not supported by IE7 */
-    border-radius: 5px;
-  }
 }

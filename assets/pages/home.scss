@@ -130,12 +130,6 @@ h1, h2, h3, h4, h5, h6 {
 // mid section
 //
 
-.middle {
-  text-align: center;
-  background-color: $darkBlue; //$darkBlue
-  padding: 20px 0px 20px 0px;
-}
-
 .wrapper-masthead {     // these settings overwrite the ones in style.scss
   margin-bottom: 0px;
 
@@ -145,56 +139,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   */
 
-}
-
-.navLinks {
-  display: none;
-  margin: 0px 20px 0px 20px;
-  padding-right: 25px;
-  text-align: right;
-  font-weight: $thin;
-
-  * {
-    color: $white;
-    &:hover, &:active {
-      color: $white;
-    }
-  }
-
-  @include mobile {
-    display: block;
-    text-align: center;
-    padding: 0px 0px 0px 0px;
-  }
-}
-
-.navLinkEntry {
-    margin-top: 10px; // put space between navLinks buttons...
-    margin-bottom: 10px; // ...in a vertically symmetric fashion!
-
-    a {
-      width: 120px;
-      background-color: transparent;
-      border: 1px solid $lightestGray;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-
-      @include mobile {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 180px;
-        padding: 5px 0px 5px 0px;
-        display: table;
-
-        &:active {
-          background-color: $white;
-          border-color: $white;
-          color: $darkBlue;
-        }
-      }
-    }
 }
 
 .scrolldown {
@@ -220,42 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 //
 // posts section
 //
-
-.inner-container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 890px;
-  //padding-top: 35px;
-
-  @include mobile {
-    padding-left: 1em;
-    padding-top: 15px;
-  }
-}
-
-.resEntry {
-  text-align: left;
-  font-size: 16px;
-  padding-bottom: 20px;
-
-  p {
-    color: $darkGray;
-  }
-  p > a {
-    color: $darkGray;
-  }
-
-  @include mobile {
-    margin-right: 0em;
-    line-height: 2.0;
-    p {
-      font-size: 18px;
-    }
-    p > a {
-      font-size: 18px;
-    }
-  }
-}
 
 .sectionTitle {
   padding-top: 1em;

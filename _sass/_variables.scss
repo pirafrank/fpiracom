@@ -30,6 +30,11 @@ $thin: 400;
 $normal: 400;
 $bold: 700;
 
+// card styles
+$buttonBorderRadius: 5px;
+$searchBarBorderRadius: 5px;
+$cardBorderRadius: 10px;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {

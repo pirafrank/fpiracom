@@ -50,7 +50,6 @@
 
 .line-separator {
   height: 1px;
-  //background: $darkGray;
   border-bottom: 1px solid $lightestGray;
 }
 
@@ -58,7 +57,6 @@
   i {
     font-family: $defaultSansSerif;
     font-style: normal;
-    //letter-spacing: -0.10em;
     border-color: transparent;
     border-radius: 2px;
     background-color: $lightestGray;
@@ -71,13 +69,12 @@
   position: fixed;
   background: $white;
   border: 1px solid $lightestGray;
-  border-radius: 5px;
+  border-radius: $buttonBorderRadius;
   padding: 3px 9px 3px 9px;
 
   a {
     font-size: 14px;
     font-family: $defaultSansSerif;
-    //text-transform: uppercase;
     color: $gray;
   }
 }

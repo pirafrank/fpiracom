@@ -1,11 +1,14 @@
 ---
 layout: compress
-name: version
 ---
 {% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}
 {
   "build":  {
-    "dateTime": "{{ "now" | date: "%Y-%m-%dT%H:%M:%S%z" }}"
+    "dateTime": "{{ "now" | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+    "jekyll": {
+      "version": "{{ jekyll.version }}",
+      "plugins": [{% for plugin in site.plugins%}"{{ plugin }}"{% unless forloop.last %},{% endunless %}{% endfor %}]
+    }
   },
   "lastCommit": {
     "hash": "{{ site.data.git.commit_hash }}",

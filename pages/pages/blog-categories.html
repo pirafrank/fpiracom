@@ -9,25 +9,26 @@ in_search: false
 
 
 <div>
-  <div class="blog-page-options">
-    <h5>
-      <a href="{{ site.baseurl }}/blog">Timeline</a> / 
-      Categories / 
-      <a href="{{ site.baseurl }}/blog/tags">Tags</a> /
-      <a href="{{ site.baseurl }}/feed.xml"><i class="fa-solid fa-square-rss"></i></a> <a href="{{ site.baseurl }}/feed.xml">RSS</a>
-    </h5>
-  </div>
-  <div class="line-separator"></div>
-  <br>
+
+  {% include blog/blog-nav.html %}
 
   <div>
-
-    {% assign sorted_categories = site.categories | sort %}
+  {% assign sorted_categories = site.categories | sort %}
     {% for category in sorted_categories %}
+      {% assign categoryName = category[0] %}
+      {% assign categoryId = categoryName | downcase | replace:' ','-' | replace: '.','-' %}
+      {% assign postsInCategory = category[1] %}
       <div class="blog-entry">
-        <div class="blog-entry-link">
-          <a href="{{ site.baseurl }}/blog/categories/{{ category | first | downcase | replace:' ','-' | replace: '.','-' }}">{{ category | first }}</span>
-        </div>
+        <span class="blog-entry-link">
+          <a href="{{ site.baseurl }}/blog/categories/{{ categoryId }}">{{ categoryName }}</a>
+        </span>
+        <span class="blog-entry-details">
+          {% if postsInCategory.size == 1 %}
+           &#183; {{ postsInCategory.size }} post
+          {% else %}
+           &#183; {{ postsInCategory.size }} posts
+          {% endif %}
+        </span>
       </div>
     {% endfor %}
 

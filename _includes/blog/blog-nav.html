@@ -1,0 +1,18 @@
+<div class="blog-page-options">
+  <h5>
+    {% if page.url != '/blog/' %}<a href="{{ site.baseurl }}/blog">Timeline</a>{% else %}Timeline{% endif %} /
+    {% if page.url != '/blog/categories/' %}<a href="{{ site.baseurl }}/blog/categories/">Categories</a>{% else %}Categories{% endif %} /
+    {% if page.url != '/blog/tags/' %}<a href="{{ site.baseurl }}/blog/tags/">Tags</a>{% else %}Tags{% endif %} /
+    <a href="{{ site.baseurl | append: site.feeds.rss }}"><i class="fa-solid fa-square-rss"></i></a> <a
+      href="{{ site.baseurl | append: site.feeds.rss }}">RSS</a>
+  </h5>
+</div>
+<div class="line-separator"></div>
+<div>
+  {% if page.url != '/blog/tags/' and page.url != '/blog/categories/' %}
+  <p class="text-smaller">
+    <em>Sorted by last update date.</em>
+  </p>
+  {% endif %}
+  <br>
+</div>

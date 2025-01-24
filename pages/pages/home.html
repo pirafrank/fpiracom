@@ -38,12 +38,13 @@ in_search: false
       </div>
 
         <div id="posts" class="sectionTitle">Latest blog posts</div>
-        {% assign sortedPosts = site.posts | sort: 'last_update' | reverse %}
+        {% assign sortedPosts = site.posts | sort: 'most_recent_edit' | reverse %}
         {% for post in sortedPosts limit: site.home.max_posts %}
           <div class="news newsEntry">
             <span class="news newsTitle"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-            <div class="newsDate">{{ post.date | date: "%B %-d, %Y" }}
-              {% if post.last_edit_at %}(Updated: {{ post.last_edit_at | date: "%B %-d, %Y" }}){% endif %}
+            <div class="newsDate">
+              {% if post.most_recent_update %}<i class="fa-solid fa-pen"/> Updated on {{ post.most_recent_update | date: "%B %-d, %Y" }}<br>{% endif %}
+              {{ post.date | date: "%B %-d, %Y" }}
             </div>
               {% if site.home.show_excerpt %}
                   {% if post.subtitle %}

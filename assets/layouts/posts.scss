@@ -99,6 +99,30 @@
     }
   }
 
+  .post-updates {
+    background-color: $lightestGray;
+    padding: 20px 20px;
+    margin-bottom: 1.5em;
+    border-radius: $cardBorderRadius;
+    color: $darkGray;
+    font-size: 0.8em;
+
+    p:first-of-type {
+      margin-top: 0.5em;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    p > code {
+      background-color: $darkGray;
+      color: $white;
+    }
+
+  }
+
   .post-details { // edit appearance of post details (date, category, ecc.)
     i {
       font-size: 15px;

@@ -22,8 +22,8 @@ I publish most content and status updates on socials, albeit not that often. You
 
 If you prefer less frequent updates, you can tune directly to blog post publishing via:
 
-- [RSS feed]({{ site.url | append: site.baseurl }}/feed.xml)
-- [Atom feed]({{ site.url | append: site.baseurl }}/atom.xml)
+- [RSS feed]({{ site.url | append: site.baseurl | append: site.feeds.rss }})
+- [Atom feed]({{ site.url | append: site.baseurl | append: site.feeds.atom}})
 - [Telegram channel]({{ site.data.social.telegram-feed.url }}), blog posts only.
 
 On the world *wild* web I'm usually *pirafrank*. Here's an almost up-to-date list of [my active social profiles]({{ site.data.social.bentome.url }}).

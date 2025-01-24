@@ -13,9 +13,9 @@
     border: 1px solid $lightestGray;
     padding: 6px 2%;
     color: $gray;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: $searchBarBorderRadius;
+    -moz-border-radius: $searchBarBorderRadius;
+    border-radius: $searchBarBorderRadius;
 
     &:hover, &:focus {
       color: $darkerGray; // color of typed text

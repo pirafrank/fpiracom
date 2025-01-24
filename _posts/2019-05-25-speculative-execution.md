@@ -1,16 +1,14 @@
 ---
-title: Speculative execution side-channel vulnerabilities [Update 2]
+title: Speculative execution side-channel vulnerabilities
 subtitle: Keep track of them and check for mitigations to be installed and enabled
 description: "Speculative execution side-channel vulnerabilities: keeping track of them and checking for mitigations to be installed and enabled"
 category: ['Posts']
 tags: ["Security", "malware", "hardware"]
-last_edit_at: 2020-01-28
----
-
-*Update (June 2, 2019): Added notes about libgo improvements landing in GCC 10 Git.*
-
-*Update 2 (Jan 28, 2020): Added CVE-2019-1125, CVE-2019-11135, CVE-2019-12207, CVE-2020-0549, CVE-2020-0548 and updated [spreadsheet]({{ site.data.external.cpu-vulns }}).*
-
+updates:
+  - date: 2019-06-02
+    content: "Added notes about libgo improvements landing in GCC 10 Git."
+  - date: 2020-01-28
+    content: "Added CVE-2019-1125, CVE-2019-11135, CVE-2019-12207, CVE-2020-0549, CVE-2020-0548 and updated [spreadsheet]({{ site.data.external.cpu-vulns }})."
 ---
 
 It’s been over a year since speculative execution side-channel vulnerabilities are making the headlines.

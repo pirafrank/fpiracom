@@ -349,9 +349,38 @@ Then add `content:encoded` tag to every feed item. See below how to specify the 
 
 Now IFTTT can get the URL from the `img` tag and make it available to applet via the `EntryImageURL` ingredient.
 
-### Adding filters to IFTTT RSS feed trigger
+### SEO images in IFTTT RSS feed trigger
+
+IFTTT may be used as a bridge between blog post publishing and social sharing. The SEO image is not part of the RSS feed, so an IFTTT *Make a web request* action is used to retrieve its URL via API. The action performs a `GET` request to `https://fpira.com/api/v1/ifttt/posts/latest`. The URL is then used in a filter code to set the image URL in next *Then* action.
+
+Below there's a filter code example to set the image URL in a LinkedIn *Share an update with image* action.
+
+```javascript
+let imageURL = "https://fpira.com/assets/images/og_image.png";
+
+if(MakerWebhooks.makeWebRequestQuery[0].StatusCode == "200" && MakerWebhooks.makeWebRequestQuery[0].Value3){
+  imageURL = MakerWebhooks.makeWebRequestQuery[0].Value3;
+}
+
+Linkedin.shareImagePost.setPhotoUrl(imageURL)
+```
+
+Docs:
 
 - [IFTTT - Why is there a “File not found” image on my post?](https://help.ifttt.com/hc/en-us/articles/115010361748/)
+
+## Plugins
+
+Apart from Jekyll plugins available as gems and declared in `Gemfile`, there are quite a few custom plugins in the `_plugins` folder. Not all code is mine, and some has been modified to fit my needs, but I've tried to give credit where it's due.
+
+Most plugins are used to extend Jekyll functionalities, by adding new Liquid tags or filters, to edit the markdown conversion process, or to populate `site.data` with additional info (for example, with current git commit data).
+
+### AddPostUpdateInfo
+
+This plugin reorders the `post.updates` array and adds two property to each post:
+
+- `most_recent_edit`: this is the most recent edit, which either the creation date or the last update date
+- `most_recent_update`: this is the last update date, if any, otherwise it's null
 
 ## APIs
 
@@ -361,20 +390,27 @@ Check the folder to find the structure.
 
 ## CMS
 
+### Jekyll Post via Web
+
+An early attempt was made using [vrypan/jekyll-post-via-web](https://github.com/vrypan/jekyll-post-via-web). But it was not maintained and too basic for my needs.
+
 ### prose.io
 
-CMS-like functionality can be experiences using [prose.io](https://prose.io).
+I tried to experience CMS-like functionality using [prose.io](https://prose.io).
 
-Prose.io uses `_prose.yml` in the repo root. To provide a list of actual tags and categories available on the website two JSONP files are used. Run the following to generate them.
+Prose.io uses `_prose.yml` in the repo root. To provide a list of actual tags and categories available on the website two JSONP files are used, `jsonp/categories.jsonp` and `jsonp/tags.jsonp`.
 
-```sh
-bash repo_utils/list_categories.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js categories
-bash repo_utils/list_tags.sh | awk '{ print $2 }' | sort | node repo_utils/jsonp_generator.js tags
-```
+### Notion-to-Jekyll
 
-which will generate `jsonp/categories.jsonp` and `jsonp/tags.jsonp` files.
+Looking for a CMS, I found Notion to be a good platform to build my own. But it required a way to convert Notion pages to Jekyll posts, so I built [notion-to-jekyll](https://github.com/pirafrank/notion-to-jekyll).
 
-## Theming
+A Notion workspace is used to write drafts and publish them as Jekyll posts when ready. The conversion is done using notion-to-jekyll running on a daily scheduled [GitHub workflow](.github/workflows/notion_to_jekyll.yml).
+
+notion-to-jekyll uses the Notion API to fetch pages and convert them to markdown files, as well download images and other assets. Finally, it commits and pushes changes to the repository via [github-commit-sign](https://github.com/marketplace/actions/github-commit-sign) action.
+
+## Theming and dark mode
+
+### Theming
 
 ```xml
 <meta name="theme-color" content="#3344aa">
@@ -382,6 +418,7 @@ which will generate `jsonp/categories.jsonp` and `jsonp/tags.jsonp` files.
 
 Links:
 
+- [`theme-color`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color)
 - [Meta Theme Color and Trickery](https://css-tricks.com/meta-theme-color-and-trickery/)
 
 ## Further notes
@@ -390,6 +427,8 @@ Links:
 
 ## License
 
-Source code is released under GNU GPLv3 license. Website and blog content are released under Creative Commons Attribution-NonCommercial 4.0.
+Source code is released under GNU GPLv3 license. Any source code coming from other projects maintains its original license.
+
+Website and blog content are released under Creative Commons Attribution-NonCommercial 4.0.
 
 To know more about terms and license, please read the [terms](pages/pages/terms.md) page.

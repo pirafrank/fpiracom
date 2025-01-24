@@ -10,22 +10,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
-      - 'main'
-  push:
-    branches:
-      - develop
-    paths-ignore:
-      - '_jekyll_ignore/**'
-      - README.md
-      - '.gitignore'
-      - 'repo_utils/**'
-      - '.vscode'
-      - '.vercelignore'
-      - Dockerfile
-      - .dockerignore
-      - .editorconfig
-      - '.devcontainer/**'
-      - '.html_proofer_cache/**'
+      - '!feature/**'
   workflow_dispatch:
 
 jobs:
@@ -68,7 +53,9 @@ jobs:
       env:
         REF: ${{ steps.get_current_ref.outputs.ref }}
       run: |
-          echo "alias=fpiracom-${{ steps.get_current_ref.outputs.ref }}-pirafrank.vercel.app" >> $GITHUB_OUTPUT
+          REF=${REF//_/-}
+          REF=${REF//\//-}
+          echo "alias=fpiracom-${REF}-pirafrank.vercel.app" >> $GITHUB_OUTPUT
 
     # Perform a Vercel deploy, to check for ability to build on Vercel.
     # This should always perform a preview deploy.

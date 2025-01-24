@@ -5,24 +5,39 @@ layout: null
 <rss version="2.0">
   <channel>
     <title>{{ site.name | xml_escape }}</title>
+    <link>{{ '/' | absolute_url }}</link>
     <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url | append: site.baseurl }}</link>
+    <language>en</language>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <image>
+      <title>{{ site.name }}</title>
+      <url>{{ 'assets/favicons/favicon.png' | absolute_url }}</url>
+      <link>{{ '/' | absolute_url }}</link>
+    </image>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% assign sortedPosts = site.posts | sort: 'most_recent_edit' | reverse %}
-    {% for post in sortedPosts limit: site.home.max_posts %}
+    {% for post in sortedPosts limit: site.feeds.entries %}
       <item>
         {% assign updated = "" %}
         {% if post.most_recent_update %}
           {% assign updated = "(Updated) " %}
         {% endif %}
         <title>{{ updated }}{{ post.title | xml_escape }}</title>
-        {% if post.subtitle %}
-        <description>{{ post.subtitle | truncatehtml | truncatewords: 25 | xml_escape }} <br/><br/><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read more</a></description>
+        {% if post.most_recent_update %}
+          {% assign desc = post.updates.last.content | markdownify | strip_html | xmlescape %}
+        {% elsif post.subtitle %}
+          {% assign desc = post.subtitle | truncatehtml %}
         {% else %}
-        <description>{{ post.content | truncatehtml | truncatewords: 25 | xml_escape }} ... <br/><br/><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read more</a></description>
+          {% assign desc = post.description | truncatehtml %}
         {% endif %}
+        {% assign word_count = desc | number_of_words %}
+        {% if word_count < site.feeds.wordlimit %}
+          {% assign ellipsis = '. ' %}
+        {% else %}
+          {% assign ellipsis = '... ' %}
+        {% endif %}
+        <description>{{ desc | truncatewords: site.feeds.wordlimit | xml_escape }}{{ ellipsis }}</description>
         <pubDate>{{ post.most_recent_edit | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         {% assign post_date = post.date | date: "%s" %}

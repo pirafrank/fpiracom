@@ -28,6 +28,7 @@ avatar: "/assets/images/avatar.jpg"
 timezone: Europe/Rome
 
 # locale setting
+lang: en
 locale: en_US
 
 # Your website URL (e.g. http://fpira.com)
@@ -78,6 +79,8 @@ feeds:
   rss: "/feed.xml"
   atom: "/atom.xml"
   json: "/feed.json"
+  entries: 10
+  wordlimit: 25
   legacy_threshold: '2025-01-21'
 
 # Home customisation

@@ -62,7 +62,6 @@ seo_links:
   - "https://github.com/pirafrank"
   - "https://mastodon.social/@pirafrank"
   - "https://www.linkedin.com/in/pirafrank"
-  - "https://twitter.com/pirafrank"
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -76,17 +75,15 @@ footersocial: true
 experimental: false
 
 feeds:
+  rss: "/feed.xml"
+  atom: "/atom.xml"
+  json: "/feed.json"
   legacy_threshold: '2025-01-21'
 
 # Home customisation
 home:
-  show_social: false # Choose whether to display social link in mid of home page or not
   max_posts: 5 # max number of latest posts to show in home page
-  max_projects: 3 # max number of projects to show in the home page
-  max_events: 3 # max number of entries from /events page to show in the home page
   show_excerpt: true # choose whether to show or not excerpt of latest blog posts
-  show_twitter_feed: false # NB. you have to REPLACE the code in home with the one for your twitter account.
-  show_twitter_button: false # Choose whether to 'Follow me' button in home.
 
 # Default values
 # has_fa: enable font-awesome

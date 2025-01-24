@@ -5,7 +5,7 @@ layout: null
     "version": "https://jsonfeed.org/version/1",
     "title": "{{ site.name | xml_escape }}",
     "home_page_url": "{{ "/" | absolute_url }}",
-    "feed_url": "{{ "/feed.json" | absolute_url }}",
+    "feed_url": "{{ site.feeds.json | absolute_url }}",
     "description": {{ site.description | jsonify }},
     "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
     "favicon": "{{ "/favicon.ico" | absolute_url }}",

@@ -3,8 +3,8 @@
     {% if page.url != '/blog/' %}<a href="{{ site.baseurl }}/blog">Timeline</a>{% else %}Timeline{% endif %} /
     {% if page.url != '/blog/categories/' %}<a href="{{ site.baseurl }}/blog/categories/">Categories</a>{% else %}Categories{% endif %} /
     {% if page.url != '/blog/tags/' %}<a href="{{ site.baseurl }}/blog/tags/">Tags</a>{% else %}Tags{% endif %} /
-    <a href="{{ site.baseurl }}/feed.xml"><i class="fa-solid fa-square-rss"></i></a> <a
-      href="{{ site.baseurl }}/feed.xml">RSS</a>
+    <a href="{{ site.baseurl | append: site.feeds.rss }}"><i class="fa-solid fa-square-rss"></i></a> <a
+      href="{{ site.baseurl | append: site.feeds.rss }}">RSS</a>
   </h5>
 </div>
 <div class="line-separator"></div>

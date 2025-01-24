@@ -42,6 +42,6 @@
 {% endif %}
 -->
 
-<a href="{{ site.baseurl }}/feed.xml"
+<a href="{{ site.baseurl | append: site.feeds.rss }}"
     alt="RSS feed"
     title="RSS feed"><i class="fa-solid fa-square-rss"></i></a>

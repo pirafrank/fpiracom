@@ -12,15 +12,15 @@ Here are my places on the Web. Reach me on your platform of choice.
     <div class="section group">
         <div class="col span_7_of_12">
           <h4>Social Networks</h4>
-            <a href="{{ site.data.social.linkedin.url }}">LinkedIn</a>
+            <a href="{{ site.data.social.linkedin.url }}">LinkedIn</a>&nbsp;
             (<a href="{{ site.data.social.linkedin.recentActivity }}">Recent activity</a>)
             <br>
             <a href="{{ site.data.social.threads.url }}">Threads</a>
             <br>
-            <a href="{{ site.data.social.mastodon.url }}">Mastodon</a>
+            <a href="{{ site.data.social.mastodon.url }}">Mastodon</a>&nbsp;
+            (<a href="{{ site.data.social.telegram.url }}">Telegram mirror</a>)
             <br>
-            <a href="{{ site.data.social.twitter.url }}">X (twitter)</a> (<a href="{{ site.data.social.telegram.url }}">Telegram
-              mirror</a>)
+            <a href="{{ site.data.social.bluesky.url }}">Bluesky</a>
             <br>
             <a href="{{ site.data.social.reddit.url }}">Reddit</a>
             <br>
@@ -44,6 +44,8 @@ Here are my places on the Web. Reach me on your platform of choice.
             <a href="{{ site.data.social.docker.url }}">Docker Hub</a>
             <br>
             <a href="{{ site.data.social.npmjs.url }}">npm.js</a>
+            <br>
+            <a href="{{ site.data.social.crates.url }}">crates.io</a>
             <br>
             <a href="{{ site.data.social.packal.url }}">Packal.org</a>
           <h4>Identity</h4>

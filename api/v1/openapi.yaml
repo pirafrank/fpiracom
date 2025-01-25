@@ -93,20 +93,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Post'
 
-  /v1/socials:
-    get:
-      operationId: v1SocialsGet
-      summary: Get social media links
-      responses:
-        200:
-          description: Social media URLs
-          content:
-            application/json:
-              schema:
-                type: object
-                additionalProperties:
-                  type: string
-
   /v1/tags:
     get:
       operationId: v1TagsGet

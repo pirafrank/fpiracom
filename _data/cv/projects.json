@@ -1,6 +1,90 @@
 {
   "projects": [
     {
+      "name": "zed_unofficial_win_builds",
+      "description": "Unofficial stable and pre-release builds of the Zed editor for Windows, with version and release type matching. Easy install via scoop or pwsh script. Not affiliated with Zed Industries",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/zed_unofficial_win_builds",
+      "repourl": "https://github.com/pirafrank/zed_unofficial_win_builds",
+      "license": "MIT",
+      "creationDate": "2024-09-10T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "what-size.yazi",
+      "description": "A plugin for yazi to calculate the size of current selection or current working directory",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/what-size.yazi",
+      "repourl": "https://github.com/pirafrank/what-size.yazi",
+      "license": "MIT",
+      "creationDate": "2024-08-03T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "zellij-what-time",
+      "description": "Zellij plugin to show host system date and/or time in the status bar. Zero-config, but customizable. Inspired by zellij-datetime",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/zellij-what-time",
+      "repourl": "https://github.com/pirafrank/zellij-what-time",
+      "license": "MIT",
+      "creationDate": "2024-09-09T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "appimage_updater",
+      "description": "A CLI tool to look for AppImages in your $PATH and call appimageupdatetool to bulk update them",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/appimage_updater",
+      "repourl": "https://github.com/pirafrank/appimage_updater",
+      "license": "MIT",
+      "creationDate": "2024-08-29T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "notion-to-jekyll",
+      "description": "A tool to manage Jekyll drafts and posts (including assets) via Notion",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/notion-to-jekyll",
+      "repourl": "https://github.com/pirafrank/notion-to-jekyll",
+      "license": "MIT",
+      "creationDate": "2024-03-09T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "github-commit-sign",
+      "description": "A node module and CLI tool to perform multi-file signed commits on a GitHub repo through their GraphQL APIs. Good for CI/CD environments",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/github-commit-sign",
+      "repourl": "https://github.com/pirafrank/github-commit-sign",
+      "license": "MIT",
+      "creationDate": "2024-02-29T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "jekyll-listme",
+      "description": "A Jekyll command plugin to list tags and categories for your Jekyll website. Output as plain text, JSON, or YAML",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/jekyll-listme",
+      "repourl": "https://github.com/pirafrank/jekyll-listme",
+      "license": "MIT",
+      "creationDate": "2024-03-20T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "zenpath.xplr",
       "description": "A xplr theme inspired by zentable.xplr",
       "group": "",
@@ -9,7 +93,8 @@
       "license": "MIT",
       "creationDate": "2023-03-21T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false
+      "isArchived": false,
+      "maintained": true
     },
     {
       "name": "workspace",
@@ -20,7 +105,8 @@
       "license": "MIT",
       "creationDate": "2020-05-09T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false
+      "isArchived": false,
+      "maintained": true
     },
     {
       "name": "ephemeral",
@@ -32,7 +118,7 @@
       "creationDate": "2021-08-05T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
-      "isLegacy": false
+      "maintained": true
     },
     {
       "name": "notion-to-text",
@@ -44,11 +130,11 @@
       "creationDate": "2021-11-22T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
-      "isLegacy": false
+      "maintained": true
     },
     {
       "name": "fpira.com",
-      "description": "My website. It is an heavily modified fork of Jekyll Now with more features and a custom SCSS framework coded from scratch. Hosted on Vercel, built on GitHub Actions.",
+      "description": "This very website and blog. It started off Jekyll Now, quickly became an heavily modified fork with more features and a custom SCSS framework coded from scratch. It is a place to tinker and test things, often resulting in overengineering for a personal website. I keep it on latest Jekyll. It's built and hosted on Vercel, with help of GitHub Actions.",
       "group": "",
       "homepage": "https://fpira.com",
       "repourl": "https://github.com/pirafrank/fpiracom",
@@ -56,7 +142,7 @@
       "creationDate": "2015-03-13T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
-      "isLegacy": false
+      "maintained": true
     },
     {
       "name": "Rebrandly CLI",
@@ -68,7 +154,7 @@
       "creationDate": "2016-11-16T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
-      "isLegacy": false
+      "maintained": false
     },
     {
       "name": "iA Writer templates",
@@ -80,10 +166,10 @@
       "creationDate": "2016-07-19T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
-      "isLegacy": false
+      "maintained": false
     },
     {
-      "name": "Alfred Workflows",
+      "name": "Alfred Workflows and Themes",
       "description": "Useful Alfred workflows to enhance your productivity on Mac. Good for developers and power-users.",
       "group": "",
       "homepage": "https://fpira.com/alfred-for-mac",
@@ -91,8 +177,8 @@
       "license": "GNU GPLv3",
       "creationDate": "2016-02-07T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
-      "isLegacy": false
+      "isArchived": true,
+      "maintained": false
     },
     {
       "name": "Google Photos EXIF fixer",
@@ -103,8 +189,8 @@
       "license": "GNU GPLv3",
       "creationDate": "2015-05-30T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
-      "isLegacy": false
+      "isArchived": true,
+      "maintained": false
     }
   ]
 }

@@ -5,11 +5,9 @@ permalink: /projects/
 show_title: true
 ---
 
-Side projects I make in my spare time. Code is available on [Github]({{ site.data.social.github.url }}), feel free to fork me.
+*Sorted by creation date, in descending order.*
 
-Ordered by creation date (desc).
-
-{% assign projects = site.data.cv.projects.projects | sort: "creationDate" | reverse %}
+{% assign projects = site.data.cv.projects.projects | where: "maintained", true | sort: "creationDate" | reverse %}
 {% for project in projects %}
 
 #### [{{ project.name }}]({{ project.repourl }})
@@ -20,7 +18,16 @@ Ordered by creation date (desc).
 
 ### Legacy projects
 
-Projects below have not been updated for a while and are currently unmaintained.
+Projects below are archived or unmaintained.
+
+{% assign legacy = site.data.cv.projects.projects | where: "maintained", false | sort: "creationDate" | reverse %}
+{% for lp in legacy %}
+
+#### [{{ lp.name }}]({{ lp.homepage }})
+
+{{ lp.description }}
+
+{% endfor %}
 
 #### [Scaleway client]({{site.data.social.github.url}}/scaleway_api)
 

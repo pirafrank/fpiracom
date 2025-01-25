@@ -32,12 +32,7 @@ in_search: false
       <!-- end of header info -->
       <!-- content section -->
 
-      <div class="resources">
-        <div class="sectionTitle">Resources</div>
-        {% include home/resources.html %}
-      </div>
-
-        <div id="posts" class="sectionTitle">Latest blog posts</div>
+      <div id="posts">
         {% assign sortedPosts = site.posts | sort: 'most_recent_edit' | reverse %}
         {% for post in sortedPosts limit: site.home.max_posts %}
           <div class="news newsEntry">
@@ -55,14 +50,20 @@ in_search: false
               {% endif %}
           </div>
         {% endfor %}
+      </div>
+
+      <div>
         <p>
           <span class="low-links">
             <a class="grayLinks" href="{{ site.baseurl }}/blog/">All blog posts</a>&nbsp;&nbsp;<i class="fa-solid fa-forward" aria-hidden="true"/>
           </span>
         </p>
+      </div>
+
         <div class="resources">
           <div class="sectionTitle">More</div>
-          {% include home/resources_bottom.html %}
+          {% capture resources_bottom %}{% include home/resources_bottom.md %}{% endcapture %}
+          {{ resources_bottom | markdownify }}
         </div>
 
       <!-- content section -->

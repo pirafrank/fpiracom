@@ -11,7 +11,6 @@ aboutme:
 alby:
   categories:
     - crypto
-    - money
   url: https://getalby.com/p/pirafrank
   address: pirafrank@getalby.com
 angel:
@@ -21,35 +20,56 @@ angel:
   user: francescopira
 aspe:
   categories:
-    - social
+    - pgp
   url: 'https://keyoxide.org/aspe:keyoxide.org:QITV3373KPVHKJ5YESI6AW5EJQ'
   username: pirafrank
 bitcoin: # segwit
   categories:
     - crypto
-    - money
   url: 'https://chart.googleapis.com/chart?chs=512x512&cht=qr&choe=UTF-8&chl=bc1q7r7mhmg7tgy4ntps0nnu9gt4uclcspjyh6z4hy6tyykxx3qygjus8ehyu7'
   address: bc1q7r7mhmg7tgy4ntps0nnu9gt4uclcspjyh6z4hy6tyykxx3qygjus8ehyu7
 bentome:
   categories:
-    - social
+    - bio
   url: 'https://bento.me/pirafrank'
   user: pirafrank
-blog:
+blog-html:
   categories:
     - blog
   url: 'https://fpira.com/blog'
-  user: pirafrank
+blog-rss:
+  categories:
+    - blog
+  url: 'https://fpira.com/feed.xml'
+blog-atom:
+  categories:
+    - blog
+  url: 'https://fpira.com/atom.xml'
+blog-jsonfeed:
+  categories:
+    - blog
+  url: 'https://fpira.com/feed.json'
 bluesky:
   categories:
     - social
   url: 'https://bsky.app/profile/pirafrank.bsky.social'
   user: 'pirafrank.bsky.social'
+buymeacoffee:
+  categories:
+    - support
+  url: https://www.buymeacoffee.com/pirafrank
+  user: pirafrank
 cncf:
   categories:
     - dev
   url: https://community.cncf.io/u/mmfzj9
   user: mmfzj9
+crates:
+  # crates.io
+  categories:
+    - dev
+  url: https://crates.io/users/pirafrank
+  user: pirafrank
 credly:
   categories:
     - certifications
@@ -64,7 +84,6 @@ docker: # docker hub
 ethereum:
   categories:
     - crypto
-    - money
   url: 'https://chart.googleapis.com/chart?chs=512x512&cht=qr&chl=pirafrank.eth&choe=UTF-8'
   address: 'pirafrank.eth'
 #facebook:
@@ -85,8 +104,13 @@ github:
   gist: 'https://gist.github.com/pirafrank?direction=desc&sort=updated'
 goodreads:
   categories:
-    - social
+    - reading
   url: 'https://www.goodreads.com/pirafrank'
+  user: pirafrank
+gumroad:
+  categories:
+    - support
+  url: https://pirafrank.gumroad.com
   user: pirafrank
 gravatar:
   categories:
@@ -98,6 +122,12 @@ gravatar:
 #    - social
 #  url: 'http://instagram.com/pirafrank'
 #  user: pirafrank
+jsr:
+  # jsr.io
+  categories:
+    - dev
+  url: https://jsr.io/user/3e232c35-60b6-4776-b105-ed9b5e1e9508
+  user: 3e232c35-60b6-4776-b105-ed9b5e1e9508
 keybase:
   categories:
     - pgp
@@ -121,7 +151,6 @@ libravatar:
 lightning: # bitcoin lightning
   categories:
     - crypto
-    - money
   url: 'https://chart.googleapis.com/chart?chs=512x512&cht=qr&choe=UTF-8&chl=lnbc1p3uprl8pp5sw4c2ryghefnpzpje5qyjfmgzpef0ahjgmntty9cgjlhf934twtqdqqcqzzgxqyz5vqrzjqwnvuc0u4txn35cafc7w94gxvq5p3cu9dd95f7hlrh0fvs46wpvhde4ut8z6l4ewegqqqqryqqqqthqqpyrzjqw8c7yfutqqy3kz8662fxutjvef7q2ujsxtt45csu0k688lkzu3lde4ut8z6l4ewegqqqqryqqqqthqqpysp5nn95gemla67fjtpljquxrkk0da20jyvwk35yp7yqgs5spxssyhps9qypqsq37j20kghlepd2ses038jl02zvewaeac0svklujrlxev9hrvw4rrsut5qanqsnttk8w57zefsc7rrpe88cen68ml2e3x37qv52txyz2gq2ddsv5'
   address: lnbc1p3uprl8pp5sw4c2ryghefnpzpje5qyjfmgzpef0ahjgmntty9cgjlhf934twtqdqqcqzzgxqyz5vqrzjqwnvuc0u4txn35cafc7w94gxvq5p3cu9dd95f7hlrh0fvs46wpvhde4ut8z6l4ewegqqqqryqqqqthqqpyrzjqw8c7yfutqqy3kz8662fxutjvef7q2ujsxtt45csu0k688lkzu3lde4ut8z6l4ewegqqqqryqqqqthqqpysp5nn95gemla67fjtpljquxrkk0da20jyvwk35yp7yqgs5spxssyhps9qypqsq37j20kghlepd2ses038jl02zvewaeac0svklujrlxev9hrvw4rrsut5qanqsnttk8w57zefsc7rrpe88cen68ml2e3x37qv52txyz2gq2ddsv5
 linkedin:
@@ -137,7 +166,7 @@ linktree:
   user: pirafrank
 matrix:
   categories:
-    - social
+    - chat
   url: 'https://matrix.to/#/@pirafrank:matrix.org'
   user: '@pirafrank:matrix.org'
 mastodon:
@@ -145,11 +174,11 @@ mastodon:
     - social
   url: 'https://mastodon.social/@pirafrank'
   user: '@pirafrank'
-medium:
-  categories:
-    - blog
-  url: 'https://medium.com/@pirafrank'
-  user: pirafrank
+#medium:
+#  categories:
+#    - blog
+#  url: 'https://medium.com/@pirafrank'
+#  user: pirafrank
 microsoft_learn:
   categories:
     - certifications
@@ -182,7 +211,7 @@ npmjs:
   user: pirafrank
 oku:
   categories:
-    - social
+    - reading
   url: 'https://oku.club/user/pirafrank'
   user: pirafrank
 packal:
@@ -192,7 +221,7 @@ packal:
   user: pirafrank
 paypal:
   categories:
-    - money
+    - support
   url: https://paypal.me/pirafrank
   user: pirafrank
 #pinterest:
@@ -200,11 +229,11 @@ paypal:
 #    - social
 #  url:
 #  user:
-pocket:
-  categories:
-    - blog
-  url: 'https://getpocket.com/@pirafrank'
-  user: '@pirafrank'
+#pocket:
+#  categories:
+#    - blog
+#  url: 'https://getpocket.com/@pirafrank'
+#  user: '@pirafrank'
 polywork:
   categories:
     - social
@@ -275,16 +304,16 @@ twitter:
     - social
   url: 'https://twitter.com/pirafrank'
   user: pirafrank
-twitter-dm:
-  categories:
-    - chat
-  url: 'https://twitter.com/messages/compose?recipient_id=156289750'
-  user: pirafrank
-xing:
-  categories:
-    - social
-  url: 'https://www.xing.com/profile/Francesco_Pira'
-  user: Francesco_Pira
+#twitter-dm:
+#  categories:
+#    - chat
+#  url: 'https://twitter.com/messages/compose?recipient_id=156289750'
+#  user: pirafrank
+#xing:
+#  categories:
+#    - social
+#  url: 'https://www.xing.com/profile/Francesco_Pira'
+#  user: Francesco_Pira
 youtube:
   categories:
     - social

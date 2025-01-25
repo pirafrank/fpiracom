@@ -1,4 +1,11 @@
-Collection of small utilities I made and use. A full list with snippets is available on [GitHub Gists]({{ site.data.social.github.gist }}). These are here to keep them handy.
+Collection of small utilities I made and use, available as:
+
+- snippets on [GitHub Gists]({{ site.data.social.github.gist }})
+- scripts in [bin dotfiles]({{ site.data.social.github.url }}/dotfiles/tree/main/bin)
+- [zsh autoloaded functions]({{ site.data.social.github.url }}/dotfiles/tree/main/zsh/autoloaded)
+- pages on this website.
+
+These below here to keep them handy.
 
 - [vim install scripts](https://github.com/pirafrank/vim_install/)
 - [Encrypted DNS profiles for iOS, iPadOS and tvOS 14](https://gist.github.com/pirafrank/d9c1fac2994cef7467e02c02c423e726)

@@ -1,5 +1,6 @@
 
 - [Security resources]({{ site.baseurl }}/security)
+- Telegram channel of [OPNsense updates]({{ site.data.external.telegram-opnsense-updates }})
 - [Java new features]({{ site.data.external.java-new-features }}), since 1.3
 - [Cheat-sheets]({{ site.data.external.cheat-sheets }})
 - Telegram channel of [Apple Developer releases]({{ site.data.external.telegram-apple-dev-releases }})

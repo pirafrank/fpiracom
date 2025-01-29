@@ -1,10 +1,32 @@
+def valid_date?(date_string)
+  return false unless date_string =~ /^\d{4}-\d{2}-\d{2}$/
+  begin
+    year, month, day = date_string.split('-').map(&:to_i)
+    input_date = Date.new(year, month, day)
+    # Allow today or future dates only
+    input_date >= Date.today
+  rescue Date::Error
+    false
+  end
+end
+
 def create_new(item_type)
   site = generate_website()
   categories = site.categories.keys
   tags = site.tags.keys
 
-  date = Time.now
-  day = date.strftime('%Y-%m-%d').to_s
+  date = nil;
+  begin
+    print "Enter a future date (YYYY-MM-DD) or press Enter to go with today: \n"
+    date = STDIN.gets.chomp
+    # the loop continues unless the user:
+    # just an Enter presses Enter or enters a valid date format
+  end while !(date.empty? || valid_date?(date))
+
+  if date.empty?
+    date = Time.now
+    day = date.strftime('%Y-%m-%d').to_s
+  end
 
   puts "Please enter a title for the #{item_type}:\n"
   title = STDIN.gets.chomp

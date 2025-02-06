@@ -1,4 +1,4 @@
-# .github/actions/get-current-ref/action.yml
+# .github/actions/get-deployment-info/action.yml
 
 name: Get deployment info
 description: Get deployment info for current ref
@@ -8,6 +8,9 @@ inputs:
     required: false
     default: ${{ github.ref_name }}
 outputs:
+  vercel_alias:
+    description: 'Vercel alias to use for deployment'
+    value: ${{ steps.get_deployment_info.outputs.vercel_alias }}
   vercel_args:
     description: 'Optional arguments to pass to Vercel Action for deployment'
     value: ${{ steps.get_deployment_info.outputs.vercel_args }}
@@ -23,6 +26,9 @@ runs:
       env:
         REF: ${{ inputs.ref }}
       run: |
+        REF=${REF//_/-}
+        REF=${REF//\//-}
+        echo "vercel_alias=fpiracom-${REF}-pirafrank.vercel.app" >> $GITHUB_OUTPUT
         if [ ${REF} == 'main' ]; then
           echo "vercel_args=$(echo '--prod')" >> $GITHUB_OUTPUT
           echo "env_name=$(echo 'Production')" >> $GITHUB_OUTPUT

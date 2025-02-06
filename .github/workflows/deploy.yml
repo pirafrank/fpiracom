@@ -37,8 +37,9 @@ jobs:
     outputs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
       REF_NAME: ${{ steps.get_current_ref.outputs.ref }}
-      VERCEL_ARGS: ${{ steps.get_deployment_info.outputs.VERCEL_ARGS }}
-      ENV_NAME: ${{ steps.get_deployment_info.outputs.ENV_NAME }}
+      VERCEL_ALIAS: ${{ steps.get_deployment_info.outputs.vercel_alias }}
+      VERCEL_ARGS: ${{ steps.get_deployment_info.outputs.vercel_args }}
+      ENV_NAME: ${{ steps.get_deployment_info.outputs.env_name }}
     steps:
       - name: Clone repo
         uses: actions/checkout@v4
@@ -103,7 +104,7 @@ jobs:
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
         alias-domains: |
-          fpiracom-{{BRANCH}}-pirafrank.vercel.app
+          ${{ needs.checks.outputs.VERCEL_ALIAS }}
 
     # Algolia search index update
     - name: Update Algolia Index

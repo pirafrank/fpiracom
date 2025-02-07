@@ -42,7 +42,7 @@
       ]
     },
     {
-      "source": "/api/(.*)",
+      "source": "/api/v[0-9]{1,}/(.*)",
       "headers": [
         {
           "key": "Content-Type",

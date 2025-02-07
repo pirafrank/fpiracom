@@ -1,0 +1,38 @@
+# redocly.yaml
+apis:
+  # API version 1 specification
+  v1:
+    root: ./api/v1/openapi.yaml
+    rules:
+      operation-4xx-response: off
+    theme:
+      openapi:
+        pagination: section
+        hideLogo: true
+        theme:
+          colors:
+            primary:
+              main: '#333333'
+
+extends:
+  - recommended
+
+rules:
+  no-ambiguous-paths: error
+  no-unused-components: error
+  no-path-trailing-slash: error
+  operation-summary: error
+  security-defined: off  # because the API is public
+
+theme:
+  openapi:
+    schemaExpansionLevel: 2
+    generateCodeSamples:
+      languages:
+        - lang: curl
+        - lang: Python
+        - lang: JavaScript
+        - lang: Node.js
+        - lang: Ruby
+        - lang: Java
+        - lang: Go

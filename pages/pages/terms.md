@@ -2,7 +2,7 @@
 layout: page
 title: Terms and Policies
 permalink: /terms/
-date: 2021-01-16
+date: 2024-02-05
 show_title: true
 ---
 
@@ -42,7 +42,7 @@ In turn, I will attribute any non-original content of mine to his author.
 
 #### Code
 
-This website code is published on [GitHub](https://github.com/pirafrank/fpiracom). Apart from content, which license model is mentioned above, the rest of code files are published with a GNU GPLv3 license.
+This website code is published on [GitHub](https://github.com/pirafrank/fpiracom). Apart from content, which license model is mentioned above, the rest of code files are published with a [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) license.
 
 <br>
 *Last updated: {{ page.date | date: "%-d %B %Y" }}*

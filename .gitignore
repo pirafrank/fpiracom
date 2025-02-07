@@ -32,3 +32,9 @@ _data/git.json*
 
 # ignore html-proofer cache
 .html_proofer_cache/*.json
+
+# ignore externally-generated API docs
+api/docs/.openapi*
+api/docs/openapi/*
+!api/docs/openapi/.gitkeep
+api/docs/redocly/index.html

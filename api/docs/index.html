@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /api/docs/
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Documentation</title>
+    <meta charset="utf-8"> <!-- Impotant: rapi-doc uses utf8 characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="API Documentation" />
+    <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
+  </head>
+  <body>
+    <rapi-doc spec-url="{{ site.baseurl }}/api/v1/openapi.yaml"
+      theme="dark"
+      render-style="read"
+      show-header="false"
+      allow-authentication="false">
+    </rapi-doc>
+  </body>
+</html>

@@ -14,7 +14,7 @@ task :default => [:check_install, :tasks]
 #
 
 desc "group of tasks to run in CI environments"
-task :ci => [:check_install, :check_internal_urls, :check_api, :check_jsonp, :check_ics, :check_feeds]
+task :ci => [:check_install, :check_internal_urls, :check_api, :check_jsonp, :check_ics, :check_feeds, :openapi_lint]
 
 #
 # task definitions
@@ -51,7 +51,7 @@ desc "remove _site dir, then build website for production"
 task :release => :clean do
   ENV['JEKYLL_ENV'] = 'production'
   sh 'printf "\n *** Building for production (content will be minified!) ***\n\n"'
-  sh 'bundle exec jekyll build'
+  sh 'bundle exec jekyll build --trace'
 end
 
 desc "list tags, categories, etc (Eg `rake list[tags]` or `rake list[tags, json]`)"
@@ -83,6 +83,7 @@ check_urls_options = {
     %r{^_site\/blog\/201\d{1}\/.*\/index.html$},
     # version may point to something not yet pushed, failing the check
     "_site/version/index.html",
+    "_site/api/docs/openapi/index.html",
   ],
   :ignore_urls => [
     %r{^https://matrix.to/.*$},
@@ -392,3 +393,35 @@ desc "Check the oldest GLIBC version required by nokogiri"
 task :nokogiri do
   sh "objdump -T $(find $(dirname $(gem which nokogiri)) -type f -iname '*.so' | grep /nokogiri/$(ruby -v | cut -d ' ' -f2 | cut -d'.' -f1,2)) | grep GLIBC_ | sort -V | tail -n1"
 end
+
+desc "Lint OpenAPI definitions"
+task :openapi_lint do
+  sh "redocly lint --config redocly.yaml api/v1/openapi.yaml"
+end
+
+desc "Cleanup OpenAPI definitions"
+task :openapi_clean do
+  sh <<~SHELL
+    rm -rf api/docs/openapi/index.html
+    rm -rf api/docs/openapi/.openapi-generator
+    rm -rf api/docs/openapi/.openapi-generator-ignore
+    rm -rf _temp_postman
+  SHELL
+end
+
+desc "Generate OpenAPI documentation website"
+task :openapi_generate_html => :openapi_clean do
+  sh "openapi-generator-cli generate -i api/v1/openapi.yaml -g html2 -o api/docs/openapi"
+end
+
+desc "Generate Postman collection"
+task :openapi_generate_postman => :openapi_clean do
+  sh <<~SHELL
+    openapi-generator-cli generate -i api/v1/openapi.yaml -g postman-collection -o _temp_postman
+    mv _temp_postman/postman.json postman.json
+    rm -rf _temp_postman
+  SHELL
+end
+
+desc "Lint and generate OpenAPI documentation"
+task :openapi => [:openapi_lint, :openapi_generate_html, :openapi_generate_postman]

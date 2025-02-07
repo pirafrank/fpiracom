@@ -9,11 +9,18 @@ Just my website. Visit [fpira.com](https://fpira.com) for a live version.
 
 This website is powered by Jekyll. It started in 2015 as an overhauled fork of [Jekyll Now](https://github.com/barryclark/jekyll-now) with custom CSS designed from scratch. Over the years, I've implemented many additional features, tailored on my needs.
 
+## Requirements
+
+- Ruby (check `.ruby-version`)
+- Node.js (check `.nvmrc`)
+
 ## Setup
 
 ```sh
 gem install bundler
 bundle install
+npm install -g @redocly/cli@latest
+npm install -g @openapitools/openapi-generator-cli
 ```
 
 ## Build and run it

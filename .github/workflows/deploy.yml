@@ -76,6 +76,10 @@ jobs:
     # Prepare environment
     - name: Setup Jekyll environment
       uses: ./.github/actions/setup-jekyll-env
+    - name: Setup Node environment
+      uses: ./.github/actions/setup-nodejs
+      with:
+        node-version-file: .nvmrc
     - name: Write git info to site data
       uses: ./.github/actions/git-info
       with:

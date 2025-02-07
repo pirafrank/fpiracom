@@ -1,0 +1,26 @@
+# .github/actions/setup-nodejs/action.yml
+
+name: Setup Node.js environment
+description: Install Node.js, npm, and additional dependencies
+inputs:
+  node-version-file:
+    description: 'Path to the file containing the Node.js version to use'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: ${{ inputs.node-version-file }}
+        check-latest: false
+    - name: Check versions
+      shell: bash
+      run: |
+        node --version
+        npm --version
+    - name: Install deps
+      shell: bash
+      run: |
+        npm install -g @redocly/cli
+        npm install -g @openapitools/openapi-generator-cli

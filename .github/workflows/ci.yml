@@ -28,6 +28,10 @@ jobs:
     # Prepare environment
     - name: Setup Jekyll environment
       uses: ./.github/actions/setup-jekyll-env
+    - name: Setup Node environment
+      uses: ./.github/actions/setup-nodejs
+      with:
+        node-version-file: .nvmrc
     - name: Write git info to site data
       uses: ./.github/actions/git-info
       with:
@@ -39,10 +43,7 @@ jobs:
 
     # Build Jekyll website to check for possible build errors
     - name: Build jekyll website
-      env:
-        JEKYLL_ENV: production
-      run: |
-        bundle exec jekyll build --trace
+      run: bundle exec rake release
 
     # Get current REF to set a non-empty, URL-compliant,
     # and non-prod alias for Vercel deploy.

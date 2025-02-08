@@ -27,6 +27,32 @@ paths:
                 items:
                   $ref: '#/components/schemas/Category'
 
+  /v1/ifttt/posts:
+    get:
+      operationId: v1IftttPosts
+      summary: Get all posts in a format suitable for IFTTT
+      responses:
+        200:
+          description: List of all posts in IFTTT format
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/IftttObject'
+
+  /v1/ifttt/posts/latest:
+    get:
+      operationId: v1IftttPostsLatest
+      summary: Get latest post in a format suitable for IFTTT
+      responses:
+        200:
+          description: Latest post in IFTTT format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IftttObject'
+
   /v1/pages:
     get:
       operationId: v1PagesGet
@@ -250,3 +276,13 @@ components:
               type: array
               items:
                 type: string
+
+    IftttObject:
+      type: object
+      properties:
+        value1:
+          type: string
+        value2:
+          type: string
+        value3:
+          type: string

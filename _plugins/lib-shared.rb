@@ -21,4 +21,12 @@ def to_time(date_string, site)
   return local.to_time
 end
 
+def truncate_words(text, num_words)
+  words = text.split
+  if words.size > num_words
+    words[0...num_words].join(' ') + '...'
+  else
+    text
+  end
+end
 

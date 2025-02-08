@@ -9,6 +9,8 @@ info:
     url: https://www.gnu.org/licenses/gpl-3.0.html
 
 servers:
+  - url: http://127.0.0.1:4001/api
+    description: Development API server
   - url: https://fpira.com/api
     description: Production API server
 
@@ -16,7 +18,7 @@ paths:
   /v1/categories:
     get:
       operationId: v1CategoriesGet
-      summary: Get all post categories in the website
+      summary: 'Categories: Get all categories in the website'
       responses:
         200:
           description: List of website categories of posts
@@ -27,10 +29,30 @@ paths:
                 items:
                   $ref: '#/components/schemas/Category'
 
+  /v1/categories/{category_id}:
+    get:
+      operationId: v1CategoriesCategoryidGet
+      summary: 'Categories: Get all posts for the given category in the website'
+      parameters:
+        - name: category_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: List of website posts in given category
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Post'
+
   /v1/ifttt/posts:
     get:
       operationId: v1IftttPosts
-      summary: Get all posts in a format suitable for IFTTT
+      summary: 'IFTTT: Get all posts in a format suitable for IFTTT'
       responses:
         200:
           description: List of all posts in IFTTT format
@@ -44,7 +66,7 @@ paths:
   /v1/ifttt/posts/latest:
     get:
       operationId: v1IftttPostsLatest
-      summary: Get latest post in a format suitable for IFTTT
+      summary: 'IFTTT: Get latest post in a format suitable for IFTTT'
       responses:
         200:
           description: Latest post in IFTTT format
@@ -56,7 +78,7 @@ paths:
   /v1/pages:
     get:
       operationId: v1PagesGet
-      summary: Get all pages
+      summary: 'Pages: Get all pages'
       responses:
         200:
           description: List of pages
@@ -70,7 +92,7 @@ paths:
   /v1/posts:
     get:
       operationId: v1PostsGet
-      summary: Get posts sorted by last update date
+      summary: 'Posts: Get all posts (sorted by last update date)'
       responses:
         200:
           description: Array of posts sorted by creation date
@@ -84,7 +106,7 @@ paths:
   /v1/posts/latest:
     get:
       operationId: v1PostsLatestGet
-      summary: Get latest blog post
+      summary: 'Posts: Get latest blog post'
       responses:
         200:
           description: Latest (by creation date) post details
@@ -96,7 +118,7 @@ paths:
   /v1/posts/by_update:
     get:
       operationId: v1PostsByUpdateGet
-      summary: Get posts sorted by last update date
+      summary: 'Posts: Get all posts (sorted by last update date)'
       responses:
         200:
           description: Array of posts sorted by update date
@@ -110,7 +132,7 @@ paths:
   /v1/posts/by_update/latest:
     get:
       operationId: v1PostsByUpdateLatestGet
-      summary: Get latest blog post
+      summary: 'Posts: Get latest blog post'
       responses:
         200:
           description: Latest (by update date) post details
@@ -122,7 +144,7 @@ paths:
   /v1/tags:
     get:
       operationId: v1TagsGet
-      summary: Get all post tags in the website
+      summary: 'Tags: Get all tags in the website'
       responses:
         200:
           description: List of website tags of posts
@@ -133,10 +155,30 @@ paths:
                 items:
                   $ref: '#/components/schemas/Tag'
 
+  /v1/tags/{tag_id}:
+    get:
+      operationId: v1TagsTagidGet
+      summary: 'Tags: Get all posts for the given tag in the website'
+      parameters:
+        - name: tag_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: List of website posts having given tag
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Post'
+
   /v1/version:
     get:
       operationId: v1VersionGet
-      summary: Get site build info and version
+      summary: 'Version: Get website build info and version'
       responses:
         200:
           description: Build and version details

@@ -6,7 +6,7 @@ layout: compress
   {
     "type": "tag",
     {% assign tagName = tag[0] %}
-    {% assign tagId = tagName | downcase | replace:' ','-' | replace: '.','-' %}
+    {% assign tagId = tagName | downcase | replace:' ','-' | replace: '.','-' | regex_replace: '/[^a-z0-9\-]/', '' %}
     {% assign numberOfpostsWithTag = tag[1] %}
     "id": "{{ tagId }}",
     "name": "{{ tagName }}",

@@ -189,7 +189,7 @@ components:
         published:
           type: string
           format: date-time
-        last_update:
+        lastUpdate:
           type: string
           format: date-time
         updates:

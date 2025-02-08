@@ -17,7 +17,7 @@ task :default => [:tasks]
 #
 
 desc "group of tasks to run in CI environments"
-task :ci => ['check:install', 'check:internal_urls', 'check:api', 'check:jsonp', 'check:calendars', 'check:feeds', 'api:lint']
+task :ci => ['check:install', 'check:internal_urls', 'api:lint', 'check:api', 'check:jsonp', 'check:calendars', 'check:feeds']
 
 desc "Lint and generate OpenAPI documentation"
 task :api => ['api:lint', 'api:generate_html', 'api:generate_postman']

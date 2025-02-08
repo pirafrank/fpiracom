@@ -47,11 +47,11 @@ add `--future` to compile and show post with later date than today;
 
 add `--drafts` to compile and show drafts.
 
-### Rake
+## Rake
 
 As many other Ruby-based projects, most tasks listed in this readme are also available as `rake` tasks for brevity and consistency.
 
-You can check the `rakefile` and use `rake -AT` to list all of them.
+You can check the `rakefile` and use `rake` to list all of them.
 
 ### Use environment variables
 
@@ -109,7 +109,20 @@ jks
 
 otherwise the server won't be accessible from the host even if the port has been bound.
 
-## GitHub Actions
+## CI/CD
+
+CI/CD is achieved via GitHub Actions. To make workflows readable and to share code, some intermediate steps are written as composable actions in `.github/actions/*`.
+
+Part of the CI workflow is running `rake ci` which builds the website and performs multiple checks to ensure consistency. For example:
+
+- checking Jekyll installation
+- looking for internal broken links
+- perform API linting
+- checking consistency of produces JSON files
+- checking calendar `.ics` files
+- checking RSS, Atom, and JSON feeds to be readable.
+
+### GitHub Actions
 
 To run a GitHub Actions workflow on any branch use the `--ref` flag. This works even if you have never merged the workflow file in the repository's default branch.
 
@@ -391,9 +404,13 @@ This plugin reorders the `post.updates` array and adds two property to each post
 
 ## APIs
 
-`api` folder contains an attempt to provide APIs out of a Jekyll website. Those can be useful for integrations: e.g. I use `/api/v1/ifttt/posts/latest` to fetch details of the last published blog post from an RSS trigger on IFTTT.
+`api` folder contains an attempt to provide APIs out of a Jekyll website, being almost plugin-less, with plugins being part of this repository in `_plugins` dir.
 
-Check the folder to find the structure.
+APIs can be useful for integrations, e.g. I use `/api/v1/ifttt/posts/latest` to fetch details of the last published blog post from an RSS trigger on IFTTT.
+
+### API docs
+
+OpenAPI definition is available for `v1` in `/api/v1/openapi.yaml`. API documentation is generated as part of the website and available at `/api/docs` ([link](https://fpira.com/api/docs)).
 
 ## CMS
 

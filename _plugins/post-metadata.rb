@@ -11,19 +11,15 @@ module Jekyll
   # - a new 'most_recent_edit' attribute,
   # - a new 'most_recent_update' attribute,
   class PostMetadata < Generator
-    priority :lowest
+    safe true
+    priority :low
 
     def generate(site)
       site.posts.docs.each do |post|
 
         # Add the post ID to the post data
-        post_id = post.path
-        post_id = post_id.gsub('_posts/', '')
-        post_id = post_id.gsub('.md', '')
-        post_id = post_id.gsub('.markdown', '')
-        post_id = post_id.gsub('.html', '')
-        post_id = post_id.gsub('.htm', '')
-        post.data['id'] = post_id
+        creation_date = post.date.strftime('%Y-%m-%d')
+        post.data['uid'] = to_safe_name("#{creation_date}-#{post.data['slug']}")
 
         # Add a SEO image to the post data
         seoimage = ''

@@ -30,3 +30,13 @@ def truncate_words(text, num_words)
   end
 end
 
+def to_safe_name(str)
+  str.downcase
+    .gsub(/\s+/, '-')
+    .gsub(/\./, '-')
+    .gsub(/[^a-z0-9\-]/, '')
+end
+
+def remove_extension(str)
+  str.gsub(/\..+$/, '')
+end

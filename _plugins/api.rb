@@ -20,7 +20,7 @@ module Jekyll
     def create_post_object(post, site)
       post_data = {
         "type" => "post",
-        "id" => post.id,
+        "id" => post.data['uid'],
         "postUrl" => site.config['url'] + site.config['baseurl'] + post.url,
         "title" => post.data['title'],
         "subtitle" => post.data['subtitle'] || "",
@@ -51,11 +51,7 @@ module Jekyll
 
     def write_to_file(subdir_name, item_name, items_array, site)
         # convert name to be safe as URL subpath
-        safe_name = item_name
-          .downcase
-          .gsub(/\s+/, '-')
-          .gsub(/\./, '-')
-          .gsub(/[^a-z0-9\-]/, '')
+        safe_name = to_safe_name(item_name)
         # Create the directory structure
         dir = File.join(site.dest, api_subdir, api_version, subdir_name, safe_name)
         FileUtils.mkdir_p(dir)

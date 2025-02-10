@@ -1,7 +1,7 @@
 {% assign post = include.post %}
 {
   "type": "post",
-  "id": "{{ post.id }}",
+  "id": "{{ post.uid }}",
   "postUrl": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
   "title": "{{ post.title | escape }}",
   "subtitle": "{{ post.subtitle | escape }}",

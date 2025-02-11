@@ -3,7 +3,7 @@ title: "Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy"
 subtitle: "Little how to on upgrading from Ubuntu 20.04 Focal to Ubuntu 22.04 Jammy, even if 24.04 has already been released"
 description: "Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy, even if 24.04 has already been released"
 category: [ "How-tos" ]
-tags: [ "WSL", "Windows", "Linux" ]
+tags: [ "WSL", "Windows", "Linux", "ubuntu" ]
 seoimage: "3014/557-002.jpg"
 ---
 

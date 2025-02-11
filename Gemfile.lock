@@ -1,8 +1,18 @@
 GIT
-  remote: https://github.com/pirafrank/jekyll-listme.git
-  revision: b4935ed4485ebd3bccce0529b47cd481f679b5e5
+  remote: https://github.com/pirafrank/jekyll-ai-related.git
+  revision: d54ccfdbe052e26744b081d6ec55c678155f0675
   specs:
-    jekyll-listme (0.4.0)
+    jekyll-ai-related (0.1.0)
+      httparty (~> 0.22.0)
+      jekyll (>= 3.7, < 5.0)
+      json (~> 2.7)
+
+GIT
+  remote: https://github.com/pirafrank/jekyll-listme.git
+  revision: fd35eeb73d9b546255bf303387753938c7b9d4b9
+  specs:
+    jekyll-listme (0.4.1)
+      json (~> 2.7)
 
 GEM
   remote: https://rubygems.org/
@@ -45,6 +55,7 @@ GEM
       fiber-local (~> 1.1)
       json
     cssminify2 (2.0.1)
+    csv (3.3.2)
     digest (3.2.0)
     drb (2.2.1)
     em-websocket (0.5.3)
@@ -92,6 +103,10 @@ GEM
       zeitwerk (~> 2.5)
     htmlcompressor (0.4.0)
     http_parser.rb (0.8.0)
+    httparty (0.22.0)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     httpclient (2.8.3)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -160,8 +175,11 @@ GEM
     logger (1.6.5)
     logutils (0.6.1)
     mercenary (0.4.0)
+    mini_mime (1.1.5)
     mini_portile2 (2.8.8)
     minitest (5.25.4)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
     net-http (0.6.0)
       uri
     nokogiri (1.17.2)
@@ -238,6 +256,7 @@ DEPENDENCIES
   html-proofer
   icalendar (~> 2.10)
   jekyll (= 4.3.4)
+  jekyll-ai-related!
   jekyll-algolia
   jekyll-archives
   jekyll-environment-variables
@@ -267,6 +286,7 @@ CHECKSUMS
   connection_pool (2.5.0) sha256=233b92f8d38e038c1349ccea65dd3772727d669d6d2e71f9897c8bf5cd53ebfc
   console (1.29.2) sha256=afd9b75a1b047059dda22df0e3c0a386e96f50f6752c87c4b00b1a9fcbe77cd6
   cssminify2 (2.0.1) sha256=e311cfced4ccfc55d27bf30520f7d11ed129bf04dcadd5a82e791a141e45b98c
+  csv (3.3.2) sha256=6ff0c135e65e485d1864dde6c1703b60d34cc9e19bed8452834a0b28a519bd4e
   digest (3.2.0) sha256=fa2e7092ec683f65d82fadde5ff4ca3b32e23ee0b19f1fc1a5e09993ad2d3991
   drb (2.2.1) sha256=e9d472bf785f558b96b25358bae115646da0dbfd45107ad858b0bc0d935cb340
   em-websocket (0.5.3) sha256=f56a92bde4e6cb879256d58ee31f124181f68f8887bd14d53d5d9a292758c6a8
@@ -289,6 +309,7 @@ CHECKSUMS
   html-proofer (5.0.9) sha256=1be34452392b31fe0a5cb1637ebbe3a1409aa0dbdebf478235388bfdf026662f
   htmlcompressor (0.4.0) sha256=4630cf8ed46b563f0b49cc6028a3fe8c17a9067f2becd7c3a2aa5aaacefb1f9e
   http_parser.rb (0.8.0) sha256=5a0932f1fa82ce08a8516a2685d5a86031c000560f89946913c555a0697544be
+  httparty (0.22.0) sha256=78652a5c9471cf0093d3b2083c2295c9c8f12b44c65112f1846af2b71430fa6c
   httpclient (2.8.3) sha256=2951e4991214464c3e92107e46438527d23048e634f3aee91c719e0bdfaebda6
   i18n (1.14.7) sha256=ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f
   icalendar (2.10.3) sha256=0ebfc2672f9fa77b86b4d8c0e25e9b2319aad45a33319fed06d0be8ddd0cd485
@@ -296,12 +317,13 @@ CHECKSUMS
   iniparser (1.0.1) sha256=41b86074498e9d40adb998f81e18d6a57c1a4da0e1fb2e90c5fc38efef07ebcb
   io-event (1.7.5) sha256=99fbc90dd0f35b3b6a52e52f06fd6e38737017d0d2141c0b9bcab913fa5052e8
   jekyll (4.3.4) sha256=c488282c2819c392d34d3a3784eacde2cde4b61c8e3c9c9295f6c01fb1754404
+  jekyll-ai-related (0.1.0)
   jekyll-algolia (1.7.1) sha256=0f1501d2ec1d6550261c34f4ff4d46c72b1352823c4c5b8c67632bc92719fb49
   jekyll-archives (2.3.0) sha256=2dbd8ce22212fbace81fe2c9aa4152a6e21c748bcc626f135af5acfd813375f6
   jekyll-environment-variables (1.0.1) sha256=4f1e287d4e659d04e0f328d6d14ded3d719ad625bd805f96f2379a5a2c7e01c3
   jekyll-feed (0.17.0) sha256=689aab16c877949bb9e7a5c436de6278318a51ecb974792232fd94d8b3acfcc3
   jekyll-gist (1.5.0) sha256=495b6483552a3e2975a2752964ea7acddd545bc6e13ce2be15a50cec8d4c9f0f
-  jekyll-listme (0.4.0)
+  jekyll-listme (0.4.1)
   jekyll-minifier (0.1.10) sha256=cd05bd9b2105f1dfd344397c480c17bea7d93871e239f5ca3949852ff1d938a3
   jekyll-sass-converter (3.0.0) sha256=e2e7674f186e906b9d99b8066e13f9b4d5cb9f806d36f7bc8cf2610053d8c902
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218
@@ -315,8 +337,10 @@ CHECKSUMS
   logger (1.6.5) sha256=c3cfe56d01656490ddd103d38b8993d73d86296adebc5f58cefc9ec03741e56b
   logutils (0.6.1) sha256=a36dceaaa8adf0de1a78778cf0c24c4ae26d7f424275ca0ed9e78309bef229a3
   mercenary (0.4.0) sha256=b25a1e4a59adca88665e08e24acf0af30da5b5d859f7d8f38fba52c28f405138
+  mini_mime (1.1.5) sha256=8681b7e2e4215f2a159f9400b5816d85e9d8c6c6b491e96a12797e798f8bccef
   mini_portile2 (2.8.8) sha256=8e47136cdac04ce81750bb6c09733b37895bf06962554e4b4056d78168d70a75
   minitest (5.25.4) sha256=9cf2cae25ac4dfc90c988ebc3b917f53c054978b673273da1bd20bcb0778f947
+  multi_xml (0.7.1) sha256=4fce100c68af588ff91b8ba90a0bb3f0466f06c909f21a32f4962059140ba61b
   net-http (0.6.0) sha256=9621b20c137898af9d890556848c93603716cab516dc2c89b01a38b894e259fb
   nokogiri (1.17.2) sha256=75825401f59b1a8746ee8ce5d066c8f11e745642e36a4452e206730b03d1fd8c
   octokit (4.25.1) sha256=c02092ee82dcdfe84db0e0ea630a70d32becc54245a4f0bacfd21c010df09b96

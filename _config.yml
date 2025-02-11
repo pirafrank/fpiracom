@@ -210,6 +210,15 @@ jekyll-minifier:
 #    - 'manifest.json'
 #    - 'service-worker.js'
 
+jekyll-ai-related:
+  post_unique_field: uid
+  post_updated_field: most_recent_edit
+  output_path: related_posts
+  include_drafts: false
+  include_future: false
+  related_posts_limit: 3
+  related_posts_score_threshold: 0.5
+
 # Files to explicitly include in generated website
 include:
   - humans.txt

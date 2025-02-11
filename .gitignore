@@ -38,3 +38,7 @@ api/docs/.openapi*
 api/docs/openapi/*
 !api/docs/openapi/.gitkeep
 api/docs/redocly/index.html
+
+# ignore secrets
+/**/.*secrets.sh
+/**/*secrets.sh

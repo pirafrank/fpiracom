@@ -25,3 +25,13 @@ task :release => :clean do
   sh 'printf "\n *** Building for production (content will be minified!) ***\n\n"'
   sh 'bundle exec jekyll build --trace'
 end
+
+desc "Run Algolia reindex"
+task :algolia do
+  sh 'bundle exec jekyll algolia'
+end
+
+desc "Update data about AI-gen related posts"
+task :related do
+  sh "bundle exec jekyll related"
+end

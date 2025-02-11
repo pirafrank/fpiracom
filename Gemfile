@@ -22,4 +22,6 @@ group :jekyll_plugins do
   gem 'jekyll-algolia'
   gem 'jekyll-listme'
   #gem 'jekyll-listme', path: '/home/francesco/Code/projects/jekyll-listme'
+  gem 'jekyll-ai-related'
+  #gem 'jekyll-ai-related', path: '/home/francesco/Code/projects/jekyll-ai-related'
 end

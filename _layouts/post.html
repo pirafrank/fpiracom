@@ -60,6 +60,20 @@ custom_css: ['layouts/posts']
 
       {% include sharing-buttons.html %}
 
+      {% if site.data.related_posts[page.uid] %}
+      <div class="related-posts">
+        <h3>Related Posts</h3>
+        <ul>
+          {% for post in site.data.related_posts[page.uid] %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <br/>{{ post.date | date: "%B %d, %Y" }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
       {% include comments.html %}
 
     </article>

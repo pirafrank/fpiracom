@@ -12,7 +12,7 @@ module Jekyll
   # - a new 'most_recent_update' attribute,
   class PostMetadata < Generator
     safe true
-    priority :low
+    priority :highest
 
     def generate(site)
       site.posts.docs.each do |post|

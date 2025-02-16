@@ -1,7 +1,19 @@
 {
   "projects": [
     {
-      "name": "zed_unofficial_win_builds",
+      "name": "Jekyll AI Related",
+      "description": "Jekyll plugin to generate list of related posts using AI and save them in site.data",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/jekyll-ai-related",
+      "repourl": "https://github.com/pirafrank/jekyll-ai-related",
+      "license": "MIT",
+      "creationDate": "2025-02-15T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },  
+    {
+      "name": "Zed unofficial Windows builds",
       "description": "Unofficial stable and pre-release builds of the Zed editor for Windows, with version and release type matching. Easy install via scoop or pwsh script. Not affiliated with Zed Industries",
       "group": "",
       "homepage": "https://github.com/pirafrank/zed_unofficial_win_builds",
@@ -49,7 +61,7 @@
       "maintained": true
     },
     {
-      "name": "notion-to-jekyll",
+      "name": "Notion-to-Jekyll",
       "description": "A tool to manage Jekyll drafts and posts (including assets) via Notion",
       "group": "",
       "homepage": "https://github.com/pirafrank/notion-to-jekyll",
@@ -73,8 +85,8 @@
       "maintained": true
     },
     {
-      "name": "jekyll-listme",
-      "description": "A Jekyll command plugin to list tags and categories for your Jekyll website. Output as plain text, JSON, or YAML",
+      "name": "Jekyll ListMe",
+      "description": "Jekyll plugin to list tags, categories, posts, pages, and more of your Jekyll website. It outputs data as plain text, CSV, TSV, PSV, JSON, or YAML",
       "group": "",
       "homepage": "https://github.com/pirafrank/jekyll-listme",
       "repourl": "https://github.com/pirafrank/jekyll-listme",
@@ -97,7 +109,7 @@
       "maintained": true
     },
     {
-      "name": "workspace",
+      "name": "Workspace",
       "description": "A workspace-in-a-container development environment, based on my dotfiles.",
       "group": "",
       "homepage": "https://github.com/pirafrank/workspace#readme",
@@ -121,7 +133,7 @@
       "maintained": true
     },
     {
-      "name": "notion-to-text",
+      "name": "Notion-to-Text",
       "description": "Get content of notion.site pages in plain text or as JSON",
       "group": "",
       "homepage": "https://github.com/pirafrank/notion-to-text/tree/main/standalone#readme",

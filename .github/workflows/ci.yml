@@ -9,8 +9,8 @@ on:
   # Docs: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
   pull_request:
     types: [opened, synchronize, reopened]
-    branches:
-      - '!feature/**'
+    branches-ignore:
+      - 'feature/**'
   workflow_dispatch:
 
 jobs:

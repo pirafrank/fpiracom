@@ -1,4 +1,4 @@
-{% assign certifications = site.data.cv.certifications %}
+{% assign certifications = site.data.certifications %}
 {% for cert in certifications %}
 {% assign da = cert.dateAchieved | date: "%B, %Y" %}
 {% if cert.dateExpires != "" %}{% assign dexp = cert.dateExpires | date: "%B, %Y" | prepend: ' Expires in ' %}

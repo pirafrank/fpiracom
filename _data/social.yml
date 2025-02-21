@@ -254,6 +254,11 @@ reddit:
     - social
   url: 'https://www.reddit.com/user/pirafrank'
   user: pirafrank
+rubygems:
+  categories:
+    - dev
+  url: 'https://rubygems.org/profiles/pirafrank'
+  user: pirafrank
 skype:
   categories:
     - chat

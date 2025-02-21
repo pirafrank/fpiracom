@@ -7,10 +7,10 @@ show_title: true
 
 *Sorted by creation date, in descending order.*
 
-{% assign projects = site.data.cv.projects.projects | where: "maintained", true | sort: "creationDate" | reverse %}
+{% assign projects = site.data.projects.projects | where: "maintained", true | sort: "creationDate" | reverse %}
 {% for project in projects %}
 
-#### [{{ project.name }}]({{ project.repourl }})
+#### [{{ project.name }}]({{ project.homepage }})
 
 {{ project.description }}
 
@@ -20,7 +20,7 @@ show_title: true
 
 Projects below are archived or unmaintained.
 
-{% assign legacy = site.data.cv.projects.projects | where: "maintained", false | sort: "creationDate" | reverse %}
+{% assign legacy = site.data.projects.projects | where: "maintained", false | sort: "creationDate" | reverse %}
 {% for lp in legacy %}
 
 #### [{{ lp.name }}]({{ lp.homepage }})

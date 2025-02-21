@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "name": "Rust EXIF Renamer",
+      "description": "Rename photos in a given directory to their EXIF DateTimeOriginal and viceversa",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/rust_exif_renamer",
+      "repourl": "https://github.com/pirafrank/rust_exif_renamer",
+      "license": "MIT",
+      "creationDate": "2023-06-10T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "Jekyll AI Related",
       "description": "Jekyll plugin to generate list of related posts using AI and save them in site.data",
       "group": "",
@@ -11,7 +23,7 @@
       "lastUpdate": "",
       "isArchived": false,
       "maintained": true
-    },  
+    },
     {
       "name": "Zed unofficial Windows builds",
       "description": "Unofficial stable and pre-release builds of the Zed editor for Windows, with version and release type matching. Easy install via scoop or pwsh script. Not affiliated with Zed Industries",
@@ -76,7 +88,7 @@
       "name": "github-commit-sign",
       "description": "A node module and CLI tool to perform multi-file signed commits on a GitHub repo through their GraphQL APIs. Good for CI/CD environments",
       "group": "",
-      "homepage": "https://github.com/pirafrank/github-commit-sign",
+      "homepage": "https://github.com/marketplace/actions/github-commit-sign",
       "repourl": "https://github.com/pirafrank/github-commit-sign",
       "license": "MIT",
       "creationDate": "2024-02-29T00:00:00Z",

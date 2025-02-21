@@ -50,7 +50,7 @@ Notable conferences and events I joined. I hope to see you at the next one!
 
 #### Past
 
-- WebSummit 2016, won tickets as GitHub open-source contributor to pitch [Fileshute]({{ site.data.about.fileshute.url }}) (what was my startup idea at the time) to guests and investors - November 7-10, 2016 - Lisbon
+- WebSummit 2016, won tickets as GitHub open-source contributor to pitch [Fileshute]({{ site.data.external.fileshute.url }}) (what was my startup idea at the time) to guests and investors - November 7-10, 2016 - Lisbon
 - Codemotion - March 2016 - Rome
 - Microsoft Future Decoded - Nov 12, 2015 - Rome
 - ESOCC European Conference on Service-Oriented and Cloud Computing - Sept 15, 2015 - Taormina ([link](https://link.springer.com/conference/esocc))

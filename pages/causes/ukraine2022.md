@@ -39,4 +39,10 @@ Every bit of help can be precious: from writing to your representatives, to orga
 
 Please also read and share the statements by [Softorino](https://softorino.com/softorino-on-ukraine/) and [Readdle](https://readdle.com/stand-with-ukraine), two awesome Ukrainian software companies.
 
-Thank you.
+### How you can help
+
+You can help by donating to these organizations or spreading the word. Every little bit helps.
+
+<br/>
+
+Thank you for reaching this page. Together we can really make a difference.

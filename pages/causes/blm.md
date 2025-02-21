@@ -9,7 +9,7 @@ description: "I stand against inequality and racism, please join me"
 
 <br>
 
-![Black lives matter]({{ site.baseurl }}/static/pageimages/blm/hdr.png)
+![Black Lives Matter]({{ site.baseurl }}/static/pageimages/blm/hdr.png)
 
 I can't be silent.
 
@@ -18,7 +18,7 @@ I am a guy working in the IT and I feel priviledged for being male, for being wh
 I stand against inequality and racism and I will do whatever I can to make the difference, from adding these few lines on my website, to spreading the word online and offline, to donations and direct support.
 
 Big changes start from small actions.
-<br>
+
 If you believe in true freedom and equality, please join me.
 
 [#Blacklivesmatter](https://twitter.com/hashtag/BlackLivesMatter)
@@ -69,4 +69,6 @@ This is not a one-off. Change requires effort and dedication, it will take time,
 
 I will update this page as needed.
 
-Thank you for reading this.
+<br/>
+
+Thank you for reaching this page. Together we can really make a difference.

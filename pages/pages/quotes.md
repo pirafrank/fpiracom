@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quotes
+title: Inspiring uotes
 permalink: /quotes/
 show_title: true
 custom_css: "pages/quotes"
@@ -65,4 +65,3 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 *"Most people do not listen with the intent to understand: they listen with the intent to reply"*<br> Stephen Covey
 
 *"In the new economy, computer science isn't an optional skill. It's a basic skill."*<br> Barack Obama
-

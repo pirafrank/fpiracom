@@ -22,9 +22,9 @@ Hello, I am Francesco Pira, from Catania, Italy. I am interested in technology, 
 
 I've studied Mathematics and Physics in High School, taught myself English and how to code. Back then, I used to work as a self-employed computer technician before founding a small web development team when I was 18.
 
-In 2013 I joined EESTEC, the European network of engineering students. The next year I became president of the local committee and coordinator of the International IT team. In 2015 I started a company with a university mate, [Fileshute]({{ site.data.about.fileshute.url }}). I have been involved in the local startup scene both as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
+In 2013 I joined EESTEC, the European network of engineering students. The next year I became president of the local committee and coordinator of the International IT team. In 2015 I started a company with a university mate, [Fileshute]({{ site.data.external.fileshute.url }}). I have been involved in the local startup scene both as start-upper and as VP of Youth Hub Catania, a no-profit association focused on enabling and supporting young entrepreneurship, matching people's skills and organising startup related events (like [#AppIdee](https://twitter.com/hashtag/AppIdee?src=hash) and Startup Weekends).
 
-Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.name}}]({{ site.data.about.company.url }}), in the {{ site.data.about.company.dept }} department. I usually work with *terminal_I_like_here* + zsh + VSCode. If you're curious about my setup, you can check it in my [dotfiles]({{site.data.social.github.url}}/dotfiles).
+Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.name}}]({{ site.data.about.company.url }}), in the {{ site.data.about.company.dept }} department. I usually work with *terminal_app_I_like_here* + zsh + VSCode or Neovim. If you're curious about my setup, you can check it in my [dotfiles]({{site.data.social.github.url}}/dotfiles).
 
 ### Skills
 

@@ -61,6 +61,8 @@ jobs:
     - name: Deploy on Vercel
       id: deploy_to_vercel
       uses: amondnet/vercel-action@v25.2.0
+      # because dependabot[bot] is blocked from accessing secrets and writable tokens
+      if: github.actor != 'dependabot[bot]'
       with:
         # analytics env vars are set on Vercel bc build happens there!
         vercel-token: ${{ secrets.VERCEL_TOKEN }}

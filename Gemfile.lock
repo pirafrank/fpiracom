@@ -45,6 +45,7 @@ GEM
       fiber-local (~> 1.1)
       json
     cssminify2 (2.0.1)
+    csv (3.3.2)
     digest (3.2.0)
     drb (2.2.1)
     em-websocket (0.5.3)
@@ -101,17 +102,20 @@ GEM
     ice_cube (0.17.0)
     iniparser (1.0.1)
     io-event (1.7.5)
-    jekyll (4.3.4)
+    jekyll (4.4.1)
       addressable (~> 2.4)
+      base64 (~> 0.2)
       colorator (~> 1.0)
+      csv (~> 3.0)
       em-websocket (~> 0.5)
       i18n (~> 1.0)
       jekyll-sass-converter (>= 2.0, < 4.0)
       jekyll-watch (~> 2.0)
+      json (~> 2.6)
       kramdown (~> 2.3, >= 2.3.1)
       kramdown-parser-gfm (~> 1.0)
       liquid (~> 4.0)
-      mercenary (>= 0.3.6, < 0.5)
+      mercenary (~> 0.3, >= 0.3.6)
       pathutil (~> 0.9)
       rouge (>= 3.0, < 5.0)
       safe_yaml (~> 1.0)
@@ -140,8 +144,8 @@ GEM
       jekyll (>= 3.5)
       json-minify (~> 0.0.3)
       uglifier (~> 4.1)
-    jekyll-sass-converter (3.0.0)
-      sass-embedded (~> 1.54)
+    jekyll-sass-converter (3.1.0)
+      sass-embedded (~> 1.75)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
@@ -191,14 +195,14 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rchardet (1.9.0)
-    rexml (3.4.0)
+    rexml (3.4.1)
     rouge (4.5.1)
     rss (0.3.1)
       rexml
     ruby-rc4 (0.1.5)
     rubyzip (2.4.1)
     safe_yaml (1.0.5)
-    sass-embedded (1.83.4)
+    sass-embedded (1.85.0)
       google-protobuf (~> 4.29)
       rake (>= 13)
     sawyer (0.9.2)
@@ -237,7 +241,7 @@ DEPENDENCIES
   git
   html-proofer
   icalendar (~> 2.10)
-  jekyll (= 4.3.4)
+  jekyll (= 4.4.1)
   jekyll-algolia
   jekyll-archives
   jekyll-environment-variables
@@ -267,6 +271,7 @@ CHECKSUMS
   connection_pool (2.5.0) sha256=233b92f8d38e038c1349ccea65dd3772727d669d6d2e71f9897c8bf5cd53ebfc
   console (1.29.2) sha256=afd9b75a1b047059dda22df0e3c0a386e96f50f6752c87c4b00b1a9fcbe77cd6
   cssminify2 (2.0.1) sha256=e311cfced4ccfc55d27bf30520f7d11ed129bf04dcadd5a82e791a141e45b98c
+  csv (3.3.2) sha256=6ff0c135e65e485d1864dde6c1703b60d34cc9e19bed8452834a0b28a519bd4e
   digest (3.2.0) sha256=fa2e7092ec683f65d82fadde5ff4ca3b32e23ee0b19f1fc1a5e09993ad2d3991
   drb (2.2.1) sha256=e9d472bf785f558b96b25358bae115646da0dbfd45107ad858b0bc0d935cb340
   em-websocket (0.5.3) sha256=f56a92bde4e6cb879256d58ee31f124181f68f8887bd14d53d5d9a292758c6a8
@@ -295,7 +300,7 @@ CHECKSUMS
   ice_cube (0.17.0) sha256=32deb45dda4b4acc53505c2f581f6d32b5afc04d29b9004769944a0df5a5fcbe
   iniparser (1.0.1) sha256=41b86074498e9d40adb998f81e18d6a57c1a4da0e1fb2e90c5fc38efef07ebcb
   io-event (1.7.5) sha256=99fbc90dd0f35b3b6a52e52f06fd6e38737017d0d2141c0b9bcab913fa5052e8
-  jekyll (4.3.4) sha256=c488282c2819c392d34d3a3784eacde2cde4b61c8e3c9c9295f6c01fb1754404
+  jekyll (4.4.1) sha256=4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1
   jekyll-algolia (1.7.1) sha256=0f1501d2ec1d6550261c34f4ff4d46c72b1352823c4c5b8c67632bc92719fb49
   jekyll-archives (2.3.0) sha256=2dbd8ce22212fbace81fe2c9aa4152a6e21c748bcc626f135af5acfd813375f6
   jekyll-environment-variables (1.0.1) sha256=4f1e287d4e659d04e0f328d6d14ded3d719ad625bd805f96f2379a5a2c7e01c3
@@ -303,7 +308,7 @@ CHECKSUMS
   jekyll-gist (1.5.0) sha256=495b6483552a3e2975a2752964ea7acddd545bc6e13ce2be15a50cec8d4c9f0f
   jekyll-listme (0.4.0)
   jekyll-minifier (0.1.10) sha256=cd05bd9b2105f1dfd344397c480c17bea7d93871e239f5ca3949852ff1d938a3
-  jekyll-sass-converter (3.0.0) sha256=e2e7674f186e906b9d99b8066e13f9b4d5cb9f806d36f7bc8cf2610053d8c902
+  jekyll-sass-converter (3.1.0) sha256=83925d84f1d134410c11d0c6643b0093e82e3a3cf127e90757a85294a3862443
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218
   jekyll-watch (2.2.1) sha256=bc44ed43f5e0a552836245a54dbff3ea7421ecc2856707e8a1ee203a8387a7e1
   json (2.9.1) sha256=d2bdef4644052fad91c1785d48263756fe32fcac08b96a20bb15840e96550d11
@@ -333,13 +338,13 @@ CHECKSUMS
   rb-fsevent (0.11.2) sha256=43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rchardet (1.9.0) sha256=26889486cdd83b378652baf7603f71d93e431bb11bc237b4cd8c65151af4a590
-  rexml (3.4.0) sha256=efbea1efba7fa151158e0ee1e643525834da2d8eb4cf744aa68f6480bc9804b2
+  rexml (3.4.1) sha256=c74527a9a0a04b4ec31dbe0dc4ed6004b960af943d8db42e539edde3a871abca
   rouge (4.5.1) sha256=2ac81c6dee7019bbc6600d4c2d641d730d65c165941400ebd924259067e690dd
   rss (0.3.1) sha256=b46234c04551b925180f8bedfc6f6045bf2d9998417feda72f300e7980226737
   ruby-rc4 (0.1.5) sha256=00cc40a39d20b53f5459e7ea006a92cf584e9bc275e2a6f7aa1515510e896c03
   rubyzip (2.4.1) sha256=8577c88edc1fde8935eb91064c5cb1aef9ad5494b940cf19c775ee833e075615
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
-  sass-embedded (1.83.4) sha256=616f52e8e4afbf72a6074d365f6ee3e08f3aa535ab91d9515e980bc12ea625b2
+  sass-embedded (1.85.0) sha256=64ebaad611b6d5ffc84103e5933e469ae7ccd3efb605b91da80dd453b1f00f2d
   sawyer (0.9.2) sha256=fa3a72d62a4525517b18857ddb78926aab3424de0129be6772a8e2ba240e7aca
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   terminal-table (3.0.2) sha256=f951b6af5f3e00203fb290a669e0a85c5dd5b051b3b023392ccfd67ba5abae91

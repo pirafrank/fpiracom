@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/pirafrank/jekyll-listme.git
-  revision: b4935ed4485ebd3bccce0529b47cd481f679b5e5
-  specs:
-    jekyll-listme (0.4.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -138,6 +132,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-listme (0.4.1)
+      json (~> 2.7)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -247,7 +243,7 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-feed
   jekyll-gist
-  jekyll-listme!
+  jekyll-listme
   jekyll-minifier
   jekyll-sitemap
   nokogiri (>= 1.16.5, < 1.18)
@@ -306,7 +302,7 @@ CHECKSUMS
   jekyll-environment-variables (1.0.1) sha256=4f1e287d4e659d04e0f328d6d14ded3d719ad625bd805f96f2379a5a2c7e01c3
   jekyll-feed (0.17.0) sha256=689aab16c877949bb9e7a5c436de6278318a51ecb974792232fd94d8b3acfcc3
   jekyll-gist (1.5.0) sha256=495b6483552a3e2975a2752964ea7acddd545bc6e13ce2be15a50cec8d4c9f0f
-  jekyll-listme (0.4.0)
+  jekyll-listme (0.4.1) sha256=8a5c4e3b6d447639b796cf66843357f88204463e51adfa602ad3eb1db7f1189d
   jekyll-minifier (0.1.10) sha256=cd05bd9b2105f1dfd344397c480c17bea7d93871e239f5ca3949852ff1d938a3
   jekyll-sass-converter (3.1.0) sha256=83925d84f1d134410c11d0c6643b0093e82e3a3cf127e90757a85294a3862443
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218

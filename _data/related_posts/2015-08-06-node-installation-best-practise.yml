@@ -1,0 +1,19 @@
+---
+- title: Fix 'locking EACCES' error in npm on OS X
+  uid: 2015-08-05-fix-locking-eacces-error-npm-osx
+  most_recent_edit: '2015-08-04T22:00:00+00:00'
+  url: "/blog/2015/08/fix-locking-eacces-error-npm-osx/"
+  date: '2015-08-05 00:00:00 +0200'
+  similarity: 0.682288549219197
+- title: Fix electron-prebuilt install.js script error when installing as superuser
+  uid: 2015-08-04-fix-electron-installjs-error-when-root
+  most_recent_edit: '2015-08-03T22:00:00+00:00'
+  url: "/blog/2015/08/fix-electron-installjs-error-when-root/"
+  date: '2015-08-04 00:00:00 +0200'
+  similarity: 0.627078100791222
+- title: Fix "unknown option '-q'" nvm install error
+  uid: 2015-07-30-fix-unknown-option-q-nvm
+  most_recent_edit: '2015-07-29T22:00:00+00:00'
+  url: "/blog/2015/07/fix-unknown-option-q-nvm/"
+  date: '2015-07-30 00:00:00 +0200'
+  similarity: 0.5475926399231

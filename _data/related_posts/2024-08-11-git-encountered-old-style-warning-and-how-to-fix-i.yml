@@ -1,0 +1,19 @@
+---
+- title: Get Git completion to work on Linux and OS X
+  uid: 2015-08-07-getting-git-bash-completion
+  most_recent_edit: '2015-08-06T22:00:00+00:00'
+  url: "/blog/2015/08/getting-git-bash-completion/"
+  date: '2015-08-07 00:00:00 +0200'
+  similarity: 0.569748299412385
+- title: Installing git from source on Debian and CentOS
+  uid: 2016-01-27-git-install-from-source
+  most_recent_edit: '2016-01-26T23:00:00+00:00'
+  url: "/blog/2016/01/git-install-from-source/"
+  date: '2016-01-27 00:00:00 +0100'
+  similarity: 0.544561890091784
+- title: Migrate a repository from bazaar to git
+  uid: 2016-09-23-migrate-bazaar-to-git
+  most_recent_edit: '2016-09-22T22:00:00+00:00'
+  url: "/blog/2016/09/migrate-bazaar-to-git/"
+  date: '2016-09-23 00:00:00 +0200'
+  similarity: 0.509904161390792

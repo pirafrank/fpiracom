@@ -1,0 +1,13 @@
+---
+- title: Fix electron-prebuilt install.js script error when installing as superuser
+  uid: 2015-08-04-fix-electron-installjs-error-when-root
+  most_recent_edit: '2015-08-03T22:00:00+00:00'
+  url: "/blog/2015/08/fix-electron-installjs-error-when-root/"
+  date: '2015-08-04 00:00:00 +0200'
+  similarity: 0.699462211196179
+- title: Node installation best practices
+  uid: 2015-08-06-node-installation-best-practise
+  most_recent_edit: '2015-08-05T22:00:00+00:00'
+  url: "/blog/2015/08/node-installation-best-practise/"
+  date: '2015-08-06 00:00:00 +0200'
+  similarity: 0.682288549219197

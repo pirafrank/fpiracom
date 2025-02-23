@@ -1,0 +1,19 @@
+---
+- title: No need to reboot to fix 'Docker Desktop has failed to start' error
+  uid: 2023-10-04-windows-docker-desktop-failed-start
+  most_recent_edit: '2023-10-03T22:00:00+00:00'
+  url: "/blog/2023/10/windows-docker-desktop-failed-start/"
+  date: '2023-10-04 00:00:00 +0200'
+  similarity: 0.673319876194
+- title: Fixing vim-plug update error on Neovim on Windows
+  uid: 2024-12-04-fixing-vim-plug-update-error-on-neovim-on-windows
+  most_recent_edit: '2024-12-03T23:00:00+00:00'
+  url: "/blog/2024/12/fixing-vim-plug-update-error-on-neovim-on-windows/"
+  date: '2024-12-04 00:00:00 +0100'
+  similarity: 0.583085050215123
+- title: Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy
+  uid: 2025-02-04-upgrading-ubuntu-2004-focal-in-wsl2-to-ubuntu-2204
+  most_recent_edit: '2025-02-03T23:00:00+00:00'
+  url: "/blog/2025/02/upgrading-ubuntu-2004-focal-in-wsl2-to-ubuntu-2204/"
+  date: '2025-02-04 00:00:00 +0100'
+  similarity: 0.532333668192192

@@ -1,0 +1,13 @@
+---
+- title: Fix 'locking EACCES' error in npm on OS X
+  uid: 2015-08-05-fix-locking-eacces-error-npm-osx
+  most_recent_edit: '2015-08-04T22:00:00+00:00'
+  url: "/blog/2015/08/fix-locking-eacces-error-npm-osx/"
+  date: '2015-08-05 00:00:00 +0200'
+  similarity: 0.699462211196179
+- title: Node installation best practices
+  uid: 2015-08-06-node-installation-best-practise
+  most_recent_edit: '2015-08-05T22:00:00+00:00'
+  url: "/blog/2015/08/node-installation-best-practise/"
+  date: '2015-08-06 00:00:00 +0200'
+  similarity: 0.627078100791222

@@ -1,0 +1,19 @@
+---
+- title: Compile and install git-crypt on OS X
+  uid: 2016-01-29-git-crypt
+  most_recent_edit: '2016-01-28T23:00:00+00:00'
+  url: "/blog/2016/01/git-crypt/"
+  date: '2016-01-29 00:00:00 +0100'
+  similarity: 0.712022654052499
+- title: Signing git commits and tags
+  uid: 2021-11-22-git-sign-commits-and-tags
+  most_recent_edit: '2021-11-21T23:00:00+00:00'
+  url: "/blog/2021/11/git-sign-commits-and-tags/"
+  date: '2021-11-22 00:00:00 +0100'
+  similarity: 0.609941923025733
+- title: Installing git from source on Debian and CentOS
+  uid: 2016-01-27-git-install-from-source
+  most_recent_edit: '2016-01-26T23:00:00+00:00'
+  url: "/blog/2016/01/git-install-from-source/"
+  date: '2016-01-27 00:00:00 +0100'
+  similarity: 0.556160297622664

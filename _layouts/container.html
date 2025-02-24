@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<main id="main" class="big_container">
+
+  {% if page.show_title %}
+    {% if page.center %}
+      <div class="page-title center">
+          <h1>{{ page.title | smartify }}</h1>
+      </div>
+    {% else %}
+      <div class="page-title">
+          <h1>{{ page.title | smartify }}</h1>
+      </div>
+    {% endif %}
+  {% endif %}
+
+  <div class="entry">
+  {% if page.center %}
+    <div align="center">
+      {{ content }}
+    </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+  </div>
+
+</main>

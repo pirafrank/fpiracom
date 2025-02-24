@@ -15,3 +15,4 @@ These below here to keep them handy.
 - [Brute-force calculator]({{ site.baseurl }}/utilities/bfc)
 - [IP info]({{ site.baseurl}}/utilities/ipinfo)
 - [Open in WhatsApp]({{ site.baseurl}}/utilities/open-in-whatsapp)
+- [ASCII Table]({{ site.baseurl}}/utilities/ascii)

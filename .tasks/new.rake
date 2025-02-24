@@ -36,10 +36,9 @@ def create_new(item_type)
   contents = <<-STR
 ---
 title: "#{title}"
-date: #{day}
 subtitle: Some subtitle
 description: Write here a longer description about the blog post.
-category: #{format_list_as_yaml(categories)}
+categories: #{format_list_as_yaml(categories)}
 tags: #{format_list_as_yaml(tags)}
 seoimage: "300x/some-seo-pic.jpg"
 ---

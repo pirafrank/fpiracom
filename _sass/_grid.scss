@@ -14,6 +14,11 @@
   max-width: 90vw;
 }
 
+.no_margin {
+  margin: 0;
+  max-width: 100%;
+}
+
 .reading_container {
   max-width: 45em; // 45em for optimal reading
 }

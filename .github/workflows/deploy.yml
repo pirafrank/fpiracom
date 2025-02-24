@@ -20,6 +20,7 @@ on:
       - .editorconfig
       - '.devcontainer/**'
       - '.html_proofer_cache/**'
+      - '.tasks/'
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * *'

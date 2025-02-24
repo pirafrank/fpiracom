@@ -11,6 +11,9 @@
   h5 {
     font-size: 20px;
     color: $gray;
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   @include mobile {

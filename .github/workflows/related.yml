@@ -1,0 +1,31 @@
+name: 'Regenerate related posts'
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  related:
+    name: Related posts
+    runs-on: ubuntu-24.04
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+    # prepare Jekyll environment...
+    - name: Setup Jekyll environment
+      uses: ./.github/actions/setup-jekyll-env
+    # ...and regenerate related posts
+    - name: Regenerate related posts
+      uses: ./.github/actions/regenerate-related
+      with:
+        JEKYLL_ENV: production
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        RUN_COMMIT_CHANGES: ${{ vars.RUN_COMMIT_CHANGES }}

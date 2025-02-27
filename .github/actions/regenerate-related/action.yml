@@ -1,0 +1,59 @@
+# .github/actions/regenerate-related/action.yml
+
+name: Regenerate related posts
+description: Regenerate related posts using Jekyll AI Related
+inputs:
+  JEKYLL_ENV:
+    description: 'Jekyll environment'
+    required: true
+    default: 'production'
+  OPENAI_API_KEY:
+    description: 'OpenAI API key'
+    required: true
+  SUPABASE_URL:
+    description: 'Supabase URL'
+    required: true
+  SUPABASE_KEY:
+    description: 'Supabase key'
+    required: true
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  RUN_COMMIT_CHANGES:
+    description: 'Run commit changes'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Regenerate related posts
+      shell: bash
+      env:
+        JEKYLL_ENV: ${{ inputs.JEKYLL_ENV }}
+        OPENAI_API_KEY: ${{ inputs.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ inputs.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ inputs.SUPABASE_KEY }}
+      run: |
+        bundle exec jekyll related
+    - name: Check edited files
+      id: check_edited_files
+      shell: bash
+      run: |
+        # List edited files in _data/related_posts
+        git ls-files -dmo -- _data/related_posts
+        echo "changed=$(git ls-files -dmo -- _data/related_posts | tr '\n' ' ')" >> $GITHUB_OUTPUT
+    - name: Generate commit message
+      id: generate_commit_message
+      shell: bash
+      run: |
+        today=$(date +"%Y-%m-%d %H:%M:%S")
+        export MESSAGE="Automatic update from Jekyll AI Related @ ${today}"
+        echo "Commit message: ${MESSAGE}"
+        echo "message=${MESSAGE}" >> $GITHUB_OUTPUT
+    - name: Commit changes
+      id: commit_changes
+      uses: pirafrank/github-commit-sign@v0
+      if: ${{ inputs.RUN_COMMIT_CHANGES == 'true' && steps.check_edited_files.outputs.changed != '' }}
+      env:
+        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+      with:
+        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage='${{ steps.generate_commit_message.outputs.message }}' --changed ${{ steps.check_edited_files.outputs.changed }}"

@@ -37,6 +37,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
+      REGEN_RELATED: ${{ steps.check_new_posts.outputs.REGEN_RELATED }}
       REF_NAME: ${{ steps.get_current_ref.outputs.ref }}
       VERCEL_ALIAS: ${{ steps.get_deployment_info.outputs.vercel_alias }}
       VERCEL_ARGS: ${{ steps.get_deployment_info.outputs.vercel_args }}
@@ -46,6 +47,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.target_ref }}
+          fetch-depth: 0
       - name: Check for new blog posts
         id: check_new_posts
         uses: ./.github/actions/check-for-posts
@@ -58,6 +60,32 @@ jobs:
         with:
           ref: ${{ steps.get_current_ref.outputs.ref }}
 
+  related:
+    name: Related posts
+    runs-on: ubuntu-24.04
+    needs: [checks]
+    if: |
+        github.ref == 'refs/heads/main' &&
+        contains(needs.checks.outputs.REGEN_RELATED, 'true')
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+    # prepare Jekyll environment...
+    - name: Setup Jekyll environment
+      uses: ./.github/actions/setup-jekyll-env
+    # ...and regenerate related posts
+    - name: Regenerate related posts
+      uses: ./.github/actions/regenerate-related
+      with:
+        JEKYLL_ENV: production
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        RUN_COMMIT_CHANGES: ${{ vars.RUN_COMMIT_CHANGES }}
+
   build:
     name: Build and Deploy
     runs-on: ubuntu-24.04
@@ -65,7 +93,7 @@ jobs:
       name: ${{ needs.checks.outputs.ENV_NAME }}
       url: ${{ steps.deploy_to_vercel.outputs.preview-url }}
     concurrency: ${{ needs.checks.outputs.ENV_NAME }}
-    needs: [checks]
+    needs: [checks, related]
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
     - name: Clone repo

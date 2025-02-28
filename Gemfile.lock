@@ -121,7 +121,7 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-ai-related (0.1.0)
+    jekyll-ai-related (0.2.0)
       httparty (~> 0.22.0)
       jekyll (>= 3.7, < 5.0)
       json (~> 2.7)
@@ -314,7 +314,7 @@ CHECKSUMS
   iniparser (1.0.1) sha256=41b86074498e9d40adb998f81e18d6a57c1a4da0e1fb2e90c5fc38efef07ebcb
   io-event (1.9.0) sha256=4c262b6610ad643a2be75e892135aca4fa67edc67d1944c0ae6b6e5dd73f4fc1
   jekyll (4.4.1) sha256=4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1
-  jekyll-ai-related (0.1.0) sha256=3a944ca47b40f21859e5418c91f7a5cbe6a29344153565c428a1cf0cbefb4dee
+  jekyll-ai-related (0.2.0) sha256=b547353cbc9246a314da9ed90c55970c68baefcd90722afd0bb1f8c12cd1ba95
   jekyll-algolia (1.7.1) sha256=0f1501d2ec1d6550261c34f4ff4d46c72b1352823c4c5b8c67632bc92719fb49
   jekyll-archives (2.3.0) sha256=2dbd8ce22212fbace81fe2c9aa4152a6e21c748bcc626f135af5acfd813375f6
   jekyll-environment-variables (1.0.1) sha256=4f1e287d4e659d04e0f328d6d14ded3d719ad625bd805f96f2379a5a2c7e01c3

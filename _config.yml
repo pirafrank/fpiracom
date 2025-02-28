@@ -218,6 +218,9 @@ jekyll-ai-related:
   include_future: false
   related_posts_limit: 3
   related_posts_score_threshold: 0.5
+  precision: 3
+  db_table: page_embeddings
+  db_function: related_posts
 
 # Files to explicitly include in generated website
 include:

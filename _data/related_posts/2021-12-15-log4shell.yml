@@ -4,10 +4,10 @@
   most_recent_edit: '2020-01-13T23:00:00+00:00'
   url: "/blog/2020/01/microsoft-cve-2020-0601/"
   date: '2020-01-14 00:00:00 +0100'
-  similarity: 0.58699893239131
+  similarity: 0.586
 - title: Speculative execution side-channel vulnerabilities
   uid: 2019-05-25-speculative-execution
   most_recent_edit: '2020-01-27T23:00:00+00:00'
   url: "/blog/2019/05/speculative-execution/"
   date: '2019-05-25 00:00:00 +0200'
-  similarity: 0.554946591402286
+  similarity: 0.554

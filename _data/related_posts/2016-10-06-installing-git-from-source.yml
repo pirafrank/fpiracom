@@ -4,16 +4,16 @@
   most_recent_edit: '2016-01-26T23:00:00+00:00'
   url: "/blog/2016/01/git-install-from-source/"
   date: '2016-01-27 00:00:00 +0100'
-  similarity: 0.955851316452026
+  similarity: 0.955
 - title: Compile and install git-crypt on OS X
   uid: 2016-01-29-git-crypt
   most_recent_edit: '2016-01-28T23:00:00+00:00'
   url: "/blog/2016/01/git-crypt/"
   date: '2016-01-29 00:00:00 +0100'
-  similarity: 0.596434998937254
+  similarity: 0.596
 - title: Get Git completion to work on Linux and OS X
   uid: 2015-08-07-getting-git-bash-completion
   most_recent_edit: '2015-08-06T22:00:00+00:00'
   url: "/blog/2015/08/getting-git-bash-completion/"
   date: '2015-08-07 00:00:00 +0200'
-  similarity: 0.567372790042116
+  similarity: 0.567

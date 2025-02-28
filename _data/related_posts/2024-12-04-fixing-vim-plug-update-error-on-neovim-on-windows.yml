@@ -4,16 +4,16 @@
   most_recent_edit: '2024-11-19T23:00:00+00:00'
   url: "/blog/2024/11/docker-desktops-compose-plugin-bug-a-quick-fix-for/"
   date: '2024-11-18 00:00:00 +0100'
-  similarity: 0.583085050215123
+  similarity: 0.583
 - title: Install Vim 8.2 on Ubuntu 20.04
   uid: 2020-11-30-install-vim-from-source
   most_recent_edit: '2020-11-29T23:00:00+00:00'
   url: "/blog/2020/11/install-vim-from-source/"
   date: '2020-11-30 00:00:00 +0100'
-  similarity: 0.568247480146674
+  similarity: 0.568
 - title: Fix blank lines when using Meld in WSL2
   uid: 2024-08-17-fix-blank-lines-when-using-meld-in-wsl2
   most_recent_edit: '2024-08-16T22:00:00+00:00'
   url: "/blog/2024/08/fix-blank-lines-when-using-meld-in-wsl2/"
   date: '2024-08-17 00:00:00 +0200'
-  similarity: 0.527565384942523
+  similarity: 0.527

@@ -4,16 +4,16 @@
   most_recent_edit: '2016-01-26T23:00:00+00:00'
   url: "/blog/2016/01/git-install-from-source/"
   date: '2016-01-27 00:00:00 +0100'
-  similarity: 0.577684334905537
+  similarity: 0.577
 - title: Installing git from source on Debian and CentOS
   uid: 2016-10-06-installing-git-from-source
   most_recent_edit: '2016-10-05T22:00:00+00:00'
   url: "/blog/2016/10/installing-git-from-source/"
   date: '2016-10-06 00:00:00 +0200'
-  similarity: 0.539736855602581
+  similarity: 0.539
 - title: How to fix ‘git encountered old-style’ warning
   uid: 2024-08-11-git-encountered-old-style-warning-and-how-to-fix-i
   most_recent_edit: '2024-08-10T22:00:00+00:00'
   url: "/blog/2024/08/git-encountered-old-style-warning-and-how-to-fix-i/"
   date: '2024-08-11 00:00:00 +0200'
-  similarity: 0.509904161390792
+  similarity: 0.509

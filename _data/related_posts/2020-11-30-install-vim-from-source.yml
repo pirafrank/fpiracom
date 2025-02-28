@@ -4,16 +4,16 @@
   most_recent_edit: '2024-12-03T23:00:00+00:00'
   url: "/blog/2024/12/fixing-vim-plug-update-error-on-neovim-on-windows/"
   date: '2024-12-04 00:00:00 +0100'
-  similarity: 0.568247480146674
+  similarity: 0.568
 - title: 'My Jekyll workflow: Part 2'
   uid: 2016-09-20-my-jekyll-workflow-part2
   most_recent_edit: '2016-09-19T22:00:00+00:00'
   url: "/blog/2016/09/my-jekyll-workflow-part2/"
   date: '2016-09-20 00:00:00 +0200'
-  similarity: 0.508943529536163
+  similarity: 0.508
 - title: Upgrading Ubuntu 20.04 Focal in WSL2 to Ubuntu 22.04 Jammy
   uid: 2025-02-04-upgrading-ubuntu-2004-focal-in-wsl2-to-ubuntu-2204
   most_recent_edit: '2025-02-03T23:00:00+00:00'
   url: "/blog/2025/02/upgrading-ubuntu-2004-focal-in-wsl2-to-ubuntu-2204/"
   date: '2025-02-04 00:00:00 +0100'
-  similarity: 0.504790529465969
+  similarity: 0.504

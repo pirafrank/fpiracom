@@ -20,7 +20,7 @@ custom_css: ['layouts/posts']
         <div class="post-details">
           {% assign categoryName = page.category[0] %}
           {% assign categoryId = categoryName | downcase | replace:' ','-' | replace: '.','-' %}
-          <i>
+
             {% assign readtime = page.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
             Published on {{ page.date | date: "%B %-d, %Y" }} in <a href="{{ site.baseurl }}/blog/categories/{{ page.categories[0] | downcase | replace:' ','-' | replace: '.','-' }}">{{ page.categories }}</a>
             <br>Read time:&nbsp;{% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min
@@ -30,13 +30,12 @@ custom_css: ['layouts/posts']
             Tags:
               {% for tag in page.tags %}
                 {% assign tagId = tag | downcase | replace:' ','-' | replace: '.','-' %}
-                <span class="post-tags">
+                <span class="tag-chip">
                   <a href="{{ site.baseurl }}/blog/tags/{{ tagId }}">{{ tag }}</a>
                 </span>
               {% endfor %}
             {% endif %}
 
-          </i>
         </div>
       </div>
 

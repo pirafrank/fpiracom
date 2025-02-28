@@ -78,3 +78,17 @@
     color: $gray;
   }
 }
+
+.tag-chip {
+  font-size: 0.8em;
+  background-color: $lightestGray;
+  padding: 3px 8px 3px 8px;
+  margin-right: 5px;
+  border-radius: $buttonBorderRadius;
+  color: $darkerGray;
+  text-decoration: none;
+  a {
+    font-size: 0.9rem;
+    color: $darkBlue;
+  }
+}

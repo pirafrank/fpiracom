@@ -39,10 +39,20 @@ runs:
       shell: bash
       run: |
         # List edited files in _data/related_posts
-        git ls-files -dmo -- _data/related_posts
         echo "changed=$(git ls-files -dmo -- _data/related_posts | tr '\n' ' ')" >> $GITHUB_OUTPUT
+    - name: Check if there are changes
+      id: check_if_there_are_changes
+      shell: bash
+      run: |
+        if [ -z "${{ steps.check_edited_files.outputs.changed }}" ]; then
+          echo "No changes detected. This action will not commit any changes."
+        else
+          echo "Changes detected. This action will commit the following changes:"
+          git ls-files -dmo -- _data/related_posts
+        fi
     - name: Generate commit message
       id: generate_commit_message
+      if: ${{ inputs.RUN_COMMIT_CHANGES == 'true' && steps.check_edited_files.outputs.changed != '' }}
       shell: bash
       run: |
         today=$(date +"%Y-%m-%d %H:%M:%S")

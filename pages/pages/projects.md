@@ -14,6 +14,8 @@ show_title: true
 
 {{ project.description }}
 
+{% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
+
 {% endfor %}
 
 ### Legacy projects

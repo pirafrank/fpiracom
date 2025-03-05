@@ -32,10 +32,6 @@ jobs:
       uses: ./.github/actions/setup-nodejs
       with:
         node-version-file: .nvmrc
-    - name: Write git info to site data
-      uses: ./.github/actions/git-info
-      with:
-        target_file: _data/git.json
 
     # Perform CI checks
     - name: CI checks
@@ -44,6 +40,12 @@ jobs:
     # Build Jekyll website to check for possible build errors
     - name: Build jekyll website
       run: bundle exec rake release
+
+    # Write git info to site data as file for Vercel deploy
+    - name: Write git info to site data
+      uses: ./.github/actions/git-info
+      with:
+        target_file: _data/git.json
 
     # Get current REF to set a non-empty, URL-compliant,
     # and non-prod alias for Vercel deploy.

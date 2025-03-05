@@ -47,7 +47,7 @@ add `--future` to compile and show post with later date than today;
 
 add `--drafts` to compile and show drafts.
 
-## Rake
+### Rake
 
 As many other Ruby-based projects, most tasks listed in this readme are also available as `rake` tasks for brevity and consistency.
 
@@ -61,19 +61,7 @@ Thanks to the `jekyll-environment-variables` plugin, you can use `{{ site.env.MY
 
 Prepend `JEKYLL_ENV=production` to commands above.
 
-### Algolia search
-
-Algolia settings are stored in `_config.yml`. It uses the search-only API key.
-
-To update the Algolia index run:
-
-```sh
-ALGOLIA_API_KEY='123abc123abc123abc123abc123abc12' bundle exec jekyll algolia
-```
-
-where the `ALGOLIA_API_KEY` is the Admin API Key you get from [your account dashboard](https://www.algolia.com/account/api-keys/all).
-
-## Dev/Preview in Docker
+### Develop/Preview in Docker
 
 You can run the development server in a docker container. The image is not specifi to the blog and it's built as a general purpose Jekyll one. It contains: `rvm`, `ruby`, `jekyll`, `nvm`, and `nodejs`.
 
@@ -137,6 +125,18 @@ gh workflow run workflow --ref branch-name -f myparameter=myvalue
 ```
 
 For futher info, [check the docs](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow#running-a-workflow-using-github-cli).
+
+## Algolia search
+
+Algolia settings are stored in `_config.yml`. It uses the search-only API key.
+
+To update the Algolia index run:
+
+```sh
+ALGOLIA_API_KEY='123abc123abc123abc123abc123abc12' bundle exec jekyll algolia
+```
+
+where the `ALGOLIA_API_KEY` is the Admin API Key you get from [your account dashboard](https://www.algolia.com/account/api-keys/all).
 
 ## Web Analytics
 
@@ -410,7 +410,21 @@ APIs can be useful for integrations, e.g. I use `/api/v1/ifttt/posts/latest` to 
 
 ### API docs
 
-OpenAPI definition is available for `v1` in `/api/v1/openapi.yaml`. API documentation is generated as part of the website and available at `/api/docs` ([link](https://fpira.com/api/docs)).
+API documentation is generated as part of the website and available at `/api/docs` ([link](https://fpira.com/api/docs)).
+
+### OpenAPI definition
+
+OpenAPI definition is available for `v1` in `/api/v1/openapi.yaml`.
+
+### slumber
+
+Sluber API definition is available for `v1` in `api/v1/slumber.yml`. [slumber](https://slumber.lucaspickering.me/) is a terminal-based HTTP/REST client. I use it to quickly test APIs from CLI during development.
+
+## Related posts
+
+Bottom of the post page shows related posts.
+
+Related posts are read from `site.data` and are powered by the [jekyll-ai-related](https://github.com/pirafrank/jekyll-ai-related) plugin.
 
 ## CMS
 

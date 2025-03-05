@@ -11,12 +11,23 @@ profiles:
       host: https://fpira.com/api
 chains:
   category_id:
+    source: !select
+      message: Choose a category
+      options: "{{chains.categories_options}}"
+  categories_options:
     source: !request
       recipe: v1CategoriesGet
-    selector: $[0].id
+    selector: $[*].id
+    selector_mode: array
   tag_id:
-    source: !prompt
-      message: Tag id
+    source: !select
+      message: Choose a tag
+      options: "{{chains.tags_options}}"
+  tags_options:
+    source: !request
+      recipe: v1TagsGet
+    selector: $[*].id
+    selector_mode: array
 requests:
   v1CategoriesGet: !request
     name: 'Categories: Get all categories in the website'

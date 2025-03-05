@@ -1,14 +1,11 @@
 # .github/actions/check-for-posts/action.yml
 
 name: Check for posts
-description: Check _posts dir for new or updated blog posts
+description: Check the _posts for blog posts with today's date
 outputs:
   RUN_BUILD:
     description: 'Whether to run the build or not'
     value: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
-  REGEN_RELATED:
-    description: 'Whether to regenerate related posts or not'
-    value: ${{ steps.check_new_posts.outputs.REGEN_RELATED }}
 runs:
   using: "composite"
   steps:
@@ -19,8 +16,6 @@ runs:
         GITHUB_EVENT_NAME: ${{ github.event_name }}
         ACTION_PATH: ${{ github.action_path }}
         GITHUB_WORKSPACE: ${{ github.workspace }}
-        GITHUB_PREVIOUS_SHA: ${{ github.event.before }}
-        GITHUB_SHA: ${{ github.event.inputs.target_ref || github.sha }}
       run: |
         cd $GITHUB_WORKSPACE
         # if run on schedule, check for new posts
@@ -28,30 +23,11 @@ runs:
           if [ $(ls -1 _posts | grep $(date '+%Y-%m-%d')) ]; then
             echo "New posts found with today date"
             echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
-            # in this case I explicitly set it to true because the post has
-            # already been committed and there is no new commit to diff against.
-            # so I need to regenerate related posts to include the new post.
-            echo "REGEN_RELATED=true" >> $GITHUB_OUTPUT
-            exit 0
           else
             echo "No new posts to publish with today date."
             echo "RUN_BUILD=false" >> $GITHUB_OUTPUT
-            echo "REGEN_RELATED=false" >> $GITHUB_OUTPUT
-            exit 0
           fi
         else
           echo "No checks to perform, about to run build..."
           echo "RUN_BUILD=true" >> $GITHUB_OUTPUT
-        fi
-
-        # filter posts to check for new or updated posts
-        # filter_posts.py script is in the repo_utils folder defaults to today's date
-        POST_LIST=$(git diff ${GITHUB_PREVIOUS_SHA}..${GITHUB_SHA} --name-only | python3 repo_utils/filter_posts.py)
-        echo "${POST_LIST}"
-        if [ -z "${POST_LIST}" ]; then
-          echo "No new or updated posts found. No related posts to regenerate."
-          echo "REGEN_RELATED=false" >> $GITHUB_OUTPUT
-        else
-          echo "New or updated posts found. Related posts to be regenerated."
-          echo "REGEN_RELATED=true" >> $GITHUB_OUTPUT
         fi

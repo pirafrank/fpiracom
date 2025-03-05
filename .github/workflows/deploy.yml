@@ -21,6 +21,8 @@ on:
       - '.devcontainer/**'
       - '.html_proofer_cache/**'
       - '.tasks/'
+      - 'api/**/.yml'
+      - 'api/**/.yaml'
   # schedule is in UTC using cron syntax
   schedule:
     - cron: '45 8 * * *'

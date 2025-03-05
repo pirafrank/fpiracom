@@ -1,0 +1,116 @@
+profiles:
+  http://127.0.0.1:4001/api:
+    name: http://127.0.0.1:4001/api
+    default: false
+    data:
+      host: http://127.0.0.1:4001/api
+  https://fpira.com/api:
+    name: https://fpira.com/api
+    default: false
+    data:
+      host: https://fpira.com/api
+chains:
+  category_id:
+    source: !request
+      recipe: v1CategoriesGet
+    selector: $[0].id
+  tag_id:
+    source: !prompt
+      message: Tag id
+requests:
+  v1CategoriesGet: !request
+    name: 'Categories: Get all categories in the website'
+    method: GET
+    url: '{{host}}/v1/categories'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1CategoriesCategoryidGet: !request
+    name: 'Categories: Get all posts for the given category in the website'
+    method: GET
+    url: '{{host}}/v1/categories/{{chains.category_id}}'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1IftttPosts: !request
+    name: 'IFTTT: Get all posts in a format suitable for IFTTT'
+    method: GET
+    url: '{{host}}/v1/ifttt/posts'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1IftttPostsLatest: !request
+    name: 'IFTTT: Get latest post in a format suitable for IFTTT'
+    method: GET
+    url: '{{host}}/v1/ifttt/posts/latest'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1PagesGet: !request
+    name: 'Pages: Get all pages'
+    method: GET
+    url: '{{host}}/v1/pages'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1PostsGet: !request
+    name: 'Posts: Get all posts (sorted by last update date)'
+    method: GET
+    url: '{{host}}/v1/posts'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1PostsLatestGet: !request
+    name: 'Posts: Get latest blog post'
+    method: GET
+    url: '{{host}}/v1/posts/latest'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1PostsByUpdateGet: !request
+    name: 'Posts: Get all posts (sorted by last update date)'
+    method: GET
+    url: '{{host}}/v1/posts/by_update'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1PostsByUpdateLatestGet: !request
+    name: 'Posts: Get latest blog post'
+    method: GET
+    url: '{{host}}/v1/posts/by_update/latest'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1TagsGet: !request
+    name: 'Tags: Get all tags in the website'
+    method: GET
+    url: '{{host}}/v1/tags'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1TagsTagidGet: !request
+    name: 'Tags: Get all posts for the given tag in the website'
+    method: GET
+    url: '{{host}}/v1/tags/{{chains.tag_id}}'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1VersionGet: !request
+    name: 'Version: Get website build info and version'
+    method: GET
+    url: '{{host}}/v1/version'
+    body: null
+    authentication: null
+    query: []
+    headers: {}

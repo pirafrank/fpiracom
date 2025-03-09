@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "name": "Jekyll Simple Icons",
+      "description": "A plugin that makes it easy to incorporate Simple Icons into your Jekyll website, providing access to a vast collection of popular brands icons",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/jekyll-simple-icons",
+      "repourl": "https://github.com/pirafrank/jekyll-simple-icons",
+      "license": "MIT",
+      "skills": ["Ruby", "Jekyll Plugin"],
+      "creationDate": "2025-03-09T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "Rust EXIF Renamer",
       "description": "Rename photos in a given directory to their EXIF DateTimeOriginal and viceversa",
       "group": "",

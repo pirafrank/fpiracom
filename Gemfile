@@ -24,4 +24,6 @@ group :jekyll_plugins do
   #gem 'jekyll-listme', path: '/home/francesco/Code/projects/jekyll-listme'
   gem 'jekyll-ai-related'
   #gem 'jekyll-ai-related', path: '/home/francesco/Code/projects/jekyll-ai-related'
+  gem 'jekyll-simple-icons'
+  #gem 'jekyll-simple-icons', path: '/home/francesco/Code/projects/jekyll-simple-icons'
 end

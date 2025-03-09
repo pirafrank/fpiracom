@@ -1,0 +1,40 @@
+name: 'Supabase keepalive'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  related:
+    name: Supabase keepalive
+    runs-on: ubuntu-24.04
+    steps:
+    - name: Run keepalive
+      shell: bash
+      env:
+        SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        SUPABASE_TABLE: 'page_embeddings_production'
+      run: |
+        echo "Running Supabase keepalive request"
+        echo "Quering table $SUPABASE_TABLE"
+
+        response=$(curl -s -w "\n%{http_code}" \
+          -X GET "$SUPABASE_URL/rest/v1/${SUPABASE_TABLE}?select=count" \
+          -H "apikey: $SUPABASE_KEY" \
+          -H "Authorization: Bearer $SUPABASE_KEY" \
+          -H "Content-Type: application/json")
+
+        status_code=$(echo "$response" | tail -n1)
+        body=$(echo "$response" | head -n1 | jq -r)
+
+        if [ "$status_code" -eq 200 ]; then
+          echo "✅ Supabase keepalive request successful"
+        else
+          echo "❌ Supabase keepalive request failed"
+          echo "Status code: $status_code"
+          exit 1
+        fi
+
+        printf "Response body:\n${body}\n"

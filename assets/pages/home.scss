@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .helloText {
   font-weight: $thin;
-  font-size: 20px;
+  font-size: 1.1rem;
   padding-top: 1.5em;
 }
 
@@ -89,9 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.2em;
   padding-top: 0.1em;
   font-weight: $thin;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
-  font-family: $defaultSansSerif;
+  font-family: $defaultSerif;
 
   a {
     text-decoration: none;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .infoText {
-  //font-size: 14px;
+  font-size: 1.0rem;
   font-weight: $thin;
   //color: $lightestGray;
   line-height: 1.4;
@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .newsTitle {
   //font-size: 1.0em; // overridden by _base if in px
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
   font-family: $defaultSerif;
   padding-bottom: 1px;
@@ -333,8 +333,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .newsDate {
-  font-size: 14px;
+  font-size: 16px;
   color: $gray;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 
   @include mobile {
     font-size: 16px;

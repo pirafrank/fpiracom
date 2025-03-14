@@ -1,4 +1,3 @@
-
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -76,6 +75,7 @@
   font-weight: $thin;
   line-height: 1.0;
   //text-transform: uppercase;
+  z-index: 5; // Lower z-index than menu
 
   a {
     color: $white;
@@ -89,9 +89,14 @@
   }
 
   @include mobile {
-    float: none; // imported from site info
-    display: block; // imported from site info
-    margin: 0 auto; // imported from site info
+    float: none; // Keep left alignment for site name on mobile
+    display: inline-block; // Changed from block to inline-block
+    margin-left: 10px; // Add some spacing
+    max-width: 70%; // Prevent overlap with hamburger
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 43px; // Match the height of the hamburger menu area
   }
 }
 
@@ -116,11 +121,24 @@
   line-height: 1.0;
 
   @include mobile {
+    display: none; // Hide by default on mobile
     float: none;
-    margin-top: 0.4em;
-    display: block;
-    font-size: 16px;
-    line-height: 2.0;
+    position: absolute;
+    top: 60px; // Increased to ensure it appears below the site name and hamburger
+    left: 0;
+    right: 0;
+    width: 100%; // Ensure full width
+    background-color: $darkerGray;
+    z-index: 25; // Between hamburger and content
+    margin-top: 0;
+    margin-left: 0; // Reset any margins
+    margin-right: 0; // Reset any margins
+    padding: 30px 0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+
+    &.active {
+      display: block;
+    }
   }
 
   a {
@@ -139,16 +157,92 @@
     }
 
     @include mobile {
-      margin: 0 10px;
+      margin: 0;
+      display: block;
+      width: calc(100% - 5px); // 20px padding on each side
+      padding: 10px 20px; // Add horizontal padding
+      text-align: right; // Keep text right-aligned
       color: $white; // hover color for navbar links on mobile
+
+      &:hover, &:active {
+        color: $white; // hover color for navbar links on mobile
+        border-width: 0px 0px 0px 0px;
+        padding: 10px 20px; // Add same horizontal padding as above
+      }
+    }
+  }
+}
+
+// Hamburger menu and mobile nav container
+.mobile-nav-container {
+  float: right;
+  position: relative;
+  z-index: 30;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 0.2em;
+  position: relative;
+  z-index: 30;
+
+  @include mobile {
+    display: inline-block; // Changed from block to inline-block
+    float: right;
+    margin-right: 0px; // Add some spacing from the right edge
+    margin-top: 0px; // Adjust as needed to vertically center with site name
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: $white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+}
+
+// Hide checkbox
+.nav-toggle {
+  display: none;
+
+  // When checked, transform hamburger to X
+  &:checked + .hamburger-menu {
+    .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
     }
   }
 
+  // When checked, show the nav menu
+  &:checked ~ .nav {
+    @include mobile {
+      display: block;
+    }
+  }
 }
 
 .searchIcon {
   float: right;
   padding-left: 1em;
+
+  @include mobile {
+    float: inherit;
+    padding-left: inherit;
+  }
 
   img {
     width: 16px;

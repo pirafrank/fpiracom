@@ -1,11 +1,19 @@
+<span class="searchIcon mobile-hidden">
+    <a href="{{ site.baseurl }}/search"><img src="{{ site.baseurl }}/assets/icons/search.png"></a>
+</span>
 
-    <span class="searchIcon mobile-hidden">
-        <a href="{{ site.baseurl }}/search"><img src="{{ site.baseurl }}/assets/icons/search.png"></a>
-    </span>
-    <span class="nav">
-        <a href="{{ site.baseurl }}/blog">BLOG</a>
-        <a href="{{ site.baseurl }}/code">CODE</a>
-        <a href="{{ site.baseurl }}/about">ABOUT</a>
-        <a class="mobile-hidden" href="{{ site.baseurl }}/contacts">CONTACTS</a>
-        <a class="searchIcon desktop-hidden smallscreen-hidden" href="{{ site.baseurl }}/search"><img src="{{ site.baseurl }}/assets/icons/search.png"></a>
-    </span>
+<!-- Place the hamburger at the end of the header to ensure it's on the right -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<label for="nav-toggle" class="hamburger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</label>
+
+<span class="nav" id="mobile-nav">
+    <a href="{{ site.baseurl }}/blog">BLOG</a>
+    <a href="{{ site.baseurl }}/code">CODE</a>
+    <a href="{{ site.baseurl }}/about">ABOUT</a>
+    <a href="{{ site.baseurl }}/contacts">CONTACTS</a>
+    <a class="searchIcon desktop-hidden smallscreen-hidden" href="{{ site.baseurl }}/search"><img src="{{ site.baseurl }}/assets/icons/search.png"></a>
+</span>

@@ -28,6 +28,15 @@ chains:
       recipe: v1TagsGet
     selector: $[*].id
     selector_mode: array
+  template_id:
+    source: !select
+      message: Choose a template
+      options: "{{chains.template_options}}"
+  template_options:
+    source: !request
+      recipe: v1TemplatesGet
+    selector: $[*]
+    selector_mode: array
 requests:
   v1CategoriesGet: !request
     name: 'Categories: Get all categories in the website'
@@ -113,6 +122,22 @@ requests:
     name: 'Tags: Get all posts for the given tag in the website'
     method: GET
     url: '{{host}}/v1/tags/{{chains.tag_id}}'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1TemplatesGet: !request
+    name: 'Templates: Get list of templates'
+    method: GET
+    url: '{{host}}/v1/templates'
+    body: null
+    authentication: null
+    query: []
+    headers: {}
+  v1TemplatesTemplateidGet: !request
+    name: 'Templates: Get a template by its ID'
+    method: GET
+    url: '{{host}}/v1/templates/{{chains.template_id}}'
     body: null
     authentication: null
     query: []

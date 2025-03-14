@@ -42,6 +42,19 @@
       ]
     },
     {
+      "source": "/api/v[0-9]{1,}/templates/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=60"
+        }
+      ]
+    },
+    {
       "source": "/api/v[0-9]{1,}/(.*)",
       "headers": [
         {

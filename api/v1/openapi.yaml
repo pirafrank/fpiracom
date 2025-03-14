@@ -175,6 +175,38 @@ paths:
                 items:
                   $ref: '#/components/schemas/Post'
 
+  /v1/templates:
+    get:
+      operationId: v1TemplatesGet
+      summary: 'Templates: Get list of templates'
+      responses:
+        200:
+          description: List of templates
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+
+  /v1/templates/{template_id}:
+    get:
+      operationId: v1TemplatesTemplateidGet
+      summary: 'Templates: Get a template by its ID'
+      parameters:
+        - name: template_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: The requested template
+          content:
+            text/plain:
+              schema:
+                type: string
+
   /v1/version:
     get:
       operationId: v1VersionGet

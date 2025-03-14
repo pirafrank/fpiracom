@@ -189,6 +189,9 @@ algolia:
   files_to_exclude:
     - pages/search_algolia.html
 
+mermaid:
+  src: '/assets/js/mermaid.min.js'
+
 # Use the following plug-ins
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
@@ -199,6 +202,7 @@ plugins:
   - jekyll-simple-icons # Add simple icons to your Jekyll site
   - jekyll-toc # Table of contents generator
   - jekyll-timeago # Convert dates to relative time
+  - jekyll-mermaid # Mermaid diagrams support
   #- jekyll-minifier # compress html, css and js
 
 # read default jekyll-minifier settings here:

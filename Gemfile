@@ -27,4 +27,5 @@ group :jekyll_plugins do
   gem 'jekyll-simple-icons'
   #gem 'jekyll-simple-icons', path: '/home/francesco/Code/projects/jekyll-simple-icons'
   gem 'jekyll-toc'
+  gem 'jekyll-timeago'
 end

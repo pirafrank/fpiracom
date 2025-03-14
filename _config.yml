@@ -198,6 +198,7 @@ plugins:
   - jekyll-environment-variables # make ENV vars accessible via site.env
   - jekyll-simple-icons # Add simple icons to your Jekyll site
   - jekyll-toc # Table of contents generator
+  - jekyll-timeago # Convert dates to relative time
   #- jekyll-minifier # compress html, css and js
 
 # read default jekyll-minifier settings here:

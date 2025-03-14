@@ -26,4 +26,5 @@ group :jekyll_plugins do
   #gem 'jekyll-ai-related', path: '/home/francesco/Code/projects/jekyll-ai-related'
   gem 'jekyll-simple-icons'
   #gem 'jekyll-simple-icons', path: '/home/francesco/Code/projects/jekyll-simple-icons'
+  gem 'jekyll-toc'
 end

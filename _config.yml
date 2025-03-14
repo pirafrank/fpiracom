@@ -103,18 +103,21 @@ defaults:
     values:
       is_home: false
       has_fa: false
+      toc: false
   -
     scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      toc: true
   -
     scope:
       path: ""
       type: "drafts"
     values:
       layout: "post"
+      toc: true
   -
     scope:
       path: "pages"
@@ -124,12 +127,14 @@ defaults:
       show_title: true
       in_search: true
       center: false
+      toc: false
   -
     scope:
       path: "pages/projects"
       type: "pages"
     values:
       layout: "project"
+      toc: false
   -
     scope:
       path: "pages/admin/**/*"
@@ -192,6 +197,7 @@ plugins:
   - jekyll-archives
   - jekyll-environment-variables # make ENV vars accessible via site.env
   - jekyll-simple-icons # Add simple icons to your Jekyll site
+  - jekyll-toc # Table of contents generator
   #- jekyll-minifier # compress html, css and js
 
 # read default jekyll-minifier settings here:

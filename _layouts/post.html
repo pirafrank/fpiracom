@@ -53,6 +53,12 @@ custom_css: ['layouts/posts']
       </div>
       {% endif %}
 
+      <div id="table-of-contents" class="toc">
+        <strong>Table of Contents</strong>
+        <br />
+        {% toc %}
+      </div>
+
       <div class="entry">
         {{ content }}
       </div>

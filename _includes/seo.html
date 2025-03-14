@@ -50,7 +50,7 @@
         {% if page.layout == "page" %}
             {% assign meta_image = site.url | append: site.baseurl | append: '/static/pageimages/' | append: page.seoimage %}
         {% elsif page.layout == "post" %}
-            {% assign meta_image = site.url | append: site.baseurl | append: '/static/postimages/' | append: page.seoimage %}
+            {% assign meta_image = page.seo_image_url %}
         {% elsif page.layout == "project" %}
             {% assign meta_image = site.url | append: site.baseurl | append: '/static/projectimages/' | append: page.seoimage %}
         {% endif %}

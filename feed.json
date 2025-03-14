@@ -20,7 +20,7 @@ layout: null
     {% endif %}
 "items": [
     {% for post in site.posts limit: site.feeds.entries %}
-        {% assign meta_image = site.url | append: site.baseurl | append: '/static/postimages/' | append: post.seoimage %}
+        {% assign meta_image = post.seo_image_url %}
         {
             "id": "{{ post.url | to_hash: 'sha256' }}",
             {% assign updated = "" %}
@@ -39,7 +39,7 @@ layout: null
             "summary": {{ desc | jsonify }},
             "content_text": {{ post.content | truncatehtml | truncatewords: site.feeds.wordlimit | strip_html | strip_newlines | jsonify }},
             "content_html": {{ post.content | truncatehtml | truncatewords: site.feeds.wordlimit | strip_newlines | jsonify }},
-            {% if post.seoimage %}"image": {{ meta_image | jsonify }},{% endif %}
+            {% if post.seo_image_url %}"image": {{ meta_image | jsonify }},{% endif %}
             {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
             {% if post.banner.size > 1 %}"banner_image": "{{ post.banner }}",{% endif %}
             {% if post.tags.size > 0 %}"tags": {{ post.tags | jsonify }},{% endif %}

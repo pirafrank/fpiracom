@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "name": "Rust Docker Images",
+      "description": "Build and dynamically link your Rust binaries against a known version of glibc",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/rust-docker-images",
+      "repourl": "https://github.com/pirafrank/rust-docker-images",
+      "license": "MIT",
+      "skills": ["Rust", "Docker", "GitHub Actions"],
+      "creationDate": "2025-05-20T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "Poof",
+      "description": "Magic manager of pre-built software. Install and manage awesome tools from GitHub Releases in one command",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/poof",
+      "repourl": "https://github.com/pirafrank/poof",
+      "license": "MIT",
+      "skills": ["Rust", "GitHub Actions"],
+      "creationDate": "2025-04-18T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "Jekyll Simple Icons",
       "description": "A plugin that makes it easy to incorporate Simple Icons into your Jekyll website, providing access to a vast collection of popular brands icons",
       "group": "",

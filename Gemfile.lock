@@ -30,7 +30,7 @@ GEM
       io-event (~> 1.9)
       metrics (~> 0.12)
       traces (~> 0.15)
-    base64 (0.2.0)
+    base64 (0.3.0)
     benchmark (0.4.0)
     bigdecimal (3.1.9)
     colorator (1.1.0)
@@ -96,7 +96,7 @@ GEM
     httpclient (2.8.3)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    icalendar (2.11.0)
+    icalendar (2.11.1)
       base64
       ice_cube (~> 0.16)
       logger
@@ -290,7 +290,7 @@ CHECKSUMS
   algolia_html_extractor (2.6.4) sha256=b284a396ea95852e1fcf68b248db178c2d1e2e4d426b49b728596961266f9121
   algoliasearch (1.27.5) sha256=26c1cddf3c2ec4bd60c148389e42702c98fdac862881dc6b07a4c0b89ffec853
   async (2.23.0) sha256=8323f3942046fcf206eac256954b419f0933a449d997b0fca926f9d118eb495c
-  base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
+  base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   benchmark (0.4.0) sha256=0f12f8c495545e3710c3e4f0480f63f06b4c842cc94cec7f33a956f5180e874a
   bigdecimal (3.1.9) sha256=2ffc742031521ad69c2dfc815a98e426a230a3d22aeac1995826a75dabfad8cc
   colorator (1.1.0) sha256=e2f85daf57af47d740db2a32191d1bdfb0f6503a0dfbc8327d0c9154d5ddfc38
@@ -324,7 +324,7 @@ CHECKSUMS
   httparty (0.22.0) sha256=78652a5c9471cf0093d3b2083c2295c9c8f12b44c65112f1846af2b71430fa6c
   httpclient (2.8.3) sha256=2951e4991214464c3e92107e46438527d23048e634f3aee91c719e0bdfaebda6
   i18n (1.14.7) sha256=ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f
-  icalendar (2.11.0) sha256=899ddd506bb48beea250a1afd674ff0644a3dd2f8c49e02b1a91795b03b7541c
+  icalendar (2.11.1) sha256=e8034962e5c7028539a4b1fa597061bee7b60787352f7237ce1d8afb2aa600c9
   ice_cube (0.17.0) sha256=32deb45dda4b4acc53505c2f581f6d32b5afc04d29b9004769944a0df5a5fcbe
   iniparser (1.0.1) sha256=41b86074498e9d40adb998f81e18d6a57c1a4da0e1fb2e90c5fc38efef07ebcb
   io-event (1.9.0) sha256=4c262b6610ad643a2be75e892135aca4fa67edc67d1944c0ae6b6e5dd73f4fc1

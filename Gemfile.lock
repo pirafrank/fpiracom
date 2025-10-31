@@ -42,7 +42,7 @@ GEM
       json
     cssminify2 (2.1.0)
     csv (3.3.5)
-    digest (3.2.0)
+    digest (3.2.1)
     drb (2.2.3)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
@@ -259,7 +259,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  digest (~> 3.1)
+  digest (~> 3.2)
   faraday-retry
   feedparser (~> 2.2)
   git
@@ -301,7 +301,7 @@ CHECKSUMS
   console (1.29.3) sha256=ad954d8619d58c07ea84025fa96709f2dab3f11ba8f6942d4b501f95d9426d01
   cssminify2 (2.1.0) sha256=406a0b95fdaab60132c6f1fbb47b4a30f9572d2ef523f806fb94a530d78c2bb1
   csv (3.3.5) sha256=6e5134ac3383ef728b7f02725d9872934f523cb40b961479f69cf3afa6c8e73f
-  digest (3.2.0) sha256=fa2e7092ec683f65d82fadde5ff4ca3b32e23ee0b19f1fc1a5e09993ad2d3991
+  digest (3.2.1) sha256=ab3312b4e272d7d5dc41c564c86a25861a1f34ac5153374199a0b74861395947
   drb (2.2.3) sha256=0b00d6fdb50995fe4a45dea13663493c841112e4068656854646f418fda13373
   em-websocket (0.5.3) sha256=f56a92bde4e6cb879256d58ee31f124181f68f8887bd14d53d5d9a292758c6a8
   ethon (0.16.0) sha256=bba0da1cea8ac3e1f5cdd7cb1cb5fc78d7ac562c33736f18f0c3eb2b63053d9e

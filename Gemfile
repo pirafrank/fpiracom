@@ -5,7 +5,7 @@ gem 'git'
 gem 'nokogiri', ['>= 1.16.5', '< 1.18']
 gem 'webrick'
 gem 'faraday-retry'
-gem "digest", "~> 3.1"
+gem "digest", "~> 3.2"
 gem 'html-proofer'
 gem 'rake'
 gem "icalendar", "~> 2.11"

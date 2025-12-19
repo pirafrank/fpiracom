@@ -219,9 +219,9 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rchardet (1.10.0)
-    rexml (3.4.2)
+    rexml (3.4.4)
     rouge (4.6.0)
-    rss (0.3.1)
+    rss (0.3.2)
       rexml
     ruby-rc4 (0.1.5)
     rubyzip (2.4.1)
@@ -283,7 +283,7 @@ DEPENDENCIES
   jekyll-toc
   nokogiri (>= 1.16.5, < 1.18)
   rake
-  rss (~> 0.3.1)
+  rss (~> 0.3.2)
   webrick
 
 CHECKSUMS
@@ -379,9 +379,9 @@ CHECKSUMS
   rb-fsevent (0.11.2) sha256=43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rchardet (1.10.0) sha256=d5ea2ed61a720a220f1914778208e718a0c7ed2a484b6d357ba695aa7001390f
-  rexml (3.4.2) sha256=1384268554a37af5da5279431ca3f2f37d46f09ffdd6c95e17cc84c83ea7c417
+  rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rouge (4.6.0) sha256=10198622df0ef919796da5686a9cc116a49280805e1ed4b851c97ef677eddd7a
-  rss (0.3.1) sha256=b46234c04551b925180f8bedfc6f6045bf2d9998417feda72f300e7980226737
+  rss (0.3.2) sha256=3bd0446d32d832cda00ba07f4b179401f903b52ea1fdaac0f1f08de61a501efa
   ruby-rc4 (0.1.5) sha256=00cc40a39d20b53f5459e7ea006a92cf584e9bc275e2a6f7aa1515510e896c03
   rubyzip (2.4.1) sha256=8577c88edc1fde8935eb91064c5cb1aef9ad5494b940cf19c775ee833e075615
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848

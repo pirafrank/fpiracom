@@ -24,7 +24,7 @@ GEM
     algoliasearch (1.27.5)
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
-    async (2.34.0)
+    async (2.35.1)
       console (~> 1.29)
       fiber-annotation
       io-event (~> 1.11)
@@ -63,7 +63,7 @@ GEM
     feedparser (2.2.1)
       logutils (>= 0.6.1)
       textutils (>= 1.0.0)
-    ffi (1.17.2)
+    ffi (1.17.3)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
@@ -79,7 +79,7 @@ GEM
       bigdecimal
       rake (>= 13)
     hashery (2.1.2)
-    html-proofer (5.1.1)
+    html-proofer (5.2.0)
       addressable (~> 2.3)
       async (~> 2.1)
       benchmark (~> 0.5)
@@ -201,7 +201,7 @@ GEM
     ostruct (0.6.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    pdf-reader (2.15.0)
+    pdf-reader (2.15.1)
       Ascii85 (>= 1.0, < 3.0, != 2.0.0)
       afm (>= 0.2.1, < 2)
       hashery (~> 2.0)
@@ -213,7 +213,7 @@ GEM
     progressbar (1.13.0)
     props (1.2.0)
       iniparser (>= 0.1.0)
-    public_suffix (7.0.0)
+    public_suffix (7.0.2)
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.3.1)
@@ -257,7 +257,7 @@ GEM
     verbal_expressions (0.1.5)
     webrick (1.9.2)
     yell (2.2.2)
-    zeitwerk (2.7.3)
+    zeitwerk (2.7.4)
 
 PLATFORMS
   ruby
@@ -295,7 +295,7 @@ CHECKSUMS
   afm (1.0.0) sha256=5bd4d6f6241e7014ef090985ec6f4c3e9745f6de0828ddd58bc1efdd138f4545
   algolia_html_extractor (2.6.4) sha256=b284a396ea95852e1fcf68b248db178c2d1e2e4d426b49b728596961266f9121
   algoliasearch (1.27.5) sha256=26c1cddf3c2ec4bd60c148389e42702c98fdac862881dc6b07a4c0b89ffec853
-  async (2.34.0) sha256=65ab207d4575c05bb6c5bac430f9f8d372d8288686e68e89f44eba094c77e1c1
+  async (2.35.1) sha256=5232b76ed07db1b071eab1dc9e61a7db617034f37c42a5f4b59b3c5068b14145
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   benchmark (0.5.0) sha256=465df122341aedcb81a2a24b4d3bd19b6c67c1530713fd533f3ff034e419236c
   bigdecimal (3.3.1) sha256=eaa01e228be54c4f9f53bf3cc34fe3d5e845c31963e7fcc5bedb05a4e7d52218
@@ -315,7 +315,7 @@ CHECKSUMS
   faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
   faraday-retry (2.4.0) sha256=7b79c48fb7e56526faf247b12d94a680071ff40c9fda7cf1ec1549439ad11ebe
   feedparser (2.2.1) sha256=0f11799e7e4604a8014b52e8a239438bde9cdb3ebdb919cab9bf8b4aa84c69e0
-  ffi (1.17.2) sha256=297235842e5947cc3036ebe64077584bff583cd7a4e94e9a02fdec399ef46da6
+  ffi (1.17.3) sha256=0e9f39f7bb3934f77ad6feab49662be77e87eedcdeb2a3f5c0234c2938563d4c
   fiber-annotation (0.2.0) sha256=7abfadf1d119f508867d4103bf231c0354d019cc39a5738945dec2edadaf6c03
   fiber-local (1.1.0) sha256=c885f94f210fb9b05737de65d511136ea602e00c5105953748aa0f8793489f06
   fiber-storage (1.0.1) sha256=f48e5b6d8b0be96dac486332b55cee82240057065dc761c1ea692b2e719240e1
@@ -324,7 +324,7 @@ CHECKSUMS
   git (4.1.0) sha256=5b57c4a21352c10c21e051e5178edc452bbea6551c3741d3bac84d1e2950987e
   google-protobuf (4.32.0) sha256=e64bdc0280e9bb9233fa3f62b72a5c4d1522679c5cb4485b0fec726d0b6b96ab
   hashery (2.1.2) sha256=d239cc2310401903f6b79d458c2bbef5bf74c46f3f974ae9c1061fb74a404862
-  html-proofer (5.1.1) sha256=f9baaae2268049918eb494b0a5b96e97f513a6b8490c185d11c371b60d9ecf86
+  html-proofer (5.2.0) sha256=9d137cc437628b4dfc1191a9f80c5329dfb0a66b895aef021bf10758d80ec69d
   htmlcompressor (0.4.0) sha256=4630cf8ed46b563f0b49cc6028a3fe8c17a9067f2becd7c3a2aa5aaacefb1f9e
   http_parser.rb (0.8.0) sha256=5a0932f1fa82ce08a8516a2685d5a86031c000560f89946913c555a0697544be
   httparty (0.22.0) sha256=78652a5c9471cf0093d3b2083c2295c9c8f12b44c65112f1846af2b71430fa6c
@@ -370,12 +370,12 @@ CHECKSUMS
   octokit (4.25.1) sha256=c02092ee82dcdfe84db0e0ea630a70d32becc54245a4f0bacfd21c010df09b96
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
   pathutil (0.16.2) sha256=e43b74365631cab4f6d5e4228f812927efc9cb2c71e62976edcb252ee948d589
-  pdf-reader (2.15.0) sha256=c5025750bec8de7b11cfd1d1ccc2b944d2782c3638cd15b5ee1531d1206c0886
+  pdf-reader (2.15.1) sha256=18c6a986a84a3117fa49f4279fc2de51f5d2399b71833df5d2bccd595c7068ce
   prism (1.7.0) sha256=10062f734bf7985c8424c44fac382ac04a58124ea3d220ec3ba9fe4f2da65103
   process_executer (4.0.1) sha256=5d8c3bb0e1145f15fd7d601cf440fbc77e5edeb605a32270dba7982371f0f4fb
   progressbar (1.13.0) sha256=18c921d1c527dbe7eba3c5a07a1e3bcdd5e42fc18276f5711187a7489448be78
   props (1.2.0) sha256=e8910f3a597f0cc6ad0be9645d218b13d4cea82f111568716cfe3a882bbf4c23
-  public_suffix (7.0.0) sha256=f7090b5beb0e56f9f10d79eed4d5fbe551b3b425da65877e075dad47a6a1b095
+  public_suffix (7.0.2) sha256=9114090c8e4e7135c1fd0e7acfea33afaab38101884320c65aaa0ffb8e26a857
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
   rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
   rake (13.3.1) sha256=8c9e89d09f66a26a01264e7e3480ec0607f0c497a861ef16063604b1b08eb19c
@@ -404,7 +404,7 @@ CHECKSUMS
   verbal_expressions (0.1.5) sha256=f67774ce6e23a192bd304cadaeba2b01b78bc77e3bde07b4dcd1f53418794f1b
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
   yell (2.2.2) sha256=1d166f3cc3b6dc49a59778ea7156ed6d8de794c15106d48ffd6cbb061b9b26bc
-  zeitwerk (2.7.3) sha256=b2e86b4a9b57d26ba68a15230dcc7fe6f040f06831ce64417b0621ad96ba3e85
+  zeitwerk (2.7.4) sha256=2bef90f356bdafe9a6c2bd32bcd804f83a4f9b8bc27f3600fff051eb3edcec8b
 
 BUNDLED WITH
    2.6.3

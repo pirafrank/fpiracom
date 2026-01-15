@@ -64,6 +64,7 @@ GEM
       logutils (>= 0.6.1)
       textutils (>= 1.0.0)
     ffi (1.17.3)
+    ffi (1.17.3-x86_64-linux-gnu)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
@@ -76,6 +77,9 @@ GEM
       process_executer (~> 4.0)
       rchardet (~> 1.9)
     google-protobuf (4.32.0)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.32.0-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     hashery (2.1.2)
@@ -195,6 +199,8 @@ GEM
     nokogiri (1.17.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
+    nokogiri (1.17.2-x86_64-linux)
+      racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
       sawyer (~> 0.9)
@@ -231,6 +237,8 @@ GEM
     sass-embedded (1.92.0)
       google-protobuf (~> 4.31)
       rake (>= 13)
+    sass-embedded (1.92.0-x86_64-linux-gnu)
+      google-protobuf (~> 4.31)
     sawyer (0.9.2)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
@@ -261,6 +269,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   digest (~> 3.2)
@@ -316,6 +325,7 @@ CHECKSUMS
   faraday-retry (2.4.0) sha256=7b79c48fb7e56526faf247b12d94a680071ff40c9fda7cf1ec1549439ad11ebe
   feedparser (2.2.1) sha256=0f11799e7e4604a8014b52e8a239438bde9cdb3ebdb919cab9bf8b4aa84c69e0
   ffi (1.17.3) sha256=0e9f39f7bb3934f77ad6feab49662be77e87eedcdeb2a3f5c0234c2938563d4c
+  ffi (1.17.3-x86_64-linux-gnu) sha256=3746b01f677aae7b16dc1acb7cb3cc17b3e35bdae7676a3f568153fb0e2c887f
   fiber-annotation (0.2.0) sha256=7abfadf1d119f508867d4103bf231c0354d019cc39a5738945dec2edadaf6c03
   fiber-local (1.1.0) sha256=c885f94f210fb9b05737de65d511136ea602e00c5105953748aa0f8793489f06
   fiber-storage (1.0.1) sha256=f48e5b6d8b0be96dac486332b55cee82240057065dc761c1ea692b2e719240e1
@@ -323,6 +333,7 @@ CHECKSUMS
   forwardable-extended (2.6.0) sha256=1bec948c469bbddfadeb3bd90eb8c85f6e627a412a3e852acfd7eaedbac3ec97
   git (4.3.0) sha256=5e8200521400d6695e6c0e20e0741a0a8e43a18e2fed2188ee12d958ad06d243
   google-protobuf (4.32.0) sha256=e64bdc0280e9bb9233fa3f62b72a5c4d1522679c5cb4485b0fec726d0b6b96ab
+  google-protobuf (4.32.0-x86_64-linux-gnu) sha256=0813ffbb2cade07e757be35a32036455d52cb18856e34666b508c492925d747b
   hashery (2.1.2) sha256=d239cc2310401903f6b79d458c2bbef5bf74c46f3f974ae9c1061fb74a404862
   html-proofer (5.2.0) sha256=9d137cc437628b4dfc1191a9f80c5329dfb0a66b895aef021bf10758d80ec69d
   htmlcompressor (0.4.0) sha256=4630cf8ed46b563f0b49cc6028a3fe8c17a9067f2becd7c3a2aa5aaacefb1f9e
@@ -367,6 +378,7 @@ CHECKSUMS
   multi_xml (0.7.1) sha256=4fce100c68af588ff91b8ba90a0bb3f0466f06c909f21a32f4962059140ba61b
   net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
   nokogiri (1.17.2) sha256=75825401f59b1a8746ee8ce5d066c8f11e745642e36a4452e206730b03d1fd8c
+  nokogiri (1.17.2-x86_64-linux) sha256=e8614ae8d776bd9adb535ca814375e7ae05d7cfa6aa01909e561484f6d70be0b
   octokit (4.25.1) sha256=c02092ee82dcdfe84db0e0ea630a70d32becc54245a4f0bacfd21c010df09b96
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
   pathutil (0.16.2) sha256=e43b74365631cab4f6d5e4228f812927efc9cb2c71e62976edcb252ee948d589
@@ -389,6 +401,7 @@ CHECKSUMS
   rubyzip (2.4.1) sha256=8577c88edc1fde8935eb91064c5cb1aef9ad5494b940cf19c775ee833e075615
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
   sass-embedded (1.92.0) sha256=eacd36ab577016d3a7f26f0537625199afb36eed99645dde1a0b3be188c30b2e
+  sass-embedded (1.92.0-x86_64-linux-gnu) sha256=26e1c1aea18b408413de865b4946664b733d2d40b608e2e6db21e64fffa0fefc
   sawyer (0.9.2) sha256=fa3a72d62a4525517b18857ddb78926aab3424de0129be6772a8e2ba240e7aca
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   terminal-table (3.0.2) sha256=f951b6af5f3e00203fb290a669e0a85c5dd5b051b3b023392ccfd67ba5abae91

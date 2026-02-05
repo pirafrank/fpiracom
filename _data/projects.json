@@ -1,21 +1,34 @@
 {
   "projects": [
     {
-      "name": "Rust Docker Images",
-      "description": "Build and dynamically link your Rust binaries against a known version of glibc",
+      "name": "Vault Conductor",
+      "description": "An SSH Agent that provides SSH keys stored in Bitwarden Secret Manager",
       "group": "",
-      "homepage": "https://github.com/pirafrank/rust-docker-images",
-      "repourl": "https://github.com/pirafrank/rust-docker-images",
+      "homepage": "https://github.com/pirafrank/vault-conductor",
+      "repourl": "https://github.com/pirafrank/vault-conductor",
       "license": "MIT",
-      "skills": ["Rust", "Docker", "GitHub Actions"],
-      "creationDate": "2025-05-20T00:00:00Z",
+      "skills": ["Rust", "SSH", "GitHub Actions"],
+      "creationDate": "2026-01-06T00:01:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "Rust CLI Boilerplate",
+      "description": "A template for cross-platform binary CLI projects written in Rust",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/rust-cli-boilerplate",
+      "repourl": "https://github.com/pirafrank/rust-cli-boilerplate",
+      "license": "MIT",
+      "skills": ["Rust"],
+      "creationDate": "2026-01-06T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
       "maintained": true
     },
     {
       "name": "Poof",
-      "description": "Magic manager of pre-built software. Install and manage awesome tools from GitHub Releases in one command",
+      "description": "Magic manager of pre-built software. Install and manage awesome tools from GitHub Releases in one command. No manifests, formulae, ports, or repositories required",
       "group": "",
       "homepage": "https://github.com/pirafrank/poof",
       "repourl": "https://github.com/pirafrank/poof",

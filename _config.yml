@@ -208,8 +208,6 @@ plugins:
 # read default jekyll-minifier settings here:
 # https://github.com/digitalsparky/jekyll-minifier
 jekyll-minifier:
-  uglifier_args:
-    harmony: true
   exclude:
     - CNAME
     - '*.txt'

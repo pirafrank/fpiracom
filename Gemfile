@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '4.4.1'
 gem 'git'
-gem 'nokogiri', ['>= 1.16.5', '< 1.18']
+gem 'nokogiri'
 gem 'webrick'
 gem 'faraday-retry'
 gem "digest", "~> 3.2"

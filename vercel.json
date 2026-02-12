@@ -240,6 +240,11 @@
       "source": "/aspe",
       "destination": "https://keyoxide.org/aspe%3Akeyoxide.org%3AQITV3373KPVHKJ5YESI6AW5EJQ",
       "permanent": false
+    },
+    {
+      "source": "/calendar",
+      "destination": "https://cal.com/pirafrank",
+      "permanent": false
     }
   ]
 }

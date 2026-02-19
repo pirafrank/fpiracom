@@ -5,11 +5,12 @@ permalink: /code/
 show_title: true
 ---
 
-- [GitHub]({{ site.data.social.github.url }}?tab=repositories&q=&type=&language=&sort=)
-- [Docker Hub]({{ site.data.social.docker.url }})
-- [npm.js]({{ site.data.social.npmjs.url }})
-- [crates.io]({{ site.data.social.crates.url }})
-- [rubygems.org]({{ site.data.social.rubygems.url }})
+- [Homebrew tap](https://github.com/pirafrank/homebrew-tap)
+- [AURA](https://github.com/pirafrank/aura)
+- [crates.io](https://crates.io/users/pirafrank)
+- [npm.js](https://www.npmjs.com/~pirafrank)
+- [rubygems.org](https://rubygems.org/profiles/pirafrank)
+- [Docker Hub](https://hub.docker.com/u/pirafrank)
 
 #### Projects
 

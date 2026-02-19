@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "name": "AURA - Arch User Repository Automation",
+      "description": "Automated update of AUR repositories of my CLI tools",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/aura",
+      "repourl": "https://github.com/pirafrank/aura",
+      "license": "MIT",
+      "skills": ["Python", "Jinja templates", "GitHub Actions"],
+      "creationDate": "2026-02-19T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
+      "name": "Homebrew Tap",
+      "description": "Automated Formulae for my CLI tools on macOS and Linux",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/homebrew-tap",
+      "repourl": "https://github.com/pirafrank/homebrew-tap",
+      "license": "MIT",
+      "skills": ["Python", "Jinja templates", "GitHub Actions"],
+      "creationDate": "2026-02-01T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "Vault Conductor",
       "description": "An SSH Agent that provides SSH keys stored in Bitwarden Secret Manager",
       "group": "",

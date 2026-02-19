@@ -91,7 +91,7 @@ home:
 # /code customisation
 code:
   projects:
-    limit: 5
+    limit: 8
 
 # Default values
 # has_fa: enable font-awesome

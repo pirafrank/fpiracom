@@ -71,7 +71,7 @@ GEM
     fiber-storage (1.0.1)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
-    git (4.3.0)
+    git (4.3.1)
       activesupport (>= 5.0)
       addressable (~> 2.8)
       process_executer (~> 4.0)
@@ -334,7 +334,7 @@ CHECKSUMS
   fiber-storage (1.0.1) sha256=f48e5b6d8b0be96dac486332b55cee82240057065dc761c1ea692b2e719240e1
   filesize (0.2.0) sha256=0f5db8629d628b60857dd8e7b8d52f427e6b7b9dc49265bfda71c0d383cbe79e
   forwardable-extended (2.6.0) sha256=1bec948c469bbddfadeb3bd90eb8c85f6e627a412a3e852acfd7eaedbac3ec97
-  git (4.3.0) sha256=5e8200521400d6695e6c0e20e0741a0a8e43a18e2fed2188ee12d958ad06d243
+  git (4.3.1) sha256=91ca566c39766a033e61a148c8f470908bd4786b818f8f3ff566d3a9a0200c50
   google-protobuf (4.33.5) sha256=1b64fb774c101b23ac3f6923eca24be04fd971635d235c4cd4cfe0d752620da0
   google-protobuf (4.33.5-x86_64-linux-gnu) sha256=a782adf86bfba207740b49d7bb9ccdc25c4fb8f800fe222af62bce951149338a
   hashery (2.1.2) sha256=d239cc2310401903f6b79d458c2bbef5bf74c46f3f974ae9c1061fb74a404862

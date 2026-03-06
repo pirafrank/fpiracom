@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 28px;
 
   @include mobile {
     font-size: 28px;
@@ -66,7 +66,10 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
+  font-weight: $bold;
+  letter-spacing: -0.03em;
+
   @include mobile {
     font-size: 24px;
   }

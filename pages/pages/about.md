@@ -77,7 +77,7 @@ As usual, available on [GitHub]({{site.data.social.github.url}}).
 
 {% include about/honours.md %}
 
-## Languages
+### Languages
 
 - Italian, native proficiency
 - English, CEFR Level C1 ([test results]({{ site.baseurl }}/assets/files/certs/CEPTCandidateTestReport_20210930.pdf))

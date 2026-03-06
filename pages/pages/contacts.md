@@ -5,13 +5,19 @@ permalink: /contacts/
 show_title: true
 ---
 
-The best way is by sending an email to <span class="safe-email"><i>me at thisdomain</i></span>.
+The best way is to email <span class="safe-email"><i>me at thisdomain</i></span>.
 
-I am also available to chat via [Matrix]({{ site.data.social.matrix.url }}) or via [Telegram]({{ site.data.social.telegram-im.url }}).
+Also available via [Matrix]({{ site.data.social.matrix.url }}) or
+[Telegram]({{ site.data.social.telegram-im.url }}).
 
 ### Follow me
 
-I publish most content and status updates on socials, albeit not that often. You can follow me on any of these as I usually cross-post. Content on Telegram is mirrored from Mastodon.
+Stay up-to-date to latest projects and releases.
+
+- [GitHub]({{ site.data.social.github.url }})
+
+Choose any of these, I usually cross-post. Content on Telegram
+is mirrored from Mastodon.
 
 - [LinkedIn]({{ site.data.social.linkedin.url }})
 - [Mastodon]({{ site.data.social.mastodon.url }})
@@ -20,14 +26,16 @@ I publish most content and status updates on socials, albeit not that often. You
 - [Telegram]({{ site.data.social.telegram.url }})
 - ~~[Twitter]({{ site.data.social.twitter.url }})~~
 
-If you prefer less frequent updates, you can tune directly to blog post publishing via:
+If you prefer less frequent updates, you can tune directly to blog
+post publishing via:
 
 - [RSS]({{ site.url | append: site.baseurl | append: site.feeds.rss }})
 - [Atom]({{ site.url | append: site.baseurl | append: site.feeds.atom}})
 - [JSON feed]({{ site.url | append: site.baseurl | append: site.feeds.json }})
 - [Telegram channel]({{ site.data.social.telegram-feed.url }}) for blog posts only.
 
-On the world *wild* web I'm usually *pirafrank*. Here's an almost up-to-date list of [my active social profiles]({{ site.data.social.bentome.url }}).
+On the world *wild* web I'm usually *pirafrank*. Here's an almost up-to-date
+list of [my active social profiles]({{ site.data.social.bentome.url }}).
 
 ### Verify my identity
 

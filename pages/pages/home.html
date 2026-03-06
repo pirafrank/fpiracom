@@ -11,28 +11,52 @@ in_search: false
     <div class="container reading_container">
       <!-- header info -->
       <div class="headText">
-        <div class="userAvatarPlate userAvatar">
-          <img src="{{ site.avatar | prepend: site.baseurl }}" width="120px;">
+        <div class="userInfo">
+          <div class="userAvatarPlate userAvatar">
+            <img src="{{ site.avatar | prepend: site.baseurl }}" width="120px;">
+          </div>
+          <div class="userInfoText mobile-hidden">
+            <div class="helloText ">Hi, I'm</div>
+            <div class="nameText">{{ site.name }}</div>
+            <div class="subText">{{ site.description }}</div>
+          </div>
         </div>
-        <div class="helloText">Hi, I'm</div>
-        <div class="nameText">{{ site.name }}</div>
+        <div class="userInfoText desktop-hidden smallscreen-hidden">
+          <div class="helloText">Hi, I'm</div>
+          <div class="nameText">{{ site.name }}</div>
+          <div class="subText">{{ site.description }}</div>
+        </div>
         <div class="infoText">
-          {% include home/home-info-text.html %}
+          {% capture home_info %}{% include home/info.md %}{% endcapture %}
+          {{ home_info | markdownify }}
+          <!-- I'm sorry about typos you may find around. Think of them as Easter eggs, as this comment you might be reading ;) -->
         </div>
-        <div class="social-icons social-icons-medium home-social center">
+        <div class="social-icons social-icons-medium home-social">
           {% if site.footersocial %}
             {% include social-icons.html %}
           {% endif %}
         </div>
+        <!--
         <div class="desktop-hidden smallscreen-hidden">
+          <a class="btn btn-medium btn-default btn-no-text-decoration btn-wide-60 center" href="{{ site.baseurl }}/code">Code and Projects</a>
           <a class="btn btn-medium btn-default btn-no-text-decoration btn-wide-60 center" href="{{ site.baseurl }}/contacts">Get in touch</a>
         </div>
-        <div class="scrolldown desktop-hidden smallscreen-hidden"><a href="#posts"><img src="{{ site.baseurl }}/assets/icons/down-arrow.svg"></a></div>
+        -->
+        <!-- <div class="scrolldown desktop-hidden smallscreen-hidden"><a href="#posts"><img src="{{ site.baseurl }}/assets/icons/down-arrow.svg"></a></div> -->
       </div>
       <!-- end of header info -->
       <!-- content section -->
 
+      <div class="resources">
+        <div class="sectionTitle">News</div>
+        {% capture home_news %}{% include home/news.md %}{% endcapture %}
+        {{ home_news | markdownify }}
+      </div>
+
+      <br/>
+
       <div id="posts">
+        <div class="sectionTitle">Latest blog posts</div>
         {% assign sortedPosts = site.posts | sort: 'most_recent_edit' | reverse %}
         {% for post in sortedPosts limit: site.home.max_posts %}
           <div class="news newsEntry">
@@ -55,16 +79,17 @@ in_search: false
       <div>
         <p>
           <span class="low-links">
-            <a class="grayLinks" href="{{ site.baseurl }}/blog/">All blog posts</a>&nbsp;&nbsp;<i class="fa-solid fa-forward" aria-hidden="true"/>
+            Read <a href="{{ site.baseurl }}/blog/">all blog posts</a>.
           </span>
         </p>
       </div>
 
-        <div class="resources">
-          <div class="sectionTitle">More</div>
-          {% capture resources_bottom %}{% include home/resources_bottom.md %}{% endcapture %}
-          {{ resources_bottom | markdownify }}
-        </div>
+      <div class="resources">
+        <br/>
+        <p>
+          Thanks for being here, have a good read.
+        </p>
+      </div>
 
       <!-- content section -->
     </div>

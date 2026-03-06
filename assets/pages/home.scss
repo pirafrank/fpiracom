@@ -46,16 +46,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .headText {
   margin: 0 auto;
-  padding: 10px 20px 40px 0px; // dont add left padding please
+  padding: 10px 20px 20px 0px; // dont add left padding please
   padding-top: 4em;
   width: 100%;
   text-align: left;
   //line-height: 1.4;
 
   @include mobile {
-    text-align: center;
-    padding: 10px 10px 40px 10px;
+    //text-align: center;
+    padding: 10px 10px 20px 10px;
   }
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.userInfoText {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .userAvatarPlate {
@@ -73,16 +85,18 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%;
     }
 
+    /*
     @include mobile {
       //width: 50%;
       margin: 0 auto; // centering div on mobile
     }
+    */
 }
 
 .helloText {
   font-weight: $thin;
   font-size: 1.1rem;
-  padding-top: 1.5em;
+  padding-top: 0;
 }
 
 .nameText {
@@ -99,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .infoText {
+  //padding-top: 0.5em;
   font-size: 1.0rem;
   font-weight: $thin;
   //color: $lightestGray;
@@ -113,12 +128,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-social {
-  padding-top: 2em;
+  padding-top: 1em;
   text-align: left;
 
+  /*
   @include mobile {
     text-align: center;
   }
+  */
 
   a {
     color: $gray;
@@ -258,9 +275,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sectionTitle {
-  padding-top: 1em;
-  font-family: $defaultSerif;
-  font-weight: normal;
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+  font-family: $defaultSansSerif;
+  font-weight: $bold;
+  letter-spacing: -0.03em;
   font-size: 24px;
 
   @include mobile {
@@ -300,9 +319,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .newsTitle {
   //font-size: 1.0em; // overridden by _base if in px
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: $normal;
   font-family: $defaultSerif;
+  //letter-spacing: -0.03em;
   padding-bottom: 1px;
 
   @include mobile {
@@ -350,10 +370,12 @@ h1, h2, h3, h4, h5, h6 {
 .resources {
   padding-top: 1em;
 
+  /*
   @include mobile {
     font-size: 1.1em;
     line-height: 1.6em;
   }
+  */
 }
 
 //

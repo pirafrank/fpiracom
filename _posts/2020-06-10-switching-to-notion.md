@@ -7,7 +7,7 @@ tags: ['productivity', 'Notion']
 seoimage: 2020-06-10/head.jpg
 ---
 
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-10/head.jpg"
 %}
 
@@ -47,7 +47,7 @@ And about the pros of my old setups, it has (almost) all of them:
 
 ## Where it excels
 
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-10/backpack.jpg"
 desc="It's better to store everything in one place"
 credits="https://unsplash.com/@jsweissphoto"
@@ -59,7 +59,7 @@ credits="https://unsplash.com/@jsweissphoto"
 
 **Link databases together.** Working with one tool not only helps me to stay focused but also makes it easy to link data together. Type `/link` into a note body to add a link to a page or creating a linked database, or use `/inline` to embed them. These shortcuts work on web, desktop, and mobile.
 
-#### Other nice to have
+### Other nice to have
 
 **Search that works.** It does and fairly predicts the item I'm likely to pick among the results.
 
@@ -69,7 +69,7 @@ credits="https://unsplash.com/@jsweissphoto"
 
 ## How I use Notion
 
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-10/list.jpg"
 desc="My databases and notebooks 3 days after sign up"
 %}
@@ -78,7 +78,7 @@ At the time of writing, I mainly create databases for life wiki, tasks, and note
 
 - **Dashboard**: personal life, work, quick links, side-projects, life goals and things to do today. It all starts with the *Dashboard* database. This just contains links to other pages but it gives me the wide picture;
 
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-10/dashboard.jpg"
 desc="The ability to set a cover pic is a nice touch"
 %}
@@ -87,7 +87,7 @@ desc="The ability to set a cover pic is a nice touch"
 - **Vocabulary**: where I store new terms, good to refresh them once a week;
 - **Reading List**: despite the title, it contains movies, TV series, papers as well as audiobooks, manuals, and books.
 
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-10/readinglist.jpg"
 desc="I like summer paradises. Who doesn't?"
 %}
@@ -97,7 +97,7 @@ desc="I like summer paradises. Who doesn't?"
 - **this blog**: separate views for notes, enhancements to [Jekyll](https://jekyllrb.com/), and articles to publish. I'll dig deeper about it in the third installment of this series;
 - ***Quick notes* and other notebooks**: plain-old note-taking.
 
-#### Agenda
+### Agenda
 
 Now that you have the great picture, let's dive in. While life wikis are strictly personal (and more than data structure, you should care about the content), ideas to create a good agenda are never enough.
 
@@ -105,14 +105,14 @@ The Notion team [has recently announced](https://www.notion.so/What-s-New-15776
 
 I made four views: *Calendar* and *Everything* to have the global picture, *To-Do* to show items still not labeled as *Done* and *Progress Today* which present only things I have to do today and progress made. That's a kanban and the only one to use nested filters and right now. They are powerful, but I advise against creating too complex rules. I think of filters as something fluid, tuning them as need and if I want them to stick I may create another *view*. Right now, they are set up like in the picture below.
 
-{% include image.html 
+{% include image.html
 url="/static/postimages/2020-06-10/filters.png"
 desc="Nested filters in Agenda"
 %}
 
 And if a picture is worth a thousand words, an [interactive template](https://www.notion.so/b1d4e79788fe475c98db50caf4266262?v=3a6788a4de2b4c48830029ee6d5a33c7) is worth even more. Feel free to clone and customize it.
 
-#### Note-taking
+### Note-taking
 
 Most of my notebooks are *list* views with a given set of properties and custom sorting. If more views are added, they just filter on some properties, and they work a lot like tags in Evernote even though their scope is not global. I also don't display them all, hiding those I don't want via the *Properties* button. You can choose the order, too.
 

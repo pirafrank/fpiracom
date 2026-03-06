@@ -13,9 +13,9 @@ Below a collection to have a complete overview on the matter so you can build yo
 
 If you're interested in supporting Apple's cause, please [sign this petition](https://petitions.whitehouse.gov/petition/apple-privacy-petition).
 
-### The collection
+## The collection
 
-#### Overview
+### Overview
 
 - An overview on the issue by security expert Bruce Schneier<br>
 [Judge Demands that Apple Backdoor an iPhone](https://www.schneier.com/blog/archives/2016/02/judge_demands_t.html)
@@ -26,13 +26,13 @@ If you're interested in supporting Apple's cause, please [sign this petition](ht
 
 - [FAQ: Everything you need to know about Apple, encryption, and the FBI](https://www.imore.com/faq-everything-you-need-know-about-apple-encryption-and-fbi)
 
-#### The tech side
+### The tech side
 
 - [The FBI wants Apple to create an iPhone backdoor: Here's how it's possible](https://mashable.com/2016/02/17/how-apple-could-hack-iphone/)
 
 - [This is why the FBI can’t hack into iPhones](https://qz.com/618348/this-is-why-the-fbi-cant-hack-into-iphones/)
 
-#### Consequences
+### Consequences
 
 - *The fight between Apple and the FBI over iPhone security has turned nasty and dangerous. Especially for the US government’s credibility.*<br>
 [The US government is playing with fire in its fight with Apple](https://qz.com/621608/us-fbi-apple-iphone-privacy-fight/)
@@ -42,11 +42,11 @@ If you're interested in supporting Apple's cause, please [sign this petition](ht
 
 - [From Fines To Jail Time: How Apple Could Be Punished For Defying FBI](https://www.fastcompany.com/3057045/how-apple-could-be-punished-for-defying-fbi-encryption-order?partner=medium)
 
-#### Countermeasures
+### Countermeasures
 
 - [Upgrade Your iPhone Passcode to Defeat the FBI’s Backdoor Strategy](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/)
 
-#### Further readings
+### Further readings
 
 - Another Apple's battle against massive surveillance<br>
 [Apple opposes U.K. plan to expand online surveillance](https://venturebeat.com/2015/12/22/apple-opposes-u-k-plan-to-expand-online-surveillance/)
@@ -57,7 +57,7 @@ If you're interested in supporting Apple's cause, please [sign this petition](ht
 - The 2015 EFF report about companies and their commitment on protecting user's data from the government.<br>
 [EFF’s 2015 Data Privacy Report Lauds Apple, Dropbox, Slams Verizon](https://social.techcrunch.com/2015/06/18/eff-2015-data-report/)
 
-#### Latest updates
+### Latest updates
 
 - Apple CEO Tim Cook says FBI's backdoor would be "software equivalent of cancer" in [exclusive ABC interview](https://abcnews.go.com/Technology/exclusive-tim-cook-budging-apple-privacy-decision-safety/story?id=37169738)
 

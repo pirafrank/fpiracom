@@ -15,7 +15,7 @@ It’s been over a year since speculative execution side-channel vulnerabilities
 Understanding and knowledge of them are essential to protect against attacks that use them.
 This post tries to gather information about them. I will update it as new ones are discovered.
 
-### Get to know them
+## Get to know them
 
  We can group them in the following sub-families:
 
@@ -62,7 +62,7 @@ I also advise you to check the following links:
 - [Intel security software guidance](https://software.intel.com/security-software-guidance/)
 - [Thread about MDS OS patches](https://twitter.com/pirafrank/status/1128400923632574467)
 
-### Check for mitigations to be installed and enabled:
+## Check for mitigations to be installed and enabled:
 
 There are two ways to do so:
 
@@ -94,7 +94,7 @@ Mitigation: __user pointer sanitization
 Mitigation: Full generic retpoline, STIBP: disabled, RSB filling
 ```
 
-### Benchmarks
+## Benchmarks
 
 Phoronix has written an interesting post with a comparison of 2nd and 3rd gen Intel CPU performances, with and without mitigations applied. [Check it out](https://www.phoronix.com/scan.php?page=article&item=sandy-fx-zombieload&num=1).
 
@@ -105,7 +105,7 @@ For more comparisons about performance penalties, these articles have informatio
 - [The Combined Impact Of Mitigations On Cascade Lake Following Recent JCC Erratum + TAA](https://www.phoronix.com/scan.php?page=article&item=cascadelake-jcc-taa&num=1)
 - [Debian 7 Through Debian Testing Benchmarks With/Without Mitigations](https://www.phoronix.com/scan.php?page=article&item=debian-7-2020&num=1)
 
-### Conclusions
+## Conclusions
 
 Speculative execution side-channel vulnerabilities make a relatively new topic in InfoSec and more are likely to be found down the road. I will update this post and the [linked Google Spreadsheet]({{ site.data.external.cpu-vulns }}) as new vulnerabilities are discovered.
 

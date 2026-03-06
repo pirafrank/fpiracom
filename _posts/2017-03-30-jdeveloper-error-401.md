@@ -8,13 +8,13 @@ tags: ['Oracle', 'JDeveloper']
 
 Here I am to show you how to fix another issue JDeveloper showed to me.
 
-### Unauthorized?
+## Unauthorized?
 
 So, you open JDeveloper integrated servicebus console in the local browser (127.0.0.1:7011/servicebus) and it tells you `Error 401: Authorization Error` even if credentials are correct.
 
 ![Error 401 screenshot]({{ site.baseurl }}/static/postimages/2017-03-30/troubleshooting_jdeveloper_p2_error.png)
 
-### The solution
+## The solution
 
 Before we start (change to your version):
 

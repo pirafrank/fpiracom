@@ -12,7 +12,7 @@ In many ways a developer comes across XML files, especially when  dealing with S
 
 Last week I had to figure it how to install it on Windows. It is not an intuitive task to perform compared to the *nix world. So here it is a short guide that may help you.
 
-### Installation
+## Installation
 
 1. Download *libxslt*, *iconv* and *libxml2* from [here](ftp://ftp.zlatkovic.com/libxml/)
 2. Extract the files and put the content of `\bin` folder in each zip into `C:\xmltools`

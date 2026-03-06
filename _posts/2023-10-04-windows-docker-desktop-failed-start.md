@@ -11,11 +11,11 @@ seoimage: "3004/stop.jpg"
 
 Sometimes, likewise after a Docker Desktop update, Docker may not be able to start and you could read a `Docker has failed to start` message. A reboot is (almost) always a working solution, yet not the best option in many cases. But what if you are in the middle of your workflow, can’t close everything and can’t reboot?
 
-### Background
+## Background
 
 The Docker Desktop app is what runs the tray icon. Docker works with WSL and uses a Windows Service to handle things under the hood and let the Docker Desktop application talk with the underlying Docker in WSL. If things broke a reboot may help, but there is no an actual need for it.
 
-### Solution
+## Solution
 
 This has been tested on Windows 10. It might also work on Windows 11. If you find it to be, please reach out to me, so that I can update this post accordingly.
 

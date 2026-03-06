@@ -10,13 +10,13 @@ Security is important.
 
 The following guide is a mix of best practices inspired by [drduh's macOS security and privacy guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide) and improved with my experience. It aims to help people harden their Macs. It is written as short as possible, including just links and references and adding missing information only if needed. Please check drduh's guide for how-to details.
 
-#### Preface
+## Preface
 
 Security is a process not a state. It strongly depends on the attacker. Apple's security settings are great for the average user, but if you're reading this, it's likely you're not.
 
 Some tools are tested and/or designed to work with specific version of macOS. Use the provided information at your own risk. I hope you find it useful.
 
-#### The list
+## The list
 
 - Set an EFI password;
 - Enable Filevault
@@ -49,7 +49,7 @@ Some tools are tested and/or designed to work with specific version of macOS. Us
 - Do not use cracked apps (as their executables are modified by unknown people);
 - Consider using OpenBSM and DTrace for system auditing. Those are great tools and may help you further tuning you security configuration.
 
-#### Final notes
+## Final notes
 
 Do NOT leave your computer unattended. If you want to further protect your PC from forensic tools, try [USBkill](https://github.com/hephaest0s/usbkill).
 

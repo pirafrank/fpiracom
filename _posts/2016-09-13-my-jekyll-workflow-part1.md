@@ -11,7 +11,7 @@ My website is hosted on a VPS, served by nginx and based on [Jekyll-Blue](https:
 
 I like blogging and pushing Jekyll to its limits with new features I backport to my Jekyll-Blue project. It's my tinkering, at keyboard-level.
 
-### Basic setup
+## Basic setup
 
 I need Jekyll to build the website thus the best option is to do it on the server. This is also compatible in case you use GitHub Pages to host your website.
 
@@ -24,13 +24,13 @@ The bash script builds in one folder and then uses `rsync` to copy files to the 
 
 Following Git best practices, there is also a *develop* branch which is deployed for testing purposes to another path on server (e.g. `/var/www/unstable.mywebsite.com`). I use the `t` parameter in the above script to do that. If I am on my computer, I run [this other script](https://gist.github.com/pirafrank/3b72b2e851611569a7af03281a8d9c3d) to upload pre-built files on server via SSH using rsync. This way I can deploy other branches, too.
 
-### Posting from mobile
+## Posting from mobile
 
 Posting on the go is cool and handy. [Working Copy](https://workingcopyapp.com/) let me achieve that. It is *the* git client for iOS. If you are on Android, there are many options.
 
 On mobile I usually don't do deep changes and just write posts, so the only branch I care to deploy is `master`. I access to the server via [Serverauditor](https://serverauditor.com/) app.
 
-### Scheduled posts
+## Scheduled posts
 
 Post scheduling is nice to have. When I have some spare time to dedicate to my blog, I plan future posts but manually publishing on time it's boring.
 

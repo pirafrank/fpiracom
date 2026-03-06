@@ -49,8 +49,8 @@
 
   h1, h2, h3, h4, h5, h6 {
     color: $darkerGray;
-    font-family: $defaultSerif;
-    font-weight: bold;
+    font-family: $defaultSansSerif;
+    font-weight: $bold;
 
     line-height: 1.7;
     margin: 1em 0 15px;
@@ -86,7 +86,7 @@
     margin-bottom: 0.4em;
 
     h1 {
-      font-size: 38px;
+      font-size: 32px;
       font-family: $defaultSerif;
       font-weight: $normal;
       letter-spacing: -0.03em;
@@ -94,7 +94,7 @@
       line-height: 1.2;
 
       @include mobile {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 1.3;
       }
     }

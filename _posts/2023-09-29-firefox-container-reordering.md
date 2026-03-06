@@ -15,7 +15,7 @@ It's been a year since I posted [a feature request](https://connect.mozilla.org/
 
 I'm glad to see that this post has recently gathered some attention, so it is a good time to further spread my request and offer a temporary solution for those interested. At least until it will gain enough kudos to be satisfied.
 
-### A workaround
+## A workaround
 
 Tarang74's shared a workaround on the forum, and I thank him for sharing.
 
@@ -30,7 +30,7 @@ Each object will look something like this:
 {"userContextId": 1, ..., "name": "Container 1"}
 ```
 
-### Final words
+## Final words
 
 I look forward to the day when Firefox will implement the ability to rearrange containers in the manage containers menu. Until then, I hope this solution helps.
 

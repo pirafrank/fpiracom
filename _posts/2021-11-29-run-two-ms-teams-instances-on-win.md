@@ -7,7 +7,7 @@ tags: ['Windows','Windows 10']
 seoimage: 2021-11-29/teams.png
 ---
 
-### Update (November 26, 2024)
+## Update (November 26, 2024)
 
 The procedure described in this blog post is no longer applicable to recent versions of Microsoft Teams, referred to as "New." In 2024, Microsoft transitioned users to this updated version. The procedure is now unnecessary because the new Teams provides native support for managing multiple accounts and organizations within the same account. To switch between them, simply click on your profile picture. Additionally, a new icon featuring a user and a bell and located in the top-right corner of the app, helps you stay in the loop by displaying notifications across all the organizations you've signed into.
 

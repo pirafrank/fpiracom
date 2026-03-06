@@ -10,7 +10,7 @@ I am a big fan of BeatsX and I prefer them over AirPods because they don't need 
 
 But recently three white blinks of the LED told me my earbuds were dead. Battery was charged but they didn't turn on. What to do?
 
-### One last hope...
+## One last hope...
 
 Googling around, I've found a reset procedure on the [Beats website](https://www.beatsbydre.com/support/how-to/set-up-and-use-beatsx-earphones) to bring them back to life.
 

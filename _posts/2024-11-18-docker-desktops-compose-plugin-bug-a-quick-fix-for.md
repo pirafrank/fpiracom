@@ -16,7 +16,7 @@ This bug, which first appeared in Docker Desktop 4.35.0, affects the bundled doc
 
 For those who need an immediate solution, I'll show you how to manually update just the `docker-compose` plugin without waiting for the next Docker Desktop release. The fix is is two parts: we have to both update `docker-compose` on Windows and on the default WSL2 distro we use, if any. In my case it is an Ubuntu 22.04.
 
-### Windows
+## Windows
 
 ![docker compose version executed on windows](https://fpira.com/static/postimages/3010/15610-screenshot_768.png)
 
@@ -33,7 +33,7 @@ Invoke-WebRequest -Uri "https://github.com/docker/compose/releases/download/v2.3
 4. Download the updated exe to put it in the folder as `docker-compose.exe`
 5. Restart Docker Desktop by right clicking on the icon in the tray bar
 
-### Ubuntu 22.04 on WSL2
+## Ubuntu 22.04 on WSL2
 
 ![docker compose version executed on wsl](https://fpira.com/static/postimages/3010/6973-screenshot_767.png)
 
@@ -50,7 +50,7 @@ chmod +x docker-compose
 3. Run `docker compose version` again to check for Compose to be updated
 4. Done. No need to relaunch Docker Desktop
 
-### Final considerations
+## Final considerations
 
 Before upgrading to Docker Desktop `4.36` revert the changes by deleting the downloaded files on WSL2 and Windows and renaming `docker-compose.exe.old` back to `docker-compose.exe` on Windows. Also, the procedure may be used to upgrade or install other Docker plugins.
 

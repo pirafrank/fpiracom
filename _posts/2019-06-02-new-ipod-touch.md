@@ -23,7 +23,7 @@ The interesting question is if the iPad Air 2 will be updated too, because unlik
 Reading specifications of newer (baseline) *iPads* gives us more clues. The 5th-gen one (introduced in March 2017) sports an A9 chip and its latest version, the 6th generation (introduced in March 2018) has a standard-clocked A10 chip.
 A9 was quite a big leap forward back in 2015 featuring advances in performance, [efficiency](https://www.tomshardware.com/reviews/apple-iphone-6s-6s-plus,4437-6.html) and [security](https://raw.githubusercontent.com/0xmachos/iOS-Security-Guides/master/iOS_Security_Guide_Jan18.pdf). So high chances the Air 2 won't be capable to run iOS.
 
-### Conclusions
+## Conclusions
 
 Apple it's very likely to drop support for A8(X) and earlier devices in iOS 13. This would make sense to create an homogeneous base of devices having common minimum hardware requirements, yet powerful enough as 2018 flagship Android phones. iPad Air 2 and iPhone 6/6+ owners shouldn't be shocked: although still popular these devices will be 5 years old in a couple of months. On the other hand, iPhone 7/7+ owners may get even longer lifespan for their smartphones. And I'm pretty sure these will grab even more attention in the refurbished market.
 

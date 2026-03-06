@@ -13,7 +13,7 @@ One of the advantages of Rust applications is the possibility to ship the same c
 
 In this article, I'll tell about how to move the first steps for cross compilation in Rust, address common challenges, and provide practical examples for a CI/CD environment.
 
-### Context
+## Context
 
 Consider a binary Rust application, one like [appimage_updater](https://github.com/pirafrank/appimage_updater). We have a `rust-toolchain.toml` file with the following content:
 
@@ -34,7 +34,7 @@ targets = [
 
 as I am coding on x86_64 arch but also want to cross compile to aarch64 to release for that platform as well.
 
-### Option 1 (standard approach)
+## Option 1 (standard approach)
 
 The first option is the standard one, which requires no extra tools and relies only on `cargo` and the usual compilation toolbelt for the target architecture. In this case, we need to install `aarch64-linux-gnu-gcc` linker (via your package manager, e.g. `sudo apt install gcc-aarch64-linux-gnu`). Then you need to create a file `.cargo/config.toml` and add the following content
 
@@ -54,7 +54,7 @@ cargo build --target aarch64-unknown-linux-gnu
 
 of course, I assume that on x86_64 you already have the necessary compile tools already installed.
 
-### Option 2 (an easier approach via cross)
+## Option 2 (an easier approach via cross)
 
 This approach uses `cross` and doesn’t require we to install a linker for the target platform. It will handle the underground work for us. It works using tailored-made Docker images, one per each target, for an easy setup that doesn’t require install tooling on the host.
 
@@ -82,7 +82,7 @@ cross build --target x86_64-unknown-linux-gnu
 cross build --target aarch64-unknown-linux-gnu
 ```
 
-### Going GitHub Actions
+## Going GitHub Actions
 
 To cross compile on a GitHub Action, the process is pretty similar. You just need to setup the Rust stable toolchain, then install cross as you’d do locally. Considering I did not want to setup _cargo-binstall_ on the Action, I went with `cargo install`.
 
@@ -103,7 +103,7 @@ To cross compile on a GitHub Action, the process is pretty similar. You just nee
 
 For a full setup, including a release pipeline with assets, please check my [Appimage Updater](https://github.com/pirafrank/appimage_updater/blob/e5b616af6466baa80fb16e3890fbfb5cc85ef7a3/.github/workflows/release.yml) project.
 
-### A different GitHub Action approach
+## A different GitHub Action approach
 
 A different approach, one with more targets, may use a GitHub Action matrix configuration to compile on different runners with different host operating systems. It may help parallelizing the build and speed up CI and release pipelines.
 
@@ -205,7 +205,7 @@ jobs:
 
 Note I made some adjustments to comply with the scenarios supported by _setup-cross-toolchain-action_. For example, `cargo test` is unsupported when compile for `freebsd` ([source](https://github.com/taiki-e/setup-cross-toolchain-action?tab=readme-ov-file#freebsd)) or for triple `aarch64-pc-windows-msvc` ([source](https://github.com/taiki-e/setup-cross-toolchain-action?tab=readme-ov-file#windows-msvc)) so I’ve disabled it.
 
-### Wrapping up
+## Wrapping up
 
 Cross compiling Rust code can be achieved through multiple ways, from the standard `cargo`-based approach requiring manual setup of toolchains to more streamlined solutions using tools like `cross`, or dedicated GitHub Actions, each with its own advantages. While the standard approach offers more control and understanding of the underlying process, tools like cross and _setup-cross-toolchain-action_ significantly simplify the workflow, especially in CI/CD pipelines.
 

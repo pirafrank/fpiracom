@@ -13,7 +13,7 @@ Commit signing is a nice way to show proof you're the author and build trust amo
 
 And if you sign tags, you will get a badge near version numbers in the GitHub releases page, too.
 
-### Signing commits
+## Signing commits
 
 You can sign a commit using
 
@@ -29,7 +29,7 @@ git config commit.gpgsign true
 
 Of course, you can add `--global` flag to set it for all repositories.
 
-### Signing tags
+## Signing tags
 
 Here's how you sign a tag. You will be asked for a message.
 
@@ -47,7 +47,7 @@ git config tag.gpgSign true
 
 Please note the cases for the 's' letters in the commands above compared to the ones for commit signing.
 
-### An alternative
+## An alternative
 
 An alternative compatible with Git versions < 2.23 may be setting two aliases.
 

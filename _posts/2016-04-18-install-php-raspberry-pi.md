@@ -16,7 +16,7 @@ I've made a script for that and made it available as a gist.
 
 {% gist 2bce62d541af195aaea865d5102f1c09 %}
 
-### How to use the script
+## How to use the script
 
 ```
 cd $HOME

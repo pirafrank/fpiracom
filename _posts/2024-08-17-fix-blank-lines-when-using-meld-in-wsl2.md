@@ -22,7 +22,7 @@ xclock
 
 So far, so good.
 
-### Using Meld on WSLg
+## Using Meld on WSLg
 
 I have installed Meld on WSLg to automate some diff between a couple of repositories I have to check. My bash scripts have lines like this:
 
@@ -32,7 +32,7 @@ nohup meld ~/code/prj1/somedir ~/code/prj1/someotherdir &
 
 Which it worked, but it showed a `meld` window with blank lines.
 
-### Debugging it
+## Debugging it
 
 So I rerun the command without `nohup` and checked the logs in the shell output. I noticed one of the (many) error lines in the CLI was:
 
@@ -40,7 +40,7 @@ So I rerun the command without `nohup` and checked the logs in the shell output.
 gtk-icon-theme-error-quark: Icon 'folder' not present in theme Yaru
 ```
 
-### A quick fix actually
+## A quick fix actually
 
 The error was about Meld missing system icons to show inline in the diff UI. [Adwaita](https://gitlab.gnome.org/GNOME/adwaita-icon-theme) is the needed theme to install.
 

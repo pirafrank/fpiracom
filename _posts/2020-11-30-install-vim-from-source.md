@@ -7,7 +7,7 @@ tags: ['vim','ubuntu']
 seoimage: 2020-11-30/installed_vim.png
 ---
 
-### Update (2020 12 28)
+## Update (2020 12 28)
 
 I’ve removed `+python` (python2 support) from the `./configure` script because it looks like you can't use both versions 2 and 3 [in the same instance](https://vi.stackexchange.com/questions/779/how-do-i-get-vim-to-be-able-to-run-both-python-and-python3-on-a-linux-system-in). Also, as Ubuntu 20.04 comes with Python 3.8.5, I'm now linking against it and tell the script to use `python3` (because in Ubuntu 20.04 system `python` is 2.7).
 

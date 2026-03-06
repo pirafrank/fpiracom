@@ -16,7 +16,7 @@ Although GitHub, BitBucket and GitLab are already available as presets, [Azure D
 
 Below there's a quick guide to set up it.
 
-### Configure it
+## Configure it
 
 1. Open Working Copy on iOS, go to `Settings > Hosting Providers` and press the `+` button in the upper right corner
 2. Check your `USERNAME`. It is the name of the organization handling the repos you want to clone. On Azure DevOps you can have multiple organizations tied to same account/email address. You can find a list of them right after logging in.
@@ -32,7 +32,7 @@ Below there's a quick guide to set up it.
 
 That's it.
 
-### Cloning a repo
+## Cloning a repo
 
 Now it's time to clone a repo. Since we have configured the organization, we can do it in three taps:
 

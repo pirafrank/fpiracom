@@ -10,7 +10,7 @@ If you have experienced finding duplicate emails in your *Sent* folder on the We
 
 While it is possible to disable this behavior client-side, it isn't always the best option. For example, the email client may miss this particular feature or, if you have an iOS device, keeping the *Sent* email folder locally doesn't enable you to see the folder on the server, preventing you to search for emails sent from other devices.
 
-### The solution
+## The solution
 
 The solution is as simple as toggling a flag, which is hidden in the web GUI of Zoho email settings. Just follow the steps below.
 

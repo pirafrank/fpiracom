@@ -15,7 +15,7 @@ Recently a vulnerability in the software has been discovered. Affected apps are 
 
 You can read more about this security issue on [ArsTecnica](https://arstechnica.com/security/2016/02/huge-number-of-mac-apps-vulnerable-to-hijacking-and-a-fix-is-elusive/).
 
-### List of safe apps
+## List of safe apps
 
 In alphabetical order, the minimum safe versions of apps using Sparkle.
 

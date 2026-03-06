@@ -19,7 +19,7 @@ In a changing world curious things happen. This week Microsoft aimed at creative
 
 In short, a new *Watch Now* app for tvOS and iOS and the new MacBook Pro were unveiled. Let's talk about the hardware they shown.
 
-### Hardware changes
+## Hardware changes
 
 Intel processor refresh was much needed as well the ability to run a 4K display at 60 Hz on the 13-inch model. Ok, this one may be not high priority, but it's just something I've been waiting for. Having a Retina external display is cool.
 
@@ -35,7 +35,7 @@ MacBook Pro with Touch Bar also features (a second generation) Touch ID for pass
 
 And there's a new color option, it's the well-known Space Gray (as a gold MacBook Pro wouldn't look that *Pro* after all...).
 
-### Other little things
+## Other little things
 
 Below in a easy to read bullet list.
 
@@ -54,17 +54,17 @@ Below in a easy to read bullet list.
 - The Thunderbolt 3 ports on the right side have capped speed ([source](https://www.macrumors.com/2016/10/28/macbook-pro-tb3-reduced-pci-express-bandwidth/)). Could they have unable to build a fast enough bridge to connect the right side logic boar to the main one?;
 - They are still selling the *old* MacBook Pro version, 13" version only. If you want a 15" MacBook, the new one is the only option to go for. Because Apple thinks this is the new declination of a Pro computer.
 
-### Mobile choices
+## Mobile choices
 
 It's clear Apple is moving towards a more wireless and portable computing experience as their MacBook Pro is for the first time thinner and smaller than a MacBook Air. It is also getting closer to the same all-day long battery life we all desire (despite shipping with a much smaller built-in battery). The cheaper Touch Bar-less 13-inch-only configuration is to tease those who are likely to buy an Air. The problem is outside the U.S., where the cheaper 13" MacBook Pro costs about 30% more than the old ultrabook, likely to be discontinued next year.
 
 Although last year the iPad Pro was demoed alongside MacBooks, showing that it is for Apple an alternative productivity machine to its laptops, this fall saw no new announcements. I then expect a refresh of the iPad line on March. The same applies for iMacs.
 
-### Who is the new MacBook Pro for?
+## Who is the new MacBook Pro for?
 
 The most Pro laptop ever is for top professionals who need the a super-portable-yet-powerful workstation and can pay for it. The hardware changes are speaking clearly, from improved speakers to wide gamut display: with this week announcement, Apple wants to go back to its original target. The new MacBook Pro is not for programmers, it's for media content creators, architects and designers.
 
-### USB-C accessories
+## USB-C accessories
 
 If you find yourself googling for some cheaper alternative dongles and other handy USB-C accessories, check the ones below. In particular, Dell appears to have some goodies which are even better than what Apple offers.
 
@@ -81,6 +81,6 @@ Thanks for reading.
 
 ---
 
-#### Sources
+## Sources
 
 - [Apple Keynote](https://www.apple.com/apple-events/october-2016/)

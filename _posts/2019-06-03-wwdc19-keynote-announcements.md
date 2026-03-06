@@ -21,7 +21,7 @@ A (very long) list of today's announcements. The source is mainly the today keyn
 
 It will be updated as new features and hidden tricks are discovered.
 
-### WWDC by the numbers
+## WWDC by the numbers
 
 - over 1000 developers attending
 - 97% customer satisfaction of iOS 12
@@ -31,15 +31,15 @@ It will be updated as new features and hidden tricks are discovered.
 - macOS is #1 in customer satisfaction
 - over 450,000 apps in the App Store using Swift
 
-### Software announcements
+## Software announcements
 
-#### tvOS 13
+### tvOS 13
 
 - multi-user support
 - Xbox One S and PS4 controller support
 - new underwater screensaver
 
-#### watchOS 6
+### watchOS 6
 
 - new watchfaces, including a new one that recalls the Siri one of today. All of them supports new complications (maybe on S4 only, though)
 - haptic and audio chimes trigger each new hour
@@ -68,7 +68,7 @@ watchOS features preview available [on Apple's website](https://www.apple.com/wa
 
 Available as a free update for Apple Watch capable of running watchOS 5, so since gen 1.
 
-#### iOS 13
+### iOS 13
 
 - (the much awaited) dark mode
 - performance and speed optimizations
@@ -149,7 +149,7 @@ Note: many of these fetures are available on macOS, too.
 
 iOS 13 will be available as a free update for iPhone 6S, SE and later and the recently announced iPod Touch 7th gen.
 
-#### iPadOS 13 exclusive features
+### iPadOS 13 exclusive features
 
 Besides iOS improvements coming to iPhone and iPod Touch, the ones below are iPad exclusives.
 
@@ -182,7 +182,7 @@ iPadOS features preview available [on Apple's website](https://www.apple.com/ipa
 
 It will be available as a free update for iPad Air 2 and later, including all iPad Pro.
 
-#### macOS 10.15 Catalina
+### macOS 10.15 Catalina
 
 - iTunes is finally and officially dead. New apps *Podcasts*, *Music* and *TV* taking place
     - *Music* and *TV* apps are based on AppKit, *Podcasts* on UIKit for Mac
@@ -213,7 +213,7 @@ It will be available as a free update for:
 - iMac Pro (all)
 - Mac Pro 2013 and later
 
-#### Swift 5, SDK and frameworks updates
+### Swift 5, SDK and frameworks updates
 
 - [Swift 5](https://swift.org/blog/swift-5-released/)
     - has reached ABI and module stability
@@ -275,9 +275,9 @@ It will be available as a free update for:
 
 *Hacking with Swift* published [a comprehensive article](https://www.hackingwithswift.com/articles/193/whats-new-in-ios-13) covering all announcements for developers.
 
-### Hardware announcements
+## Hardware announcements
 
-#### Mac Pro
+### Mac Pro
 
 - up to 28-core Intel Xeon CPU
 - ECC memory and 6 DIMM slots, up to 1.5 Tb 2993 Mhz speed
@@ -304,7 +304,7 @@ It will be available as a free update for:
     - 256 GB SSD
     - AMD WX7100
 
-#### Pro Display XDR
+### Pro Display XDR
 
 - 32-inch LCD screen
 - 6K resolution, 20 billion pixels
@@ -324,7 +324,7 @@ It will be available as a free update for:
 
 All of those goodness will be available in the fall. Usually in late September for iOS, watchOS and tvOS and first half of October for macOS.
 
-### Interviews
+## Interviews
 
 Doug Brooks, the Apple Product Manager for new Mac Pro has been interviewed by folks running the Mac Power Users podcast. You can listen to it [here](https://www.relay.fm/mpu/485).
 

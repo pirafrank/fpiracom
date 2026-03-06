@@ -30,7 +30,7 @@ npm ERR! code ELIFECYCLE
 
 npm ERR! electron-prebuilt@0.30.3 postinstall: `node install.js`
 npm ERR! Exit status 1
-npm ERR! 
+npm ERR!
 npm ERR! Failed at the electron-prebuilt@0.30.3 postinstall script 'node install.js'.
 npm ERR! This is most likely a problem with the electron-prebuilt package,
 npm ERR! not with npm itself.
@@ -47,7 +47,7 @@ npm ERR!     /Users/francesco/npm-debug.log
 
 Interestingly enough, this issue is kind of random. It appeared in version 0.25.3-2 and it still randomly occurs even if fixed. What's more, it occurs only on OS X.
 
-### The quick fix
+## The quick fix
 
 The electron install.js script has an issue with permissions on ```~/.electron``` dir, which it uses as temp path to unpack install files.
 
@@ -56,7 +56,7 @@ chmod 777 ~/.electron
 ```
 fixed the issue.
 
-### Update
+## Update
 
 The best solution is different, though. Please check this post of mine about [best practice to install node on your computer]({{ site.baseurl }}/blog/2015/08/node-installation-best-practise/)
 

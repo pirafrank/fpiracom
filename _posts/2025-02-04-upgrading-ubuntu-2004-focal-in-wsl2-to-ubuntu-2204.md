@@ -13,11 +13,11 @@ Ubuntu 22.04 (Jammy Jellyfish) has been around for long and it’s now time to r
 
 The procedure has been tested on WSL2 running on Windows 11, however it is no different than updating a 20.04 LTS install running on a virtual machine. After all, WSL2 is a lightweight VM running on a subset of Hyper-V features.
 
-### Before we start
+## Before we start
 
 As you’d do on a VM, [create a snapshot first](https://learn.microsoft.com/en-us/windows/wsl/basic-commands#export-a-distribution).
 
-### Let’s start
+## Let’s start
 
 First upgrade the installed software packages to their latest versions and update to the nearest available release.
 
@@ -47,7 +47,7 @@ Prompt = lts
 
 Save the file and quit.
 
-### Upgrade
+## Upgrade
 
 Now the system is prepared to get the next long-term version available, here for 20.04 _Focal Fossa_, it is 22.04 _Jammy Jellyfish_ even if 24.04 _Noble Numbat_ is available. It won’t jump and skip versions.
 
@@ -63,7 +63,7 @@ Once the installation of the new _Jammy Jellyfish_ is completed, remove the obso
 
 Once done, the WSL Ubuntu App will ask you to restart the system. No need to restart the whole Windows OS, the system here is just Ubuntu inside WSL. However, it won’t start on its own because there is no **init** system. So simply close the WSL app window and open a new shell.
 
-### Restart WSL
+## Restart WSL
 
 In powershell run:
 
@@ -90,4 +90,3 @@ UBUNTU_CODENAME=jammy
 ```
 
 I hope it helps. Thanks for reading.
-

@@ -14,18 +14,18 @@ desc="Hyper terminal running in quake-mode on Windows 11"
 
 As a developer, your terminal is an essential tool and often the first piece of software you customize. It's where you run commands, code, connect to servers, interact with CLI tools, and so much more. For many of us, it’s our working home. Thus having a quick access to our terminal can save precious seconds that add up until the end of the day (night?).
 
-### What is quake-mode?
+## What is quake-mode?
 
 Inspired by the famous classic FPS game Quake, where pressing the tilde key dropped down a console from the top of the screen, _quake-mode_ refers to a terminal window that can be toggled on and off quickly (usually by a hotkey) and drops down from the top of the screen (or slides from any other side). This allows for an instant access to the terminal without disrupting your current workflow. So your command line always within reach, just a key press away.
 
-### A couple of benefits
+## A couple of benefits
 
 1. **Quick access**: No need to switch windows or open a new application. Your terminal is always ready.
 2. **Distraction-free**: The drop-down design means you can use the terminal without cluttering your workspace with multiple windows, especially if you’re not using a tiling window manager.
 3. **Efficient multitasking**: Quickly run commands, check logs, or execute scripts while keeping your main focus intact.
 4. **Customizable**: Most quake mode terminals are highly customizable, allowing you to set up hotkeys, themes, and other preferences to match your workflow.
 
-### Terminals supporting it
+## Terminals supporting it
 
 While there are many terminal applications out there, not all support quake-mode, and some are even quake-mode only.
 
@@ -90,12 +90,12 @@ Cross-platform:
 	- How: [here](https://www.npmjs.com/package/hyperterm-summon).
 		- Note: I have not listed [CWSpear/hyperterm-visor](https://github.com/CWSpear/hyperterm-visor) because it is unmaintained and its developer has archived the repository.
 
-### Additional notes
+## Additional notes
 
 - I have not tested all the _How_ links above, as I do not have all possible setup combinations. So YMMV.
 - [WezTerm](https://github.com/wez/wezterm) and [Alacritty](https://github.com/alacritty/alacritty) are my favorite terminal apps, unfortunately they do not support quake-mode. However, it looks like some people got it working with Alacritty somehow. For example [on macOS](https://gist.github.com/truebit/31396bb2f48c75285d724c9e9e037bcd) via Hammerspoon, and on Linux (with windowing by X Window System) via [custom scripting](https://github.com/cy4n1c/alacritty-dropdown). But I have tested none of them. I will update this blog post if I test any, and in case I found my way to get at least one of the two working.
 
-### Conclusion
+## Conclusion
 
 As a developer, optimizing your tools for efficiency is crucial. Quake mode terminals provide a seamless and efficient way to keep your terminal always within reach. Whether you’re using Linux, macOS, or Windows, there’s a terminal with quake-mode that fits your needs. Explore these options and integrate one into your workflow to experience a significant boost in productivity.
 

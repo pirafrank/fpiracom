@@ -11,7 +11,7 @@ After some fiddling with Apple's photo management technology I've found some und
 
 ![Show Package Content]({{ site.baseurl }}/static/postimages/2017-01-31/001.png)
 
-### The setup
+## The setup
 
 - Dual-core Haswell MacBook Pro with 16GB RAM
 - macOS 10.12.2
@@ -30,7 +30,7 @@ After some fiddling with Apple's photo management technology I've found some und
   - audio: AAC PassThru (read 'copy from source')
   - picture: `607x1080`, down from `1080x1920`, no visual difference to me. Leaving it the same would output a file twice as bigger (285.5 MB)
 
-### Encoding
+## Encoding
 
 **Photos app export**
 
@@ -45,11 +45,11 @@ After some fiddling with Apple's photo management technology I've found some und
 - CPU usage: 100%
 - Fan: at maximum
 
-### The output
+## The output
 
 ![File sizes]({{ site.baseurl }}/static/postimages/2017-01-31/002.png)
 
-#### Video details
+### Video details
 
 **Original video meta**
 
@@ -103,7 +103,7 @@ Overall bit rate                         : 3 990 Kbps
 Writing application                      : HandBrake 1.0.2 2017012200
 ```
 
-### What can we learn?
+## What can we learn?
 
 - A video shot using an iOS devices uses:
   - MPEG4 as container
@@ -123,7 +123,7 @@ Writing application                      : HandBrake 1.0.2 2017012200
 - `exiftool` cannot edit QuickTime meta. You can import the file and fix recorded location and time going to *Option-click > Get Info* and double clicking. Only meta (not the file) will be uploaded as those are kept in a separate database and not merged back into the file. For this reason exporting the file doesn't export the meta you set
 - Editing meta of video/picture does not move it to the corresponding subfolder into the Photos Library bundle
 
-#### What about pictures?
+### What about pictures?
 
 The results follow the same principles:
 
@@ -132,16 +132,16 @@ The results follow the same principles:
 - Editing meta doesn't upload
 - Editing a picture does not re-upload it but just syncs the edit.
 
-### Some tips
+## Some tips
 
-#### Saving space
+### Saving space
 
 To save precious space on iCloud and on device (at least until the *Optimized Storage* setting deletes it on your iPhone you can:
 
 - simple way: on your device go to *Settings > Photos* and set quality to *720p 30fps*
 - hard way: keep the *1080p 30 fps* setting on device, shrink it using Handbrake, then replacing the file. This is more time consuming and forces you to go back to your Mac from time to time. Note that there's room for automation here (with the usual suspects: Finder Folder Actions, Automator, shell scripting and maybe [Hazel](https://www.noodlesoft.com))
 
-#### Advanced photo management on iOS
+### Advanced photo management on iOS
 
 After a long search, those are great apps with the best integration. Totally worth their money.
 

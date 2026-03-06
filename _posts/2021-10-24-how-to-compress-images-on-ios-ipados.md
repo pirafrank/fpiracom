@@ -13,7 +13,7 @@ https://twitter.com/pirafrank/status/1353708824558002177
 
 It’s worth pointing out that there are a couple of other ways to do that. Images can be compressed using the pre-installed Shortcuts app, as pointed out in the [tweet thread](https://twitter.com/jankais3r/status/1361216475466522626?s=21), or by using an [online service](https://www.google.it/search?q=compress+images+online&ie=UTF-8&oe=UTF-8&hl=it-it&client=safari). By the way, a shell approach may be helpful to reuse a script you already have, do some batch processing and protect your privacy (you don’t need to upload pictures anywhere).
 
-### Prerequisites:
+## Prerequisites:
 
 1. Download the [@iSH_app](https://twitter.com/iSH_app)
 2. add Alpine repositories ([link](https://github.com/ish-app/ish/wiki/Using-Alpine-Linux-repositories))
@@ -22,7 +22,7 @@ and install the ImageMagick package:
 
 `apk add imagemagick`
 
-### *mount* and *convert*!
+## *mount* and *convert*!
 
 Time to convert. But before I show you how to mount an external path, thanks to the awesome iSH app. It is a good option to read/write images straight where you need them. For example, you could use it with apps such as [Secure ShellFish](https://apps.apple.com/it/app/secure-shellfish-ssh-sftp/id1336634154) or [FileBrowser Pro](https://apps.apple.com/it/app/filebrowser-professional/id854618029). In the example below, I use iCloud Drive which we all have:
 

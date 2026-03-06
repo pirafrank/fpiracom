@@ -1,0 +1,7 @@
+{
+    "MD041": false,
+    // tables
+    "MD060": false,
+    // multiple headers with the same content
+    "MD024": false
+}

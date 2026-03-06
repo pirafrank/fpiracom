@@ -166,7 +166,7 @@
       "skills": ["node.js", "JavaScript"],
       "creationDate": "2024-03-09T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
+      "isArchived": true,
       "maintained": true
     },
     {
@@ -244,7 +244,7 @@
       "skills": ["node.js", "JavaScript", "AWS Lambda"],
       "creationDate": "2021-11-22T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
+      "isArchived": true,
       "maintained": true
     },
     {
@@ -264,13 +264,13 @@
       "name": "Rebrandly CLI",
       "description": "An unofficial command line client to shorten URL using rebrandly.com.",
       "group": "",
-      "homepage": "https://fpira.com/projects/rebrandly_cli",
+      "homepage": "/projects/rebrandly_cli",
       "repourl": "https://github.com/pirafrank/rebrandly_cli",
       "license": "GNU GPLv3",
       "skills": ["Python"],
       "creationDate": "2016-11-16T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
+      "isArchived": true,
       "maintained": false
     },
     {
@@ -290,7 +290,7 @@
       "name": "Alfred Workflows and Themes",
       "description": "Useful Alfred workflows to enhance your productivity on Mac. Good for developers and power-users.",
       "group": "",
-      "homepage": "https://fpira.com/alfred-for-mac",
+      "homepage": "/alfred-for-mac",
       "repourl": "https://github.com/pirafrank/alfred_workflows",
       "license": "GNU GPLv3",
       "skills": [],

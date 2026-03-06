@@ -26,7 +26,7 @@ In case I get in touch with any personal information of yours (e.g. your email a
 
 No cookies or beacons are used.
 
-#### Analytics
+## Analytics
 
 This website used to have Google Analytics, but I do not like the way they do their business. So I changed analytics tools a couple of times, until I settled on [Umami](https://github.com/umami-software/umami), a privacy-focused alternative. Instead of self-hosting, I deployed it as a separate website on Vercel for the sake of uptime. I use it only to have some general understanding of how many users find content I post useful and the country they read it from.
 
@@ -34,13 +34,13 @@ This website used to have Google Analytics, but I do not like the way they do th
 
 All the original content on this website is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise noted. This means you are free to share, transmit, distribute, remix, transform, and build on my work as long as you don't use it for commercial purposes without my prior written consent.
 
-#### Attribution
+## Attribution
 
 In giving me credit, a link back to the source page attributed to me is just fine. Please don't steal the original content I post to republish it as your own.
 
 In turn, I will attribute any non-original content of mine to his author.
 
-#### Code
+## Code
 
 This website code is published on [GitHub](https://github.com/pirafrank/fpiracom). Apart from content, which license model is mentioned above, the rest of code files are published with a [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) license.
 

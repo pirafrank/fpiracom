@@ -11,7 +11,7 @@ You can get workflows and themes I've developed from links below.
 
 #### Workflows
 
-Source files and the latest stable version are available on [Github](https://github.com/pirafrank/alfred_workflows).
+Source files and the latest stable version are available on [GitHub](https://github.com/pirafrank/alfred_workflows).
 
 I also publish workflows on [Packal]({{ site.data.social.packal.url }}).
 

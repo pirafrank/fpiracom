@@ -5,6 +5,8 @@ permalink: /code/
 show_title: true
 ---
 
+#### Public registries
+
 - [Homebrew tap](https://github.com/pirafrank/homebrew-tap)
 - [AURA](https://github.com/pirafrank/aura)
 - [crates.io](https://crates.io/users/pirafrank)
@@ -14,7 +16,7 @@ show_title: true
 
 #### Projects
 
-Side projects I make in my spare time. Code is available on Github, feel free to fork me.
+Side projects I make in my spare time. Code is available on GitHub, feel free to fork me.
 
 Most recent listed below.
 

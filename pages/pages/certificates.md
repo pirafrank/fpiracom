@@ -7,7 +7,7 @@ show_title: true
 
 {% include about/certs.md %}
 
-### Honours
+## Honours
 
 {% include about/honours.md %}
 

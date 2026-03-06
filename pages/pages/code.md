@@ -5,7 +5,7 @@ permalink: /code/
 show_title: true
 ---
 
-#### Public registries
+## Public registries
 
 - [Homebrew tap](https://github.com/pirafrank/homebrew-tap)
 - [AURA](https://github.com/pirafrank/aura)
@@ -15,9 +15,10 @@ show_title: true
 - [Docker Hub](https://hub.docker.com/u/pirafrank)
 - [poof APT/Yum/APK repository](https://poof-pkgs.fpira.com)
 
-#### Projects
+## Projects
 
-Side projects I make in my spare time, feel free to fork me. Most recent listed below.
+Side projects I make in my spare time, feel free to fork me. Most recent listed
+below.
 
 {% assign projects = site.data.projects.projects | where: "maintained", true | sort: "creationDate" | reverse %}
 {% for project in projects limit: site.code.projects.limit %} - [{{ project.name }}]({{ project.homepage }}), {{ project.description }}
@@ -25,23 +26,23 @@ Side projects I make in my spare time, feel free to fork me. Most recent listed 
 
 Full list [here]({{ site.baseurl }}/projects).
 
-#### Utilities
+## Utilities
 
 {% include partials/utilities.md %}
 
-#### Release Channels
+## Release Channels
 
 Available on Telegram. Get a notification each time a new version is released.
 
 - [OPNsense updates]({{ site.data.external.telegram-opnsense-updates }})
 - [Apple Developer releases]({{ site.data.external.telegram-apple-dev-releases }})
 
-#### Resources
+## Resources
 
 Additional pages you might find useful.
 
 {% include partials/resources.md %}
 
-#### External resources
+## External resources
 
 {% include partials/external-links.md %}

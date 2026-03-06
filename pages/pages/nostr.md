@@ -25,7 +25,7 @@ which is verified via DNS as per [NIP-05](https://github.com/nostr-protocol/nips
 
 NB. this isn't a real email address. Check [here]({{ site.baseurl }}/contacts) to get in touch.
 
-### Profile URL
+## Profile URL
 
 [{{ site.data.social.nostr.url }}]({{ site.data.social.nostr.url }})
 
@@ -35,7 +35,7 @@ nostr.directory is a public key database to find twitter users on nostr.
 
 [{{ site.data.social.nostr.directory }}]({{ site.data.social.nostr.directory }})
 
-### Useful links
+## Useful links
 
 - [What is Nostr?](https://nostr.com)
 - [What is Nostr, and how to start using Nostr](https://github.com/vishalxl/nostr_console/discussions/31), kind of a tl;dr for nostr beginners

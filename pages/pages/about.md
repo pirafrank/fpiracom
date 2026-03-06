@@ -16,7 +16,7 @@ show_title: true
 - [Other things I like](#other-things-i-like)
 - [Contact me](#contact-me)
 
-### Bio
+## Bio
 
 Hello, I am Francesco Pira, from Catania, Italy. I am interested in technology, business, and start-ups. I like working in team on projects that challenge me, and I'm fascinated by finding the *best practice* in doing something. I often describe myself as a curious mind, striving to learn and achieve more.
 
@@ -26,7 +26,7 @@ In 2013 I joined EESTEC, the European network of engineering students. The next 
 
 Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.name}}]({{ site.data.about.company.url }}), in the {{ site.data.about.company.dept }} department. I usually work with *terminal_app_I_like_here* + zsh + VSCode or Neovim. If you're curious about my setup, you can check it in my [dotfiles]({{site.data.social.github.url}}/dotfiles).
 
-### Skills
+## Skills
 
 - **Cloud-native:** Kubernetes (including AKS and OKD), Apache Kafka and Strimzi
 - **Front-end dev:** Vue.js, CSS, SCSS. Some experience in Angular
@@ -52,38 +52,38 @@ Today I work as {{ site.data.about.job.title }} at [{{site.data.about.company.na
 - Machine learning and MLOps
 - Rust
 
-### Resume
+## Resume
 
 [Download my resume]({{ site.data.external.resume }})
 
 {% include about/resume-last-edit.html %}
 
-### Coding
+## Coding
 
 I write little pieces of code to speed up my work and when I have some spare time I dedicate myself to weekend projects.
 
 As usual, available on [GitHub]({{site.data.social.github.url}}).
 
-### Talks and Events
+## Talks and Events
 
 - [Talks]({{ site.baseurl }}/talks/)
 - [Events and contributions]({{ site.baseurl }}/events/)
 
-### Certifications
+## Certifications
 
 {% include about/certs.md %}
 
-### Honours
+## Honours
 
 {% include about/honours.md %}
 
-### Languages
+## Languages
 
 - Italian, native proficiency
 - English, CEFR Level C1 ([test results]({{ site.baseurl }}/assets/files/certs/CEPTCandidateTestReport_20210930.pdf))
 - Spanish, elementary proficiency
 
-### Other things I like
+## Other things I like
 
 **Meeting people** A good chat is a good moment and with people I haven't met it's even better. Valuable things happen when people share their experiences and thoughts.
 
@@ -101,7 +101,7 @@ Plus, every now and then I find quotes and media that inspire me. They are liste
 - [Quotes]({{ site.baseurl }}/quotes/)
 - [Media]({{ site.baseurl }}/inspiring/)
 
-### Contact me
+## Contact me
 
 [Get in touch]({{ site.baseurl }}/contacts).
 

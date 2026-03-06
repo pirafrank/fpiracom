@@ -18,7 +18,7 @@ show_title: true
 
 {% endfor %}
 
-### Legacy projects
+## Legacy projects
 
 Projects below are archived or unmaintained.
 

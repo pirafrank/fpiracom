@@ -10,7 +10,7 @@ The best way is to email <span class="safe-email"><i>me at thisdomain</i></span>
 Also available via [Matrix]({{ site.data.social.matrix.url }}) or
 [Telegram]({{ site.data.social.telegram-im.url }}).
 
-### Follow me
+## Follow me
 
 Stay up-to-date to latest projects and releases.
 
@@ -37,11 +37,11 @@ post publishing via:
 On the world *wild* web I'm usually *pirafrank*. Here's an almost up-to-date
 list of [my active social profiles]({{ site.data.social.bentome.url }}).
 
-### Verify my identity
+## Verify my identity
 
 {% include contacts/identity-verification.md %}
 
-### PGP
+## PGP
 
 {% include contacts/pgp.html %}
 

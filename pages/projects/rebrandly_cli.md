@@ -6,7 +6,7 @@ asciinema: 94415
 github: "https://github.com/pirafrank/rebrandly_cli"
 ---
 
-### What is *rebrandly cli*?
+## What is *rebrandly cli*?
 
 Rebrandly_cli is an unofficial command line client for [Rebrandly](https://rebrandly.com).
 
@@ -14,19 +14,19 @@ You can use it to shorten your URLs with ease, without leaving the terminal. Loo
 
 {% asciinema 94415 %}
 
-### Why Rebrandly?
+## Why Rebrandly?
 
 Simply put, they offer unlimited short links for free, even using custom domains. That's a ton more compared to bit.ly which offers just 500 short links/month.
 
-### Awesome! Requirements?
+## Awesome! Requirements?
 
 Python 2.7 is all you need. I designed rebrandly_cli to work with what you already have installed on your Mac or Linux. It should work also on Windows if you install Python.
 
-### How to use it?
+## How to use it?
 
 Please read the [readme](https://github.com/pirafrank/rebrandly_cli/blob/master/README.md) file for full and updated information.
 
-### Contributions
+## Contributions
 
 Can I join you in this?
 

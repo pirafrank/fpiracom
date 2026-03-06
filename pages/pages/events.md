@@ -8,7 +8,7 @@ show_title: true
 - [Attended](#attended)
 - [Organized](#organized)
 
-### Attended
+## Attended
 
 Notable conferences and events I joined. I hope to see you at the next one!
 
@@ -55,7 +55,7 @@ Notable conferences and events I joined. I hope to see you at the next one!
 - Microsoft Future Decoded - Nov 12, 2015 - Rome
 - ESOCC European Conference on Service-Oriented and Cloud Computing - Sept 15, 2015 - Taormina ([link](https://link.springer.com/conference/esocc))
 
-### Organized
+## Organized
 
 A comprehensive list of events I've organised or contributed to.
 

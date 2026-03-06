@@ -7,7 +7,7 @@ show_title: true
 
 The best way is to email <span class="safe-email"><i>me at thisdomain</i></span>.
 
-Also available via [Matrix]({{ site.data.social.matrix.url }}) or
+You can also reach me on [Matrix]({{ site.data.social.matrix.url }}) and
 [Telegram]({{ site.data.social.telegram-im.url }}).
 
 ## Follow me
@@ -44,7 +44,5 @@ list of [my active social profiles]({{ site.data.social.bentome.url }}).
 ## PGP
 
 {% include contacts/pgp.html %}
-
-<br>
 
 Thank you for reaching this page. I look forward to hearing from you!

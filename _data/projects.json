@@ -53,6 +53,19 @@
       "maintained": true
     },
     {
+      "name": "POCR2",
+      "description": "Simple GUI and CLI tool to OCR and query your folder full of images with lots of text. Documents, recipes, screenshots: you name it. Runs fully local and saves data to a local SQLite database.",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/pocr2",
+      "repourl": "https://github.com/pirafrank/pocr2",
+      "license": "MIT",
+      "skills": ["Python", "SQLite", "Tesseract", "LLM"],
+      "creationDate": "2025-11-25T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "Poof",
       "description": "Magic manager of pre-built software. Install and manage awesome tools from GitHub Releases in one command. No manifests, formulae, ports, or repositories required",
       "group": "",

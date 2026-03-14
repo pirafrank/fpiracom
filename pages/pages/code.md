@@ -8,12 +8,12 @@ show_title: true
 ## Public registries
 
 - [Homebrew tap](https://github.com/pirafrank/homebrew-tap)
+- [APT/YUM/APK repository](https://pkg.fpira.com)
 - [AURA](https://github.com/pirafrank/aura)
 - [crates.io](https://crates.io/users/pirafrank)
 - [npm.js](https://www.npmjs.com/~pirafrank)
 - [rubygems.org](https://rubygems.org/profiles/pirafrank)
 - [Docker Hub](https://hub.docker.com/u/pirafrank)
-- [poof APT/Yum/APK repository](https://poof-pkgs.fpira.com)
 
 ## Projects
 

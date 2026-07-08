@@ -45,7 +45,7 @@ jobs:
       ENV_NAME: ${{ steps.get_deployment_info.outputs.env_name }}
     steps:
       - name: Clone repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.inputs.target_ref }}
       - name: Check for new blog posts
@@ -71,7 +71,7 @@ jobs:
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
     - name: Clone repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         ref: ${{ github.event.inputs.target_ref }}
         fetch-tags: true

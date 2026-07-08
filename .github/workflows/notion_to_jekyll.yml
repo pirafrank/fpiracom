@@ -22,7 +22,7 @@ jobs:
       ENV_NAME: ${{ steps.get_deployment_info.outputs.ENV_NAME }}
     steps:
       - name: Clone repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           # always checkout main branch
           ref: 'main'
@@ -47,7 +47,7 @@ jobs:
     needs: [checks]
     steps:
     - name: Clone repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         # always checkout main branch
         ref: main

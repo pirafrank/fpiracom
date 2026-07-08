@@ -1,6 +1,5 @@
 {
   "buildCommand": "bash vercel.sh",
-  "public": false,
   "github": {
     "enabled": false,
     "silent": true

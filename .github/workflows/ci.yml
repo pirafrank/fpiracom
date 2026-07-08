@@ -11,6 +11,7 @@ on:
     types: [opened, synchronize, reopened]
     branches-ignore:
       - 'feature/**'
+      - 'post/**'
   workflow_dispatch:
 
 jobs:
@@ -65,7 +66,7 @@ jobs:
     # This should always perform a preview deploy.
     - name: Deploy on Vercel
       id: deploy_to_vercel
-      uses: amondnet/vercel-action@v42.2.0
+      uses: amondnet/vercel-action@v42.3.0
       # because dependabot[bot] is blocked from accessing secrets and writable tokens
       if: github.actor != 'dependabot[bot]'
       with:

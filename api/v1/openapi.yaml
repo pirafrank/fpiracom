@@ -1,4 +1,4 @@
-openapi: 3.0.3
+openapi: 3.1.1
 info:
   title: fpira.com website and blog API
   description: API endpoints for blog posts, categories, tags and other site info
@@ -14,13 +14,14 @@ servers:
   - url: https://fpira.com/api
     description: Production API server
 
+
 paths:
   /v1/categories:
     get:
       operationId: v1CategoriesGet
       summary: 'Categories: Get all categories in the website'
       responses:
-        200:
+        '200':
           description: List of website categories of posts
           content:
             application/json:
@@ -29,6 +30,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Category'
 
+
   /v1/categories/{category_id}:
     get:
       operationId: v1CategoriesCategoryidGet
@@ -36,11 +38,12 @@ paths:
       parameters:
         - name: category_id
           in: path
+
           required: true
           schema:
             type: string
       responses:
-        200:
+        '200':
           description: List of website posts in given category
           content:
             application/json:
@@ -54,11 +57,13 @@ paths:
       operationId: v1IftttPosts
       summary: 'IFTTT: Get all posts in a format suitable for IFTTT'
       responses:
-        200:
+        '200':
           description: List of all posts in IFTTT format
+
           content:
             application/json:
               schema:
+
                 type: array
                 items:
                   $ref: '#/components/schemas/IftttObject'
@@ -68,7 +73,8 @@ paths:
       operationId: v1IftttPostsLatest
       summary: 'IFTTT: Get latest post in a format suitable for IFTTT'
       responses:
-        200:
+        '200':
+
           description: Latest post in IFTTT format
           content:
             application/json:
@@ -80,21 +86,25 @@ paths:
       operationId: v1PagesGet
       summary: 'Pages: Get all pages'
       responses:
-        200:
+        '200':
           description: List of pages
           content:
+
             application/json:
               schema:
                 type: array
                 items:
                   $ref: '#/components/schemas/Page'
 
+
   /v1/posts:
+
     get:
       operationId: v1PostsGet
+
       summary: 'Posts: Get all posts (sorted by last update date)'
       responses:
-        200:
+        '200':
           description: Array of posts sorted by creation date
           content:
             application/json:
@@ -104,11 +114,13 @@ paths:
                   $ref: '#/components/schemas/Post'
 
   /v1/posts/latest:
+
     get:
       operationId: v1PostsLatestGet
       summary: 'Posts: Get latest blog post'
       responses:
-        200:
+        '200':
+
           description: Latest (by creation date) post details
           content:
             application/json:
@@ -120,7 +132,7 @@ paths:
       operationId: v1PostsByUpdateGet
       summary: 'Posts: Get all posts (sorted by last update date)'
       responses:
-        200:
+        '200':
           description: Array of posts sorted by update date
           content:
             application/json:
@@ -129,15 +141,17 @@ paths:
                 items:
                   $ref: '#/components/schemas/Post'
 
+
   /v1/posts/by_update/latest:
     get:
       operationId: v1PostsByUpdateLatestGet
       summary: 'Posts: Get latest blog post'
       responses:
-        200:
+        '200':
           description: Latest (by update date) post details
           content:
             application/json:
+
               schema:
                 $ref: '#/components/schemas/Post'
 
@@ -146,9 +160,10 @@ paths:
       operationId: v1TagsGet
       summary: 'Tags: Get all tags in the website'
       responses:
-        200:
+        '200':
           description: List of website tags of posts
           content:
+
             application/json:
               schema:
                 type: array
@@ -166,7 +181,7 @@ paths:
           schema:
             type: string
       responses:
-        200:
+        '200':
           description: List of website posts having given tag
           content:
             application/json:
@@ -176,11 +191,12 @@ paths:
                   $ref: '#/components/schemas/Post'
 
   /v1/templates:
+
     get:
       operationId: v1TemplatesGet
       summary: 'Templates: Get list of templates'
       responses:
-        200:
+        '200':
           description: List of templates
           content:
             application/json:
@@ -200,27 +216,32 @@ paths:
           schema:
             type: string
       responses:
-        200:
+        '200':
           description: The requested template
           content:
             text/plain:
               schema:
+
                 type: string
+
 
   /v1/version:
     get:
       operationId: v1VersionGet
       summary: 'Version: Get website build info and version'
       responses:
-        200:
+        '200':
+
           description: Build and version details
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Version'
 
+
 components:
   schemas:
+
     Type:
       type: string
       enum:
@@ -232,8 +253,8 @@ components:
       type: object
       properties:
         type:
-          type: string
           $ref: "#/components/schemas/Type"
+
         title:
           type: string
         id:
@@ -248,7 +269,6 @@ components:
       type: object
       properties:
         type:
-          type: string
           $ref: "#/components/schemas/Type"
         id:
           type: string
@@ -260,12 +280,15 @@ components:
           type: string
         description:
           type: string
+
         published:
           type: string
+
           format: date-time
         lastUpdate:
           type: string
           format: date-time
+
         updates:
           type: array
           items:
@@ -282,11 +305,12 @@ components:
           type: string
 
     Category:
+
       type: object
       properties:
         type:
-          type: string
           $ref: "#/components/schemas/Type"
+
         id:
           type: string
         name:
@@ -294,13 +318,13 @@ components:
         url:
           type: string
         count:
+
           type: integer
 
     Tag:
       type: object
       properties:
         type:
-          type: string
           $ref: "#/components/schemas/Type"
         id:
           type: string
@@ -334,6 +358,7 @@ components:
           properties:
             hash:
               type: string
+
             url:
               type: string
             dateTime:
@@ -343,6 +368,7 @@ components:
               type: object
               properties:
                 name:
+
                   type: string
                 url:
                   type: string
@@ -360,3 +386,4 @@ components:
           type: string
         value3:
           type: string
+

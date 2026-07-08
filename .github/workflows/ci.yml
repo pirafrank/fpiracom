@@ -43,7 +43,13 @@ jobs:
 
     # Build Jekyll website to check for possible build errors
     - name: Build jekyll website
+      if: "!startsWith(github.head_ref, 'post/')"
       run: bundle exec rake release
+
+    # Build including future and drafts posts for post PRs with new blog posts
+    - name: Build jekyll website (future and drafts)
+      if: "startsWith(github.head_ref, 'post/')"
+      run: bundle exec rake build --all
 
     # Write git info to site data as file for Vercel deploy
     - name: Write git info to site data

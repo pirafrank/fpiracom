@@ -46,7 +46,8 @@ jobs:
       if: "!startsWith(github.head_ref, 'post/')"
       run: bundle exec rake release
 
-    # Build including future and drafts posts for post PRs with new blog posts
+    # Build including future posts and drafts for PRs with new blog posts
+    # to check for possible broken posts yet to publish
     - name: Build jekyll website (future and drafts)
       if: "startsWith(github.head_ref, 'post/')"
       run: bundle exec rake build --all

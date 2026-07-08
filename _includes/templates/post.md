@@ -1,4 +1,5 @@
 {% assign sorted_categories = site.categories | sort %}{% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}{% raw %}---
+date: 2026-12-31
 title: "Some title"
 subtitle: "Some subtitle"
 description: "Write here a longer description about the blog post."{% endraw %}

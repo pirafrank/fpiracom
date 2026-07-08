@@ -186,6 +186,8 @@ E.g.
 ![Attach Disk to VM]({{ site.baseurl }}/static/postimages/2016-01-08/001.jpg)
 ```
 
+**Practical recommendation**: use `1.91:1` ratio, ideally `1200×630`, because `seoimage` is primarily used as `og:image`. Keep important content centered because social platforms summary card may display/crop it more like a square thumbnail.
+
 ### Images with captions and/or links
 
 This is done using the `_includes/image.html` include.

@@ -4,7 +4,7 @@ title: "Fix Scoop installation error when installing WinDirStat on Windows 11"
 subtitle: "What worked when Scoop failed to extract WinDirStat"
 description: "A quick Windows 11 fix for Scoop failing to install WinDirStat with an Invoke-ExternalCommand FilePath null or empty error during extraction."
 category: [ "How-tos" ]
-tags: [ "windows", "tools", "sys-admin" ]
+tags: [ "Windows", "Tools", "Sys Admin" ]
 seoimage: "3015/seo.jpg"
 ---
 

@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "name": "Rust Audit Check Action",
+      "description": "Run cargo audit and check for RustSec security advisories in GitHub Actions",
+      "group": "",
+      "homepage": "https://github.com/marketplace/actions/rust-audit-check-action",
+      "repourl": "https://github.com/pirafrank/audit-check-action",
+      "license": "MIT",
+      "skills": ["Rust", "GitHub Actions"],
+      "creationDate": "2026-07-09T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "AURA - Arch User Repository Automation",
       "description": "Automated update of AUR repositories of my CLI tools",
       "group": "",

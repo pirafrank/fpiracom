@@ -88,11 +88,6 @@ home:
   max_posts: 5 # max number of latest posts to show in home page
   show_excerpt: true # choose whether to show or not excerpt of latest blog posts
 
-# /code customisation
-code:
-  projects:
-    limit: 8
-
 # Default values
 # has_fa: enable font-awesome
 # in_search: include in search. Posts are always included.

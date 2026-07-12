@@ -3,7 +3,16 @@ layout: page
 title: Code
 permalink: /code/
 show_title: true
+toc_items:
+  - Public registries
+  - Projects
+  - Utilities
+  - Release Channels
+  - Resources
+  - External resources
 ---
+
+{% include toc.html items = page.toc_items %}
 
 ## Public registries
 
@@ -20,8 +29,8 @@ show_title: true
 Side projects I make in my spare time, feel free to fork me. Most recent listed
 below.
 
-{% assign projects = site.data.projects.projects | where: "maintained", true | sort: "creationDate" | reverse %}
-{% for project in projects limit: site.code.projects.limit %} - [{{ project.name }}]({{ project.homepage }}), {{ project.description }}
+{% assign projects = site.data.projects.projects | where: "maintained", true | where: "isArchived", false | sort: "creationDate" | reverse %}
+{% for project in projects limit: 8 %} - [{{ project.name }}]({{ project.homepage }}), {{ project.description }}
 {% endfor %}
 
 Full list [here]({{ site.baseurl }}/projects).

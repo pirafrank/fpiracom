@@ -14,6 +14,19 @@
       "maintained": true
     },
     {
+      "name": "Packages - APT/YUM/APK repository",
+      "description": "APT/YUM/APK repositories with automated updates and asset publishing",
+      "group": "",
+      "homepage": "https://github.com/pirafrank/packages",
+      "repourl": "https://github.com/pirafrank/packages",
+      "license": "MIT",
+      "skills": ["Cloudflare Workers", "GitHub Actions"],
+      "creationDate": "2026-03-11T00:00:00Z",
+      "lastUpdate": "",
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "AURA - Arch User Repository Automation",
       "description": "Automated update of AUR repositories of my CLI tools",
       "group": "",
@@ -76,13 +89,13 @@
       "creationDate": "2025-11-25T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
-      "maintained": true
+      "maintained": false
     },
     {
       "name": "Poof",
       "description": "Magic manager of pre-built software. Install and manage awesome tools from GitHub Releases in one command. No manifests, formulae, ports, or repositories required",
       "group": "",
-      "homepage": "https://github.com/pirafrank/poof",
+      "homepage": "https://poof.fpira.com",
       "repourl": "https://github.com/pirafrank/poof",
       "license": "MIT",
       "skills": ["Rust", "GitHub Actions"],
@@ -140,8 +153,8 @@
       "skills": ["PowerShell", "GitHub Actions", "Rust"],
       "creationDate": "2024-09-10T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
-      "maintained": true
+      "isArchived": true,
+      "maintained": false
     },
     {
       "name": "what-size.yazi",
@@ -179,7 +192,7 @@
       "skills": ["Rust"],
       "creationDate": "2024-08-29T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
+      "isArchived": true,
       "maintained": true
     },
     {
@@ -245,7 +258,7 @@
       "creationDate": "2020-05-09T00:00:00Z",
       "lastUpdate": "",
       "isArchived": false,
-      "maintained": true
+      "maintained": false
     },
     {
       "name": "ephemeral",
@@ -271,7 +284,7 @@
       "creationDate": "2021-11-22T00:00:00Z",
       "lastUpdate": "",
       "isArchived": true,
-      "maintained": true
+      "maintained": false
     },
     {
       "name": "fpira.com",
@@ -306,10 +319,10 @@
       "homepage": "https://github.com/pirafrank/My-iA-Writer-templates#readme",
       "repourl": "https://github.com/pirafrank/My-iA-Writer-templates",
       "license": "GNU GPLv3",
-      "skills": [],
+      "skills": ["CSS"],
       "creationDate": "2016-07-19T00:00:00Z",
       "lastUpdate": "",
-      "isArchived": false,
+      "isArchived": true,
       "maintained": false
     },
     {

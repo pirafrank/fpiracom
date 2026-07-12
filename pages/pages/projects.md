@@ -3,9 +3,28 @@ layout: page
 title: Projects
 permalink: /projects/
 show_title: true
+toc_items:
+  - Active
+  - Supported
+  - Experiments
+  - Legacy
 ---
 
 *Sorted by creation date, in descending order.*
+
+<!--
+Documentation for boolean flags below from projects.json in site.data:
+active = "item.isArchived == false and item.maintained == true"
+supported = "item.isArchived == true and item.maintained == true"
+experiments = "item.isArchived == false and item.maintained == false"
+legacy = "item.isArchived == true and item.maintained == false"
+-->
+
+{% include toc.html items = page.toc_items %}
+
+## Active
+
+Projects maintained and in active development.
 
 {% assign projects = site.data.projects.projects |
 where_exp: "item", "item.isArchived == false and item.maintained == true" |
@@ -16,38 +35,59 @@ sort: "creationDate" | reverse %}
 
 {{ project.description }}
 
-{% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
+<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
 {% endfor %}
 
-## Maintenance only
+## Supported
 
-Projects below are currently shelved and set to receive only maintenance updates
-in the future.
+Projects set to receive only maintenance updates.
 
-{% assign legacy = site.data.projects.projects |
+{% assign maintenance = site.data.projects.projects |
 where_exp: "item", "item.isArchived == true and item.maintained == true" |
 sort: "creationDate" | reverse %}
-{% for lp in legacy %}
+{% for project in maintenance %}
 
-### [{{ lp.name }}]({{ lp.homepage }})
+### [{{ project.name }}]({{ project.homepage }})
 
-{{ lp.description }}
+{{ project.description }}
+
+<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
 {% endfor %}
 
-## Legacy projects
+## Experiments
 
-Projects below are archived or unmaintained.
+Experiments and projects not yet ready to be used daily.
+They may or may not ever be.
+
+{% assign experiments = site.data.projects.projects |
+where_exp: "item", "item.isArchived == false and item.maintained == false" |
+sort: "creationDate" | reverse %}
+{% for project in experiments %}
+
+### [{{ project.name }}]({{ project.homepage }})
+
+{{ project.description }}
+
+<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
+
+{% endfor %}
+
+## Legacy
+
+Archived and no more maintained projects.
 
 {% assign legacy = site.data.projects.projects |
 where_exp: "item", "item.isArchived == true and item.maintained == false" |
 sort: "creationDate" | reverse %}
-{% for lp in legacy %}
+{% for project in legacy %}
 
-### [{{ lp.name }}]({{ lp.homepage }})
+### [{{ project.name }}]({{ project.homepage }})
 
-{{ lp.description }}
+{{ project.description }}
+
+<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
 {% endfor %}
 

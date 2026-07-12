@@ -92,3 +92,23 @@
     color: $darkBlue;
   }
 }
+
+.link-chip {
+  font-size: 0.8em;
+  background-color: $white;
+  padding: 3px 8px 3px 8px;
+  margin-right: 5px;
+  border-radius: $buttonBorderRadius;
+  border: 1px solid $darkerGray;
+  color: $darkerGray;
+  text-decoration: none;
+  a {
+    font-size: 0.8rem;
+    color: $darkerGray;
+    text-decoration: none;
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+}

@@ -53,6 +53,21 @@ As many other Ruby-based projects, most tasks listed in this readme are also ava
 
 You can check the `rakefile` and use `rake` to list all of them.
 
+#### Publish a draft
+
+To publish the most recent visible top-level markdown draft, run:
+
+```sh
+rake publish date=2026-07-12
+```
+
+The task looks only at non-hidden `.md` files directly under `_drafts`,
+ignores subfolders, prefers the latest Git commit date when a file has
+history, falls back to file modification time when it does not, and picks the
+most recent result overall. It fails safely if the date is invalid, no
+eligible top-level markdown drafts are available, or the destination post
+already exists.
+
 ### Use environment variables
 
 Thanks to the `jekyll-environment-variables` plugin, you can use `{{ site.env.MYENV }}` in Liquid expressions.
@@ -125,6 +140,16 @@ gh workflow run workflow --ref branch-name -f myparameter=myvalue
 ```
 
 For futher info, [check the docs](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow#running-a-workflow-using-github-cli).
+
+#### Publish a draft from GitHub Actions
+
+The repository also provides a manual `Publish draft` workflow triggered via
+`workflow_dispatch`.
+
+Provide a required `date` input in `YYYY-MM-DD` format. The workflow invokes
+the same `rake publish date=YYYY-MM-DD` task used locally, then commits the
+resulting `_drafts` and `_posts` changes through
+[`pirafrank/github-commit-sign@v0`](https://github.com/marketplace/actions/github-commit-sign).
 
 ## Algolia search
 

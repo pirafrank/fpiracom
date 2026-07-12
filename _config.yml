@@ -269,4 +269,5 @@ exclude:
     - zj-workspace.kdl
     - .zellij_layout.kdl
     - schemas/**
+    - test/**
 

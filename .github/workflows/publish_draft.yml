@@ -1,0 +1,76 @@
+name: 'Publish draft'
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Publish date (YYYY-MM-DD)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    name: Publish draft
+    runs-on: ubuntu-24.04
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v7
+      with:
+        ref: main
+        fetch-depth: 0
+
+    - name: Setup Jekyll environment
+      uses: ./.github/actions/setup-jekyll-env
+
+    - name: Publish draft
+      run: bundle exec rake publish date=${{ inputs.date }}
+
+    - name: Check edited files
+      id: check_edited_files
+      shell: bash
+      run: |
+        changed="$(git ls-files -mo -- _posts | tr '\n' ' ' | xargs)"
+        deleted="$(git ls-files -d -- _drafts | tr '\n' ' ' | xargs)"
+        dirty='false'
+
+        if [ -n "${changed}" ] || [ -n "${deleted}" ]; then
+          dirty='true'
+        fi
+
+        echo "changed=${changed}" >> "$GITHUB_OUTPUT"
+        echo "deleted=${deleted}" >> "$GITHUB_OUTPUT"
+        echo "dirty=${dirty}" >> "$GITHUB_OUTPUT"
+
+    - name: Check if there are changes
+      shell: bash
+      run: |
+        if [ "${{ steps.check_edited_files.outputs.dirty }}" != 'true' ]; then
+          echo 'No publish changes detected. This workflow will not commit anything.'
+        else
+          echo 'Publish changes detected. This workflow will commit the following files:'
+          git ls-files -dmo -- _drafts _posts
+        fi
+
+    - name: Generate commit message
+      id: generate_commit_message
+      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.check_edited_files.outputs.dirty == 'true' }}
+      shell: bash
+      run: |
+        message="Publish draft for ${{ inputs.date }}"
+        echo "Commit message: ${message}"
+        echo "message=${message}" >> "$GITHUB_OUTPUT"
+    - name: Commit changes
+      id: commit_changes
+      uses: pirafrank/github-commit-sign@v0
+      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.check_edited_files.outputs.dirty == 'true' }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=main --commitMessage='${{ steps.generate_commit_message.outputs.message }}' --changed ${{ steps.check_edited_files.outputs.changed }} --deleted ${{ steps.check_edited_files.outputs.deleted }}"
+    - name: Print commit URL
+      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.check_edited_files.outputs.dirty == 'true' }}
+      run: |
+        echo "${{ steps.commit_changes.outputs.commitUrl }}"

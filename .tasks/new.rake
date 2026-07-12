@@ -40,17 +40,17 @@ subtitle: Some subtitle
 description: Write here a longer description about the blog post.
 categories: #{format_list_as_yaml(categories)}
 tags: #{format_list_as_yaml(tags)}
-seoimage: "300x/some-seo-pic.jpg"
+seoimage: "3000/seo.jpg"
 ---
 
-![image description]({{ site.baseurl }}/static/postimages/300x/some-pic.jpg)
+![image description]({{ site.baseurl }}/static/postimages/3000/001.jpg)
 
 {% include image.html
-url="/static/postimages/2020-06-08/office.jpg"
-desc="Image by Markus Spiske from Pixabay"
+url="/static/postimages/3000/001.jpg"
+desc="Image by Someone showing something interesting"
 alt="An office with a desk and a computer mouse"
 link="https://somehost.local/some/article"
-credits="https://pixabay.com/users/markusspiske-670330/"
+credits="https://pixabay.com/users/johndoe-123/"
 %}
 
 {% gist 40880dbc3e2dcfbdc1dd817b8880fa66 %}

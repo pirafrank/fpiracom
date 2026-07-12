@@ -1,4 +1,4 @@
-desc "list tags, categories, etc (E.g. rake list what=tags)"
+desc "list tags, categories, etc (eg: rake list what=tags)"
 task :list do
   what = ENV['what'] || ENV['w']
   if what.nil?

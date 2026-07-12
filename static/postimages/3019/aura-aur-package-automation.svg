@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#111827"/>
+  <rect x="40" y="40" width="1120" height="550" rx="28" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="90" y="125" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#f8fafc">Automating AUR Packages with AURA</text>
+  <text x="90" y="175" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#cbd5e1">GitHub Releases - YAML config - PKGBUILD / .SRCINFO - signed push to aur.archlinux.org</text>
+
+  <rect x="90" y="250" width="180" height="150" rx="18" fill="#1d4ed8"/>
+  <text x="180" y="315" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#eff6ff">GitHub</text>
+  <text x="180" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#eff6ff">Release</text>
+
+  <rect x="320" y="250" width="190" height="150" rx="18" fill="#0f766e"/>
+  <text x="415" y="315" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#ecfeff">AURA config</text>
+  <text x="415" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#ccfbf1">poof.yaml</text>
+
+  <rect x="560" y="250" width="190" height="150" rx="18" fill="#7c3aed"/>
+  <text x="655" y="305" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#f5f3ff">PKGBUILD</text>
+  <text x="655" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ede9fe">+ .SRCINFO</text>
+  <text x="655" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#ddd6fe">minijinja + makepkg</text>
+
+  <rect x="800" y="250" width="220" height="150" rx="18" fill="#b45309"/>
+  <text x="910" y="305" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#fff7ed">AUR submodule</text>
+  <text x="910" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffedd5">signed SSH push</text>
+  <text x="910" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#fed7aa">aur.archlinux.org</text>
+
+  <path class="connector-arrow" d="M270 321 H300 V315 L316 325 L300 335 V329 H270 Z" fill="#94a3b8"/>
+  <path class="connector-arrow" d="M510 321 H540 V315 L556 325 L540 335 V329 H510 Z" fill="#94a3b8"/>
+  <path class="connector-arrow" d="M750 321 H780 V315 L796 325 L780 335 V329 H750 Z" fill="#94a3b8"/>
+
+  <text x="90" y="485" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#e2e8f0">
+    <tspan x="90" y="485">AURA keeps each package as an AUR git submodule and updates both</tspan>
+    <tspan x="90" y="518">PKGBUILD and .SRCINFO.</tspan>
+  </text>
+</svg>

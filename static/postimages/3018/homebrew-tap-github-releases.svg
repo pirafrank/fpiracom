@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect x="40" y="40" width="1120" height="550" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="90" y="125" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#f8fafc">Automating Homebrew Formula Updates</text>
+  <text x="90" y="175" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#cbd5e1">GitHub Releases - YAML config - minijinja template - Formula.rb - brew install</text>
+
+  <rect x="90" y="250" width="180" height="150" rx="18" fill="#1d4ed8"/>
+  <text x="180" y="315" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#eff6ff">GitHub</text>
+  <text x="180" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#eff6ff">Release</text>
+
+  <rect x="335" y="250" width="180" height="150" rx="18" fill="#0f766e"/>
+  <text x="425" y="315" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#ecfeff">configurations</text>
+  <text x="425" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#ccfbf1">poof.yaml</text>
+
+  <rect x="580" y="250" width="180" height="150" rx="18" fill="#7c3aed"/>
+  <text x="670" y="315" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#f5f3ff">templates</text>
+  <text x="670" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#ede9fe">poof.rb.jinja</text>
+
+  <rect x="825" y="250" width="180" height="150" rx="18" fill="#b45309"/>
+  <text x="915" y="315" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#fff7ed">Formula</text>
+  <text x="915" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#ffedd5">poof.rb</text>
+
+  <path class="connector-arrow" d="M270 321 H315 V315 L331 325 L315 335 V329 H270 Z" fill="#94a3b8"/>
+  <path class="connector-arrow" d="M515 321 H560 V315 L576 325 L560 335 V329 H515 Z" fill="#94a3b8"/>
+  <path class="connector-arrow" d="M760 321 H805 V315 L821 325 L805 335 V329 H760 Z" fill="#94a3b8"/>
+
+  <text x="90" y="495" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#e2e8f0">The tap does not build binaries. It translates release metadata into Homebrew metadata.</text>
+</svg>

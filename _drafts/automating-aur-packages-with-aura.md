@@ -295,4 +295,10 @@ It keeps AUR repositories as submodules, uses a small config-and-template model,
 
 That makes it a good second step after Homebrew. The release-driven philosophy is the same, but the conventions are different enough to justify their own repository, workflow, and debugging surface.
 
+The next, and last article in the series, will be about automating build and publish of signed APT, YUM/DNF, and APK repositories from GitHub Releases.
+
+I hope it helps. Thanks for reading.
+
+<!--
 Next up: [Building APT, YUM/DNF, and APK Repositories]({% link _drafts/building-linux-package-repositories.md %}).
+-->

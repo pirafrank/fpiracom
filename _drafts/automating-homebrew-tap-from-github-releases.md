@@ -267,4 +267,10 @@ brew install pirafrank/tap/poof
 
 That is the point.
 
+Next post will get into automating update of AUR (Arch User Repository) from GitHub Relases.
+
+I hope it helps. Thanks for reading.
+
+<!--
 Next up: [Automating AUR Packages with AURA]({% link _drafts/automating-aur-packages-with-aura.md %}).
+-->

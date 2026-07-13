@@ -448,4 +448,6 @@ The underlying philosophy is consistent across the series, but the implementatio
 
 That split keeps each repository smaller, easier to debug, and closer to the conventions of the package manager it serves.
 
-I hope it helps. Thanks for reading.
+Wow! It has been quite a journey. I'm happy to have made it this far.
+
+I hope you enjoyed it. Thanks for reading.

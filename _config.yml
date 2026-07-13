@@ -51,9 +51,6 @@ title_separator: "&#183;"
 
 # Theme Engine
 # To change site-wide fonts and colors, go to _sass/_variables anche change the hex values.
-theme_engine:
-  primary_color: 3344aa
-  secondary_color: 4183C4
 
 # Web Analytics
 # Please check the README file to know which env vars to set.

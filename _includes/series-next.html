@@ -1,0 +1,10 @@
+{% if page.series %}
+  {% if sorted_posts and sorted_posts.size > 1 and page.part < sorted_posts.size %}
+    <div class="toc series-next">
+      <strong>Next in series:</strong>
+      {% assign next_post = sorted_posts[page.part] %}
+      <a href="{{ next_post.url }}">{{ next_post.title }}</a>
+      <i class="fa-solid fa-angles-right"></i>
+    </div>
+  {% endif %}
+{% endif %}

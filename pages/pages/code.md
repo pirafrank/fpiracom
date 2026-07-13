@@ -17,7 +17,7 @@ toc_items:
 ## Public registries
 
 - [Homebrew tap](https://github.com/pirafrank/homebrew-tap)
-- [APT/YUM/APK repository](https://pkg.fpira.com)
+- [APT/YUM/APK repositories](https://pkg.fpira.com)
 - [AURA](https://github.com/pirafrank/aura)
 - [crates.io](https://crates.io/users/pirafrank)
 - [npm.js](https://www.npmjs.com/~pirafrank)
@@ -30,10 +30,21 @@ Side projects I make in my spare time, feel free to fork me. Most recent listed
 below.
 
 {% assign projects = site.data.projects.projects | where: "maintained", true | where: "isArchived", false | sort: "creationDate" | reverse %}
-{% for project in projects limit: 8 %} - [{{ project.name }}]({{ project.homepage }}), {{ project.description }}
+{% for project in projects limit: 8 %}
+
+**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
+
+<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
+
 {% endfor %}
 
 Full list [here]({{ site.baseurl }}/projects).
+
+## Scripts and snippets
+
+- Scripts in [bin dotfiles]({{ site.data.social.github.url }}/dotfiles/tree/main/bin)
+- [Zsh autoloaded functions]({{ site.data.social.github.url }}/dotfiles/tree/main/zsh/autoloaded)
+- Snippets on [GitHub Gists]({{ site.data.social.github.gist }})
 
 ## Utilities
 

@@ -125,6 +125,8 @@ A simple script trigged every 20 minutes reminds you to take a break. For OS X
 
 A simple web panel to control your Raspberry Pi on a local network.
 
-<br>
+---
+
+Visit the [Code]({{ site.baseurl }}/code) page to discover more tools and utilities.
 
 Thank you for reaching this page.

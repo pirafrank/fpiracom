@@ -5,6 +5,8 @@ description: "How AURA updates Arch User Repository packages using release metad
 category: [ "How-tos" ]
 tags: [ "CI-CD", "GitHub", "Linux", "Tools", "Python" ]
 seoimage: "3019/seo.jpg"
+series: "CLI tools packaging automation"
+part: 2
 ---
 
 ![Automating AUR packages with AURA]({{ site.baseurl }}/static/postimages/3019/aura-aur-package-automation.svg)

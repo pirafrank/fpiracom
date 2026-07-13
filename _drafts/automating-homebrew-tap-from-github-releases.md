@@ -5,6 +5,8 @@ description: "How to keep a Homebrew tap synchronized with GitHub Releases using
 category: [ "How-tos" ]
 tags: [ "CI-CD", "GitHub", "macOS", "Linux", "Tools", "Python" ]
 seoimage: "3018/seo.jpg"
+series: "CLI tools packaging automation"
+part: 1
 ---
 
 ![Automating a Homebrew tap from GitHub Releases]({{ site.baseurl }}/static/postimages/3018/homebrew-tap-github-releases.svg)

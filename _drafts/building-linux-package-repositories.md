@@ -5,6 +5,8 @@ description: "How to build and publish signed APT, YUM/DNF, and APK repositories
 category: [ "How-tos" ]
 tags: [ "CI-CD", "GitHub", "Linux", "Debian", "CentOS", "Cloud" ]
 seoimage: "3020/seo.jpg"
+series: "CLI tools packaging automation"
+part: 3
 ---
 
 ![Building APT, YUM/DNF, and APK repositories]({{ site.baseurl }}/static/postimages/3020/linux-package-repositories.svg)

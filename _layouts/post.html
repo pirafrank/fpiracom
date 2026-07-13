@@ -53,11 +53,17 @@ custom_css: ['layouts/posts']
       </div>
       {% endif %}
 
+      {% capture toc_content %}
+        {% toc %}
+      {% endcapture %}
+      {% assign toc_text = toc_content | strip_html | strip %}
+      {% if toc_text != empty %}
       <div id="table-of-contents" class="toc">
         <strong>Table of Contents</strong>
         <br />
-        {% toc %}
+        {{ toc_content }}
       </div>
+      {% endif %}
 
       <div class="entry">
         {{ content }}

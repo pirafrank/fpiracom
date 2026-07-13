@@ -11,10 +11,6 @@ part: 2
 
 ![Automating AUR packages with AURA]({{ site.baseurl }}/static/postimages/3019/aura-aur-package-automation.svg)
 
-> Part 2 of a 3 part CLI packaging automation series.
->
-> Previous: [Automating Homebrew Formula Updates from GitHub Releases]({% link _drafts/automating-homebrew-tap-from-github-releases.md %})
-
 In [part 1]({% link _drafts/automating-homebrew-tap-from-github-releases.md %}), I described the basic philosophy behind this series: a GitHub Release stays the source of truth, and packaging metadata is generated from it.
 
 Arch Linux solves the same problem, but the packaging conventions are different enough that I keep the automation in a separate repository called [AURA](https://github.com/pirafrank/aura){:target="_blank"}{:rel="noopener noreferrer"}.

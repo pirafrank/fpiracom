@@ -11,8 +11,6 @@ part: 1
 
 ![Automating a Homebrew tap from GitHub Releases]({{ site.baseurl }}/static/postimages/3018/homebrew-tap-github-releases.svg)
 
-> Part 1 of a 3 part CLI packaging automation series.
-
 When publishing CLI tools, building the binary is usually the easy part.
 
 The harder part starts after the release is already out. Users want to install software with the package manager they already trust, not with a shell snippet they pasted from a README six months ago and forgot about. Once you support more than one platform, manual packaging work starts repeating in a very boring way:

@@ -11,12 +11,6 @@ part: 3
 
 ![Building APT, YUM/DNF, and APK repositories]({{ site.baseurl }}/static/postimages/3020/linux-package-repositories.svg)
 
-> Part 3 of a 3 part CLI packaging automation series.
->
-> Part 1: [Automating Homebrew Formula Updates from GitHub Releases]({% link _drafts/automating-homebrew-tap-from-github-releases.md %})
-> <br>
-> Part 2: [Automating AUR Packages with AURA]({% link _drafts/automating-aur-packages-with-aura.md %})
-
 The first two parts of this series were about generating package-manager metadata from GitHub Releases.
 
 - Homebrew needed a formula

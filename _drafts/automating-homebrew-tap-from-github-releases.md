@@ -4,15 +4,12 @@ subtitle: "Generating formulae from release metadata with minijinja and GitHub A
 description: "How to keep a Homebrew tap synchronized with GitHub Releases using YAML configuration, minijinja templates, asset digests, and GitHub Actions."
 category: [ "How-tos" ]
 tags: [ "CI-CD", "GitHub", "macOS", "Linux", "Tools", "Python" ]
-seoimage: "3018/homebrew-tap-github-releases.svg"
+seoimage: "3018/seo.jpg"
 ---
 
 ![Automating a Homebrew tap from GitHub Releases]({{ site.baseurl }}/static/postimages/3018/homebrew-tap-github-releases.svg)
 
-> Part 1 of a three-part CLI packaging automation series.
->
-> Next: [Automating AUR Packages with AURA]({% link _drafts/automating-aur-packages-with-aura.md %})  
-> Then: [Building APT, YUM/DNF, and APK Repositories]({% link _drafts/building-linux-package-repositories.md %})
+> Part 1 of a 3 part CLI packaging automation series.
 
 When publishing CLI tools, building the binary is usually the easy part.
 
@@ -68,6 +65,12 @@ The trade-off is maintaining more than one repository. For me that is fine, beca
 
 ## What the repository actually contains
 
+{% include image.html
+url="/static/postimages/3018/001.jpg"
+desc="Diagram of the automated Homebrew formula generator"
+alt="A GitHub Release feeds layered components including a YAML configuration, a Minijinja formula template, GitHub release metadata with asset digests, and a Python rendering step, producing a generated Formula/*.rb file that ends with a signed commit to the pirafrank/homebrew-tap repository."
+%}
+
 The tap repository has three main ingredients:
 
 - `configurations/` for YAML files, one per project
@@ -87,7 +90,7 @@ Everything project-specific is kept in configuration and templates.
 
 ## One YAML file per tool
 
-For `poof`, the configuration is:
+Configuration used for `poof` follows. Please note that Linux and macOS assets for x86_64 and arm64 are not a limitation of the tool, instead they cover the CPU architectures best supported by Homebrew on Linux and macOS.
 
 ```yaml
 github_repo: "pirafrank/poof"
@@ -101,14 +104,14 @@ asset_patterns:
   linux_arm: "{NAME}-{VERSION}-aarch64-unknown-linux-gnu.tar.gz"
 ```
 
-That file is enough to describe the release contract the tap expects:
+That file is enough to describe the release interface the tap expects:
 
 - which GitHub repository to watch
 - which template to render
 - where the output formula should be written
 - which release assets should exist for each supported platform and architecture
 
-The two placeholders are simple and useful:
+The two placeholders are simple yet enough:
 
 - `{NAME}` becomes the upstream project name, such as `poof`
 - `{VERSION}` becomes the latest release version, such as `0.6.1`

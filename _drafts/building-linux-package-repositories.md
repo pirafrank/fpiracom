@@ -4,15 +4,16 @@ subtitle: "Publishing signed Linux package repositories from GitHub Releases"
 description: "How to build and publish signed APT, YUM/DNF, and APK repositories using GitHub Actions, Cloudflare R2, and a Worker."
 category: [ "How-tos" ]
 tags: [ "CI-CD", "GitHub", "Linux", "Debian", "CentOS", "Cloud" ]
-seoimage: "3020/linux-package-repositories.svg"
+seoimage: "3020/seo.jpg"
 ---
 
 ![Building APT, YUM/DNF, and APK repositories]({{ site.baseurl }}/static/postimages/3020/linux-package-repositories.svg)
 
-> Part 3 of a three-part CLI packaging automation series.
+> Part 3 of a 3 part CLI packaging automation series.
 >
-> Previous: [Automating Homebrew Formula Updates from GitHub Releases]({% link _drafts/automating-homebrew-tap-from-github-releases.md %})  
-> Previous: [Automating AUR Packages with AURA]({% link _drafts/automating-aur-packages-with-aura.md %})
+> Part 1: [Automating Homebrew Formula Updates from GitHub Releases]({% link _drafts/automating-homebrew-tap-from-github-releases.md %})
+> <br>
+> Part 2: [Automating AUR Packages with AURA]({% link _drafts/automating-aur-packages-with-aura.md %})
 
 The first two parts of this series were about generating package-manager metadata from GitHub Releases.
 
@@ -173,6 +174,12 @@ By contrast, `vault-conductor` only has two APT targets:
 That is one reason I like the repository structure. The metadata for an app stays separate from the set of targets it supports in each ecosystem.
 
 ## One dispatch, three workflows
+
+{% include image.html
+url="/static/postimages/3020/001.jpg"
+desc="Layers required to transform GitHub Releases into production-ready Linux package repositories"
+alt="Diagram of packages automation repository showing: GitHub Releases feed package artifacts, repository metadata, signing, Cloudflare R2 storage, a Cloudflare Worker, and public APT, YUM/DNF, and APK repositories served from pkg.fpira.com"
+%}
 
 The repository is split into three publishing workflows:
 

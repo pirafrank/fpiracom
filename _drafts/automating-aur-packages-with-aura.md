@@ -4,15 +4,14 @@ subtitle: "Generating PKGBUILD and .SRCINFO files from GitHub Releases"
 description: "How AURA updates Arch User Repository packages using release metadata, minijinja templates, SSH-signed commits, and GitHub Actions."
 category: [ "How-tos" ]
 tags: [ "CI-CD", "GitHub", "Linux", "Tools", "Python" ]
-seoimage: "3019/aura-aur-package-automation.svg"
+seoimage: "3019/seo.jpg"
 ---
 
 ![Automating AUR packages with AURA]({{ site.baseurl }}/static/postimages/3019/aura-aur-package-automation.svg)
 
-> Part 2 of a three-part CLI packaging automation series.
+> Part 2 of a 3 part CLI packaging automation series.
 >
-> Previous: [Automating Homebrew Formula Updates from GitHub Releases]({% link _drafts/automating-homebrew-tap-from-github-releases.md %})  
-> Next: [Building APT, YUM/DNF, and APK Repositories]({% link _drafts/building-linux-package-repositories.md %})
+> Previous: [Automating Homebrew Formula Updates from GitHub Releases]({% link _drafts/automating-homebrew-tap-from-github-releases.md %})
 
 In [part 1]({% link _drafts/automating-homebrew-tap-from-github-releases.md %}), I described the basic philosophy behind this series: a GitHub Release stays the source of truth, and packaging metadata is generated from it.
 
@@ -43,6 +42,12 @@ Separating them also makes debugging much easier:
 I do not have to untangle one workflow trying to pretend that Homebrew and AUR are the same thing.
 
 ## What AURA actually manages
+
+{% include image.html
+url="/static/postimages/3019/001.jpg"
+desc="AURA automation system diagram"
+alt="Diagram of the AURA packaging automation workflow, with layered components for YAML configuration, Jinja templates, GitHub Release processing, PKGBUILD and .SRCINFO generation, optional validation, and publication to both the AUR repository and the parent GitHub repository"
+%}
 
 The repository keeps each AUR package as a git submodule:
 

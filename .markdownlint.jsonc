@@ -1,4 +1,9 @@
 {
+    // line length
+    "MD013": false,
+    // inline HTML
+    "MD033": false,
+    // first line in file should be a top level header (H1)
     "MD041": false,
     // tables
     "MD060": false,

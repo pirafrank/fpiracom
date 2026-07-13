@@ -11,15 +11,21 @@ part: 1
 
 ![Automating a Homebrew tap from GitHub Releases]({{ site.baseurl }}/static/postimages/3018/homebrew-tap-github-releases.svg)
 
-When publishing CLI tools, building the binary is usually the easy part.
+When publishing CLI tools, building the binary is usually the easy part. The harder part starts after the release is already out. Users want to install software with the package manager they already trust, not with a shell snippet they pasted from a README six months ago and forgot about.
 
-The harder part starts after the release is already out. Users want to install software with the package manager they already trust, not with a shell snippet they pasted from a README six months ago and forgot about. Once you support more than one platform, manual packaging work starts repeating in a very boring way:
+Once you support more than one platform, manual packaging work starts repeating in a very predictable way:
 
 - Homebrew needs a formula
 - Arch users expect a `PKGBUILD`
 - Debian and Ubuntu users want an APT repository
 - Fedora, RHEL, CentOS, and Amazon Linux users want a YUM or DNF repository
 - Alpine users expect APK packages
+
+I ran into this when I wanted to distribute [poof](https://poof.fpira.com) through the package managers users already have. When you try to solve a problem, you should not create a new one.
+
+## What I did
+
+After looking at the distributions and package managers I wanted to support, I decided that, besides version managers like [asdf](https://asdf-vm.com/), `poof` should be a first-class citizen on macOS and on as many Linux distributions as possible. The goal was to meet users where they already are, with tools they know and use.
 
 I split that problem into three repositories:
 
@@ -33,7 +39,7 @@ The main idea behind all three repositories is the same. A GitHub Release remain
 
 ## Why start with Homebrew
 
-Homebrew is the broadest entry point in this setup.
+[Homebrew](https://brew.sh/) is the broadest entry point in this setup.
 
 It is the package manager most people around me already use on macOS, and it also covers a smaller but still useful Linux audience through Linuxbrew. More importantly, a Homebrew formula is just a Ruby file. That makes it a nice place to start the series because the automation is easy to inspect: fetch release metadata, fill a template, commit the updated formula.
 
@@ -90,7 +96,7 @@ Everything project-specific is kept in configuration and templates.
 
 ## One YAML file per tool
 
-Configuration used for `poof` follows. Please note that Linux and macOS assets for x86_64 and arm64 are not a limitation of the tool, instead they cover the CPU architectures best supported by Homebrew on Linux and macOS.
+The configuration used for `poof` follows. Linux and macOS assets for x86_64 and arm64 are not a limitation of the tool; they cover the CPU architectures best supported by Homebrew on Linux and macOS.
 
 ```yaml
 github_repo: "pirafrank/poof"
@@ -111,7 +117,7 @@ That file is enough to describe the release interface the tap expects:
 - where the output formula should be written
 - which release assets should exist for each supported platform and architecture
 
-The two placeholders are simple yet enough:
+The two placeholders are simple but enough:
 
 - `{NAME}` becomes the upstream project name, such as `poof`
 - `{VERSION}` becomes the latest release version, such as `0.6.1`
@@ -123,6 +129,8 @@ That is one reason I care so much about cross-platform release naming. I wrote m
 ## Templates stay close to the final formula
 
 The template for `poof` is intentionally close to the generated Ruby:
+
+{% raw %}
 
 ```ruby
 class Poof < Formula
@@ -155,6 +163,8 @@ class Poof < Formula
 end
 ```
 
+{% endraw %}
+
 I like this pattern because the output remains easy to inspect for a human. The template is not doing clever metaprogramming. It is mostly a normal formula with a few injected values.
 
 That makes debugging easier too. If a release asset is wrong, I can look at the generated formula and immediately see the exact URL and checksum Homebrew will use.
@@ -182,7 +192,7 @@ That makes the release pipeline much easier to reason about. The build job owns 
 
 ## Updating the formula locally
 
-The local update flow is intentionally boring too:
+The local update flow is intentionally routine:
 
 ```bash
 python scripts/update_formula.py poof
@@ -225,7 +235,7 @@ The commit step is also intentionally conservative. The workflow checks for diff
 
 That signing step matters because packaging metadata is part of the trust story. Users are not only trusting the binary they install, they are also trusting the path that points them to it. I wrote a separate post about commit and tag signing in [{% post_url 2021-11-22-git-sign-commits-and-tags %}]({% post_url 2021-11-22-git-sign-commits-and-tags %}).
 
-## Failure modes are intentionally boring too
+## Failure modes stay predictable
 
 The script fails loudly in the cases I actually care about:
 
@@ -257,17 +267,13 @@ In the next article, I will look at AURA. Arch packaging solves the same problem
 
 ## Wrap-up
 
-For Homebrew, this setup gives me exactly what I want: release-driven updates, predictable formula generation, signed automated commits, and a tap that still looks like a normal Homebrew tap.
-
-That keeps the release flow repeatable and the user experience boring:
+For Homebrew, this setup keeps formula updates release-driven, signed, and still recognizable as a normal tap:
 
 ```bash
 brew install pirafrank/tap/poof
 ```
 
-That is the point.
-
-Next post will get into automating update of AUR (Arch User Repository) from GitHub Relases.
+The next post will cover automating AUR package updates from GitHub Releases.
 
 I hope it helps. Thanks for reading.
 

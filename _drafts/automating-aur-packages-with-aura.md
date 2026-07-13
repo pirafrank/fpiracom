@@ -87,6 +87,8 @@ The structure looks familiar if you read the Homebrew article. It is still confi
 
 The template becomes a `PKGBUILD` like this:
 
+{% raw %}
+
 ```bash
 pkgname=poof-bin
 pkgver={{ version }}
@@ -102,6 +104,8 @@ arch=('x86_64' 'aarch64' 'armv7h' 'riscv64')
 source_x86_64=("${url}/releases/download/v${pkgver}/poof-${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
 sha256sums_x86_64=('{{ x86_64_sha256 }}')
 ```
+
+{% endraw %}
 
 The generated `.SRCINFO` then mirrors that metadata in the format expected by AUR tooling.
 
@@ -175,7 +179,7 @@ That distinction is worth making explicit because it is easy to overstate what t
 
 ## The generator is still intentionally small
 
-Just like the Homebrew script, `scripts/update.py` is short and direct.
+As in the Homebrew repository, `scripts/update.py` is short and direct.
 
 It does four important things:
 
@@ -293,7 +297,7 @@ It keeps AUR repositories as submodules, uses a small config-and-template model,
 
 That makes it a good second step after Homebrew. The release-driven philosophy is the same, but the conventions are different enough to justify their own repository, workflow, and debugging surface.
 
-The next, and last article in the series, will be about automating build and publish of signed APT, YUM/DNF, and APK repositories from GitHub Releases.
+The final article in the series will cover building and publishing signed APT, YUM/DNF, and APK repositories from GitHub Releases.
 
 I hope it helps. Thanks for reading.
 

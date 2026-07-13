@@ -214,13 +214,13 @@ Then, for each matrix entry, it:
 4. builds a `.deb` package using `fpm`
 5. uploads the built package as an artifact
 
-The glibc check is a nice detail. The repository uses:
+The glibc check is an important boundary. The repository uses:
 
 ```bash
 just glibc binary/<app>
 ```
 
-to inspect the highest glibc version required by the binary and compare it against the configured ceiling for that target. That keeps the published packages aligned with the older distributions the repository still wants to support.
+to inspect the highest glibc version required by the binary and compare it against the configured ceiling for that target. This keeps the published packages aligned with the older distributions the repository still wants to support.
 
 After the `.deb` files are built, the publish job:
 
@@ -234,7 +234,7 @@ After the `.deb` files are built, the publish job:
 
 One detail I particularly like is that the repository uses the `multiple-versions-debian` branch of `reprepro`, and the generated `distributions` config sets `Limit: 0`. In other words, the repository does not pretend the APT side is a one-version-at-a-time bucket. It behaves like an actual package repository.
 
-Another useful detail is idempotency. Before adding a `.deb`, the publish step checks whether that version is already registered and skips `includedeb` if it is. That keeps retries boring.
+The publish step is also idempotent. Before adding a `.deb`, it checks whether that version is already registered and skips `includedeb` if it is. That keeps retries boring.
 
 ## YUM and DNF: one binary, several repository layouts
 
@@ -269,11 +269,11 @@ After building the RPMs, the publish job:
 8. exports the public GPG key
 9. syncs everything back to R2
 
-That is a good example of why "building package files" and "hosting repositories" are separate concerns. The RPM build itself is not the hardest part. The repository metadata and signing path are what turn the output into something DNF or YUM can actually trust and use.
+This is where "building package files" and "hosting repositories" become separate concerns. The RPM build itself is not the hardest part. The repository metadata and signing path are what turn the output into something DNF or YUM can actually trust and use.
 
 ## APK is the most different path
 
-APK is the least similar to the Homebrew and AUR articles, and honestly that is one reason I find it the most interesting part of the repository.
+APK is the least similar to the Homebrew and AUR articles, which makes it the clearest example of why this repository needs its own shape.
 
 The APK workflow still begins from the same release inputs, but it diverges quickly:
 
@@ -324,7 +324,7 @@ package() {
 }
 ```
 
-That is much simpler than the surrounding publication machinery, which is probably the right balance. The template only needs to describe the package. The workflow handles the repository side.
+That is much simpler than the surrounding publication machinery, and that balance fits the responsibility split. The template only needs to describe the package. The workflow handles the repository side.
 
 The publish job then:
 
@@ -336,7 +336,7 @@ The publish job then:
 6. exports the public key as `signing-key.rsa.pub`
 7. syncs the repository back to R2
 
-That is the part the combined draft completely missed, and it is probably the best example in the whole series of why the repository needs its own article.
+That publishing step is the strongest reason this repository needs its own article.
 
 ## Trust and signing are different here
 
@@ -434,7 +434,7 @@ This repository is the most operationally heavy part of my packaging setup, but 
 
 Instead of telling users to fetch standalone package files by hand, I can give them repository instructions that integrate with the package manager they already use. That means native install commands, native upgrades, signed metadata, and a predictable endpoint at `pkg.fpira.com`.
 
-That is why I split the original combined article into three parts.
+This is why I split the original combined article into three parts.
 
 The underlying philosophy is consistent across the series, but the implementation details are not:
 
@@ -444,6 +444,6 @@ The underlying philosophy is consistent across the series, but the implementatio
 
 That split keeps each repository smaller, easier to debug, and closer to the conventions of the package manager it serves.
 
-Wow! It has been quite a journey. I'm happy to have made it this far.
+That is the shape I wanted for the series: one release source, three packaging channels, and repositories that stay close to the ecosystems they serve.
 
-I hope you enjoyed it. Thanks for reading.
+I hope it helps. Thanks for reading.

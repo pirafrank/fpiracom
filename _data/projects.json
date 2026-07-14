@@ -3,7 +3,7 @@
     {
       "name": "Rust Audit Check Action",
       "description": "Run cargo audit and check for RustSec security advisories in GitHub Actions",
-      "group": "",
+      "group": "CI/CD",
       "homepage": "https://github.com/marketplace/actions/rust-audit-check-action",
       "repourl": "https://github.com/pirafrank/audit-check-action",
       "license": "MIT",
@@ -17,7 +17,7 @@
     {
       "name": "Packages - APT/YUM/APK repository",
       "description": "APT/YUM/APK repositories with automated updates and asset publishing",
-      "group": "",
+      "group": "CI/CD",
       "homepage": "https://github.com/pirafrank/packages",
       "repourl": "https://github.com/pirafrank/packages",
       "license": "MIT",
@@ -31,7 +31,7 @@
     {
       "name": "AURA - Arch User Repository Automation",
       "description": "Automated update of AUR repositories of my CLI tools",
-      "group": "",
+      "group": "CI/CD",
       "homepage": "https://github.com/pirafrank/aura",
       "repourl": "https://github.com/pirafrank/aura",
       "license": "MIT",
@@ -45,7 +45,7 @@
     {
       "name": "Homebrew Tap",
       "description": "Automated Formulae for my CLI tools on macOS and Linux",
-      "group": "",
+      "group": "CI/CD",
       "homepage": "https://github.com/pirafrank/homebrew-tap",
       "repourl": "https://github.com/pirafrank/homebrew-tap",
       "license": "MIT",
@@ -59,7 +59,7 @@
     {
       "name": "Vault Conductor",
       "description": "An SSH Agent that provides SSH keys stored in Bitwarden Secret Manager",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://github.com/pirafrank/vault-conductor",
       "repourl": "https://github.com/pirafrank/vault-conductor",
       "license": "MIT",
@@ -73,7 +73,7 @@
     {
       "name": "Rust CLI Boilerplate",
       "description": "A template for cross-platform binary CLI projects written in Rust",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://github.com/pirafrank/rust-cli-boilerplate",
       "repourl": "https://github.com/pirafrank/rust-cli-boilerplate",
       "license": "MIT",
@@ -87,7 +87,7 @@
     {
       "name": "POCR2",
       "description": "Simple GUI and CLI tool to OCR and query your folder full of images with lots of text. Documents, recipes, screenshots: you name it. Runs fully local and saves data to a local SQLite database.",
-      "group": "",
+      "group": "AI",
       "homepage": "https://github.com/pirafrank/pocr2",
       "repourl": "https://github.com/pirafrank/pocr2",
       "license": "MIT",
@@ -101,7 +101,7 @@
     {
       "name": "Poof",
       "description": "Magic manager of pre-built software. Install and manage awesome tools from GitHub Releases in one command. No manifests, formulae, ports, or repositories required",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://poof.fpira.com",
       "repourl": "https://github.com/pirafrank/poof",
       "license": "MIT",
@@ -115,7 +115,7 @@
     {
       "name": "Jekyll Simple Icons",
       "description": "A plugin that makes it easy to incorporate Simple Icons into your Jekyll website, providing access to a vast collection of popular brands icons",
-      "group": "",
+      "group": "Jekyll",
       "homepage": "https://github.com/pirafrank/jekyll-simple-icons",
       "repourl": "https://github.com/pirafrank/jekyll-simple-icons",
       "license": "MIT",
@@ -129,7 +129,7 @@
     {
       "name": "Rust EXIF Renamer",
       "description": "Rename photos in a given directory to their EXIF DateTimeOriginal and viceversa",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://github.com/pirafrank/rust_exif_renamer",
       "repourl": "https://github.com/pirafrank/rust_exif_renamer",
       "license": "MIT",
@@ -143,7 +143,7 @@
     {
       "name": "Jekyll AI Related",
       "description": "Jekyll plugin to generate list of related posts using AI and save them in site.data",
-      "group": "",
+      "group": "Jekyll",
       "homepage": "https://github.com/pirafrank/jekyll-ai-related",
       "repourl": "https://github.com/pirafrank/jekyll-ai-related",
       "license": "MIT",
@@ -157,7 +157,7 @@
     {
       "name": "Zed unofficial Windows builds",
       "description": "Unofficial stable and pre-release builds of the Zed editor for Windows, with version and release type matching. Easy install via scoop or pwsh script. Not affiliated with Zed Industries",
-      "group": "",
+      "group": "CI/CD",
       "homepage": "https://github.com/pirafrank/zed_unofficial_win_builds",
       "repourl": "https://github.com/pirafrank/zed_unofficial_win_builds",
       "license": "MIT",
@@ -171,7 +171,7 @@
     {
       "name": "what-size.yazi",
       "description": "A plugin for yazi to calculate the size of current selection or current working directory",
-      "group": "",
+      "group": "Plugins",
       "homepage": "https://github.com/pirafrank/what-size.yazi",
       "repourl": "https://github.com/pirafrank/what-size.yazi",
       "license": "MIT",
@@ -185,7 +185,7 @@
     {
       "name": "zellij-what-time",
       "description": "Zellij plugin to show host system date and/or time in the status bar. Zero-config, but customizable. Inspired by zellij-datetime",
-      "group": "",
+      "group": "Plugins",
       "homepage": "https://github.com/pirafrank/zellij-what-time",
       "repourl": "https://github.com/pirafrank/zellij-what-time",
       "license": "MIT",
@@ -199,7 +199,7 @@
     {
       "name": "appimage_updater",
       "description": "A CLI tool to look for AppImages in your $PATH and call appimageupdatetool to bulk update them",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://github.com/pirafrank/appimage_updater",
       "repourl": "https://github.com/pirafrank/appimage_updater",
       "license": "MIT",
@@ -213,7 +213,7 @@
     {
       "name": "Notion-to-Jekyll",
       "description": "A tool to manage Jekyll drafts and posts (including assets) via Notion",
-      "group": "",
+      "group": "Jekyll",
       "homepage": "https://github.com/pirafrank/notion-to-jekyll",
       "repourl": "https://github.com/pirafrank/notion-to-jekyll",
       "license": "MIT",
@@ -227,7 +227,7 @@
     {
       "name": "github-commit-sign",
       "description": "A node module and CLI tool to perform multi-file signed commits on a GitHub repo through their GraphQL APIs. Good for CI/CD environments",
-      "group": "",
+      "group": "CI/CD",
       "homepage": "https://github.com/marketplace/actions/github-commit-sign",
       "repourl": "https://github.com/pirafrank/github-commit-sign",
       "license": "MIT",
@@ -241,7 +241,7 @@
     {
       "name": "Jekyll ListMe",
       "description": "Jekyll plugin to list tags, categories, posts, pages, and more of your Jekyll website. It outputs data as plain text, CSV, TSV, PSV, JSON, or YAML",
-      "group": "",
+      "group": "Jekyll",
       "homepage": "https://github.com/pirafrank/jekyll-listme",
       "repourl": "https://github.com/pirafrank/jekyll-listme",
       "license": "MIT",
@@ -255,7 +255,7 @@
     {
       "name": "zenpath.xplr",
       "description": "A xplr theme inspired by zentable.xplr",
-      "group": "",
+      "group": "Plugins",
       "homepage": "https://github.com/pirafrank/zenpath.xplr#readme",
       "repourl": "https://github.com/pirafrank/zenpath.xplr",
       "license": "MIT",
@@ -269,7 +269,7 @@
     {
       "name": "Workspace",
       "description": "A workspace-in-a-container development environment, based on my dotfiles.",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://github.com/pirafrank/workspace#readme",
       "repourl": "https://github.com/pirafrank/workspace",
       "license": "MIT",
@@ -283,7 +283,7 @@
     {
       "name": "ephemeral",
       "description": "Bookmarkable, ephemeral text editor that runs in your browser",
-      "group": "",
+      "group": "Web",
       "homepage": "https://edit.fpira.com",
       "repourl": "https://github.com/pirafrank/ephemeral",
       "license": "",
@@ -297,7 +297,7 @@
     {
       "name": "Notion-to-Text",
       "description": "Get content of notion.site pages in plain text or as JSON",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://github.com/pirafrank/notion-to-text/tree/main/standalone#readme",
       "repourl": "https://github.com/pirafrank/notion-to-text",
       "license": "",
@@ -311,7 +311,7 @@
     {
       "name": "fpira.com",
       "description": "This very website and blog. It started off Jekyll Now, quickly became an heavily modified fork with more features and a custom SCSS framework coded from scratch. It is a place to tinker and test things, often resulting in overengineering for a personal website. I keep it on latest Jekyll. It's built and hosted on Vercel, with help of GitHub Actions.",
-      "group": "",
+      "group": "Jekyll",
       "homepage": "https://fpira.com",
       "repourl": "https://github.com/pirafrank/fpiracom",
       "license": "",
@@ -325,7 +325,7 @@
     {
       "name": "Rebrandly CLI",
       "description": "An unofficial command line client to shorten URL using rebrandly.com.",
-      "group": "",
+      "group": "CLI",
       "homepage": "/projects/rebrandly_cli",
       "repourl": "https://github.com/pirafrank/rebrandly_cli",
       "license": "GNU GPLv3",
@@ -339,7 +339,7 @@
     {
       "name": "iA Writer templates",
       "description": "Self-made templates for the awesome iA Writer. You can use them on both mobile and desktop version of the app.",
-      "group": "",
+      "group": "Plugins",
       "homepage": "https://github.com/pirafrank/My-iA-Writer-templates#readme",
       "repourl": "https://github.com/pirafrank/My-iA-Writer-templates",
       "license": "GNU GPLv3",
@@ -353,7 +353,7 @@
     {
       "name": "Alfred Workflows and Themes",
       "description": "Useful Alfred workflows to enhance your productivity on Mac. Good for developers and power-users.",
-      "group": "",
+      "group": "Plugins",
       "homepage": "/alfred-for-mac",
       "repourl": "https://github.com/pirafrank/alfred_workflows",
       "license": "GNU GPLv3",
@@ -367,7 +367,7 @@
     {
       "name": "Google Photos EXIF fixer",
       "description": "Script to fix pictures EXIF metadata before upload them to Google Photos.",
-      "group": "",
+      "group": "CLI",
       "homepage": "https://github.com/pirafrank/Google-Photos-EXIF-fixer#readme",
       "repourl": "https://github.com/pirafrank/Google-Photos-EXIF-fixer",
       "license": "GNU GPLv3",

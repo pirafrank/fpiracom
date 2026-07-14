@@ -3,17 +3,14 @@ layout: page
 title: Projects
 permalink: /projects/
 show_title: true
-toc_items:
-  - Public registries
-  - Pinned
-  - Active
-  - Supported
-  - Experiments
-  - Legacy
 ---
 
-{% assign not_featured = site.data.projects.projects |
-where_exp: "item", "item.isFeatured == false" %}
+{% assign projects = site.data.projects.projects |
+where_exp: "item", "item.isArchived != true or item.maintained != false" |
+sort: "creationDate" | reverse %}
+{% assign project_groups = projects | group_by: "group" | sort: "name" %}
+{% assign project_group_names = project_groups | map: "name" %}
+{% assign toc_items = project_group_names | unshift: "Pinned" | unshift: "Public registries" | push: "Legacy" %}
 
 Open-source projects I develop and maintain in my spare time.
 
@@ -27,7 +24,7 @@ experiments = "item.isArchived == false and item.maintained == false"
 legacy = "item.isArchived == true and item.maintained == false"
 -->
 
-{% include toc.html items = page.toc_items %}
+{% include toc.html items = toc_items %}
 
 ## Public registries
 
@@ -56,49 +53,17 @@ sort: "creationDate" | reverse %}
 
 {% endfor %}
 
-## Active
+{% for project_group in project_groups %}
 
-More projects maintained and in active development.
+## {{ project_group.name }}
 
-{% assign projects = not_featured |
-where_exp: "item", "item.isArchived == false and item.maintained == true" |
-sort: "creationDate" | reverse %}
-{% for project in projects %}
+{% for project in project_group.items %}
 
 **[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
 
 <span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
 {% endfor %}
-
-## Supported
-
-Projects set to receive only maintenance updates.
-
-{% assign maintenance = not_featured |
-where_exp: "item", "item.isArchived == true and item.maintained == true" |
-sort: "creationDate" | reverse %}
-{% for project in maintenance %}
-
-**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
-
-<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
-
-{% endfor %}
-
-## Experiments
-
-Experiments and projects not yet ready to be used daily.
-They may or may not ever be.
-
-{% assign experiments = not_featured |
-where_exp: "item", "item.isArchived == false and item.maintained == false" |
-sort: "creationDate" | reverse %}
-{% for project in experiments %}
-
-**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
-
-<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
 {% endfor %}
 

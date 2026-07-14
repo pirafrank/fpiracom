@@ -73,7 +73,7 @@ sort: "creationDate" %}
 
 **[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
 
-<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
+<div class="project-chips"><span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span>{% for p in project.skills %}<span class="tag-chip">{{ p }}</span>{% endfor %}</div>
 
 {% endfor %}
 

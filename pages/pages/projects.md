@@ -4,13 +4,20 @@ title: Projects
 permalink: /projects/
 show_title: true
 toc_items:
+  - Public registries
+  - Pinned
   - Active
   - Supported
   - Experiments
   - Legacy
 ---
 
-*Sorted by creation date, in descending order.*
+{% assign not_featured = site.data.projects.projects |
+where_exp: "item", "item.isFeatured == false" %}
+
+Open-source projects I develop and maintain in my spare time.
+
+All sorted by creation date, in descending order.
 
 <!--
 Documentation for boolean flags below from projects.json in site.data:
@@ -22,18 +29,43 @@ legacy = "item.isArchived == true and item.maintained == false"
 
 {% include toc.html items = page.toc_items %}
 
+## Public registries
+
+Projects in this page may be available for download from one or more of these public registries.
+
+- [Homebrew tap](https://github.com/pirafrank/homebrew-tap)
+- [APT/YUM/APK repositories](https://pkg.fpira.com)
+- [AURA](https://github.com/pirafrank/aura)
+- [crates.io](https://crates.io/users/pirafrank)
+- [npm.js](https://www.npmjs.com/~pirafrank)
+- [rubygems.org](https://rubygems.org/profiles/pirafrank)
+- [Docker Hub](https://hub.docker.com/u/pirafrank)
+
+## Pinned
+
+Featured project maintained and in active development.
+
+{% assign featured_projects = site.data.projects.projects |
+where_exp: "item", "item.isFeatured == true" |
+sort: "creationDate" | reverse %}
+{% for project in featured_projects %}
+
+**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
+
+<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
+
+{% endfor %}
+
 ## Active
 
-Projects maintained and in active development.
+More projects maintained and in active development.
 
-{% assign projects = site.data.projects.projects |
+{% assign projects = not_featured |
 where_exp: "item", "item.isArchived == false and item.maintained == true" |
 sort: "creationDate" | reverse %}
 {% for project in projects %}
 
-### [{{ project.name }}]({{ project.homepage }})
-
-{{ project.description }}
+**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
 
 <span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
@@ -43,14 +75,12 @@ sort: "creationDate" | reverse %}
 
 Projects set to receive only maintenance updates.
 
-{% assign maintenance = site.data.projects.projects |
+{% assign maintenance = not_featured |
 where_exp: "item", "item.isArchived == true and item.maintained == true" |
 sort: "creationDate" | reverse %}
 {% for project in maintenance %}
 
-### [{{ project.name }}]({{ project.homepage }})
-
-{{ project.description }}
+**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
 
 <span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
@@ -61,14 +91,12 @@ sort: "creationDate" | reverse %}
 Experiments and projects not yet ready to be used daily.
 They may or may not ever be.
 
-{% assign experiments = site.data.projects.projects |
+{% assign experiments = not_featured |
 where_exp: "item", "item.isArchived == false and item.maintained == false" |
 sort: "creationDate" | reverse %}
 {% for project in experiments %}
 
-### [{{ project.name }}]({{ project.homepage }})
-
-{{ project.description }}
+**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
 
 <span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
 
@@ -76,57 +104,10 @@ sort: "creationDate" | reverse %}
 
 ## Legacy
 
-Archived and no more maintained projects.
-
-{% assign legacy = site.data.projects.projects |
-where_exp: "item", "item.isArchived == true and item.maintained == false" |
-sort: "creationDate" | reverse %}
-{% for project in legacy %}
-
-### [{{ project.name }}]({{ project.homepage }})
-
-{{ project.description }}
-
-<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
-
-{% endfor %}
-
-### [Scaleway client]({{site.data.social.github.url}}/scaleway_api)
-
-Very simple Python module calling Scaleway APIs to create/manage/undeploy
-virtual servers. I've created it for my own needs before `scw`, so today
-you may want to use that instead.
-
-### [electron-dash-docset]({{ site.data.social.github.url }}/electron-dash-docset)
-
-A repository to generate a [Dash](https://kapeli.com/dash) docset for the
-[electron](https://electron.atom.io) documentation. Now with automatic check
-for new releases.
-
-### [Workflow for iOS recipes]({{ site.baseurl }}/projects/workflow-ios/)
-
-Recipes for the popular iOS app [Workflow](https://workflow.is/download).
-
-### [Battery Life Extender]({{ site.baseurl }}/projects/ble)
-
-The niblest solution of a battery life extender for OS X. Take care of your MacBook.
-
-### [OS X utils]({{site.data.social.github.url}}/OSX_utils)
-
-Collection of OS X utilities to speed up your productivity and take care of your
-OS X environment.
-
-### [Eye Relief]({{site.data.social.github.url}}/Eye_Relief)
-
-A simple script trigged every 20 minutes reminds you to take a break. For OS X
-10.8 and above.
-
-### [Raspberrypi web panel]({{site.data.social.github.url}}/raspberrypi-web-panel)
-
-A simple web panel to control your Raspberry Pi on a local network.
+Older projects are available in the [Legacy]({{ site.baseurl }}/projects/legacy/) page.
 
 ---
 
-Visit the [Code]({{ site.baseurl }}/code) page to discover more tools and utilities.
+Visit the [Code]({{ site.baseurl }}/code) page to discover scripts, tools and utilities.
 
 Thank you for reaching this page.

@@ -4,41 +4,25 @@ title: Code
 permalink: /code/
 show_title: true
 toc_items:
-  - Public registries
-  - Projects
+  - dotfiles
+  - Scripts and snippets
   - Utilities
   - Release Channels
   - Resources
   - External resources
 ---
 
+Tools, utilities, and more.
+
 {% include toc.html items = page.toc_items %}
 
-## Public registries
+## dotfiles
 
-- [Homebrew tap](https://github.com/pirafrank/homebrew-tap)
-- [APT/YUM/APK repositories](https://pkg.fpira.com)
-- [AURA](https://github.com/pirafrank/aura)
-- [crates.io](https://crates.io/users/pirafrank)
-- [npm.js](https://www.npmjs.com/~pirafrank)
-- [rubygems.org](https://rubygems.org/profiles/pirafrank)
-- [Docker Hub](https://hub.docker.com/u/pirafrank)
+My cross-platform and portable terminal setup.
 
-## Projects
+Configuration of tools I use daily and others I simply test.
 
-Side projects I make in my spare time, feel free to fork me. Most recent listed
-below.
-
-{% assign projects = site.data.projects.projects | where: "maintained", true | where: "isArchived", false | sort: "creationDate" | reverse %}
-{% for project in projects limit: 8 %}
-
-**[{{ project.name }}]({{ project.homepage }})**<br>{{ project.description }}
-
-<span class="link-chip"><a href="{{ project.repourl }}"><i class="fa-solid fa-code-branch" style="font-size: 0.9rem !important" aria-hidden="true"></i>&nbsp;Repo</a></span> {% for p in project.skills %}<span class="tag-chip">{{ p }}</span> {% endfor %}
-
-{% endfor %}
-
-Full list [here]({{ site.baseurl }}/projects).
+Available on [GitHub](https://github.com/pirafrank/dotfiles).
 
 ## Scripts and snippets
 

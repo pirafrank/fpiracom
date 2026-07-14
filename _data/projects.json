@@ -10,6 +10,7 @@
       "skills": ["Rust", "GitHub Actions"],
       "creationDate": "2026-07-09T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": true,
       "isArchived": false,
       "maintained": true
     },
@@ -23,6 +24,7 @@
       "skills": ["Cloudflare Workers", "GitHub Actions"],
       "creationDate": "2026-03-11T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -36,6 +38,7 @@
       "skills": ["Python", "Jinja templates", "GitHub Actions"],
       "creationDate": "2026-02-19T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -49,6 +52,7 @@
       "skills": ["Python", "Jinja templates", "GitHub Actions"],
       "creationDate": "2026-02-01T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -62,6 +66,7 @@
       "skills": ["Rust", "SSH", "GitHub Actions"],
       "creationDate": "2026-01-06T00:01:00Z",
       "lastUpdate": "",
+      "isFeatured": true,
       "isArchived": false,
       "maintained": true
     },
@@ -75,6 +80,7 @@
       "skills": ["Rust"],
       "creationDate": "2026-01-06T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -88,6 +94,7 @@
       "skills": ["Python", "SQLite", "Tesseract", "LLM"],
       "creationDate": "2025-11-25T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": false
     },
@@ -101,6 +108,7 @@
       "skills": ["Rust", "GitHub Actions"],
       "creationDate": "2025-04-18T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": true,
       "isArchived": false,
       "maintained": true
     },
@@ -114,6 +122,7 @@
       "skills": ["Ruby", "Jekyll Plugin"],
       "creationDate": "2025-03-09T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -127,6 +136,7 @@
       "skills": ["Rust"],
       "creationDate": "2023-06-10T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -140,6 +150,7 @@
       "skills": ["Ruby", "Jekyll Plugin"],
       "creationDate": "2025-02-15T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -153,6 +164,7 @@
       "skills": ["PowerShell", "GitHub Actions", "Rust"],
       "creationDate": "2024-09-10T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": false
     },
@@ -166,6 +178,7 @@
       "skills": ["Lua"],
       "creationDate": "2024-08-03T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -179,6 +192,7 @@
       "skills": ["Rust", "WebAssembly"],
       "creationDate": "2024-09-09T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -192,6 +206,7 @@
       "skills": ["Rust"],
       "creationDate": "2024-08-29T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": true
     },
@@ -205,6 +220,7 @@
       "skills": ["node.js", "JavaScript"],
       "creationDate": "2024-03-09T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": true
     },
@@ -218,6 +234,7 @@
       "skills": ["node.js", "JavaScript", "GitHub Actions"],
       "creationDate": "2024-02-29T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": true,
       "isArchived": false,
       "maintained": true
     },
@@ -231,6 +248,7 @@
       "skills": ["Ruby", "Jekyll Plugin"],
       "creationDate": "2024-03-20T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -244,6 +262,7 @@
       "skills": [],
       "creationDate": "2023-03-21T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -257,6 +276,7 @@
       "skills": ["Docker", "Shell", "Sys Admin"],
       "creationDate": "2020-05-09T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": false
     },
@@ -270,6 +290,7 @@
       "skills": ["JavaScript", "Web"],
       "creationDate": "2021-08-05T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -283,6 +304,7 @@
       "skills": ["node.js", "JavaScript", "AWS Lambda"],
       "creationDate": "2021-11-22T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": false
     },
@@ -296,6 +318,7 @@
       "skills": ["Jekyll", "SCSS", "Vercel", "GitHub Actions"],
       "creationDate": "2015-03-13T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": false,
       "maintained": true
     },
@@ -309,6 +332,7 @@
       "skills": ["Python"],
       "creationDate": "2016-11-16T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": false
     },
@@ -322,6 +346,7 @@
       "skills": ["CSS"],
       "creationDate": "2016-07-19T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": false
     },
@@ -335,6 +360,7 @@
       "skills": [],
       "creationDate": "2016-02-07T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": false
     },
@@ -348,6 +374,7 @@
       "skills": ["Python"],
       "creationDate": "2015-05-30T00:00:00Z",
       "lastUpdate": "",
+      "isFeatured": false,
       "isArchived": true,
       "maintained": false
     }

@@ -1,5 +1,4 @@
 <div id="table-of-contents" class="toc">
-    <strong>Table of Contents</strong>
     <ul id="toc" class="section-nav">
         {% for item in include.items %}
         <li class="toc-entry toc-h2"><a href="#{{ item | downcase | replace:' ','-' | replace: '.','-' }}">{{ item }}</a></li>

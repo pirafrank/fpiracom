@@ -26,9 +26,15 @@
 .pinned-project-image-link {
   display: block;
   text-decoration: none;
+
+  &.darkmode-ignore {
+    display: block;
+    isolation: isolate;
+  }
 }
 
 .pinned-project-image {
+  display: block;
   min-height: 10rem;
   background-color: $lighterGray;
   background-position: center;

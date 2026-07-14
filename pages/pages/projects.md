@@ -50,7 +50,7 @@ sort: "creationDate" %}
 {% for project in featured_projects %}
   {% assign project_image = project.image | default: '/assets/pages/project-placeholder.svg' %}
   <article class="pinned-project-card">
-    <a class="pinned-project-image-link" href="{{ project.homepage }}" aria-label="{{ project.name }}">
+    <a class="pinned-project-image-link darkmode-ignore" href="{{ project.homepage }}" aria-label="{{ project.name }}">
       <div class="pinned-project-image" style="background-image: url('{{ project_image | relative_url }}');" aria-hidden="true"></div>
     </a>
     <div class="pinned-project-content">

@@ -56,7 +56,7 @@ jobs:
       id: notion_to_jekyll
       with:
         notion-token: ${{ secrets.NOTION_TOKEN }}
-        notion-database-id: ${{ vars.NOTION_TO_JEKYLL_DATABASE_ID }}
+        notion-data-source-id: ${{ vars.NOTION_TO_JEKYLL_DATA_SOURCE_ID }}
         publish-to-posts: ${{ vars.NOTION_TO_JEKYLL_PUBLISH_TO_POSTS }}
         relative-date: ${{ vars.NOTION_TO_JEKYLL_RELATIVE_DATE }}
         site-url: "https://fpira.com"

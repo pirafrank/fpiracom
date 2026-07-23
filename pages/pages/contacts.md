@@ -34,8 +34,8 @@ post publishing via:
 - [JSON feed]({{ site.url | append: site.baseurl | append: site.feeds.json }})
 - [Telegram channel]({{ site.data.social.telegram-feed.url }}) for blog posts only.
 
-On the world *wild* web I'm usually *pirafrank*. Here's an almost up-to-date
-list of [my active social profiles]({{ site.data.social.bentome.url }}).
+On the world *wild* web I'm usually *pirafrank*. Here's an up-to-date
+list of [my active social profiles and URLs]({{ site.data.social.linktree.url }}).
 
 ## Verify my identity
 

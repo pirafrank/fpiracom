@@ -227,9 +227,9 @@
     },
     {
       "name": "Notion-to-Jekyll",
-      "description": "A tool to manage Jekyll drafts and posts (including assets) via Notion",
+      "description": "An action to manage Jekyll drafts and posts (including assets) via Notion",
       "group": "Jekyll",
-      "homepage": "https://github.com/pirafrank/notion-to-jekyll",
+      "homepage": "https://github.com/marketplace/actions/pirafrank-notion-to-jekyll",
       "repourl": "https://github.com/pirafrank/notion-to-jekyll",
       "image": "",
       "license": "MIT",

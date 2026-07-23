@@ -24,7 +24,13 @@ module Jekyll
         # Add a SEO image to the post data
         seoimage = ''
         if post.data['seoimage']
-          seoimage = "#{site.config['url']}#{site.config['baseurl']}/static/postimages/#{post.data['seoimage']}"
+          if post.data['seoimage'].start_with?('http')
+            seoimage = post.data['seoimage']
+          elsif post.data['seoimage'].start_with?('/')
+            seoimage = "#{site.config['url']}#{site.config['baseurl']}#{post.data['seoimage']}"
+          else
+            seoimage = "#{site.config['url']}#{site.config['baseurl']}/static/postimages/#{post.data['seoimage']}"
+          end
         else
           seoimage = "#{site.config['url']}#{site.config['baseurl']}/assets/images/og_image.png"
         end

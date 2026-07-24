@@ -1,4 +1,10 @@
 ---
+- title: A 30 seconds fix to a WSL2 catastrophic failure
+  uid: 2026-07-09-wsl2-fix
+  most_recent_edit: '2026-07-08T22:00:00+00:00'
+  url: "/blog/2026/07/wsl2-fix/"
+  date: '2026-07-09 00:00:00 +0200'
+  similarity: 0.578
 - title: Leveraging Alacritty terminal on Windows for a seamless experience in both
     PowerShell and WSL2
   uid: 2024-08-13-leveraging-alacritty-terminal-on-windows-for-a-sea
@@ -12,9 +18,3 @@
   url: "/blog/2025/02/upgrading-ubuntu-2004-focal-in-wsl2-to-ubuntu-2204/"
   date: '2025-02-04 00:00:00 +0100'
   similarity: 0.56
-- title: Oh my! Terminals dropping from above
-  uid: 2024-08-06-oh-my-terminals-are-dropping-from-above
-  most_recent_edit: '2024-08-05T22:00:00+00:00'
-  url: "/blog/2024/08/oh-my-terminals-are-dropping-from-above/"
-  date: '2024-08-06 00:00:00 +0200'
-  similarity: 0.534

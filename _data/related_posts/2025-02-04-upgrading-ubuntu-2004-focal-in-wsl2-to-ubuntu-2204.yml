@@ -5,15 +5,15 @@
   url: "/blog/2024/08/fix-blank-lines-when-using-meld-in-wsl2/"
   date: '2024-08-17 00:00:00 +0200'
   similarity: 0.56
+- title: A 30 seconds fix to a WSL2 catastrophic failure
+  uid: 2026-07-09-wsl2-fix
+  most_recent_edit: '2026-07-08T22:00:00+00:00'
+  url: "/blog/2026/07/wsl2-fix/"
+  date: '2026-07-09 00:00:00 +0200'
+  similarity: 0.545
 - title: 'Docker Desktop''s Compose Plugin Bug: A Quick Fix for Windows 11 Users'
   uid: 2024-11-18-docker-desktops-compose-plugin-bug-a-quick-fix-for
   most_recent_edit: '2024-11-19T23:00:00+00:00'
   url: "/blog/2024/11/docker-desktops-compose-plugin-bug-a-quick-fix-for/"
   date: '2024-11-18 00:00:00 +0100'
   similarity: 0.532
-- title: This is how Windows 10 messed up GRUB
-  uid: 2016-09-11-windows10-grub
-  most_recent_edit: '2016-09-10T22:00:00+00:00'
-  url: "/blog/2016/09/windows10-grub/"
-  date: '2016-09-11 00:00:00 +0200'
-  similarity: 0.516

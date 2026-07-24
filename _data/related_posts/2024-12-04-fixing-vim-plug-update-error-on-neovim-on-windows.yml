@@ -1,4 +1,10 @@
 ---
+- title: A 30 seconds fix to a WSL2 catastrophic failure
+  uid: 2026-07-09-wsl2-fix
+  most_recent_edit: '2026-07-08T22:00:00+00:00'
+  url: "/blog/2026/07/wsl2-fix/"
+  date: '2026-07-09 00:00:00 +0200'
+  similarity: 0.61
 - title: 'Docker Desktop''s Compose Plugin Bug: A Quick Fix for Windows 11 Users'
   uid: 2024-11-18-docker-desktops-compose-plugin-bug-a-quick-fix-for
   most_recent_edit: '2024-11-19T23:00:00+00:00'
@@ -11,9 +17,3 @@
   url: "/blog/2020/11/install-vim-from-source/"
   date: '2020-11-30 00:00:00 +0100'
   similarity: 0.568
-- title: Fix blank lines when using Meld in WSL2
-  uid: 2024-08-17-fix-blank-lines-when-using-meld-in-wsl2
-  most_recent_edit: '2024-08-16T22:00:00+00:00'
-  url: "/blog/2024/08/fix-blank-lines-when-using-meld-in-wsl2/"
-  date: '2024-08-17 00:00:00 +0200'
-  similarity: 0.527

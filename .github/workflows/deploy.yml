@@ -38,7 +38,7 @@ jobs:
     name: Checks and Deploy Info
     runs-on: ubuntu-24.04
     outputs:
-      RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
+      ANY_TODAY_POST: ${{ steps.check_new_posts.outputs.ANY_TODAY_POST }}
       REF_NAME: ${{ steps.get_current_ref.outputs.ref }}
       VERCEL_ALIAS: ${{ steps.get_deployment_info.outputs.vercel_alias }}
       VERCEL_ARGS: ${{ steps.get_deployment_info.outputs.vercel_args }}
@@ -50,7 +50,7 @@ jobs:
           ref: ${{ github.event.inputs.target_ref || github.ref }}
       - name: Check for new blog posts
         id: check_new_posts
-        uses: ./.github/actions/check-for-posts
+        uses: ./.github/actions/check-for-today-posts
       - name: Get current ref (branch name or commit id)
         id: get_current_ref
         uses: ./.github/actions/get-current-ref
@@ -108,7 +108,7 @@ jobs:
       url: ${{ steps.deploy_to_vercel.outputs.preview-url }}
     concurrency: ${{ needs.checks.outputs.ENV_NAME }}
     needs: [checks, related]
-    if: contains(needs.checks.outputs.RUN_BUILD, 'true')
+    if: contains(needs.checks.outputs.ANY_TODAY_POST, 'true')
     steps:
     - name: Clone repo
       uses: actions/checkout@v7

@@ -47,7 +47,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v7
         with:
-          ref: ${{ github.event.inputs.target_ref }}
+          ref: ${{ github.event.inputs.target_ref || github.ref }}
       - name: Check for new blog posts
         id: check_new_posts
         uses: ./.github/actions/check-for-posts
@@ -73,7 +73,7 @@ jobs:
     - name: Clone repo
       uses: actions/checkout@v7
       with:
-        ref: ${{ github.event.inputs.target_ref }}
+        ref: ${{ github.event.inputs.target_ref || github.ref }}
         fetch-tags: true
 
     # Prepare environment

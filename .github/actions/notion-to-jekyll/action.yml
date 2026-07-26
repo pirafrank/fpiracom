@@ -1,0 +1,130 @@
+name: Notion to Jekyll
+description: Publish Notion content to Jekyll, optionally commit changes, and notify the build result
+inputs:
+  notion-token:
+    description: Notion API token
+    required: true
+  notion-data-source-id:
+    description: Notion data source ID
+    required: true
+  publish-to-posts:
+    description: Whether to publish pages to posts
+    required: true
+  relative-date:
+    description: Whether to use relative dates
+    required: true
+  assets-dir:
+    description: Directory for downloaded post assets
+    required: true
+  dry-run:
+    description: Whether to run without writing changes
+    required: true
+  run-commit-changes:
+    description: Whether to commit generated changes
+    required: true
+  github-token:
+    description: GitHub token used to commit changes
+    required: true
+outputs:
+  changed:
+    description: Files changed by the Notion to Jekyll action
+    value: ${{ steps.notion_to_jekyll.outputs.changed }}
+  deleted:
+    description: Files deleted by the Notion to Jekyll action
+    value: ${{ steps.notion_to_jekyll.outputs.deleted }}
+  dirty:
+    description: Whether the workspace contains generated changes
+    value: ${{ steps.notion_to_jekyll.outputs.dirty }}
+  succeeded:
+    description: Successfully processed Notion pages
+    value: ${{ steps.notion_to_jekyll.outputs.succeeded }}
+  failed:
+    description: Notion pages that failed to process
+    value: ${{ steps.notion_to_jekyll.outputs.failed }}
+  commit-url:
+    description: URL of the generated commit
+    value: ${{ steps.commit_changes.outputs.commitUrl }}
+  notification_succeeded:
+    description: Formatted successfully processed Notion pages
+    value: ${{ steps.notification_payload.outputs.succeeded }}
+  notification_failed:
+    description: Formatted Notion pages that failed to process
+    value: ${{ steps.notification_payload.outputs.failed }}
+runs:
+  using: composite
+  steps:
+    - name: Notion to Jekyll
+      uses: pirafrank/notion-to-jekyll@develop
+      id: notion_to_jekyll
+      with:
+        notion-token: ${{ inputs.notion-token }}
+        notion-data-source-id: ${{ inputs.notion-data-source-id }}
+        publish-to-posts: ${{ inputs.publish-to-posts }}
+        relative-date: ${{ inputs.relative-date }}
+        assets-dir: ${{ inputs.assets-dir }}
+        dry-run: ${{ inputs.dry-run }}
+    - name: Print variables
+      shell: bash
+      env:
+        OWNER: ${{ github.repository_owner }}
+        REPO: ${{ github.event.repository.name }}
+        BRANCH: ${{ github.ref_name }}
+        NOTION_TO_JEKYLL_PUBLISH_TO_POSTS: ${{ inputs.publish-to-posts }}
+        NOTION_TO_JEKYLL_RELATIVE_DATE: ${{ inputs.relative-date }}
+        NOTION_TO_JEKYLL_DRY_RUN: ${{ inputs.dry-run }}
+        RUN_COMMIT_CHANGES: ${{ inputs.run-commit-changes }}
+        CHANGED: ${{ steps.notion_to_jekyll.outputs.changed }}
+        DELETED: ${{ steps.notion_to_jekyll.outputs.deleted }}
+        DIRTY: ${{ steps.notion_to_jekyll.outputs.dirty }}
+        SUCCEEDED: ${{ steps.notion_to_jekyll.outputs.succeeded }}
+        FAILED: ${{ steps.notion_to_jekyll.outputs.failed }}
+      run: |
+        printf "\n******* workflow variables ********\n\n"
+        echo "OWNER=$OWNER"
+        echo "REPO=$REPO"
+        echo "BRANCH=$BRANCH"
+        printf "\n\n****** repository variables *******\n\n"
+        echo "NOTION_TO_JEKYLL_PUBLISH_TO_POSTS=$NOTION_TO_JEKYLL_PUBLISH_TO_POSTS"
+        echo "NOTION_TO_JEKYLL_RELATIVE_DATE=$NOTION_TO_JEKYLL_RELATIVE_DATE"
+        echo "NOTION_TO_JEKYLL_DRY_RUN=$NOTION_TO_JEKYLL_DRY_RUN"
+        echo "RUN_COMMIT_CHANGES=$RUN_COMMIT_CHANGES"
+        echo "DRY_RUN=$NOTION_TO_JEKYLL_DRY_RUN"
+        printf "\n\n***** Notion to Jekyll output *****\n\n"
+        echo "CHANGED=$CHANGED"
+        echo "DELETED=$DELETED"
+        echo "DIRTY=$DIRTY"
+        echo "SUCCEEDED:"
+        echo "$SUCCEEDED" | tr ';' '\n'
+        echo "FAILED:"
+        echo "$FAILED" | tr ';' '\n'
+    - name: Generate commit message
+      id: generate_commit_message
+      shell: bash
+      run: |
+        today=$(date +"%Y-%m-%d %H:%M:%S")
+        export MESSAGE="Scheduled automatic update from Notion @ ${today}"
+        echo "Commit message: ${MESSAGE}"
+        echo "message=${MESSAGE}" >> "$GITHUB_OUTPUT"
+    - name: Commit changes
+      id: commit_changes
+      uses: pirafrank/github-commit-sign@v0
+      if: ${{ inputs.run-commit-changes == 'true' && steps.notion_to_jekyll.outputs.dirty == 'true' }}
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+      with:
+        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage='${{ steps.generate_commit_message.outputs.message }}' --changed ${{ steps.notion_to_jekyll.outputs.changed }} --deleted ${{ steps.notion_to_jekyll.outputs.deleted }}"
+    - name: Print commit URL
+      if: ${{ inputs.run-commit-changes == 'true' && steps.notion_to_jekyll.outputs.dirty == 'true' }}
+      shell: bash
+      run: echo "${{ steps.commit_changes.outputs.commitUrl }}"
+    - name: Prepare notification payload
+      id: notification_payload
+      shell: bash
+      env:
+        SUCCEEDED: ${{ steps.notion_to_jekyll.outputs.succeeded }}
+        FAILED: ${{ steps.notion_to_jekyll.outputs.failed }}
+      run: |
+        SX="$(echo "$SUCCEEDED" | sed 's/;/<br><br>/g')"
+        FX="$(echo "$FAILED" | sed 's/;/<br><br>/g')"
+        echo "succeeded=$SX" >> "$GITHUB_OUTPUT"
+        echo "failed=$FX" >> "$GITHUB_OUTPUT"

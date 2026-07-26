@@ -12,39 +12,9 @@ permissions:
   contents: write
 
 jobs:
-  checks:
-    name: Checks and Deploy Info
-    runs-on: ubuntu-24.04
-    outputs:
-      RUN_BUILD: ${{ steps.check_new_posts.outputs.RUN_BUILD }}
-      REF_NAME: ${{ steps.get_current_ref.outputs.ref }}
-      VERCEL_ARGS: ${{ steps.get_deployment_info.outputs.VERCEL_ARGS }}
-      ENV_NAME: ${{ steps.get_deployment_info.outputs.ENV_NAME }}
-    steps:
-      - name: Clone repo
-        uses: actions/checkout@v7
-        with:
-          # always checkout main branch
-          ref: 'main'
-      - name: Check for new blog posts
-        id: check_new_posts
-        uses: ./.github/actions/check-for-posts
-      - name: Get current ref (branch name or commit id)
-        id: get_current_ref
-        uses: ./.github/actions/get-current-ref
-      - name: Get deployment info
-        id: get_deployment_info
-        uses: ./.github/actions/get-deployment-info
-        with:
-          ref: ${{ steps.get_current_ref.outputs.ref }}
-
-  build:
+  notion-to-jekyll:
     name: Notion to Jekyll
     runs-on: ubuntu-24.04
-    environment:
-      name: ${{ needs.checks.outputs.ENV_NAME }}
-    concurrency: ${{ needs.checks.outputs.ENV_NAME }}
-    needs: [checks]
     steps:
     - name: Clone repo
       uses: actions/checkout@v7
@@ -52,8 +22,8 @@ jobs:
         # always checkout main branch
         ref: main
     - name: Notion to Jekyll
-      uses: pirafrank/notion-to-jekyll@develop
       id: notion_to_jekyll
+      uses: ./.github/actions/notion-to-jekyll
       with:
         notion-token: ${{ secrets.NOTION_TOKEN }}
         notion-data-source-id: ${{ vars.NOTION_TO_JEKYLL_DATA_SOURCE_ID }}
@@ -61,68 +31,11 @@ jobs:
         relative-date: ${{ vars.NOTION_TO_JEKYLL_RELATIVE_DATE }}
         assets-dir: "static/postimages"
         dry-run: ${{ vars.NOTION_TO_JEKYLL_DRY_RUN }}
-    - name: Print variables
-      env:
-        OWNER: ${{ github.repository_owner }}
-        REPO: ${{ github.event.repository.name }}
-        BRANCH: ${{ github.ref_name }}
-        CHANGED: ${{ steps.notion_to_jekyll.outputs.changed }}
-        DELETED: ${{ steps.notion_to_jekyll.outputs.deleted }}
-        DIRTY: ${{ steps.notion_to_jekyll.outputs.dirty }}
-        SUCCEEDED: ${{ steps.notion_to_jekyll.outputs.succeeded }}
-        FAILED: ${{ steps.notion_to_jekyll.outputs.failed }}
-      run: |
-        printf "\n******* workflow variables ********\n\n"
-        echo "OWNER=$OWNER"
-        echo "REPO=$REPO"
-        echo "BRANCH=$BRANCH"
-        printf "\n\n****** repository variables *******\n\n"
-        echo NOTION_TO_JEKYLL_PUBLISH_TO_POSTS=${{ vars.NOTION_TO_JEKYLL_PUBLISH_TO_POSTS }}
-        echo NOTION_TO_JEKYLL_RELATIVE_DATE=${{ vars.NOTION_TO_JEKYLL_RELATIVE_DATE }}
-        echo NOTION_TO_JEKYLL_DRY_RUN=${{ vars.NOTION_TO_JEKYLL_DRY_RUN }}
-        echo RUN_COMMIT_CHANGES=${{ vars.RUN_COMMIT_CHANGES }}
-        echo DRY_RUN=${{ vars.NOTION_TO_JEKYLL_DRY_RUN }}
-        printf "\n\n***** Notion to Jekyll output *****\n\n"
-        echo "CHANGED=$CHANGED"
-        echo "DELETED=$DELETED"
-        echo "DIRTY=$DIRTY"
-        echo "SUCCEEDED:"
-        echo ${SUCCEEDED} | tr ';' '\n'
-        echo "FAILED:"
-        echo ${FAILED} | tr ';' '\n'
-    - name: Generate commit message
-      id: generate_commit_message
-      run: |
-        today=$(date +"%Y-%m-%d %H:%M:%S")
-        export MESSAGE="Scheduled automatic update from Notion @ ${today}"
-        echo "Commit message: ${MESSAGE}"
-        echo "message=${MESSAGE}" >> $GITHUB_OUTPUT
-    - name: Commit changes
-      id: commit_changes
-      uses: pirafrank/github-commit-sign@v0
-      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.notion_to_jekyll.outputs.dirty == 'true' }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        args: "commit --owner=${{ github.repository_owner }} --repo=${{ github.event.repository.name }} --branch=${{ github.ref_name }} --commitMessage='${{ steps.generate_commit_message.outputs.message }}' --changed ${{ steps.notion_to_jekyll.outputs.changed }} --deleted ${{ steps.notion_to_jekyll.outputs.deleted }}"
-    - name: Print commit URL
-      if: ${{ vars.RUN_COMMIT_CHANGES == 'true' && steps.notion_to_jekyll.outputs.dirty == 'true' }}
-      run: |
-        echo "${{ steps.commit_changes.outputs.commitUrl }}"
-    - name: Prepare notification payload
-      id: notification_payload
-      shell: bash
-      env:
-        SUCCEEDED: ${{ steps.notion_to_jekyll.outputs.succeeded }}
-        FAILED: ${{ steps.notion_to_jekyll.outputs.failed }}
-      run: |
-        SX="$(echo ${SUCCEEDED} | sed 's/;/<br><br>/g')"
-        FX="$(echo ${FAILED} | sed 's/;/<br><br>/g')"
-        echo "succeeded=$SX" >> "$GITHUB_OUTPUT"
-        echo "failed=$FX" >> "$GITHUB_OUTPUT"
+        run-commit-changes: ${{ vars.RUN_COMMIT_CHANGES }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Send Build Push Notification
       uses: fjogeleit/http-request-action@master
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Notion-to-Jekyll run (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{job.status}}.<br><br><b>SUCCEEDED</b><br>${{ steps.notification_payload.outputs.succeeded }}<br><b>FAILED</b><br>${{ steps.notification_payload.outputs.failed }}<br>", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Notion-to-Jekyll run (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{ job.status }}.<br><br><b>SUCCEEDED</b><br>${{ steps.notion_to_jekyll.outputs.notification_succeeded }}<br><b>FAILED</b><br>${{ steps.notion_to_jekyll.outputs.notification_failed }}<br>", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

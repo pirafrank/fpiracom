@@ -60,6 +60,46 @@ jobs:
         with:
           ref: ${{ steps.get_current_ref.outputs.ref }}
 
+  related:
+    name: Regenerate related posts
+    runs-on: ubuntu-24.04
+    # this job is allowed to fail, so that the build and deploy job can still run.
+    # job may fail if OPENAI credits are exhausted.
+    continue-on-error: true
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v7
+      with:
+        fetch-depth: 1
+    # Check if current commit has changes in the _posts directory
+    - name: Check for _posts changes
+      if: github.ref == 'refs/heads/main'
+      id: check_posts_changes
+      run: |
+        if [ -n "$(git diff --name-only origin/main _posts)" ]; then
+          echo "There are changes in the _posts directory"
+          echo "RUN_RELATED=true" >> $GITHUB_OUTPUT
+        else
+          echo "There are no changes in the _posts directory"
+          echo "RUN_RELATED=false" >> $GITHUB_OUTPUT
+        fi
+    # prepare Jekyll environment...
+    - name: Setup Jekyll environment
+      if: github.ref == 'refs/heads/main' && steps.check_posts_changes.outputs.RUN_RELATED == 'true'
+      uses: ./.github/actions/setup-jekyll-env
+    # ...and regenerate related posts
+    # only if we are on the main branch.
+    - name: Regenerate related posts
+      if: github.ref == 'refs/heads/main' && steps.check_posts_changes.outputs.RUN_RELATED == 'true'
+      uses: ./.github/actions/regenerate-related
+      with:
+        JEKYLL_ENV: production
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        RUN_COMMIT_CHANGES: ${{ vars.RUN_COMMIT_CHANGES }}
+
   build:
     name: Build and Deploy
     runs-on: ubuntu-24.04
@@ -67,7 +107,7 @@ jobs:
       name: ${{ needs.checks.outputs.ENV_NAME }}
       url: ${{ steps.deploy_to_vercel.outputs.preview-url }}
     concurrency: ${{ needs.checks.outputs.ENV_NAME }}
-    needs: [checks]
+    needs: [checks, related]
     if: contains(needs.checks.outputs.RUN_BUILD, 'true')
     steps:
     - name: Clone repo

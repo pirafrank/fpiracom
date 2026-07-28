@@ -34,7 +34,7 @@ jobs:
         run-commit-changes: ${{ vars.RUN_COMMIT_CHANGES }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Send Build Push Notification
-      uses: fjogeleit/http-request-action@master
+      uses: fjogeleit/http-request-action@v2
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'

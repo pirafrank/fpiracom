@@ -166,7 +166,7 @@ jobs:
     # In good and bad times, let me know how it went.
     # This must stay at the bottom of the job.
     - name: Send Build Push Notification
-      uses: fjogeleit/http-request-action@master
+      uses: fjogeleit/http-request-action@v2
       if: always()
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}

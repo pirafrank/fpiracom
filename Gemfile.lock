@@ -34,7 +34,7 @@ GEM
     benchmark (0.5.0)
     bigdecimal (3.3.1)
     colorator (1.1.0)
-    concurrent-ruby (1.3.7)
+    concurrent-ruby (1.3.8)
     connection_pool (3.0.2)
     console (1.34.3)
       fiber-annotation
@@ -71,7 +71,7 @@ GEM
     fiber-storage (1.0.1)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
-    git (4.4.0)
+    git (5.0.0)
       activesupport (>= 5.0)
       addressable (~> 2.8)
       process_executer (~> 4.0)
@@ -313,7 +313,7 @@ CHECKSUMS
   benchmark (0.5.0) sha256=465df122341aedcb81a2a24b4d3bd19b6c67c1530713fd533f3ff034e419236c
   bigdecimal (3.3.1) sha256=eaa01e228be54c4f9f53bf3cc34fe3d5e845c31963e7fcc5bedb05a4e7d52218
   colorator (1.1.0) sha256=e2f85daf57af47d740db2a32191d1bdfb0f6503a0dfbc8327d0c9154d5ddfc38
-  concurrent-ruby (1.3.7) sha256=4412caec3a5ea2e5fdc52076724c071a81f2c0593d83b2ac8cbb8ca63b3151b0
+  concurrent-ruby (1.3.8) sha256=b2f1be836e968ccc78ccfce277ea79c72a88633f22306782c16ff23fb415d1e1
   connection_pool (3.0.2) sha256=33fff5ba71a12d2aa26cb72b1db8bba2a1a01823559fb01d29eb74c286e62e0a
   console (1.34.3) sha256=869fbd74697efc4c606f102d2812b0b008e4e7fd738a91c591e8577140ec0dcc
   cssminify2 (2.1.0) sha256=406a0b95fdaab60132c6f1fbb47b4a30f9572d2ef523f806fb94a530d78c2bb1
@@ -335,7 +335,7 @@ CHECKSUMS
   fiber-storage (1.0.1) sha256=f48e5b6d8b0be96dac486332b55cee82240057065dc761c1ea692b2e719240e1
   filesize (0.2.0) sha256=0f5db8629d628b60857dd8e7b8d52f427e6b7b9dc49265bfda71c0d383cbe79e
   forwardable-extended (2.6.0) sha256=1bec948c469bbddfadeb3bd90eb8c85f6e627a412a3e852acfd7eaedbac3ec97
-  git (4.4.0) sha256=93d4054467a04d9038be068d64f1b982bb26be8dbb1f7b391bd6df6e626639ec
+  git (5.0.0) sha256=25930983acf19a9ecf6dc7e62b9916e7e20d7c9cc4e287e5beaf259acd85cbe2
   google-protobuf (4.35.1) sha256=a3a6471331d918f58dfa4d014a8f6286f0af2cf4840216bde52fcf2ea3fe3726
   google-protobuf (4.35.1-x86_64-linux-gnu) sha256=c786439087512a3fbd199e9897d265b855f951d4027e218ea55e858d45969edd
   hashery (2.1.2) sha256=d239cc2310401903f6b79d458c2bbef5bf74c46f3f974ae9c1061fb74a404862

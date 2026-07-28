@@ -38,4 +38,4 @@ jobs:
       with:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
-        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Notion-to-Jekyll run (ref ${{ needs.checks.outputs.REF_NAME }}) finished with status ${{ job.status }}.<br><br><b>SUCCEEDED</b><br>${{ steps.notion_to_jekyll.outputs.notification_succeeded }}<br><b>FAILED</b><br>${{ steps.notion_to_jekyll.outputs.notification_failed }}<br>", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
+        data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Notion-to-Jekyll run (ref ${{ github.ref }}) finished with status ${{ job.status }}.<br><br><b>SUCCEEDED</b><br>${{ steps.notion_to_jekyll.outputs.notification_succeeded }}<br><b>FAILED</b><br>${{ steps.notion_to_jekyll.outputs.notification_failed }}<br>", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'

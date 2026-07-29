@@ -4,7 +4,7 @@
   most_recent_edit: '2020-01-13T23:00:00+00:00'
   url: "/blog/2020/01/microsoft-cve-2020-0601/"
   date: '2020-01-14 00:00:00 +0100'
-  similarity: 0.615
+  similarity: 0.614
 - title: About CVE-2021-44228 aka 'Log4Shell'
   uid: 2021-12-15-log4shell
   most_recent_edit: '2021-12-16T23:00:00+00:00'
@@ -16,4 +16,4 @@
   most_recent_edit: '2016-11-26T23:00:00+00:00'
   url: "/blog/2016/11/macos-security-list/"
   date: '2016-11-27 00:00:00 +0100'
-  similarity: 0.543
+  similarity: 0.541

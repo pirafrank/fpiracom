@@ -4,16 +4,16 @@
   most_recent_edit: '2019-06-06T22:00:00+00:00'
   url: "/blog/2019/06/wwdc19-keynote-announcements/"
   date: '2019-06-03 00:00:00 +0200'
-  similarity: 0.735
+  similarity: 0.727
 - title: Thoughts on the new MacBook Pro and Apple mobile computing
   uid: 2016-10-28-thoughts-on-the-new-macbook-pro
   most_recent_edit: '2016-10-29T22:00:00+00:00'
   url: "/blog/2016/10/thoughts-on-the-new-macbook-pro/"
   date: '2016-10-28 00:00:00 +0200'
-  similarity: 0.665
-- title: What does a new iPod Touch means for us?
-  uid: 2019-06-02-new-ipod-touch
-  most_recent_edit: '2019-06-02T22:00:00+00:00'
-  url: "/blog/2019/06/new-ipod-touch/"
-  date: '2019-06-02 00:00:00 +0200'
-  similarity: 0.634
+  similarity: 0.66
+- title: iCloud Photo Library under the hood
+  uid: 2017-01-31-icloud-photos-under-the-hood
+  most_recent_edit: '2017-01-30T23:00:00+00:00'
+  url: "/blog/2017/01/icloud-photos-under-the-hood/"
+  date: '2017-01-31 00:00:00 +0100'
+  similarity: 0.633

@@ -228,6 +228,7 @@ jekyll-ai-related:
 # Files to explicitly include in generated website
 include:
   - humans.txt
+  - llms.txt
   - .well-known/nostr.json
   - .well-known/openpgpkey/policy
   - .well-known/openpgpkey/hu/s8y7oh5xrdpu9psba3i5ntk64ohouhga

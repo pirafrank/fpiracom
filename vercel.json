@@ -67,6 +67,24 @@
       ]
     },
     {
+      "source": "/pgp.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    },
+    {
       "source": "/feed.xml",
       "headers": [
         {

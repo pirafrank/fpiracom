@@ -1,0 +1,37 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# {{ site.name }}
+
+> {{ site.description }}
+
+This is the plain-text LLM feed for {{ site.title }}. It lists blog posts, categories, and tags for automated processing.
+
+## Blog Posts
+{% for post in site.posts %}
+- ({{ post.date | date: "%Y-%m-%d" }}) [{{ post.title }}]({{ post.url | prepend: site.baseurl | prepend: site.url }}): {{ post.description | strip_newlines }}
+{% endfor %}
+
+## Categories
+{% assign sorted_categories = site.categories | sort %}{% for category in sorted_categories %}
+- {{ category[0] }}{% endfor %}
+
+## Tags
+{% assign sorted_tags_by_name = site.tags | sort_tags_by_name %}{% for tag in sorted_tags_by_name %}
+- {{ tag[0] }}{% endfor %}
+
+## Social Links
+
+- [LinkedIn]({{ site.data.social.linkedin.url }})
+- [Mastodon]({{ site.data.social.mastodon.url }})
+- [Threads]({{ site.data.social.threads.url }})
+- [Bluesky]({{ site.data.social.bluesky.url }})
+- [Telegram]({{ site.data.social.telegram.url }})
+- [Twitter]({{ site.data.social.twitter.url }})
+
+## Website Feeds
+
+- [RSS]({{ site.url | append: site.baseurl | append: site.feeds.rss }})
+- [Atom]({{ site.url | append: site.baseurl | append: site.feeds.atom}})
+- [JSON feed]({{ site.url | append: site.baseurl | append: site.feeds.json }})

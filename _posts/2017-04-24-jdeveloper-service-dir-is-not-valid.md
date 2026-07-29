@@ -1,5 +1,7 @@
 ---
 title: "Fixing 'Service directory is not valid' in JDeveloper 12.2"
+subtitle: "How to fix 'Service directory is not valid' error in JDeveloper 12.2"
+description: "Fixing 'Service directory is not valid' error in JDeveloper 12.2"
 category: ['How-tos']
 tags: ['Oracle','JDeveloper']
 ---

@@ -24,7 +24,7 @@ is mirrored from Mastodon.
 - [Threads]({{ site.data.social.threads.url }})
 - [Bluesky]({{ site.data.social.bluesky.url }})
 - [Telegram]({{ site.data.social.telegram.url }})
-- ~~[Twitter]({{ site.data.social.twitter.url }})~~
+- [Twitter]({{ site.data.social.twitter.url }})
 
 If you prefer less frequent updates, you can tune directly to blog
 post publishing via:

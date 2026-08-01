@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b1220"/>
+  <rect x="40" y="40" width="1120" height="550" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="90" y="120" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#f8fafc">Building APT, YUM/DNF, and APK Repositories</text>
+  <text x="90" y="168" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#cbd5e1">GitHub Releases - packages workflows - signed repos - Cloudflare R2 - pkg.fpira.com</text>
+
+  <rect x="90" y="240" width="170" height="150" rx="18" fill="#1d4ed8"/>
+  <text x="175" y="307" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#eff6ff">GitHub</text>
+  <text x="175" y="344" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#eff6ff">Release</text>
+
+  <rect x="305" y="240" width="220" height="150" rx="18" fill="#0f766e"/>
+  <text x="415" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#ecfeff">packages</text>
+  <text x="415" y="326" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#ccfbf1">apt.yml / yum.yml</text>
+  <text x="415" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#ccfbf1">apk.yml</text>
+  <text x="415" y="376" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#99f6e4">signing + indexing</text>
+
+  <rect x="570" y="240" width="180" height="150" rx="18" fill="#7c3aed"/>
+  <text x="660" y="307" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#f5f3ff">Cloudflare</text>
+  <text x="660" y="344" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#f5f3ff">R2</text>
+
+  <rect x="795" y="240" width="170" height="150" rx="18" fill="#b45309"/>
+  <text x="880" y="307" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#fff7ed">Worker</text>
+  <text x="880" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffedd5">pkg.fpira.com</text>
+  <text x="880" y="371" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#fed7aa">GET / HEAD</text>
+
+  <rect x="1010" y="240" width="120" height="150" rx="18" fill="#166534"/>
+  <text x="1070" y="294" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#f0fdf4">APT</text>
+  <text x="1070" y="326" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#f0fdf4">DNF</text>
+  <text x="1070" y="358" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#f0fdf4">APK</text>
+
+  <path class="connector-arrow" d="M260 311 H285 V305 L301 315 L285 325 V319 H260 Z" fill="#94a3b8"/>
+  <path class="connector-arrow" d="M525 311 H550 V305 L566 315 L550 325 V319 H525 Z" fill="#94a3b8"/>
+  <path class="connector-arrow" d="M750 311 H775 V305 L791 315 L775 325 V319 H750 Z" fill="#94a3b8"/>
+  <path class="connector-arrow" d="M965 311 H990 V305 L1006 315 L990 325 V319 H965 Z" fill="#94a3b8"/>
+
+  <text x="90" y="475" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#e2e8f0">
+    <tspan x="90" y="475">Package files are only part of the job. Real repositories also need indexes,</tspan>
+    <tspan x="90" y="507">signatures, storage, and serving.</tspan>
+  </text>
+</svg>

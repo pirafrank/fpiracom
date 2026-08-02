@@ -76,7 +76,7 @@ jobs:
       if: github.ref == 'refs/heads/main'
       id: check_posts_changes
       run: |
-        if [ -n "$(git diff --name-only origin/main _posts)" ]; then
+        if [ -n "$(git diff-tree --no-commit-id --name-only -r origin/main _posts)" ]; then
           echo "There are changes in the _posts directory"
           echo "RUN_RELATED=true" >> $GITHUB_OUTPUT
         else

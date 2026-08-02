@@ -49,8 +49,11 @@ in_search: false
 
       <div class="resources">
         <div class="sectionTitle">News</div>
-        {% capture home_news %}{% include home/news.md %}{% endcapture %}
-        {{ home_news | markdownify }}
+          <ul>
+          {% for news_item in site.data.news.content %}
+            <li>{{ news_item | markdownify | strip_newlines | remove: '<p>' | remove: '</p>' }}</li>
+          {% endfor %}
+          </ul>
       </div>
 
       <br/>

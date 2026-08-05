@@ -147,6 +147,41 @@ img {
   max-width: 100%;
 }
 
+// Keep Mermaid diagrams usable on narrow screens. Mermaid emits SVGs whose
+// natural dimensions can be wider than the article, so let the container
+// scroll instead of shrinking labels until they become unreadable.
+.mermaid {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+
+.mermaid svg {
+  display: block;
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+// On phones, fit the complete diagram to the available article width. The
+// desktop scrolling behavior would otherwise keep the SVG at its natural
+// width and make it appear unchanged on mobile.
+@include mobile {
+  .mermaid {
+    overflow-x: hidden;
+  }
+
+  .mermaid svg {
+    width: 100% !important;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
 @media mobile {
   table {
     overflow-x: auto;

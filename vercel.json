@@ -199,6 +199,11 @@
       "permanent": false
     },
     {
+      "source": "/calendar",
+      "destination": "https://cal.com/pirafrank",
+      "permanent": false
+    },
+    {
       "source": "/fileshute",
       "destination": "http://web.archive.org/web/20220112113123/https://fileshute.com/",
       "permanent": false
@@ -259,8 +264,8 @@
       "permanent": false
     },
     {
-      "source": "/calendar",
-      "destination": "https://cal.com/pirafrank",
+      "source": "/credly",
+      "destination": "https://www.credly.com/users/pirafrank",
       "permanent": false
     }
   ]

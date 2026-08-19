@@ -301,7 +301,47 @@ Write the gist id in a Liquid tag like the following:
 
 Powered by [https://github.com/jekyll/jekyll-gist](https://github.com/jekyll/jekyll-gist)
 
-### twitter posts
+### KaTeX
+
+KaTeX is a fast, easy-to-use JavaScript library for TeX math rendering on the web. It is used to render math formulas in posts and pages.
+
+Here is implemented by rendering the math formulas in the browser using the site's vendored KaTeX assets, which are loaded in the `head.html` file. This avoids to load a full browser to render the math formulas at build time, which would be slow and require additional dependencies.
+
+To avoid loading KaTeX assets on every page, the `katex` front-matter variable is used to load them only when needed. If `katex` is set to `true`, the assets are loaded, otherwise they are not.
+
+Example of a blog post with KaTeX formulas:
+
+```text
+---
+title: "KaTeX Math Rendering Test"
+subtitle: "A small draft for checking locally hosted formula rendering"
+description: "A Jekyll draft that exercises inline and display mathematics through the site's vendored KaTeX assets."
+date: 2026-09-30
+katex: true
+category: [ "How-tos" ]
+tags: [ "Jekyll", "JavaScript" ]
+---
+
+This draft checks the four math delimiter styles supported by the site.
+
+Inline dollar math: $a^2 + b^2 = c^2$.
+
+Inline escaped delimiters: \\(e^{i\pi} + 1 = 0\\).
+
+Display dollar math:
+
+$$
+\int_0^1 x^2\,dx = \frac{1}{3}
+$$
+
+Display escaped delimiters:
+
+\\[
+\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+\\]
+```
+
+### X (former Twitter) posts
 
 Just post the twitter post URL standalone in the markdown file. For example:
 

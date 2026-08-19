@@ -1,0 +1,9 @@
+// Keep KaTeX readable when darkmode-js applies its blend-mode overlay.
+.darkmode--activated .katex {
+  isolation: isolate;
+  color: #e6edf3;
+}
+
+.darkmode--activated .katex * {
+  color: inherit;
+}

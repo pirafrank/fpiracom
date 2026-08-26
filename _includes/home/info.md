@@ -1,8 +1,6 @@
 Currently working as XR Tech Lead at [Leonardo - Cyber & Security division](https://cybersecurity.leonardo.com/en),
-Digital Platforms dept.
+Digital Platforms dept., designing and building immersive simulators for specialized operators.
 
-I like to write [code and tools]({{ site.baseurl }}/code) in my spare time to
-make developers' life a bit easier. Feel free to open an issue or contribute.
-Check also [talks]({{ site.baseurl }}/talks) I gave and
-[events]({{ site.baseurl }}/events) I've organised or been to.
-Opinions are mine, here and on social networks I post on.
+In my spare time, I build tools designed to make working with technology a little easier. Explore my [projects]({{ site.baseurl }}/projects) and [utilities]({{ site.baseurl }}/code), and feel free to open an issue or contribute.
+
+You can also find the [talks]({{ site.baseurl }}/talks) I've given and the [events]({{ site.baseurl }}/events) I've organised or attended. Opinions expressed here and on my social channels are my own.

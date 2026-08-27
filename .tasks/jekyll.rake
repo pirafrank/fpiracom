@@ -35,3 +35,12 @@ desc "Update data about AI-gen related posts"
 task :related do
   sh "bundle exec jekyll related"
 end
+
+# Generate git data from current repo info.
+# Useful in environments where the git repo is not available
+# (eg: Vercel with shallow clones or copied source files).
+desc "Generate _data/git.json with required git info"
+task :git do
+  sh "rm -f _data/git.json"
+  sh ".github/actions/git-info/git_info.sh > _data/git.json"
+end

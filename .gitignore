@@ -13,12 +13,6 @@ service-worker.js
 vendor
 !assets/vendor
 .vercel
-.envrc
-.env
-.cursor
-.claude
-.agents
-skills-lock.json
 
 # vscode
 .vscode/*
@@ -49,3 +43,19 @@ api/docs/redocly/index.html
 # ignore secrets
 /**/.*secrets.sh
 /**/*secrets.sh
+
+# ignore direnv files
+.envrc
+!.envrc.sample
+
+# ignore environment files
+.env
+.env*
+!.env.sample
+!.env.*.sample
+
+# agents and skills
+.cursor
+.claude
+.agents
+skills-lock.json

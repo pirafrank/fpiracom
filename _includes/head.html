@@ -14,6 +14,9 @@
     <link href="{{ site.data.social.linkedin.url }}" rel="me">
     <link href="{{ site.data.social.mastodon.url }}" rel="me">
 
+    <!-- PGP key -->
+    <link rel="pgpkey alternate" type="application/pgp-keys" href="{{ site.url }}{{ site.baseurl }}/pgp.txt">
+
     <!-- webmention.io stuff -->
     <link rel="pingback" href="https://webmention.io/{{ site.domain }}/xmlrpc">
     <link rel="webmention" href="https://webmention.io/{{ site.domain }}/webmention">
@@ -30,6 +33,7 @@
     <!-- theme-color defines the top bar color on Safari and Chrome mobile -->
     <meta name="theme-color" content="#333333"/>
     <!-- Add to home screen for Safari on iOS-->
+    <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
     <meta name="apple-mobile-web-app-title" content="{{ site.name }}"/>

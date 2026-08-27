@@ -1,3 +1,9 @@
+
+// Keep syntax-highlighted code unchanged by darkmode-js.
+.highlight {
+  isolation: isolate;
+}
+
 // Keep KaTeX readable when darkmode-js applies its blend-mode overlay.
 .darkmode--activated .katex {
   isolation: isolate;

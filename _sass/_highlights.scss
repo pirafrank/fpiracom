@@ -56,11 +56,6 @@ code {
   border-radius: 3px;
 }
 
-// Lighter background when dark mode is activated
-.darkmode--activated code {
-  background-color: #30363d !important;
-}
-
 // Reset inline code styling inside code blocks
 .highlight code {
   background-color: transparent;

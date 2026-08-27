@@ -31,7 +31,32 @@ $gh-danger-fg: #f85149;
   padding: 10px 10px 10px 12px;
   border-radius: 6px;
   margin: 20px 0 20px 0;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  // Keep horizontal scrolling available while matching the code block palette.
+  // Firefox uses these properties; WebKit-based browsers use the selectors below.
+  scrollbar-width: thin;
+  scrollbar-color: $gh-fg-subtle $gh-bg-subtle;
+}
+
+.highlight::-webkit-scrollbar {
+  height: 8px;
+}
+
+.highlight::-webkit-scrollbar-track {
+  background: $gh-bg-subtle;
+  border-radius: 4px;
+}
+
+.highlight::-webkit-scrollbar-thumb {
+  background: $gh-border-default;
+  border-radius: 4px;
+  border: 2px solid $gh-bg-subtle;
+}
+
+.highlight::-webkit-scrollbar-thumb:hover {
+  background: $gh-blue-2;
 }
 
 // Lighter background when dark mode is activated
@@ -44,6 +69,7 @@ pre > code {
   font-family: $defaultMonospaced;
   font-size: 14px;
   color: $gh-fg-default;
+  white-space: pre;
 }
 
 /* Inline code */

@@ -184,7 +184,7 @@ algolia:
     - pages/search_algolia.html
 
 mermaid:
-  src: '/assets/js/mermaid.min.js'
+  src: '/assets/vendor/mermaid/mermaid.min.js'
 
 # Use the following plug-ins
 plugins:
@@ -231,6 +231,7 @@ jekyll-ai-related:
 include:
   - humans.txt
   - llms.txt
+  - assets/vendor/**
   - .well-known/nostr.json
   - .well-known/openpgpkey/policy
   - .well-known/openpgpkey/hu/s8y7oh5xrdpu9psba3i5ntk64ohouhga
@@ -252,7 +253,7 @@ exclude:
     - '/**/*.disabled'
     - '*.sh'
     - .bundle
-    - vendor
+    - '/vendor/**'
     - 'repo_utils/**'
     - '_templates/**'
     - vercel.json

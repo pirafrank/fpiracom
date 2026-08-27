@@ -11,6 +11,7 @@ pages/test.md
 service-worker.js
 .jekyll-cache
 vendor
+!assets/vendor
 .vercel
 .envrc
 .env

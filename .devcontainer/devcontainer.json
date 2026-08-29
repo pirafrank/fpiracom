@@ -4,16 +4,18 @@
   "name": "Jekyll",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   // info about this base image: https://github.com/devcontainers/images/tree/main/src/jekyll
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2.0.5-bookworm",
+  // MAR: https://mcr.microsoft.com/en-us/artifact/mar/devcontainers/jekyll
+  "image": "mcr.microsoft.com/devcontainers/jekyll:2.0.6-bookworm",
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
     },
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "18" // has to match the one in .nvmrc
-    }
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "24" // has to match the one in .nvmrc
+    },
+    "ghcr.io/pirafrank/poof/poof:1": {}
   },
   // Configure tool-specific properties.
   "customizations": {
@@ -62,6 +64,11 @@
           "permissions": {
             "contents": "write"
           }
+        },
+        "pirafrank/jekyll-ai-related": {
+          "permissions": {
+            "contents": "write"
+          }
         }
       }
     }
@@ -71,7 +78,8 @@
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "rustc --version",
   // NOTE: gh cli is installed by the 'features' property above.
-  "postCreateCommand": "gh extension install github/gh-copilot"
+  //"postCreateCommand": "gh extension install github/gh-copilot"
+  //"postCreateCommand": "bundle install"
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }

@@ -1,9 +1,9 @@
 ---
-title: "My super humble take in the state of AI and its adoption"
-subtitle: "Three perspectives on AI as a tool, an infrastructure problem, and an adoption problem"
-description: "A personal view of AI from the developer, sustainability, and adoption perspectives, with a long-term preference for efficient open-weight models running at the edge."
+title: "A few thoughts on the state of AI and its adoption"
+subtitle: "A personal view of how AI can become useful without becoming an environmental, financial, or cognitive step back"
+description: "AI adoption is not only a question of model capability. It also depends on how developers use AI, whether its infrastructure can scale sustainably, and whether businesses understand what the technology can (and cannot) deliver."
 category: [ "Posts" ]
-tags: [ "Cloud", "hardware", "Linux", "Privacy", "Tools" ]
+tags: [ "AI", "LLM", "Cloud", "hardware", "Linux", "Privacy", "Tools" ]
 seoimage: 3022/001.jpg
 ---
 

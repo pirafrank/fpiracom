@@ -266,4 +266,6 @@ exclude:
     - .zellij_layout.kdl
     - schemas/**
     - test/**
+    - .agents
+    - .claude
 

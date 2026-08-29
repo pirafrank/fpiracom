@@ -1,14 +1,12 @@
-FROM ruby:3.2.2
+FROM ruby:3.4
 
-# set ruby and nodejs versions to install during Docker image build
-ARG RUBY_VERSION=3.2.2
-ARG NODE_VERSION=20.11.1
-ARG BUNDLER_VERSION=2.5.6
+ARG NODE_VERSION=24.18.0
+ARG BUNDLER_VERSION=4.0.19
 
 ARG USER_UID=1000
 
 RUN apt-get update -qq \
-  && apt-get install -y sudo software-properties-common build-essential git curl
+  && apt-get install -y sudo build-essential git curl
 
 # Create 'jekyll' user and enable passwordless sudo (needed by rvm to run scripts)
 RUN useradd -m jekyll -G sudo -s /bin/bash --uid $USER_UID \
@@ -18,24 +16,12 @@ RUN useradd -m jekyll -G sudo -s /bin/bash --uid $USER_UID \
 
 USER jekyll
 
-# install rvm
-RUN curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-RUN curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
-RUN curl -sSL https://get.rvm.io | bash -s stable
-
-ENV PATH /home/jekyll/.rvm/bin/rvm:$PATH
-
-# install ruby
-RUN /bin/bash -l -c "rvm install ${RUBY_VERSION}"
-RUN /bin/bash -l -c "rvm use ${RUBY_VERSION} --default"
-RUN /bin/bash -l -c "gem install bundler -v ${BUNDLER_VERSION}"
-
 # install nvm
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash
 
 # Add NVM to the PATH and set it to use the correct version of Node.js
-ENV NVM_DIR /home/jekyll/.nvm
-ENV PATH $NVM_DIR/versions/node/v${NODE_VERSION}/bin:$PATH
+ENV NVM_DIR=/home/jekyll/.nvm
+ENV PATH=$NVM_DIR/versions/node/v${NODE_VERSION}/bin:$PATH
 
 # install nodejs
 RUN . $NVM_DIR/nvm.sh \

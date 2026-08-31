@@ -48,13 +48,14 @@ class DevtoConverterTest < Minitest::Test
 
     result = @converter.convert(@post, source)
 
+    assert_match(/\A---[\s\S]*?---\n\n\*This post was originally published on \[fpira\.com\]\(https:\/\/fpira\.com\/blog\/2026\/08\/example\/\)\.\*/, result)
     assert_includes result, "published: false"
     assert_includes result, "tags: ruby, jekyll, atag, four"
     assert_includes result, "cover_image: https://fpira.com/static/postimages/3020/cover.png"
     assert_includes result, "![An example image](https://fpira.com/static/postimages/example.png)"
     assert_includes result, "{% katex inline %}x^2{% endkatex %}"
     assert_includes result, "{% katex %}\nx^2 + y^2\n{% endkatex %}"
-    assert result.end_with?("{% cta https://fpira.com/blog/2026/08/example/ %} Read original {% endcta %}\n")
+    assert result.end_with?("{% cta https://fpira.com/blog %} Read more at fpira.com {% endcta %}\n")
   end
 
   def test_sanitizes_devto_tags_without_mutating_jekyll_tags
@@ -95,6 +96,7 @@ class DevtoConverterTest < Minitest::Test
     result = converter.convert(post, "---\ntitle: An example\n---\nContent\n")
 
     assert_includes result, "cover_image: https://example.com/blog/assets/cover.png"
+    assert_includes result, "{% cta https://example.com/blog %} Read more at fpira.com {% endcta %}"
   end
 
   def test_converts_post_urls_and_youtube

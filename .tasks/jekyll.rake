@@ -36,6 +36,11 @@ task :related do
   sh "bundle exec jekyll related"
 end
 
+desc "Generate dev.to-compatible md files for all posts"
+task :devto do
+  sh "bundle exec jekyll devto"
+end
+
 # Generate git data from current repo info.
 # Useful in environments where the git repo is not available
 # (eg: Vercel with shallow clones or copied source files).

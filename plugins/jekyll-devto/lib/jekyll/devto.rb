@@ -37,7 +37,7 @@ module Jekyll
           raise ConversionError, "#{post_path(post)} contains unsupported Liquid: #{unresolved.join(', ')}"
         end
 
-        "#{devto_front_matter(data, post)}\n\n#{converted.rstrip}\n\n#{cta(post)}\n"
+        "#{devto_front_matter(data, post)}\n\n#{original_source_note(post)}\n\n#{converted.rstrip}\n\n#{cta}\n"
       end
 
       private
@@ -148,6 +148,10 @@ module Jekyll
         post.respond_to?(:url) ? post.url : "/blog/#{post_slug(post)}/"
       end
 
+      def original_source_note(post)
+        "*This post was originally published on [fpira.com](#{@site_url}#{post_url(post)}).*"
+      end
+
       def post_slug(post)
         File.basename(post_path(post), ".md").sub(/^\d{4}-\d{1,2}-\d{1,2}-/, "")
       end
@@ -156,8 +160,8 @@ module Jekyll
         post.respond_to?(:path) ? post.path : post.to_s
       end
 
-      def cta(post)
-        "{% cta #{@site_url}#{post_url(post)} %} Read original {% endcta %}"
+      def cta
+        "{% cta #{@site_url}/blog %} Read more at fpira.com {% endcta %}"
       end
     end
 

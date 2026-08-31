@@ -223,6 +223,11 @@
       "permanent": false
     },
     {
+      "source": "/x",
+      "destination": "https://x.com/pirafrank",
+      "permanent": false
+    },
+    {
       "source": "/mastodon",
       "destination": "https://mastodon.social/@pirafrank",
       "permanent": false
@@ -275,6 +280,21 @@
     {
       "source": "/credly",
       "destination": "https://www.credly.com/users/pirafrank",
+      "permanent": false
+    },
+    {
+      "source": "/producthunt",
+      "destination": "https://www.producthunt.com/@pirafrank",
+      "permanent": false
+    },
+    {
+      "source": "/devto",
+      "destination": "https://dev.to/pirafrank",
+      "permanent": false
+    },
+    {
+      "source": "/store",
+      "destination": "https://pirafrank.gumroad.com/",
       "permanent": false
     }
   ]

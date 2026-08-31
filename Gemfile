@@ -13,6 +13,7 @@ gem 'feedparser', '~> 2.2'
 gem "rss", "~> 0.3.3"  # feedparser depends on this even if it's not in the gemspec
 
 group :jekyll_plugins do
+  gem "jekyll-devto", path: "plugins/jekyll-devto"
   gem 'jekyll-gist'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'

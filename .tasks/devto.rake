@@ -18,7 +18,7 @@ module DevtoTasks
     path
   end
 
-  def published_articles(api_key)
+  def all_articles(api_key)
     articles = []
     page = 1
 
@@ -28,7 +28,7 @@ module DevtoTasks
         "-H", "api-key: #{api_key}",
         "-H", "Accept: application/vnd.forem.api-v1+json",
         "-H", "User-Agent: #{USER_AGENT}",
-        "#{API_URL}/me/published?page=#{page}&per_page=#{PAGE_SIZE}"
+        "#{API_URL}/me/all?page=#{page}&per_page=#{PAGE_SIZE}"
       )
       raise "DEV.to duplicate check failed: #{stderr.strip}" unless status.success?
 
@@ -48,6 +48,10 @@ module DevtoTasks
 
   def duplicate_article(articles, canonical_url)
     articles.find { |article| article.is_a?(Hash) && article["canonical_url"] == canonical_url }
+  end
+
+  def article_status(article)
+    article["published"] ? "published" : "unpublished"
   end
 end
 
@@ -73,9 +77,10 @@ namespace :devto do
       canonical_url = payload.dig("article", "canonical_url").to_s
       abort "JSON payload must contain article.canonical_url" if canonical_url.empty?
 
-      duplicate = DevtoTasks.duplicate_article(DevtoTasks.published_articles(api_key), canonical_url)
+      duplicate = DevtoTasks.duplicate_article(DevtoTasks.all_articles(api_key), canonical_url)
       if duplicate
-        abort "article already published on DEV.to: #{duplicate["url"] || duplicate["title"] || canonical_url}"
+        puts "already sent: #{duplicate["url"] || duplicate["title"] || canonical_url} (status: #{DevtoTasks.article_status(duplicate)})"
+        next
       end
     rescue JSON::ParserError => e
       abort "JSON file is invalid: #{e.message}"

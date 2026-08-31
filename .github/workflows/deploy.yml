@@ -153,6 +153,23 @@ jobs:
         alias-domains: |
           ${{ needs.checks.outputs.VERCEL_ALIAS }}
 
+    # Publish generated articles on DEV.to. devto:send skips articles that
+    # already exist there, including unpublished drafts.
+    - name: Publish posts on DEV.to
+      if: github.ref == 'refs/heads/main'
+      shell: bash
+      env:
+        DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+      run: |
+        bundle exec rake devto:build
+        today=$(date '+%Y-%m-%d')
+        shopt -s nullglob
+        filenames=("_devto/json/${today}"*.json)
+        for filename in "${filenames[@]}"; do
+          bundle exec rake "devto:send[$filename]"
+        done
+        # each step runs in a new shell, no need to unset API key or restore nullglob.
+
     # Algolia search index update
     - name: Update Algolia Index
       if: github.ref == 'refs/heads/main'
@@ -172,4 +189,3 @@ jobs:
         url: ${{ secrets.NOTIFICATION_WEBHOOK_URI }}
         method: 'POST'
         data: '{ "value1": "[GitHub] pirafrank/fpiracom", "value2": "Build of fpira.com (ref ${{ needs.checks.outputs.REF_NAME }}) and Algolia index update finished with status ${{job.status}}.<br>Vercel deployment: ${{ steps.deploy_to_vercel.outputs.preview-name }}<br>Vercel preview URL: ${{ steps.deploy_to_vercel.outputs.preview-url }}", "value3": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" }'
-

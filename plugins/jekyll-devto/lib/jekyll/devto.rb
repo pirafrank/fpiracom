@@ -2,12 +2,15 @@
 
 require "fileutils"
 require "date"
+require "json"
 require "tmpdir"
 require "yaml"
 
 module Jekyll
   module Devto
     OUTPUT_DIR = "_devto"
+    MARKDOWN_OUTPUT_DIR = File.join(OUTPUT_DIR, "md")
+    JSON_OUTPUT_DIR = File.join(OUTPUT_DIR, "json")
     SITE_URL = "https://fpira.com"
 
     class ConversionError < StandardError; end
@@ -25,19 +28,14 @@ module Jekyll
       end
 
       def convert(post, source)
-        front_matter, body = split_front_matter(source)
-        data = post.respond_to?(:data) ? post.data : front_matter
-        converted = convert_body(body, data)
-        unprotected = converted
-          .gsub(/```[^\n]*\n[\s\S]*?^```\s*$/m, "")
-          .gsub(/\{%\s*raw\s*%\}[\s\S]*?\{%\s*endraw\s*%\}/m, "")
-        unresolved = unprotected.scan(JEKYLL_TAG).map { |match| match.first }.reject { |name| DEVTO_TAGS.include?(name) }.uniq
-        unresolved += unprotected.scan(LIQUID_OUTPUT).uniq
-        unless unresolved.empty?
-          raise ConversionError, "#{post_path(post)} contains unsupported Liquid: #{unresolved.join(', ')}"
-        end
+        data, converted = converted_post(post, source)
 
-        "#{devto_front_matter(data, post)}\n\n#{original_source_note(post)}\n\n#{converted.rstrip}\n\n#{cta}\n"
+        "#{devto_front_matter(data, post)}\n\n#{devto_body(post, converted)}\n"
+      end
+
+      def convert_json(post, source)
+        data, converted = converted_post(post, source)
+        JSON.pretty_generate("article" => article_payload(data, post, converted)) + "\n"
       end
 
       private
@@ -51,13 +49,29 @@ module Jekyll
         [YAML.safe_load(match[1], permitted_classes: [Date, Time], aliases: true) || {}, source[match.end(0)..]]
       end
 
+      def converted_post(post, source)
+        front_matter, body = split_front_matter(source)
+        data = post.respond_to?(:data) ? post.data : front_matter
+        converted = convert_body(body, data)
+        unprotected = converted
+          .gsub(/```[^\n]*\n[\s\S]*?^```\s*$/m, "")
+          .gsub(/\{%\s*raw\s*%\}[\s\S]*?\{%\s*endraw\s*%\}/m, "")
+        unresolved = unprotected.scan(JEKYLL_TAG).map { |match| match.first }.reject { |name| DEVTO_TAGS.include?(name) }.uniq
+        unresolved += unprotected.scan(LIQUID_OUTPUT).uniq
+        unless unresolved.empty?
+          raise ConversionError, "#{post_path(post)} contains unsupported Liquid: #{unresolved.join(', ')}"
+        end
+
+        [data, converted]
+      end
+
       def devto_front_matter(data, post)
         lines = ["---"]
         lines << "title: #{data.fetch('title').to_s.inspect}"
         lines << "published: false"
         lines << "description: #{data['description'].to_s.inspect}" if data["description"]
 
-        tags = Array(data["tags"] || data["tag"]).flatten.map { |tag| tag.to_s.downcase.gsub(/[^a-z0-9]/, "") }.reject(&:empty?).uniq.first(4)
+        tags = normalized_tags(data)
         lines << "tags: #{tags.join(', ')}" unless tags.empty?
 
         lines << "series: #{data['series'].to_s.inspect}" if data["series"]
@@ -65,6 +79,30 @@ module Jekyll
         lines << "canonical_url: #{@site_url}#{post_url(post)}"
         lines << "---"
         lines.join("\n")
+      end
+
+      def normalized_tags(data)
+        Array(data["tags"] || data["tag"]).flatten
+          .map { |tag| tag.to_s.downcase.gsub(/[^a-z0-9]/, "") }
+          .reject(&:empty?).uniq.first(4)
+      end
+
+      def article_payload(data, post, converted)
+        payload = {
+          "title" => data.fetch("title").to_s,
+          "body_markdown" => devto_body(post, converted),
+          "published" => false,
+          "tags" => normalized_tags(data),
+          "canonical_url" => "#{@site_url}#{post_url(post)}"
+        }
+        payload["description"] = data["description"].to_s if data["description"]
+        payload["series"] = data["series"].to_s if data["series"]
+        payload["main_image"] = absolute_image_url(data["seoimage"]) if data["seoimage"]
+        payload
+      end
+
+      def devto_body(post, converted)
+        "#{original_source_note(post)}\n\n#{converted.rstrip}\n\n#{cta}"
       end
 
       def convert_body(body, data)
@@ -197,11 +235,13 @@ module Jekyll
             liquid_data: site.data
           )
           output = Dir.mktmpdir("devto-")
+          FileUtils.mkdir_p([File.join(output, "md"), File.join(output, "json")])
 
           posts.each do |post|
             source = File.read(post.path)
-            destination = File.join(output, File.basename(post.path))
-            File.write(destination, converter.convert(post, source))
+            basename = File.basename(post.path, ".md")
+            File.write(File.join(output, "md", "#{basename}.md"), converter.convert(post, source))
+            File.write(File.join(output, "json", "#{basename}.json"), converter.convert_json(post, source))
           end
 
           replace_output(output, site.source)
@@ -212,11 +252,17 @@ module Jekyll
         private
 
         def replace_output(output, source)
-          destination = File.join(source, OUTPUT_DIR)
-          FileUtils.mkdir_p(destination)
-          Dir.glob(File.join(destination, "*.md")).each { |file| File.delete(file) }
-          Dir.glob(File.join(output, "*.md")).each { |file| FileUtils.cp(file, destination) }
-          Jekyll.logger.info "Dev.to:", "generated #{Dir.glob(File.join(output, '*.md')).length} posts in #{OUTPUT_DIR}/"
+          legacy_destination = File.join(source, OUTPUT_DIR)
+          markdown_destination = File.join(source, MARKDOWN_OUTPUT_DIR)
+          json_destination = File.join(source, JSON_OUTPUT_DIR)
+          FileUtils.mkdir_p([markdown_destination, json_destination])
+          Dir.glob(File.join(legacy_destination, "*.md")).each { |file| File.delete(file) }
+          Dir.glob(File.join(markdown_destination, "*.md")).each { |file| File.delete(file) }
+          Dir.glob(File.join(json_destination, "*.json")).each { |file| File.delete(file) }
+          Dir.glob(File.join(output, "md", "*.md")).each { |file| FileUtils.cp(file, markdown_destination) }
+          Dir.glob(File.join(output, "json", "*.json")).each { |file| FileUtils.cp(file, json_destination) }
+          count = Dir.glob(File.join(output, "md", "*.md")).length
+          Jekyll.logger.info "Dev.to:", "generated #{count} posts in #{MARKDOWN_OUTPUT_DIR}/ and #{JSON_OUTPUT_DIR}/"
         end
       end
     end

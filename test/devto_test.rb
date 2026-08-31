@@ -1,4 +1,5 @@
 require "minitest/autorun"
+require "json"
 require "tmpdir"
 require "fileutils"
 
@@ -69,6 +70,18 @@ class DevtoConverterTest < Minitest::Test
     refute_includes result, "!!!"
     assert_equal ["ci-cd", "CICD", "Ruby_3.3", "こんにちは", "!!!", "one", "two", "three", "four"], original_tags
     assert_equal original_tags, post.data["tags"]
+  end
+
+  def test_generates_curl_ready_json_article_body
+    article = JSON.parse(@converter.convert_json(@post, "---\ntitle: An example\n---\nContent\n")).fetch("article")
+
+    assert_equal "An example", article["title"]
+    assert_equal false, article["published"]
+    assert_equal ["ruby", "jekyll", "atag", "four"], article["tags"]
+    assert_equal "A description", article["description"]
+    assert_equal "https://fpira.com/blog/2026/08/example/", article["canonical_url"]
+    assert_includes article["body_markdown"], "*This post was originally published on [fpira.com](https://fpira.com/blog/2026/08/example/).*"
+    assert_includes article["body_markdown"], "{% cta https://fpira.com/blog %} Read more at fpira.com {% endcta %}"
   end
 
   def test_does_not_convert_dollars_inside_fenced_code
@@ -179,8 +192,10 @@ class DevtoConverterTest < Minitest::Test
 
     Jekyll::Devto::Command.process("source" => source_dir, "show_drafts" => true)
 
-    generated = Dir.glob(File.join(source_dir, "_devto", "*.md")).map { |path| File.basename(path) }
+    generated = Dir.glob(File.join(source_dir, "_devto", "md", "*.md")).map { |path| File.basename(path) }
     assert_equal ["2026-01-01-published.md", "2027-01-01-future.md"], generated.sort
+    generated_json = Dir.glob(File.join(source_dir, "_devto", "json", "*.json")).map { |path| File.basename(path) }
+    assert_equal ["2026-01-01-published.json", "2027-01-01-future.json"], generated_json.sort
     assert_equal true, fake_site_class.last_config["future"]
     assert_equal false, fake_site_class.last_config["show_drafts"]
     assert_equal false, fake_site_class.last_config["unpublished"]

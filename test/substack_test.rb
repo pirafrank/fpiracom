@@ -78,7 +78,10 @@ class SubstackConverterTest < Minitest::Test
     assert_equal "https://fpira.com/static/postimages/3020/cover.png", payload["cover_image"]
     assert_includes payload["body_markdown"], "*This post was originally published on [fpira.com](https://fpira.com/blog/2026/08/example/).*"
     assert_includes payload["body_markdown"], "Thanks for reading! If you enjoyed this post"
-    assert_includes payload["draft_body"], "<p><em>This post was originally published on"
+    assert_includes payload["body_html"], "<p><em>This post was originally published on"
+    pm_body = JSON.parse(payload["draft_body"])
+    assert_equal "doc", pm_body["type"]
+    assert pm_body["content"].is_a?(Array)
   end
 
   def test_converts_seoimage_using_site_url_and_baseurl

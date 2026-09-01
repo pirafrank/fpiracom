@@ -16,6 +16,136 @@ module Jekyll
 
     class ConversionError < StandardError; end
 
+    module ProseMirror
+      module_function
+
+      def from_markdown(markdown)
+        doc = Kramdown::Document.new(markdown, input: "GFM")
+        {
+          "type" => "doc",
+          "content" => convert_blocks(doc.root.children)
+        }
+      end
+
+      def convert_blocks(elements)
+        blocks = []
+        elements.each do |el|
+          case el.type
+          when :blank
+            next
+          when :header
+            level = el.options[:level] || 1
+            content = convert_inlines(el.children)
+            node = { "type" => "heading", "attrs" => { "level" => level } }
+            node["content"] = content unless content.empty?
+            blocks << node
+          when :p
+            if el.children.length == 1 && el.children.first.type == :img
+              blocks << convert_image(el.children.first)
+            else
+              content = convert_inlines(el.children)
+              node = { "type" => "paragraph" }
+              node["content"] = content unless content.empty?
+              blocks << node
+            end
+          when :blockquote
+            inner = convert_blocks(el.children)
+            blocks << { "type" => "blockquote", "content" => inner }
+          when :codeblock
+            lang = el.options[:lang] || ""
+            blocks << {
+              "type" => "code_block",
+              "attrs" => { "language" => lang },
+              "content" => [{ "type" => "text", "text" => el.value }]
+            }
+          when :ul
+            items = el.children.select { |c| c.type == :li }.map do |li|
+              inner = convert_blocks(li.children)
+              inner = [{ "type" => "paragraph" }] if inner.empty?
+              { "type" => "list_item", "content" => inner }
+            end
+            blocks << { "type" => "bullet_list", "content" => items }
+          when :ol
+            items = el.children.select { |c| c.type == :li }.map do |li|
+              inner = convert_blocks(li.children)
+              inner = [{ "type" => "paragraph" }] if inner.empty?
+              { "type" => "list_item", "content" => inner }
+            end
+            blocks << { "type" => "ordered_list", "attrs" => { "order" => 1 }, "content" => items }
+          when :hr
+            blocks << { "type" => "horizontal_rule" }
+          when :img
+            blocks << convert_image(el)
+          when :html_element
+            inner = convert_blocks(el.children)
+            blocks.concat(inner)
+          else
+            content = convert_inlines(el.children)
+            node = { "type" => "paragraph" }
+            node["content"] = content unless content.empty?
+            blocks << node unless node["content"]&.empty?
+          end
+        end
+        blocks
+      end
+
+      def convert_image(el)
+        {
+          "type" => "captionedImage",
+          "attrs" => {
+            "src" => el.attr["src"],
+            "alt" => el.attr["alt"].to_s
+          }
+        }
+      end
+
+      def convert_inlines(elements, current_marks = [])
+        inlines = []
+        elements.each do |el|
+          case el.type
+          when :text
+            text = el.value
+            next if text.nil? || text.empty?
+
+            node = { "type" => "text", "text" => text }
+            node["marks"] = current_marks unless current_marks.empty?
+            inlines << node
+          when :strong
+            inlines.concat(convert_inlines(el.children, current_marks + [{ "type" => "strong" }]))
+          when :em
+            inlines.concat(convert_inlines(el.children, current_marks + [{ "type" => "em" }]))
+          when :codespan
+            node = { "type" => "text", "text" => el.value }
+            node["marks"] = current_marks + [{ "type" => "code" }]
+            inlines << node
+          when :a
+            mark = { "type" => "link", "attrs" => { "href" => el.attr["href"].to_s } }
+            inlines.concat(convert_inlines(el.children, current_marks + [mark]))
+          when :smart_quote
+            val = el.value == :lsquo || el.value == :rsquo ? "'" : '"'
+            inlines << { "type" => "text", "text" => val }
+          when :typographic_sym
+            val = case el.value
+                  when :mdash then "—"
+                  when :ndash then "–"
+                  when :ellipsis then "…"
+                  when :laquo then "«"
+                  when :raquo then "»"
+                  else el.value.to_s
+                  end
+            inlines << { "type" => "text", "text" => val }
+          when :entity
+            inlines << { "type" => "text", "text" => el.value.char }
+          when :img
+            # Image within inline text
+          else
+            inlines.concat(convert_inlines(el.children, current_marks))
+          end
+        end
+        inlines
+      end
+    end
+
     class Converter
       JEKYLL_TAG = /\{%\s*(?<name>[a-z_]+)(?<args>.*?)%\}/m
       LIQUID_OUTPUT = /\{\{.*?\}\}/m
@@ -91,10 +221,12 @@ module Jekyll
 
       def article_payload(data, post, converted)
         body_md = substack_body(post, converted)
+        pm_doc = ProseMirror.from_markdown(body_md)
         payload = {
           "draft_title" => data.fetch("title").to_s,
-          "draft_body" => to_html(body_md),
+          "draft_body" => JSON.generate(pm_doc),
           "body_markdown" => body_md,
+          "body_html" => to_html(body_md),
           "draft" => true,
           "canonical_url" => "#{@site_url}#{post_url(post)}",
           "tags" => normalized_tags(data),

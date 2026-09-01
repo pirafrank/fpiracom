@@ -293,6 +293,16 @@
       "permanent": false
     },
     {
+      "source": "/substack",
+      "destination": "https://substack.com/@pirafrank",
+      "permanent": false
+    },
+    {
+      "source": "/newsletter",
+      "destination": "https://pirafrank.substack.com",
+      "permanent": false
+    },
+    {
       "source": "/store",
       "destination": "https://pirafrank.gumroad.com/",
       "permanent": false

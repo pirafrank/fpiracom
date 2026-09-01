@@ -10,8 +10,30 @@ class SubstackTasksTest < Minitest::Test
 
   def test_format_cookie
     assert_equal "", SubstackTasks.format_cookie("")
-    assert_equal "connect.sid=xyz123", SubstackTasks.format_cookie("xyz123")
-    assert_equal "connect.sid=xyz123; substack.sid=abc456", SubstackTasks.format_cookie("connect.sid=xyz123; substack.sid=abc456")
+    assert_includes SubstackTasks.format_cookie("xyz123"), "substack.sid=xyz123"
+    assert_includes SubstackTasks.format_cookie("xyz123"), "connect.sid=xyz123"
+
+    formatted = SubstackTasks.format_cookie("connect.sid=xyz123", "jwt456")
+    assert_includes formatted, "substack.sid=xyz123"
+    assert_includes formatted, "connect.sid=xyz123"
+    assert_includes formatted, "substack.lli=jwt456"
+
+    full_cookie = "substack.sid=sid1; substack.lli=jwt2"
+    assert_includes SubstackTasks.format_cookie(full_cookie), "substack.sid=sid1"
+    assert_includes SubstackTasks.format_cookie(full_cookie), "substack.lli=jwt2"
+  end
+
+  def test_current_user_id_extracts_from_jwt
+    jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4MTA4MzA2LCJpYXQiOjE3ODgyNjE5NjcsImV4cCI6MTc5MDg1Mzk2NywiYXVkIjoibGlrZWx5LWxvZ2dlZC1pbiJ9.vSFZ0Wl98JxFRAV2YdgD-Ai42J-3St-FsI2Hpcpvdwk"
+    assert_equal 18108306, SubstackTasks.current_user_id("substack.lli=#{jwt}")
+  end
+
+  def test_parse_drafts_response
+    assert_equal [{ "id" => 1 }], SubstackTasks.parse_drafts_response([{ "id" => 1 }])
+    assert_equal [{ "id" => 2 }], SubstackTasks.parse_drafts_response({ "drafts" => [{ "id" => 2 }] })
+    assert_equal [{ "id" => 3 }], SubstackTasks.parse_drafts_response({ "posts" => [{ "id" => 3 }] })
+    assert_equal [], SubstackTasks.parse_drafts_response({})
+    assert_equal [], SubstackTasks.parse_drafts_response(nil)
   end
 
   def test_duplicate_draft_matches_title_or_canonical_url
@@ -26,13 +48,13 @@ class SubstackTasksTest < Minitest::Test
     assert_nil SubstackTasks.duplicate_draft(drafts, "Brand New Post", "https://fpira.com/blog/brand-new/")
   end
 
-  def test_all_drafts_requests_subdomain_endpoint
-    mock_drafts = [{ "draft_title" => "Sample", "id" => "123" }]
+  def test_all_drafts_requests_subdomain_endpoint_and_handles_hashes
+    mock_response = { "drafts" => [{ "draft_title" => "Sample", "id" => "123" }] }
     calls = []
     original_capture3 = Open3.method(:capture3)
     Open3.define_singleton_method(:capture3) do |*command|
       calls << command
-      [JSON.generate(mock_drafts), "", Status.new(true)]
+      [JSON.generate(mock_response), "", Status.new(true)]
     end
 
     drafts = SubstackTasks.all_drafts("mycookie", "customsub")
@@ -40,7 +62,7 @@ class SubstackTasksTest < Minitest::Test
     assert_equal 1, drafts.length
     assert_equal "Sample", drafts.first["draft_title"]
     assert_includes calls.first, "https://customsub.substack.com/api/v1/drafts"
-    assert_includes calls.first, "Cookie: connect.sid=mycookie"
+    assert_includes calls.first, "Cookie: substack.sid=mycookie; connect.sid=mycookie"
   ensure
     Open3.define_singleton_method(:capture3, original_capture3) if original_capture3
   end
@@ -55,7 +77,7 @@ class SubstackTasksTest < Minitest::Test
     task = Rake::Task["substack:send"]
     task.reenable
     original_drafts = SubstackTasks.method(:all_drafts)
-    original_system = Kernel.instance_method(:system)
+    original_capture3 = Open3.method(:capture3)
     original_cookie = ENV["SUBSTACK_COOKIE"]
     post_called = false
 
@@ -66,9 +88,9 @@ class SubstackTasksTest < Minitest::Test
         "published" => false
       }]
     end
-    Kernel.send(:define_method, :system) do |*_command|
-      post_called = true
-      true
+    Open3.define_singleton_method(:capture3) do |*command|
+      post_called = true if command.include?("POST")
+      ["{}", "", Status.new(true)]
     end
     ENV["SUBSTACK_COOKIE"] = "secret"
 
@@ -81,7 +103,7 @@ class SubstackTasksTest < Minitest::Test
     refute post_called
   ensure
     SubstackTasks.define_singleton_method(:all_drafts, original_drafts) if original_drafts
-    Kernel.send(:define_method, :system, original_system) if original_system
+    Open3.define_singleton_method(:capture3, original_capture3) if original_capture3
     ENV["SUBSTACK_COOKIE"] = original_cookie
   end
 
@@ -89,27 +111,30 @@ class SubstackTasksTest < Minitest::Test
     task = Rake::Task["substack:send"]
     task.reenable
     original_drafts = SubstackTasks.method(:all_drafts)
-    original_system = Kernel.instance_method(:system)
+    original_capture3 = Open3.method(:capture3)
     original_cookie = ENV["SUBSTACK_COOKIE"]
-    system_calls = []
+    post_calls = []
 
     SubstackTasks.define_singleton_method(:all_drafts) do |_cookie, _sub = nil|
       []
     end
-    Kernel.send(:define_method, :system) do |*command|
-      system_calls << command
-      true
+    Open3.define_singleton_method(:capture3) do |*command|
+      post_calls << command if command.include?("POST")
+      [JSON.generate({ "id" => 456 }), "", Status.new(true)]
     end
     ENV["SUBSTACK_COOKIE"] = "secret"
 
-    task.invoke("2015-10-10-my-2-cents-guide-for-a-safe-upgrade-to-el-capitan.json")
+    output, = capture_io do
+      task.invoke("2015-10-10-my-2-cents-guide-for-a-safe-upgrade-to-el-capitan.json")
+    end
 
-    assert_equal 1, system_calls.length
-    assert_includes system_calls.first, "https://pirafrank.substack.com/api/v1/drafts"
-    assert_includes system_calls.first, "Cookie: connect.sid=secret"
+    assert_equal 1, post_calls.length
+    assert_includes post_calls.first, "https://pirafrank.substack.com/api/v1/drafts"
+    assert_includes output, "Successfully created Substack draft"
+    assert_includes output, "https://pirafrank.substack.com/publish/post/456"
   ensure
     SubstackTasks.define_singleton_method(:all_drafts, original_drafts) if original_drafts
-    Kernel.send(:define_method, :system, original_system) if original_system
+    Open3.define_singleton_method(:capture3, original_capture3) if original_capture3
     ENV["SUBSTACK_COOKIE"] = original_cookie
   end
 end

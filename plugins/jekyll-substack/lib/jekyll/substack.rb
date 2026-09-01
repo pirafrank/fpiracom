@@ -40,8 +40,9 @@ module Jekyll
             node["content"] = content unless content.empty?
             blocks << node
           when :p
-            if el.children.length == 1 && el.children.first.type == :img
-              blocks << convert_image(el.children.first)
+            non_empty_children = el.children.reject { |c| c.type == :text && c.value.to_s.strip.empty? }
+            if non_empty_children.length == 1 && non_empty_children.first.type == :img
+              blocks << convert_image(non_empty_children.first)
             else
               content = convert_inlines(el.children)
               node = { "type" => "paragraph" }
@@ -53,10 +54,11 @@ module Jekyll
             blocks << { "type" => "blockquote", "content" => inner }
           when :codeblock
             lang = el.options[:lang] || ""
+            code_text = el.value.to_s.sub(/\n\z/, "")
             blocks << {
               "type" => "code_block",
               "attrs" => { "language" => lang },
-              "content" => [{ "type" => "text", "text" => el.value }]
+              "content" => [{ "type" => "text", "text" => code_text }]
             }
           when :ul
             items = el.children.select { |c| c.type == :li }.map do |li|
@@ -90,12 +92,20 @@ module Jekyll
       end
 
       def convert_image(el)
+        attrs = {
+          "src" => el.attr["src"],
+          "fullscreen" => false,
+          "imageSize" => "normal"
+        }
+        attrs["alt"] = el.attr["alt"].to_s unless el.attr["alt"].to_s.empty?
         {
           "type" => "captionedImage",
-          "attrs" => {
-            "src" => el.attr["src"],
-            "alt" => el.attr["alt"].to_s
-          }
+          "content" => [
+            {
+              "type" => "image2",
+              "attrs" => attrs
+            }
+          ]
         }
       end
 

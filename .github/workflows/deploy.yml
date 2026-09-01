@@ -170,6 +170,23 @@ jobs:
         done
         # each step runs in a new shell, no need to unset API key or restore nullglob.
 
+    # Create drafts on Substack. substack:send skips drafts that already exist.
+    # Currently disabled (if: false) until enabled with SUBSTACK_COOKIE secret.
+    - name: Create drafts on Substack
+      if: false # github.ref == 'refs/heads/main'
+      shell: bash
+      env:
+        SUBSTACK_COOKIE: ${{ secrets.SUBSTACK_COOKIE }}
+      run: |
+        bundle exec rake substack:build
+        today=$(date '+%Y-%m-%d')
+        shopt -s nullglob
+        filenames=("_substack/json/${today}"*.json)
+        for filename in "${filenames[@]}"; do
+          bundle exec rake "substack:send[$filename]"
+        done
+
+
     # Algolia search index update
     - name: Update Algolia Index
       if: github.ref == 'refs/heads/main'

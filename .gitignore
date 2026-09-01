@@ -62,3 +62,7 @@ skills-lock.json
 
 # dev.to-compatible generated posts
 _devto
+
+# substack-compatible generated posts
+_substack
+

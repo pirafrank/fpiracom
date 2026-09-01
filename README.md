@@ -493,6 +493,61 @@ Bottom of the post page shows related posts.
 
 Related posts are read from `site.data` and are powered by the [jekyll-ai-related](https://github.com/pirafrank/jekyll-ai-related) plugin.
 
+## Cross-publishing
+
+### dev.to
+
+Blog posts can be automatically converted and published to [DEV.to](https://dev.to) using the custom `jekyll-devto` plugin and associated Rake tasks.
+
+The exporter transforms Jekyll-specific Liquid tags (`include image.html`, `post_url`, `youtube`, math formulas) into DEV.to-compatible Markdown and prepares JSON payloads with:
+- Canonical backlink attribution to the original post on fpira.com
+- DEV.to-compatible tags and cover image
+- A Call-to-Action (CTA) footer linking back to fpira.com
+
+To generate files:
+
+```sh
+rake devto:build
+# or: bundle exec jekyll devto
+```
+
+Generated files are saved in `_devto/md/` (Markdown) and `_devto/json/` (API payload).
+
+To send an article to DEV.to via API (includes automatic duplicate detection):
+
+```sh
+DEVTO_API_KEY=your_key rake "devto:send[filename.json]"
+```
+
+New posts are also automatically pushed to DEV.to as drafts/articles during GitHub Actions deployments.
+
+### Substack
+
+Blog posts can be prepared and submitted to [Substack](https://substack.com) as newsletter drafts using the custom `jekyll-substack` plugin and Rake tasks.
+
+The exporter resolves all Jekyll Liquid tags, ensures images and internal post URLs use absolute `https://fpira.com` endpoints, and generates:
+- Canonical source attribution note at the top
+- Substack-friendly metadata (`draft_title`, `draft_subtitle`, `canonical_url`, `cover_image`, `tags`)
+- Newsletter outro CTA footer
+- Kramdown-rendered HTML for the draft body payload
+
+To generate Substack files:
+
+```sh
+rake substack:build
+# or: bundle exec jekyll substack
+```
+
+Generated files are saved in `_substack/md/` (clean Markdown) and `_substack/json/` (draft API payload).
+
+To create a draft on Substack via the draft API (with duplicate check against existing drafts):
+
+```sh
+SUBSTACK_COOKIE="connect.sid=your_cookie" rake "substack:send[filename.json]"
+```
+
+Alternatively, you can manually copy or import the generated Markdown from `_substack/md/`.
+
 ## CMS
 
 ### Jekyll Post via Web

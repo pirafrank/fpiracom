@@ -1,5 +1,38 @@
 [
   {
+    "name": "Nebius AI Leader",
+    "issuer": "Nebius",
+    "code": "NAL-101",
+    "id": "fdf3cc4f-cf79-443c-9ad3-95a2c14edf8d",
+    "url": "/assets/files/honors/Certificate20260821-19-lts01-NAL-101.pdf",
+    "credlyUrl": "https://www.credly.com/earner/earned/badge/fdf3cc4f-cf79-443c-9ad3-95a2c14edf8d",
+    "dateAchieved": "21/08/2026",
+    "dateRenewed": "21/08/2029",
+    "dateExpires": ""
+  },
+  {
+    "name": "Nebius AI CloudOps Engineer",
+    "issuer": "Nebius",
+    "code": "NCO-201",
+    "id": "850d48db-d773-4e00-a8f7-5f3b84938e61",
+    "url": "/assets/files/honors/Certificate20260821-20-s2ixra-NCO-201.pdf",
+    "credlyUrl": "https://www.credly.com/earner/earned/badge/850d48db-d773-4e00-a8f7-5f3b84938e61",
+    "dateAchieved": "03/08/2026",
+    "dateRenewed": "03/08/2029",
+    "dateExpires": ""
+  },
+  {
+    "name": "Nebius Agentic AI Builder",
+    "issuer": "Nebius",
+    "code": "NAB-201",
+    "id": "29374411-ee78-4c35-88f9-8693fc884c05",
+    "url": "/assets/files/honors/Certificate20260821-20-qqc26a-NAB-201.pdf",
+    "credlyUrl": "https://www.credly.com/earner/earned/badge/29374411-ee78-4c35-88f9-8693fc884c05",
+    "dateAchieved": "03/08/2026",
+    "dateRenewed": "03/08/2029",
+    "dateExpires": ""
+  },
+  {
     "name": "Practical DevSecOps Certified DevSecOps Expert",
     "issuer": "Practical DevSecOps",
     "code": "CDE",

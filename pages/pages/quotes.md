@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Inspiring uotes
+title: Inspiring quotes
 permalink: /quotes/
 show_title: true
 custom_css: "pages/quotes"
@@ -28,7 +28,7 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 
 *"Travel is still the most intense mode of learning."* <br>  Kevin Kelly
 
-*"It’s the little details that are vital. Little things make big things happen.*" <br> John Wooden
+*"It's the little details that are vital. Little things make big things happen.*" <br> John Wooden
 
 *"Do not worry about being old; worry about thinking old."* <br> unknown author
 
@@ -36,7 +36,7 @@ Quotes worth sharing. Listed without any particular order.<br><br>
 
 *"It does not matter how slow you go so long as you do not stop."* <br> Wisdom of Confucius
 
-*"Sometimes there’s not a better way. Sometimes there’s only the hard way."* <br> Mary E. Pearson
+*"Sometimes there's not a better way. Sometimes there's only the hard way."* <br> Mary E. Pearson
 
 *"One man's magic is another man's engineering. Supernatural is a null word."* <br> Robert A. Heinlein
 

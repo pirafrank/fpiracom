@@ -1,3 +1,5 @@
+Badges are also available on [Credly]({{ site.data.social.credly.url }}).
+
 {% assign certifications = site.data.certifications %}
 {% for cert in certifications %}
 {% assign da = cert.dateAchieved | date: "%B, %Y" %}
@@ -11,5 +13,3 @@
 - {{ cert.name }}{{code}}<br>Achieved in {{ da }}.{{ dexp }}
 {% endif %}
 {% endfor %}
-
-Badges are also available on [Credly]({{ site.data.social.credly.url }}).

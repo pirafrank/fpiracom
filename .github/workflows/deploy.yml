@@ -171,9 +171,11 @@ jobs:
         # each step runs in a new shell, no need to unset API key or restore nullglob.
 
     # Create drafts on Substack. substack:send skips drafts that already exist.
-    # Currently disabled (if: false) until enabled with SUBSTACK_COOKIE secret.
+    # Currently disabled (if: false) until I find a way to reliably keep
+    # SUBSTACK_COOKIE secret updated. Today, it is nothing more than a placeholder.
     - name: Create drafts on Substack
       if: false # github.ref == 'refs/heads/main'
+      continue-on-error: true
       shell: bash
       env:
         SUBSTACK_COOKIE: ${{ secrets.SUBSTACK_COOKIE }}

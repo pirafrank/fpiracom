@@ -14,6 +14,7 @@ gem "rss", "~> 0.3.3"  # feedparser depends on this even if it's not in the gems
 
 group :jekyll_plugins do
   gem "jekyll-devto", path: "plugins/jekyll-devto"
+  gem "jekyll-substack", path: "plugins/jekyll-substack"
   gem 'jekyll-gist'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'

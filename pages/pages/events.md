@@ -12,16 +12,24 @@ show_title: true
 
 Notable conferences and events I joined. I hope to see you at the next one!
 
+### 2026
+
+- [InnoTrans 2026](https://www.innotrans.com/) - September 24-27, 2026 - Berlin, International trade fair for transport technology. Tech-partner representing Leonardo to showcase the VR Train Driver Simulation Platform developed for [Trenitalia](https://www.trenitalia.com/) under my technical leadership. [[1](https://www.agi.it/economia/news/2026-09-22/trenitalia-simulatore-realta-virtuale-vr-39185795/)], [[2](https://www-fsnews-it.translate.goog/it/focus-on/corporate/2026/9/18/gruppo-fs-innotrans-2026.html?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)], [[3](https://www-repubblica-it.translate.goog/economia/2026/09/22/video/visori_3d_e_realta_virtuale_i_macchinisti_fs_si_addestrano_con_tecnologie_digitali_e_ia-425600188/?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)], [[4](https://italia--informa-com.translate.goog/trenitalia-realta-virtuale.aspx?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)], [[5](https://www-trasporti--italia-com.translate.goog/treno/innotrans-ia-guida-autonoma/1467920/?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)], [[6](https://euroborsa.it/Il-Gruppo-FS-a-InnoTrans-2026--a-Berlino-il-futuro-della-mobilit%C3%A0-ferroviaria.aspx)], [[7](https://www-milanofinanza-it.translate.goog/news/fs-la-nuova-era-strisciuglio-debutta-a-innotrans-a-berlino-innovazione-puntualita-e-nuovo-piano-202609211748571459?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)], [[8](https://www-borsaitaliana-it.translate.goog/borsa/notizie/radiocor/economia/dettaglio/fs-a-berlino-in-mostra-le-ultime-novita--tecnologiche-del-settore-ferroviario-2-nRC_22092026_1101_255303750.html?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)]
+
+### 2025
+
+- [EXPO Ferroviaria 2025](https://www.expoferroviaria.com/) - 30 September - 2 October 2025 - Milan, National fair of rail transport. Tech-partner representing Leonardo to showcase an early preview of the VR Train Driver Simulation Platform developed for [Trenitalia](https://www.trenitalia.com/) under my technical leadership. [[1](https://www.linkedin.com/posts/realtaeqvirtuale-share-7379098484672638976-Zoqn/)], [[2](https://www.linkedin.com/posts/un-viaggio-in-3d-con-un-semplice-visore-ugcPost-7387063686483410944-Dg0q/)]
+
 ### 2024
 
-- FOSDEM 2024, Brussels
+- [FOSDEM 2024](https://archive.fosdem.org/2024/) - February 3-4, 2024 - Brussels. Attendee.
 
 ### 2022
 
-- [Codemotion Milan 2022](https://extra.codemotion.com/conference-milan-2022/) - 18-19 October 2022 - Milan
-- [ITMeeting](https://web.archive.org/web/20231210191337/https://www.uniroma1.it/it/notizia/47deg-itmeeting-27-giugno-2022), recruiting day and metaverse panel - 27 June, 2022 - Sapienza Università di Roma (Rome)
-- [Crypto Expo Milan 2022](https://www.cryptoexpomilan.com/), blockchain and metaverse conference - 23-26 June, 2022 - Milan
-- Codemotion Online Tech Conference - Italian Edition - 23-24, March 2022 (online)
+- [Codemotion Milan 2022](https://extra.codemotion.com/conference-milan-2022/) - 18-19 October 2022 - Milan. Attendee.
+- [ITMeeting](https://web.archive.org/web/20231210191337/https://www.uniroma1.it/it/notizia/47deg-itmeeting-27-giugno-2022) - 27 June, 2022 - Sapienza Università di Roma (Rome). Recruiting day partner (Leonardo) and metaverse panel speaker.
+- [Crypto Expo Milan 2022](https://www.cryptoexpomilan.com/), blockchain and metaverse conference - 23-26 June, 2022 - Milan. Attendee.
+- Codemotion Online Tech Conference - Italian Edition - 23-24, March 2022. Attendee.
 
 ### 2021
 

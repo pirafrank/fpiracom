@@ -1,5 +1,16 @@
 [
   {
+    "name": "Google AI Professional Certificate Coursera",
+    "issuer": "Google",
+    "code": "",
+    "id": "FO3V9TJAHFDJ",
+    "url": "/assets/files/honors/Google-AI/Google_AI_Professional_Certificate_Coursera_FO3V9TJAHFDJ.pdf",
+    "credlyUrl": "https://www.coursera.org/account/accomplishments/professional-cert/FO3V9TJAHFDJ",
+    "dateAchieved": "30/09/2026",
+    "dateRenewed": "",
+    "dateExpires": ""
+  },
+  {
     "name": "Nebius AI Leader",
     "issuer": "Nebius",
     "code": "NAL-101",
@@ -7,8 +18,8 @@
     "url": "/assets/files/honors/Certificate20260821-19-lts01-NAL-101.pdf",
     "credlyUrl": "https://www.credly.com/earner/earned/badge/fdf3cc4f-cf79-443c-9ad3-95a2c14edf8d",
     "dateAchieved": "21/08/2026",
-    "dateRenewed": "21/08/2029",
-    "dateExpires": ""
+    "dateRenewed": "",
+    "dateExpires": "21/08/2029"
   },
   {
     "name": "Nebius AI CloudOps Engineer",
@@ -18,8 +29,8 @@
     "url": "/assets/files/honors/Certificate20260821-20-s2ixra-NCO-201.pdf",
     "credlyUrl": "https://www.credly.com/earner/earned/badge/850d48db-d773-4e00-a8f7-5f3b84938e61",
     "dateAchieved": "03/08/2026",
-    "dateRenewed": "03/08/2029",
-    "dateExpires": ""
+    "dateRenewed": "",
+    "dateExpires": "03/08/2029"
   },
   {
     "name": "Nebius Agentic AI Builder",
@@ -29,8 +40,8 @@
     "url": "/assets/files/honors/Certificate20260821-20-qqc26a-NAB-201.pdf",
     "credlyUrl": "https://www.credly.com/earner/earned/badge/29374411-ee78-4c35-88f9-8693fc884c05",
     "dateAchieved": "03/08/2026",
-    "dateRenewed": "03/08/2029",
-    "dateExpires": ""
+    "dateRenewed": "",
+    "dateExpires": "03/08/2029"
   },
   {
     "name": "Practical DevSecOps Certified DevSecOps Expert",

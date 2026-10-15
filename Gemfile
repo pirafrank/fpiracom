@@ -8,7 +8,7 @@ gem 'faraday-retry'
 gem "digest", "~> 3.3"
 gem 'html-proofer'
 gem 'rake'
-gem "icalendar", "~> 2.12"
+gem "icalendar", "~> 2.13"
 gem 'feedparser', '~> 2.2'
 gem "rss", "~> 0.3.3"  # feedparser depends on this even if it's not in the gemspec
 

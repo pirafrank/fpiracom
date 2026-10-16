@@ -1,18 +1,24 @@
-FROM ruby:3.4
+FROM ruby:3.4.8
 
 ARG NODE_VERSION=24.18.0
 ARG BUNDLER_VERSION=4.0.19
 
 ARG USER_UID=1000
+ARG USER_GID=1000
+
+RUN gem install bundler --no-document --version "${BUNDLER_VERSION}"
 
 RUN apt-get update -qq \
   && apt-get install -y sudo build-essential git curl
 
 # Create 'jekyll' user and enable passwordless sudo (needed by rvm to run scripts)
-RUN useradd -m jekyll -G sudo -s /bin/bash --uid $USER_UID \
+RUN groupadd --gid "$USER_GID" jekyll \
+  && useradd -m jekyll -G sudo -s /bin/bash --uid "$USER_UID" --gid "$USER_GID" \
   && echo jekyll ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/jekyll \
   && echo "root:root" | chpasswd \
-  && echo "jekyll:jekyll" | chpasswd
+  && echo "jekyll:jekyll" | chpasswd \
+  && mkdir -p /home/jekyll/.bundle \
+  && chown -R jekyll:jekyll /home/jekyll/.bundle
 
 USER jekyll
 

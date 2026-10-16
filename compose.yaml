@@ -1,0 +1,22 @@
+services:
+  jekyll:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_UID: ${HOST_UID:-1000}
+        USER_GID: ${HOST_GID:-1000}
+    working_dir: /home/jekyll/app
+    volumes:
+      - .:/home/jekyll/app
+      - bundle:/home/jekyll/.bundle
+    environment:
+      BUNDLE_PATH: /home/jekyll/.bundle
+    ports:
+      - "4001:4001"
+    init: true
+    command: >-
+      bash -lc "bundle install && bundle exec jekyll serve --host=0.0.0.0"
+
+volumes:
+  bundle:

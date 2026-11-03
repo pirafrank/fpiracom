@@ -20,7 +20,7 @@ Jekyll::Hooks.register :site, :pre_render do |site, payload|
 
         author_name = current_commit.author.name
         author_email = current_commit.author.email
-        commit_hash = g.revparse('HEAD')
+        commit_hash = g.rev_parse('HEAD')
         commit_date = current_commit.author.date.strftime(date_format)
         branch = g.current_branch
         tag = g.describe('HEAD', {:all => false, :tags => true, :always => true})

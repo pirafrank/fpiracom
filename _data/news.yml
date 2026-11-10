@@ -1,5 +1,9 @@
 recent:
   - |
+    New project: `arxiv.koplugin` is now available on [GitHub](https://github.com/pirafrank/arxiv.koplugin)!
+  - |
+    `poof` [0.6.3](https://github.com/pirafrank/poof/releases/v0.6.3) is out!
+  - |
     `vault-conductor` [0.3.1](https://github.com/pirafrank/vault-conductor/releases/v0.3.1) is out! It's a maintenance release focused on security.
   - |
     `jekyll-ai-related` [0.3.0](https://github.com/pirafrank/jekyll-ai-related/releases/v0.3.0) is here, with embeddings caching. Full changelog [here](https://github.com/pirafrank/jekyll-ai-related/blob/main/CHANGELOG.md).

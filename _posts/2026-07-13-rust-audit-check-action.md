@@ -44,7 +44,7 @@ maintainers of JavaScript-based actions must periodically update their runtime
 declaration, dependencies, generated bundles, and test environments.
 
 Users may otherwise start seeing deprecation warnings in workflows even when
-the underlying tool they wanted to run—such as `cargo audit`—continues to work correctly.
+the underlying tool they wanted to run, such as `cargo audit`,continues to work correctly.
 
 Plain. Boring.
 

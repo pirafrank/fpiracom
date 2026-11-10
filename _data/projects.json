@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "name": "arxiv.koplugin",
+      "description": "Download arXiv PDFs by identifier or URL from KOReader",
+      "group": "Plugins",
+      "homepage": "https://github.com/pirafrank/arxiv.koplugin",
+      "repourl": "https://github.com/pirafrank/arxiv.koplugin",
+      "image": "",
+      "license": "MIT",
+      "skills": ["Lua", "GitHub Actions"],
+      "creationDate": "2026-11-09T00:00:00Z",
+      "lastUpdate": "",
+      "isFeatured": false,
+      "isArchived": false,
+      "maintained": true
+    },
+    {
       "name": "Rust Audit Check Action",
       "description": "Run cargo audit and check for RustSec security advisories in GitHub Actions",
       "group": "CI/CD",

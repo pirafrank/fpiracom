@@ -63,6 +63,7 @@ jobs:
   related:
     name: Regenerate related posts
     runs-on: ubuntu-24.04
+    environment: Production
     # this job is allowed to fail, so that the build and deploy job can still run.
     # job may fail if OPENAI credits are exhausted.
     continue-on-error: true

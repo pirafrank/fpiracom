@@ -15,6 +15,7 @@ jobs:
   notion-to-jekyll:
     name: Notion to Jekyll
     runs-on: ubuntu-24.04
+    environment: Production
     steps:
     - name: Clone repo
       uses: actions/checkout@v7

@@ -11,6 +11,7 @@ jobs:
     name: Regenerate related posts
     runs-on: ubuntu-24.04
     if: github.ref == 'refs/heads/main'
+    environment: Production
     steps:
     - name: Clone repo
       uses: actions/checkout@v7

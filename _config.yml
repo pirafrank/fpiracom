@@ -83,6 +83,7 @@ feeds:
 # Home customisation
 home:
   max_posts: 5 # max number of latest posts to show in home page
+  max_news: 10 # max number of news items to show in home page
   show_excerpt: true # choose whether to show or not excerpt of latest blog posts
 
 # Default values

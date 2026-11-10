@@ -50,7 +50,10 @@ in_search: false
       <div class="resources">
         <div class="sectionTitle">News</div>
           <ul>
-          {% for news_item in site.data.news.content %}
+          {% for news_item in site.data.news.recent limit: site.home.max_news %}
+            <li>{{ news_item | markdownify | strip_newlines | remove: '<p>' | remove: '</p>' }}</li>
+          {% endfor %}
+          {% for news_item in site.data.news.pinned %}
             <li>{{ news_item | markdownify | strip_newlines | remove: '<p>' | remove: '</p>' }}</li>
           {% endfor %}
           </ul>

@@ -1,4 +1,4 @@
-content:
+recent:
   - |
     `vault-conductor` [0.3.1](https://github.com/pirafrank/vault-conductor/releases/v0.3.1) is out! It's a maintenance release focused on security.
   - |
@@ -13,6 +13,7 @@ content:
     `vault-conductor` is [on Product Hunt](https://www.producthunt.com/posts/vault-conductor)
   - |
     New project: [vault-conductor](https://github.com/pirafrank/vault-conductor)!
+pinned:
   - Big release! `poof` [0.6.0](https://github.com/pirafrank/poof/releases/v0.6.1) is out and packed with lots of features.
-  - Recently I've made Telegram channels for [OPNsense Updates](https://t.me/opnsenseupdates) and [Apple Developer releases](https://t.me/appledeveloperreleases). Updates are published as soon as they're out.
+  - Dedicated Telegram channels for [OPNsense Updates](https://t.me/opnsenseupdates) and [Apple Developer releases](https://t.me/appledeveloperreleases). Updates are published as soon as they're out.
   - Help me pushing [this idea](https://connect.mozilla.org/t5/ideas/ability-to-rearrange-firefox-containers-in-manage-containers/idi-p/12447) forward on Firefox on Mozilla Connect by voting it. Thank you!

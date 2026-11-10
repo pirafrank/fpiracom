@@ -5,6 +5,7 @@ subtitle: "How taking a screenshot of an open input modal on KOReader turned int
 description: "Fixing DMA stride misalignment: bypassing E-ink UI events with raw framebuffer dumps and memory arithmetic"
 categories: ["Posts"]
 tags: ["koreader", "reverse-engineering", "kindle", "ffmpeg"]
+seoimage: "3024/seo.png"
 math: true
 ---
 

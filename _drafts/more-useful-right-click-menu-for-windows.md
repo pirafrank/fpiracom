@@ -1,14 +1,20 @@
 ---
-title: "A More Useful Windows Explorer Context Menu"
+title: "A more useful Windows Explorer context menu"
 subtitle: "Launch editors, WSL, and file utilities from right-click actions"
 description: "A practical walkthrough of configuring Custom Context Menu with JSON commands for files, folders, editors, WSL, and common utilities."
 category: [ "How-tos" ]
 tags: [ "Windows", "Windows 10", "WSL", "Tools" ]
+seoimage: "3028/seo.jpg"
 ---
+
+{% include image.html
+url="/static/postimages/3028/seo.jpg"
+alt="Isometric pipeline diagram showing a right-click context menu emerging from a simplified Windows Explorer window and routing a selected folder to a code editor, terminal window, and clipboard utility"
+%}
 
 Windows Explorer is where many file and project workflows begin, but its built-in context menu rarely has every action I want. The [Custom Context Menu](https://apps.microsoft.com/detail/9pc7bzz28g0x?hl=en-US&gl=IT) app lets me add commands that appear when I right-click a file or folder. In this setup, that means jumping straight into an editor, opening a Linux shell at a folder, or doing a quick file utility task without first navigating through another application.
 
-The command definitions live as JSON files in `custom_commands`. Each one supplies a menu title, the program or script to run, an optional icon, and rules for whether it accepts files, folders, or multiple selections. The paths in these definitions point to this machine’s installed programs and dotfiles, so they need adjusting on another PC. The app ignores command files placed in subdirectories of `custom_commands`, so the active JSON files belong directly in that folder.
+The command definitions live as JSON files in `custom_commands`. Each one supplies a menu title, the program or script to run, an optional icon, and rules for whether it accepts files, folders, or multiple selections. The paths in these definitions point to my machine’s installed programs and dotfiles, so they need adjusting on another PC. The app ignores command files placed in subdirectories of `custom_commands`, so the active JSON files belong directly in that folder.
 
 Every command name below links to its JSON file in the [`custom_commands` directory at commit `d00f91a`](https://github.com/pirafrank/dotfiles/tree/d00f91a5faa09d40a4c878d524810a0d9d39c262/Windows/CustomContextMenu/custom_commands), so you can inspect the exact configuration.
 
@@ -54,12 +60,14 @@ Keeping several editors available is valuable because “open this folder” doe
 
 1. Install **Custom Context Menu** from the [Microsoft Store](https://www.microsoft.com/store/productId/9PC7BZZ28G0X?ocid=pdpshare).
 2. Open the app’s command folder at `%LOCALAPPDATA%\Packages\7061touchwp.CustomContextMenu_m9vp3t2f55f5t\LocalState\custom_commands`. Create `custom_commands` if it does not exist.
-3. Copy the JSON files directly inside this repository’s `custom_commands` folder into that app folder. Copy only the files at the top level; the app ignores files in subfolders.
-4. Review the JSON `exe`, `icon`, and script paths and change them if your programs or this dotfiles checkout live elsewhere. These paths currently refer to Francesco’s Windows profile and installed applications.
+3. Copy the JSON files from the `custom_commands` folder in my dotfiles repository into that app folder. Copy only the files at the top level; the app ignores files in subfolders.
+4. Review the JSON `exe`, `icon`, and script paths and change them if your programs or dotfiles checkout live elsewhere. These paths currently refer to my Windows profile and installed applications.
 5. Restart or refresh Custom Context Menu if it is already running, then test an entry on a matching file or folder.
 
-From this repository’s directory, `restore.ps1` provides a copy-based alternative: it copies the local `custom_commands` directory into the app’s `LocalState` folder. Existing files with matching names may be overwritten. To bring the app’s current configuration back into the repository instead, `backup.ps1` copies in the opposite direction and replaces the repository’s `custom_commands` directory, so use that when you intend to update the checked-in copy.
+From the `Windows/CustomContextMenu` directory in that repository, `restore.ps1` provides a copy-based alternative: it copies the local `custom_commands` directory into the app’s `LocalState` folder. Existing files with matching names may be overwritten. To bring the app’s current configuration back into the repository instead, `backup.ps1` copies in the opposite direction and replaces the repository’s `custom_commands` directory, so use that when you intend to update the checked-in copy.
 
 ## A small menu that removes repeated steps
 
 The advantage of these entries is not any single feature; it is the shorter path from finding an item to acting on it. A file can be inspected or copied immediately, a project can open in the editor that fits the moment, and a folder can become a ready-to-use WSL shell. Because the definitions are plain JSON and the helper actions are small scripts, the menu can be tailored to the tools already installed and the workflows that come up every day.
+
+Thanks for reading.

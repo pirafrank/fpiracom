@@ -1,14 +1,20 @@
 ---
-layout: post
 title: "Boring by Design: Why Agentic Software Development Needs Less Magic"
+subtitle: "How explicit contracts, predictable stacks, and executable checks keep AI-assisted codebases maintainable"
 description: "Why stable standards, small dependency surfaces, explicit contracts, and executable feedback make AI-assisted software engineering more reliable."
-tags: [AI, Software Engineering, Agents, Architecture, Web Standards]
+category: [ "Editorials" ]
+tags: [ "AI", "Software Engineering", "Agents", "Architecture", "Web Standards" ]
+seoimage: 3026/001.jpg
 ---
 
+{% include image.html
+url="/static/postimages/3026/001.jpg"
+alt="Editorial illustration contrasting dark floating black-box modules and tangled gears on the left with grounded modular architecture, explicit conduits, verification gauges, and an engineer inspecting a clear system diagram on the right"
+%}
 
 *The most agent-friendly technology is not necessarily the newest, smallest, or most popular. It is the technology whose behavior we can explain, verify, and maintain.*
 
-A recent [Codemotion article by Matteo Antony Mistretta](https://www.codemotion.com/magazine/ai-ml/why-ai-hates-modern-web-frameworks-and-loves-web-standards/) asks why AI coding assistants seem comfortable with HTML, CSS, and straightforward JavaScript but can struggle with the invisible machinery of modern reactive frameworks. Its examples are familiar: Vue's reactivity can be disrupted by destructuring, React effects have dependency rules, and reactive updates can depend on state changes spread across multiple files.
+An October 2026 [Codemotion article by Matteo Antony Mistretta](https://www.codemotion.com/magazine/ai-ml/why-ai-hates-modern-web-frameworks-and-loves-web-standards/) asks why AI coding assistants seem comfortable with HTML, CSS, and straightforward JavaScript but can struggle with the invisible machinery of modern reactive frameworks. Its examples are familiar: Vue's reactivity can be disrupted by destructuring, React effects have dependency rules, and reactive updates can depend on state changes spread across multiple files.
 
 That observation is useful, but I think the more important conclusion goes beyond frontend development.
 
@@ -18,11 +24,7 @@ This matters for browser interfaces, but also for backend services, CLIs, build 
 
 ## Vibe coding and agent-assisted engineering are different things
 
-The term *vibe coding* originally described a workflow in which a developer delegates not only the typing but much of the understanding of the code to an AI assistant. That can be reasonable for a disposable prototype. It is a poor default for systems expected to survive upgrades, changing requirements, and security reviews.
-
-An engineering agent should instead operate inside explicit boundaries: use the existing architecture, consult the installed versions, make a limited change, run checks, inspect failures, and report what remains unverified.
-
-The question is not whether we allow agents to generate code. It is whether we give them an environment in which being wrong is cheap to detect and correct.
+As I argued when writing about [why refusing AI misses the point]({% post_url 2026-11-22-on-refusing-AI-and-missing-the-point %}), blind delegation ("vibe coding") works for disposable prototypes, not for systems that have to survive real users and ongoing maintenance. Agent-assisted engineering requires the opposite: an explicit architecture and verification loop where wrong assumptions are cheap to detect and correct.
 
 ## Every abstraction spends an uncertainty budget
 

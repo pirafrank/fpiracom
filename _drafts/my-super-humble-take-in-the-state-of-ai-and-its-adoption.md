@@ -3,7 +3,7 @@ title: "A few thoughts on the state of AI and its adoption"
 subtitle: "A personal view of how AI can become useful without becoming an environmental, financial, or cognitive step back"
 description: "AI adoption is not only a question of model capability. It also depends on how developers use AI, whether its infrastructure can scale sustainably, and whether businesses understand what the technology can (and cannot) deliver."
 category: [ "Posts" ]
-tags: [ "AI", "LLM", "Cloud", "Software Engineering", "hardware", "Privacy" ]
+tags: [ "AI", "LLM", "Cloud", "Software Engineering", "Linux", "hardware", "Privacy" ]
 seoimage: 3022/001.jpg
 ---
 
@@ -72,7 +72,7 @@ The adoption question is different for an open-source project and for an enterpr
 
 Open-source projects are not factories for producing code at any cost. They are communities responsible for code that other people will run, depend on and maintain.
 
-Salvatore Sanfilippo, the creator of Redis, approaches AI from a practical direction in [his discussion of coding agents and software development](https://www.youtube.com/watch?v=Dbf__V0yJJ8). The interesting question is not whether a model wrote a line of code, but whether the surrounding process preserves understanding and quality. That is the right boundary: the origin of a change matters less than whether the change is correct, understandable and maintainable.
+Salvatore Sanfilippo, the creator of Redis, approaches AI from a practical direction in [his discussion of coding agents and software development](https://www.youtube.com/watch?v=Dbf__V0yJJ8), focusing on whether the surrounding process preserves understanding and quality rather than whether a model wrote a given line. Linus Torvalds draws the same line in a [Linux kernel mailing-list message](https://lore.kernel.org/linux-media/CAHk-=wi4zC+Ze8e+p3tMv8TtG_80KzsZ1syL9anBtmEh5Z40vg@mail.gmail.com/): developers are free to use AI tools, provided the resulting patch is reviewable and holds up on its own merits. That is the right boundary: the origin of a change matters less than whether the change is correct, understandable and maintainable.
 
 The same principle applies to project policy. A contributor should not be required to disclose every editor feature or autocomplete suggestion, but a project can reasonably require tests, clear commit messages, reproducible behaviour and human review. Generated code must enter the same maintenance process as handwritten code.
 

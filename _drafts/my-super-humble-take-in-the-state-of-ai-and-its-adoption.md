@@ -3,7 +3,7 @@ title: "A few thoughts on the state of AI and its adoption"
 subtitle: "A personal view of how AI can become useful without becoming an environmental, financial, or cognitive step back"
 description: "AI adoption is not only a question of model capability. It also depends on how developers use AI, whether its infrastructure can scale sustainably, and whether businesses understand what the technology can (and cannot) deliver."
 category: [ "Posts" ]
-tags: [ "AI", "LLM", "Cloud", "hardware", "Linux", "Privacy", "Tools" ]
+tags: [ "AI", "LLM", "Cloud", "Software Engineering", "hardware", "Privacy" ]
 seoimage: 3022/001.jpg
 ---
 
@@ -24,9 +24,7 @@ I keep coming back to three questions:
 
 The first thing I would like to remove from the conversation is a little theatre.
 
-AI is a tool. A powerful tool, sometimes a surprisingly useful one, but still a tool. A compiler is a tool. A debugger is a tool. A search engine, a database, a shell script and a spreadsheet are tools. We do not usually discuss whether a compiler has “changed everything” every time a new version is released. We ask whether it produces a correct binary and whether it fits the work.
-
-The amount of discussion around AI is partly proportional to how disruptive the tool appears to be. When a tool changes who can perform a task, lowers the cost of experimentation or moves a boundary that looked fixed, people talk about it. That is reasonable. It does not mean that every discussion is useful, or that the tool has removed the need for judgment.
+As I argued when writing about [AI as the latest layer of software abstraction](/blog/2026/11/on-refusing-AI-and-missing-the-point/), AI is a tool-a powerful and sometimes surprisingly useful one, but still a tool. When something changes who can perform a task, lowers the cost of experimentation or moves a boundary that looked fixed, people talk about it. That is reasonable. It does not mean that every discussion is useful, or that the tool has removed the need for judgment.
 
 For a developer, an AI assistant can be useful for exploring an unfamiliar API, producing a first draft, translating between languages, explaining an error, generating test cases or reducing the amount of typing required for a repetitive change. It can also confidently suggest a wrong API, invent a dependency, miss a security boundary or make a codebase harder to understand.
 
@@ -40,7 +38,7 @@ I am happy to use a tool that saves time. I am less interested in pretending tha
 
 The hidden cost of AI is becoming harder to ignore. The cost is not only the monthly subscription or the token bill. It includes the hardware, the electricity, the cooling, the water, the networking, the buildings, the local grid upgrades and the people needed to operate all of it.
 
-The [International Energy Agency’s *Energy and AI* analysis](https://www.iea.org/reports/energy-and-ai/) describes data centres as a growing source of electricity demand. The [Lawrence Berkeley National Laboratory’s 2025 data-centre update](https://seta.lbl.gov/publications/united-states-data-center-energy-2025) also shows how uncertain—and potentially very large—the future demand range is. Water use is not a single fixed number either: it depends on the cooling system, the local climate, the electricity mix and whether we are discussing withdrawal or actual consumption. The [Berkeley water-use research](https://www.law.berkeley.edu/research/clee/research/wheeler/water-innovation/data-center-water-use/) is a useful reminder that the local details matter.
+The [International Energy Agency’s *Energy and AI* analysis](https://www.iea.org/reports/energy-and-ai/) describes data centres as a growing source of electricity demand. The [Lawrence Berkeley National Laboratory’s 2025 data-centre update](https://seta.lbl.gov/publications/united-states-data-center-energy-2025) also shows how uncertain-and potentially very large-the future demand range is. Water use is not a single fixed number either: it depends on the cooling system, the local climate, the electricity mix and whether we are discussing withdrawal or actual consumption. The [Berkeley water-use research](https://www.law.berkeley.edu/research/clee/research/wheeler/water-innovation/data-center-water-use/) is a useful reminder that the local details matter.
 
 None of this means that every data centre is an environmental disaster, or that AI has no useful applications. It means that “we will build more capacity” is not a neutral technical answer. Large facilities need power and cooling, often near existing infrastructure and populated areas. They can create noise, compete for water, require new transmission capacity and leave businesses exposed to a recurring operating cost that is difficult to predict.
 
@@ -56,7 +54,7 @@ Closed models can be better for a particular task, and hosted services are often
 
 I wrote about this direction in a [post about usage-based AI billing and the hidden cost of cloud AI](https://www.linkedin.com/posts/pirafrank_github-copilot-is-moving-to-usage-based-billing-activity-7454629214097432576-vWTm?utm_source=share&utm_medium=member_ios&rcm=ACoAAAs8XocBJPtxyqv7ddC5MGjOElOSxUbeG8E), and made the same broader argument in a [Mastodon post about open weights and edge computing](https://mastodon.social/@pirafrank/116953617047930401). The short version is that I expect AI to follow a familiar path: personal computers democratized computing, smartphones put the internet in our pockets, and efficient open-weight models can make useful AI a local commodity.
 
-That path has a privacy advantage as well. If a model runs on hardware I control, the prompt and the result do not need to cross somebody else’s boundary. This is not a complete privacy solution—local software can still be badly configured, and the model itself can have licensing and provenance issues—but it removes one large and often invisible dependency.
+That path has a privacy advantage as well. If a model runs on hardware I control, the prompt and the result do not need to cross somebody else’s boundary. This is not a complete privacy solution-local software can still be badly configured, and the model itself can have licensing and provenance issues-but it removes one large and often invisible dependency.
 
 ### Edge computing against data centres
 
@@ -74,11 +72,9 @@ The adoption question is different for an open-source project and for an enterpr
 
 Open-source projects are not factories for producing code at any cost. They are communities responsible for code that other people will run, depend on and maintain.
 
-Linus Torvalds’ position on AI in the Linux ecosystem is a useful example of pragmatism. In a [Linux kernel mailing-list message](https://lore.kernel.org/linux-media/CAHk-=wi4zC+Ze8e+p3tMv8TtG_80KzsZ1syL9anBtmEh5Z40vg@mail.gmail.com/), he describes AI tools as something developers can use, while keeping the focus on the quality and reviewability of the resulting patch. That is the right boundary: the origin of a change matters less than whether the change is correct, understandable and maintainable.
+Salvatore Sanfilippo, the creator of Redis, approaches AI from a practical direction in [his discussion of coding agents and software development](https://www.youtube.com/watch?v=Dbf__V0yJJ8). The interesting question is not whether a model wrote a line of code, but whether the surrounding process preserves understanding and quality. That is the right boundary: the origin of a change matters less than whether the change is correct, understandable and maintainable.
 
 The same principle applies to project policy. A contributor should not be required to disclose every editor feature or autocomplete suggestion, but a project can reasonably require tests, clear commit messages, reproducible behaviour and human review. Generated code must enter the same maintenance process as handwritten code.
-
-Salvatore Sanfilippo, the creator of Redis, has approached AI from a similarly practical direction in [his discussion of coding agents and software development](https://www.youtube.com/watch?v=Dbf__V0yJJ8). The interesting question is not whether a model wrote a line of code. It is whether the surrounding process preserves understanding and quality.
 
 There is also a sustainability issue for open source. If maintainers use hosted tools for every task, the project may become dependent on a provider, a paid account or a model whose behaviour changes without notice. Local open-weight models do not solve all of that, but they offer more control and more options for contributors who can run them.
 
@@ -88,9 +84,9 @@ In the enterprise, the most damaging misunderstanding is that AI is a magic wand
 
 There are at least three budgets to consider:
 
-* the financial budget for subscriptions, APIs, GPUs, storage, networking and operations;
-* the cognitive budget developers spend verifying, correcting and understanding generated work; and
-* the technical-debt budget created when a system accumulates code that nobody fully understands.
+- the financial budget for subscriptions, APIs, GPUs, storage, networking and operations;
+- the cognitive budget developers spend verifying, correcting and understanding generated work; and
+- the technical-debt budget created when a system accumulates code that nobody fully understands.
 
 An AI initiative that ignores any of these budgets is not free productivity. It is often deferred cost.
 
@@ -98,7 +94,7 @@ Privacy belongs in the same conversation. A company that cares about protecting 
 
 Open-weight models make stronger privacy boundaries possible, but they introduce a different operational burden. A company needs hardware capable of running the chosen model, a serving runtime, model updates, monitoring, access controls, backups and people who understand the system. Good local hardware is still expensive, consumes power and can be difficult to maintain. “Run it locally” is an architectural direction, not a zero-cost checkbox.
 
-That burden is still preferable in some cases to sending all data and all inference to a vendor, especially when the workload is stable and the organization can amortize the hardware over time. In other cases, a hosted model is the more responsible choice. The decision should follow the data, the workload, the required quality and the actual total cost—not a slide promising infinite leverage.
+That burden is still preferable in some cases to sending all data and all inference to a vendor, especially when the workload is stable and the organization can amortize the hardware over time. In other cases, a hosted model is the more responsible choice. The decision should follow the data, the workload, the required quality and the actual total cost-not a slide promising infinite leverage.
 
 ## A partial escape route
 
@@ -110,6 +106,6 @@ Research such as [BitNet](https://arxiv.org/abs/2310.11453) and [BitNet b1.58](h
 
 None of these developments makes the current data-centre economy disappear. They do make a different future plausible: capable models running on devices people and organizations already control, with centralized services reserved for tasks that genuinely need them.
 
-That is my humble take. AI is a useful tool, but it is not a substitute for engineering responsibility. Its current infrastructure is powerful, expensive and difficult to scale indefinitely. Adoption will be healthier when we treat privacy, cognition, technical debt and environmental cost as part of the feature—not as someone else’s problem.
+That is my humble take. AI is a useful tool, but it is not a substitute for engineering responsibility. Its current infrastructure is powerful, expensive and difficult to scale indefinitely. Adoption will be healthier when we treat privacy, cognition, technical debt and environmental cost as part of the feature-not as someone else’s problem.
 
 Thanks for reading.

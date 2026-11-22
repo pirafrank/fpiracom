@@ -1,5 +1,5 @@
 ---
-title: "Abstraction, craft, and the anti-ai backlash: why refusing the tool misses the point"
+title: "Moving up the stack: mastering AI without losing your craft"
 subtitle: "Open-source platforms are drawing hard lines against generative AI, but history shows that rejecting a new layer of abstraction never protects software quality. Mastering it does."
 description: "From SourceHut and Codeberg AI bans to the PoC trap: why refusing AI misses the abstraction shift, and why senior judgment and sharp specs matter more."
 category: [ "Editorials" ]
@@ -20,29 +20,29 @@ When SourceHut updated its Terms of Service in late August 2026, it didn't hide 
 >
 > You can review the changes here:
 >
-> https://lists.sr.ht/~sircmpwn/sr.ht-dev/patches/71191
+> <https://lists.sr.ht/~sircmpwn/sr.ht-dev/patches/71191>
 >
 > We have also written a blog post summarizing our rationale, explaining
 > how this rule will be interpreted, and how your projects may be affected
 > and what you need to know if so:
 >
-> https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/
+> <https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/>
 >
 > If you have any questions, please don't hesitate to reply to this email.
 
-Taking effect on September 10, 2026, this update drew an absolute, zero-tolerance line against generative AI: no LLM-written source code, no AI-assisted bug tickets, no generated mailing list patches, and not even new projects that facilitate the use of large language models. Even a minor helper function drafted with an LLM now violates the platform's rules.
+Taking effect on September 10, 2026, this update drew an **absolute, zero-tolerance line against generative AI**: no LLM-written source code, no AI-assisted bug tickets, no generated mailing list patches, and not even new projects that facilitate the use of large language models. Even a minor helper function drafted with an LLM now violates the platform's rules.
 
-SourceHut's blanket ban did not happen in a vacuum. Instead, it is the sharpest escalation yet in a wider split across the open-source ecosystem over what place, if any, generative AI should have in software development. Just weeks earlier, in July 2026, Codeberg's community voted to prohibit repositories consisting *mostly* of AI-generated code, aiming to protect its donation-funded CI/CD runners and storage from a flood of unreviewed vibe-coded projects. Around the same time, Debian took the opposite route by passing a General Resolution centered on *responsible use*, thus permitting AI assistance as long as a human contributor thoroughly understands, tests, and takes full responsibility for what gets shipped.
+SourceHut's blanket ban did not happen in a vacuum. Instead, it is the sharpest escalation yet in a wider split across the open-source ecosystem over what place, if any, generative AI should have in software development. Just weeks earlier, in July 2026, Codeberg's community voted to prohibit repositories consisting *mostly* of AI-generated code, aiming to protect its donation-funded CI/CD runners and storage from a flood of unreviewed vibe-coded projects. Around the same time, Debian took the opposite route by passing a General Resolution centered on **responsible use**, thus permitting AI assistance as long as a human contributor thoroughly understands, tests, and takes full responsibility for what gets shipped.
 
 Ideological manifestos aside, the frustration driving these policies is easy to understand. Volunteer maintainers are drowning in drive-by bug reports hallucinated by a prompt, bloated pull requests from contributors who cannot even explain how their own patch works, and repositories generated overnight with zero architectural planning. That noise is real, and ignoring it would be naive.
 
-Yet, responding to bad usage by banning the underlying technology entirely is a category error. You cannot simply ignore AI, and pretending we can freeze software engineering in 2022 is both futile and counterproductive.
+Yet, **responding to bad usage by banning the underlying technology entirely is a category error.** You cannot simply ignore AI, and pretending we can freeze software engineering in 2022 is both futile and counterproductive.
 
 ## Looking for a middle ground
 
 In a quest to save the new without drowning in it, we look at how some of the most seasoned engineers in our industry have navigated this shift. Take Linus Torvalds, for example, hardly someone known for chasing Silicon Valley hype or tolerating sloppy engineering.
 
-Earlier in 2026, Torvalds openly acknowledged using AI to build the Python visualizer for a hobby audio project because he didn't care to spend weeks wrestling with a language outside his daily wheelhouse. By October, he was using Claude Code to help draft a series of Linux kernel patches tackling a long-standing multi-core file-read bottleneck, while simultaneously calling out the very real burnout caused by low-effort, AI-generated bug reports hitting kernel maintainers. On stage at Open Source Summit he made an even sharper observation: developers brag about how much of their code is written by AI, forgetting that 100% of their code is already *written* by compilers, yet nobody claims the compiler is the author of their software.
+Earlier in 2026, Torvalds openly acknowledged using AI to build the Python visualizer for a hobby audio project because he didn't care to spend weeks wrestling with a language outside his daily wheelhouse. By October, he was using Claude Code to help draft a series of Linux kernel patches tackling a long-standing multi-core file-read bottleneck, while simultaneously calling out the very real burnout caused by low-effort, AI-generated bug reports hitting kernel maintainers. On stage at Open Source Summit he made an even sharper observation: developers brag about how much of their code is written by AI, forgetting that **100% of their code** is already written by compilers, yet nobody claims the compiler is the author of their software.
 
 That distinction captures the entire debate. Treating an LLM as a magic box that replaces engineering judgment produces garbage. Treating it as a high-leverage tool inside a disciplined workflow changes how fast an engineer can explore, validate, and build.
 

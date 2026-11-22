@@ -2,7 +2,7 @@
 title: A quick review of Delta Summit
 subtitle: Notes and thoughts about the blockchain summit held in Malta
 description: Notes and thoughts about the blockchain summit held in Malta
-category: ['Posts']
+category: ['Reviews']
 tags: ["Events", "Blockchain"]
 seoimage: "2018-10-10/001.jpg"
 ---

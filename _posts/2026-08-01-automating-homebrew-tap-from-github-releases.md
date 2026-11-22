@@ -2,7 +2,7 @@
 title: "Automating Homebrew Formula updates from GitHub Releases"
 subtitle: "Generating formulae from release metadata with minijinja and GitHub Actions"
 description: "How to keep a Homebrew tap synchronized with GitHub Releases using YAML configuration, minijinja templates, asset digests, and GitHub Actions."
-category: [ "How-tos" ]
+category: [ "Tutorials" ]
 tags: [ "CI-CD", "GitHub", "macOS", "Linux", "Tools", "Python" ]
 seoimage: "3018/seo.jpg"
 series: "CLI tools packaging automation"

@@ -2,7 +2,7 @@
 title: "Automating AUR Packages with AURA and GitHub Actions"
 subtitle: "Generating PKGBUILD and .SRCINFO files from GitHub Releases and publishing to the Arch User Repository"
 description: "How AURA updates Arch User Repository packages using release metadata, minijinja templates, SSH-signed commits, and GitHub Actions."
-category: [ "How-tos" ]
+category: [ "Tutorials" ]
 tags: [ "CI-CD", "GitHub", "Linux", "Tools", "Python" ]
 seoimage: "3019/seo.jpg"
 series: "CLI tools packaging automation"

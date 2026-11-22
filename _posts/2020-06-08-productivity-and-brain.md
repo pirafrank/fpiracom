@@ -2,7 +2,7 @@
 title: "Productivity and your brain"
 subtitle: The pandemic has forced us to stay home. What I've learned so far to stay productive.
 description: "Tips on productivity during a pandemic"
-categories: ['Posts']
+categories: ['Editorials']
 tags: ['productivity']
 seoimage: 2020-06-08/seo.jpg
 ---

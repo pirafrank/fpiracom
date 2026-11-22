@@ -2,7 +2,7 @@
 title: "Automate your own APT, YUM/DNF, and APK repositories using GitHub Actions, Cloudflare R2, and a Worker"
 subtitle: "Packing and publishing compiled software to APT, YUM/DNF, and APK repositories with GitHub Actions"
 description: "How to automatically pack and publish signed assets to APT, YUM/DNF, and APK repositories using GitHub Actions, Cloudflare R2, and a Worker."
-category: [ "How-tos" ]
+category: [ "Tutorials" ]
 tags: [ "CI-CD", "GitHub", "Linux", "Debian", "CentOS", "Cloud" ]
 seoimage: "3020/seo.jpg"
 series: "CLI tools packaging automation"

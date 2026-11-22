@@ -2,7 +2,7 @@
 title: "Cross compilation in Rust"
 subtitle: "A practical guide to build Rust applications across multiple platforms both locally and on CI/CD pipelines"
 description: "Learn how to configure your Rust development environment for cross compilation, enabling your applications to run smoothly on multiple platforms."
-category: [ "How-tos" ]
+category: [ "Tutorials" ]
 tags: [ "Rust", "CI-CD" ]
 seoimage: "3013/90363-rust-cross-compilation.jpg"
 ---

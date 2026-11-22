@@ -2,7 +2,7 @@
 title: "The case for Apple Watch sick days"
 subtitle: My main feature request one week ahead watchOS 7 announcement
 description: "My main feature request one week ahead watchOS 7 announcement"
-categories: ['Reviews']
+categories: ['Editorials']
 tags: ['Apple']
 seoimage: 2020-06-15/image.jpg
 ---
